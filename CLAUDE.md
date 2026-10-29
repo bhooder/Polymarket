@@ -27,8 +27,8 @@ real orders and never touches money, wallets, or private keys.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
-- Forward test outputs: `paper_trades.json` (state; don't hand-edit),
-  `paper_trades.csv`, `paper_report.html` (results page), `forward_test.log`.
+- Forward test outputs: `paper_trades.json` and `paper_trades_b.json` (state;
+  don't hand-edit), matching CSVs, `paper_report.html` (results page), `forward_test.log`.
   Each forward-test run also rewrites `picks.html` (all picks, no 4c filter).
 
 ## How to run by hand (from the VS Code terminal)
@@ -82,6 +82,12 @@ The owner's rules:
   (fees included) and passes the price rule. The international Polymarket
   price is recorded for comparison only.
 - Runs every 15 minutes on GitHub Actions (hourly until 2026-10-28).
+
+Strategy B (added 2026-10-29): a second, separate $1,000 paper bankroll with
+the same rules except staking by bettor count only: 1% at 4 bettors, 2% at 5+,
+avg bankroll % ignored. State in paper_trades_b.json / paper_trades_b.csv.
+Strategy settings live in STRATEGIES in forward_test.py. The report has tabs:
+Strategy A, Strategy B, Statistics (A and B side by side).
 
 Statistics tab (paper_report.html, added 2026-10-29): null hypothesis = the
 market price is the true win chance. Per bet, expected profit = shares x price

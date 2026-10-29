@@ -10,9 +10,10 @@ Each run:
 4. "Buys" them with pretend money on the cheaper US venue, Polymarket US or Kalshi
    (see venues.py), from real order books with fees, if the price is no more than 2c
    above or 4c below the traders' average entry.
-5. Writes paper_trades.json (state), paper_trades.csv and paper_report.html.
+5. Does steps 1, 3 and 4 separately for each strategy (own $1,000 pretend bankroll).
+6. Writes paper_trades.json / paper_trades_b.json (state), matching CSVs and paper_report.html.
 
-No real orders are placed. Meant to run every hour (see run_hourly.plist).
+No real orders are placed. Runs every 15 minutes on GitHub Actions.
 
 Usage:
     python3 forward_test.py
@@ -30,7 +31,6 @@ import polymarket_smart_money as scanner
 import venues
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-STATE = os.path.join(HERE, "paper_trades.json")
 CLOB = "https://clob.polymarket.com"
 # On a Mac, copies of the reports also go here (iCloud Drive), for viewing on a phone
 ICLOUD = os.path.expanduser("~/Library/Mobile Documents/com~apple~CloudDocs/Polymarket")
@@ -41,38 +41,47 @@ MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at on
 MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry...
 MAX_BELOW = 0.04         # ...and at most 4c less
 
-# (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...])
-# Checked top to bottom; the first tier with any matching rule wins.
-TIERS = [
-    (0.02, [(3, 35), (4, 25), (5, 20)]),
-    (0.01, [(3, 20), (4, 15), (5, 10)]),
-]
+# Each strategy has its own pretend bankroll and state file; all other rules are shared.
+# tiers: (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...]),
+# checked top to bottom; the first tier with any matching rule wins.
+STRATEGIES = {
+    "a": {"name": "Strategy A", "state": "paper_trades.json", "csv": "paper_trades.csv",
+          "rules": "Stake by bettors and avg bankroll %. 2%: 3+ bettors & 35%+, 4+ & 25%+, or 5+ & 20%+. "
+                   "1%: 3+ & 20%+, 4+ & 15%+, or 5+ & 10%+.",
+          "tiers": [(0.02, [(3, 35), (4, 25), (5, 20)]),
+                    (0.01, [(3, 20), (4, 15), (5, 10)])]},
+    "b": {"name": "Strategy B", "state": "paper_trades_b.json", "csv": "paper_trades_b.csv",
+          "rules": "Stake by number of bettors only. 2%: 5+ bettors. 1%: 4 bettors. "
+                   "Avg bankroll % is ignored.",
+          "tiers": [(0.02, [(5, 0)]),
+                    (0.01, [(4, 0)])]},
+}
 
 
 def now():
     return datetime.now(timezone.utc)
 
 
-def stake_for(bettors, avg_pct):
-    for stake, rules in TIERS:
+def stake_for(bettors, avg_pct, tiers):
+    for stake, rules in tiers:
         if any(bettors >= n and avg_pct >= p for n, p in rules):
             return stake
     return 0.0
 
 
-def load_state():
-    if os.path.exists(STATE):
-        with open(STATE) as f:
+def load_state(path):
+    if os.path.exists(path):
+        with open(path) as f:
             return json.load(f)
     return {"start_bankroll": START_BANKROLL, "cash": START_BANKROLL,
             "started_at": now().isoformat(), "bets": []}
 
 
-def save_state(state):
-    tmp = STATE + ".tmp"
+def save_state(state, path):
+    tmp = path + ".tmp"
     with open(tmp, "w") as f:
         json.dump(state, f, indent=1)
-    os.replace(tmp, STATE)  # never leave a half-written file
+    os.replace(tmp, path)  # never leave a half-written file
 
 
 def open_bets(state):
@@ -232,14 +241,14 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks):
+def trade(state, picks, tiers):
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
     by_market = {b["condition_id"] for b in open_bets(state)}
     by_slot = {game_slot(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
     for pick in picks:
-        stake = stake_for(pick["Bettors"], pick["Avg bankroll %"])
+        stake = stake_for(pick["Bettors"], pick["Avg bankroll %"], tiers)
         if not stake:
             continue
         label = f"{pick['Pick']} / {pick['Market'][:50]} ({pick['Bettors']} bettors, {pick['Avg bankroll %']}%)"
@@ -320,34 +329,43 @@ def verdict(n, z, goal):
     return "", f"Within normal luck: no real evidence either way yet. {when}"
 
 
-def stats_html(done):
-    bets = [b for b in done if b["status"] in ("won", "lost", "push")]
-    t = summarize(bets)
-    n = t["n"]
+def stats_html(strats):
+    """Statistics tab: the strategies side by side. strats = [(config, settled bets), ...]"""
     fmt_z = lambda z: f"{z:+.2f}" if z is not None else "&ndash;"
     money = lambda v: f'<span class="{"up" if v > 0 else "down" if v < 0 else ""}">{v:+,.2f}</span>'
-    win_pct = f'{t["wins"] / n:.0%}' if n else "&ndash;"
-    exp_pct = f'{t["exp_wins"] / n:.0%}' if n else "&ndash;"
-    tiles = [
-        (f"{n} / {REVIEW_AT}", "Settled bets (review at 200)"),
-        (f"{win_pct} <small class=muted>vs {exp_pct}</small>", "Win rate vs market's odds"),
-        (money(t["profit"]), "Actual profit"),
-        (money(t["exp_profit"]), "Expected if market is right"),
-        (f"&plusmn;${t['sd']:,.2f}", "1 SD (normal luck range)"),
-        (f"&plusmn;${2 * t['sd']:,.2f}", "2 SD"),
+    pct = lambda a, n: f"{a / n:.0%}" if n else "&ndash;"
+    sums = [(cfg, summarize(bets), bets) for cfg, bets in strats]
+
+    metrics = [
+        ("Settled bets", lambda t: f'{t["n"]} / {REVIEW_AT}'),
+        ("Won-lost", lambda t: f'{t["wins"]}-{t["n"] - t["wins"]}'),
+        ("Win rate (market expected)",
+         lambda t: f'{pct(t["wins"], t["n"])} <span class="muted">({pct(t["exp_wins"], t["n"])})</span>'),
+        ("Staked", lambda t: f'${t["staked"]:,.2f}'),
+        ("Actual profit", lambda t: money(t["profit"])),
+        ("Expected if market is right", lambda t: money(t["exp_profit"])),
+        ("Return per $ bet", lambda t: f'{t["profit"] / t["staked"]:+.1%}' if t["staked"] else "&ndash;"),
+        ("1 SD (normal luck range)", lambda t: f'&plusmn;${t["sd"]:,.2f}'),
+        ("Z: beat the market's odds", lambda t: fmt_z(t["z_market"])),
+        ("Z: make money after fees", lambda t: fmt_z(t["z_money"])),
     ]
-    out = ['<div class="tiles">' + "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>'
-                                          for v, k in tiles) + "</div>"]
-    cards = [("Do the picks beat the market's odds?", t["z_market"], "beat the market's odds"),
-             ("Do the picks make money after fees?", t["z_money"], "make money after fees")]
+    head = "".join(f'<th class="num">{cfg["name"]}</th>' for cfg, _, _ in sums)
+    body = "".join(f'<tr><td class="pick">{label}</td>'
+                   + "".join(f'<td class="num">{f(t)}</td>' for _, t, _ in sums) + "</tr>"
+                   for label, f in metrics)
+    out = [f'<h2>Head to head</h2><div class="wrap"><table><thead><tr><th></th>{head}</tr></thead>'
+           f'<tbody>{body}</tbody></table></div>']
+
     out.append('<div class="verdicts">')
-    for title, z, goal in cards:
-        cls, text = verdict(n, z, goal)
-        out.append(f'<div class="verdict {cls}"><h3>{title}</h3><div class="z">Z = {fmt_z(z)}</div>'
-                   f'<p>{text}</p></div>')
+    for cfg, t, _ in sums:
+        for title, z, goal in (("beat the market's odds?", t["z_market"], "beat the market's odds"),
+                               ("make money after fees?", t["z_money"], "make money after fees")):
+            cls, text = verdict(t["n"], z, goal)
+            out.append(f'<div class="verdict {cls}"><h3>{cfg["name"]}: does it {title}</h3>'
+                       f'<div class="z">Z = {fmt_z(z)}</div><p>{text}</p></div>')
     out.append("</div>")
 
-    def table(title, key):
+    def table(title, bets, key):
         groups = {}
         for b in bets:
             groups.setdefault(key(b), []).append(b)
@@ -359,18 +377,22 @@ def stats_html(done):
             rows.append(
                 f'<tr><td class="pick">{html.escape(str(name))}</td><td class="num">{g["n"]}</td>'
                 f'<td class="num">{g["wins"]}-{g["n"] - g["wins"]}</td>'
-                f'<td class="num">{g["wins"] / g["n"]:.0%} <span class="muted">({g["exp_wins"] / g["n"]:.0%})</span></td>'
-                f'<td class="num">${g["staked"]:,.2f}</td><td class="num">{money(g["profit"])}</td>'
-                f'<td class="num">{ret}</td><td class="{z_cls}">{fmt_z(g["z_market"])}</td></tr>')
-        body = "".join(rows) or '<tr><td colspan="8">None yet.</td></tr>'
-        return (f'<h2>{title}</h2><div class="wrap"><table><thead><tr><th>{title[3:]}</th>'
-                f'<th class="num">Bets</th><th class="num">Won-lost</th><th class="num">Win % (expected)</th>'
-                f'<th class="num">Staked</th><th class="num">Profit</th><th class="num">Return</th>'
-                f'<th class="num">Z vs market</th></tr></thead><tbody>{body}</tbody></table></div>')
+                f'<td class="num">{pct(g["wins"], g["n"])} <span class="muted">({pct(g["exp_wins"], g["n"])})</span></td>'
+                f'<td class="num">{money(g["profit"])}</td><td class="num">{ret}</td>'
+                f'<td class="{z_cls}">{fmt_z(g["z_market"])}</td></tr>')
+        body = "".join(rows) or '<tr><td colspan="7">None yet.</td></tr>'
+        return (f'<h3>{title}</h3><div class="wrap"><table><thead><tr><th>{title[3:]}</th>'
+                f'<th class="num">Bets</th><th class="num">Won-lost</th><th class="num">Win % (exp.)</th>'
+                f'<th class="num">Profit</th><th class="num">Return</th><th class="num">Z</th>'
+                f'</tr></thead><tbody>{body}</tbody></table></div>')
 
-    out.append(table("By bet type", lambda b: TYPE_NAMES.get(bet_type(b), "Other")))
-    out.append(table("By stake", lambda b: f'{b["stake"]:.0%}'))
-    out.append(table("By sport", sport_of))
+    out.append('<h2>Breakdowns</h2><div class="compare">')
+    for cfg, _, bets in sums:
+        out.append(f'<div><h2 class="col">{cfg["name"]}</h2>'
+                   + table("By bet type", bets, lambda b: TYPE_NAMES.get(bet_type(b), "Other"))
+                   + table("By stake", bets, lambda b: f'{b["stake"]:.0%}')
+                   + table("By sport", bets, sport_of) + "</div>")
+    out.append("</div>")
     out.append(f"""<h2>What these numbers mean</h2><div class="explain">
 <p><b>Expected if market is right:</b> each price is the market's guess at the chance of winning
 (0.60 = 60%). If those guesses are right, this is what the bets should make on average: a small loss,
@@ -383,9 +405,10 @@ expected loss from fees; "make money" compares with breaking even, which is a ha
 <p><b>Be patient:</b> with a real 10% edge it takes about 400 bets on average to reach 2 SD. Checking
 often and stopping the first time Z touches 2 makes a fluke much more likely, so the decision point
 is fixed at {REVIEW_AT} settled bets. Group Z-scores in grey have under {MIN_BETS} bets and mean little.</p>
+<p><b>Comparing strategies:</b> both bet on the same picks feed, so they often share bets and their
+results move together. A gap between them only means something once both have many settled bets.</p>
 </div>""")
     return "\n".join(out)
-
 
 REPORT = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -421,7 +444,7 @@ REPORT = """<!doctype html>
   .tabs button { border:0; background:none; color:var(--muted); font:inherit; font-weight:600;
                  padding:8px 14px; border-bottom:2px solid transparent; margin-bottom:-1px; cursor:pointer; }
   .tabs button.on { color:var(--text); border-bottom-color:var(--accent); }
-  .verdicts { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:12px; }
+  .verdicts { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
   .verdict { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--muted);
              border-radius:12px; padding:14px 16px; }
   .verdict.good { border-left-color:var(--up); } .verdict.bad { border-left-color:var(--down); }
@@ -431,24 +454,21 @@ REPORT = """<!doctype html>
   .explain { color:var(--muted); font-size:14px; }
   .explain p { margin:8px 0; }
   .muted { color:var(--muted); }
+  .compare { display:grid; grid-template-columns:repeat(auto-fit, minmax(420px, 1fr)); gap:20px; }
+  .compare h2.col { margin-top:4px; }
+  .compare h3 { font-size:15px; margin:18px 0 8px; }
+  .compare th, .compare td { padding:8px 7px; font-size:14px; }
+  .compare th { font-size:11px; }
+  @media (max-width: 640px) { .compare, .verdicts { grid-template-columns:1fr; } }
 __ODDS_CSS__
 </style></head><body><main>
 <h1>Paper Trading Results</h1>
 <p class="sub">__SUB__</p>
-<div class="tabs" role="tablist"><button data-tab="bets" class="on">Bets</button>
-<button data-tab="stats">Statistics</button></div>
-<section id="tab-bets">
+<div class="tabs" role="tablist"><button data-tab="a" class="on">Strategy A</button>
+<button data-tab="b">Strategy B</button><button data-tab="stats">Statistics</button></div>
 __ODDS_TOGGLE__
-<div class="tiles">__TILES__</div>
-<h2>Open bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
-<th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
-<th class="num">Price</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody>__OPEN__</tbody></table></div>
-<h2>Settled bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
-<th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
-<th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody>__DONE__</tbody></table></div>
-</section>
+<section id="tab-a">__BETS_A__</section>
+<section id="tab-b" hidden>__BETS_B__</section>
 <section id="tab-stats" hidden>__STATS__</section>
 <p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
 had the lowest price including fees, from the real order books.
@@ -461,7 +481,10 @@ function showTab(name) {
   try { localStorage.setItem("report-tab", name); } catch (e) {}
 }
 document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
-try { const t = localStorage.getItem("report-tab"); if (t) showTab(t); } catch (e) {}
+try {
+  const t = localStorage.getItem("report-tab");
+  if (t && document.querySelector(`.tabs button[data-tab="${t}"]`)) showTab(t);
+} catch (e) {}
 </script></body></html>
 """
 
@@ -474,15 +497,9 @@ def short_time(iso):
     return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%b %d %I:%M %p")
 
 
-def write_reports(state):
+def bets_html(cfg, state):
+    """One strategy's tab: rules, tiles, open bets, settled bets."""
     bets = state["bets"]
-    with open(os.path.join(HERE, "paper_trades.csv"), "w", newline="") as f:
-        if bets:
-            fields = list(dict.fromkeys(k for b in bets for k in b))  # older bets lack newer columns
-            w = csv.DictWriter(f, fieldnames=fields)
-            w.writeheader()
-            w.writerows(bets)
-
     esc = html.escape
     done = [b for b in bets if b["status"] != "open"]
     wins = sum(b["status"] == "won" for b in done)
@@ -524,13 +541,41 @@ def write_reports(state):
         f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
         f'{b["profit"]:+.2f}</td><td>{venue_name(b)}</td></tr>'
         for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
-    sub = (f"Started {short_time(state['started_at'])} with ${state['start_bankroll']:,.0f}. "
-           f"Last updated {time.strftime('%b %d %I:%M %p')}.")
+    return f"""<p class="sub"><b>{cfg["name"]}.</b> {esc(cfg["rules"])}
+Started {short_time(state["started_at"])} with ${state["start_bankroll"]:,.0f}.</p>
+<div class="tiles">{tiles_html}</div>
+<h2>Open bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
+<th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
+<th class="num">Price</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody>{open_rows}</tbody></table></div>
+<h2>Settled bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
+<th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
+<th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody>{done_rows}</tbody></table></div>"""
+
+
+def write_csv(path, bets):
+    with open(path, "w", newline="") as f:
+        if bets:
+            fields = list(dict.fromkeys(k for b in bets for k in b))  # older bets lack newer columns
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            w.writerows(bets)
+
+
+def write_reports(states):
+    """states = {strategy key: state}. Writes each strategy's CSV and the shared report page."""
+    for key, state in states.items():
+        write_csv(os.path.join(HERE, STRATEGIES[key]["csv"]), state["bets"])
+    settled = [(STRATEGIES[k], [b for b in st["bets"] if b["status"] != "open"]) for k, st in states.items()]
+    sub = f"Pretend-money tests of two staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
-            .replace("__SUB__", esc(sub)).replace("__TILES__", tiles_html).replace("__STATS__", stats_html(done))
-            .replace("__OPEN__", open_rows).replace("__DONE__", done_rows))
+            .replace("__SUB__", html.escape(sub))
+            .replace("__BETS_A__", bets_html(STRATEGIES["a"], states["a"]))
+            .replace("__BETS_B__", bets_html(STRATEGIES["b"], states["b"]))
+            .replace("__STATS__", stats_html(settled)))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
         f.write(page)
     copy_to_icloud("paper_report.html")
@@ -559,16 +604,24 @@ def write_picks(picks):
 
 def main():
     print(f"\n=== Forward test run {time.strftime('%Y-%m-%d %H:%M')} ===")
-    state = load_state()
-    settle(state)
-    save_state(state)
+    states = {}
+    for key, cfg in STRATEGIES.items():
+        path = os.path.join(HERE, cfg["state"])
+        states[key] = load_state(path)
+        settle(states[key])
+        save_state(states[key], path)
     picks, _ = scanner.find_picks(scanner_args)
     write_picks(picks)
-    trade(state, picks)
-    save_state(state)
-    write_reports(state)
-    print(f"Bankroll ${bankroll(state):,.2f} (cash ${state['cash']:,.2f}, "
-          f"{len(open_bets(state))} open bets). Wrote paper_report.html and picks.html")
+    for key, cfg in STRATEGIES.items():
+        print(f"-- {cfg['name']} --")
+        trade(states[key], picks, cfg["tiers"])
+        save_state(states[key], os.path.join(HERE, cfg["state"]))
+    write_reports(states)
+    for key, cfg in STRATEGIES.items():
+        st = states[key]
+        print(f"{cfg['name']}: bankroll ${bankroll(st):,.2f} (cash ${st['cash']:,.2f}, "
+              f"{len(open_bets(st))} open bets)")
+    print("Wrote paper_report.html and picks.html")
 
 
 if __name__ == "__main__":
