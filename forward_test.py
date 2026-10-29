@@ -257,7 +257,7 @@ REPORT = """<!doctype html>
             --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e; } }
   body { margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
          font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  main { max-width:1100px; margin:0 auto; }
+  main { max-width:1280px; margin:0 auto; }
   h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:17px; margin:28px 0 10px; }
   .sub { color:var(--muted); margin:0 0 20px; }
   .tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
@@ -282,13 +282,13 @@ __ODDS_CSS__
 __ODDS_TOGGLE__
 <div class="tiles">__TILES__</div>
 <h2>Open bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Ends</th>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
 <th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
-<th class="num">Price</th><th class="num">Cost</th><th></th></tr></thead><tbody>__OPEN__</tbody></table></div>
+<th class="num">Price</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody>__OPEN__</tbody></table></div>
 <h2>Settled bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Result</th>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
 <th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
-<th class="num">Paid</th><th class="num">Profit</th></tr></thead><tbody>__DONE__</tbody></table></div>
+<th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody>__DONE__</tbody></table></div>
 <p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
 had the lowest price including fees, from the real order books.
 Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
@@ -330,27 +330,29 @@ def write_reports(state):
     ]
     tiles_html = "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>' for v, k in tiles)
 
+    def venue_name(b):
+        return VENUE_NAMES.get(b.get("venue", "polymarket_intl"))
+
     def link(b):
         return f'<a href="{esc(b["link"])}" target="_blank">View &rarr;</a>' if b["link"] else ""
 
     open_rows = "".join(
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
-        f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
-        f'<td class="market">{esc(b["market"])}</td><td>{short_time(b["ends"]) if b["ends"] else ""}</td>'
+        f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="num">{b["stake"]:.0%}</td><td class="num">{b["bettors"]}</td>'
         f'<td class="num">{b["avg_bankroll_pct"]:.1f}%</td><td class="num">{scanner.px(b["avg_price"], 3)}</td>'
-        f'<td class="num">${b["cost"]:.2f}</td><td>{link(b)}</td></tr>'
+        f'<td class="num">${b["cost"]:.2f}</td><td>{venue_name(b)}</td>'
+        f'<td>{short_time(b["ends"]) if b["ends"] else ""}</td><td>{link(b)}</td></tr>'
         for b in reversed(open_bets(state))) or '<tr><td colspan="11">None yet.</td></tr>'
     done_rows = "".join(
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
-        f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="{"up" if b["status"] == "won" else "down" if b["status"] == "lost" else ""}">'
         f'{b["status"].title()}</td><td class="num">{b["stake"]:.0%}</td>'
         f'<td class="num">{scanner.px(b["avg_price"], 3)}</td><td class="num">${b["cost"]:.2f}</td>'
         f'<td class="num">${b["payout"]:.2f}</td>'
         f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
-        f'{b["profit"]:+.2f}</td></tr>'
+        f'{b["profit"]:+.2f}</td><td>{venue_name(b)}</td></tr>'
         for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
     sub = (f"Started {short_time(state['started_at'])} with ${state['start_bankroll']:,.0f}. "
            f"Last updated {time.strftime('%b %d %I:%M %p')}.")
