@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 974.8674282412683,
+ "cash": 964.6074282412683,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -345,7 +345,7 @@
   {
    "placed_at": "2026-10-29T19:27:43.057475+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Hawks",
    "market": "Cavaliers vs. Hawks",
    "link": "https://polymarket.com/event/nba-cle-atl-2026-10-29",
@@ -358,9 +358,9 @@
    "avg_bankroll_pct": 22.4,
    "traders_entry": 0.51,
    "avg_price": 0.52,
-   "shares": 19.093800060742847,
-   "cost": 10.26,
-   "fees": 0.3312,
+   "shares": 38.187600121485694,
+   "cost": 20.52,
+   "fees": 0.6624,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -376,7 +376,7 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-29T23:51:19.168034+00:00"
   },
   {
    "placed_at": "2026-10-29T21:38:41.482034+00:00",
