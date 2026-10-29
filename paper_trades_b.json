@@ -1,0 +1,42 @@
+{
+ "start_bankroll": 1000.0,
+ "cash": 980.0004556471158,
+ "started_at": "2026-10-29T04:27:22.900958+00:00",
+ "bets": [
+  {
+   "placed_at": "2026-10-29T04:28:46.010987+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Panthers vs. Packers: O/U 48.5",
+   "link": "https://polymarket.com/event/nfl-car-gb-2026-10-30",
+   "market_type": "totals",
+   "condition_id": "0x122617f2d7fa7782c4efa838722812e6784d81bbfb542c5095b99cfb7fbd50ac",
+   "token_id": "23229735765075808645352837657503613328493101244000879790511784707083707550792",
+   "outcome_index": 1,
+   "ends": "2026-10-30T00:15:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.53,
+   "avg_price": 0.55,
+   "shares": 35.235535187062084,
+   "cost": 20.0,
+   "fees": 0.62,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26OCT29CARGB-49",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5676
+   },
+   "intl_cost_per_share": 0.5674,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  }
+ ]
+}
