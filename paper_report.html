@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Trading Results</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea;
+          --accent:#2f6fed; --up:#1a8a4a; --down:#c4372b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141416; --card:#1e1e21; --text:#f2f2f4; --muted:#9a9aa0; --line:#2e2e33;
+            --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e; } }
+  body { margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
+         font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; }
+  h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:17px; margin:28px 0 10px; }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
+  .tile { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .tile b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
+  .tile span { color:var(--muted); font-size:13px; }
+  .wrap { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+  td.market { white-space:normal; min-width:240px; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  tr:last-child td { border-bottom:0; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  a { color:var(--accent); text-decoration:none; }
+  .note { color:var(--muted); font-size:13px; margin-top:16px; }
+
+  .toggle { display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:0 0 16px; }
+  .toggle button { border:0; background:var(--card); color:var(--muted); padding:6px 12px;
+                   font:inherit; font-size:13px; cursor:pointer; }
+  .toggle button.on { background:var(--accent); color:#fff; }
+
+</style></head><body><main>
+<h1>Paper Trading Results</h1>
+<p class="sub">Started Oct 27 11:34 AM with $1,000. Last updated Oct 28 10:49 PM.</p>
+<div class="toggle" role="group" aria-label="Price format">
+<button data-fmt="price" class="on">Price</button><button data-fmt="odds">American odds</button></div>
+<div class="tiles"><div class="tile"><b>$1,017.47</b><span>Bankroll</span></div><div class="tile"><b><span class="up">+17.47</span></b><span>Since start</span></div><div class="tile"><b>4-2</b><span>Won-lost</span></div><div class="tile"><b>+19.4%</b><span>Return per $ bet</span></div><div class="tile"><b>1</b><span>Open bets</span></div><div class="tile"><b>$1,007.38</b><span>Cash</span></div></div>
+<h2>Open bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Ends</th>
+<th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
+<th class="num">Price</th><th class="num">Cost</th><th></th></tr></thead><tbody><tr><td>Oct 28 08:28 PM</td><td><b>Mavericks</b></td><td>Polymarket US</td><td class="market">Spread: Thunder (-5.5)</td><td>Oct 28 09:30 PM</td><td class="num">1%</td><td class="num">5</td><td class="num">12.5%</td><td class="num"><span class="px" data-p="0.52">0.520</span></td><td class="num">$10.09</td><td><a href="https://polymarket.com/event/nba-okc-dal-2026-10-28" target="_blank">View &rarr;</a></td></tr></tbody></table></div>
+<h2>Settled bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Result</th>
+<th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
+<th class="num">Paid</th><th class="num">Profit</th></tr></thead><tbody><tr><td>Oct 28 07:26 PM</td><td><b>Raptors</b></td><td>Polymarket US</td><td class="market">Spread: Raptors (-4.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.53">0.530</span></td><td class="num">$10.09</td><td class="num">$18.44</td><td class="num up">+8.35</td></tr><tr><td>Oct 27 10:54 PM</td><td><b>Trail Blazers</b></td><td>Polymarket US</td><td class="market">Spread: Lakers (-2.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.54">0.540</span></td><td class="num">$10.21</td><td class="num">$18.32</td><td class="num up">+8.11</td></tr><tr><td>Oct 27 07:31 PM</td><td><b>Devils</b></td><td>Polymarket US</td><td class="market">Devils vs. Stars</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.49">0.490</span></td><td class="num">$19.80</td><td class="num">$39.02</td><td class="num up">+19.22</td></tr><tr><td>Oct 27 03:08 PM</td><td><b>Lakers</b></td><td>Polymarket US</td><td class="market">Trail Blazers vs. Lakers</td><td class="down">Lost</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.5349">0.535</span></td><td class="num">$20.11</td><td class="num">$0.00</td><td class="num down">-20.11</td></tr><tr><td>Oct 27 12:10 PM</td><td><b>Knicks</b></td><td>Kalshi</td><td class="market">Pistons vs. Knicks</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.6097">0.610</span></td><td class="num">$19.98</td><td class="num">$31.88</td><td class="num up">+11.90</td></tr><tr><td>Oct 27 11:42 AM</td><td><b>Giovanni Mpetshi Perricard</b></td><td>Polymarket (intl, before US switch)</td><td class="market">Swiss Indoors Basel: Giovanni Mpetshi Perricard vs Arthur Fils</td><td class="down">Lost</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.27">0.270</span></td><td class="num">$10.00</td><td class="num">$0.00</td><td class="num down">-10.00</td></tr></tbody></table></div>
+<p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
+had the lowest price including fees, from the real order books.
+Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
+</main><script>
+function american(p) {  // 0.61 -> -156, 0.25 -> +300
+  if (!(p > 0 && p < 1)) return "\u2013";
+  return p >= 0.5 ? "\u2212" + Math.round(100 * p / (1 - p)) : "+" + Math.round(100 * (1 - p) / p);
+}
+function showPrices(fmt) {
+  document.querySelectorAll(".px").forEach(el => {
+    if (el.dataset.raw === undefined) el.dataset.raw = el.textContent;
+    el.textContent = fmt === "odds" ? american(+el.dataset.p) : el.dataset.raw;
+  });
+  document.querySelectorAll(".toggle button").forEach(b => b.classList.toggle("on", b.dataset.fmt === fmt));
+  try { localStorage.setItem("price-format", fmt); } catch (e) {}
+}
+document.querySelectorAll(".toggle button").forEach(b => b.addEventListener("click", () => showPrices(b.dataset.fmt)));
+let saved = "price";
+try { saved = localStorage.getItem("price-format") || "price"; } catch (e) {}
+showPrices(saved);
+</script></body></html>

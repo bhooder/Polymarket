@@ -1,0 +1,36 @@
+# Runs the forward test every hour on GitHub's computers and saves the results back here.
+name: Hourly forward test
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # every hour at :17 (GitHub may start it late)
+  workflow_dispatch:        # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forward-test       # never two runs at once
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: America/New_York  # times in the reports show Eastern time
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python -u forward_test.py
+      - name: Save results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add paper_trades.json paper_trades.csv paper_report.html picks.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Forward test run $(date '+%Y-%m-%d %H:%M')"
+          git pull --rebase
+          git push

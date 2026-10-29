@@ -1,0 +1,401 @@
+#!/usr/bin/env python3
+"""
+Forward test (paper trading) for the smart-money scanner.
+
+Each run:
+1. Settles open paper bets whose markets have been decided.
+2. Runs the scanner (polymarket_smart_money.py defaults: top 100 sports traders by
+   monthly PnL, hedges and crypto bots removed).
+3. Keeps picks that meet a staking tier, haven't started, and are decided within 3 days.
+4. "Buys" them with pretend money on the cheaper US venue, Polymarket US or Kalshi
+   (see venues.py), from real order books with fees, if the price is no more than 2c
+   above or 4c below the traders' average entry.
+5. Writes paper_trades.json (state), paper_trades.csv and paper_report.html.
+
+No real orders are placed. Meant to run every hour (see run_hourly.plist).
+
+Usage:
+    python3 forward_test.py
+"""
+import csv
+import html
+import json
+import os
+import shutil
+import time
+from datetime import datetime, timedelta, timezone
+
+import polymarket_smart_money as scanner
+import venues
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+STATE = os.path.join(HERE, "paper_trades.json")
+CLOB = "https://clob.polymarket.com"
+# On a Mac, copies of the reports also go here (iCloud Drive), for viewing on a phone
+ICLOUD = os.path.expanduser("~/Library/Mobile Documents/com~apple~CloudDocs/Polymarket")
+
+START_BANKROLL = 1000.0
+MAX_DAYS_TO_END = 3      # only markets that end within this many days
+MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at once
+MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry...
+MAX_BELOW = 0.04         # ...and at most 4c less
+
+# (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...])
+# Checked top to bottom; the first tier with any matching rule wins.
+TIERS = [
+    (0.02, [(3, 35), (4, 25), (5, 20)]),
+    (0.01, [(3, 20), (4, 15), (5, 10)]),
+]
+
+
+def now():
+    return datetime.now(timezone.utc)
+
+
+def stake_for(bettors, avg_pct):
+    for stake, rules in TIERS:
+        if any(bettors >= n and avg_pct >= p for n, p in rules):
+            return stake
+    return 0.0
+
+
+def load_state():
+    if os.path.exists(STATE):
+        with open(STATE) as f:
+            return json.load(f)
+    return {"start_bankroll": START_BANKROLL, "cash": START_BANKROLL,
+            "started_at": now().isoformat(), "bets": []}
+
+
+def save_state(state):
+    tmp = STATE + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(state, f, indent=1)
+    os.replace(tmp, STATE)  # never leave a half-written file
+
+
+def open_bets(state):
+    return [b for b in state["bets"] if b["status"] == "open"]
+
+
+def bankroll(state):
+    """Current bankroll = cash + money in open bets (at cost)."""
+    return state["cash"] + sum(b["cost"] for b in open_bets(state))
+
+
+def settle(state):
+    """Pay out bets whose market has resolved, on whichever venue they were placed."""
+    pending = open_bets(state)
+    # bets from before the US-venue switch were "placed" on international Polymarket
+    intl = [b for b in pending if b.get("venue", "polymarket_intl") == "polymarket_intl"]
+    ids = sorted({b["condition_id"] for b in intl})
+    results = {}
+    for i in range(0, len(ids), 20):
+        for r in scanner.get("/resolutions", {"condition": ",".join(ids[i:i + 20])}).get("data") or []:
+            if r.get("status") == "resolved" and r.get("payouts"):
+                results[r["condition_id"]] = r["payouts"]
+    for b in pending:
+        if b in intl:
+            payouts = results.get(b["condition_id"])
+            per_share = payouts and payouts[b["outcome_index"]] / 1_000_000  # micro-USDC per share
+        else:
+            per_share = venues.result(b["venue_ref"])
+        if per_share is None:
+            continue
+        payout = b["shares"] * per_share
+        b["payout"] = round(payout, 2)
+        b["profit"] = round(payout - b["cost"], 2)
+        b["status"] = "won" if payout > b["cost"] else "lost" if payout < b["cost"] else "push"
+        b["settled_at"] = now().isoformat()
+        state["cash"] += payout
+        print(f"  settled {b['status'].upper()}: {b['pick']} / {b['market'][:50]}  "
+              f"cost ${b['cost']:.2f} -> paid ${payout:.2f}")
+
+
+def decided_by(m):
+    """When the market should be decided. For games, endDate is a placeholder about a week
+    out, so use the game's start time instead (games end within hours of starting)."""
+    when = m.get("gameStartTime") or m.get("endDate")
+    return datetime.fromisoformat(when.replace("Z", "+00:00")) if when else None
+
+
+def market_info(condition_ids):
+    """condition_id -> Gamma market (endDate, closed, feeSchedule, ...)."""
+    info, ids = {}, sorted(condition_ids)
+    for i in range(0, len(ids), 50):
+        for m in scanner.get("/markets", {"condition_ids": ids[i:i + 50], "limit": 50},
+                             base=scanner.GAMMA):
+            info[m["conditionId"]] = m
+    return info
+
+
+def simulate_buy(token_id, dollars, fee):
+    """Walk the real order book: how many shares would `dollars` buy, fees included?"""
+    book = scanner.get("/book", {"token_id": token_id}, base=CLOB)
+    rate, exp = (fee or {}).get("rate") or 0, (fee or {}).get("exponent") or 1
+    shares = spent = fees = 0.0
+    for level in reversed(book.get("asks") or []):  # asks come highest first
+        p, size = float(level["price"]), float(level["size"])
+        fee_per_share = rate * (p * (1 - p)) ** exp  # Polymarket taker fee, paid in USDC
+        take = min(size, (dollars - spent) / (p + fee_per_share))
+        shares += take
+        spent += take * (p + fee_per_share)
+        fees += take * fee_per_share
+        if dollars - spent < 0.01:
+            break
+    min_size = float(book.get("min_order_size") or 0)
+    if shares <= 0 or shares < min_size or dollars - spent > 0.01:
+        return None  # book too thin to fill the whole bet
+    return {"shares": shares, "cost": spent, "fees": fees, "avg_price": (spent - fees) / shares}
+
+
+def in_band(price, entry):
+    """Price we'd pay may be at most 2c above, or 4c below, the traders' average entry."""
+    return -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9
+
+
+def place(state, pick, info, stake, existing=None):
+    """Paper-buy `stake` of the bankroll on this pick (or top up an existing bet) on
+    whichever US venue (Polymarket US or Kalshi) is cheapest, fees included.
+    Returns the bet, or None if it was skipped."""
+    label = f"{pick['Pick']} / {pick['Market'][:50]}"
+    roll = bankroll(state)
+    dollars = round(stake * roll, 2) if existing is None else round(0.01 * roll, 2)
+    exposure = sum(b["cost"] for b in open_bets(state))
+    if exposure + dollars > MAX_EXPOSURE * roll or dollars > state["cash"]:
+        print(f"  skip (50% cap reached): {label}")
+        return None
+    if existing is not None:  # top-ups stay on the venue we already used
+        got = venues.top_up_quote(existing["venue_ref"], dollars)
+        choices = [{**existing["venue_ref"], **got}] if got else []
+    else:
+        choices = venues.quotes(pick, info, dollars)
+    if not choices:
+        print(f"  skip (not on Polymarket US or Kalshi, or book too thin): {label}")
+        return None
+    entry = pick["Avg entry price"]
+    ok = [q for q in choices if in_band(q["avg_price"], entry)]
+    if not ok:
+        prices = ", ".join(f"{q['venue']} {q['avg_price']:.3f}" for q in choices)
+        print(f"  skip (US prices {prices} outside {entry - MAX_BELOW:.2f}-{entry + MAX_ABOVE:.2f}): {label}")
+        return None
+    fill = ok[0]  # cheapest all-in cost per share that passes the price rule
+    intl = simulate_buy(pick["token_id"], dollars, info.get("feeSchedule"))  # for comparison only
+    state["cash"] -= fill["cost"]
+    if existing is not None:
+        existing["shares"] += fill["shares"]
+        existing["cost"] = round(existing["cost"] + fill["cost"], 2)
+        existing["fees"] = round(existing["fees"] + fill["fees"], 4)
+        existing["avg_price"] = round((existing["cost"] - existing["fees"]) / existing["shares"], 4)
+        existing["stake"] = 0.02
+        existing["topped_up_at"] = now().isoformat()
+        print(f"  TOP UP to 2% on {fill['venue']}: +${fill['cost']:.2f}  {label}")
+        return existing
+    state["bets"].append({
+        "placed_at": now().isoformat(), "status": "open", "stake": stake,
+        "pick": pick["Pick"], "market": pick["Market"], "link": pick["Link"],
+        "condition_id": pick["condition_id"], "token_id": pick["token_id"],
+        "outcome_index": pick["outcome_index"], "ends": decided_by(info).isoformat(),
+        "bettors": pick["Bettors"], "avg_bankroll_pct": pick["Avg bankroll %"],
+        "traders_entry": pick["Avg entry price"], "avg_price": round(fill["avg_price"], 4),
+        "shares": fill["shares"], "cost": round(fill["cost"], 2), "fees": round(fill["fees"], 4),
+        "venue": fill["venue"],
+        "venue_ref": {k: fill[k] for k in ("venue", "ref", "long", "yes", "fee_rate") if k in fill},
+        # what the same bet would have cost per share on each venue (fees included)
+        "quotes": {q["venue"]: round(q["cost"] / q["shares"], 4) for q in choices},
+        "intl_cost_per_share": round(intl["cost"] / intl["shares"], 4) if intl else None,
+        "payout": None, "profit": None, "settled_at": None, "topped_up_at": None,
+    })
+    others = ", ".join(f"{q['venue']} {q['cost'] / q['shares']:.3f}" for q in choices[1:])
+    print(f"  BET {stake:.0%} on {fill['venue']}: ${fill['cost']:.2f} on {pick['Pick']} @ "
+          f"{fill['avg_price']:.3f} (fee ${fill['fees']:.2f}){' vs ' + others if others else ''}  {label}")
+    return state["bets"][-1]
+
+
+def trade(state, picks):
+    cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
+    info = market_info({p["condition_id"] for p in picks})
+    by_token = {b["token_id"]: b for b in open_bets(state)}
+    by_market = {b["condition_id"] for b in open_bets(state)}
+    for pick in picks:
+        stake = stake_for(pick["Bettors"], pick["Avg bankroll %"])
+        if not stake:
+            continue
+        label = f"{pick['Pick']} / {pick['Market'][:50]} ({pick['Bettors']} bettors, {pick['Avg bankroll %']}%)"
+        m = info.get(pick["condition_id"])
+        if not m or m.get("closed") or not m.get("acceptingOrders") or not decided_by(m):
+            print(f"  skip (market closed): {label}")
+            continue
+        if decided_by(m) <= now():
+            print(f"  skip (game already started): {label}")
+            continue
+        if decided_by(m) > cutoff:
+            print(f"  skip (decided {decided_by(m):%Y-%m-%d}, more than {MAX_DAYS_TO_END} days away): {label}")
+            continue
+        existing = by_token.get(pick["token_id"])
+        if existing:
+            if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):
+                place(state, pick, m, stake, existing)
+            continue
+        if pick["condition_id"] in by_market:
+            continue  # we already bet the other side; never hold both
+        bet = place(state, pick, m, stake)
+        if bet:
+            by_token[pick["token_id"]] = bet
+            by_market.add(pick["condition_id"])
+
+
+REPORT = """<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Trading Results</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea;
+          --accent:#2f6fed; --up:#1a8a4a; --down:#c4372b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141416; --card:#1e1e21; --text:#f2f2f4; --muted:#9a9aa0; --line:#2e2e33;
+            --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e; } }
+  body { margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
+         font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; }
+  h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:17px; margin:28px 0 10px; }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
+  .tile { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .tile b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
+  .tile span { color:var(--muted); font-size:13px; }
+  .wrap { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+  td.market { white-space:normal; min-width:240px; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  tr:last-child td { border-bottom:0; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  a { color:var(--accent); text-decoration:none; }
+  .note { color:var(--muted); font-size:13px; margin-top:16px; }
+__ODDS_CSS__
+</style></head><body><main>
+<h1>Paper Trading Results</h1>
+<p class="sub">__SUB__</p>
+__ODDS_TOGGLE__
+<div class="tiles">__TILES__</div>
+<h2>Open bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Ends</th>
+<th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
+<th class="num">Price</th><th class="num">Cost</th><th></th></tr></thead><tbody>__OPEN__</tbody></table></div>
+<h2>Settled bets</h2>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Result</th>
+<th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
+<th class="num">Paid</th><th class="num">Profit</th></tr></thead><tbody>__DONE__</tbody></table></div>
+<p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
+had the lowest price including fees, from the real order books.
+Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
+</main></body></html>
+"""
+
+
+VENUE_NAMES = {"kalshi": "Kalshi", "polymarket_us": "Polymarket US",
+               "polymarket_intl": "Polymarket (intl, before US switch)"}
+
+
+def short_time(iso):
+    return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%b %d %I:%M %p")
+
+
+def write_reports(state):
+    bets = state["bets"]
+    with open(os.path.join(HERE, "paper_trades.csv"), "w", newline="") as f:
+        if bets:
+            fields = list(dict.fromkeys(k for b in bets for k in b))  # older bets lack newer columns
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            w.writerows(bets)
+
+    esc = html.escape
+    done = [b for b in bets if b["status"] != "open"]
+    wins = sum(b["status"] == "won" for b in done)
+    profit = sum(b["profit"] for b in done)
+    staked = sum(b["cost"] for b in done)
+    roll = bankroll(state)
+    change = roll - state["start_bankroll"]
+    tiles = [
+        (f"${roll:,.2f}", "Bankroll"),
+        (f'<span class="{"up" if change >= 0 else "down"}">{change:+,.2f}</span>', "Since start"),
+        (f"{wins}-{len(done) - wins}", "Won-lost"),
+        (f"{profit / staked:+.1%}" if staked else "&ndash;", "Return per $ bet"),
+        (f"{len(open_bets(state))}", "Open bets"),
+        (f"${state['cash']:,.2f}", "Cash"),
+    ]
+    tiles_html = "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>' for v, k in tiles)
+
+    def link(b):
+        return f'<a href="{esc(b["link"])}" target="_blank">View &rarr;</a>' if b["link"] else ""
+
+    open_rows = "".join(
+        f'<tr><td>{short_time(b["placed_at"])}</td><td><b>{esc(str(b["pick"]))}</b></td>'
+        f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
+        f'<td class="market">{esc(b["market"])}</td><td>{short_time(b["ends"]) if b["ends"] else ""}</td>'
+        f'<td class="num">{b["stake"]:.0%}</td><td class="num">{b["bettors"]}</td>'
+        f'<td class="num">{b["avg_bankroll_pct"]:.1f}%</td><td class="num">{scanner.px(b["avg_price"], 3)}</td>'
+        f'<td class="num">${b["cost"]:.2f}</td><td>{link(b)}</td></tr>'
+        for b in reversed(open_bets(state))) or '<tr><td colspan="11">None yet.</td></tr>'
+    done_rows = "".join(
+        f'<tr><td>{short_time(b["placed_at"])}</td><td><b>{esc(str(b["pick"]))}</b></td>'
+        f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
+        f'<td class="market">{esc(b["market"])}</td>'
+        f'<td class="{"up" if b["status"] == "won" else "down" if b["status"] == "lost" else ""}">'
+        f'{b["status"].title()}</td><td class="num">{b["stake"]:.0%}</td>'
+        f'<td class="num">{scanner.px(b["avg_price"], 3)}</td><td class="num">${b["cost"]:.2f}</td>'
+        f'<td class="num">${b["payout"]:.2f}</td>'
+        f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
+        f'{b["profit"]:+.2f}</td></tr>'
+        for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
+    sub = (f"Started {short_time(state['started_at'])} with ${state['start_bankroll']:,.0f}. "
+           f"Last updated {time.strftime('%b %d %I:%M %p')}.")
+    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS).replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
+            .replace("</body>", scanner.ODDS_JS + "</body>")
+            .replace("__SUB__", esc(sub)).replace("__TILES__", tiles_html)
+            .replace("__OPEN__", open_rows).replace("__DONE__", done_rows))
+    with open(os.path.join(HERE, "paper_report.html"), "w") as f:
+        f.write(page)
+    copy_to_icloud("paper_report.html")
+
+
+def copy_to_icloud(name):
+    """Copy an output file to iCloud Drive, when running on a Mac with iCloud Drive (not on GitHub)."""
+    if not os.path.isdir(os.path.dirname(ICLOUD)):
+        return
+    try:
+        os.makedirs(ICLOUD, exist_ok=True)
+        shutil.copy(os.path.join(HERE, name), os.path.join(ICLOUD, name))
+    except OSError as e:
+        print(f"  Could not copy {name} to iCloud Drive: {e}")
+
+
+scanner_args = scanner.build_parser().parse_args([])  # scanner defaults...
+scanner_args.max_move = 1  # ...except the price rule, applied below to the real US-venue price
+
+
+def write_picks(picks):
+    """Refresh picks.html (all picks, no price filter) here and in iCloud Drive."""
+    scanner.write_html(os.path.join(HERE, "picks.html"), picks, scanner_args)
+    copy_to_icloud("picks.html")
+
+
+def main():
+    print(f"\n=== Forward test run {time.strftime('%Y-%m-%d %H:%M')} ===")
+    state = load_state()
+    settle(state)
+    save_state(state)
+    picks, _ = scanner.find_picks(scanner_args)
+    write_picks(picks)
+    trade(state, picks)
+    save_state(state)
+    write_reports(state)
+    print(f"Bankroll ${bankroll(state):,.2f} (cash ${state['cash']:,.2f}, "
+          f"{len(open_bets(state))} open bets). Wrote paper_report.html and picks.html")
+
+
+if __name__ == "__main__":
+    main()

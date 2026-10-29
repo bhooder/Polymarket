@@ -1,0 +1,8 @@
+__pycache__/
+.DS_Store
+forward_test.log
+consensus.csv
+traders.csv
+CLAUDE.local.md
+run_hourly.plist
+keep_awake.plist
