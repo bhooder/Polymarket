@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 950.0004556471158,
+ "cash": 940.0004556471158,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -77,7 +77,7 @@
   {
    "placed_at": "2026-10-29T14:37:45.632665+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Grizzlies vs. Trail Blazers: O/U 233.5",
    "link": "https://polymarket.com/event/nba-mem-por-2026-10-29",
@@ -90,9 +90,9 @@
    "avg_bankroll_pct": 0.2,
    "traders_entry": 0.5,
    "avg_price": 0.52,
-   "shares": 18.609941579671393,
-   "cost": 10.0,
-   "fees": 0.3228,
+   "shares": 37.219883159342785,
+   "cost": 20.0,
+   "fees": 0.6456,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -108,7 +108,7 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-29T17:33:48.109912+00:00"
   },
   {
    "placed_at": "2026-10-29T15:36:47.987688+00:00",
