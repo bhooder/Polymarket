@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 960.0004556471158,
+ "cash": 950.0004556471158,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -105,6 +105,42 @@
     "kalshi": 0.5475
    },
    "intl_cost_per_share": 0.52,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T15:36:47.987688+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Atalanta BC win on 2026-10-29?",
+   "link": "https://polymarket.com/event/sea-fio-ata-2026-10-29",
+   "market_type": "moneyline",
+   "condition_id": "0xcd18fd445c2f62913df2805a953a5ce1af6af9cdb803005cd1fba0d244e8d830",
+   "token_id": "79302072270368751180611747188448573187945872990960863499824246616040473029103",
+   "outcome_index": 1,
+   "ends": "2026-10-29T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.1,
+   "traders_entry": 0.67,
+   "avg_price": 0.67,
+   "shares": 14.590734635463992,
+   "cost": 10.0,
+   "fees": 0.2242,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-sea-fio-ata-2026-10-29-ata",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6854,
+    "kalshi": 0.6953
+   },
+   "intl_cost_per_share": 0.6811,
    "payout": null,
    "profit": null,
    "settled_at": null,
