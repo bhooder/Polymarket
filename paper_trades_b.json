@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 934.5511589836752,
+ "cash": 914.4511589836753,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -212,6 +212,77 @@
     "kalshi": 0.6952
    },
    "intl_cost_per_share": 0.68,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T23:10:50.165301+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Cavaliers vs. Hawks: O/U 237.5",
+   "link": "https://polymarket.com/event/nba-cle-atl-2026-10-29",
+   "market_type": "totals",
+   "condition_id": "0x1abf5d4eb068039715afc598c7ee7ec56c6986988930beed6d22d804fef19a48",
+   "token_id": "41831673072689234551679567111069378571933753182777893416307437291947916942669",
+   "outcome_index": 1,
+   "ends": "2026-10-30T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.8,
+   "traders_entry": 0.51,
+   "avg_price": 0.49,
+   "shares": 19.80810577252549,
+   "cost": 10.05,
+   "fees": 0.344,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-cle-atl-2026-10-29-237pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5074,
+    "kalshi": 0.5175
+   },
+   "intl_cost_per_share": 0.49,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T23:10:50.396213+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Stars",
+   "market": "Canadiens vs. Stars",
+   "link": "https://polymarket.com/event/nhl-mon-dal-2026-10-29",
+   "market_type": "moneyline",
+   "condition_id": "0x0ed0aeb822ce1b72df922d4867c631826391e501a6fead3a303878697e9eebd2",
+   "token_id": "100098554274185526283489570946258857331933760100870276242018561849646064177784",
+   "outcome_index": 1,
+   "ends": "2026-10-30T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.61,
+   "avg_price": 0.63,
+   "shares": 15.55244970813623,
+   "cost": 10.05,
+   "fees": 0.252,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-mon-dal-2026-10-29",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6462
+   },
+   "intl_cost_per_share": 0.6417,
    "payout": null,
    "profit": null,
    "settled_at": null,
