@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 940.0004556471158,
+ "cash": 930.0004556471158,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -141,6 +141,42 @@
     "kalshi": 0.6953
    },
    "intl_cost_per_share": 0.6811,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T18:21:04.438282+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Steelers",
+   "market": "Spread: Steelers (-3.5)",
+   "link": "https://polymarket.com/event/nfl-cle-pit-2026-11-01",
+   "market_type": "spreads",
+   "condition_id": "0xc428f6d38b0855bcdc6d7fb8eab97cc9871005c0c9e8b7ff1ad7db09ea689af5",
+   "token_id": "98280415777843410977524403584862639074474442406289704208261767040435078263943",
+   "outcome_index": 0,
+   "ends": "2026-11-01T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 19.709557982612427,
+   "cost": 10.0,
+   "fees": 0.3423,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-cle-pit-2026-11-01-pos-3pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5074,
+    "kalshi": 0.5078
+   },
+   "intl_cost_per_share": 0.4975,
    "payout": null,
    "profit": null,
    "settled_at": null,
