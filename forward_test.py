@@ -212,19 +212,23 @@ def place(state, pick, info, stake, existing=None):
     return state["bets"][-1]
 
 
-# Moneyline and spread bets on the same game would partly cancel out, so a game gets at most
-# one of them. Totals (over/under) are allowed alongside either.
-SIDE_TYPES = ("moneyline", "spreads")
+# Two bets in the same group on one game would partly cancel out, so each game gets at most
+# one moneyline-or-spread bet and one total (over/under) bet.
+SLOT_GROUPS = {"moneyline": "side", "spreads": "side", "totals": "total"}
 
 
-def side_game(link, market_type):
-    """The game (its Polymarket event link) if this is a moneyline or spread bet, else None."""
-    return link if link and market_type in SIDE_TYPES else None
+def game_slot(link, market_type):
+    """(game's Polymarket event link, group) for moneyline/spread/total bets, else None."""
+    group = SLOT_GROUPS.get(market_type)
+    return (link, group) if link and group else None
 
 
 def bet_type(b):
-    # Bets placed before 2026-10-29 didn't record market_type; their spread markets say "Spread:"
-    return b.get("market_type") or ("spreads" if b["market"].startswith("Spread:") else None)
+    # Bets placed before 2026-10-29 didn't record market_type; their spread and total markets
+    # say "Spread:" or "O/U"
+    if b.get("market_type"):
+        return b["market_type"]
+    return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else None
 
 
 def trade(state, picks):
@@ -232,7 +236,7 @@ def trade(state, picks):
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
     by_market = {b["condition_id"] for b in open_bets(state)}
-    by_game = {side_game(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
+    by_slot = {game_slot(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
     for pick in picks:
         stake = stake_for(pick["Bettors"], pick["Avg bankroll %"])
         if not stake:
@@ -255,16 +259,17 @@ def trade(state, picks):
             continue
         if pick["condition_id"] in by_market:
             continue  # we already bet the other side; never hold both
-        game = side_game(pick["Link"], m.get("sportsMarketType"))
-        if game in by_game:
-            print(f"  skip (already have a moneyline/spread bet on this game): {label}")
+        slot = game_slot(pick["Link"], m.get("sportsMarketType"))
+        if slot in by_slot:
+            kind = "moneyline/spread" if slot[1] == "side" else "total"
+            print(f"  skip (already have a {kind} bet on this game): {label}")
             continue
         bet = place(state, pick, m, stake)
         if bet:
             by_token[pick["token_id"]] = bet
             by_market.add(pick["condition_id"])
-            if game:
-                by_game.add(game)
+            if slot:
+                by_slot.add(slot)
 
 
 REPORT = """<!doctype html>

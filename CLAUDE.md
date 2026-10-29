@@ -70,8 +70,8 @@ The owner's rules:
   - 1%: 3+ bettors & 20%+, or 4+ & 15%+, or 5+ & 10%+
 - One bet per pick. A 1% bet tops up once to 2% if it later meets a 2% tier.
   Never bet both sides of a market.
-  At most one moneyline OR spread bet per game (added 2026-10-29); totals are
-  allowed alongside either. If both qualify in one run, the higher pick wins.
+  Per game, at most one moneyline-or-spread bet and at most one total bet
+  (added 2026-10-29). If two compete in one run, the higher pick wins.
 - Only markets decided within 3 days. Skip games that have already started.
 - Price rule: the price actually paid (before fees) must be at most 2c ABOVE
   or 4c BELOW the traders' average entry. (The scanner's 4c filter is off
