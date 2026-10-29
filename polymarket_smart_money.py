@@ -116,6 +116,38 @@ ODDS_CSS = """
                    font:inherit; font-size:13px; cursor:pointer; }
   .toggle button.on { background:var(--accent); color:#fff; }
 """
+# On phone-width screens, each table row becomes a card with labelled values.
+MOBILE_CSS = """
+  @media (max-width: 640px) {
+    body { padding:16px 12px; }
+    h1 { font-size:21px; }
+    .tiles { grid-template-columns:repeat(3, 1fr); gap:8px; }
+    .tile { padding:10px 12px; }
+    .tile b { font-size:17px; }
+    .wrap { background:none; border:0; overflow:visible; }
+    table, tbody, tr, td { display:block; }
+    thead { display:none; }
+    tr { display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line);
+         border-radius:12px; padding:10px 14px; margin-bottom:10px; }
+    td { padding:4px 0; border:0 !important; white-space:normal; text-align:right; }
+    td[data-label]::before { content:attr(data-label); float:left; color:var(--muted); font-size:13px;
+                             font-weight:400; padding-right:12px; }
+    td.pick { order:-2; text-align:left; font-size:17px; font-weight:700; }
+    td.market { order:-1; text-align:left; min-width:0; color:var(--muted); font-size:13px;
+                padding-bottom:8px; margin-bottom:4px; border-bottom:1px solid var(--line) !important; }
+    td.pick::before, td.market::before, td.rank { display:none; }
+    td.bettors { font-size:15px; }
+  }
+"""
+MOBILE_JS = """<script>
+document.querySelectorAll("table").forEach(t => {  // label each cell with its column name for the phone cards
+  const heads = [...t.querySelectorAll("thead th")].map(th => th.textContent.trim());
+  t.querySelectorAll("tbody tr").forEach(tr => {
+    if (tr.cells.length !== heads.length) return;
+    [...tr.cells].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; });
+  });
+});
+</script>"""
 ODDS_TOGGLE = """<div class="toggle" role="group" aria-label="Price format">
 <button data-fmt="price" class="on">Price</button><button data-fmt="odds">American odds</button></div>"""
 ODDS_JS = """<script>
@@ -216,7 +248,7 @@ def write_html(path, rows, args):
         cls = "up" if move > 0 else "down" if move < 0 else ""
         link = f'<a href="{esc(r["Link"])}" target="_blank">View &rarr;</a>' if r["Link"] else ""
         out.append(
-            f'<tr><td class="num" data-v="{n}">{n}</td>'
+            f'<tr><td class="num rank" data-v="{n}">{n}</td>'
             f'<td class="pick">{esc(str(r["Pick"]))}</td>'
             f'<td class="market">{esc(r["Market"])}</td>'
             f'<td class="num bettors" data-v="{r["Bettors"]}">{r["Bettors"]}</td>'
@@ -232,8 +264,8 @@ def write_html(path, rows, args):
                 + (f"price within {args.max_move * 100:.0f}¢ of their entry. " if args.max_move < 1
                    else "no price-move filter. ")
                 + f"Generated {time.strftime('%b %d, %Y %I:%M %p')}.")
-    page = (HTML_PAGE.replace("__ODDS_CSS__", ODDS_CSS).replace("__ODDS_TOGGLE__", ODDS_TOGGLE)
-            .replace("</body>", ODDS_JS + "</body>")
+    page = (HTML_PAGE.replace("__ODDS_CSS__", ODDS_CSS + MOBILE_CSS).replace("__ODDS_TOGGLE__", ODDS_TOGGLE)
+            .replace("</body>", ODDS_JS + MOBILE_JS + "</body>")
             .replace("__CATEGORY__", esc(args.category.title()))
             .replace("__SUBTITLE__", esc(subtitle)).replace("__ROWS__", "\n".join(out)))
     with open(path, "w") as f:

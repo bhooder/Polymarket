@@ -263,7 +263,7 @@ REPORT = """<!doctype html>
   .tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
   .tile { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
   .tile b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
-  .tile span { color:var(--muted); font-size:13px; }
+  .tile > span { color:var(--muted); font-size:13px; }
   .wrap { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow-x:auto; }
   table { width:100%; border-collapse:collapse; }
   th, td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
@@ -271,6 +271,7 @@ REPORT = """<!doctype html>
   th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
   tr:last-child td { border-bottom:0; }
   .num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.pick { font-weight:700; }
   .up { color:var(--up); } .down { color:var(--down); }
   a { color:var(--accent); text-decoration:none; }
   .note { color:var(--muted); font-size:13px; margin-top:16px; }
@@ -333,7 +334,7 @@ def write_reports(state):
         return f'<a href="{esc(b["link"])}" target="_blank">View &rarr;</a>' if b["link"] else ""
 
     open_rows = "".join(
-        f'<tr><td>{short_time(b["placed_at"])}</td><td><b>{esc(str(b["pick"]))}</b></td>'
+        f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
         f'<td class="market">{esc(b["market"])}</td><td>{short_time(b["ends"]) if b["ends"] else ""}</td>'
         f'<td class="num">{b["stake"]:.0%}</td><td class="num">{b["bettors"]}</td>'
@@ -341,7 +342,7 @@ def write_reports(state):
         f'<td class="num">${b["cost"]:.2f}</td><td>{link(b)}</td></tr>'
         for b in reversed(open_bets(state))) or '<tr><td colspan="11">None yet.</td></tr>'
     done_rows = "".join(
-        f'<tr><td>{short_time(b["placed_at"])}</td><td><b>{esc(str(b["pick"]))}</b></td>'
+        f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td>{VENUE_NAMES.get(b.get("venue", "polymarket_intl"))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="{"up" if b["status"] == "won" else "down" if b["status"] == "lost" else ""}">'
@@ -353,8 +354,9 @@ def write_reports(state):
         for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
     sub = (f"Started {short_time(state['started_at'])} with ${state['start_bankroll']:,.0f}. "
            f"Last updated {time.strftime('%b %d %I:%M %p')}.")
-    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS).replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
-            .replace("</body>", scanner.ODDS_JS + "</body>")
+    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
+            .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
+            .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
             .replace("__SUB__", esc(sub)).replace("__TILES__", tiles_html)
             .replace("__OPEN__", open_rows).replace("__DONE__", done_rows))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
