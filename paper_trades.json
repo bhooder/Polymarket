@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 995.3808098837803,
+ "cash": 985.1208098837803,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -337,6 +337,42 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T19:27:43.057475+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hawks",
+   "market": "Cavaliers vs. Hawks",
+   "link": "https://polymarket.com/event/nba-cle-atl-2026-10-29",
+   "market_type": "moneyline",
+   "condition_id": "0x1d06cb74c42d371dd4ce3c26f239df4eaf534c6e252dc5459723f41774158223",
+   "token_id": "11234332954131189575658873103086066857368405563296373560568776922697137810841",
+   "outcome_index": 1,
+   "ends": "2026-10-30T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 22.4,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 19.093800060742847,
+   "cost": 10.26,
+   "fees": 0.3312,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-cle-atl-2026-10-29",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5373,
+    "kalshi": 0.5378
+   },
+   "intl_cost_per_share": 0.52,
    "payout": null,
    "profit": null,
    "settled_at": null,
