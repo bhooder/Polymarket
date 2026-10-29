@@ -10,13 +10,13 @@
             --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e; } }
   body { margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
          font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  main { max-width:1100px; margin:0 auto; }
+  main { max-width:1280px; margin:0 auto; }
   h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:17px; margin:28px 0 10px; }
   .sub { color:var(--muted); margin:0 0 20px; }
   .tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
   .tile { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
   .tile b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
-  .tile span { color:var(--muted); font-size:13px; }
+  .tile > span { color:var(--muted); font-size:13px; }
   .wrap { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow-x:auto; }
   table { width:100%; border-collapse:collapse; }
   th, td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
@@ -24,6 +24,7 @@
   th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
   tr:last-child td { border-bottom:0; }
   .num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.pick { font-weight:700; }
   .up { color:var(--up); } .down { color:var(--down); }
   a { color:var(--accent); text-decoration:none; }
   .note { color:var(--muted); font-size:13px; margin-top:16px; }
@@ -33,20 +34,41 @@
                    font:inherit; font-size:13px; cursor:pointer; }
   .toggle button.on { background:var(--accent); color:#fff; }
 
+  @media (max-width: 640px) {
+    body { padding:16px 12px; }
+    h1 { font-size:21px; }
+    .tiles { grid-template-columns:repeat(3, 1fr); gap:8px; }
+    .tile { padding:10px 12px; }
+    .tile b { font-size:17px; }
+    .wrap { background:none; border:0; overflow:visible; }
+    table, tbody, tr, td { display:block; }
+    thead { display:none; }
+    tr { display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line);
+         border-radius:12px; padding:10px 14px; margin-bottom:10px; }
+    td { padding:4px 0; border:0 !important; white-space:normal; text-align:right; }
+    td[data-label]::before { content:attr(data-label); float:left; color:var(--muted); font-size:13px;
+                             font-weight:400; padding-right:12px; }
+    td.pick { order:-2; text-align:left; font-size:17px; font-weight:700; }
+    td.market { order:-1; text-align:left; min-width:0; color:var(--muted); font-size:13px;
+                padding-bottom:8px; margin-bottom:4px; border-bottom:1px solid var(--line) !important; }
+    td.pick::before, td.market::before, td.rank { display:none; }
+    td.bettors { font-size:15px; }
+  }
+
 </style></head><body><main>
 <h1>Paper Trading Results</h1>
-<p class="sub">Started Oct 27 11:34 AM with $1,000. Last updated Oct 28 11:05 PM.</p>
+<p class="sub">Started Oct 27 11:34 AM with $1,000. Last updated Oct 28 11:27 PM.</p>
 <div class="toggle" role="group" aria-label="Price format">
 <button data-fmt="price" class="on">Price</button><button data-fmt="odds">American odds</button></div>
 <div class="tiles"><div class="tile"><b>$1,017.47</b><span>Bankroll</span></div><div class="tile"><b><span class="up">+17.47</span></b><span>Since start</span></div><div class="tile"><b>4-2</b><span>Won-lost</span></div><div class="tile"><b>+19.4%</b><span>Return per $ bet</span></div><div class="tile"><b>1</b><span>Open bets</span></div><div class="tile"><b>$1,007.38</b><span>Cash</span></div></div>
 <h2>Open bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Ends</th>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
 <th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
-<th class="num">Price</th><th class="num">Cost</th><th></th></tr></thead><tbody><tr><td>Oct 28 08:28 PM</td><td><b>Mavericks</b></td><td>Polymarket US</td><td class="market">Spread: Thunder (-5.5)</td><td>Oct 28 09:30 PM</td><td class="num">1%</td><td class="num">5</td><td class="num">12.5%</td><td class="num"><span class="px" data-p="0.52">0.520</span></td><td class="num">$10.09</td><td><a href="https://polymarket.com/event/nba-okc-dal-2026-10-28" target="_blank">View &rarr;</a></td></tr></tbody></table></div>
+<th class="num">Price</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody><tr><td>Oct 28 08:28 PM</td><td class="pick">Mavericks</td><td class="market">Spread: Thunder (-5.5)</td><td class="num">1%</td><td class="num">5</td><td class="num">12.5%</td><td class="num"><span class="px" data-p="0.52">0.520</span></td><td class="num">$10.09</td><td>Polymarket US</td><td>Oct 28 09:30 PM</td><td><a href="https://polymarket.com/event/nba-okc-dal-2026-10-28" target="_blank">View &rarr;</a></td></tr></tbody></table></div>
 <h2>Settled bets</h2>
-<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Venue</th><th>Market</th><th>Result</th>
+<div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
 <th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
-<th class="num">Paid</th><th class="num">Profit</th></tr></thead><tbody><tr><td>Oct 28 07:26 PM</td><td><b>Raptors</b></td><td>Polymarket US</td><td class="market">Spread: Raptors (-4.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.53">0.530</span></td><td class="num">$10.09</td><td class="num">$18.44</td><td class="num up">+8.35</td></tr><tr><td>Oct 27 10:54 PM</td><td><b>Trail Blazers</b></td><td>Polymarket US</td><td class="market">Spread: Lakers (-2.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.54">0.540</span></td><td class="num">$10.21</td><td class="num">$18.32</td><td class="num up">+8.11</td></tr><tr><td>Oct 27 07:31 PM</td><td><b>Devils</b></td><td>Polymarket US</td><td class="market">Devils vs. Stars</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.49">0.490</span></td><td class="num">$19.80</td><td class="num">$39.02</td><td class="num up">+19.22</td></tr><tr><td>Oct 27 03:08 PM</td><td><b>Lakers</b></td><td>Polymarket US</td><td class="market">Trail Blazers vs. Lakers</td><td class="down">Lost</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.5349">0.535</span></td><td class="num">$20.11</td><td class="num">$0.00</td><td class="num down">-20.11</td></tr><tr><td>Oct 27 12:10 PM</td><td><b>Knicks</b></td><td>Kalshi</td><td class="market">Pistons vs. Knicks</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.6097">0.610</span></td><td class="num">$19.98</td><td class="num">$31.88</td><td class="num up">+11.90</td></tr><tr><td>Oct 27 11:42 AM</td><td><b>Giovanni Mpetshi Perricard</b></td><td>Polymarket (intl, before US switch)</td><td class="market">Swiss Indoors Basel: Giovanni Mpetshi Perricard vs Arthur Fils</td><td class="down">Lost</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.27">0.270</span></td><td class="num">$10.00</td><td class="num">$0.00</td><td class="num down">-10.00</td></tr></tbody></table></div>
+<th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody><tr><td>Oct 28 07:26 PM</td><td class="pick">Raptors</td><td class="market">Spread: Raptors (-4.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.53">0.530</span></td><td class="num">$10.09</td><td class="num">$18.44</td><td class="num up">+8.35</td><td>Polymarket US</td></tr><tr><td>Oct 27 10:54 PM</td><td class="pick">Trail Blazers</td><td class="market">Spread: Lakers (-2.5)</td><td class="up">Won</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.54">0.540</span></td><td class="num">$10.21</td><td class="num">$18.32</td><td class="num up">+8.11</td><td>Polymarket US</td></tr><tr><td>Oct 27 07:31 PM</td><td class="pick">Devils</td><td class="market">Devils vs. Stars</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.49">0.490</span></td><td class="num">$19.80</td><td class="num">$39.02</td><td class="num up">+19.22</td><td>Polymarket US</td></tr><tr><td>Oct 27 03:08 PM</td><td class="pick">Lakers</td><td class="market">Trail Blazers vs. Lakers</td><td class="down">Lost</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.5349">0.535</span></td><td class="num">$20.11</td><td class="num">$0.00</td><td class="num down">-20.11</td><td>Polymarket US</td></tr><tr><td>Oct 27 12:10 PM</td><td class="pick">Knicks</td><td class="market">Pistons vs. Knicks</td><td class="up">Won</td><td class="num">2%</td><td class="num"><span class="px" data-p="0.6097">0.610</span></td><td class="num">$19.98</td><td class="num">$31.88</td><td class="num up">+11.90</td><td>Kalshi</td></tr><tr><td>Oct 27 11:42 AM</td><td class="pick">Giovanni Mpetshi Perricard</td><td class="market">Swiss Indoors Basel: Giovanni Mpetshi Perricard vs Arthur Fils</td><td class="down">Lost</td><td class="num">1%</td><td class="num"><span class="px" data-p="0.27">0.270</span></td><td class="num">$10.00</td><td class="num">$0.00</td><td class="num down">-10.00</td><td>Polymarket (intl, before US switch)</td></tr></tbody></table></div>
 <p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
 had the lowest price including fees, from the real order books.
 Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
@@ -67,4 +89,12 @@ document.querySelectorAll(".toggle button").forEach(b => b.addEventListener("cli
 let saved = "price";
 try { saved = localStorage.getItem("price-format") || "price"; } catch (e) {}
 showPrices(saved);
+</script><script>
+document.querySelectorAll("table").forEach(t => {  // label each cell with its column name for the phone cards
+  const heads = [...t.querySelectorAll("thead th")].map(th => th.textContent.trim());
+  t.querySelectorAll("tbody tr").forEach(tr => {
+    if (tr.cells.length !== heads.length) return;
+    [...tr.cells].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; });
+  });
+});
 </script></body></html>
