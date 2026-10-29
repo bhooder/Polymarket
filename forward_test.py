@@ -194,7 +194,7 @@ def place(state, pick, info, stake, existing=None):
     state["bets"].append({
         "placed_at": now().isoformat(), "status": "open", "stake": stake,
         "pick": pick["Pick"], "market": pick["Market"], "link": pick["Link"],
-        "condition_id": pick["condition_id"], "token_id": pick["token_id"],
+        "market_type": info.get("sportsMarketType"), "condition_id": pick["condition_id"], "token_id": pick["token_id"],
         "outcome_index": pick["outcome_index"], "ends": decided_by(info).isoformat(),
         "bettors": pick["Bettors"], "avg_bankroll_pct": pick["Avg bankroll %"],
         "traders_entry": pick["Avg entry price"], "avg_price": round(fill["avg_price"], 4),
@@ -212,11 +212,27 @@ def place(state, pick, info, stake, existing=None):
     return state["bets"][-1]
 
 
+# Moneyline and spread bets on the same game would partly cancel out, so a game gets at most
+# one of them. Totals (over/under) are allowed alongside either.
+SIDE_TYPES = ("moneyline", "spreads")
+
+
+def side_game(link, market_type):
+    """The game (its Polymarket event link) if this is a moneyline or spread bet, else None."""
+    return link if link and market_type in SIDE_TYPES else None
+
+
+def bet_type(b):
+    # Bets placed before 2026-10-29 didn't record market_type; their spread markets say "Spread:"
+    return b.get("market_type") or ("spreads" if b["market"].startswith("Spread:") else None)
+
+
 def trade(state, picks):
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
     by_market = {b["condition_id"] for b in open_bets(state)}
+    by_game = {side_game(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
     for pick in picks:
         stake = stake_for(pick["Bettors"], pick["Avg bankroll %"])
         if not stake:
@@ -239,10 +255,16 @@ def trade(state, picks):
             continue
         if pick["condition_id"] in by_market:
             continue  # we already bet the other side; never hold both
+        game = side_game(pick["Link"], m.get("sportsMarketType"))
+        if game in by_game:
+            print(f"  skip (already have a moneyline/spread bet on this game): {label}")
+            continue
         bet = place(state, pick, m, stake)
         if bet:
             by_token[pick["token_id"]] = bet
             by_market.add(pick["condition_id"])
+            if game:
+                by_game.add(game)
 
 
 REPORT = """<!doctype html>
