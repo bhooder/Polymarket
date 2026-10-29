@@ -1,9 +1,9 @@
-# Runs the forward test every hour on GitHub's computers and saves the results back here.
-name: Hourly forward test
+# Runs the forward test every 15 minutes on GitHub's computers and saves the results back here.
+name: Forward test (every 15 min)
 
 on:
   schedule:
-    - cron: "17 * * * *"   # every hour at :17 (GitHub may start it late)
+    - cron: "2,17,32,47 * * * *"   # every 15 minutes (GitHub may start it late or skip one when busy)
   workflow_dispatch:        # adds a "Run workflow" button on the Actions tab
 
 permissions:

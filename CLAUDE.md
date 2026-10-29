@@ -23,7 +23,7 @@ real orders and never touches money, wallets, or private keys.
 - `venues.py`: finds the same bet on Polymarket US and Kalshi, prices it from
   real order books with fees, and settles it.
 - `.github/workflows/hourly.yml`: GitHub Actions runs the forward test every
-  hour at :17 and commits the results back to the repo.
+  15 minutes (:02, :17, :32, :47) and commits the results back to the repo.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
@@ -79,7 +79,7 @@ The owner's rules:
   Kalshi. Each bet goes to whichever has the lowest all-in cost per share
   (fees included) and passes the price rule. The international Polymarket
   price is recorded for comparison only.
-- Runs every hour on GitHub Actions.
+- Runs every 15 minutes on GitHub Actions (hourly until 2026-10-28).
 
 Status as of 2026-10-27: 2 open bets. Perricard (tennis, placed on
 international Polymarket before the switch to US venues) and Knicks (Kalshi).
