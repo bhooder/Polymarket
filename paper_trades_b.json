@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 930.0004556471158,
+ "cash": 934.5511589836752,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -112,7 +112,7 @@
   },
   {
    "placed_at": "2026-10-29T15:36:47.987688+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Atalanta BC win on 2026-10-29?",
@@ -141,9 +141,9 @@
     "kalshi": 0.6953
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.59,
+   "profit": 4.59,
+   "settled_at": "2026-10-29T22:20:39.120259+00:00",
    "topped_up_at": null
   },
   {
@@ -177,6 +177,41 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-29T22:22:21.175283+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Kings vs. Pelicans",
+   "link": "https://polymarket.com/event/nba-sac-nop-2026-10-29",
+   "market_type": "moneyline",
+   "condition_id": "0x7588538456737566d4ba3821ce5da504a97ba1215e5d002e84a810143eac40df",
+   "token_id": "10130191341488022709826159345266789532499164135367927185216861667201459939250",
+   "outcome_index": 1,
+   "ends": "2026-10-30T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.0,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 14.44122249838903,
+   "cost": 10.04,
+   "fees": 0.22,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26OCT29SACNOP-NOP",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6952
+   },
+   "intl_cost_per_share": 0.68,
    "payout": null,
    "profit": null,
    "settled_at": null,
