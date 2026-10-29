@@ -83,6 +83,13 @@ The owner's rules:
   price is recorded for comparison only.
 - Runs every 15 minutes on GitHub Actions (hourly until 2026-10-28).
 
+Statistics tab (paper_report.html, added 2026-10-29): null hypothesis = the
+market price is the true win chance. Per bet, expected profit = shares x price
+- cost (minus the fees), variance = shares^2 x p(1-p). Z "beat the market" =
+(profit - expected) / SD; Z "make money" = profit / SD. Verdicts need 30+
+settled bets; the decision point is fixed at 200 settled bets (no early
+stopping). Breakdowns by bet type, stake tier and sport (from the event slug).
+
 Status as of 2026-10-27: 2 open bets. Perricard (tennis, placed on
 international Polymarket before the switch to US venues) and Knicks (Kalshi).
 Check results after a few weeks. A handful of bets proves nothing.

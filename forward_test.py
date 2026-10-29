@@ -20,6 +20,7 @@ Usage:
 import csv
 import html
 import json
+import math
 import os
 import shutil
 import time
@@ -228,7 +229,7 @@ def bet_type(b):
     # say "Spread:" or "O/U"
     if b.get("market_type"):
         return b["market_type"]
-    return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else None
+    return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
 def trade(state, picks):
@@ -272,6 +273,120 @@ def trade(state, picks):
                 by_slot.add(slot)
 
 
+# ---------------- Statistics tab ----------------
+# Null hypothesis: the market price is the true chance of winning. Under it, a bet of `shares`
+# bought at pre-fee price q has expected profit shares*q - cost (i.e. minus the fees) and
+# variance shares^2 * q * (1 - q). Z = (actual - expected) / SD over all settled bets.
+MIN_BETS = 30     # below this, don't read anything into the numbers
+REVIEW_AT = 200   # decide whether it works at this many settled bets, not before
+
+TYPE_NAMES = {"moneyline": "Moneyline", "spreads": "Spread", "totals": "Total"}
+SPORTS = {"nba": "Basketball", "wnba": "Basketball", "cbb": "Basketball", "ncaab": "Basketball",
+          "nfl": "Football", "cfb": "Football", "nhl": "Hockey", "mlb": "Baseball",
+          "atp": "Tennis", "wta": "Tennis", "ufc": "MMA", "cs2": "Esports", "lol": "Esports",
+          "dota2": "Esports", "val": "Esports", "epl": "Soccer", "lal": "Soccer", "sea": "Soccer",
+          "bun": "Soccer", "fl1": "Soccer", "ucl": "Soccer", "uel": "Soccer", "mls": "Soccer"}
+
+
+def sport_of(b):
+    prefix = (b.get("link") or "").rstrip("/").rsplit("/", 1)[-1].split("-")[0]
+    return SPORTS.get(prefix, prefix.upper() or "Other")  # unknown leagues show their code
+
+
+def summarize(bets):
+    n = len(bets)
+    wins = sum(b["status"] == "won" for b in bets)
+    exp_wins = sum(b["avg_price"] for b in bets)
+    staked = sum(b["cost"] for b in bets)
+    profit = sum(b["profit"] for b in bets)
+    exp_profit = sum(b["shares"] * b["avg_price"] - b["cost"] for b in bets)
+    sd = math.sqrt(sum(b["shares"] ** 2 * b["avg_price"] * (1 - b["avg_price"]) for b in bets))
+    return {"n": n, "wins": wins, "exp_wins": exp_wins, "staked": staked, "profit": profit,
+            "exp_profit": exp_profit, "sd": sd,
+            "z_market": (profit - exp_profit) / sd if sd else None,  # beat the market's odds?
+            "z_money": profit / sd if sd else None}                  # made money after fees?
+
+
+def verdict(n, z, goal):
+    """(css class, plain-English verdict) for one test."""
+    if n < MIN_BETS or z is None:
+        return "", f"Too few settled bets to judge ({n} so far, need at least {MIN_BETS})."
+    when = ("This is the review point: time to decide." if n >= REVIEW_AT
+            else f"Not proof yet. Decide at {REVIEW_AT} settled bets.")
+    if z >= 2:
+        return "good", f"Above 2 SD: the picks might really {goal}. {when}"
+    if z <= -2:
+        return "bad", f"Below 2 SD: doing worse than bad luck alone would explain. {when}"
+    return "", f"Within normal luck: no real evidence either way yet. {when}"
+
+
+def stats_html(done):
+    bets = [b for b in done if b["status"] in ("won", "lost", "push")]
+    t = summarize(bets)
+    n = t["n"]
+    fmt_z = lambda z: f"{z:+.2f}" if z is not None else "&ndash;"
+    money = lambda v: f'<span class="{"up" if v > 0 else "down" if v < 0 else ""}">{v:+,.2f}</span>'
+    win_pct = f'{t["wins"] / n:.0%}' if n else "&ndash;"
+    exp_pct = f'{t["exp_wins"] / n:.0%}' if n else "&ndash;"
+    tiles = [
+        (f"{n} / {REVIEW_AT}", "Settled bets (review at 200)"),
+        (f"{win_pct} <small class=muted>vs {exp_pct}</small>", "Win rate vs market's odds"),
+        (money(t["profit"]), "Actual profit"),
+        (money(t["exp_profit"]), "Expected if market is right"),
+        (f"&plusmn;${t['sd']:,.2f}", "1 SD (normal luck range)"),
+        (f"&plusmn;${2 * t['sd']:,.2f}", "2 SD"),
+    ]
+    out = ['<div class="tiles">' + "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>'
+                                          for v, k in tiles) + "</div>"]
+    cards = [("Do the picks beat the market's odds?", t["z_market"], "beat the market's odds"),
+             ("Do the picks make money after fees?", t["z_money"], "make money after fees")]
+    out.append('<div class="verdicts">')
+    for title, z, goal in cards:
+        cls, text = verdict(n, z, goal)
+        out.append(f'<div class="verdict {cls}"><h3>{title}</h3><div class="z">Z = {fmt_z(z)}</div>'
+                   f'<p>{text}</p></div>')
+    out.append("</div>")
+
+    def table(title, key):
+        groups = {}
+        for b in bets:
+            groups.setdefault(key(b), []).append(b)
+        rows = []
+        for name, gb in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+            g = summarize(gb)
+            ret = f'{g["profit"] / g["staked"]:+.1%}' if g["staked"] else "&ndash;"
+            z_cls = "num" + (" muted" if g["n"] < MIN_BETS else "")
+            rows.append(
+                f'<tr><td class="pick">{html.escape(str(name))}</td><td class="num">{g["n"]}</td>'
+                f'<td class="num">{g["wins"]}-{g["n"] - g["wins"]}</td>'
+                f'<td class="num">{g["wins"] / g["n"]:.0%} <span class="muted">({g["exp_wins"] / g["n"]:.0%})</span></td>'
+                f'<td class="num">${g["staked"]:,.2f}</td><td class="num">{money(g["profit"])}</td>'
+                f'<td class="num">{ret}</td><td class="{z_cls}">{fmt_z(g["z_market"])}</td></tr>')
+        body = "".join(rows) or '<tr><td colspan="8">None yet.</td></tr>'
+        return (f'<h2>{title}</h2><div class="wrap"><table><thead><tr><th>{title[3:]}</th>'
+                f'<th class="num">Bets</th><th class="num">Won-lost</th><th class="num">Win % (expected)</th>'
+                f'<th class="num">Staked</th><th class="num">Profit</th><th class="num">Return</th>'
+                f'<th class="num">Z vs market</th></tr></thead><tbody>{body}</tbody></table></div>')
+
+    out.append(table("By bet type", lambda b: TYPE_NAMES.get(bet_type(b), "Other")))
+    out.append(table("By stake", lambda b: f'{b["stake"]:.0%}'))
+    out.append(table("By sport", sport_of))
+    out.append(f"""<h2>What these numbers mean</h2><div class="explain">
+<p><b>Expected if market is right:</b> each price is the market's guess at the chance of winning
+(0.60 = 60%). If those guesses are right, this is what the bets should make on average: a small loss,
+the fees.</p>
+<p><b>SD (standard deviation):</b> how far luck alone usually moves the result. About 2 in 3 times
+the actual profit lands within 1 SD of expected; about 95% of the time within 2 SD.</p>
+<p><b>Z:</b> how many SDs the actual result is from the target. Above +2 happens by luck only about
+2&ndash;3% of the time, so it hints the picks have a real edge. "Beat the market" compares with the
+expected loss from fees; "make money" compares with breaking even, which is a harder bar.</p>
+<p><b>Be patient:</b> with a real 10% edge it takes about 400 bets on average to reach 2 SD. Checking
+often and stopping the first time Z touches 2 makes a fluke much more likely, so the decision point
+is fixed at {REVIEW_AT} settled bets. Group Z-scores in grey have under {MIN_BETS} bets and mean little.</p>
+</div>""")
+    return "\n".join(out)
+
+
 REPORT = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -302,10 +417,27 @@ REPORT = """<!doctype html>
   .up { color:var(--up); } .down { color:var(--down); }
   a { color:var(--accent); text-decoration:none; }
   .note { color:var(--muted); font-size:13px; margin-top:16px; }
+  .tabs { display:flex; gap:4px; border-bottom:1px solid var(--line); margin:0 0 18px; }
+  .tabs button { border:0; background:none; color:var(--muted); font:inherit; font-weight:600;
+                 padding:8px 14px; border-bottom:2px solid transparent; margin-bottom:-1px; cursor:pointer; }
+  .tabs button.on { color:var(--text); border-bottom-color:var(--accent); }
+  .verdicts { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:12px; }
+  .verdict { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--muted);
+             border-radius:12px; padding:14px 16px; }
+  .verdict.good { border-left-color:var(--up); } .verdict.bad { border-left-color:var(--down); }
+  .verdict h3 { font-size:14px; margin:0 0 6px; color:var(--muted); font-weight:600; }
+  .verdict p { margin:0; }
+  .verdict .z { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; margin-bottom:4px; }
+  .explain { color:var(--muted); font-size:14px; }
+  .explain p { margin:8px 0; }
+  .muted { color:var(--muted); }
 __ODDS_CSS__
 </style></head><body><main>
 <h1>Paper Trading Results</h1>
 <p class="sub">__SUB__</p>
+<div class="tabs" role="tablist"><button data-tab="bets" class="on">Bets</button>
+<button data-tab="stats">Statistics</button></div>
+<section id="tab-bets">
 __ODDS_TOGGLE__
 <div class="tiles">__TILES__</div>
 <h2>Open bets</h2>
@@ -316,10 +448,21 @@ __ODDS_TOGGLE__
 <div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
 <th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
 <th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody>__DONE__</tbody></table></div>
+</section>
+<section id="tab-stats" hidden>__STATS__</section>
 <p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
 had the lowest price including fees, from the real order books.
 Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
-</main></body></html>
+</main>
+<script>
+function showTab(name) {
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === name));
+  document.querySelectorAll("section[id^=tab-]").forEach(s => s.hidden = s.id !== "tab-" + name);
+  try { localStorage.setItem("report-tab", name); } catch (e) {}
+}
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
+try { const t = localStorage.getItem("report-tab"); if (t) showTab(t); } catch (e) {}
+</script></body></html>
 """
 
 
@@ -386,7 +529,7 @@ def write_reports(state):
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
-            .replace("__SUB__", esc(sub)).replace("__TILES__", tiles_html)
+            .replace("__SUB__", esc(sub)).replace("__TILES__", tiles_html).replace("__STATS__", stats_html(done))
             .replace("__OPEN__", open_rows).replace("__DONE__", done_rows))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
         f.write(page)
