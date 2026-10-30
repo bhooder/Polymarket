@@ -76,6 +76,10 @@ The owner's rules:
 - Price rule: the price actually paid (before fees) must be at most 2c ABOVE
   or 4c BELOW the traders' average entry. (The scanner's 4c filter is off
   in the forward test.)
+- Underdog sizing (added 2026-10-30, both strategies, top-ups too): picks
+  priced under 40c get stake x sqrt((p/(1-p)) / (0.4/0.6)), so each bet has about
+  the same luck risk as a 40c bet: 30c x0.80, 20c x0.61, 10c x0.41. No price
+  floor. Uses the current Polymarket price. Older bets are unchanged.
 - Hold until the market is decided. At most 50% of the bankroll in open bets.
 - Venues: only US-regulated venues, Polymarket US and
   Kalshi. Each bet goes to whichever has the lowest all-in cost per share

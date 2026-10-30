@@ -40,6 +40,7 @@ MAX_DAYS_TO_END = 3      # only markets that end within this many days
 MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at once
 MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry...
 MAX_BELOW = 0.04         # ...and at most 4c less
+UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
 # Each strategy has its own pretend bankroll and state file; all other rules are shared.
 # tiers: (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...]),
@@ -60,6 +61,16 @@ STRATEGIES = {
 
 def now():
     return datetime.now(timezone.utc)
+
+
+def size_multiplier(price):
+    """Shrink bets on underdogs so each carries about the same luck risk as a 40c bet.
+    One bet's SD is stake * sqrt((1-p)/p), so scale the stake by sqrt(p/(1-p)), normalised to 1
+    at 40c: 40c -> 1.00, 30c -> 0.80, 20c -> 0.61, 10c -> 0.41. Added 2026-10-30."""
+    if price >= UNDERDOG_BELOW:
+        return 1.0
+    p = max(price, 0.01)
+    return math.sqrt((p / (1 - p)) / (UNDERDOG_BELOW / (1 - UNDERDOG_BELOW)))
 
 
 def stake_for(bettors, avg_pct, tiers):
@@ -170,7 +181,8 @@ def place(state, pick, info, stake, existing=None):
     Returns the bet, or None if it was skipped."""
     label = f"{pick['Pick']} / {pick['Market'][:50]}"
     roll = bankroll(state)
-    dollars = round(stake * roll, 2) if existing is None else round(0.01 * roll, 2)
+    mult = size_multiplier(pick["Price now"])  # current Polymarket price, close to the US-venue one
+    dollars = round((stake if existing is None else 0.01) * roll * mult, 2)
     exposure = sum(b["cost"] for b in open_bets(state))
     if exposure + dollars > MAX_EXPOSURE * roll or dollars > state["cash"]:
         print(f"  skip (50% cap reached): {label}")
@@ -201,12 +213,13 @@ def place(state, pick, info, stake, existing=None):
         existing["topped_up_at"] = now().isoformat()
         existing["top_up_bettors"] = pick["Bettors"]  # "bettors" stays the count when first placed
         existing["top_up_avg_bankroll_pct"] = pick["Avg bankroll %"]
+        existing["top_up_size_multiplier"] = round(mult, 3)
         print(f"  TOP UP to 2% on {fill['venue']}: +${fill['cost']:.2f}  {label}")
         return existing
     state["bets"].append({
         "placed_at": now().isoformat(), "status": "open", "stake": stake,
         "pick": pick["Pick"], "market": pick["Market"], "link": pick["Link"],
-        "market_type": info.get("sportsMarketType"), "condition_id": pick["condition_id"], "token_id": pick["token_id"],
+        "market_type": info.get("sportsMarketType"), "size_multiplier": round(mult, 3), "condition_id": pick["condition_id"], "token_id": pick["token_id"],
         "outcome_index": pick["outcome_index"], "ends": decided_by(info).isoformat(),
         "bettors": pick["Bettors"], "avg_bankroll_pct": pick["Avg bankroll %"],
         "traders_entry": pick["Avg entry price"], "avg_price": round(fill["avg_price"], 4),
@@ -519,6 +532,12 @@ def bets_html(cfg, state):
     ]
     tiles_html = "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>' for v, k in tiles)
 
+    def stake_text(b):
+        """Stake tier, plus the underdog size multiplier when it shrank the bet."""
+        mults = dict.fromkeys(m for m in (b.get("size_multiplier"), b.get("top_up_size_multiplier"))
+                              if m and m < 1)  # once if the bet and its top-up shrank the same
+        return f'{b["stake"]:.0%}' + "".join(f' <span class="muted">&times;{m:.2f}</span>' for m in mults)
+
     def bettors_text(b):
         """Bettors when placed, and at the top-up if there was one (older top-ups didn't record it)."""
         if not b.get("topped_up_at"):
@@ -534,7 +553,7 @@ def bets_html(cfg, state):
     open_rows = "".join(
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
-        f'<td class="num">{b["stake"]:.0%}</td><td class="num">{bettors_text(b)}</td>'
+        f'<td class="num">{stake_text(b)}</td><td class="num">{bettors_text(b)}</td>'
         f'<td class="num">{b["avg_bankroll_pct"]:.1f}%</td><td class="num">{scanner.px(b["avg_price"], 3)}</td>'
         f'<td class="num">${b["cost"]:.2f}</td><td>{venue_name(b)}</td>'
         f'<td>{short_time(b["ends"]) if b["ends"] else ""}</td><td>{link(b)}</td></tr>'
@@ -543,7 +562,7 @@ def bets_html(cfg, state):
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="{"up" if b["status"] == "won" else "down" if b["status"] == "lost" else ""}">'
-        f'{b["status"].title()}</td><td class="num">{b["stake"]:.0%}</td>'
+        f'{b["status"].title()}</td><td class="num">{stake_text(b)}</td>'
         f'<td class="num">{scanner.px(b["avg_price"], 3)}</td><td class="num">${b["cost"]:.2f}</td>'
         f'<td class="num">${b["payout"]:.2f}</td>'
         f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
