@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1029.037334675941,
+ "cash": 1007.857334675941,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -391,6 +391,78 @@
     "kalshi": 0.888
    },
    "intl_cost_per_share": 0.89,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T14:40:56.513615+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "Hornets vs. Wizards",
+   "link": "https://polymarket.com/event/nba-cha-was-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0x786477de245fa8dcb4f06619a84e02a631f2f202a6c60424612f42d85b0f5c23",
+   "token_id": "34344679499028828435361410606280794811838854320630032365355848756799176559692",
+   "outcome_index": 0,
+   "ends": "2026-10-30T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 20.87242190358656,
+   "cost": 10.59,
+   "fees": 0.3625,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-cha-was-2026-10-30",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5074,
+    "kalshi": 0.5077
+   },
+   "intl_cost_per_share": 0.49,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T14:40:57.374985+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Raptors (-6.5)",
+   "link": "https://polymarket.com/event/nba-orl-tor-2026-10-30",
+   "market_type": "spreads",
+   "condition_id": "0x5159fea5ed17a28ce81d5df0c4c2c0adfa5fd285a17d503e0f61894d4121a647",
+   "token_id": "20180398848679150486796964244874103041803607549021283035173193822418033945029",
+   "outcome_index": 0,
+   "ends": "2026-10-30T23:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 21.73143739709503,
+   "cost": 10.59,
+   "fees": 0.3762,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-orl-tor-2026-10-30-pos-6pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4873,
+    "kalshi": 0.4875
+   },
+   "intl_cost_per_share": 0.46,
    "payout": null,
    "profit": null,
    "settled_at": null,
