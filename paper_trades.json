@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 954.3474282412683,
+ "cash": 1031.7968951566086,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -273,7 +273,7 @@
   },
   {
    "placed_at": "2026-10-29T17:33:47.431277+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Capitals",
    "market": "Capitals vs. Predators",
@@ -301,14 +301,14 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.81,
+   "profit": 9.56,
+   "settled_at": "2026-10-30T02:53:16.069607+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-29T17:33:47.889251+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Blues",
    "market": "Bruins vs. Blues",
@@ -337,14 +337,14 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.46,
+   "profit": 9.2,
+   "settled_at": "2026-10-30T02:53:16.102806+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-29T19:27:43.057475+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Hawks",
    "market": "Cavaliers vs. Hawks",
@@ -373,9 +373,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.52,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.19,
+   "profit": 17.67,
+   "settled_at": "2026-10-30T02:53:16.131410+00:00",
    "topped_up_at": "2026-10-29T23:51:19.168034+00:00"
   },
   {

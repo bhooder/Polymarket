@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 884.301256592265,
+ "cash": 937.2535761507492,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -184,7 +184,7 @@
   },
   {
    "placed_at": "2026-10-29T22:22:21.175283+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Kings vs. Pelicans",
@@ -212,14 +212,14 @@
     "kalshi": 0.6952
    },
    "intl_cost_per_share": 0.68,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.44,
+   "profit": 4.4,
+   "settled_at": "2026-10-30T02:53:16.309520+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-29T23:10:50.165301+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Cavaliers vs. Hawks: O/U 237.5",
@@ -248,14 +248,14 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.49,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.81,
+   "profit": 9.76,
+   "settled_at": "2026-10-30T02:53:16.337195+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-29T23:10:50.396213+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Stars",
    "market": "Canadiens vs. Stars",
@@ -283,14 +283,14 @@
     "polymarket_us": 0.6462
    },
    "intl_cost_per_share": 0.6417,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.05,
+   "settled_at": "2026-10-30T02:53:16.361715+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-29T23:51:20.201927+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Hawks",
    "market": "Cavaliers vs. Hawks",
@@ -319,9 +319,9 @@
     "kalshi": 0.5377
    },
    "intl_cost_per_share": 0.52,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.7,
+   "profit": 8.65,
+   "settled_at": "2026-10-30T02:53:16.392422+00:00",
    "topped_up_at": null
   },
   {
