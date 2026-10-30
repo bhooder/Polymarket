@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 944.4287687946066,
+ "cash": 933.9431649298723,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -607,6 +607,42 @@
     "kalshi": 0.4677
    },
    "intl_cost_per_share": 0.44,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T21:12:40.349637+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Lakers vs. Warriors: O/U 233.5",
+   "link": "https://polymarket.com/event/nba-lal-gsw-2026-10-30",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf2327999898041d65cb163c3361443ee6a734b2ebaf1f4f7aec5ddb4f9ba5d35",
+   "token_id": "110642866530245371292254884718354259501521832912766537638274410316887426983857",
+   "outcome_index": 1,
+   "ends": "2026-10-31T02:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 20.2512077294686,
+   "cost": 10.49,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26OCT30LALGSW-234",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5178
+   },
+   "intl_cost_per_share": 0.48,
    "payout": null,
    "profit": null,
    "settled_at": null,
