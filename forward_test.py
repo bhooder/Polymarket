@@ -199,6 +199,8 @@ def place(state, pick, info, stake, existing=None):
         existing["avg_price"] = round((existing["cost"] - existing["fees"]) / existing["shares"], 4)
         existing["stake"] = 0.02
         existing["topped_up_at"] = now().isoformat()
+        existing["top_up_bettors"] = pick["Bettors"]  # "bettors" stays the count when first placed
+        existing["top_up_avg_bankroll_pct"] = pick["Avg bankroll %"]
         print(f"  TOP UP to 2% on {fill['venue']}: +${fill['cost']:.2f}  {label}")
         return existing
     state["bets"].append({
@@ -517,6 +519,12 @@ def bets_html(cfg, state):
     ]
     tiles_html = "".join(f'<div class="tile"><b>{v}</b><span>{k}</span></div>' for v, k in tiles)
 
+    def bettors_text(b):
+        """Bettors when placed, and at the top-up if there was one (older top-ups didn't record it)."""
+        if not b.get("topped_up_at"):
+            return str(b["bettors"])
+        return f'{b["bettors"]} &rarr; {b.get("top_up_bettors") or "topped up"}'
+
     def venue_name(b):
         return VENUE_NAMES.get(b.get("venue", "polymarket_intl"))
 
@@ -526,7 +534,7 @@ def bets_html(cfg, state):
     open_rows = "".join(
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
-        f'<td class="num">{b["stake"]:.0%}</td><td class="num">{b["bettors"]}</td>'
+        f'<td class="num">{b["stake"]:.0%}</td><td class="num">{bettors_text(b)}</td>'
         f'<td class="num">{b["avg_bankroll_pct"]:.1f}%</td><td class="num">{scanner.px(b["avg_price"], 3)}</td>'
         f'<td class="num">${b["cost"]:.2f}</td><td>{venue_name(b)}</td>'
         f'<td>{short_time(b["ends"]) if b["ends"] else ""}</td><td>{link(b)}</td></tr>'
