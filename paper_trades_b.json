@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1007.857334675941,
+ "cash": 997.2743713645582,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -463,6 +463,41 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.46,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T15:34:13.480083+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Le Havre AC win on 2026-10-30?",
+   "link": "https://polymarket.com/event/fl1-hac-psg-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0xb5ce1b70e49914b9a30468deedaf01fadb58cd92287a240849e4f3047c8e077f",
+   "token_id": "94208416472373023377085758563097002670506979675512376391763556168716202646450",
+   "outcome_index": 0,
+   "ends": "2026-10-30T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.1,
+   "traders_entry": 0.09,
+   "avg_price": 0.1,
+   "shares": 99.52963311382881,
+   "cost": 10.58,
+   "fees": 0.63,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLIGUE1GAME-26OCT30HACPSG-HAC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.1063
+   },
+   "intl_cost_per_share": 0.1045,
    "payout": null,
    "profit": null,
    "settled_at": null,
