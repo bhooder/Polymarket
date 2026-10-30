@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 904.4011589836754,
+ "cash": 884.301256592265,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -319,6 +319,78 @@
     "kalshi": 0.5377
    },
    "intl_cost_per_share": 0.52,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T02:28:26.842655+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Rockets",
+   "market": "Rockets vs. Mavericks",
+   "link": "https://polymarket.com/event/nba-hou-dal-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0xe1ec65a06032e9c2b0955d3e623dba44279ccb5f82079a36ad93654a92b28daa",
+   "token_id": "14184865897014479084557693862928771294270854682431626413061431220823115991810",
+   "outcome_index": 0,
+   "ends": "2026-10-31T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.2,
+   "traders_entry": 0.64,
+   "avg_price": 0.65,
+   "shares": 15.076772909862223,
+   "cost": 10.05,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26OCT30HOUDAL-HOU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6666,
+    "polymarket_us": 0.6756
+   },
+   "intl_cost_per_share": 0.67,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T02:28:27.560241+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Celtics",
+   "market": "Bulls vs. Celtics",
+   "link": "https://polymarket.com/event/nba-chi-bos-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0x0e4e64e43f20f831e9ebef24a463fec18cccd8d468b9dfba7a2a5ccb41dd51d5",
+   "token_id": "100794745482619143009641772813673351254664671298953393815153754150534257961100",
+   "outcome_index": 1,
+   "ends": "2026-10-30T23:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.1,
+   "traders_entry": 0.87,
+   "avg_price": 0.88,
+   "shares": 11.325995740974816,
+   "cost": 10.05,
+   "fees": 0.0831,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-chi-bos-2026-10-30",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.8873,
+    "kalshi": 0.888
+   },
+   "intl_cost_per_share": 0.89,
    "payout": null,
    "profit": null,
    "settled_at": null,
