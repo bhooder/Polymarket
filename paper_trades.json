@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1031.7968951566086,
+ "cash": 1060.770762305381,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -237,7 +237,7 @@
   },
   {
    "placed_at": "2026-10-29T12:22:48.143623+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Grizzlies",
    "market": "Spread: Trail Blazers (-7.5)",
@@ -266,9 +266,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.68,
+   "profit": 19.16,
+   "settled_at": "2026-10-30T04:58:26.035690+00:00",
    "topped_up_at": "2026-10-30T01:44:02.357312+00:00"
   },
   {
@@ -411,6 +411,41 @@
    "payout": 0.0,
    "profit": -10.25,
    "settled_at": "2026-10-30T04:06:58.071679+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T04:59:41.652673+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Knicks vs. 76ers",
+   "link": "https://polymarket.com/event/nba-nyk-phi-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0x124b43c1e612cd900304968d43f620735fcc02b92c8f738701e9d9f11584f41b",
+   "token_id": "70524022917994571938493534926761110728180258328880260474032281198955761522686",
+   "outcome_index": 0,
+   "ends": "2026-10-30T23:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 20.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.55,
+   "shares": 18.860441545851142,
+   "cost": 10.7,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26OCT30NYKPHI-NYK",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5675
+   },
+   "intl_cost_per_share": 0.55,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
