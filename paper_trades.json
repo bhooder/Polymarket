@@ -450,7 +450,7 @@
   },
   {
    "placed_at": "2026-10-30T19:00:45.583194+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will 1. FSV Mainz 05 win on 2026-10-30?",
@@ -478,9 +478,9 @@
     "polymarket_us": 0.5174
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.43,
+   "settled_at": "2026-10-30T21:49:37.355521+00:00",
    "topped_up_at": null
   }
  ]
