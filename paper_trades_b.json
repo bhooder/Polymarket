@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 986.6865396179096,
+ "cash": 976.0965396179096,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -533,6 +533,42 @@
     "kalshi": 0.5975
    },
    "intl_cost_per_share": 0.57,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T19:00:46.372994+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Spread: Pistons (-7.5)",
+   "link": "https://polymarket.com/event/nba-det-bkn-2026-10-30",
+   "market_type": "spreads",
+   "condition_id": "0x89f8ad59c447ed369ebc3853112c675ce602d671cf4c10a5ad498e23e4635525",
+   "token_id": "48830066815654920153292034240249830086072456226881779075835238573533565643579",
+   "outcome_index": 1,
+   "ends": "2026-10-30T23:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.4,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 20.46871224933559,
+   "cost": 10.59,
+   "fees": 0.3556,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-det-bkn-2026-10-30-neg-7pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5174,
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.49,
    "payout": null,
    "profit": null,
    "settled_at": null,

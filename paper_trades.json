@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1060.770762305381,
+ "cash": 1039.3407623053808,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -443,6 +443,41 @@
     "kalshi": 0.5675
    },
    "intl_cost_per_share": 0.55,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-30T19:00:45.583194+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Yes",
+   "market": "Will 1. FSV Mainz 05 win on 2026-10-30?",
+   "link": "https://polymarket.com/event/bun-elv-mai-2026-10-30",
+   "market_type": "moneyline",
+   "condition_id": "0x204f3ccc7778b1ebea209d78200c982169211286b0319387575a39380a5f3e42",
+   "token_id": "1820861818617171930982163045111135910282575766058469406327946337908588577505",
+   "outcome_index": 0,
+   "ends": "2026-10-30T19:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 35.9,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 41.42063300314085,
+   "cost": 21.43,
+   "fees": 0.7197,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-bun-elv-mai-2026-10-30-mai",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5174
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
