@@ -1,11 +1,11 @@
 {
  "start_bankroll": 1000.0,
- "cash": 937.2535761507492,
+ "cash": 972.4891113378112,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
    "placed_at": "2026-10-29T04:28:46.010987+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Panthers vs. Packers: O/U 48.5",
@@ -33,9 +33,9 @@
     "kalshi": 0.5676
    },
    "intl_cost_per_share": 0.5674,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.24,
+   "profit": 15.24,
+   "settled_at": "2026-10-30T04:06:58.103504+00:00",
    "topped_up_at": null
   },
   {
