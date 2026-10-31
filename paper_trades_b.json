@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 902.4847098353856,
+ "cash": 881.9603563317197,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -401,7 +401,7 @@
   },
   {
    "placed_at": "2026-10-30T14:40:56.513615+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Hornets",
    "market": "Hornets vs. Wizards",
@@ -430,9 +430,9 @@
     "kalshi": 0.5077
    },
    "intl_cost_per_share": 0.49,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.18,
+   "settled_at": "2026-10-31T01:50:58.900401+00:00",
    "topped_up_at": "2026-10-30T19:45:35.376867+00:00"
   },
   {
@@ -509,7 +509,7 @@
   {
    "placed_at": "2026-10-30T16:32:01.191223+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Lakers",
    "market": "Lakers vs. Warriors",
    "link": "https://polymarket.com/event/nba-lal-gsw-2026-10-30",
@@ -521,10 +521,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.5,
    "traders_entry": 0.57,
-   "avg_price": 0.58,
-   "shares": 17.720399563187126,
-   "cost": 10.59,
-   "fees": 0.31,
+   "avg_price": 0.5751,
+   "shares": 35.1944312106,
+   "cost": 20.85,
+   "fees": 0.61,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -539,7 +539,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-31T01:52:26.979098+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.7,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-10-30T19:00:46.372994+00:00",
@@ -688,7 +691,7 @@
   {
    "placed_at": "2026-10-30T23:53:09.971997+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Nuggets",
    "market": "Nuggets vs. Suns",
    "link": "https://polymarket.com/event/nba-den-phx-2026-10-30",
@@ -701,10 +704,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 9.1,
    "traders_entry": 0.61,
-   "avg_price": 0.62,
-   "shares": 16.465250152397832,
-   "cost": 10.49,
-   "fees": 0.28,
+   "avg_price": 0.6199,
+   "shares": 32.58485574052777,
+   "cost": 20.75,
+   "fees": 0.55,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -719,7 +722,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-31T01:52:26.854667+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 25.1,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }
