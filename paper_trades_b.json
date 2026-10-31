@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 926.5678147873231,
+ "cash": 979.4038782573194,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -508,7 +508,7 @@
   },
   {
    "placed_at": "2026-10-30T16:32:01.191223+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Lakers vs. Warriors",
@@ -536,9 +536,9 @@
     "kalshi": 0.5975
    },
    "intl_cost_per_share": 0.57,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.85,
+   "settled_at": "2026-10-31T04:58:26.230899+00:00",
    "topped_up_at": "2026-10-31T01:52:26.979098+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.7,
@@ -617,7 +617,7 @@
   },
   {
    "placed_at": "2026-10-30T21:12:40.349637+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Lakers vs. Warriors: O/U 233.5",
@@ -646,9 +646,9 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.48,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.25,
+   "profit": 9.76,
+   "settled_at": "2026-10-31T04:58:26.260472+00:00",
    "topped_up_at": null
   },
   {
@@ -690,7 +690,7 @@
   },
   {
    "placed_at": "2026-10-30T23:53:09.971997+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Nuggets",
    "market": "Nuggets vs. Suns",
@@ -719,9 +719,9 @@
     "kalshi": 0.637
    },
    "intl_cost_per_share": 0.61,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 32.58,
+   "profit": 11.83,
+   "settled_at": "2026-10-31T04:58:26.290762+00:00",
    "topped_up_at": "2026-10-31T01:52:26.854667+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 25.1,

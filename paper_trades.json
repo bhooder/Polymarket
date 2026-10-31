@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1003.2577547369178,
+ "cash": 1036.2353883913863,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -485,7 +485,7 @@
   },
   {
    "placed_at": "2026-10-31T01:52:26.696571+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Nuggets",
    "market": "Nuggets vs. Suns",
@@ -514,9 +514,9 @@
     "kalshi": 0.6367
    },
    "intl_cost_per_share": 0.62,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 32.98,
+   "profit": 11.98,
+   "settled_at": "2026-10-31T04:58:26.038441+00:00",
    "topped_up_at": null
   },
   {
