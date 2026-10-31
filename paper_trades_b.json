@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 948.8964760663962,
+ "cash": 938.8044791623714,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -729,7 +729,7 @@
   },
   {
    "placed_at": "2026-10-31T02:43:43.053795+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Manchester United FC win on 2026-10-31?",
@@ -758,9 +758,9 @@
     "kalshi": 0.2838
    },
    "intl_cost_per_share": 0.2696,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.39,
+   "settled_at": "2026-10-31T14:47:29.725119+00:00",
    "topped_up_at": null
   },
   {
@@ -871,6 +871,42 @@
     "kalshi": 0.617
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T14:49:58.285867+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Spread: Hawks (-4.5)",
+   "link": "https://polymarket.com/event/nba-atl-nop-2026-10-31",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4fb8dbb7de9fb4c04f36e08f0bb9d169bd9c75165dd109c6621b1dbcd8f08b81",
+   "token_id": "21635964875929915936534858288194424857726915426068979488315337264945049390600",
+   "outcome_index": 1,
+   "ends": "2026-10-31T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 18.773070969278397,
+   "cost": 10.09,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26OCT31ATLNOP-ATL5",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5376
+   },
+   "intl_cost_per_share": 0.51,
    "payout": null,
    "profit": null,
    "settled_at": null,

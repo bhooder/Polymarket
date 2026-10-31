@@ -521,7 +521,7 @@
   },
   {
    "placed_at": "2026-10-31T03:27:46.922577+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will Manchester United FC win on 2026-10-31?",
@@ -550,9 +550,9 @@
     "kalshi": 0.2839
    },
    "intl_cost_per_share": 0.2696,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -15.08,
+   "settled_at": "2026-10-31T14:47:29.493762+00:00",
    "topped_up_at": "2026-10-31T04:16:02.828395+00:00",
    "top_up_bettors": 4,
    "top_up_avg_bankroll_pct": 25.0,
