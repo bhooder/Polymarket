@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1018.3446294396103,
+ "cash": 1010.8011920882641,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -514,6 +514,42 @@
     "kalshi": 0.6367
    },
    "intl_cost_per_share": 0.62,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T03:27:46.922577+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Manchester United FC win on 2026-10-31?",
+   "link": "https://polymarket.com/event/epl-che-mun-2026-10-31",
+   "market_type": "moneyline",
+   "size_multiplier": 0.726,
+   "condition_id": "0x31ecee8e1727480f7a2f1b46de88bc8422410fe3ccab92a7bc1bf6b886e4ad37",
+   "token_id": "42196822305561413344053691620811148871819514949401220664893881229065342159878",
+   "outcome_index": 0,
+   "ends": "2026-10-31T12:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 20.0,
+   "traders_entry": 0.25,
+   "avg_price": 0.27,
+   "shares": 26.56828648646744,
+   "cost": 7.54,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26OCT31CFCMUN-MUN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.2839
+   },
+   "intl_cost_per_share": 0.2696,
    "payout": null,
    "profit": null,
    "settled_at": null,
