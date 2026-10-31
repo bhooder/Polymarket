@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1010.8011920882641,
+ "cash": 1003.2577547369178,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -522,7 +522,7 @@
   {
    "placed_at": "2026-10-31T03:27:46.922577+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Yes",
    "market": "Will Manchester United FC win on 2026-10-31?",
    "link": "https://polymarket.com/event/epl-che-mun-2026-10-31",
@@ -535,10 +535,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 20.0,
    "traders_entry": 0.25,
-   "avg_price": 0.27,
-   "shares": 26.56828648646744,
-   "cost": 7.54,
-   "fees": 0.37,
+   "avg_price": 0.2699,
+   "shares": 53.13657297293488,
+   "cost": 15.08,
+   "fees": 0.74,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -553,7 +553,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-31T04:16:02.828395+00:00",
+   "top_up_bettors": 4,
+   "top_up_avg_bankroll_pct": 25.0,
+   "top_up_size_multiplier": 0.726
   }
  ]
 }
