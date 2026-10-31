@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 994.8021471052997,
+ "cash": 1033.3619460583789,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -597,7 +597,7 @@
   },
   {
    "placed_at": "2026-10-31T18:43:09.739908+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Trail Blazers vs. Jazz: O/U 233.5",
@@ -627,9 +627,9 @@
     "kalshi": 0.5474
    },
    "intl_cost_per_share": 0.53,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.56,
+   "profit": 17.84,
+   "settled_at": "2026-10-31T21:52:19.005689+00:00",
    "topped_up_at": null
   },
   {
