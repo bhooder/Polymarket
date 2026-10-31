@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 881.9603563317197,
+ "cash": 908.5351130794146,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -365,7 +365,7 @@
   },
   {
    "placed_at": "2026-10-30T02:28:27.560241+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Bulls vs. Celtics",
@@ -394,9 +394,9 @@
     "kalshi": 0.888
    },
    "intl_cost_per_share": 0.89,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.33,
+   "profit": 1.28,
+   "settled_at": "2026-10-31T02:41:26.329757+00:00",
    "topped_up_at": null
   },
   {
@@ -437,7 +437,7 @@
   },
   {
    "placed_at": "2026-10-30T14:40:57.374985+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Raptors (-6.5)",
@@ -466,9 +466,9 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.46,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.59,
+   "settled_at": "2026-10-31T02:41:26.435810+00:00",
    "topped_up_at": null
   },
   {
@@ -546,7 +546,7 @@
   },
   {
    "placed_at": "2026-10-30T19:00:46.372994+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Pistons (-7.5)",
@@ -575,14 +575,14 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.49,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.59,
+   "settled_at": "2026-10-31T02:41:26.613208+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-30T19:45:35.681559+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Knicks vs. 76ers",
@@ -610,9 +610,9 @@
     "kalshi": 0.4677
    },
    "intl_cost_per_share": 0.44,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.64,
+   "profit": 12.05,
+   "settled_at": "2026-10-31T02:41:26.676736+00:00",
    "topped_up_at": null
   },
   {
@@ -726,6 +726,42 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 25.1,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-10-31T02:43:43.053795+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Manchester United FC win on 2026-10-31?",
+   "link": "https://polymarket.com/event/epl-che-mun-2026-10-31",
+   "market_type": "moneyline",
+   "size_multiplier": 0.726,
+   "condition_id": "0x31ecee8e1727480f7a2f1b46de88bc8422410fe3ccab92a7bc1bf6b886e4ad37",
+   "token_id": "42196822305561413344053691620811148871819514949401220664893881229065342159878",
+   "outcome_index": 0,
+   "ends": "2026-10-31T12:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.4,
+   "traders_entry": 0.25,
+   "avg_price": 0.27,
+   "shares": 26.039739673076177,
+   "cost": 7.39,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26OCT31CFCMUN-MUN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.2838
+   },
+   "intl_cost_per_share": 0.2696,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
