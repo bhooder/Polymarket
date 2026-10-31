@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 948.0874355854778,
+ "cash": 907.3316029753147,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -915,7 +915,7 @@
   {
    "placed_at": "2026-10-31T17:34:30.759571+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Trail Blazers vs. Jazz: O/U 232.5",
    "link": "https://polymarket.com/event/nba-por-uta-2026-10-31",
@@ -928,10 +928,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 9.4,
    "traders_entry": 0.51,
-   "avg_price": 0.52,
-   "shares": 18.963530469685146,
-   "cost": 10.19,
-   "fees": 0.329,
+   "avg_price": 0.5046,
+   "shares": 39.04776756049132,
+   "cost": 20.38,
+   "fees": 0.6778,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -946,7 +946,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-31T18:43:09.937093+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 5.5,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-10-31T17:34:31.238362+00:00",
@@ -979,6 +982,116 @@
     "kalshi": 0.3966
    },
    "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T18:43:10.354848+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "Spread: 76ers (-1.5)",
+   "link": "https://polymarket.com/event/nba-phi-cha-2026-10-31",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaed449e6e488a323804b529eff86dbd65d2d672ee85d20a61618fb0642cbd793",
+   "token_id": "4577400818243165788055088447577504366123716646373967693597938406081155624567",
+   "outcome_index": 1,
+   "ends": "2026-10-31T22:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.7,
+   "traders_entry": 0.5,
+   "avg_price": 0.52,
+   "shares": 18.963530469685146,
+   "cost": 10.19,
+   "fees": 0.329,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-phi-cha-2026-10-31-neg-1pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5373,
+    "kalshi": 0.538
+   },
+   "intl_cost_per_share": 0.52,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T18:43:10.835666+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jazz",
+   "market": "Spread: Trail Blazers (-7.5)",
+   "link": "https://polymarket.com/event/nba-por-uta-2026-10-31",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ff611c9b5cff163b3e3738bafcf780cc7baf7a0d6e0d4f8f7135b582947a2d5",
+   "token_id": "112635143372846202792546236988137767542626587518312255183205737703450601830380",
+   "outcome_index": 1,
+   "ends": "2026-10-31T19:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.51,
+   "avg_price": 0.53,
+   "shares": 18.61824995941532,
+   "cost": 10.19,
+   "fees": 0.3223,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-por-uta-2026-10-31-neg-7pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5473,
+    "kalshi": 0.5477
+   },
+   "intl_cost_per_share": 0.53,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T18:43:11.516366+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Timberwolves vs. Spurs: O/U 226.5",
+   "link": "https://polymarket.com/event/nba-min-sas-2026-10-31",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9f27959f4c6503e6887637448cc2507b64b85830d83dcd2db737c371a0e70c64",
+   "token_id": "7261106734130517202105457814554599708080198008814279910078613143211899359830",
+   "outcome_index": 1,
+   "ends": "2026-11-01T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.48,
+   "avg_price": 0.47,
+   "shares": 20.884750234389266,
+   "cost": 10.19,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26OCT31MINSAS-227",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4877
+   },
+   "intl_cost_per_share": 0.47,
    "payout": null,
    "profit": null,
    "settled_at": null,

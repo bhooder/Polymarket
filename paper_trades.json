@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1025.8753883913864,
+ "cash": 1005.1553883913864,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -590,6 +590,43 @@
     "kalshi": 0.5973
    },
    "intl_cost_per_share": 0.58,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T18:43:09.739908+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Trail Blazers vs. Jazz: O/U 233.5",
+   "link": "https://polymarket.com/event/nba-por-uta-2026-10-31",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x710098ed049003b87d9198ad217253363dc5df1ce09ea5f32d177eb3af2c2cb7",
+   "token_id": "9054592576727647766078802381370893727177065224879284629734351859577894012265",
+   "outcome_index": 1,
+   "ends": "2026-10-31T19:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 30.3,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 38.559798953079124,
+   "cost": 20.72,
+   "fees": 0.6689,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-por-uta-2026-10-31-233pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5373,
+    "kalshi": 0.5474
+   },
+   "intl_cost_per_share": 0.53,
    "payout": null,
    "profit": null,
    "settled_at": null,
