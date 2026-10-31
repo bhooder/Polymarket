@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1005.1553883913864,
+ "cash": 994.8021471052997,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -627,6 +627,43 @@
     "kalshi": 0.5474
    },
    "intl_cost_per_share": 0.53,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-10-31T20:02:51.645149+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "76ers vs. Hornets",
+   "link": "https://polymarket.com/event/nba-phi-cha-2026-10-31",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa54108c7e2c9764f25d43aaa84a1a389a0ad27d4a7396f72e2195c32f7dca7b2",
+   "token_id": "63066883240502395157907848966581056033418482625131124489143915905261888331687",
+   "outcome_index": 1,
+   "ends": "2026-10-31T22:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 22.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 20.39436997160552,
+   "cost": 10.35,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26OCT31PHICHA-CHA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5077,
+    "polymarket_us": 0.5174
+   },
+   "intl_cost_per_share": 0.49,
    "payout": null,
    "profit": null,
    "settled_at": null,

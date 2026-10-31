@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 907.3316029753147,
+ "cash": 923.8231382934699,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -841,7 +841,7 @@
   },
   {
    "placed_at": "2026-10-31T07:30:15.558447+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Tottenham Hotspur FC win on 2026-10-31?",
@@ -871,9 +871,9 @@
     "kalshi": 0.617
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.49,
+   "profit": 6.32,
+   "settled_at": "2026-10-31T20:00:15.376871+00:00",
    "topped_up_at": null
   },
   {
