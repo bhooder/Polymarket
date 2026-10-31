@@ -245,6 +245,7 @@ SLOT_GROUPS = {"moneyline": "side", "spreads": "side", "totals": "total"}
 def game_slot(link, market_type):
     """(game's Polymarket event link, group) for moneyline/spread/total bets, else None."""
     group = SLOT_GROUPS.get(market_type)
+    link = venues.base_event(link)  # soccer spreads live on the game's "-more-markets" page
     return (link, group) if link and group else None
 
 

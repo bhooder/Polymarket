@@ -18,6 +18,7 @@ Matching (only exact equivalents, otherwise the venue is skipped):
 """
 import json
 import math
+import re
 from datetime import datetime, timedelta
 
 import polymarket_smart_money as scanner
@@ -65,11 +66,19 @@ def fill(levels, dollars, fee_per_share):
 
 # ---------- figure out what kind of bet the international pick is ----------
 
+MORE = "-more-markets"  # soccer spreads etc. sit on a second event page, e.g. epl-liv-ars-2026-11-01-more-markets
+
+
+def base_event(slug):
+    """The game's own event slug, without the "-more-markets" suffix."""
+    return slug[:-len(MORE)] if slug and slug.endswith(MORE) else slug
+
+
 def describe(pick, m):
     """Break an international market into (event slug, kind, details) for matching."""
     slug = m.get("slug") or ""
     events = m.get("events") or []
-    event = events[0].get("slug") if events else None
+    event = base_event(events[0].get("slug")) if events else None
     outcomes = scanner_json(m.get("outcomes"))
     kind = m.get("sportsMarketType")
     if not event:
@@ -82,8 +91,9 @@ def describe(pick, m):
                 "names": title.split(" vs. "), "team_name": m.get("groupItemTitle") or ""}
     if kind == "totals" and slug.startswith(event + "-total-"):
         return {"event": event, "kind": "total", "line": float(m["line"]), "tag": slug.rsplit("-", 1)[1]}
-    if kind == "spreads" and "-spread-" in slug:
-        side, tag = slug[len(event) + 1:].split("-")[1:3]  # away|home, e.g. 5pt5
+    spread = re.fullmatch(re.escape(event) + r"-spread-(away|home)-(\w+)", slug)
+    if kind == "spreads" and spread:
+        side, tag = spread.groups()  # away|home, e.g. 5pt5
         return {"event": event, "kind": "spread", "fav": side, "tag": tag,
                 "line": abs(float(m["line"])), "outcomes": outcomes}
     return None  # props, futures, etc.: international only
