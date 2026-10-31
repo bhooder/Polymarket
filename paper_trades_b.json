@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 959.0638782573195,
+ "cash": 948.8964760663962,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -766,7 +766,7 @@
   {
    "placed_at": "2026-10-31T04:16:03.369470+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will FC Augsburg win on 2026-10-31?",
    "link": "https://polymarket.com/event/bun-aug-fre-2026-10-31",
@@ -779,10 +779,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.2,
    "traders_entry": 0.68,
-   "avg_price": 0.69,
-   "shares": 14.411899462816308,
-   "cost": 10.16,
-   "fees": 0.22,
+   "avg_price": 0.6849,
+   "shares": 29.025726214174128,
+   "cost": 20.33,
+   "fees": 0.45,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -797,7 +797,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-10-31T10:19:11.803802+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 0.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-10-31T07:30:15.039897+00:00",
