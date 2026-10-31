@@ -36,12 +36,20 @@ CRYPTO_PRICE = re.compile(
     r".*\b(above|below|reach|dip|price|between|hit)\b", re.I)
 
 
+RETRY_STATUS = (429, 500, 502, 503, 504)  # busy or brief server hiccups: wait and try again
+
+
 def get(path, params, retries=5, base=BASE):
-    """GET with backoff on 429/503 (honours Retry-After)."""
+    """GET with backoff on busy/server errors and dropped connections (honours Retry-After)."""
     for attempt in range(retries):
-        r = session.get(f"{base}{path}", params=params, timeout=30)
-        if r.status_code in (429, 503):
-            time.sleep(float(r.headers.get("Retry-After", 2 * (attempt + 1))))
+        wait = 2 * (attempt + 1)
+        try:
+            r = session.get(f"{base}{path}", params=params, timeout=30)
+        except (requests.ConnectionError, requests.Timeout):
+            time.sleep(wait)
+            continue
+        if r.status_code in RETRY_STATUS:
+            time.sleep(float(r.headers.get("Retry-After", wait)))
             continue
         r.raise_for_status()
         return r.json()

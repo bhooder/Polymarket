@@ -19,8 +19,8 @@ jobs:
     env:
       TZ: America/New_York  # times in the reports show Eastern time
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - run: pip install requests
