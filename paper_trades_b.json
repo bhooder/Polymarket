@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 923.8231382934699,
+ "cash": 947.9093745857532,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -953,7 +953,7 @@
   },
   {
    "placed_at": "2026-10-31T17:34:31.238362+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Predators",
    "market": "Lightning vs. Predators",
@@ -982,9 +982,9 @@
     "kalshi": 0.3966
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.09,
+   "profit": 14.54,
+   "settled_at": "2026-10-31T21:16:21.093956+00:00",
    "topped_up_at": null
   },
   {
