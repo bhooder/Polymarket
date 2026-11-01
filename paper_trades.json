@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1008.3170946543974,
+ "cash": 997.7070946543973,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -850,6 +850,43 @@
     "polymarket_us": 0.5622
    },
    "intl_cost_per_share": 0.5475,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T20:04:06.013391+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Broncos",
+   "market": "Chiefs vs. Broncos",
+   "link": "https://polymarket.com/event/nfl-kc-den-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa3e8ef111c104c3b3d56ca06d6aa42dd0b28b3ba319c169ac5a836170be4b353",
+   "token_id": "101755927292331512215195249300236491424152409807825443767288611380177182876040",
+   "outcome_index": 1,
+   "ends": "2026-11-01T21:25:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 14.9,
+   "traders_entry": 0.5,
+   "avg_price": 0.495,
+   "shares": 20.707559852423014,
+   "cost": 10.61,
+   "fees": 0.3598,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-kc-den-2026-11-01",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5124,
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5075,
    "payout": null,
    "profit": null,
    "settled_at": null,

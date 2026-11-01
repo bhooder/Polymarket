@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 809.6096794249779,
+ "cash": 799.8996794249779,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1216,7 +1216,7 @@
   {
    "placed_at": "2026-11-01T06:14:09.840885+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Broncos",
    "market": "Chiefs vs. Broncos",
    "link": "https://polymarket.com/event/nfl-kc-den-2026-11-01",
@@ -1229,10 +1229,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 10.4,
    "traders_entry": 0.49,
-   "avg_price": 0.485,
-   "shares": 19.587571636031765,
-   "cost": 9.84,
-   "fees": 0.34,
+   "avg_price": 0.4899,
+   "shares": 38.53859954998346,
+   "cost": 19.55,
+   "fees": 0.6692,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1248,7 +1248,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-01T20:04:06.449812+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 14.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-01T11:48:52.594279+00:00",
@@ -1550,7 +1553,7 @@
   },
   {
    "placed_at": "2026-11-01T16:50:45.083559+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Elche CF win on 2026-11-01?",
@@ -1580,9 +1583,9 @@
     "kalshi": 0.4374
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.55,
+   "settled_at": "2026-11-01T20:02:15.163794+00:00",
    "topped_up_at": null
   },
   {
