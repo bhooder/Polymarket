@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 963.8142710865374,
+ "cash": 953.5542710865374,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1168,6 +1168,43 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.48,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T02:31:20.513292+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Falcons",
+   "market": "Falcons vs. Buccaneers",
+   "link": "https://polymarket.com/event/nfl-atl-tb-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8bc3652dfafdab8a4e339cf3cf48c6f92542cd75aafd7e30c16e16c17f3a3b05",
+   "token_id": "81144619871447189851354311300042340851479325199138962387874250673264991099854",
+   "outcome_index": 0,
+   "ends": "2026-11-01T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.45,
+   "avg_price": 0.4475,
+   "shares": 22.079547285352547,
+   "cost": 10.26,
+   "fees": 0.3794,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-atl-tb-2026-11-01",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4647,
+    "kalshi": 0.4673
+   },
+   "intl_cost_per_share": 0.4574,
    "payout": null,
    "profit": null,
    "settled_at": null,
