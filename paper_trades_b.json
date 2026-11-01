@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 855.6252959493883,
+ "cash": 875.3499470583117,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1701,7 +1701,7 @@
   },
   {
    "placed_at": "2026-11-01T19:25:49.450167+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Juventus FC vs. SSC Napoli: O/U 2.5",
@@ -1731,9 +1731,9 @@
     "kalshi": 0.4978
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.72,
+   "profit": 9.91,
+   "settled_at": "2026-11-01T22:07:48.595004+00:00",
    "topped_up_at": null
   },
   {
