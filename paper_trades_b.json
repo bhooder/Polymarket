@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 966.001200117259,
+ "cash": 945.041200117259,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1131,6 +1131,43 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T00:19:43.229686+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Thunder",
+   "market": "Spread: Rockets (-2.5)",
+   "link": "https://polymarket.com/event/nba-okc-hou-2026-10-31",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe4f278387ed07dde6c6c7a9f0786f077dcbaac5fd85a799210450e4cc7009df4",
+   "token_id": "104726308738752815964162461073054188194686617807057132243653104173609931056058",
+   "outcome_index": 1,
+   "ends": "2026-11-01T00:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 4.3,
+   "traders_entry": 0.49,
+   "avg_price": 0.48,
+   "shares": 42.14359706860721,
+   "cost": 20.96,
+   "fees": 0.7311,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-okc-hou-2026-10-31-pos-2pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4973,
+    "kalshi": 0.4976
+   },
+   "intl_cost_per_share": 0.48,
    "payout": null,
    "profit": null,
    "settled_at": null,
