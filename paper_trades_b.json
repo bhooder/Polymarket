@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 875.3499470583117,
+ "cash": 876.5410014045439,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1627,7 +1627,7 @@
   },
   {
    "placed_at": "2026-11-01T17:29:51.355156+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bengals",
    "market": "Titans vs. Bengals",
@@ -1657,9 +1657,9 @@
     "kalshi": 0.8874
    },
    "intl_cost_per_share": 0.8929,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.76,
+   "profit": 1.21,
+   "settled_at": "2026-11-01T22:47:16.787679+00:00",
    "topped_up_at": null
   },
   {
@@ -1804,6 +1804,42 @@
     "kalshi": 0.4332
    },
    "intl_cost_per_share": 0.4221,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T22:49:24.622509+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Eagles",
+   "market": "Spread: Commanders (-6.5)",
+   "link": "https://polymarket.com/event/nfl-phi-was-2026-11-02",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x95970f339dea6ba85845d5990c2905a75cf00c3192958175faf6ae6362b94680",
+   "token_id": "67644404087631950323050908945604566388402718814091392759652116897485341396110",
+   "outcome_index": 1,
+   "ends": "2026-11-02T01:20:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.6,
+   "traders_entry": 0.54,
+   "avg_price": 0.54,
+   "shares": 17.169368554758982,
+   "cost": 9.57,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV01PHIWAS-WAS7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5575
+   },
+   "intl_cost_per_share": 0.5475,
    "payout": null,
    "profit": null,
    "settled_at": null,
