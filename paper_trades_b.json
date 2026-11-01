@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 855.7339712118867,
+ "cash": 836.6339712118868,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1325,7 +1325,7 @@
   },
   {
    "placed_at": "2026-11-01T12:41:53.714891+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Sevilla FC win on 2026-11-01?",
@@ -1355,9 +1355,9 @@
     "kalshi": 0.4373
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.84,
+   "settled_at": "2026-11-01T15:28:48.251552+00:00",
    "topped_up_at": null
   },
   {
@@ -1435,7 +1435,7 @@
   {
    "placed_at": "2026-11-01T14:55:35.440293+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Jets",
    "market": "Spread: Jets (-2.5)",
    "link": "https://polymarket.com/event/nfl-lv-nyj-2026-11-01",
@@ -1449,9 +1449,9 @@
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.47,
    "avg_price": 0.47,
-   "shares": 19.802490168268843,
-   "cost": 9.65,
-   "fees": 0.3428,
+   "shares": 39.3997731845349,
+   "cost": 19.2,
+   "fees": 0.6821,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1464,6 +1464,46 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4775,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-01T15:31:22.418771+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.3,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-01T15:31:23.341852+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Liverpool FC win on 2026-11-01?",
+   "link": "https://polymarket.com/event/epl-liv-ars-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3a92a9044dd58eedeb851b47f1d1bcdfd497f7e3a47ddeb325e68211c63ca847",
+   "token_id": "72108088504012838857591248756428486460058633576003046642097858306947089948090",
+   "outcome_index": 1,
+   "ends": "2026-11-01T16:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.67,
+   "avg_price": 0.69,
+   "shares": 13.548673538752508,
+   "cost": 9.55,
+   "fees": 0.2014,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-epl-liv-ars-2026-11-01-liv",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.7049,
+    "kalshi": 0.7055
+   },
+   "intl_cost_per_share": 0.7105,
    "payout": null,
    "profit": null,
    "settled_at": null,
