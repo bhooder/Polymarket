@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 834.3996794249779,
+ "cash": 809.6096794249779,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1654,6 +1654,80 @@
     "kalshi": 0.8874
    },
    "intl_cost_per_share": 0.8929,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T19:25:48.921759+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Magic",
+   "market": "Celtics vs. Magic",
+   "link": "https://polymarket.com/event/nba-bos-orl-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 0.764,
+   "condition_id": "0x431da6b0a1c4f856599208732d7323118d7de244b26a360b42c84596653b24a6",
+   "token_id": "95107782957156110510872304274928925895929668922429304485351808249788883294295",
+   "outcome_index": 1,
+   "ends": "2026-11-01T20:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.29,
+   "avg_price": 0.28,
+   "shares": 50.95043998323873,
+   "cost": 14.98,
+   "fees": 0.7139,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-bos-orl-2026-11-01",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.294,
+    "kalshi": 0.2941
+   },
+   "intl_cost_per_share": 0.3003,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T19:25:49.450167+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Juventus FC vs. SSC Napoli: O/U 2.5",
+   "link": "https://polymarket.com/event/sea-juv-nap-2026-11-01-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf66bbaf67dd6234dc6f61ff2d82b3f368eaf22a51709ec231334111d8609c791",
+   "token_id": "13144515805083433155909098039251461763295720096609323393006940409427899274869",
+   "outcome_index": 1,
+   "ends": "2026-11-01T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.5,
+   "traders_entry": 0.52,
+   "avg_price": 0.48,
+   "shares": 19.724651108923506,
+   "cost": 9.81,
+   "fees": 0.3422,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-sea-juv-nap-2026-11-01-2pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4973,
+    "kalshi": 0.4978
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
