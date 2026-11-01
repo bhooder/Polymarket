@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 836.6339712118868,
+ "cash": 827.0839712118868,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1363,7 +1363,7 @@
   {
    "placed_at": "2026-11-01T14:16:52.177328+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Liverpool FC vs. Arsenal FC: O/U 2.5",
    "link": "https://polymarket.com/event/epl-liv-ars-2026-11-01-more-markets",
@@ -1376,10 +1376,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 14.2,
    "traders_entry": 0.49,
-   "avg_price": 0.46,
-   "shares": 20.617528503104573,
-   "cost": 9.84,
-   "fees": 0.3559,
+   "avg_price": 0.4499,
+   "shares": 41.50897871538796,
+   "cost": 19.39,
+   "fees": 0.7137,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1394,7 +1394,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-01T16:08:41.901641+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 9.6,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-01T14:55:34.721765+00:00",
