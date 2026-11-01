@@ -804,7 +804,7 @@
   },
   {
    "placed_at": "2026-10-31T07:30:15.039897+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bucks",
    "market": "Spread: Cavaliers (-8.5)",
@@ -834,9 +834,9 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.17,
+   "settled_at": "2026-11-01T02:17:54.049034+00:00",
    "topped_up_at": null
   },
   {
