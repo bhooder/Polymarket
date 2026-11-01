@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 804.7203800791368,
+ "cash": 855.6252959493883,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -148,7 +148,7 @@
   },
   {
    "placed_at": "2026-10-29T18:21:04.438282+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Steelers",
    "market": "Spread: Steelers (-3.5)",
@@ -177,9 +177,9 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.38,
+   "profit": 19.89,
+   "settled_at": "2026-11-01T21:30:05.197786+00:00",
    "topped_up_at": "2026-10-30T20:34:16.301452+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.9,
@@ -1175,7 +1175,7 @@
   },
   {
    "placed_at": "2026-11-01T02:31:20.513292+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Falcons",
    "market": "Falcons vs. Buccaneers",
@@ -1205,9 +1205,9 @@
     "kalshi": 0.4673
    },
    "intl_cost_per_share": 0.4574,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.1,
+   "settled_at": "2026-11-01T21:30:05.284434+00:00",
    "topped_up_at": "2026-11-01T11:48:52.712405+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.3,
@@ -1291,7 +1291,7 @@
   },
   {
    "placed_at": "2026-11-01T12:41:53.157588+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lions",
    "market": "Spread: Lions (-3.5)",
@@ -1321,9 +1321,9 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.99,
+   "profit": 10.15,
+   "settled_at": "2026-11-01T21:30:05.465400+00:00",
    "topped_up_at": null
   },
   {
@@ -1440,7 +1440,7 @@
   },
   {
    "placed_at": "2026-11-01T14:55:35.440293+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Jets",
    "market": "Spread: Jets (-2.5)",
@@ -1470,9 +1470,9 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4775,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.2,
+   "settled_at": "2026-11-01T21:30:05.578647+00:00",
    "topped_up_at": "2026-11-01T15:31:22.418771+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.3,
@@ -1517,7 +1517,7 @@
   },
   {
    "placed_at": "2026-11-01T16:50:44.097853+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Ravens vs. Bills: O/U 54.5",
@@ -1546,9 +1546,9 @@
     "kalshi": 0.5475
    },
    "intl_cost_per_share": 0.5275,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.09,
+   "settled_at": "2026-11-01T21:30:05.607336+00:00",
    "topped_up_at": null
   },
   {
@@ -1767,6 +1767,43 @@
     "polymarket_us": 0.3556
    },
    "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T21:31:54.925878+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Nets vs. Pacers",
+   "link": "https://polymarket.com/event/nba-bkn-ind-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3945f32108352122d3b69ed6a51dd0837227e880d11fe81921543bf1adbb92b4",
+   "token_id": "17909830999307510670919866113246936043792738779710552169162603706866068827350",
+   "outcome_index": 0,
+   "ends": "2026-11-01T22:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.39,
+   "avg_price": 0.41,
+   "shares": 22.164322680205494,
+   "cost": 9.46,
+   "fees": 0.3726,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-bkn-ind-2026-11-01",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4268,
+    "kalshi": 0.4332
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,

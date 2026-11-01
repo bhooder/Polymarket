@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 997.7070946543973,
+ "cash": 1018.0182414179628,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -746,7 +746,7 @@
   },
   {
    "placed_at": "2026-11-01T17:29:50.439730+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Steelers",
    "market": "Spread: Steelers (-3.5)",
@@ -776,9 +776,9 @@
     "kalshi": 0.5279
    },
    "intl_cost_per_share": 0.5175,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.31,
+   "profit": 9.7,
+   "settled_at": "2026-11-01T21:30:04.921542+00:00",
    "topped_up_at": null
   },
   {
@@ -820,7 +820,7 @@
   },
   {
    "placed_at": "2026-11-01T17:29:51.081889+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ravens",
    "market": "Spread: Bills (-3.5)",
@@ -850,9 +850,9 @@
     "polymarket_us": 0.5622
    },
    "intl_cost_per_share": 0.5475,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.61,
+   "settled_at": "2026-11-01T21:30:05.026083+00:00",
    "topped_up_at": null
   },
   {
