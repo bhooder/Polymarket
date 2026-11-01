@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 914.1842710865373,
+ "cash": 894.5042710865372,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1281,6 +1281,80 @@
     "polymarket_us": 0.5573
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T12:41:53.157588+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lions",
+   "market": "Spread: Lions (-3.5)",
+   "link": "https://polymarket.com/event/nfl-min-det-2026-11-01",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf4f41b9765da89f2cb14211b5528abc964220ba3bf05607313bc4994d50f7227",
+   "token_id": "10471657104235337738443591064133591251519826046242207179567715327573809982722",
+   "outcome_index": 0,
+   "ends": "2026-11-01T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 6.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.475,
+   "shares": 19.986530926503416,
+   "cost": 9.84,
+   "fees": 0.3464,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-min-det-2026-11-01-pos-3pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4923,
+    "kalshi": 0.4977
+   },
+   "intl_cost_per_share": 0.4875,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T12:41:53.714891+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Sevilla FC win on 2026-11-01?",
+   "link": "https://polymarket.com/event/lal-get-sev-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x705c0c9d852ecef218f3224345bdf01186f685a8b7d02094592f40ae3e9df16c",
+   "token_id": "26745110710548624559633778932934246729244369526385495874833218740104469463314",
+   "outcome_index": 0,
+   "ends": "2026-11-01T13:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.4,
+   "avg_price": 0.42,
+   "shares": 22.520759608743,
+   "cost": 9.84,
+   "fees": 0.3813,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-lal-get-sev-2026-11-01-sev",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4369,
+    "kalshi": 0.4373
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,
