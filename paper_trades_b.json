@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 943.7142710865373,
+ "cash": 914.1842710865373,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1176,7 +1176,7 @@
   {
    "placed_at": "2026-11-01T02:31:20.513292+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Falcons",
    "market": "Falcons vs. Buccaneers",
    "link": "https://polymarket.com/event/nfl-atl-tb-2026-11-01",
@@ -1189,10 +1189,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.5,
    "traders_entry": 0.45,
-   "avg_price": 0.4475,
-   "shares": 22.079547285352547,
-   "cost": 10.26,
-   "fees": 0.3794,
+   "avg_price": 0.4511,
+   "shares": 42.91666305900948,
+   "cost": 20.1,
+   "fees": 0.7385,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1208,7 +1208,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-01T11:48:52.712405+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-01T06:14:09.840885+00:00",
@@ -1242,6 +1245,42 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T11:48:52.594279+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Cercle Brugge win on 2026-11-01?",
+   "link": "https://polymarket.com/event/bel1-cer-rafc-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3ffcc16ba6f1a545187743e956d90d8ae6c320adf159343f8d7fb272b37bb993",
+   "token_id": "13525040870218404137988684142184175122774787624825171219522549087505631211920",
+   "outcome_index": 1,
+   "ends": "2026-11-01T12:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 35.333355584913285,
+   "cost": 19.69,
+   "fees": 0.61,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-bel1-cer-rafc-2026-11-01-cer",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5573
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
