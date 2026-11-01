@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 945.041200117259,
+ "cash": 963.8142710865374,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -878,7 +878,7 @@
   },
   {
    "placed_at": "2026-10-31T14:49:58.285867+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Spread: Hawks (-4.5)",
@@ -907,9 +907,9 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.51,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.77,
+   "profit": 8.68,
+   "settled_at": "2026-11-01T01:40:35.933946+00:00",
    "topped_up_at": null
   },
   {
@@ -989,7 +989,7 @@
   },
   {
    "placed_at": "2026-10-31T18:43:10.354848+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Hornets",
    "market": "Spread: 76ers (-1.5)",
@@ -1019,9 +1019,9 @@
     "kalshi": 0.538
    },
    "intl_cost_per_share": 0.52,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.67,
+   "settled_at": "2026-11-01T01:40:36.032715+00:00",
    "topped_up_at": "2026-10-31T21:54:34.598842+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 11.8,
