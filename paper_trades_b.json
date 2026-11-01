@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 779.3420271708375,
+ "cash": 834.3996794249779,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1362,7 +1362,7 @@
   },
   {
    "placed_at": "2026-11-01T14:16:52.177328+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Liverpool FC vs. Arsenal FC: O/U 2.5",
@@ -1391,9 +1391,9 @@
     "polymarket_us": 0.4773
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.51,
+   "profit": 22.12,
+   "settled_at": "2026-11-01T18:40:14.983026+00:00",
    "topped_up_at": "2026-11-01T16:08:41.901641+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 9.6,
@@ -1477,7 +1477,7 @@
   },
   {
    "placed_at": "2026-11-01T15:31:23.341852+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Liverpool FC win on 2026-11-01?",
@@ -1507,9 +1507,9 @@
     "kalshi": 0.7055
    },
    "intl_cost_per_share": 0.7105,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.55,
+   "profit": 4.0,
+   "settled_at": "2026-11-01T18:40:15.095228+00:00",
    "topped_up_at": null
   },
   {
