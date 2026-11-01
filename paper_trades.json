@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1029.9753374191312,
+ "cash": 1019.3593461442887,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -887,6 +887,42 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5075,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-01T23:31:11.243636+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Warriors",
+   "market": "Clippers vs. Warriors",
+   "link": "https://polymarket.com/event/nba-lac-gsw-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec99c349030b13a8af1672362c0467d7c1231c98bf0a7c185018df3167567b04",
+   "token_id": "1395161168882368455174524058329190141762981649023543530028529512804246578010",
+   "outcome_index": 1,
+   "ends": "2026-11-02T01:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 20.8,
+   "traders_entry": 0.56,
+   "avg_price": 0.55,
+   "shares": 18.701802317895382,
+   "cost": 10.62,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV01LACGSW-GSW",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5676
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,
