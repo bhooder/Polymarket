@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1043.9987966951985,
+ "cash": 1061.3542596957302,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -560,7 +560,7 @@
   },
   {
    "placed_at": "2026-10-31T17:34:30.421605+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Rockets",
    "market": "Thunder vs. Rockets",
@@ -590,9 +590,9 @@
     "kalshi": 0.5973
    },
    "intl_cost_per_share": 0.58,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.36,
+   "profit": 7.0,
+   "settled_at": "2026-11-01T03:19:04.968035+00:00",
    "topped_up_at": null
   },
   {

@@ -1066,7 +1066,7 @@
   },
   {
    "placed_at": "2026-10-31T18:43:11.516366+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Timberwolves vs. Spurs: O/U 226.5",
@@ -1095,14 +1095,14 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.47,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.19,
+   "settled_at": "2026-11-01T03:19:05.200751+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-10-31T22:31:01.323797+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Spurs",
    "market": "Spread: Spurs (-12.5)",
@@ -1131,14 +1131,14 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.48,
+   "settled_at": "2026-11-01T03:19:05.284170+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-01T00:19:43.229686+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Thunder",
    "market": "Spread: Rockets (-2.5)",
@@ -1168,9 +1168,9 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.48,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.96,
+   "settled_at": "2026-11-01T03:19:05.381729+00:00",
    "topped_up_at": null
   },
   {
