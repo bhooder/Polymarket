@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 967.4626731746549,
+ "cash": 957.6026731746549,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1876,6 +1876,43 @@
     "kalshi": 0.5676
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T02:25:29.766243+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Portland Timbers win on 2026-11-01?",
+   "link": "https://polymarket.com/event/mls-por-hou-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3c9bf5b9c7cebe5cbea0f20ecad2043bdd6a2009e9a4ba7813b82f0a75d40c73",
+   "token_id": "64227386885782990891602711732131430668866842754308508455524226081128436555693",
+   "outcome_index": 1,
+   "ends": "2026-11-02T02:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.7,
+   "traders_entry": 0.44,
+   "avg_price": 0.43,
+   "shares": 22.05646567059876,
+   "cost": 9.86,
+   "fees": 0.3757,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-mls-por-hou-2026-11-01-por",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.447,
+    "kalshi": 0.4576
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
