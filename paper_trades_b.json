@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 907.0632641070908,
+ "cash": 897.5195798965646,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1920,7 +1920,7 @@
   },
   {
    "placed_at": "2026-11-02T13:43:26.114743+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will ACF Fiorentina win on 2026-11-02?",
@@ -1950,9 +1950,9 @@
     "kalshi": 0.6171
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.48,
+   "settled_at": "2026-11-02T19:38:51.331617+00:00",
    "topped_up_at": "2026-11-02T15:39:57.227962+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,
@@ -2099,6 +2099,42 @@
     "kalshi": 0.6855
    },
    "intl_cost_per_share": 0.6811,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T19:41:11.794400+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Spurs",
+   "market": "Jazz vs. Spurs",
+   "link": "https://polymarket.com/event/nba-uta-sas-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfa169ed96aa50222bd6b8c379f7fd50833662113397c34b9c4588acddfbdd571",
+   "token_id": "26566190025155356319364563719744447827269844844411511734662029509105056668918",
+   "outcome_index": 1,
+   "ends": "2026-11-03T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.89,
+   "avg_price": 0.9,
+   "shares": 10.526315789473685,
+   "cost": 9.54,
+   "fees": 0.07,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV02UTASAS-SAS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9067
+   },
+   "intl_cost_per_share": 0.9045,
    "payout": null,
    "profit": null,
    "settled_at": null,
