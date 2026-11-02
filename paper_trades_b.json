@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 974.0482731394018,
+ "cash": 964.3082731394018,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1916,6 +1916,43 @@
    "payout": 0.0,
    "profit": -9.86,
    "settled_at": "2026-11-02T05:30:03.609117+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T13:43:26.114743+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will ACF Fiorentina win on 2026-11-02?",
+   "link": "https://polymarket.com/event/sea-sas-fio-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x91d196efef923bbfdf0ce34e8669447f8af1bdde49e42f9fadbaf1ee6fa608d7",
+   "token_id": "47683277289735643768647826044900645215684890650757041669044481604138296357382",
+   "outcome_index": 1,
+   "ends": "2026-11-02T17:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.59,
+   "avg_price": 0.6,
+   "shares": 15.79425309723033,
+   "cost": 9.74,
+   "fees": 0.2634,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-sea-sas-fio-2026-11-02-fio",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6167,
+    "kalshi": 0.6171
+   },
+   "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
