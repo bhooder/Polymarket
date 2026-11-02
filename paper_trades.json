@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1077.9591712234217,
+ "cash": 1066.8567808084597,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -998,6 +998,42 @@
     "kalshi": 0.5674
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T21:17:53.620677+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Raptors vs. Clippers",
+   "link": "https://polymarket.com/event/nba-tor-lac-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7172e2f4cb02bc1e159cbd92f390336fd879d09d117be3ea8ce8f34c8719c624",
+   "token_id": "60422969894405604137388829956352608676294238764021735282708710297459341209110",
+   "outcome_index": 0,
+   "ends": "2026-11-03T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 13.5,
+   "traders_entry": 0.66,
+   "avg_price": 0.62,
+   "shares": 17.439339378970985,
+   "cost": 11.1,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV02TORLAC-TOR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6366
+   },
+   "intl_cost_per_share": 0.6318,
    "payout": null,
    "profit": null,
    "settled_at": null,
