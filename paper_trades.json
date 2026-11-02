@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1073.8796022567597,
+ "cash": 1111.2832068925504,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -894,7 +894,7 @@
   },
   {
    "placed_at": "2026-11-01T23:31:11.243636+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Warriors",
    "market": "Clippers vs. Warriors",
@@ -923,9 +923,9 @@
     "kalshi": 0.5676
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.4,
+   "profit": 16.16,
+   "settled_at": "2026-11-02T04:29:22.956978+00:00",
    "topped_up_at": "2026-11-02T00:04:05.406035+00:00",
    "top_up_bettors": 4,
    "top_up_avg_bankroll_pct": 28.6,

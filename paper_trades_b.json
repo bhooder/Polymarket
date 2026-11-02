@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 957.6026731746549,
+ "cash": 974.0482731394018,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1811,7 +1811,7 @@
   },
   {
    "placed_at": "2026-11-01T22:49:24.622509+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Eagles",
    "market": "Spread: Commanders (-6.5)",
@@ -1840,14 +1840,14 @@
     "kalshi": 0.5575
    },
    "intl_cost_per_share": 0.5475,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.57,
+   "settled_at": "2026-11-02T04:29:22.996565+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T00:04:05.828419+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Warriors",
    "market": "Clippers vs. Warriors",
@@ -1876,9 +1876,9 @@
     "kalshi": 0.5676
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.45,
+   "profit": 7.11,
+   "settled_at": "2026-11-02T04:29:23.028550+00:00",
    "topped_up_at": null
   },
   {
