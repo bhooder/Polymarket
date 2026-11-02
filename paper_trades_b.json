@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 646.9844856980862,
+ "cash": 637.4370943937384,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2762,6 +2762,42 @@
     "kalshi": 0.4169
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T23:24:11.992194+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Bears vs. Seahawks: O/U 46.5",
+   "link": "https://polymarket.com/event/nfl-chi-sea-2026-11-03",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x14fe5ff21bae40c1000166ff389082309c3317efbbb227b405c4b4183f37c161",
+   "token_id": "15104287455066892424881463099140841301121105418481910728667156407881666255644",
+   "outcome_index": 0,
+   "ends": "2026-11-03T01:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 18.434782608695656,
+   "cost": 9.55,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV02CHISEA-47",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5179
+   },
+   "intl_cost_per_share": 0.5075,
    "payout": null,
    "profit": null,
    "settled_at": null,
