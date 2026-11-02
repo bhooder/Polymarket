@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1111.2832068925504,
+ "cash": 1100.1806157217252,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -930,6 +930,42 @@
    "top_up_bettors": 4,
    "top_up_avg_bankroll_pct": 28.6,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-02T18:37:02.153289+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Thunder vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-okc-cle-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xce020263693fd2189f633197a53aaf2576a83780598a424680c48fe9595b1e44",
+   "token_id": "14583251329593959177631534748820383653857880992961217833363852442607504152499",
+   "outcome_index": 0,
+   "ends": "2026-11-03T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 22.7,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 26.63147792706334,
+   "cost": 11.1,
+   "fees": 0.45,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV02OKCCLE-OKC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4169
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
