@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 876.5410014045439,
+ "cash": 867.2059214239331,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1664,7 +1664,7 @@
   },
   {
    "placed_at": "2026-11-01T19:25:48.921759+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Magic",
    "market": "Celtics vs. Magic",
@@ -1694,9 +1694,9 @@
     "kalshi": 0.2941
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -14.98,
+   "settled_at": "2026-11-02T00:02:44.808397+00:00",
    "topped_up_at": null
   },
   {
@@ -1738,7 +1738,7 @@
   },
   {
    "placed_at": "2026-11-01T20:50:26.097270+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Nashville SC win on 2026-11-01?",
@@ -1767,9 +1767,9 @@
     "polymarket_us": 0.3556
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.19,
+   "settled_at": "2026-11-02T00:02:44.834678+00:00",
    "topped_up_at": null
   },
   {
@@ -1840,6 +1840,42 @@
     "kalshi": 0.5575
    },
    "intl_cost_per_share": 0.5475,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T00:04:05.828419+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Warriors",
+   "market": "Clippers vs. Warriors",
+   "link": "https://polymarket.com/event/nba-lac-gsw-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec99c349030b13a8af1672362c0467d7c1231c98bf0a7c185018df3167567b04",
+   "token_id": "1395161168882368455174524058329190141762981649023543530028529512804246578010",
+   "outcome_index": 1,
+   "ends": "2026-11-02T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 28.6,
+   "traders_entry": 0.56,
+   "avg_price": 0.55,
+   "shares": 16.445599964746837,
+   "cost": 9.34,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV01LACGSW-GSW",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5676
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1019.3593461442887,
+ "cash": 1008.7433548694462,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -895,7 +895,7 @@
   {
    "placed_at": "2026-11-01T23:31:11.243636+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Warriors",
    "market": "Clippers vs. Warriors",
    "link": "https://polymarket.com/event/nba-lac-gsw-2026-11-01",
@@ -908,10 +908,10 @@
    "bettors": 3,
    "avg_bankroll_pct": 20.8,
    "traders_entry": 0.56,
-   "avg_price": 0.55,
-   "shares": 18.701802317895382,
-   "cost": 10.62,
-   "fees": 0.33,
+   "avg_price": 0.5502,
+   "shares": 37.403604635790764,
+   "cost": 21.24,
+   "fees": 0.66,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -926,7 +926,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-02T00:04:05.406035+00:00",
+   "top_up_bettors": 4,
+   "top_up_avg_bankroll_pct": 28.6,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }
