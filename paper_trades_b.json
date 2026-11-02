@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 954.57616511531,
+ "cash": 916.8032641070909,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1921,7 +1921,7 @@
   {
    "placed_at": "2026-11-02T13:43:26.114743+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will ACF Fiorentina win on 2026-11-02?",
    "link": "https://polymarket.com/event/sea-sas-fio-2026-11-02",
@@ -1935,9 +1935,9 @@
    "avg_bankroll_pct": 0.7,
    "traders_entry": 0.59,
    "avg_price": 0.6,
-   "shares": 15.79425309723033,
-   "cost": 9.74,
-   "fees": 0.2634,
+   "shares": 31.58850619446066,
+   "cost": 19.48,
+   "fees": 0.5268,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1953,7 +1953,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-02T15:39:57.227962+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-02T14:42:12.111806+00:00",
@@ -1986,6 +1989,79 @@
     "kalshi": 0.5972
    },
    "intl_cost_per_share": 0.5922,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T15:39:57.800823+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "76ers",
+   "market": "Spread: 76ers (-11.5)",
+   "link": "https://polymarket.com/event/nba-chi-phi-2026-11-02",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa7af0912188fff9d74b58c789167db21a6b2941765ee5184be3ac22687ddfe0c",
+   "token_id": "92471536108148660842954152299058269784710308273049240271096222675069332500978",
+   "outcome_index": 0,
+   "ends": "2026-11-03T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 39.9436234836502,
+   "cost": 19.47,
+   "fees": 0.7,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV02CHIPHI-PHI12",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4875,
+    "polymarket_us": 0.5074
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T15:39:58.249908+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pacers",
+   "market": "Hawks vs. Pacers",
+   "link": "https://polymarket.com/event/nba-atl-ind-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0xc7b7e24f6e83d65a9a51eb1652730908414f942206cd33d37dd66731e5852189",
+   "token_id": "74492652139966453166538871375791393215549648966705092808918944008558411423794",
+   "outcome_index": 1,
+   "ends": "2026-11-03T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.36,
+   "avg_price": 0.3527,
+   "shares": 23.192772141398677,
+   "cost": 8.56,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV02ATLIND-IND",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3691
+   },
+   "intl_cost_per_share": 0.3614,
    "payout": null,
    "profit": null,
    "settled_at": null,
