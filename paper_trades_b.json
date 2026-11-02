@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 867.2059214239331,
+ "cash": 967.4626731746549,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1215,7 +1215,7 @@
   },
   {
    "placed_at": "2026-11-01T06:14:09.840885+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Broncos",
    "market": "Chiefs vs. Broncos",
@@ -1245,9 +1245,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.54,
+   "profit": 18.99,
+   "settled_at": "2026-11-02T01:21:25.335814+00:00",
    "topped_up_at": "2026-11-01T20:04:06.449812+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 14.9,
@@ -1404,7 +1404,7 @@
   },
   {
    "placed_at": "2026-11-01T14:55:34.721765+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Chiefs vs. Broncos: O/U 42.5",
@@ -1433,9 +1433,9 @@
     "kalshi": 0.4874
    },
    "intl_cost_per_share": 0.4675,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.55,
+   "profit": 20.27,
+   "settled_at": "2026-11-02T01:21:25.414930+00:00",
    "topped_up_at": null
   },
   {
@@ -1774,7 +1774,7 @@
   },
   {
    "placed_at": "2026-11-01T21:31:54.925878+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Nets vs. Pacers",
@@ -1804,9 +1804,9 @@
     "kalshi": 0.4332
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.16,
+   "profit": 12.7,
+   "settled_at": "2026-11-02T01:21:25.511567+00:00",
    "topped_up_at": null
   },
   {

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1008.7433548694462,
+ "cash": 1073.8796022567597,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -707,7 +707,7 @@
   },
   {
    "placed_at": "2026-11-01T07:17:26.847446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Chiefs vs. Broncos: O/U 42.5",
@@ -736,9 +736,9 @@
     "kalshi": 0.4676
    },
    "intl_cost_per_share": 0.4574,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.43,
+   "profit": 23.22,
+   "settled_at": "2026-11-02T01:21:24.997473+00:00",
    "topped_up_at": "2026-11-01T14:55:34.225188+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.1,
@@ -857,7 +857,7 @@
   },
   {
    "placed_at": "2026-11-01T20:04:06.013391+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Broncos",
    "market": "Chiefs vs. Broncos",
@@ -887,9 +887,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.71,
+   "profit": 10.1,
+   "settled_at": "2026-11-02T01:21:25.152600+00:00",
    "topped_up_at": null
   },
   {
