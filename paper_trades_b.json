@@ -1883,7 +1883,7 @@
   },
   {
    "placed_at": "2026-11-02T02:25:29.766243+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Portland Timbers win on 2026-11-01?",
@@ -1913,9 +1913,9 @@
     "kalshi": 0.4576
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.86,
+   "settled_at": "2026-11-02T05:30:03.609117+00:00",
    "topped_up_at": null
   }
  ]
