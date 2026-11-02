@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 665.6844856980863,
+ "cash": 646.9844856980862,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2725,6 +2725,43 @@
     "kalshi": 0.427
    },
    "intl_cost_per_share": 0.4221,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-02T22:39:21.778632+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Paris Saint-Germain FC win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-vil-psg-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0x484829914029c89c187799972e5a2e50b48e94347b17e2bd2d7badd313d573d3",
+   "token_id": "1432871681164881146941579092139590389398552065037857134254882824490514154511",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.4,
+   "avg_price": 0.4,
+   "shares": 44.87856388595564,
+   "cost": 18.7,
+   "fees": 0.7486,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-vil-psg-2026-11-03-psg",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4167,
+    "kalshi": 0.4169
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,
