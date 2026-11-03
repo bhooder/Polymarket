@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 968.2174410814407,
+ "cash": 957.5074410814407,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3098,6 +3098,42 @@
     "kalshi": 0.4372
    },
    "intl_cost_per_share": 0.4221,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T15:45:28.045970+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-atm-bay-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x121adf25d287e6c70165deb53bec8b4642cd966ee2ca27f2921446b19a8c182f",
+   "token_id": "52010539253798803832783652040250092819807160651384207773729678171768609551925",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.65,
+   "avg_price": 0.67,
+   "shares": 15.626676794581938,
+   "cost": 10.71,
+   "fees": 0.2401,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-atm-bay-2026-11-03-atm",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6854
+   },
+   "intl_cost_per_share": 0.6712,
    "payout": null,
    "profit": null,
    "settled_at": null,
