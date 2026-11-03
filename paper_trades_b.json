@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 957.5074410814407,
+ "cash": 981.9896537243299,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3069,7 +3069,7 @@
   },
   {
    "placed_at": "2026-11-03T14:54:18.309876+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Alex Michelsen",
    "market": "Rolex Paris Masters: Alex Michelsen vs Jiri Lehecka",
@@ -3098,9 +3098,9 @@
     "kalshi": 0.4372
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.48,
+   "profit": 13.78,
+   "settled_at": "2026-11-03T18:28:31.209957+00:00",
    "topped_up_at": null
   },
   {
