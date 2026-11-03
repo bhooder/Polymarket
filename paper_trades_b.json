@@ -2995,7 +2995,7 @@
   },
   {
    "placed_at": "2026-11-03T11:35:57.085146+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Under",
    "market": "Villarreal CF vs. Paris Saint-Germain FC: O/U 3.5",
@@ -3025,9 +3025,9 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.43,
+   "settled_at": "2026-11-03T21:16:09.671103+00:00",
    "topped_up_at": null
   },
   {
