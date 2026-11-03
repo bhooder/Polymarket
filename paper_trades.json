@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1095.054430968187,
+ "cash": 1171.574347695988,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -969,7 +969,7 @@
   },
   {
    "placed_at": "2026-11-02T20:30:27.741591+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Heat vs. Lakers",
@@ -998,14 +998,14 @@
     "kalshi": 0.5674
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.17,
+   "profit": 16.95,
+   "settled_at": "2026-11-03T06:24:22.457890+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T21:17:53.620677+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Raptors vs. Clippers",
@@ -1034,9 +1034,9 @@
     "kalshi": 0.6366
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.44,
+   "profit": 6.34,
+   "settled_at": "2026-11-03T06:24:22.513607+00:00",
    "topped_up_at": null
   },
   {
@@ -1078,7 +1078,7 @@
   },
   {
    "placed_at": "2026-11-03T01:21:10.930535+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Suns",
    "market": "Spread: Warriors (-3.5)",
@@ -1107,9 +1107,9 @@
     "kalshi": 0.5576
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.91,
+   "profit": 8.81,
+   "settled_at": "2026-11-03T06:24:22.568957+00:00",
    "topped_up_at": null
   }
  ]
