@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 599.2425997848358,
+ "cash": 589.7013630117069,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2591,7 +2591,7 @@
   {
    "placed_at": "2026-11-02T21:17:54.668996+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Lakers",
    "market": "Heat vs. Lakers",
    "link": "https://polymarket.com/event/nba-mia-lal-2026-11-02",
@@ -2604,10 +2604,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 28.5,
    "traders_entry": 0.55,
-   "avg_price": 0.56,
-   "shares": 16.52669216697156,
-   "cost": 9.54,
-   "fees": 0.29,
+   "avg_price": 0.5648,
+   "shares": 32.77447597947827,
+   "cost": 19.08,
+   "fees": 0.57,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -2622,7 +2622,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-03T02:23:38.443500+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 23.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-02T21:17:55.496005+00:00",
