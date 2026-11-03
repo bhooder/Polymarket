@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1000.9167581405426,
+ "cash": 980.3167581405427,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3253,7 +3253,7 @@
   {
    "placed_at": "2026-11-03T22:58:45.926235+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Avalanche vs. Blue Jackets: O/U 6.5",
    "link": "https://polymarket.com/event/nhl-col-cbj-2026-11-03",
@@ -3267,9 +3267,9 @@
    "avg_bankroll_pct": 3.8,
    "traders_entry": 0.51,
    "avg_price": 0.52,
-   "shares": 19.168239827061534,
-   "cost": 10.3,
-   "fees": 0.3325,
+   "shares": 38.33647965412307,
+   "cost": 20.6,
+   "fees": 0.665,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -3282,6 +3282,46 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-03T23:37:00.265999+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.9,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-03T23:37:00.776084+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Avalanche",
+   "market": "Avalanche vs. Blue Jackets",
+   "link": "https://polymarket.com/event/nhl-col-cbj-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbfe73d34703666e734932ea558391967d66e3f8882380a1f138fa18cd8269671",
+   "token_id": "102102215168308120094954261218553903999189506362565452106853759240775113582335",
+   "outcome_index": 0,
+   "ends": "2026-11-04T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 13.4,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 18.819232049261807,
+   "cost": 10.3,
+   "fees": 0.3258,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-col-cbj-2026-11-03",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5473,
+    "kalshi": 0.5476
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
