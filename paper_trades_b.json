@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 989.6299703914542,
+ "cash": 968.2174410814407,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3025,6 +3025,79 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T14:54:17.639093+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will FC Internazionale Milano win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-fey-int-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd514fc4b2a3c4f39edf2c7f0fb5c5963f7c91972439e7273f1b8fff8e84cc2a3",
+   "token_id": "92054599230524300033805483331587169386604641648263948678799684760482760941919",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 20.700652331481034,
+   "cost": 10.71,
+   "fees": 0.3597,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-fey-int-2026-11-03-int",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5174,
+    "kalshi": 0.5179
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T14:54:18.309876+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Alex Michelsen",
+   "market": "Rolex Paris Masters: Alex Michelsen vs Jiri Lehecka",
+   "link": "https://polymarket.com/event/atp-michels-lehecka-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfa195a29332b937e45fbad571175005bcec5fb2ebaef56d8a27cc0566d55f803",
+   "token_id": "13834975830372576949765128747798535422077215836556139755933849940400710848450",
+   "outcome_index": 0,
+   "ends": "2026-11-03T15:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.41,
+   "avg_price": 0.42,
+   "shares": 24.482212642889174,
+   "cost": 10.7,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPMATCH-26NOV01MICLEH-MIC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4372
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,
