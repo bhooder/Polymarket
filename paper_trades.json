@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1159.854347695988,
+ "cash": 1136.414347695988,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1143,6 +1143,79 @@
     "polymarket_us": 0.5473
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T19:28:00.977482+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Villarreal CF vs. Paris Saint-Germain FC: O/U 3.5",
+   "link": "https://polymarket.com/event/ucl-vil-psg-2026-11-03-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd4f7cb0063f507fee0a1f2484598560bd7f8ea17a0943e2a885c949c5602b500",
+   "token_id": "113442421973116358911803757164760083051127252652621082282669820017046198442372",
+   "outcome_index": 0,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.9,
+   "traders_entry": 0.5,
+   "avg_price": 0.46,
+   "shares": 24.556649802478212,
+   "cost": 11.72,
+   "fees": 0.4239,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-ucl-vil-psg-2026-11-03-3pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4773,
+    "kalshi": 0.4775
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T19:28:01.784707+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will FC Bayern M\u00fcnchen win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-atm-bay-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe7f9ccd549f2d959314cce993bc3424f944cc9b95fab6f792ddc49ae5aae1abc",
+   "token_id": "76208488171135342894743862874291209250681104697696082909222562025889106111891",
+   "outcome_index": 0,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.6,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 24.05027821472651,
+   "cost": 11.72,
+   "fees": 0.4164,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-atm-bay-2026-11-03-bay",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4873
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

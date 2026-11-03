@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 981.9896537243299,
+ "cash": 950.7696537243298,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3134,6 +3134,80 @@
     "polymarket_us": 0.6854
    },
    "intl_cost_per_share": 0.6712,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T19:28:02.053883+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will FK Bod\u00f8/Glimt win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-bog-lil-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 0.939,
+   "condition_id": "0xe1c171ae0d11252417476fe6ecb6ad899ec7d0787a4c4ae95bdca5311cc810c5",
+   "token_id": "60743250806089268884535283830995047482273788472806592634440695126702399715575",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.41,
+   "avg_price": 0.38,
+   "shares": 51.39083219846297,
+   "cost": 20.37,
+   "fees": 0.8415,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-bog-lil-2026-11-03-bog",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.3964,
+    "kalshi": 0.3966
+   },
+   "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T19:28:03.579417+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will FC Barcelona vs. Aston Villa FC end in a draw?",
+   "link": "https://polymarket.com/event/ucl-fcb-ast-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x84fd6658fda4bc3447a2b239e6f2e28470b6737e699c2906c89b96f2d9e7f208",
+   "token_id": "24256766389335717646980599003488077870871388236389050984749176411472622221019",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.86,
+   "avg_price": 0.87,
+   "shares": 12.35959542316777,
+   "cost": 10.85,
+   "fees": 0.0972,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-fcb-ast-2026-11-03-draw",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.8779,
+    "kalshi": 0.8781
+   },
+   "intl_cost_per_share": 0.866,
    "payout": null,
    "profit": null,
    "settled_at": null,
