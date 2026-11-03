@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 950.7696537243298,
+ "cash": 1030.1467581405425,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2919,7 +2919,7 @@
   },
   {
    "placed_at": "2026-11-03T04:25:18.823081+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Manchester United FC win on 2026-11-03?",
@@ -2949,9 +2949,9 @@
     "kalshi": 0.5975
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.11,
+   "settled_at": "2026-11-03T22:03:56.888730+00:00",
    "topped_up_at": "2026-11-03T05:26:29.898437+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.0,
@@ -3032,7 +3032,7 @@
   },
   {
    "placed_at": "2026-11-03T14:54:17.639093+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FC Internazionale Milano win on 2026-11-03?",
@@ -3062,9 +3062,9 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.71,
+   "settled_at": "2026-11-03T22:03:57.004162+00:00",
    "topped_up_at": null
   },
   {
@@ -3105,7 +3105,7 @@
   },
   {
    "placed_at": "2026-11-03T15:45:28.045970+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-03?",
@@ -3134,14 +3134,14 @@
     "polymarket_us": 0.6854
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.63,
+   "profit": 4.92,
+   "settled_at": "2026-11-03T22:03:57.114461+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-03T19:28:02.053883+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FK Bod\u00f8/Glimt win on 2026-11-03?",
@@ -3171,14 +3171,14 @@
     "kalshi": 0.3966
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.39,
+   "profit": 31.02,
+   "settled_at": "2026-11-03T22:03:57.219619+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-03T19:28:03.579417+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FC Barcelona vs. Aston Villa FC end in a draw?",
@@ -3208,9 +3208,9 @@
     "kalshi": 0.8781
    },
    "intl_cost_per_share": 0.866,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.36,
+   "profit": 1.51,
+   "settled_at": "2026-11-03T22:03:57.339352+00:00",
    "topped_up_at": null
   }
  ]

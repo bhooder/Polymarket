@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1160.9709974984662,
+ "cash": 1185.0212757131926,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1187,7 +1187,7 @@
   },
   {
    "placed_at": "2026-11-03T19:28:01.784707+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will FC Bayern M\u00fcnchen win on 2026-11-03?",
@@ -1216,9 +1216,9 @@
     "polymarket_us": 0.4873
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.05,
+   "profit": 12.33,
+   "settled_at": "2026-11-03T22:03:56.654680+00:00",
    "topped_up_at": null
   }
  ]
