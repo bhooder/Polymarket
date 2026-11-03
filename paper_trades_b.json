@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 589.7013630117069,
+ "cash": 741.892131262471,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -1999,7 +1999,7 @@
   },
   {
    "placed_at": "2026-11-02T15:39:57.800823+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: 76ers (-11.5)",
@@ -2029,14 +2029,14 @@
     "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.94,
+   "profit": 20.47,
+   "settled_at": "2026-11-03T03:15:19.560767+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T15:39:58.249908+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pacers",
    "market": "Hawks vs. Pacers",
@@ -2065,9 +2065,9 @@
     "kalshi": 0.3691
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.56,
+   "settled_at": "2026-11-03T03:15:19.619200+00:00",
    "topped_up_at": null
   },
   {
@@ -2260,7 +2260,7 @@
   },
   {
    "placed_at": "2026-11-02T20:30:31.629927+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Wizards",
    "market": "Wizards vs. Magic",
@@ -2289,9 +2289,9 @@
     "kalshi": 0.4372
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.66,
+   "profit": 24.57,
+   "settled_at": "2026-11-03T03:15:20.223685+00:00",
    "topped_up_at": null
   },
   {
@@ -2332,7 +2332,7 @@
   },
   {
    "placed_at": "2026-11-02T20:30:32.897560+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Thunder vs. Cavaliers",
@@ -2361,14 +2361,14 @@
     "kalshi": 0.417
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.41,
+   "profit": 13.07,
+   "settled_at": "2026-11-03T03:15:20.366034+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T20:30:33.606766+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Wizards vs. Magic: O/U 225.5",
@@ -2397,14 +2397,14 @@
     "polymarket_us": 0.5373
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.77,
+   "profit": 8.22,
+   "settled_at": "2026-11-03T03:15:20.475956+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T20:30:34.114263+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Thunder vs. Cavaliers: O/U 228.5",
@@ -2433,14 +2433,14 @@
     "polymarket_us": 0.5373
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.77,
+   "profit": 8.22,
+   "settled_at": "2026-11-03T03:15:20.581190+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T20:30:34.900188+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Nets vs. Knicks: O/U 216.5",
@@ -2469,9 +2469,9 @@
     "kalshi": 0.586
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.54,
+   "settled_at": "2026-11-03T03:15:20.663191+00:00",
    "topped_up_at": null
   },
   {
@@ -2811,7 +2811,7 @@
   },
   {
    "placed_at": "2026-11-03T00:03:50.413865+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Knicks",
    "market": "Nets vs. Knicks",
@@ -2840,14 +2840,14 @@
     "kalshi": 0.8975
    },
    "intl_cost_per_share": 0.8949,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.64,
+   "profit": 1.09,
+   "settled_at": "2026-11-03T03:15:21.497928+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-03T00:03:50.996220+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Hawks vs. Pacers: O/U 229.5",
@@ -2876,9 +2876,9 @@
     "polymarket_us": 0.4672
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.55,
+   "settled_at": "2026-11-03T03:15:21.602716+00:00",
    "topped_up_at": null
   },
   {

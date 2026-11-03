@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1044.643050911153,
+ "cash": 1071.2745288382164,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -933,7 +933,7 @@
   },
   {
    "placed_at": "2026-11-02T18:37:02.153289+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Thunder vs. Cavaliers",
@@ -962,9 +962,9 @@
     "kalshi": 0.4169
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.63,
+   "profit": 15.53,
+   "settled_at": "2026-11-03T03:15:18.928328+00:00",
    "topped_up_at": null
   },
   {
