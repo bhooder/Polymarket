@@ -2959,7 +2959,7 @@
   },
   {
    "placed_at": "2026-11-03T07:45:35.267310+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Galatasaray SK win on 2026-11-03?",
@@ -2988,9 +2988,9 @@
     "polymarket_us": 0.5672
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.43,
+   "settled_at": "2026-11-03T20:19:44.311690+00:00",
    "topped_up_at": null
   },
   {
