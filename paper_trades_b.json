@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 741.892131262471,
+ "cash": 837.9989899683309,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2072,7 +2072,7 @@
   },
   {
    "placed_at": "2026-11-02T17:41:48.799377+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Avalanche",
    "market": "Avalanche vs. Blackhawks",
@@ -2102,9 +2102,9 @@
     "kalshi": 0.6855
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 28.15,
+   "profit": 8.86,
+   "settled_at": "2026-11-03T04:23:38.835427+00:00",
    "topped_up_at": "2026-11-02T20:30:30.753902+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.6,
@@ -2112,7 +2112,7 @@
   },
   {
    "placed_at": "2026-11-02T19:41:11.794400+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Spurs",
    "market": "Jazz vs. Spurs",
@@ -2141,9 +2141,9 @@
     "kalshi": 0.9067
    },
    "intl_cost_per_share": 0.9045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.05,
+   "profit": 1.97,
+   "settled_at": "2026-11-03T04:23:38.866986+00:00",
    "topped_up_at": "2026-11-02T20:30:30.541146+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 0.7,
@@ -2151,7 +2151,7 @@
   },
   {
    "placed_at": "2026-11-02T20:30:28.513555+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Spread: Rockets (-4.5)",
@@ -2181,9 +2181,9 @@
     "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.09,
+   "settled_at": "2026-11-03T04:23:38.899862+00:00",
    "topped_up_at": null
   },
   {
@@ -2515,7 +2515,7 @@
   },
   {
    "placed_at": "2026-11-02T20:30:35.733793+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bucks",
    "market": "Bucks vs. Timberwolves",
@@ -2544,14 +2544,14 @@
     "kalshi": 0.2323
    },
    "intl_cost_per_share": 0.2286,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -6.03,
+   "settled_at": "2026-11-03T04:23:39.093826+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T20:30:36.187277+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Grizzlies (-4.5)",
@@ -2580,9 +2580,9 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.35,
+   "profit": 19.27,
+   "settled_at": "2026-11-03T04:23:39.124288+00:00",
    "topped_up_at": "2026-11-02T21:17:54.279613+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.2,
@@ -2665,7 +2665,7 @@
   },
   {
    "placed_at": "2026-11-02T21:17:56.177677+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Mavericks",
    "market": "Kings vs. Mavericks",
@@ -2694,14 +2694,14 @@
     "kalshi": 0.773
    },
    "intl_cost_per_share": 0.7594,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.54,
+   "settled_at": "2026-11-03T04:23:39.265249+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-02T21:17:56.991945+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Celtics vs. Rockets: O/U 220.5",
@@ -2731,9 +2731,9 @@
     "kalshi": 0.427
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.55,
+   "settled_at": "2026-11-03T04:23:39.337027+00:00",
    "topped_up_at": null
   },
   {
@@ -2775,7 +2775,7 @@
   },
   {
    "placed_at": "2026-11-02T23:24:11.992194+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bears vs. Seahawks: O/U 46.5",
@@ -2804,9 +2804,9 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.43,
+   "profit": 8.88,
+   "settled_at": "2026-11-03T04:23:39.442416+00:00",
    "topped_up_at": null
   },
   {
@@ -2883,7 +2883,7 @@
   },
   {
    "placed_at": "2026-11-03T01:21:12.133642+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Jazz vs. Spurs: O/U 227.5",
@@ -2912,6 +2912,43 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5125,
+   "payout": 0.0,
+   "profit": -9.55,
+   "settled_at": "2026-11-03T04:23:39.474146+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T04:25:18.823081+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Manchester United FC win on 2026-11-03?",
+   "link": "https://polymarket.com/event/ucl-mnu-rom-2026-11-03",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x605e64bac476f348d18ca4b5d587d451afd7c794c304d2d2a5dbbb7cf6dbc9c7",
+   "token_id": "115164308442960514497001323456188089744471738904366986139714384307684498204661",
+   "outcome_index": 1,
+   "ends": "2026-11-03T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.57,
+   "avg_price": 0.58,
+   "shares": 16.55134888467697,
+   "cost": 9.88,
+   "fees": 0.2802,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-mnu-rom-2026-11-03-mnu",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5969,
+    "kalshi": 0.5975
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

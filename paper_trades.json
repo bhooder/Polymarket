@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1071.2745288382164,
+ "cash": 1095.054430968187,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1041,7 +1041,7 @@
   },
   {
    "placed_at": "2026-11-03T00:03:50.113829+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Spread: Timberwolves (-11.5)",
@@ -1071,9 +1071,9 @@
     "kalshi": 0.4677
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.78,
+   "profit": 12.67,
+   "settled_at": "2026-11-03T04:23:38.692914+00:00",
    "topped_up_at": null
   },
   {
