@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 637.4370943937384,
+ "cash": 618.3399910891835,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2798,6 +2798,78 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5075,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T00:03:50.413865+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Nets vs. Knicks",
+   "link": "https://polymarket.com/event/nba-bkn-nyk-2026-11-02",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa32511795bd0ca88e6309012179798251529a8c2c08e0a71a37cfb0f098e3ee6",
+   "token_id": "87128737771063926674339792721964179694430726811325029621843859381131889876185",
+   "outcome_index": 1,
+   "ends": "2026-11-03T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.4,
+   "traders_entry": 0.88,
+   "avg_price": 0.89,
+   "shares": 10.63719472421902,
+   "cost": 9.55,
+   "fees": 0.08,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV02BKNNYK-NYK",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8975
+   },
+   "intl_cost_per_share": 0.8949,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T00:03:50.996220+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Hawks vs. Pacers: O/U 229.5",
+   "link": "https://polymarket.com/event/nba-atl-ind-2026-11-02",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x769994fd21d65e8023465f5b6c581aa1af506f0893e3d60909f8d4b78392c508",
+   "token_id": "34871143392646286988887534999060120760023394746438036741653767706377041736327",
+   "outcome_index": 0,
+   "ends": "2026-11-03T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.45,
+   "shares": 20.440869967706636,
+   "cost": 9.55,
+   "fees": 0.3516,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-atl-ind-2026-11-02-229pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4672
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,

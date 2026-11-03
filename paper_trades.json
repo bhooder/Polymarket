@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1066.8567808084597,
+ "cash": 1055.7467808084598,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1034,6 +1034,43 @@
     "kalshi": 0.6366
    },
    "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T00:03:50.113829+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Timberwolves",
+   "market": "Spread: Timberwolves (-11.5)",
+   "link": "https://polymarket.com/event/nba-mil-min-2026-11-02",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x1d1be66f194b14daff84ea873be8bcc30ca8b44a44f44991bf96bb4703aec858",
+   "token_id": "69783702417330993310542010255806535562543060157763183453693108432054549411382",
+   "outcome_index": 0,
+   "ends": "2026-11-03T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.5,
+   "traders_entry": 0.46,
+   "avg_price": 0.45,
+   "shares": 23.779902129970758,
+   "cost": 11.11,
+   "fees": 0.409,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-mil-min-2026-11-02-pos-11pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4672,
+    "kalshi": 0.4677
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
