@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1055.7467808084598,
+ "cash": 1044.643050911153,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1071,6 +1071,42 @@
     "kalshi": 0.4677
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T01:21:10.930535+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Suns",
+   "market": "Spread: Warriors (-3.5)",
+   "link": "https://polymarket.com/event/nba-phx-gsw-2026-11-02",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3cc974f4c98de7c5451d0a5e3e1e05c641552a3b28a1a04ac86ec69ada0cc186",
+   "token_id": "104912717366049261649748226657006985339453310140940521238274626139158971848775",
+   "outcome_index": 1,
+   "ends": "2026-11-03T03:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 19.91431462464208,
+   "cost": 11.1,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV02PHXGSW-GSW4",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5576
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,

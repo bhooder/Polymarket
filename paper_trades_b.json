@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 618.3399910891835,
+ "cash": 599.2425997848358,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -2477,7 +2477,7 @@
   {
    "placed_at": "2026-11-02T20:30:35.301029+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Over",
    "market": "Raptors vs. Clippers: O/U 220.5",
    "link": "https://polymarket.com/event/nba-tor-lac-2026-11-02",
@@ -2490,10 +2490,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.3,
    "traders_entry": 0.48,
-   "avg_price": 0.47,
-   "shares": 19.597283016266058,
-   "cost": 9.55,
-   "fees": 0.3393,
+   "avg_price": 0.4749,
+   "shares": 38.79936226291709,
+   "cost": 19.1,
+   "fees": 0.6724,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -2508,7 +2508,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-03T01:21:11.259901+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-02T20:30:35.733793+00:00",
@@ -2870,6 +2873,42 @@
     "polymarket_us": 0.4672
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-03T01:21:12.133642+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Jazz vs. Spurs: O/U 227.5",
+   "link": "https://polymarket.com/event/nba-uta-sas-2026-11-02",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xabbe632e2ec9e69a0d76e98bcf16ad2735e33164fe5ba33633562225d4e2d1c5",
+   "token_id": "104826790193280613541337352066961863025226842663384493302908262776675944601248",
+   "outcome_index": 0,
+   "ends": "2026-11-03T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.434782608695656,
+   "cost": 9.55,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV02UTASAS-228",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5179
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
