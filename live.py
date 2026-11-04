@@ -233,9 +233,8 @@ def run(intents, max_above, state):
     if not accounts:
         return
     bankroll = sum(cash + sum(cost for _, cost in held.values()) for cash, held in accounts.values())
-    if m == "on":
-        state["cash"] = round(sum(cash for cash, _ in accounts.values()), 2)
-        state["balances_checked_at"] = now_iso()
+    state["cash"] = round(sum(cash for cash, _ in accounts.values()), 2)  # shown on the Real bets tab
+    state["balances_checked_at"] = now_iso()
     exposure = sum(sum(cost for _, cost in held.values()) for _, held in accounts.values())
     tag = "PRACTICE (not placed)" if m == "practice" else "LIVE"
 
