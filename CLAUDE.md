@@ -34,8 +34,9 @@ betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
   Statistics tab adds Real next to A and B plus a "Real vs paper" table (fill
   rate, price paid vs paper, return on the same bets). Each bet also sends a
   phone alert via ntfy. Needs the `cryptography` package.
-- `.github/workflows/hourly.yml`: GitHub Actions runs the forward test every
-  15 minutes (:02, :17, :32, :47) and commits the results back to the repo.
+- `.github/workflows/hourly.yml`: GitHub Actions runs the forward test, asked
+  for every 10 minutes (:03, :13, ...; every 15 until 2026-11-04). GitHub throttles
+  free schedules: in practice runs came about hourly overnight. Commits results back.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
@@ -100,7 +101,7 @@ The owner's rules:
   Kalshi. Each bet goes to whichever has the lowest all-in cost per share
   (fees included) and passes the price rule. The international Polymarket
   price is recorded for comparison only.
-- Runs every 15 minutes on GitHub Actions (hourly until 2026-10-28).
+- Runs on GitHub Actions, asked for every 10 minutes (actual timing varies).
 
 Strategy B (added 2026-10-29): a second, separate $1,000 paper bankroll with
 the same rules except staking by bettor count only: 1% at 4 bettors, 2% at 5+,
