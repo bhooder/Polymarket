@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 818.8244219716562,
+ "cash": 762.2614555205969,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3365,7 +3365,7 @@
   },
   {
    "placed_at": "2026-11-04T00:22:05.513207+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Real Madrid CF win on 2026-11-04?",
@@ -3394,9 +3394,9 @@
     "polymarket_us": 0.2111
    },
    "intl_cost_per_share": 0.1977,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.61,
+   "settled_at": "2026-11-04T20:36:55.299249+00:00",
    "topped_up_at": "2026-11-04T10:51:30.431240+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.4,
@@ -3554,7 +3554,7 @@
   {
    "placed_at": "2026-11-04T14:08:55.734297+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: Pistons (-2.5)",
    "link": "https://polymarket.com/event/nba-phi-det-2026-11-04",
@@ -3567,10 +3567,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 3.1,
    "traders_entry": 0.49,
-   "avg_price": 0.49,
-   "shares": 18.896812369825792,
-   "cost": 9.6,
-   "fees": 0.34,
+   "avg_price": 0.4901,
+   "shares": 37.4586447497798,
+   "cost": 19.03,
+   "fees": 0.67,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -3586,7 +3586,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-04T20:39:03.707870+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-04T14:08:56.037750+00:00",
@@ -3665,7 +3668,7 @@
   },
   {
    "placed_at": "2026-11-04T16:56:13.915004+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Fenerbah\u00e7e SK vs. Liverpool FC end in a draw?",
@@ -3694,9 +3697,9 @@
     "polymarket_us": 0.2111
    },
    "intl_cost_per_share": 0.2183,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -5.88,
+   "settled_at": "2026-11-04T20:36:55.984302+00:00",
    "topped_up_at": null
   },
   {
@@ -3778,7 +3781,7 @@
   {
    "placed_at": "2026-11-04T18:45:20.322161+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Pelicans (-6.5)",
    "link": "https://polymarket.com/event/nba-uta-nop-2026-11-04",
@@ -3791,10 +3794,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.46,
-   "avg_price": 0.45,
-   "shares": 20.521050660675122,
-   "cost": 9.59,
-   "fees": 0.36,
+   "avg_price": 0.4499,
+   "shares": 40.67832878617665,
+   "cost": 19.01,
+   "fees": 0.71,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -3809,7 +3812,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-04T20:39:03.932393+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-04T19:46:04.414880+00:00",
@@ -3841,6 +3847,152 @@
    "quotes": {
     "polymarket_us": 0.5074,
     "kalshi": 0.508
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T20:39:04.429578+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Jazz vs. Pelicans: O/U 233.5",
+   "link": "https://polymarket.com/event/nba-uta-nop-2026-11-04",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x51c8d0e866f17e1c3cb4e825aa1f6037869ac4f9cd3b76d4fe08280adc170a2f",
+   "token_id": "40692391851324986302483406751232998258551770959087477332358398633295479097156",
+   "outcome_index": 0,
+   "ends": "2026-11-05T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.8,
+   "traders_entry": 0.48,
+   "avg_price": 0.46,
+   "shares": 19.732377018274445,
+   "cost": 9.43,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV04UTANOP-234",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4777
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T20:39:05.020809+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pacers",
+   "market": "Spread: Grizzlies (-6.5)",
+   "link": "https://polymarket.com/event/nba-ind-mem-2026-11-04",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x85a1f20c25443e7eca8508e7ddf0427a17181805cb665a40f74ab738c6d5cc85",
+   "token_id": "29071499501730211253531148874321596036294959945368527577215467628925909267758",
+   "outcome_index": 1,
+   "ends": "2026-11-05T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 17.54917490963012,
+   "cost": 9.43,
+   "fees": 0.3044,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-ind-mem-2026-11-04-pos-6pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5373,
+    "kalshi": 0.5377
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T20:39:05.620545+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Celtics",
+   "market": "Spread: Celtics (-11.5)",
+   "link": "https://polymarket.com/event/nba-mil-bos-2026-11-04",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4e14101792372d8c16dae3092acf0f825ca206475de2d1c76c7ded8c208f9762",
+   "token_id": "112510317284381102224537373099287666408936752336182074312930242202464693422512",
+   "outcome_index": 0,
+   "ends": "2026-11-05T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.22662478859628,
+   "cost": 9.43,
+   "fees": 0.3167,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-mil-bos-2026-11-04-pos-11pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5174,
+    "kalshi": 0.5279
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T20:39:06.129128+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Hawks vs. Wizards: O/U 231.5",
+   "link": "https://polymarket.com/event/nba-atl-was-2026-11-04",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0c732355eaa79d84b6c8aa7bcb329b2d10ce549927977ecf6414fb05ccacbe5f",
+   "token_id": "65153753481503534186966792513507697688351449266904755081183896833107290292317",
+   "outcome_index": 0,
+   "ends": "2026-11-05T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.49,
+   "shares": 18.58611317760352,
+   "cost": 9.43,
+   "fees": 0.3228,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-atl-was-2026-11-04-231pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.5025,
    "payout": null,

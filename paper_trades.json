@@ -1333,7 +1333,7 @@
   },
   {
    "placed_at": "2026-11-04T10:51:30.306957+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Real Madrid CF win on 2026-11-04?",
@@ -1362,9 +1362,9 @@
     "polymarket_us": 0.2111
    },
    "intl_cost_per_share": 0.208,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -13.85,
+   "settled_at": "2026-11-04T20:36:54.996595+00:00",
    "topped_up_at": null
   },
   {
