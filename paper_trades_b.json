@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 875.2488947689601,
+ "cash": 847.22889476896,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3591,7 +3591,7 @@
   {
    "placed_at": "2026-11-04T14:08:56.037750+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Hornets vs. Nets: O/U 213.5",
    "link": "https://polymarket.com/event/nba-cha-bkn-2026-11-04",
@@ -3604,10 +3604,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 2.7,
    "traders_entry": 0.49,
-   "avg_price": 0.51,
-   "shares": 18.20360562229737,
-   "cost": 9.6,
-   "fees": 0.3162,
+   "avg_price": 0.515,
+   "shares": 36.06914953878191,
+   "cost": 19.2,
+   "fees": 0.6261,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -3622,7 +3622,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-04T17:54:11.338639+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 5.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-04T16:23:45.001615+00:00",
@@ -3691,6 +3694,79 @@
     "polymarket_us": 0.2111
    },
    "intl_cost_per_share": 0.2183,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T17:54:12.832237+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Manchester City FC win on 2026-11-04?",
+   "link": "https://polymarket.com/event/ucl-rbl-mnc-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0xa4c2fac18822ed88c30640596b6feb2cf3d009e1a6a0d312b19a69246093bc49",
+   "token_id": "68191460120307234820230851508259474756868972101008883830805562769304197352014",
+   "outcome_index": 1,
+   "ends": "2026-11-04T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.36,
+   "avg_price": 0.37,
+   "shares": 22.837881209097507,
+   "cost": 8.82,
+   "fees": 0.37,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-rbl-mnc-2026-11-04-mnc",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.3862
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T17:54:13.315610+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Lakers vs. Kings",
+   "link": "https://polymarket.com/event/nba-lal-sac-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0dd9e093eefd2c6259efcab15eae53816da332c74798271ad1ae35a4be0b0e84",
+   "token_id": "27185802706652618209294679210075908566885642182704800412259990481042682284876",
+   "outcome_index": 0,
+   "ends": "2026-11-05T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.83,
+   "avg_price": 0.84,
+   "shares": 11.30288336554655,
+   "cost": 9.6,
+   "fees": 0.1056,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-lal-sac-2026-11-04",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.8493,
+    "kalshi": 0.8497
+   },
+   "intl_cost_per_share": 0.8467,
    "payout": null,
    "profit": null,
    "settled_at": null,
