@@ -13,7 +13,7 @@ The LIVE_TRADING setting picks the mode:
   on        places real "fill now or cancel" orders
 
 Real bets that fill are recorded in live_trades.json (public, like the paper results) and
-shown on the report's "Real bets" tab. Each bet also sends a phone alert (ntfy, NTFY_TOPIC).
+shown on the report's "Real bets" tab. Each bet also sends a phone alert (Telegram and/or ntfy).
 Keys come from GitHub Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID,
 PM_US_SECRET_KEY.
 """
@@ -46,12 +46,19 @@ def mode():
 
 
 def alert(title, text):
-    """Push a private notification to the owner's phone (ntfy). Never print bet details."""
-    topic = os.environ.get("NTFY_TOPIC")
-    if not topic:
-        return
+    """Send a phone alert by Telegram (TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID) and/or ntfy (NTFY_TOPIC),
+    whichever is set up. A failed alert never stops betting."""
+    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     try:
-        requests.post(f"https://ntfy.sh/{topic}", data=text.encode(), headers={"Title": title}, timeout=15)
+        if token and chat:  # a chat id can be a private chat or a group the bot was added to
+            requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                          json={"chat_id": chat, "text": f"{title}\n{text}"[:4000]}, timeout=15)
+    except requests.RequestException:
+        pass
+    topic = os.environ.get("NTFY_TOPIC")
+    try:
+        if topic:
+            requests.post(f"https://ntfy.sh/{topic}", data=text.encode(), headers={"Title": title}, timeout=15)
     except requests.RequestException:
         pass
 
