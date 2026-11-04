@@ -208,21 +208,29 @@ def run(intents, max_above, state):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
     max_above: the price rule (pay at most this much over the traders' average entry).
-    state: live_trades.json contents; filled orders are added to it (only when mode is "on")."""
+    state: live_trades.json contents; filled orders are added to it (only when mode is "on").
+    Every run in practice/on checks both accounts; once a day it alerts their status."""
     m = mode()
-    if m == "off" or (not intents and m != "on"):
-        return  # when "on", balances are refreshed every run for the Real bets tab
-    accounts = {}
+    if m == "off":
+        return
+    accounts, status = {}, []
     for venue, names in KEYS.items():
-        if all(os.environ.get(n) for n in names):
-            try:
-                accounts[venue] = ACCOUNT[venue]()
-            except Exception as e:  # bad key, outage: skip this venue (alert only if it matters now)
-                if intents:
-                    alert("Live betting: account check failed", f"{VENUE_LABEL[venue]}: {type(e).__name__}: {e}")
+        if not all(os.environ.get(n) for n in names):
+            status.append(f"{VENUE_LABEL[venue]}: no keys set")
+            continue
+        try:
+            accounts[venue] = ACCOUNT[venue]()
+            status.append(f"{VENUE_LABEL[venue]}: connected, cash ${accounts[venue][0]:,.2f}, "
+                          f"{len(accounts[venue][1])} open positions")
+        except Exception as e:  # bad key, outage: skip this venue
+            status.append(f"{VENUE_LABEL[venue]}: FAILED ({type(e).__name__}: {e})")
+    today = datetime.now(timezone.utc).date().isoformat()
+    if state.get("daily_check") != today:  # once a day: confirms the keys work and shows balances
+        state["daily_check"] = today
+        alert(f"Live betting ({m}): daily account check", "\n".join(status))
+    elif intents and len(accounts) < len(KEYS):
+        alert("Live betting: account problem", "\n".join(status))
     if not accounts:
-        if intents:
-            alert("Live betting: no accounts", "No working Kalshi or Polymarket US keys, so no live bets.")
         return
     bankroll = sum(cash + sum(cost for _, cost in held.values()) for cash, held in accounts.values())
     if m == "on":
