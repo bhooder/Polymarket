@@ -1,1 +1,29 @@
-[]
+[
+ {
+  "at": "2026-11-04T23:51:32.370739+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.495,
+  "fees": 0.05,
+  "bet": "Ball State +2.5",
+  "pick": "Ball State",
+  "market": "Spread: UMass (-2.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-ballst-umass-2026-11-04-pos-2pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.495,
+  "share": 0.009999687022979209,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.52,
+  "dollars": 2.0,
+  "bankroll": 200.25,
+  "order_id": "a9db348d-cb64-522a-80e4-86da3833883b",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DH781SMG13CZ\", \"executions\":[{\"id\":\"DH781SMG72V0\", \"order\":{\"id\":\"DH781SMG13CZ\", \"marketSlug\":\"asc-cfb-ballst-umass-2026-11-04-pos-2pt5\", \"side\":\"ORDER_SIDE_BUY\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.52\", \"currency\":\"USD\"}, \"quantity\":3, \"cumQuantity\":0, \"leavesQuantity\":3, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_LONG\", \"marketMetadata\":{\"slug\":\"asc-cfb-ballst-umass-2026-11-04-pos-2pt5\", \"icon\":\"\", \"title\":\"Ball State vs. UMass\", \"outcome\":\"+2.50\", \"eventSlug\":\"cfb-ballst-umass-2026-11-04\", \"teamId\":1183, \"team\":{\"id\":1183, \"name\":\"Ball State\", \"abbreviation\":\"ballst\", \"league\":\"cfb\", \"record\":\"3-5\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_ballst_50000184.png\", \"alias\":\"Cardinals\", \"safeName\":\"Ball State\", \"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Ball+State+Cardinals_R%40160x160.png\", \"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Ball+State+Cardinals_L%40160x160.png\", \"colorPrimary\":\"#CC0000\", \"providerId\":184, \"ordering\":\"away\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Ball-State-Cardinals_L@320x320.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Ball-State-Cardinals_R@320x320.png\", \"displayAbbreviation\":\"BALL\", \"ranking\":\"0\", \"conference\":\"Mid-American\", \"providerIds\":[{\"provider\""
+  }
+ }
+]

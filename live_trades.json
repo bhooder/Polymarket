@@ -1,7 +1,50 @@
 {
  "cash": 200.25,
- "bets": [],
- "orders": [],
+ "bets": [
+  {
+   "placed_at": "2026-11-04T23:51:32.370750+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Ball State",
+   "market": "Spread: UMass (-2.5)",
+   "link": "https://polymarket.com/event/cfb-ballst-umass-2026-11-04",
+   "market_type": "spreads",
+   "condition_id": "0x4dbfbaa89e4716ec0e3ff8858475f31d8546aab213f2f6bcd3ed4d20d0227f7f",
+   "token_id": "114753037385869720019535981041502356921671492760316884606102869011189635812935",
+   "outcome_index": 1,
+   "ends": "2026-11-05T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 30.4,
+   "traders_entry": 0.5,
+   "avg_price": 0.495,
+   "shares": 3.0,
+   "cost": 1.53,
+   "fees": 0.05,
+   "contracts_ordered": 3,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ballst-umass-2026-11-04-pos-2pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "paper_price": 0.49500000000000005,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  }
+ ],
+ "orders": [
+  {
+   "at": "2026-11-04T23:51:32.370715+00:00",
+   "pick": "Ball State",
+   "venue": "polymarket_us",
+   "ordered": 3,
+   "filled": 3.0
+  }
+ ],
  "daily_check": "2026-11-04",
- "balances_checked_at": "2026-11-04T23:10:03.623872+00:00"
+ "balances_checked_at": "2026-11-04T23:51:32.158214+00:00"
 }
