@@ -288,6 +288,9 @@ def trade(state, picks, tiers, on_bet=None):
         if decided_by(m) > cutoff:
             print(f"  skip (decided {decided_by(m):%Y-%m-%d}, more than {MAX_DAYS_TO_END} days away): {label}")
             continue
+        if pick.get("Against", 0) >= pick["Bettors"]:  # never bet the minority side, or a tie
+            print(f"  skip (other side has {pick['Against']} top traders vs {pick['Bettors']}): {label}")
+            continue
         existing = by_token.get(pick["token_id"])
         if existing:
             if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):

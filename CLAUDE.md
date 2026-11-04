@@ -57,7 +57,7 @@ betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
    positions of any size ($1+ cost).
 5. Keeps only positions in events tagged with the chosen category.
 6. Groups by market + outcome. A "pick" needs 3+ top traders on the same side.
-7. For each pick: number of bettors, average "bankroll %" (each holder's
+7. For each pick: number of bettors, number Against (other side), average "bankroll %" (each holder's
    position value / their total open-bet value, averaged), total $ in,
    traders' average entry price, current price.
 8. Sorted by bettors, then average bankroll %.
@@ -82,6 +82,9 @@ The owner's rules:
   - 1%: 3+ bettors & 20%+, or 4+ & 15%+, or 5+ & 10%+
 - One bet per pick. A 1% bet tops up once to 2% if it later meets a 2% tier.
   Never bet both sides of a market.
+  Never bet the minority side or a tie: each pick carries an "Against" count
+  (top traders on the other side of the same market, $100+ positions), and a
+  pick is skipped if Against >= Bettors (added 2026-11-04, both strategies).
   Per game, at most one moneyline-or-spread bet and at most one total bet
   (added 2026-10-29). If two compete in one run, the higher pick wins.
 - Only markets decided within 3 days. Skip games that have already started.

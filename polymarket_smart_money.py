@@ -221,13 +221,14 @@ __ODDS_CSS__
 <p class="sub">__SUBTITLE__</p>
 __ODDS_TOGGLE__
 <div class="wrap"><table id="t"><thead><tr>
-  <th>#</th><th>Pick</th><th>Market</th><th class="num">Bettors</th>
+  <th>#</th><th>Pick</th><th>Market</th><th class="num">Bettors</th><th class="num">Against</th>
   <th class="num">Avg bankroll %</th><th class="num">Total $ in</th>
   <th class="num">Entry &rarr; Now</th><th></th>
 </tr></thead><tbody>
 __ROWS__
 </tbody></table></div>
 <p class="note">Bettors = top leaderboard traders holding this pick (hedged traders removed).
+Against = top traders holding the other side of the same market.
 Avg bankroll % = share of each holder's open-bet value on this pick, averaged.
 Click a column header to sort. Research only, not financial advice.</p>
 </main>
@@ -260,13 +261,14 @@ def write_html(path, rows, args):
             f'<td class="pick">{esc(str(r["Pick"]))}</td>'
             f'<td class="market">{esc(r["Market"])}</td>'
             f'<td class="num bettors" data-v="{r["Bettors"]}">{r["Bettors"]}</td>'
+            f'<td class="num" data-v="{r.get("Against", 0)}">{r.get("Against", 0)}</td>'
             f'<td class="num" data-v="{r["Avg bankroll %"]}">{r["Avg bankroll %"]:.1f}%'
             f'<span class="bar"><i style="width:{100 * r["Avg bankroll %"] / top_pct:.0f}%"></i></span></td>'
             f'<td class="num" data-v="{r["Total $ in"]}">${r["Total $ in"]:,}</td>'
             f'<td class="num {cls}" data-v="{move:.2f}">{px(r["Avg entry price"])} &rarr; {px(r["Price now"])}</td>'
             f'<td>{link}</td></tr>')
     if not out:
-        out.append('<tr><td colspan="8">No picks met the filters this run.</td></tr>')
+        out.append('<tr><td colspan="9">No picks met the filters this run.</td></tr>')
     subtitle = (f"Top {args.top} {args.category} traders by {args.sort} ({args.period}), "
                 f"picks held by at least {args.min_traders}, "
                 + (f"price within {args.max_move * 100:.0f}¢ of their entry. " if args.max_move < 1
@@ -352,6 +354,11 @@ def find_picks(args):
         candidates = {m["event_id"] for m in markets.values() if len(m["traders"]) >= args.min_traders}
         tags = event_tags(candidates)
 
+    # top traders on each side of each market (hedgers already removed, so nobody is on two sides)
+    sides = defaultdict(dict)
+    for (cond, outcome), m in markets.items():
+        sides[cond][outcome] = m["traders"]
+
     rows = []
     for (cond, outcome), m in markets.items():
         if len(m["traders"]) < args.min_traders or m["shares"] <= 0:
@@ -366,6 +373,8 @@ def find_picks(args):
             "Pick": outcome,
             "Market": m["title"],
             "Bettors": len(m["traders"]),
+            # top traders ($100+ positions) on the other side(s) of the same market
+            "Against": len(set().union(*(t for o, t in sides[cond].items() if o != outcome))),
             # how much of their bankroll the average holder has on this pick
             "Avg bankroll %": round(sum(pcts) / len(pcts), 1) if pcts else 0.0,
             "Total $ in": round(m["cost"]),
