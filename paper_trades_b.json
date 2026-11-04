@@ -3252,7 +3252,7 @@
   },
   {
    "placed_at": "2026-11-03T22:58:45.926235+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Under",
    "market": "Avalanche vs. Blue Jackets: O/U 6.5",
@@ -3282,9 +3282,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.6,
+   "settled_at": "2026-11-04T03:22:39.766894+00:00",
    "topped_up_at": "2026-11-03T23:37:00.265999+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.9,
@@ -3292,7 +3292,7 @@
   },
   {
    "placed_at": "2026-11-03T23:37:00.776084+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Avalanche",
    "market": "Avalanche vs. Blue Jackets",
@@ -3322,9 +3322,9 @@
     "kalshi": 0.5476
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.3,
+   "settled_at": "2026-11-04T03:22:39.864715+00:00",
    "topped_up_at": null
   },
   {
