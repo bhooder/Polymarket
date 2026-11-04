@@ -3438,7 +3438,7 @@
   },
   {
    "placed_at": "2026-11-04T05:28:21.782139+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Alina Charaeva",
    "market": "Prudential Hong Kong Tennis Open: Antonia Ruzic vs Alina Charaeva",
@@ -3467,9 +3467,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.69,
+   "settled_at": "2026-11-04T08:41:02.896461+00:00",
    "topped_up_at": null
   }
  ]
