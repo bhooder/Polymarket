@@ -1,6 +1,7 @@
 {
- "cash": 0.0,
+ "cash": 200.25,
  "bets": [],
  "orders": [],
- "daily_check": "2026-11-04"
+ "daily_check": "2026-11-04",
+ "balances_checked_at": "2026-11-04T04:04:55.448210+00:00"
 }
