@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 954.1167581405427,
+ "cash": 944.4244392999631,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3215,7 +3215,7 @@
   },
   {
    "placed_at": "2026-11-03T22:58:45.484062+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Canucks",
    "market": "Ducks vs. Canucks",
@@ -3245,9 +3245,9 @@
     "kalshi": 0.3966
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.93,
+   "settled_at": "2026-11-04T05:27:07.681988+00:00",
    "topped_up_at": null
   },
   {
@@ -3329,7 +3329,7 @@
   },
   {
    "placed_at": "2026-11-04T00:22:04.695174+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Miami (OH)",
    "market": "Spread: Miami (OH) (-5.5)",
@@ -3358,9 +3358,9 @@
     "polymarket_us": 0.5722
    },
    "intl_cost_per_share": 0.5774,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.3,
+   "settled_at": "2026-11-04T05:27:07.733796+00:00",
    "topped_up_at": null
   },
   {
@@ -3431,6 +3431,42 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T05:28:21.782139+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Alina Charaeva",
+   "market": "Prudential Hong Kong Tennis Open: Antonia Ruzic vs Alina Charaeva",
+   "link": "https://polymarket.com/event/wta-ruzic-charaev-2026-11-01",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf8bdc4591fb1f8384df412e8712c2021ae1d450534db57c1cf779d36dc192c0d",
+   "token_id": "34787297671455115669378965684668301875409572332564807624793600710931370717029",
+   "outcome_index": 1,
+   "ends": "2026-11-04T06:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 14.4,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 18.72463768115942,
+   "cost": 9.69,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXWTAMATCH-26NOV01RUZCHA-CHA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
