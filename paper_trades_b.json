@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 944.4244392999631,
+ "cash": 929.124439299963,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3366,7 +3366,7 @@
   {
    "placed_at": "2026-11-04T00:22:05.513207+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Real Madrid CF win on 2026-11-04?",
    "link": "https://polymarket.com/event/ucl-aek1-rma-2026-11-04",
@@ -3380,9 +3380,9 @@
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.21,
    "avg_price": 0.2,
-   "shares": 27.993558165971965,
-   "cost": 5.91,
-   "fees": 0.3113,
+   "shares": 54.99242137173173,
+   "cost": 11.61,
+   "fees": 0.6115,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -3397,7 +3397,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-04T10:51:30.431240+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 20.4,
+   "top_up_size_multiplier": 0.593
   },
   {
    "placed_at": "2026-11-04T03:39:52.830484+00:00",
@@ -3470,6 +3473,43 @@
    "payout": 0.0,
    "profit": -9.69,
    "settled_at": "2026-11-04T08:41:02.896461+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T10:51:30.818850+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will FC Porto win on 2026-11-04?",
+   "link": "https://polymarket.com/event/ucl-por-nap-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcd77ee0ddabb7edae7498631da52a756f1982c6e143e61dde7bcc09bda2d89fc",
+   "token_id": "113334141963816902806725862047710486351538284781469387611792727562381118035162",
+   "outcome_index": 1,
+   "ends": "2026-11-04T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 30.5,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 18.921175663307928,
+   "cost": 9.6,
+   "fees": 0.3286,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-por-nap-2026-11-04-por",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5074,
+    "kalshi": 0.508
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
