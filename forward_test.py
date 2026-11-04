@@ -27,6 +27,7 @@ import shutil
 import time
 from datetime import datetime, timedelta, timezone
 
+import live
 import polymarket_smart_money as scanner
 import venues
 
@@ -175,9 +176,10 @@ def in_band(price, entry):
     return -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9
 
 
-def place(state, pick, info, stake, existing=None):
+def place(state, pick, info, stake, existing=None, on_bet=None):
     """Paper-buy `stake` of the bankroll on this pick (or top up an existing bet) on
     whichever US venue (Polymarket US or Kalshi) is cheapest, fees included.
+    on_bet, if given, is called with each bet placed (live.py mirrors Strategy A's).
     Returns the bet, or None if it was skipped."""
     label = f"{pick['Pick']} / {pick['Market'][:50]}"
     roll = bankroll(state)
@@ -215,6 +217,8 @@ def place(state, pick, info, stake, existing=None):
         existing["top_up_avg_bankroll_pct"] = pick["Avg bankroll %"]
         existing["top_up_size_multiplier"] = round(mult, 3)
         print(f"  TOP UP to 2% on {fill['venue']}: +${fill['cost']:.2f}  {label}")
+        if on_bet:
+            on_bet({"bet": existing, "fill": fill, "share": dollars / roll, "top_up": True, "entry": entry})
         return existing
     state["bets"].append({
         "placed_at": now().isoformat(), "status": "open", "stake": stake,
@@ -234,6 +238,8 @@ def place(state, pick, info, stake, existing=None):
     others = ", ".join(f"{q['venue']} {q['cost'] / q['shares']:.3f}" for q in choices[1:])
     print(f"  BET {stake:.0%} on {fill['venue']}: ${fill['cost']:.2f} on {pick['Pick']} @ "
           f"{fill['avg_price']:.3f} (fee ${fill['fees']:.2f}){' vs ' + others if others else ''}  {label}")
+    if on_bet:
+        on_bet({"bet": state["bets"][-1], "fill": fill, "share": dollars / roll, "top_up": False, "entry": entry})
     return state["bets"][-1]
 
 
@@ -257,7 +263,7 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks, tiers):
+def trade(state, picks, tiers, on_bet=None):
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
@@ -281,7 +287,7 @@ def trade(state, picks, tiers):
         existing = by_token.get(pick["token_id"])
         if existing:
             if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):
-                place(state, pick, m, stake, existing)
+                place(state, pick, m, stake, existing, on_bet)
             continue
         if pick["condition_id"] in by_market:
             continue  # we already bet the other side; never hold both
@@ -290,7 +296,7 @@ def trade(state, picks, tiers):
             kind = "moneyline/spread" if slot[1] == "side" else "total"
             print(f"  skip (already have a {kind} bet on this game): {label}")
             continue
-        bet = place(state, pick, m, stake)
+        bet = place(state, pick, m, stake, on_bet=on_bet)
         if bet:
             by_token[pick["token_id"]] = bet
             by_market.add(pick["condition_id"])
@@ -640,10 +646,16 @@ def main():
         save_state(states[key], path)
     picks, _ = scanner.find_picks(scanner_args)
     write_picks(picks)
+    live_bets = []  # Strategy A's new paper bets, mirrored with real money by live.py
     for key, cfg in STRATEGIES.items():
         print(f"-- {cfg['name']} --")
-        trade(states[key], picks, cfg["tiers"])
+        trade(states[key], picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None)
         save_state(states[key], os.path.join(HERE, cfg["state"]))
+    try:
+        live.run(live_bets, MAX_ABOVE)  # prints nothing about real bets: the logs are public
+    except Exception as e:
+        print(f"Live betting error ({type(e).__name__}); details sent to the private alert channel")
+        live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     write_reports(states)
     for key, cfg in STRATEGIES.items():
         st = states[key]

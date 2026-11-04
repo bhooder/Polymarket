@@ -13,8 +13,8 @@ Last updated: 2026-10-28.
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
 which outcomes have "smart money" consensus, and test whether following them
-would make money. Research and paper trading only. The code never places
-real orders and never touches money, wallets, or private keys.
+would make money. Paper trading, plus (from 2026-11-03) optional real-money
+betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
 
 ## Files (Python 3.11, needs `requests`)
 - `polymarket_smart_money.py`: the scanner. Finds consensus picks.
@@ -22,6 +22,16 @@ real orders and never touches money, wallets, or private keys.
   pretend bets by the owner's rules.
 - `venues.py`: finds the same bet on Polymarket US and Kalshi, prices it from
   real order books with fees, and settles it.
+- `live.py`: real-money betting. Copies each new Strategy A paper bet (and
+  top-up) to the same venue, sized as the same share of the real bankroll
+  (cash + open positions on both accounts), same price rule, "fill now or
+  cancel" limit orders, 50% exposure cap, never doubles a position it already
+  holds. Mode from the LIVE_TRADING repository variable: off (default),
+  practice (no orders; Polymarket US orders previewed), on. Keys in GitHub
+  Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID, PM_US_SECRET_KEY,
+  NTFY_TOPIC. PRIVACY: logs are public, so live.py prints and saves nothing
+  about real bets; details go only to a private ntfy push channel. Needs the
+  `cryptography` package.
 - `.github/workflows/hourly.yml`: GitHub Actions runs the forward test every
   15 minutes (:02, :17, :32, :47) and commits the results back to the repo.
 - `index.html`: home page linking to the two reports (GitHub Pages).

@@ -23,8 +23,16 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-      - run: pip install requests
+      - run: pip install requests cryptography
       - run: python -u forward_test.py
+        env:
+          # Real-money betting (live.py). LIVE_TRADING is a repository variable: off, practice or on.
+          LIVE_TRADING: ${{ vars.LIVE_TRADING }}
+          KALSHI_KEY_ID: ${{ secrets.KALSHI_KEY_ID }}
+          KALSHI_PRIVATE_KEY: ${{ secrets.KALSHI_PRIVATE_KEY }}
+          PM_US_KEY_ID: ${{ secrets.PM_US_KEY_ID }}
+          PM_US_SECRET_KEY: ${{ secrets.PM_US_SECRET_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       - name: Save results
         run: |
           git config user.name "github-actions[bot]"
