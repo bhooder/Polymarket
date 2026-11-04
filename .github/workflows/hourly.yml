@@ -41,5 +41,10 @@ jobs:
           git add paper_trades.json paper_trades.csv paper_trades_b.json paper_trades_b.csv paper_trades_c.json paper_trades_c.csv live_trades.json live_trades.csv paper_report.html picks.html
           git diff --cached --quiet && exit 0
           git commit -m "Forward test run $(date '+%Y-%m-%d %H:%M')"
-          git pull --rebase
-          git push
+          # retry: a brief GitHub hiccup must not throw away a run's results (real bets included)
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 10))
+          done
+          exit 1
