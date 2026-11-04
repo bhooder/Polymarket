@@ -117,8 +117,10 @@ def bankroll(state):
 
 
 def settle(state):
-    """Pay out bets whose market has resolved, on whichever venue they were placed."""
+    """Pay out bets whose market has resolved, on whichever venue they were placed.
+    Returns the bets settled in this call."""
     pending = open_bets(state)
+    settled = []
     # bets from before the US-venue switch were "placed" on international Polymarket
     intl = [b for b in pending if b.get("venue", "polymarket_intl") == "polymarket_intl"]
     ids = sorted({b["condition_id"] for b in intl})
@@ -143,6 +145,8 @@ def settle(state):
         state["cash"] += payout
         print(f"  settled {b['status'].upper()}: {b['pick']} / {b['market'][:50]}  "
               f"cost ${b['cost']:.2f} -> paid ${payout:.2f}")
+        settled.append(b)
+    return settled
 
 
 def decided_by(m):
@@ -711,6 +715,18 @@ def write_picks(picks):
     copy_to_icloud("picks.html")
 
 
+def settled_alert(b, state):
+    """(title, text) for a real bet that just settled, with the running real-money record."""
+    done = [x for x in state["bets"] if x["status"] in ("won", "lost", "push")]
+    wins = sum(x["status"] == "won" for x in done)
+    total = sum(x["profit"] for x in done)
+    mark = {"won": "WON", "lost": "LOST", "push": "PUSH (money back)"}[b["status"]]
+    return (f"Real bet {mark}: {b['profit']:+.2f}",
+            f"{b['pick']} / {b['market']}\n{b['shares']:g} contracts on {VENUE_NAMES.get(b['venue'], b['venue'])}: "
+            f"cost ${b['cost']:.2f}, paid ${b['payout']:.2f}, profit {b['profit']:+.2f}\n"
+            f"Real record: {wins}-{len(done) - wins}, total profit {total:+.2f}")
+
+
 def main():
     print(f"\n=== Forward test run {time.strftime('%Y-%m-%d %H:%M')} ===")
     states = {}
@@ -721,7 +737,9 @@ def main():
         save_state(states[key], path)
     live_path = os.path.join(HERE, LIVE["state"])
     live_state = load_state(live_path) if os.path.exists(live_path) else {"cash": 0.0, "bets": [], "orders": []}
-    settle(live_state)  # real payouts land in the accounts by themselves; this just records them
+    # real payouts land in the accounts by themselves; this records them and tells the group
+    for b in settle(live_state):
+        live.alert(*settled_alert(b, live_state))
     save_state(live_state, live_path)
     picks, _ = scanner.find_picks(scanner_args)
     write_picks(picks)
