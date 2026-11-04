@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 774.0969422549888,
+ "cash": 765.0169422549887,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3995,6 +3995,43 @@
     "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T23:10:03.032428+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hawks",
+   "market": "Hawks vs. Wizards",
+   "link": "https://polymarket.com/event/nba-atl-was-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8f097e91950aedef3070948ea5a777474f1d1f78e82796b3fe4b34afe0eb53f3",
+   "token_id": "6047234062165900217539830837728281097954840938663134342333674115099735148600",
+   "outcome_index": 0,
+   "ends": "2026-11-05T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.4,
+   "traders_entry": 0.57,
+   "avg_price": 0.56,
+   "shares": 15.733165512901193,
+   "cost": 9.08,
+   "fees": 0.2694,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-atl-was-2026-11-04",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5771,
+    "kalshi": 0.5778
+   },
+   "intl_cost_per_share": 0.5723,
    "payout": null,
    "profit": null,
    "settled_at": null,
