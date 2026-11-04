@@ -62,6 +62,17 @@ def amount(x):
     return float(x or 0)
 
 
+class VenueError(Exception):
+    pass
+
+
+def checked(r):
+    """The JSON reply, or an error that includes the venue's own explanation (e.g. a missing permission)."""
+    if r.status_code >= 400:
+        raise VenueError(f"HTTP {r.status_code} on {urlparse(r.url).path}: {r.text[:300]}")
+    return r.json() if r.content else {}
+
+
 # ---------------- Kalshi ----------------
 
 def kalshi_request(method, path, params=None, body=None):
@@ -75,8 +86,7 @@ def kalshi_request(method, path, params=None, body=None):
     headers = {"KALSHI-ACCESS-KEY": os.environ["KALSHI_KEY_ID"], "KALSHI-ACCESS-TIMESTAMP": ts,
                "KALSHI-ACCESS-SIGNATURE": base64.b64encode(sig).decode()}
     r = requests.request(method, venues.KALSHI + path, params=params, json=body, headers=headers, timeout=30)
-    r.raise_for_status()
-    return r.json() if r.content else {}
+    return checked(r)
 
 
 def kalshi_account():
@@ -123,8 +133,7 @@ def pm_us_request(method, path, params=None, body=None):
     headers = {"X-PM-Access-Key": os.environ["PM_US_KEY_ID"], "X-PM-Timestamp": ts,
                "X-PM-Signature": base64.b64encode(sig).decode()}
     r = requests.request(method, PM_US_API + path, params=params, json=body, headers=headers, timeout=30)
-    r.raise_for_status()
-    return r.json() if r.content else {}
+    return checked(r)
 
 
 def pm_us_account():
