@@ -18,6 +18,7 @@ Keys come from GitHub Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID,
 PM_US_SECRET_KEY.
 """
 import base64
+import json
 import math
 import os
 import time
@@ -168,7 +169,8 @@ def pm_us_order(ref, count, max_price, preview=False):
     """Returns (contracts filled, average price paid, fees). With preview, nothing is placed."""
     body = pm_us_order_body(ref, count, max_price)
     if preview:
-        order = pm_us_request("POST", "/v1/order/preview", body={"request": body}).get("order") or {}
+        reply = pm_us_request("POST", "/v1/order/preview", body={"request": body})
+        order = reply.get("order") or {}
     else:
         body.update(synchronousExecution=True, maxBlockTime="5")
         r = pm_us_request("POST", "/v1/orders", body=body)
@@ -177,7 +179,10 @@ def pm_us_order(ref, count, max_price, preview=False):
     px = amount(order.get("avgPx"))
     if px and not ref["long"]:
         px = 1 - px
-    return filled, px, amount(order.get("commissionNotionalTotalCollected"))
+    fees = amount(order.get("commissionNotionalTotalCollected"))
+    if preview:  # practice mode: the raw reply shows how Polymarket US read the order
+        return filled, px, fees, json.dumps(reply)[:600]
+    return filled, px, fees
 
 
 # ---------------- mirroring Strategy A ----------------
@@ -280,8 +285,9 @@ def run(intents, max_above, state):
         try:
             if m == "practice":
                 if venue == "polymarket_us":
-                    filled, px, fees = pm_us_order(ref, count, max_price, preview=True)
-                    plan += f"\nPreview: would fill {filled:g} at {px:.3f}, fees ${fees:.2f}."
+                    filled, px, fees, raw = pm_us_order(ref, count, max_price, preview=True)
+                    plan += (f"\nPreview: would fill {filled:g} at {px:.3f}, fees ${fees:.2f}."
+                             f"\nSent: {json.dumps(pm_us_order_body(ref, count, max_price))}\nReply: {raw}")
                 alert(f"{tag}: bet", plan)
                 continue
             order_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f'{bet["token_id"]}-{bet["placed_at"]}-{it["top_up"]}'))
