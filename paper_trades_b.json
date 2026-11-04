@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 762.2614555205969,
+ "cash": 774.0969422549888,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3477,7 +3477,7 @@
   },
   {
    "placed_at": "2026-11-04T10:51:30.818850+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FC Porto win on 2026-11-04?",
@@ -3507,9 +3507,9 @@
     "kalshi": 0.508
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.2,
+   "settled_at": "2026-11-04T22:21:41.408353+00:00",
    "topped_up_at": "2026-11-04T15:56:44.582164+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 25.8,
@@ -3632,7 +3632,7 @@
   },
   {
    "placed_at": "2026-11-04T16:23:45.001615+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Arsenal FC win on 2026-11-04?",
@@ -3661,9 +3661,9 @@
     "polymarket_us": 0.8111
    },
    "intl_cost_per_share": 0.7983,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.84,
+   "profit": 2.24,
+   "settled_at": "2026-11-04T22:21:41.608325+00:00",
    "topped_up_at": null
   },
   {
@@ -3704,7 +3704,7 @@
   },
   {
    "placed_at": "2026-11-04T17:54:12.832237+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Manchester City FC win on 2026-11-04?",
@@ -3733,9 +3733,9 @@
     "polymarket_us": 0.3862
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.03,
+   "settled_at": "2026-11-04T22:21:41.676967+00:00",
    "topped_up_at": "2026-11-04T18:45:19.991532+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.5,
