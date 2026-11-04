@@ -61,6 +61,13 @@ STRATEGIES = {
                    "Avg bankroll % is ignored.",
           "tiers": [(0.02, [(5, 0)]),
                     (0.01, [(4, 0)])]},
+    # net = bettors minus top traders on the other side of the same market
+    "c": {"name": "Strategy C", "state": "paper_trades_c.json", "csv": "paper_trades_c.csv",
+          "rules": "Stake by NET bettors (bettors minus top traders on the other side). "
+                   "2%: net 5+. 1%: net 4. Avg bankroll % is ignored.",
+          "tiers": [(0.02, [(5, 0)]),
+                    (0.01, [(4, 0)])],
+          "net": True},
 }
 
 
@@ -267,14 +274,15 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks, tiers, on_bet=None):
+def trade(state, picks, tiers, on_bet=None, net=False):
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
     by_market = {b["condition_id"] for b in open_bets(state)}
     by_slot = {game_slot(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
     for pick in picks:
-        stake = stake_for(pick["Bettors"], pick["Avg bankroll %"], tiers)
+        bettors = pick["Bettors"] - (pick.get("Against", 0) if net else 0)
+        stake = stake_for(bettors, pick["Avg bankroll %"], tiers)
         if not stake:
             continue
         label = f"{pick['Pick']} / {pick['Market'][:50]} ({pick['Bettors']} bettors, {pick['Avg bankroll %']}%)"
@@ -496,9 +504,12 @@ REPORT = """<!doctype html>
   .up { color:var(--up); } .down { color:var(--down); }
   a { color:var(--accent); text-decoration:none; }
   .note { color:var(--muted); font-size:13px; margin-top:16px; }
-  .tabs { display:flex; gap:4px; border-bottom:1px solid var(--line); margin:0 0 18px; }
+  .tabs { display:flex; gap:4px; border-bottom:1px solid var(--line); margin:0 0 18px;
+          overflow-x:auto; scrollbar-width:none; }
   .tabs button { border:0; background:none; color:var(--muted); font:inherit; font-weight:600;
-                 padding:8px 14px; border-bottom:2px solid transparent; margin-bottom:-1px; cursor:pointer; }
+                 padding:8px 14px; border-bottom:2px solid transparent; margin-bottom:-1px; cursor:pointer;
+                 white-space:nowrap; flex:none; }
+  @media (max-width: 640px) { .tabs button { padding:8px 12px; } .tabs .long { display:none; } }
   .tabs button.on { color:var(--text); border-bottom-color:var(--accent); }
   .verdicts { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
   .verdict { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--muted);
@@ -520,15 +531,14 @@ __ODDS_CSS__
 </style></head><body><main>
 <h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
-<div class="tabs" role="tablist"><button data-tab="real" class="on">Real bets</button>
-<button data-tab="a">Strategy A</button><button data-tab="b">Strategy B</button>
-<button data-tab="stats">Statistics</button></div>
+<div class="tabs" role="tablist"><button data-tab="real" class="on">Real<span class="long"> bets</span></button>
+__STRATEGY_TABS__
+<button data-tab="stats">Stat<span class="long">istic</span>s</button></div>
 __ODDS_TOGGLE__
 <section id="tab-real">__BETS_REAL__</section>
-<section id="tab-a" hidden>__BETS_A__</section>
-<section id="tab-b" hidden>__BETS_B__</section>
+__STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
-<p class="note">Strategy A and B use pretend money; Real bets use real money. Each bet goes to
+<p class="note">Strategies A, B and C use pretend money; Real bets use real money. Each bet goes to
 whichever US venue (Polymarket US or Kalshi) had the lowest price including fees, from the real order
 books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
@@ -651,6 +661,11 @@ def write_csv(path, bets):
             w.writerows(bets)
 
 
+def tab_label(name):
+    """'Strategy A' shows as just 'A' on phones."""
+    return name.replace("Strategy ", '<span class="long">Strategy </span>')
+
+
 def write_reports(states, live_state):
     """states = {strategy key: state}; live_state = real bets. Writes the CSVs and the report page."""
     for key, state in states.items():
@@ -658,14 +673,17 @@ def write_reports(states, live_state):
     write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
-    sub = f"Real-money bets and pretend-money tests of two staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    sub = f"Real-money bets and pretend-money tests of three staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
             .replace("__SUB__", html.escape(sub))
             .replace("__BETS_REAL__", bets_html(LIVE, live_state, real_tiles(live_state)))
-            .replace("__BETS_A__", bets_html(STRATEGIES["a"], states["a"]))
-            .replace("__BETS_B__", bets_html(STRATEGIES["b"], states["b"]))
+            .replace("__STRATEGY_TABS__", "".join(
+                f'<button data-tab="{k}">{tab_label(cfg["name"])}</button>' for k, cfg in STRATEGIES.items()))
+            .replace("__STRATEGY_SECTIONS__", "\n".join(
+                f'<section id="tab-{k}" hidden>{bets_html(cfg, states[k])}</section>'
+                for k, cfg in STRATEGIES.items()))
             .replace("__STATS__", stats_html(settled, real_vs_paper(live_state, states["a"]))))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
         f.write(page)
@@ -710,7 +728,8 @@ def main():
     live_bets = []  # Strategy A's new paper bets, mirrored with real money by live.py
     for key, cfg in STRATEGIES.items():
         print(f"-- {cfg['name']} --")
-        trade(states[key], picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None)
+        trade(states[key], picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
+              net=cfg.get("net", False))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
         live.run(live_bets, MAX_ABOVE, live_state)

@@ -108,6 +108,11 @@ avg bankroll % ignored. State in paper_trades_b.json / paper_trades_b.csv.
 Strategy settings live in STRATEGIES in forward_test.py. The report has tabs:
 Strategy A, Strategy B, Statistics (A and B side by side).
 
+Strategy C (added 2026-11-04): a third separate $1,000 paper bankroll, same
+rules but staked by NET bettors (Bettors minus Against): 1% at net 4, 2% at net
+5+, avg bankroll % ignored. State in paper_trades_c.json / .csv. The report's
+tabs: Real bets, Strategy A, B, C, Statistics.
+
 Statistics tab (paper_report.html, added 2026-10-29): null hypothesis = the
 market price is the true win chance. Per bet, expected profit = shares x price
 - cost (minus the fees), variance = shares^2 x p(1-p). Z "beat the market" =
