@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 980.1078260869565,
+ "cash": 974.4278260869565,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -71,6 +71,42 @@
     "kalshi": 0.508
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T14:08:56.716836+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Real Madrid CF win on 2026-11-04?",
+   "link": "https://polymarket.com/event/ucl-aek1-rma-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 0.574,
+   "condition_id": "0x8941f985cce9ac4a175ce7a0a3d75f38536a43de46517d75aa9658ee2cf55574",
+   "token_id": "3771084942539439798998256191956824579778203065651547449472385427482459623087",
+   "outcome_index": 1,
+   "ends": "2026-11-04T17:45:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 16.9,
+   "traders_entry": 0.2,
+   "avg_price": 0.19,
+   "shares": 28.3015036917767,
+   "cost": 5.68,
+   "fees": 0.3027,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-aek1-rma-2026-11-04-rma",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.2007
+   },
+   "intl_cost_per_share": 0.1977,
    "payout": null,
    "profit": null,
    "settled_at": null,

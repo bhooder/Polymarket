@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 929.124439299963,
+ "cash": 900.3288947689601,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3507,6 +3507,115 @@
     "kalshi": 0.508
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T14:08:55.406028+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Trail Blazers",
+   "market": "Trail Blazers vs. Suns",
+   "link": "https://polymarket.com/event/nba-por-phx-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8c46d71e1ac2d02318e36c88763d512a25f73153f03dffa8df67212a5a922698",
+   "token_id": "6012978646217867653977357775888242000251174681326839533276158115037925771680",
+   "outcome_index": 0,
+   "ends": "2026-11-05T02:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 50.4,
+   "traders_entry": 0.58,
+   "avg_price": 0.58,
+   "shares": 16.06225253411763,
+   "cost": 9.6,
+   "fees": 0.28,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV04PORPHX-POR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5974
+   },
+   "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T14:08:55.734297+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Spread: Pistons (-2.5)",
+   "link": "https://polymarket.com/event/nba-phi-det-2026-11-04",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb9491610502f8c2409cc609f6c776d2ae6748527b731443405c7c26ec8440cb6",
+   "token_id": "35641203249583452491293654504686569667057460400956082312428461247325879057986",
+   "outcome_index": 1,
+   "ends": "2026-11-05T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.1,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 18.896812369825792,
+   "cost": 9.6,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV04PHIDET-DET3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.508,
+    "polymarket_us": 0.5174
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-04T14:08:56.037750+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Hornets vs. Nets: O/U 213.5",
+   "link": "https://polymarket.com/event/nba-cha-bkn-2026-11-04",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x81a87c89787f5a5ce0c478a8fb141ef84c0d9a6c33f39732fee81bf22a6f2481",
+   "token_id": "6748582939066863864583268923173747092555353102357661626453396581175418360461",
+   "outcome_index": 1,
+   "ends": "2026-11-05T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.7,
+   "traders_entry": 0.49,
+   "avg_price": 0.51,
+   "shares": 18.20360562229737,
+   "cost": 9.6,
+   "fees": 0.3162,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-cha-bkn-2026-11-04-213pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5274
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
