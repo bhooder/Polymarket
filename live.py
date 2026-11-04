@@ -12,8 +12,8 @@ The LIVE_TRADING setting picks the mode:
             Polymarket US orders, and sends an alert describing each bet it would place
   on        places real "fill now or cancel" orders
 
-Privacy: the repo and its GitHub Actions logs are public, so nothing about real bets is
-printed or saved. Details go only to the owner's private ntfy channel (NTFY_TOPIC).
+Real bets that fill are recorded in live_trades.json (public, like the paper results) and
+shown on the report's "Real bets" tab. Each bet also sends a phone alert (ntfy, NTFY_TOPIC).
 Keys come from GitHub Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID,
 PM_US_SECRET_KEY.
 """
@@ -22,6 +22,7 @@ import math
 import os
 import time
 import uuid
+from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 import requests
@@ -32,6 +33,10 @@ import venues
 
 PM_US_API = "https://api.polymarket.us"
 MAX_EXPOSURE = 0.50  # same cap as the paper test: at most half the bankroll in open bets
+
+
+def now_iso():
+    return datetime.now(timezone.utc).isoformat()
 
 
 def mode():
@@ -173,24 +178,56 @@ KEYS = {"kalshi": ("KALSHI_KEY_ID", "KALSHI_PRIVATE_KEY"), "polymarket_us": ("PM
 ACCOUNT = {"kalshi": kalshi_account, "polymarket_us": pm_us_account}
 
 
-def run(intents, max_above):
+def record(state, it, ref, filled, px, fees, count):
+    """Add a filled real order to the live state (a top-up merges into its bet)."""
+    bet, cost = it["bet"], round(filled * px + fees, 2)
+    if it["top_up"]:
+        rec = next((b for b in state["bets"] if b["token_id"] == bet["token_id"] and b["status"] == "open"), None)
+        if rec:
+            rec["shares"] += filled
+            rec["cost"] = round(rec["cost"] + cost, 2)
+            rec["fees"] = round(rec["fees"] + fees, 4)
+            rec["avg_price"] = round((rec["cost"] - rec["fees"]) / rec["shares"], 4)
+            rec.update(stake=0.02, topped_up_at=now_iso(),
+                       top_up_size_multiplier=bet.get("top_up_size_multiplier"))
+            return
+    state["bets"].append({
+        "placed_at": now_iso(), "status": "open",
+        "stake": bet["stake"], "size_multiplier": bet.get("size_multiplier"),
+        **{k: bet.get(k) for k in ("pick", "market", "link", "market_type", "condition_id", "token_id",
+                                   "outcome_index", "ends", "bettors", "avg_bankroll_pct")},
+        "traders_entry": it["entry"], "avg_price": round(px, 4), "shares": filled, "cost": cost,
+        "fees": round(fees, 4), "contracts_ordered": count, "venue": ref["venue"],
+        "venue_ref": {k: ref[k] for k in ("venue", "ref", "long", "yes", "fee_rate") if k in ref},
+        "paper_price": ref.get("avg_price"),  # what the paper test paid for the same bet, same moment
+        "payout": None, "profit": None, "settled_at": None, "topped_up_at": None,
+    })
+
+
+def run(intents, max_above, state):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
-    max_above: the price rule (pay at most this much over the traders' average entry)."""
+    max_above: the price rule (pay at most this much over the traders' average entry).
+    state: live_trades.json contents; filled orders are added to it (only when mode is "on")."""
     m = mode()
-    if m == "off" or not intents:
-        return
+    if m == "off" or (not intents and m != "on"):
+        return  # when "on", balances are refreshed every run for the Real bets tab
     accounts = {}
     for venue, names in KEYS.items():
         if all(os.environ.get(n) for n in names):
             try:
                 accounts[venue] = ACCOUNT[venue]()
-            except Exception as e:  # bad key, outage: skip this venue, say so privately
-                alert("Live betting: account check failed", f"{VENUE_LABEL[venue]}: {type(e).__name__}: {e}")
+            except Exception as e:  # bad key, outage: skip this venue (alert only if it matters now)
+                if intents:
+                    alert("Live betting: account check failed", f"{VENUE_LABEL[venue]}: {type(e).__name__}: {e}")
     if not accounts:
-        alert("Live betting: no accounts", "No working Kalshi or Polymarket US keys, so no live bets.")
+        if intents:
+            alert("Live betting: no accounts", "No working Kalshi or Polymarket US keys, so no live bets.")
         return
     bankroll = sum(cash + sum(cost for _, cost in held.values()) for cash, held in accounts.values())
+    if m == "on":
+        state["cash"] = round(sum(cash for cash, _ in accounts.values()), 2)
+        state["balances_checked_at"] = now_iso()
     exposure = sum(sum(cost for _, cost in held.values()) for _, held in accounts.values())
     tag = "PRACTICE (not placed)" if m == "practice" else "LIVE"
 
@@ -238,7 +275,10 @@ def run(intents, max_above):
         except Exception as e:
             alert(f"{tag}: order failed", f"{plan}\n{type(e).__name__}: {e}")
             continue
+        state.setdefault("orders", []).append({"at": now_iso(), "pick": bet["pick"],
+                                               "venue": venue, "ordered": count, "filled": filled})
         if filled:
+            record(state, it, ref, filled, px, fees, count)
             spent = filled * px + fees
             exposure += spent
             accounts[venue] = (cash - spent, held)

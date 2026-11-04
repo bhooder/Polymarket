@@ -43,6 +43,10 @@ MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry..
 MAX_BELOW = 0.04         # ...and at most 4c less
 UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
+LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.csv",
+        "rules": "Real money on Kalshi and Polymarket US, copying each Strategy A paper bet at the same "
+                 "% of the real bankroll, with the same price rule."}
+
 # Each strategy has its own pretend bankroll and state file; all other rules are shared.
 # tiers: (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...]),
 # checked top to bottom; the first tier with any matching rule wins.
@@ -351,7 +355,34 @@ def verdict(n, z, goal):
     return "", f"Within normal luck: no real evidence either way yet. {when}"
 
 
-def stats_html(strats):
+def real_vs_paper(live_state, paper_state):
+    """Real bets next to the Strategy A paper bets they copied: prices paid, fills, results."""
+    real = live_state["bets"]
+    orders = live_state.get("orders") or []
+    if not real and not orders:
+        return '<h2>Real vs paper</h2><p class="muted">No real bets yet.</p>'
+    paper = {b["token_id"]: b for b in paper_state["bets"]}
+    priced = [b for b in real if b.get("paper_price")]
+    gap = sum(b["avg_price"] - b["paper_price"] for b in priced) / len(priced) if priced else None
+    done = [b for b in real if b["status"] in ("won", "lost", "push") and b["token_id"] in paper
+            and paper[b["token_id"]]["status"] != "open"]
+    ret = lambda bets: sum(b["profit"] for b in bets) / sum(b["cost"] for b in bets) if bets else None
+    pr = lambda v: f"{v:+.1%}" if v is not None else "&ndash;"
+    full = sum(o["filled"] >= o["ordered"] for o in orders)
+    some = sum(0 < o["filled"] < o["ordered"] for o in orders)
+    rows = [
+        ("Orders sent", f"{len(orders)}: {full} filled, {some} partly, {len(orders) - full - some} not filled"),
+        ("Avg price paid vs paper (same bets)",
+         f"{gap * 100:+.1f}&cent; per contract" if gap is not None else "&ndash;"),
+        ("Return per $ on the same settled bets",
+         f"real {pr(ret(done))} vs paper {pr(ret([paper[b['token_id']] for b in done]))} ({len(done)} bets)"),
+    ]
+    body = "".join(f'<tr><td class="pick">{k}</td><td class="num">{v}</td></tr>' for k, v in rows)
+    return (f'<h2>Real vs paper</h2><div class="wrap"><table><thead><tr><th></th><th class="num">Value</th>'
+            f'</tr></thead><tbody>{body}</tbody></table></div>')
+
+
+def stats_html(strats, extra=""):
     """Statistics tab: the strategies side by side. strats = [(config, settled bets), ...]"""
     fmt_z = lambda z: f"{z:+.2f}" if z is not None else "&ndash;"
     money = lambda v: f'<span class="{"up" if v > 0 else "down" if v < 0 else ""}">{v:+,.2f}</span>'
@@ -376,7 +407,7 @@ def stats_html(strats):
                    + "".join(f'<td class="num">{f(t)}</td>' for _, t, _ in sums) + "</tr>"
                    for label, f in metrics)
     out = [f'<h2>Head to head</h2><div class="wrap"><table><thead><tr><th></th>{head}</tr></thead>'
-           f'<tbody>{body}</tbody></table></div>']
+           f'<tbody>{body}</tbody></table></div>', extra]
 
     out.append('<div class="verdicts">')
     for cfg, t, _ in sums:
@@ -435,7 +466,7 @@ results move together. A gap between them only means something once both have ma
 REPORT = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paper Trading Results</title>
+<title>Betting Results</title>
 <style>
   :root { --bg:#f7f7f5; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea;
           --accent:#2f6fed; --up:#1a8a4a; --down:#c4372b; }
@@ -484,17 +515,19 @@ REPORT = """<!doctype html>
   @media (max-width: 640px) { .compare, .verdicts { grid-template-columns:1fr; } }
 __ODDS_CSS__
 </style></head><body><main>
-<h1>Paper Trading Results</h1>
+<h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
-<div class="tabs" role="tablist"><button data-tab="a" class="on">Strategy A</button>
-<button data-tab="b">Strategy B</button><button data-tab="stats">Statistics</button></div>
+<div class="tabs" role="tablist"><button data-tab="real" class="on">Real bets</button>
+<button data-tab="a">Strategy A</button><button data-tab="b">Strategy B</button>
+<button data-tab="stats">Statistics</button></div>
 __ODDS_TOGGLE__
-<section id="tab-a">__BETS_A__</section>
+<section id="tab-real">__BETS_REAL__</section>
+<section id="tab-a" hidden>__BETS_A__</section>
 <section id="tab-b" hidden>__BETS_B__</section>
 <section id="tab-stats" hidden>__STATS__</section>
-<p class="note">Pretend money only. Each bet goes to whichever US venue (Polymarket US or Kalshi)
-had the lowest price including fees, from the real order books.
-Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
+<p class="note">Strategy A and B use pretend money; Real bets use real money. Each bet goes to
+whichever US venue (Polymarket US or Kalshi) had the lowest price including fees, from the real order
+books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
 <script>
 function showTab(name) {
@@ -519,7 +552,24 @@ def short_time(iso):
     return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone().strftime("%b %d %I:%M %p")
 
 
-def bets_html(cfg, state):
+def real_tiles(state):
+    """Tiles for the Real bets tab (the real bankroll comes from the accounts, not a start amount)."""
+    done = [b for b in state["bets"] if b["status"] != "open"]
+    wins = sum(b["status"] == "won" for b in done)
+    profit = sum(b["profit"] for b in done)
+    staked = sum(b["cost"] for b in done)
+    open_cost = sum(b["cost"] for b in open_bets(state))
+    return [
+        (f'${state.get("cash", 0) + open_cost:,.2f}', "Balance + open bets"),
+        (f'<span class="{"up" if profit >= 0 else "down"}">{profit:+,.2f}</span>', "Profit (settled)"),
+        (f"{wins}-{len(done) - wins}", "Won-lost"),
+        (f"{profit / staked:+.1%}" if staked else "&ndash;", "Return per $ bet"),
+        (f"{len(open_bets(state))}", "Open bets"),
+        (f'${sum(b["fees"] for b in state["bets"]):,.2f}', "Fees paid"),
+    ]
+
+
+def bets_html(cfg, state, tiles=None):
     """One strategy's tab: rules, tiles, open bets, settled bets."""
     bets = state["bets"]
     esc = html.escape
@@ -528,8 +578,8 @@ def bets_html(cfg, state):
     profit = sum(b["profit"] for b in done)
     staked = sum(b["cost"] for b in done)
     roll = bankroll(state)
-    change = roll - state["start_bankroll"]
-    tiles = [
+    change = roll - state.get("start_bankroll", roll)
+    tiles = tiles or [
         (f"${roll:,.2f}", "Bankroll"),
         (f'<span class="{"up" if change >= 0 else "down"}">{change:+,.2f}</span>', "Since start"),
         (f"{wins}-{len(done) - wins}", "Won-lost"),
@@ -575,8 +625,9 @@ def bets_html(cfg, state):
         f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
         f'{b["profit"]:+.2f}</td><td>{venue_name(b)}</td></tr>'
         for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
-    return f"""<p class="sub"><b>{cfg["name"]}.</b> {esc(cfg["rules"])}
-Started {short_time(state["started_at"])} with ${state["start_bankroll"]:,.0f}.</p>
+    started = (f'Started {short_time(state["started_at"])} with ${state["start_bankroll"]:,.0f}.'
+               if "start_bankroll" in state else "")
+    return f"""<p class="sub"><b>{cfg["name"]}.</b> {esc(cfg["rules"])} {started}</p>
 <div class="tiles">{tiles_html}</div>
 <h2>Open bets</h2>
 <div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
@@ -597,19 +648,22 @@ def write_csv(path, bets):
             w.writerows(bets)
 
 
-def write_reports(states):
-    """states = {strategy key: state}. Writes each strategy's CSV and the shared report page."""
+def write_reports(states, live_state):
+    """states = {strategy key: state}; live_state = real bets. Writes the CSVs and the report page."""
     for key, state in states.items():
         write_csv(os.path.join(HERE, STRATEGIES[key]["csv"]), state["bets"])
-    settled = [(STRATEGIES[k], [b for b in st["bets"] if b["status"] != "open"]) for k, st in states.items()]
-    sub = f"Pretend-money tests of two staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
+    settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
+               for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
+    sub = f"Real-money bets and pretend-money tests of two staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
             .replace("__SUB__", html.escape(sub))
+            .replace("__BETS_REAL__", bets_html(LIVE, live_state, real_tiles(live_state)))
             .replace("__BETS_A__", bets_html(STRATEGIES["a"], states["a"]))
             .replace("__BETS_B__", bets_html(STRATEGIES["b"], states["b"]))
-            .replace("__STATS__", stats_html(settled)))
+            .replace("__STATS__", stats_html(settled, real_vs_paper(live_state, states["a"]))))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
         f.write(page)
     copy_to_icloud("paper_report.html")
@@ -644,6 +698,10 @@ def main():
         states[key] = load_state(path)
         settle(states[key])
         save_state(states[key], path)
+    live_path = os.path.join(HERE, LIVE["state"])
+    live_state = load_state(live_path) if os.path.exists(live_path) else {"cash": 0.0, "bets": [], "orders": []}
+    settle(live_state)  # real payouts land in the accounts by themselves; this just records them
+    save_state(live_state, live_path)
     picks, _ = scanner.find_picks(scanner_args)
     write_picks(picks)
     live_bets = []  # Strategy A's new paper bets, mirrored with real money by live.py
@@ -652,11 +710,12 @@ def main():
         trade(states[key], picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None)
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
-        live.run(live_bets, MAX_ABOVE)  # prints nothing about real bets: the logs are public
+        live.run(live_bets, MAX_ABOVE, live_state)
     except Exception as e:
-        print(f"Live betting error ({type(e).__name__}); details sent to the private alert channel")
+        print(f"Live betting error ({type(e).__name__}); details sent to the phone alert channel")
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
-    write_reports(states)
+    save_state(live_state, live_path)
+    write_reports(states, live_state)
     for key, cfg in STRATEGIES.items():
         st = states[key]
         print(f"{cfg['name']}: bankroll ${bankroll(st):,.2f} (cash ${st['cash']:,.2f}, "
