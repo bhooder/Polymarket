@@ -34,7 +34,9 @@ betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
   owner's choice) and shown on the report's first tab, "Real bets"; the
   Statistics tab adds Real next to A and B plus a "Real vs paper" table (fill
   rate, price paid vs paper, return on the same bets). Each bet also sends a
-  phone alert via ntfy. Needs the `cryptography` package.
+  short, plain-English phone alert (Telegram); the technical details (order
+  sent, venue reply, skips with reasons, errors) go to `live_log.json` (last
+  2,000 entries). Needs the `cryptography` package.
 - `.github/workflows/hourly.yml`: GitHub Actions runs the forward test, asked
   for every 10 minutes (:03, :13, ...; every 15 until 2026-11-04). GitHub throttles
   free schedules: in practice runs came about hourly overnight. Commits results back.

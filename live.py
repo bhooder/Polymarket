@@ -21,6 +21,7 @@ import base64
 import json
 import math
 import os
+import re
 import time
 import uuid
 from datetime import datetime, timezone
@@ -74,8 +75,13 @@ class VenueError(Exception):
     pass
 
 
+LAST_REPLY = {}  # the latest raw reply from a venue, kept for the technical log
+
+
 def checked(r):
     """The JSON reply, or an error that includes the venue's own explanation (e.g. a missing permission)."""
+    LAST_REPLY.clear()
+    LAST_REPLY.update(path=urlparse(r.url).path, status=r.status_code, body=r.text[:1500])
     if r.status_code >= 400:
         raise VenueError(f"HTTP {r.status_code} on {urlparse(r.url).path}: {r.text[:300]}")
     return r.json() if r.content else {}
@@ -225,93 +231,145 @@ def record(state, it, ref, filled, px, fees, count):
     })
 
 
+# ---------------- messages ----------------
+
+LOG = []  # technical details for live_log.json (forward_test.py saves it); Telegram gets short messages
+
+
+def log(event, **data):
+    LOG.append({"at": now_iso(), "event": event, **data})
+
+
+def plain(pick, market):
+    """'Arsenal to win (vs. Slavia Praha)', 'Under 48.5 (Panthers vs. Packers)', 'Mavericks +5.5'."""
+    pick, market = str(pick), str(market)
+    if market.startswith("Spread: ") and "(" in market:  # "Spread: Thunder (-5.5)"
+        team, line = market[8:].rsplit(" (", 1)
+        line = line.rstrip(")")
+        if pick != team:  # the other team gets the opposite line: -5.5 <-> +5.5
+            line = ("+" + line[1:]) if line.startswith("-") else ("-" + line.lstrip("+"))
+        return f"{pick} {line}"
+    if ": O/U " in market:  # "Panthers vs. Packers: O/U 48.5"
+        game, line = market.rsplit(": O/U ", 1)
+        return f"{pick} {line} ({game})"
+    won = re.match(r"Will (.+) win on \d{4}-\d{2}-\d{2}\?$", market)
+    if won:  # soccer win markets: "Will Arsenal FC win on 2026-11-04?"
+        team = won.group(1)
+        return f"{team} to win" if pick == "Yes" else f"{team} not to win (draw or loss)"
+    game = market.split(": ", 1)[-1]  # drop a "Tournament: " prefix
+    teams = [t.strip() for t in re.split(r" vs\.? ", game)]
+    if len(teams) == 2 and pick in teams:
+        return f"{pick} to win (vs. {teams[1 - teams.index(pick)]})"
+    return f"{pick}: {market}"
+
+
+def cents(p):
+    return f"{p * 100:.0f}¢"
+
+
 def run(intents, max_above, state):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
     max_above: the price rule (pay at most this much over the traders' average entry).
     state: live_trades.json contents; filled orders are added to it (only when mode is "on").
-    Every run in practice/on checks both accounts; once a day it alerts their status."""
+    Every run in practice/on checks both accounts; once a day it sends their status."""
     m = mode()
     if m == "off":
         return
-    accounts, status = {}, []
+    accounts, status, problems = {}, [], []
     for venue, names in KEYS.items():
         if not all(os.environ.get(n) for n in names):
-            status.append(f"{VENUE_LABEL[venue]}: no keys set")
+            status.append(f"{VENUE_LABEL[venue]} no keys")
             continue
         try:
             accounts[venue] = ACCOUNT[venue]()
-            status.append(f"{VENUE_LABEL[venue]}: connected, cash ${accounts[venue][0]:,.2f}, "
-                          f"{len(accounts[venue][1])} open positions")
+            status.append(f"{VENUE_LABEL[venue]} ${accounts[venue][0]:,.2f} ✓")
         except Exception as e:  # bad key, outage: skip this venue
-            status.append(f"{VENUE_LABEL[venue]}: FAILED ({type(e).__name__}: {e})")
+            status.append(f"{VENUE_LABEL[venue]} ✗")
+            problems.append(venue)
+            log("account check failed", venue=venue, error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY))
     today = datetime.now(timezone.utc).date().isoformat()
     manual = os.environ.get("RUN_EVENT") == "workflow_dispatch"  # a run started with "Run workflow"
+    open_count = sum(b["status"] == "open" for b in state["bets"])
     if state.get("daily_check") != today or manual:  # once a day (and on manual runs): keys work? balances
         state["daily_check"] = today
-        alert(f"Live betting ({m}): daily account check", "\n".join(status))
-    elif intents and len(accounts) < len(KEYS):
-        alert("Live betting: account problem", "\n".join(status))
+        alert(f"📊 Daily check{' (practice mode)' if m == 'practice' else ''}",
+              " · ".join(status) + f" · {open_count} open bets")
+    elif intents and problems:
+        alert("⚠️ Problem", f"Couldn't reach {', '.join(VENUE_LABEL[v] for v in problems)}. Details in the log.")
     if not accounts:
         return
     bankroll = sum(cash + sum(cost for _, cost in held.values()) for cash, held in accounts.values())
     state["cash"] = round(sum(cash for cash, _ in accounts.values()), 2)  # shown on the Real bets tab
     state["balances_checked_at"] = now_iso()
     exposure = sum(sum(cost for _, cost in held.values()) for _, held in accounts.values())
-    tag = "PRACTICE (not placed)" if m == "practice" else "LIVE"
 
     for it in intents:
         bet, ref = it["bet"], it["fill"]
-        venue, label = ref["venue"], f'{bet["pick"]} / {bet["market"]}'
+        venue = ref["venue"]
+        what = plain(bet["pick"], bet["market"])
+        where = VENUE_LABEL.get(venue, venue)
+        info = {"bet": what, "pick": bet["pick"], "market": bet["market"], "venue": venue, "ref": ref.get("ref"),
+                "top_up": it["top_up"], "mode": m, "paper_price": bet["avg_price"], "share": it["share"]}
+
+        def skip(reason, tell=True):
+            log("skipped", reason=reason, **info)
+            if tell:
+                alert(f"⏭️ Skipped{' top-up' if it['top_up'] else ''}", f"{what}\n{reason}")
+
         if venue not in accounts:
-            alert(f"{tag}: skipped", f"{label}\nNo working {VENUE_LABEL.get(venue, venue)} account.")
+            skip(f"{where} account isn't working.")
             continue
         cash, held = accounts[venue]
         holding = held.get(ref["ref"])
         if it["top_up"] and not holding:
-            alert(f"{tag}: top-up skipped", f"{label}\nNo live position to top up.")
+            skip("The first bet never filled for real, so there's nothing to top up.")
             continue
         if not it["top_up"] and holding:
-            continue  # already bet this one live (e.g. a repeat run); never double up
+            skip("Already holding this bet.", tell=False)  # e.g. a repeat run; never double up
+            continue
         dollars = round(it["share"] * bankroll, 2)
         if exposure + dollars > MAX_EXPOSURE * bankroll or dollars > cash:
-            alert(f"{tag}: skipped", f"{label}\nWould need ${dollars:.2f}: over the 50% cap or more "
-                                     f"than the {VENUE_LABEL[venue]} cash (${cash:.2f}).")
+            skip(f"Would need ${dollars:.2f}: over the 50% cap or more than the ${cash:.2f} cash on {where}.")
             continue
         max_price = it["entry"] + max_above  # the traders' average entry when this bet was made
         rate = ref.get("fee_rate") or 0
         per_share = max_price + rate * max_price * (1 - max_price) + 0.005  # worst case, fee rounding
         count = math.floor(dollars / per_share)  # whole contracts, sized for the worst allowed price
         if count < 1:
-            alert(f"{tag}: skipped", f"{label}\n${dollars:.2f} is less than one contract at ${max_price:.2f}.")
+            skip(f"${dollars:.2f} isn't enough for one contract at {cents(max_price)}.")
             continue
         side = "YES" if ref.get("yes" if venue == "kalshi" else "long") else "NO"
-        plan = (f"{label}\n{'Top-up' if it['top_up'] else 'Bet'}: buy {count} {side} on {VENUE_LABEL[venue]} "
-                f"at up to ${max_price:.2f} (${dollars:.2f} = {it['share']:.2%} of ${bankroll:,.2f}).\n"
-                f"Paper paid {bet['avg_price']:.3f}.")
+        info.update(side=side, contracts=count, max_price=round(max_price, 4), dollars=dollars,
+                    bankroll=round(bankroll, 2))
+        kind = "Top-up" if it["top_up"] else "Bet"
         try:
             if m == "practice":
                 if venue == "polymarket_us":
-                    filled, px, fees, raw = pm_us_order(ref, count, max_price, preview=True)
-                    plan += (f"\nPreview: would fill {filled:g} at {px:.3f}, fees ${fees:.2f}."
-                             f"\nSent: {json.dumps(pm_us_order_body(ref, count, max_price))}\nReply: {raw}")
-                alert(f"{tag}: bet", plan)
+                    pm_us_order(ref, count, max_price, preview=True)
+                    info.update(sent=pm_us_order_body(ref, count, max_price), reply=dict(LAST_REPLY))
+                log("practice", **info)
+                alert(f"🧪 Practice: would {kind.lower()}", f"{what}\nUp to ${count * per_share:.2f} on {where} · "
+                                                           f"{count} contracts at up to {cents(max_price)}")
                 continue
             order_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f'{bet["token_id"]}-{bet["placed_at"]}-{it["top_up"]}'))
             if venue == "kalshi":
                 filled, px, fees = kalshi_order(ref, count, max_price, order_id)
             else:
                 filled, px, fees = pm_us_order(ref, count, max_price)
+            info.update(order_id=order_id, reply=dict(LAST_REPLY))
         except Exception as e:
-            alert(f"{tag}: order failed", f"{plan}\n{type(e).__name__}: {e}")
+            log("order failed", error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY), **info)
+            alert("⚠️ Problem", f"{what}\n{where} order failed. Details in the log.")
             continue
         state.setdefault("orders", []).append({"at": now_iso(), "pick": bet["pick"],
                                                "venue": venue, "ordered": count, "filled": filled})
+        log("order", filled=filled, price=px, fees=fees, **info)
         if filled:
             record(state, it, ref, filled, px, fees, count)
             spent = filled * px + fees
             exposure += spent
             accounts[venue] = (cash - spent, held)
-            alert(f"{tag}: bet placed", f"{plan}\nFilled {filled:g} of {count} at {px:.3f}, fees ${fees:.2f}.")
+            alert(f"🟢 {kind} placed", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
         else:
-            alert(f"{tag}: not filled", f"{plan}\nNothing filled at ${max_price:.2f} or better (price moved).")
+            alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")

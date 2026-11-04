@@ -43,6 +43,9 @@ MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry..
 MAX_BELOW = 0.04         # ...and at most 4c less
 UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
+LIVE_LOG = "live_log.json"  # every live order sent, the venue's reply, skips and errors
+LOG_KEEP = 2000             # entries kept
+
 LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.csv",
         "rules": "Real money on Kalshi and Polymarket US, copying each Strategy A paper bet at the same "
                  "% of the real bankroll, with the same price rule."}
@@ -719,12 +722,14 @@ def settled_alert(b, state):
     """(title, text) for a real bet that just settled, with the running real-money record."""
     done = [x for x in state["bets"] if x["status"] in ("won", "lost", "push")]
     wins = sum(x["status"] == "won" for x in done)
+    losses = sum(x["status"] == "lost" for x in done)
     total = sum(x["profit"] for x in done)
-    mark = {"won": "WON", "lost": "LOST", "push": "PUSH (money back)"}[b["status"]]
-    return (f"Real bet {mark}: {b['profit']:+.2f}",
-            f"{b['pick']} / {b['market']}\n{b['shares']:g} contracts on {VENUE_NAMES.get(b['venue'], b['venue'])}: "
-            f"cost ${b['cost']:.2f}, paid ${b['payout']:.2f}, profit {b['profit']:+.2f}\n"
-            f"Real record: {wins}-{len(done) - wins}, total profit {total:+.2f}")
+    money = lambda v: f"{'+' if v >= 0 else '−'}${abs(v):,.2f}"
+    title = {"won": f"✅ Won {money(b['profit'])}", "lost": f"❌ Lost {money(b['profit'])}",
+             "push": "↩️ Push (money back)"}[b["status"]]
+    live.log("settled", bet=live.plain(b["pick"], b["market"]), status=b["status"], cost=b["cost"],
+             payout=b["payout"], profit=b["profit"], venue=b["venue"], ref=b["venue_ref"].get("ref"))
+    return title, f"{live.plain(b['pick'], b['market'])}\nRecord: {wins}–{losses} · total {money(total)}"
 
 
 def main():
@@ -735,6 +740,10 @@ def main():
         states[key] = load_state(path)
         settle(states[key])
         save_state(states[key], path)
+    log_path = os.path.join(HERE, LIVE_LOG)
+    if os.path.exists(log_path):
+        with open(log_path) as f:
+            live.LOG[:] = json.load(f)
     live_path = os.path.join(HERE, LIVE["state"])
     live_state = load_state(live_path) if os.path.exists(live_path) else {"cash": 0.0, "bets": [], "orders": []}
     # real payouts land in the accounts by themselves; this records them and tells the group
@@ -755,6 +764,7 @@ def main():
         print(f"Live betting error ({type(e).__name__}); details sent to the phone alert channel")
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     save_state(live_state, live_path)
+    save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
     write_reports(states, live_state)
     for key, cfg in STRATEGIES.items():
         st = states[key]
