@@ -28,6 +28,7 @@ jobs:
         env:
           # Real-money betting (live.py). LIVE_TRADING is a repository variable: off, practice or on.
           LIVE_TRADING: ${{ vars.LIVE_TRADING }}
+          RUN_EVENT: ${{ github.event_name }}  # manual runs always send the account check
           KALSHI_KEY_ID: ${{ secrets.KALSHI_KEY_ID }}
           KALSHI_PRIVATE_KEY: ${{ secrets.KALSHI_PRIVATE_KEY }}
           PM_US_KEY_ID: ${{ secrets.PM_US_KEY_ID }}

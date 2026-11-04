@@ -225,7 +225,8 @@ def run(intents, max_above, state):
         except Exception as e:  # bad key, outage: skip this venue
             status.append(f"{VENUE_LABEL[venue]}: FAILED ({type(e).__name__}: {e})")
     today = datetime.now(timezone.utc).date().isoformat()
-    if state.get("daily_check") != today:  # once a day: confirms the keys work and shows balances
+    manual = os.environ.get("RUN_EVENT") == "workflow_dispatch"  # a run started with "Run workflow"
+    if state.get("daily_check") != today or manual:  # once a day (and on manual runs): keys work? balances
         state["daily_check"] = today
         alert(f"Live betting ({m}): daily account check", "\n".join(status))
     elif intents and len(accounts) < len(KEYS):
