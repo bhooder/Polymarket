@@ -33,7 +33,6 @@ jobs:
           KALSHI_PRIVATE_KEY: ${{ secrets.KALSHI_PRIVATE_KEY }}
           PM_US_KEY_ID: ${{ secrets.PM_US_KEY_ID }}
           PM_US_SECRET_KEY: ${{ secrets.PM_US_SECRET_KEY }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Save results

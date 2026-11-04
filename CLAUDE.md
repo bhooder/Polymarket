@@ -29,8 +29,8 @@ betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
   holds. Mode from the LIVE_TRADING repository variable: off (default),
   practice (no orders; Polymarket US orders previewed), on. Keys in GitHub
   Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID, PM_US_SECRET_KEY,
-  NTFY_TOPIC, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (alerts go to whichever is set;
-  Telegram since 2026-11-04 because ntfy pushes didn't reach the owner's iPhone). Filled real bets are saved to `live_trades.json` / `.csv` (public,
+  TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (alerts go to a Telegram group; ntfy was
+  tried first and removed 2026-11-04 because its pushes didn't reach the iPhone). Filled real bets are saved to `live_trades.json` / `.csv` (public,
   owner's choice) and shown on the report's first tab, "Real bets"; the
   Statistics tab adds Real next to A and B plus a "Real vs paper" table (fill
   rate, price paid vs paper, return on the same bets). Each bet also sends a
