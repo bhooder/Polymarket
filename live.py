@@ -54,13 +54,13 @@ def alert(title, text):
         if token and chat:  # a chat id can be a private chat or a group the bot was added to
             requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
                           json={"chat_id": chat, "text": f"{title}\n{text}"[:4000]}, timeout=15)
-    except requests.RequestException:
+    except Exception:  # any alert problem is ignored: alerts must never stop betting
         pass
     topic = os.environ.get("NTFY_TOPIC")
     try:
-        if topic:
-            requests.post(f"https://ntfy.sh/{topic}", data=text.encode(), headers={"Title": title}, timeout=15)
-    except requests.RequestException:
+        if topic:  # JSON body, because HTTP headers can't carry emoji
+            requests.post("https://ntfy.sh/", json={"topic": topic, "title": title, "message": text}, timeout=15)
+    except Exception:
         pass
 
 
