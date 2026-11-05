@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 746.8569422549887,
+ "cash": 719.6262190846097,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4042,6 +4042,79 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.2,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-05T00:29:12.445983+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Knicks",
+   "market": "Spread: Knicks (-12.5)",
+   "link": "https://polymarket.com/event/nba-chi-nyk-2026-11-04",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x335344981898a1273650f8fcdb4f983fc6907731cf875f53445aa913a98567dd",
+   "token_id": "47907028054916909712550864094370229522709114047447736744658874859818764111080",
+   "outcome_index": 0,
+   "ends": "2026-11-05T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 37.23558121357222,
+   "cost": 18.15,
+   "fees": 0.65,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV04CHINYK-NYK13",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4875
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T00:29:12.689633+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "Hornets vs. Nets",
+   "link": "https://polymarket.com/event/nba-cha-bkn-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5e05533be232a3db1c0d0bd0d31e03e92f23d49c76cb3858f36c76137160a993",
+   "token_id": "98615893786261546194112226668411462993744755737413789888380961434249362713883",
+   "outcome_index": 0,
+   "ends": "2026-11-05T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.9,
+   "traders_entry": 0.6,
+   "avg_price": 0.61,
+   "shares": 14.492428623791477,
+   "cost": 9.08,
+   "fees": 0.2396,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-cha-bkn-2026-11-04",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6265,
+    "kalshi": 0.6273
+   },
+   "intl_cost_per_share": 0.6219,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
