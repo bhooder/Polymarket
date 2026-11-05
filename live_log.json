@@ -177,5 +177,32 @@
    "status": 200,
    "body": "{\"id\":\"DHR3ESXG53ZD\", \"executions\":[{\"id\":\"DHR3ESY0H3YF\", \"order\":{\"id\":\"DHR3ESXG53ZD\", \"marketSlug\":\"atc-uel-ben-lep-2026-11-05-lep\", \"side\":\"ORDER_SIDE_SELL\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.07\", \"currency\":\"USD\"}, \"quantity\":2, \"cumQuantity\":0, \"leavesQuantity\":2, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_SHORT\", \"marketMetadata\":{\"slug\":\"atc-uel-ben-lep-2026-11-05-lep\", \"icon\":\"\", \"title\":\"Sport Lisboa e Benfica vs. KKS Lech Poznan\", \"outcome\":\"No\", \"eventSlug\":\"uel-ben-lep-2026-11-05\", \"teamId\":17288, \"team\":{\"id\":17288, \"name\":\"KKS Lech Pozna\u0144\", \"abbreviation\":\"lep\", \"league\":\"uel\", \"record\":\"\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"alias\":\"\", \"safeName\":\"\", \"colorPrimary\":\"#11559D\", \"providerId\":591, \"ordering\":\"home\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"displayAbbreviation\":\"LEP\", \"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\", \"providerId\":\"591\"}, {\"provider\":\"PROVIDER_SPORTRADAR\", \"providerId\":\"sr:competitor:3121\"}], \"color\":{\"light\":\"#11559D\", \"dark\":\"#11559D\"}}, \"eventId\":\"195204\"}, \"state\":\"ORDER_STATE_NEW\", \"commissionNotionalTotalCollected\":{\"value\":\"0.0000\", \"currency\":\"USD\"}, \"commissionsBasisPoints\":\"0\", \"mak"
   }
+ },
+ {
+  "at": "2026-11-05T20:50:06.806113+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.51,
+  "fees": 0.07,
+  "bet": "Under 222.5 (Magic vs. Suns)",
+  "pick": "Under",
+  "market": "Magic vs. Suns: O/U 222.5",
+  "venue": "kalshi",
+  "ref": "KXNBATOTAL-26NOV05ORLPHX-223",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.51,
+  "share": 0.009998451714454524,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.52,
+  "dollars": 1.94,
+  "bankroll": 193.91,
+  "order_id": "f7d71239-967f-5350-a7a5-f81b45cf7d61",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.4900\",\"client_order_id\":\"f7d71239-967f-5350-a7a5-f81b45cf7d61\",\"fill_count\":\"4.00\",\"order_id\":\"01a1ad79-d830-73e7-b995-dd0802007e98\",\"remaining_count\":\"0.00\",\"ts_ms\":1793911806778}"
+  }
  }
 ]
