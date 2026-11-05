@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1078.6140052151688,
+ "cash": 1055.8940052151688,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1507,6 +1507,43 @@
     "polymarket_us": 0.5672
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T02:43:36.178255+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Kings",
+   "market": "Spread: Lakers (-12.5)",
+   "link": "https://polymarket.com/event/nba-lal-sac-2026-11-04",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb9b51c618fd2ec5cb6a29ead20872453b1848ab8339e80fa5ba0a8bb726b25a7",
+   "token_id": "109372076844350853510094580113834664862608195549761682872516236271178430412639",
+   "outcome_index": 1,
+   "ends": "2026-11-05T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 21.9,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 42.2817872690134,
+   "cost": 22.72,
+   "fees": 0.7335,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-lal-sac-2026-11-04-neg-12pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5373,
+    "kalshi": 0.5375
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -377,7 +377,7 @@
   },
   {
    "placed_at": "2026-11-04T20:39:08.211911+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Hawks vs. Wizards: O/U 231.5",
@@ -406,9 +406,9 @@
     "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.78,
+   "settled_at": "2026-11-05T02:41:33.485229+00:00",
    "topped_up_at": null
   },
   {

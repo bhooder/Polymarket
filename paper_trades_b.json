@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 710.5462190846097,
+ "cash": 742.012550110412,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3969,7 +3969,7 @@
   },
   {
    "placed_at": "2026-11-04T20:39:06.129128+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Hawks vs. Wizards: O/U 231.5",
@@ -3998,14 +3998,14 @@
     "polymarket_us": 0.5074
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.43,
+   "settled_at": "2026-11-05T02:41:32.331437+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-04T23:10:03.032428+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Hawks",
    "market": "Hawks vs. Wizards",
@@ -4035,9 +4035,9 @@
     "kalshi": 0.5778
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 31.47,
+   "profit": 13.31,
+   "settled_at": "2026-11-05T02:41:32.434652+00:00",
    "topped_up_at": "2026-11-04T23:51:31.674268+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.2,

@@ -52,5 +52,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5400\",\"client_order_id\":\"4fc74137-4da1-557d-addb-25fa9a5adef5\",\"fill_count\":\"7.00\",\"order_id\":\"01a1a90a-c228-7399-9dfc-50b974b6be34\",\"remaining_count\":\"0.00\",\"ts_ms\":1793837417939}"
   }
+ },
+ {
+  "at": "2026-11-05T02:43:37.439825+00:00",
+  "event": "order",
+  "filled": 7.0,
+  "price": 0.52,
+  "fees": 0.12,
+  "bet": "Kings +12.5",
+  "pick": "Kings",
+  "market": "Spread: Lakers (-12.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-nba-lal-sac-2026-11-04-neg-12pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.0199994013345549,
+  "side": "NO",
+  "contracts": 7,
+  "max_price": 0.53,
+  "dollars": 4.0,
+  "bankroll": 200.13,
+  "order_id": "64a48531-1403-5daf-ad77-c4aac49e543a",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DH9PTJ6013CZ\", \"executions\":[{\"id\":\"DH9PTJ6G52V0\", \"order\":{\"id\":\"DH9PTJ6013CZ\", \"marketSlug\":\"asc-nba-lal-sac-2026-11-04-neg-12pt5\", \"side\":\"ORDER_SIDE_SELL\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.47\", \"currency\":\"USD\"}, \"quantity\":7, \"cumQuantity\":0, \"leavesQuantity\":7, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_SHORT\", \"marketMetadata\":{\"slug\":\"asc-nba-lal-sac-2026-11-04-neg-12pt5\", \"icon\":\"\", \"title\":\"LA Lakers vs. SAC Kings\", \"outcome\":\"+12.50\", \"eventSlug\":\"nba-lal-sac-2026-11-04\", \"teamId\":32, \"team\":{\"id\":32, \"name\":\"Sacramento Kings\", \"abbreviation\":\"sac\", \"league\":\"nba\", \"record\":\"1-6\", \"logo\":\"https://static.polymarket.us/images/teams/nba-sac/SAC_light_inset6.png\", \"alias\":\"Sacramento Kings\", \"safeName\":\"Kings\", \"homeIcon\":\"https://static.polymarket.us/images/teams/nba-sac/SAC_light_inset6.png\", \"awayIcon\":\"https://static.polymarket.us/images/teams/nba-sac/SAC_light_inset6.png\", \"colorPrimary\":\"#6c318b\", \"providerId\":30, \"ordering\":\"away\", \"longIcon\":\"https://static.polymarket.us/images/teams/nba-sac/SAC_light_inset6.png\", \"shortIcon\":\"https://static.polymarket.us/images/teams/nba-sac/SAC_light_inset6.png\", \"displayAbbreviation\":\"SAC\", \"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\", \"providerId\":\"30\"}, {\"provider\":\"PROVIDER_SPORTRADAR\", \"providerId\":\"583ed0ac-fb46-11e1-82cb-f4ce4684ea4c\"}, {\"provider\":\"PROVIDER_OPTICODDS\", \"providerId\":\"04E36C744934\"}], \"longIconDark\":\"https://static.polymarket.us/"
+  }
  }
 ]
