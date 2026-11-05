@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 851.1537779377358,
+ "cash": 909.0496837083354,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3780,7 +3780,7 @@
   },
   {
    "placed_at": "2026-11-04T18:45:20.322161+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Pelicans (-6.5)",
@@ -3809,9 +3809,9 @@
     "kalshi": 0.4675
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.68,
+   "profit": 21.67,
+   "settled_at": "2026-11-05T04:38:49.094283+00:00",
    "topped_up_at": "2026-11-04T20:39:03.932393+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,
@@ -3856,7 +3856,7 @@
   },
   {
    "placed_at": "2026-11-04T20:39:04.429578+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Jazz vs. Pelicans: O/U 233.5",
@@ -3885,9 +3885,9 @@
     "kalshi": 0.4777
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.43,
+   "settled_at": "2026-11-05T04:38:49.196960+00:00",
    "topped_up_at": null
   },
   {
@@ -4118,7 +4118,7 @@
   },
   {
    "placed_at": "2026-11-05T01:15:20.346528+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Spread: Rockets (-7.5)",
@@ -4148,9 +4148,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.22,
+   "profit": 8.14,
+   "settled_at": "2026-11-05T04:38:49.269794+00:00",
    "topped_up_at": null
   }
  ]

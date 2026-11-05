@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 945.4921612818156,
+ "cash": 987.5613850554207,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -190,7 +190,7 @@
   },
   {
    "placed_at": "2026-11-04T18:45:20.630827+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Pelicans (-6.5)",
@@ -219,9 +219,9 @@
     "kalshi": 0.4675
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.07,
+   "profit": 22.4,
+   "settled_at": "2026-11-05T04:38:49.371998+00:00",
    "topped_up_at": "2026-11-04T20:39:07.312929+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,
