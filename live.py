@@ -267,10 +267,10 @@ def pct(share):
 
 
 def american(p):
-    """Price (0-1) as American odds: 50c -> -100, 60c -> -150, 40c -> +150."""
+    """Price (0-1) as American odds: 50c -> +100, 60c -> -150, 40c -> +150."""
     if not 0 < p < 1:
         return ""
-    return f"-{p / (1 - p) * 100:.0f}" if p >= 0.5 else f"+{(1 - p) / p * 100:.0f}"
+    return f"-{p / (1 - p) * 100:.0f}" if p > 0.5 else f"+{(1 - p) / p * 100:.0f}"
 
 
 def run(intents, max_above, state):
@@ -376,6 +376,6 @@ def run(intents, max_above, state):
             spent = filled * px + fees
             exposure += spent
             accounts[venue] = (cash - spent, held)
-            alert(f"🟢 {kind} placed ({american(px)}) · {pct(it['share'])} play", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
+            alert(f"🟢 {kind} placed ({pct(it['share'])} @ {american(px)})", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
         else:
             alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")
