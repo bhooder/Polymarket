@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 923.2685094988485,
+ "cash": 915.3485094988486,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4295,6 +4295,43 @@
    "payout": 10.17,
    "profit": 0.76,
    "settled_at": "2026-11-05T22:46:17.394009+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T23:42:29.605830+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Blues",
+   "market": "Blues vs. Devils",
+   "link": "https://polymarket.com/event/nhl-stl-nj-2026-11-05",
+   "market_type": "moneyline",
+   "size_multiplier": 0.84,
+   "condition_id": "0x1aeb312365335b869dcddd6b7f5ca622d2940a61e207a7bcd2211a58f64846ab",
+   "token_id": "53593404614094065339995815263320713355468826946715705984542751708279853993164",
+   "outcome_index": 0,
+   "ends": "2026-11-06T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.33,
+   "avg_price": 0.33,
+   "shares": 22.932163792979892,
+   "cost": 7.92,
+   "fees": 0.3524,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-stl-nj-2026-11-05",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.3454,
+    "kalshi": 0.3457
+   },
+   "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
