@@ -112,5 +112,16 @@
   "profit": -3.76,
   "venue": "polymarket_us",
   "ref": "asc-nba-lal-sac-2026-11-04-neg-12pt5"
+ },
+ {
+  "at": "2026-11-05T11:57:21.440342+00:00",
+  "event": "account check failed",
+  "venue": "polymarket_us",
+  "error": "VenueError: HTTP 503 on /v1/portfolio/positions: {\"code\":14, \"message\":\"The server was unable to process your request.\", \"details\":[]}",
+  "reply": {
+   "path": "/v1/portfolio/positions",
+   "status": 503,
+   "body": "{\"code\":14, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+  }
  }
 ]
