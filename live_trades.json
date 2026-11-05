@@ -1,5 +1,5 @@
 {
- "cash": 188.3,
+ "cash": 186.19,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -204,6 +204,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T21:12:19.096286+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Florida Atlantic",
+   "market": "Spread: UTSA (-6.5)",
+   "link": "https://polymarket.com/event/cfb-utsa-flatl-2026-11-05",
+   "market_type": "spreads",
+   "condition_id": "0xac5a50e03b0b0fd9d2bdf2abb1bef268017cd51fa5232ab6c678ad3a4d77b6c9",
+   "token_id": "6042107243998810347494055946733890653477966709220375222875933173274449933690",
+   "outcome_index": 1,
+   "ends": "2026-11-06T00:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.8,
+   "traders_entry": 0.47,
+   "avg_price": 0.45,
+   "shares": 4.0,
+   "cost": 1.87,
+   "fees": 0.07,
+   "contracts_ordered": 4,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-utsa-flatl-2026-11-05-neg-6pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "paper_price": 0.4499999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -248,8 +282,15 @@
    "venue": "kalshi",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-05T21:12:19.096257+00:00",
+   "pick": "Florida Atlantic",
+   "venue": "polymarket_us",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-05",
- "balances_checked_at": "2026-11-05T20:50:06.696121+00:00"
+ "balances_checked_at": "2026-11-05T21:12:18.881526+00:00"
 }

@@ -204,5 +204,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.4900\",\"client_order_id\":\"f7d71239-967f-5350-a7a5-f81b45cf7d61\",\"fill_count\":\"4.00\",\"order_id\":\"01a1ad79-d830-73e7-b995-dd0802007e98\",\"remaining_count\":\"0.00\",\"ts_ms\":1793911806778}"
   }
+ },
+ {
+  "at": "2026-11-05T21:12:19.096278+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.44999999999999996,
+  "fees": 0.07,
+  "bet": "Florida Atlantic +6.5",
+  "pick": "Florida Atlantic",
+  "market": "Spread: UTSA (-6.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-utsa-flatl-2026-11-05-neg-6pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.45,
+  "share": 0.009998450875115323,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.49,
+  "dollars": 1.94,
+  "bankroll": 193.84,
+  "order_id": "4dbef8b7-bef0-59b4-a2e7-58dbb20a394c",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DHSJB6SG14EX\", \"executions\":[{\"id\":\"DHSJB6TG73YF\", \"order\":{\"id\":\"DHSJB6SG14EX\", \"marketSlug\":\"asc-cfb-utsa-flatl-2026-11-05-neg-6pt5\", \"side\":\"ORDER_SIDE_SELL\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.51\", \"currency\":\"USD\"}, \"quantity\":4, \"cumQuantity\":0, \"leavesQuantity\":4, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_SHORT\", \"marketMetadata\":{\"slug\":\"asc-cfb-utsa-flatl-2026-11-05-neg-6pt5\", \"icon\":\"\", \"title\":\"UTSA vs. Florida Atlantic\", \"outcome\":\"+6.50\", \"eventSlug\":\"cfb-utsa-flatl-2026-11-05\", \"teamId\":1168, \"team\":{\"id\":1168, \"name\":\"Florida Atlantic\", \"abbreviation\":\"flatl\", \"league\":\"cfb\", \"record\":\"5-3\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_flatl_50000145.png\", \"alias\":\"Owls\", \"safeName\":\"Florida Atlantic\", \"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Florida+Atlantic+Owls_R%40160x160.png\", \"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Florida+Atlantic+Owls_L%40160x160.png\", \"colorPrimary\":\"#003E7E\", \"providerId\":145, \"ordering\":\"away\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Florida-Atlantic-Owls_L@320x320.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Florida-Atlantic-Owls_R@320x320.png\", \"displayAbbreviation\":\"FAU\", \"ranking\":\"0\", \"conference\":\"American\", \"providerIds\":[{\"prov"
+  }
  }
 ]

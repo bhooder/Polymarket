@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1072.5030640594025,
+ "cash": 1061.3330640594024,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1652,6 +1652,42 @@
     "kalshi": 0.528
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T21:12:18.195993+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Florida Atlantic",
+   "market": "Spread: UTSA (-6.5)",
+   "link": "https://polymarket.com/event/cfb-utsa-flatl-2026-11-05",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xac5a50e03b0b0fd9d2bdf2abb1bef268017cd51fa5232ab6c678ad3a4d77b6c9",
+   "token_id": "6042107243998810347494055946733890653477966709220375222875933173274449933690",
+   "outcome_index": 1,
+   "ends": "2026-11-06T00:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.8,
+   "traders_entry": 0.47,
+   "avg_price": 0.45,
+   "shares": 23.908326443903995,
+   "cost": 11.17,
+   "fees": 0.4113,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-utsa-flatl-2026-11-05-neg-6pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4672
+   },
+   "intl_cost_per_share": 0.4675,
    "payout": null,
    "profit": null,
    "settled_at": null,
