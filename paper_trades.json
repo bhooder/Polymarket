@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1101.3255553023612,
+ "cash": 1078.6140052151688,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1470,6 +1470,43 @@
     "polymarket_us": 0.5124
    },
    "intl_cost_per_share": 0.5075,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T00:10:15.361260+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Sabres",
+   "market": "Senators vs. Sabres",
+   "link": "https://polymarket.com/event/nhl-ott-buf-2026-11-04",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0f4aefcd61dddd64ec1a754e15fef80c67e9fd4b4ea415624a0c3aa3d8928f0b",
+   "token_id": "114326837513014850153509286690359404355381250806348169261901708327547621052031",
+   "outcome_index": 1,
+   "ends": "2026-11-05T00:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 46.1,
+   "traders_entry": 0.54,
+   "avg_price": 0.54,
+   "shares": 40.74361127257852,
+   "cost": 22.71,
+   "fees": 0.71,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV04OTTBUF-BUF",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5574,
+    "polymarket_us": 0.5672
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,

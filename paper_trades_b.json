@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 755.9369422549887,
+ "cash": 746.8569422549887,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3893,7 +3893,7 @@
   {
    "placed_at": "2026-11-04T20:39:05.020809+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pacers",
    "market": "Spread: Grizzlies (-6.5)",
    "link": "https://polymarket.com/event/nba-ind-mem-2026-11-04",
@@ -3907,9 +3907,9 @@
    "avg_bankroll_pct": 2.2,
    "traders_entry": 0.51,
    "avg_price": 0.52,
-   "shares": 17.54917490963012,
-   "cost": 9.43,
-   "fees": 0.3044,
+   "shares": 34.44700186397175,
+   "cost": 18.51,
+   "fees": 0.5975,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -3925,7 +3925,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-05T00:10:15.876065+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 2.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-04T20:39:05.620545+00:00",

@@ -25,5 +25,32 @@
    "status": 200,
    "body": "{\"id\":\"DH781SMG13CZ\", \"executions\":[{\"id\":\"DH781SMG72V0\", \"order\":{\"id\":\"DH781SMG13CZ\", \"marketSlug\":\"asc-cfb-ballst-umass-2026-11-04-pos-2pt5\", \"side\":\"ORDER_SIDE_BUY\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.52\", \"currency\":\"USD\"}, \"quantity\":3, \"cumQuantity\":0, \"leavesQuantity\":3, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_LONG\", \"marketMetadata\":{\"slug\":\"asc-cfb-ballst-umass-2026-11-04-pos-2pt5\", \"icon\":\"\", \"title\":\"Ball State vs. UMass\", \"outcome\":\"+2.50\", \"eventSlug\":\"cfb-ballst-umass-2026-11-04\", \"teamId\":1183, \"team\":{\"id\":1183, \"name\":\"Ball State\", \"abbreviation\":\"ballst\", \"league\":\"cfb\", \"record\":\"3-5\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_ballst_50000184.png\", \"alias\":\"Cardinals\", \"safeName\":\"Ball State\", \"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Ball+State+Cardinals_R%40160x160.png\", \"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Ball+State+Cardinals_L%40160x160.png\", \"colorPrimary\":\"#CC0000\", \"providerId\":184, \"ordering\":\"away\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Ball-State-Cardinals_L@320x320.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Ball-State-Cardinals_R@320x320.png\", \"displayAbbreviation\":\"BALL\", \"ranking\":\"0\", \"conference\":\"Mid-American\", \"providerIds\":[{\"provider\""
   }
+ },
+ {
+  "at": "2026-11-05T00:10:17.968953+00:00",
+  "event": "order",
+  "filled": 7.0,
+  "price": 0.54,
+  "fees": 0.12179999999999999,
+  "bet": "Sabres to win (vs. Senators)",
+  "pick": "Sabres",
+  "market": "Senators vs. Sabres",
+  "venue": "kalshi",
+  "ref": "KXNHLGAME-26NOV04OTTBUF-BUF",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.54,
+  "share": 0.019999374045958414,
+  "side": "YES",
+  "contracts": 7,
+  "max_price": 0.56,
+  "dollars": 4.0,
+  "bankroll": 200.25,
+  "order_id": "4fc74137-4da1-557d-addb-25fa9a5adef5",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5400\",\"client_order_id\":\"4fc74137-4da1-557d-addb-25fa9a5adef5\",\"fill_count\":\"7.00\",\"order_id\":\"01a1a90a-c228-7399-9dfc-50b974b6be34\",\"remaining_count\":\"0.00\",\"ts_ms\":1793837417939}"
+  }
  }
 ]
