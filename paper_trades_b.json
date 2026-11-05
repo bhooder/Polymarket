@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 936.4148196079996,
+ "cash": 927.0646479341798,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4151,6 +4151,42 @@
    "payout": 17.22,
    "profit": 8.14,
    "settled_at": "2026-11-05T04:38:49.269794+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T11:01:17.793138+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Alexandra Eala",
+   "market": "Prudential Hong Kong Tennis Open: Tereza Valentova vs Alexandra Eala",
+   "link": "https://polymarket.com/event/wta-valento-eala-2026-11-05",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf487be4f2fd5e90d12e4714f58b7c5bf44f7b652f19118a23b40900d2e4fc48c",
+   "token_id": "65646400369966634247246653268515432192370031906425007248949369792827308291678",
+   "outcome_index": 1,
+   "ends": "2026-11-05T11:10:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.7,
+   "traders_entry": 0.62,
+   "avg_price": 0.64,
+   "shares": 14.250268240343345,
+   "cost": 9.35,
+   "fees": 0.23,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXWTAMATCH-26NOV05VALEAL-EAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6561
+   },
+   "intl_cost_per_share": 0.6417,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
