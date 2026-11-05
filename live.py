@@ -261,6 +261,11 @@ def cents(p):
     return f"{p * 100:.0f}¢"
 
 
+def pct(share):
+    """Stake as a % of the bankroll: 0.01 -> 1%, 0.0061 -> 0.61%."""
+    return f"{share * 100:.2f}".rstrip("0").rstrip(".") + "%"
+
+
 def american(p):
     """Price (0-1) as American odds: 50c -> -100, 60c -> -150, 40c -> +150."""
     if not 0 < p < 1:
@@ -371,6 +376,6 @@ def run(intents, max_above, state):
             spent = filled * px + fees
             exposure += spent
             accounts[venue] = (cash - spent, held)
-            alert(f"🟢 {kind} placed ({american(px)})", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
+            alert(f"🟢 {kind} placed ({american(px)}) · {pct(it['share'])} play", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
         else:
             alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")
