@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1078.0653416829846,
+ "cash": 1117.1741630251793,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1369,7 +1369,7 @@
   },
   {
    "placed_at": "2026-11-04T14:08:55.089876+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Trail Blazers",
    "market": "Trail Blazers vs. Suns",
@@ -1398,9 +1398,9 @@
     "kalshi": 0.5971
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.11,
+   "profit": 15.76,
+   "settled_at": "2026-11-05T05:14:52.971280+00:00",
    "topped_up_at": null
   },
   {

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 909.0496837083354,
+ "cash": 925.111936242453,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3517,7 +3517,7 @@
   },
   {
    "placed_at": "2026-11-04T14:08:55.406028+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Trail Blazers vs. Suns",
@@ -3546,9 +3546,9 @@
     "kalshi": 0.5974
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.06,
+   "profit": 6.46,
+   "settled_at": "2026-11-05T05:14:53.186097+00:00",
    "topped_up_at": null
   },
   {
@@ -3819,7 +3819,7 @@
   },
   {
    "placed_at": "2026-11-04T19:46:04.414880+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Nuggets (-4.5)",
@@ -3849,9 +3849,9 @@
     "kalshi": 0.508
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.6,
+   "settled_at": "2026-11-05T05:14:53.346463+00:00",
    "topped_up_at": null
   },
   {
