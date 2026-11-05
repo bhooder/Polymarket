@@ -136,6 +136,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T19:29:53.440029+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "No",
+   "market": "Will KKS Lech Pozna\u0144 win on 2026-11-05?",
+   "link": "https://polymarket.com/event/uel-ben-lep-2026-11-05",
+   "market_type": "moneyline",
+   "condition_id": "0x8457808da9f91b8178145fdd956c3183b8daefa51843af0117100e9d986e7b57",
+   "token_id": "110633435325023649365055233563919409556644043954946557761687842522230044739762",
+   "outcome_index": 1,
+   "ends": "2026-11-05T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 20.7,
+   "traders_entry": 0.91,
+   "avg_price": 0.92,
+   "shares": 2.0,
+   "cost": 1.85,
+   "fees": 0.01,
+   "contracts_ordered": 2,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-uel-ben-lep-2026-11-05-lep",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "paper_price": 0.9199999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -166,8 +200,15 @@
    "venue": "kalshi",
    "ordered": 8,
    "filled": 8.0
+  },
+  {
+   "at": "2026-11-05T19:29:53.439999+00:00",
+   "pick": "No",
+   "venue": "polymarket_us",
+   "ordered": 2,
+   "filled": 2.0
   }
  ],
  "daily_check": "2026-11-05",
- "balances_checked_at": "2026-11-05T18:25:21.005635+00:00"
+ "balances_checked_at": "2026-11-05T19:29:53.090598+00:00"
 }

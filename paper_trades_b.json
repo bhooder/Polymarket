@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 922.5068033156617,
+ "cash": 913.0968033156618,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4256,6 +4256,42 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T19:29:52.578276+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will KKS Lech Pozna\u0144 win on 2026-11-05?",
+   "link": "https://polymarket.com/event/uel-ben-lep-2026-11-05",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8457808da9f91b8178145fdd956c3183b8daefa51843af0117100e9d986e7b57",
+   "token_id": "110633435325023649365055233563919409556644043954946557761687842522230044739762",
+   "outcome_index": 1,
+   "ends": "2026-11-05T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 20.7,
+   "traders_entry": 0.91,
+   "avg_price": 0.92,
+   "shares": 10.1717061831867,
+   "cost": 9.41,
+   "fees": 0.052,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-uel-ben-lep-2026-11-05-lep",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.9251
+   },
+   "intl_cost_per_share": 0.9237,
    "payout": null,
    "profit": null,
    "settled_at": null,

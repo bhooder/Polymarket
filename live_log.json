@@ -150,5 +150,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5300\",\"client_order_id\":\"833d1db5-4a9e-5bca-8eed-680971f4cd3c\",\"fill_count\":\"8.00\",\"order_id\":\"01a1abce-8990-7240-b00b-7f218c825365\",\"remaining_count\":\"0.00\",\"ts_ms\":1793883802941}"
   }
+ },
+ {
+  "at": "2026-11-05T19:29:53.440021+00:00",
+  "event": "order",
+  "filled": 2.0,
+  "price": 0.92,
+  "fees": 0.01,
+  "bet": "KKS Lech Pozna\u0144 not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will KKS Lech Pozna\u0144 win on 2026-11-05?",
+  "venue": "polymarket_us",
+  "ref": "atc-uel-ben-lep-2026-11-05-lep",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.92,
+  "share": 0.009998451714454524,
+  "side": "NO",
+  "contracts": 2,
+  "max_price": 0.93,
+  "dollars": 1.94,
+  "bankroll": 193.91,
+  "order_id": "b5cda2f6-282c-5061-b0b6-deaca3089847",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DHR3ESXG53ZD\", \"executions\":[{\"id\":\"DHR3ESY0H3YF\", \"order\":{\"id\":\"DHR3ESXG53ZD\", \"marketSlug\":\"atc-uel-ben-lep-2026-11-05-lep\", \"side\":\"ORDER_SIDE_SELL\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.07\", \"currency\":\"USD\"}, \"quantity\":2, \"cumQuantity\":0, \"leavesQuantity\":2, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_SHORT\", \"marketMetadata\":{\"slug\":\"atc-uel-ben-lep-2026-11-05-lep\", \"icon\":\"\", \"title\":\"Sport Lisboa e Benfica vs. KKS Lech Poznan\", \"outcome\":\"No\", \"eventSlug\":\"uel-ben-lep-2026-11-05\", \"teamId\":17288, \"team\":{\"id\":17288, \"name\":\"KKS Lech Pozna\u0144\", \"abbreviation\":\"lep\", \"league\":\"uel\", \"record\":\"\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"alias\":\"\", \"safeName\":\"\", \"colorPrimary\":\"#11559D\", \"providerId\":591, \"ordering\":\"home\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-europa-league/kks-lech-pozna.png\", \"displayAbbreviation\":\"LEP\", \"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\", \"providerId\":\"591\"}, {\"provider\":\"PROVIDER_SPORTRADAR\", \"providerId\":\"sr:competitor:3121\"}], \"color\":{\"light\":\"#11559D\", \"dark\":\"#11559D\"}}, \"eventId\":\"195204\"}, \"state\":\"ORDER_STATE_NEW\", \"commissionNotionalTotalCollected\":{\"value\":\"0.0000\", \"currency\":\"USD\"}, \"commissionsBasisPoints\":\"0\", \"mak"
+  }
  }
 ]
