@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1061.3330640594024,
+ "cash": 1062.2322596666752,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1587,7 +1587,7 @@
   },
   {
    "placed_at": "2026-11-05T19:29:51.165785+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will KKS Lech Pozna\u0144 win on 2026-11-05?",
@@ -1616,15 +1616,15 @@
     "polymarket_us": 0.9251
    },
    "intl_cost_per_share": 0.9237,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.07,
+   "profit": 0.9,
+   "settled_at": "2026-11-05T22:46:16.948859+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-05T20:50:05.989447+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Magic vs. Suns: O/U 222.5",
    "link": "https://polymarket.com/event/nba-orl-phx-2026-11-05",
@@ -1637,10 +1637,10 @@
    "bettors": 3,
    "avg_bankroll_pct": 34.5,
    "traders_entry": 0.5,
-   "avg_price": 0.51,
-   "shares": 21.156678856401886,
-   "cost": 11.17,
-   "fees": 0.38,
+   "avg_price": 0.4997,
+   "shares": 43.166834661506584,
+   "cost": 22.34,
+   "fees": 0.77,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -1655,7 +1655,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-05T22:48:15.004786+00:00",
+   "top_up_bettors": 3,
+   "top_up_avg_bankroll_pct": 65.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-05T21:12:18.195993+00:00",

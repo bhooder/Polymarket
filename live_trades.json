@@ -1,5 +1,5 @@
 {
- "cash": 184.32,
+ "cash": 186.32,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -139,7 +139,7 @@
   },
   {
    "placed_at": "2026-11-05T19:29:53.440029+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "No",
@@ -166,15 +166,15 @@
     "fee_rate": 0.0695
    },
    "paper_price": 0.9199999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 2.0,
+   "profit": 0.15,
+   "settled_at": "2026-11-05T22:46:17.720472+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-05T20:50:06.806123+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Under",
    "market": "Magic vs. Suns: O/U 222.5",
@@ -187,10 +187,10 @@
    "bettors": 3,
    "avg_bankroll_pct": 34.5,
    "traders_entry": 0.5,
-   "avg_price": 0.51,
-   "shares": 4.0,
-   "cost": 2.11,
-   "fees": 0.07,
+   "avg_price": 0.5,
+   "shares": 8.0,
+   "cost": 4.14,
+   "fees": 0.14,
    "contracts_ordered": 4,
    "venue": "kalshi",
    "venue_ref": {
@@ -203,7 +203,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-05T22:48:16.267216+00:00",
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-05T21:12:19.096286+00:00",
@@ -289,8 +290,15 @@
    "venue": "polymarket_us",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-05T22:48:16.267148+00:00",
+   "pick": "Under",
+   "venue": "kalshi",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-05",
- "balances_checked_at": "2026-11-05T21:58:16.914631+00:00"
+ "balances_checked_at": "2026-11-05T22:48:16.039014+00:00"
 }

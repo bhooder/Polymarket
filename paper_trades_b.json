@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 913.0968033156618,
+ "cash": 923.2685094988485,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4263,7 +4263,7 @@
   },
   {
    "placed_at": "2026-11-05T19:29:52.578276+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will KKS Lech Pozna\u0144 win on 2026-11-05?",
@@ -4292,9 +4292,9 @@
     "polymarket_us": 0.9251
    },
    "intl_cost_per_share": 0.9237,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.17,
+   "profit": 0.76,
+   "settled_at": "2026-11-05T22:46:17.394009+00:00",
    "topped_up_at": null
   }
  ]

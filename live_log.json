@@ -231,5 +231,43 @@
    "status": 200,
    "body": "{\"id\":\"DHSJB6SG14EX\", \"executions\":[{\"id\":\"DHSJB6TG73YF\", \"order\":{\"id\":\"DHSJB6SG14EX\", \"marketSlug\":\"asc-cfb-utsa-flatl-2026-11-05-neg-6pt5\", \"side\":\"ORDER_SIDE_SELL\", \"type\":\"ORDER_TYPE_LIMIT\", \"price\":{\"value\":\"0.51\", \"currency\":\"USD\"}, \"quantity\":4, \"cumQuantity\":0, \"leavesQuantity\":4, \"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\", \"goodTillTime\":null, \"intent\":\"ORDER_INTENT_BUY_SHORT\", \"marketMetadata\":{\"slug\":\"asc-cfb-utsa-flatl-2026-11-05-neg-6pt5\", \"icon\":\"\", \"title\":\"UTSA vs. Florida Atlantic\", \"outcome\":\"+6.50\", \"eventSlug\":\"cfb-utsa-flatl-2026-11-05\", \"teamId\":1168, \"team\":{\"id\":1168, \"name\":\"Florida Atlantic\", \"abbreviation\":\"flatl\", \"league\":\"cfb\", \"record\":\"5-3\", \"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_flatl_50000145.png\", \"alias\":\"Owls\", \"safeName\":\"Florida Atlantic\", \"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Florida+Atlantic+Owls_R%40160x160.png\", \"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Florida+Atlantic+Owls_L%40160x160.png\", \"colorPrimary\":\"#003E7E\", \"providerId\":145, \"ordering\":\"away\", \"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Florida-Atlantic-Owls_L@320x320.png\", \"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Florida-Atlantic-Owls_R@320x320.png\", \"displayAbbreviation\":\"FAU\", \"ranking\":\"0\", \"conference\":\"American\", \"providerIds\":[{\"prov"
   }
+ },
+ {
+  "at": "2026-11-05T22:46:17.900462+00:00",
+  "event": "settled",
+  "bet": "KKS Lech Pozna\u0144 not to win (draw or loss)",
+  "status": "won",
+  "cost": 1.85,
+  "payout": 2.0,
+  "profit": 0.15,
+  "venue": "polymarket_us",
+  "ref": "atc-uel-ben-lep-2026-11-05-lep"
+ },
+ {
+  "at": "2026-11-05T22:48:16.267194+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.49,
+  "fees": 0.07,
+  "bet": "Under 222.5 (Magic vs. Suns)",
+  "pick": "Under",
+  "market": "Magic vs. Suns: O/U 222.5",
+  "venue": "kalshi",
+  "ref": "KXNBATOTAL-26NOV05ORLPHX-223",
+  "top_up": true,
+  "mode": "on",
+  "paper_price": 0.4997,
+  "share": 0.009999309206835727,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.53,
+  "dollars": 1.94,
+  "bankroll": 193.99,
+  "order_id": "1ee25c37-13df-51dd-af7f-04e562f7d6b0",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5100\",\"client_order_id\":\"1ee25c37-13df-51dd-af7f-04e562f7d6b0\",\"fill_count\":\"4.00\",\"order_id\":\"01a1ade6-0780-7d8e-85a3-5be047a1e401\",\"remaining_count\":\"0.00\",\"ts_ms\":1793918896229}"
+  }
  }
 ]
