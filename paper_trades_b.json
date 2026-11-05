@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 925.111936242453,
+ "cash": 936.4148196079996,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -3743,7 +3743,7 @@
   },
   {
    "placed_at": "2026-11-04T17:54:13.315610+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lakers",
    "market": "Lakers vs. Kings",
@@ -3773,9 +3773,9 @@
     "kalshi": 0.8497
    },
    "intl_cost_per_share": 0.8467,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.3,
+   "profit": 1.7,
+   "settled_at": "2026-11-05T06:43:00.814722+00:00",
    "topped_up_at": null
   },
   {

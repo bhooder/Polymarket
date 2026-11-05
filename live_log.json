@@ -101,5 +101,16 @@
   "profit": -3.9,
   "venue": "kalshi",
   "ref": "KXNHLGAME-26NOV04OTTBUF-BUF"
+ },
+ {
+  "at": "2026-11-05T06:43:01.041182+00:00",
+  "event": "settled",
+  "bet": "Kings +12.5",
+  "status": "lost",
+  "cost": 3.76,
+  "payout": 0.0,
+  "profit": -3.76,
+  "venue": "polymarket_us",
+  "ref": "asc-nba-lal-sac-2026-11-04-neg-12pt5"
  }
 ]

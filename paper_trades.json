@@ -1514,7 +1514,7 @@
   },
   {
    "placed_at": "2026-11-05T02:43:36.178255+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Kings",
    "market": "Spread: Lakers (-12.5)",
@@ -1544,9 +1544,9 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.72,
+   "settled_at": "2026-11-05T06:43:00.693524+00:00",
    "topped_up_at": null
   }
  ]
