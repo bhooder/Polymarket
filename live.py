@@ -295,9 +295,9 @@ def run(intents, max_above, state):
             problems.append(venue)
             log("account check failed", venue=venue, error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY))
     today = datetime.now(timezone.utc).date().isoformat()
-    manual = os.environ.get("RUN_EVENT") == "workflow_dispatch"  # a run started with "Run workflow"
+    manual = os.environ.get("SEND_CHECK") == "true"  # "Run workflow" with the account-check box ticked
     open_count = sum(b["status"] == "open" for b in state["bets"])
-    if state.get("daily_check") != today or manual:  # once a day (and on manual runs): keys work? balances
+    if state.get("daily_check") != today or manual:  # once a day (or when asked): keys work? balances
         state["daily_check"] = today
         alert(f"📊 Daily check{' (practice mode)' if m == 'practice' else ''}",
               " · ".join(status) + f" · {open_count} open bets")

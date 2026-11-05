@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "3,13,23,33,43,53 * * * *"   # asked for every 10 min; GitHub often runs late or skips when busy
   workflow_dispatch:        # adds a "Run workflow" button on the Actions tab
+    inputs:
+      daily_check:
+        description: "Send the account check to Telegram"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,7 +33,7 @@ jobs:
         env:
           # Real-money betting (live.py). LIVE_TRADING is a repository variable: off, practice or on.
           LIVE_TRADING: ${{ vars.LIVE_TRADING }}
-          RUN_EVENT: ${{ github.event_name }}  # manual runs always send the account check
+          SEND_CHECK: ${{ inputs.daily_check }}  # ticked box on a manual run: send the account check now
           KALSHI_KEY_ID: ${{ secrets.KALSHI_KEY_ID }}
           KALSHI_PRIVATE_KEY: ${{ secrets.KALSHI_PRIVATE_KEY }}
           PM_US_KEY_ID: ${{ secrets.PM_US_KEY_ID }}
