@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1055.8940052151688,
+ "cash": 1078.0653416829846,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1441,7 +1441,7 @@
   },
   {
    "placed_at": "2026-11-04T23:51:31.350226+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Ball State",
    "market": "Spread: UMass (-2.5)",
@@ -1470,14 +1470,14 @@
     "polymarket_us": 0.5124
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.17,
+   "profit": 10.81,
+   "settled_at": "2026-11-05T03:35:35.367689+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-05T00:10:15.361260+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Sabres",
    "market": "Senators vs. Sabres",
@@ -1507,9 +1507,9 @@
     "polymarket_us": 0.5672
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.71,
+   "settled_at": "2026-11-05T03:35:35.403207+00:00",
    "topped_up_at": null
   },
   {

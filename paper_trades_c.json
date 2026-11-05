@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 850.9290213535436,
+ "cash": 945.4921612818156,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -266,7 +266,7 @@
   },
   {
    "placed_at": "2026-11-04T20:39:06.606401+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Thunder",
    "market": "Spread: Thunder (-3.5)",
@@ -296,14 +296,14 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5188,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.83,
+   "profit": 18.26,
+   "settled_at": "2026-11-05T03:35:36.349710+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-04T20:39:07.060955+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Spread: Pistons (-2.5)",
@@ -333,14 +333,14 @@
     "kalshi": 0.5077
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.28,
+   "profit": 9.5,
+   "settled_at": "2026-11-05T03:35:36.402565+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-04T20:39:07.851877+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Spread: Celtics (-11.5)",
@@ -370,9 +370,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.78,
+   "settled_at": "2026-11-05T03:35:36.457254+00:00",
    "topped_up_at": null
   },
   {
@@ -413,7 +413,7 @@
   },
   {
    "placed_at": "2026-11-05T00:10:16.705897+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pacers",
    "market": "Spread: Grizzlies (-6.5)",
@@ -443,14 +443,14 @@
     "kalshi": 0.5477
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.83,
+   "profit": 8.25,
+   "settled_at": "2026-11-05T03:35:36.519898+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-05T00:29:13.104860+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Knicks",
    "market": "Spread: Knicks (-12.5)",
@@ -479,9 +479,9 @@
     "kalshi": 0.4878
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.63,
+   "profit": 10.05,
+   "settled_at": "2026-11-05T03:35:36.554978+00:00",
    "topped_up_at": null
   }
  ]

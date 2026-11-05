@@ -1,9 +1,9 @@
 {
- "cash": 194.81,
+ "cash": 194.05,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Ball State",
@@ -30,14 +30,14 @@
     "fee_rate": 0.0695
    },
    "paper_price": 0.49500000000000005,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 1.47,
+   "settled_at": "2026-11-05T03:35:36.615685+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-05T00:10:17.968964+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Sabres",
@@ -64,9 +64,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.5399999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.9,
+   "settled_at": "2026-11-05T03:35:36.652666+00:00",
    "topped_up_at": null
   },
   {
@@ -128,5 +128,5 @@
   }
  ],
  "daily_check": "2026-11-05",
- "balances_checked_at": "2026-11-05T02:43:37.202071+00:00"
+ "balances_checked_at": "2026-11-05T03:36:47.745856+00:00"
 }
