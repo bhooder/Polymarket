@@ -341,7 +341,11 @@ def run(intents, max_above, state):
         max_price = it["entry"] + max_above  # the traders' average entry when this bet was made
         rate = ref.get("fee_rate") or 0
         per_share = max_price + rate * max_price * (1 - max_price) + 0.005  # worst case, fee rounding
-        count = math.floor(dollars / per_share)  # whole contracts, sized for the worst allowed price
+        # whole contracts: the count closest to the stake at the price seen this run (the order still
+        # won't pay more than max_price), never more than the venue's cash or the 50% cap at worst case
+        unit = ref["cost"] / ref["shares"] if ref.get("shares") else per_share
+        count = min(math.floor(dollars / unit + 0.5), math.floor(cash / per_share),
+                    math.floor((MAX_EXPOSURE * bankroll - exposure) / per_share))
         if count < 1:
             skip(f"${dollars:.2f} isn't enough for one contract at {cents(max_price)}.")
             continue
