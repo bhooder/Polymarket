@@ -123,5 +123,32 @@
    "status": 503,
    "body": "{\"code\":14, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
   }
+ },
+ {
+  "at": "2026-11-05T13:03:22.951570+00:00",
+  "event": "order",
+  "filled": 8.0,
+  "price": 0.47,
+  "fees": 0.1392,
+  "bet": "Heat +6.5",
+  "pick": "Heat",
+  "market": "Spread: Warriors (-6.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV05MIAGSW-GSW7",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.47,
+  "share": 0.019996882079250603,
+  "side": "NO",
+  "contracts": 8,
+  "max_price": 0.49,
+  "dollars": 3.88,
+  "bankroll": 194.05,
+  "order_id": "833d1db5-4a9e-5bca-8eed-680971f4cd3c",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5300\",\"client_order_id\":\"833d1db5-4a9e-5bca-8eed-680971f4cd3c\",\"fill_count\":\"8.00\",\"order_id\":\"01a1abce-8990-7240-b00b-7f218c825365\",\"remaining_count\":\"0.00\",\"ts_ms\":1793883802941}"
+  }
  }
 ]
