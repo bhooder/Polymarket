@@ -37,6 +37,7 @@ CRYPTO_PRICE = re.compile(
 
 
 RETRY_STATUS = (429, 500, 502, 503, 504)  # busy or brief server hiccups: wait and try again
+# 403: Polymarket's firewall sometimes briefly blocks GitHub's computers; wait longer, then retry
 
 
 def get(path, params, retries=5, base=BASE):
@@ -48,8 +49,11 @@ def get(path, params, retries=5, base=BASE):
         except (requests.ConnectionError, requests.Timeout):
             time.sleep(wait)
             continue
+        if r.status_code == 403 and attempt < retries - 1:
+            time.sleep(5 * wait)  # 10s, 20s, 30s, 40s
+            continue
         if r.status_code in RETRY_STATUS:
-            time.sleep(float(r.headers.get("Retry-After", wait)))
+            time.sleep(min(float(r.headers.get("Retry-After", wait)), 60))
             continue
         r.raise_for_status()
         return r.json()
