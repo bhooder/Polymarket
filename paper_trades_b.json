@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 931.9127905706583,
+ "cash": 922.5068033156617,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4220,6 +4220,42 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-05T18:25:19.897664+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Spread: Warriors (-6.5)",
+   "link": "https://polymarket.com/event/nba-mia-gsw-2026-11-05",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa9da50cfadec09d2ec7f212adfdb28d27ee26bf28c20285cc5d6959041fd001f",
+   "token_id": "107782479915435327184272318166287238311367293707743818156353992782598740322733",
+   "outcome_index": 1,
+   "ends": "2026-11-06T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 22.7,
+   "traders_entry": 0.47,
+   "avg_price": 0.49,
+   "shares": 18.52242296938086,
+   "cost": 9.41,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV05MIAGSW-GSW7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5078
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
