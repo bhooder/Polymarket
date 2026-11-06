@@ -356,5 +356,32 @@
    "status": 200,
    "body": "{\"id\":\"DJ99TS0013Z6\",\"executions\":[{\"id\":\"DJ99TS0G33YG\",\"order\":{\"id\":\"DJ99TS0013Z6\",\"marketSlug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.5\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"icon\":\"\",\"title\":\"Nebraska vs. Illinois\",\"outcome\":\"-4.50\",\"eventSlug\":\"cfb-nebr-ill-2026-11-06\",\"teamId\":1130,\"team\":{\"id\":1130,\"name\":\"Nebraska\",\"abbreviation\":\"nebr\",\"league\":\"cfb\",\"record\":\"5-3\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_nebr_50000099.png\",\"alias\":\"Cornhuskers\",\"safeName\":\"Nebraska\",\"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_R%40160x160.png\",\"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_L%40160x160.png\",\"colorPrimary\":\"#E41C38\",\"providerId\":99,\"ordering\":\"away\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_L@320x320.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_R@320x320.png\",\"displayAbbreviation\":\"NEB\",\"ranking\":\"0\",\"conference\":\"Big Ten\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"99\"},{\"provider\":\"PROVID"
   }
+ },
+ {
+  "at": "2026-11-06T17:25:15.547954+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.5,
+  "fees": 0.07,
+  "bet": "Nebraska -4.5",
+  "pick": "Nebraska",
+  "market": "Spread: Nebraska (-4.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-nebr-ill-2026-11-06-neg-4pt5",
+  "top_up": true,
+  "mode": "on",
+  "paper_price": 0.5,
+  "share": 0.009997277793748352,
+  "side": "YES",
+  "contracts": 4,
+  "max_price": 0.5,
+  "dollars": 1.96,
+  "bankroll": 196.29,
+  "order_id": "5a6e8507-c835-5e4a-8e9b-6874e0696005",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DJAXJWY014F1\",\"executions\":[{\"id\":\"DJAXJWYG33YH\",\"order\":{\"id\":\"DJAXJWY014F1\",\"marketSlug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.5\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"icon\":\"\",\"title\":\"Nebraska vs. Illinois\",\"outcome\":\"-4.50\",\"eventSlug\":\"cfb-nebr-ill-2026-11-06\",\"teamId\":1130,\"team\":{\"id\":1130,\"name\":\"Nebraska\",\"abbreviation\":\"nebr\",\"league\":\"cfb\",\"record\":\"5-3\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_nebr_50000099.png\",\"alias\":\"Cornhuskers\",\"safeName\":\"Nebraska\",\"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_R%40160x160.png\",\"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_L%40160x160.png\",\"colorPrimary\":\"#E41C38\",\"providerId\":99,\"ordering\":\"away\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_L@320x320.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_R@320x320.png\",\"displayAbbreviation\":\"NEB\",\"ranking\":\"0\",\"conference\":\"Big Ten\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"99\"},{\"provider\":\"PROVID"
+  }
  }
 ]

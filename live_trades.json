@@ -277,7 +277,7 @@
   {
    "placed_at": "2026-11-06T15:32:12.081627+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Nebraska",
    "market": "Spread: Nebraska (-4.5)",
@@ -291,9 +291,9 @@
    "avg_bankroll_pct": 24.1,
    "traders_entry": 0.48,
    "avg_price": 0.5,
-   "shares": 4.0,
-   "cost": 2.07,
-   "fees": 0.07,
+   "shares": 8.0,
+   "cost": 4.14,
+   "fees": 0.14,
    "contracts_ordered": 4,
    "venue": "polymarket_us",
    "venue_ref": {
@@ -306,7 +306,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-06T17:25:15.547974+00:00",
+   "top_up_size_multiplier": 1.0
   }
  ],
  "orders": [
@@ -379,8 +380,15 @@
    "venue": "polymarket_us",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-06T17:25:15.547933+00:00",
+   "pick": "Nebraska",
+   "venue": "polymarket_us",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-06",
- "balances_checked_at": "2026-11-06T16:26:40.029002+00:00"
+ "balances_checked_at": "2026-11-06T17:25:15.252774+00:00"
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 878.7495508821787,
+ "cash": 851.2895508821788,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4442,6 +4442,79 @@
     "kalshi": 0.5976
    },
    "intl_cost_per_share": 0.5723,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T17:25:14.328861+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Nebraska",
+   "market": "Spread: Nebraska (-4.5)",
+   "link": "https://polymarket.com/event/cfb-nebr-ill-2026-11-06",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6594eab5cb178d119b8a5c84557fd23b078d5d2941207a211ebc3ac55b8f09d9",
+   "token_id": "39786144679270594460722253212801387143317720627046058780222381417892414211644",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 32.8,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 35.39019086735926,
+   "cost": 18.31,
+   "fees": 0.6149,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-nebr-ill-2026-11-06-neg-4pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.5174
+   },
+   "intl_cost_per_share": 0.5075,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T17:25:14.591821+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Wild",
+   "market": "Sharks vs. Wild",
+   "link": "https://polymarket.com/event/nhl-sj-min-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5918529a2fc24f7bfafe4d17adf1325fb3eb561f347ef1f8e2f8f67ab659c9ed",
+   "token_id": "79731901973682446537368876217811717121090256268131456110302585648653362576324",
+   "outcome_index": 1,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.0,
+   "traders_entry": 0.7,
+   "avg_price": 0.71,
+   "shares": 12.632711640546754,
+   "cost": 9.15,
+   "fees": 0.1808,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-sj-min-2026-11-06",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.7243,
+    "kalshi": 0.7251
+   },
+   "intl_cost_per_share": 0.7301,
    "payout": null,
    "profit": null,
    "settled_at": null,
