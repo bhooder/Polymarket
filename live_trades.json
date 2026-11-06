@@ -273,6 +273,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T15:32:12.081627+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Nebraska",
+   "market": "Spread: Nebraska (-4.5)",
+   "link": "https://polymarket.com/event/cfb-nebr-ill-2026-11-06",
+   "market_type": "spreads",
+   "condition_id": "0x6594eab5cb178d119b8a5c84557fd23b078d5d2941207a211ebc3ac55b8f09d9",
+   "token_id": "39786144679270594460722253212801387143317720627046058780222381417892414211644",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 24.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 4.0,
+   "cost": 2.07,
+   "fees": 0.07,
+   "contracts_ordered": 4,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-nebr-ill-2026-11-06-neg-4pt5",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "paper_price": 0.5000000000000001,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -338,8 +372,15 @@
    "venue": "polymarket_us",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-06T15:32:12.081591+00:00",
+   "pick": "Nebraska",
+   "venue": "polymarket_us",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-06",
- "balances_checked_at": "2026-11-06T14:44:47.212959+00:00"
+ "balances_checked_at": "2026-11-06T15:32:11.874400+00:00"
 }
