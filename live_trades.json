@@ -105,7 +105,7 @@
   },
   {
    "placed_at": "2026-11-05T13:03:22.951579+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Heat",
@@ -132,9 +132,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.4699999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.9,
+   "settled_at": "2026-11-06T06:32:54.580288+00:00",
    "topped_up_at": null
   },
   {
@@ -300,5 +300,5 @@
   }
  ],
  "daily_check": "2026-11-06",
- "balances_checked_at": "2026-11-06T05:31:40.280363+00:00"
+ "balances_checked_at": "2026-11-06T06:33:57.423846+00:00"
 }

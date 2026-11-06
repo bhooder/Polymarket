@@ -4227,7 +4227,7 @@
   },
   {
    "placed_at": "2026-11-05T18:25:19.897664+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Spread: Warriors (-6.5)",
@@ -4256,9 +4256,9 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.41,
+   "settled_at": "2026-11-06T06:32:54.529571+00:00",
    "topped_up_at": null
   },
   {
