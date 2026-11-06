@@ -4299,7 +4299,7 @@
   },
   {
    "placed_at": "2026-11-05T23:42:29.605830+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Blues",
    "market": "Blues vs. Devils",
@@ -4329,9 +4329,9 @@
     "kalshi": 0.3457
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.92,
+   "settled_at": "2026-11-06T03:18:13.506300+00:00",
    "topped_up_at": null
   }
  ]
