@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 851.2895508821788,
+ "cash": 842.1429254647755,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4515,6 +4515,42 @@
     "kalshi": 0.7251
    },
    "intl_cost_per_share": 0.7301,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T18:19:45.959487+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Carlos Alcaraz",
+   "market": "Rolex Paris Masters: Taylor Fritz vs Carlos Alcaraz",
+   "link": "https://polymarket.com/event/atp-fritz-alcaraz-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbe18577baad649722c0e0e92c12f2d60c2ed94c6b1d552fcc4c0787e6a6345ae",
+   "token_id": "58856382493923991766164349506546899838585821546934256842108455307333708093325",
+   "outcome_index": 1,
+   "ends": "2026-11-06T18:20:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.73,
+   "avg_price": 0.74,
+   "shares": 12.130574888382785,
+   "cost": 9.15,
+   "fees": 0.17,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPMATCH-26NOV06FRIALC-ALC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.754
+   },
+   "intl_cost_per_share": 0.7496,
    "payout": null,
    "profit": null,
    "settled_at": null,
