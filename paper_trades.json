@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1084.1545569223204,
+ "cash": 1050.2804407392487,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1803,6 +1803,80 @@
     "kalshi": 0.6954
    },
    "intl_cost_per_share": 0.7007,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T23:45:50.443245+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Thunder vs. Grizzlies",
+   "link": "https://polymarket.com/event/nba-okc-mem-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0807bc1fb7e6d616f72b1ffd6158f17448df90223dbdd357281ccb7641b2fdbc",
+   "token_id": "17738982004398511179681739795672463001490109109158945924609690414196729397366",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 13.9,
+   "traders_entry": 0.61,
+   "avg_price": 0.62,
+   "shares": 17.72213947700835,
+   "cost": 11.29,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06OKCMEM-OKC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6369,
+    "polymarket_us": 0.6424
+   },
+   "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T23:45:50.665665+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Hawks",
+   "market": "Wizards vs. Hawks",
+   "link": "https://polymarket.com/event/nba-was-atl-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaad81cd350ffef5f0b3ded21bc89537c81aa880921993e3b32826c48b606df0e",
+   "token_id": "32207961643912237005721009733678708801866453101256449902624170578128750571094",
+   "outcome_index": 1,
+   "ends": "2026-11-07T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 43.8,
+   "traders_entry": 0.74,
+   "avg_price": 0.74,
+   "shares": 29.96809419909007,
+   "cost": 22.59,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06WASATL-ATL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7537,
+    "polymarket_us": 0.7583
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,

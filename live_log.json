@@ -410,5 +410,59 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0152\",\"average_fill_price\":\"0.6800\",\"client_order_id\":\"6b00b0e3-cac4-537a-981f-10be18fe00a8\",\"fill_count\":\"3.00\",\"order_id\":\"01a1b27b-8590-7f77-ac18-c970df116a8c\",\"remaining_count\":\"0.00\",\"ts_ms\":1793995802474}"
   }
+ },
+ {
+  "at": "2026-11-06T23:45:52.745838+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.62,
+  "fees": 0.0495,
+  "bet": "Thunder to win (vs. Grizzlies)",
+  "pick": "Thunder",
+  "market": "Thunder vs. Grizzlies",
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06OKCMEM-OKC",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.62,
+  "share": 0.009997303146255333,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.63,
+  "dollars": 1.96,
+  "bankroll": 196.24,
+  "order_id": "210ccf32-b919-57e2-85fc-8cf81c9929af",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0165\",\"average_fill_price\":\"0.6200\",\"client_order_id\":\"210ccf32-b919-57e2-85fc-8cf81c9929af\",\"fill_count\":\"3.00\",\"order_id\":\"01a1b341-1f80-774b-bef5-2d9a3259b45c\",\"remaining_count\":\"0.00\",\"ts_ms\":1794008752736}"
+  }
+ },
+ {
+  "at": "2026-11-06T23:45:53.228670+00:00",
+  "event": "order",
+  "filled": 5.0,
+  "price": 0.74,
+  "fees": 0.067,
+  "bet": "Hawks to win (vs. Wizards)",
+  "pick": "Hawks",
+  "market": "Wizards vs. Hawks",
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06WASATL-ATL",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.74,
+  "share": 0.020003421028691525,
+  "side": "YES",
+  "contracts": 5,
+  "max_price": 0.76,
+  "dollars": 3.93,
+  "bankroll": 196.24,
+  "order_id": "0bfee676-dab0-5078-b925-a3f301d07d36",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0134\",\"average_fill_price\":\"0.7400\",\"client_order_id\":\"0bfee676-dab0-5078-b925-a3f301d07d36\",\"fill_count\":\"5.00\",\"order_id\":\"01a1b341-2368-75fb-bc28-05aa9520c2ee\",\"remaining_count\":\"0.00\",\"ts_ms\":1794008753219}"
+  }
  }
 ]

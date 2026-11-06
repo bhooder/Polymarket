@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 835.9511600656705,
+ "cash": 808.4012378866822,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4377,7 +4377,7 @@
   {
    "placed_at": "2026-11-06T13:53:36.939568+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Thunder",
    "market": "Thunder vs. Grizzlies",
    "link": "https://polymarket.com/event/nba-okc-mem-2026-11-06",
@@ -4390,10 +4390,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 6.1,
    "traders_entry": 0.59,
-   "avg_price": 0.6,
-   "shares": 14.837517026658883,
-   "cost": 9.15,
-   "fees": 0.2475,
+   "avg_price": 0.6099,
+   "shares": 29.262991849491108,
+   "cost": 18.33,
+   "fees": 0.4837,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -4409,7 +4409,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-06T23:45:51.013688+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 13.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-06T15:32:11.377284+00:00",
@@ -4623,6 +4626,43 @@
     "kalshi": 0.916
    },
    "intl_cost_per_share": 0.9045,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T23:45:50.896483+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Raptors",
+   "market": "Raptors vs. Bucks",
+   "link": "https://polymarket.com/event/nba-tor-mil-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x79ebb36fa1dae08c5da6d2fea3aed7d572bfb0b266910afb7aaa4f750f966fef",
+   "token_id": "5208603064872669914786872520222279893911770322037527296779362136690780967795",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 8.6,
+   "traders_entry": 0.61,
+   "avg_price": 0.6,
+   "shares": 29.766536964980542,
+   "cost": 18.37,
+   "fees": 0.51,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06TORMIL-TOR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6171,
+    "polymarket_us": 0.6228
+   },
+   "intl_cost_per_share": 0.612,
    "payout": null,
    "profit": null,
    "settled_at": null,

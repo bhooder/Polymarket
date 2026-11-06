@@ -342,6 +342,74 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T23:45:52.745848+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Thunder",
+   "market": "Thunder vs. Grizzlies",
+   "link": "https://polymarket.com/event/nba-okc-mem-2026-11-06",
+   "market_type": "moneyline",
+   "condition_id": "0x0807bc1fb7e6d616f72b1ffd6158f17448df90223dbdd357281ccb7641b2fdbc",
+   "token_id": "17738982004398511179681739795672463001490109109158945924609690414196729397366",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 13.9,
+   "traders_entry": 0.61,
+   "avg_price": 0.62,
+   "shares": 3.0,
+   "cost": 1.91,
+   "fees": 0.0495,
+   "contracts_ordered": 3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06OKCMEM-OKC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.62,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T23:45:53.228679+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "size_multiplier": 1.0,
+   "pick": "Hawks",
+   "market": "Wizards vs. Hawks",
+   "link": "https://polymarket.com/event/nba-was-atl-2026-11-06",
+   "market_type": "moneyline",
+   "condition_id": "0xaad81cd350ffef5f0b3ded21bc89537c81aa880921993e3b32826c48b606df0e",
+   "token_id": "32207961643912237005721009733678708801866453101256449902624170578128750571094",
+   "outcome_index": 1,
+   "ends": "2026-11-07T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 43.8,
+   "traders_entry": 0.74,
+   "avg_price": 0.74,
+   "shares": 5.0,
+   "cost": 3.77,
+   "fees": 0.067,
+   "contracts_ordered": 5,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06WASATL-ATL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.74,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -428,8 +496,22 @@
    "venue": "kalshi",
    "ordered": 3,
    "filled": 3.0
+  },
+  {
+   "at": "2026-11-06T23:45:52.745817+00:00",
+   "pick": "Thunder",
+   "venue": "kalshi",
+   "ordered": 3,
+   "filled": 3.0
+  },
+  {
+   "at": "2026-11-06T23:45:53.228648+00:00",
+   "pick": "Hawks",
+   "venue": "kalshi",
+   "ordered": 5,
+   "filled": 5.0
   }
  ],
  "daily_check": "2026-11-06",
- "balances_checked_at": "2026-11-06T23:07:46.655877+00:00"
+ "balances_checked_at": "2026-11-06T23:45:52.702628+00:00"
 }
