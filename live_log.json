@@ -269,5 +269,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5100\",\"client_order_id\":\"1ee25c37-13df-51dd-af7f-04e562f7d6b0\",\"fill_count\":\"4.00\",\"order_id\":\"01a1ade6-0780-7d8e-85a3-5be047a1e401\",\"remaining_count\":\"0.00\",\"ts_ms\":1793918896229}"
   }
+ },
+ {
+  "at": "2026-11-06T04:29:50.058223+00:00",
+  "event": "settled",
+  "bet": "Under 222.5 (Magic vs. Suns)",
+  "status": "won",
+  "cost": 4.14,
+  "payout": 8.0,
+  "profit": 3.86,
+  "venue": "kalshi",
+  "ref": "KXNBATOTAL-26NOV05ORLPHX-223"
  }
 ]

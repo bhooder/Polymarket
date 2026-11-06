@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1062.2322596666752,
+ "cash": 1105.3990943281817,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1623,7 +1623,7 @@
   },
   {
    "placed_at": "2026-11-05T20:50:05.989447+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Magic vs. Suns: O/U 222.5",
@@ -1652,9 +1652,9 @@
     "kalshi": 0.528
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.17,
+   "profit": 20.83,
+   "settled_at": "2026-11-06T04:29:49.812868+00:00",
    "topped_up_at": "2026-11-05T22:48:15.004786+00:00",
    "top_up_bettors": 3,
    "top_up_avg_bankroll_pct": 65.0,

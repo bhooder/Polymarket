@@ -522,7 +522,7 @@
   },
   {
    "placed_at": "2026-11-05T14:24:00.396957+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Magic",
    "market": "Magic vs. Suns",
@@ -551,9 +551,9 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.03,
+   "settled_at": "2026-11-06T04:29:49.946235+00:00",
    "topped_up_at": null
   },
   {
