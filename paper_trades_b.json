@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 915.3485094988486,
+ "cash": 897.0485094988486,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4332,6 +4332,80 @@
    "payout": 0.0,
    "profit": -7.92,
    "settled_at": "2026-11-06T03:18:13.506300+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T13:53:36.520800+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "76ers vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-phi-cle-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x153760e7ea5d8a07b8ceed9fe46440e44ad2d5f0028070b86acd53802329e1b3",
+   "token_id": "79836373447126786725259472729134397310978654848635733152228588761006367109569",
+   "outcome_index": 1,
+   "ends": "2026-11-07T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.1,
+   "traders_entry": 0.41,
+   "avg_price": 0.42,
+   "shares": 20.94156000203236,
+   "cost": 9.15,
+   "fees": 0.3545,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-phi-cle-2026-11-06",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.4369,
+    "kalshi": 0.4476
+   },
+   "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T13:53:36.939568+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Thunder vs. Grizzlies",
+   "link": "https://polymarket.com/event/nba-okc-mem-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0807bc1fb7e6d616f72b1ffd6158f17448df90223dbdd357281ccb7641b2fdbc",
+   "token_id": "17738982004398511179681739795672463001490109109158945924609690414196729397366",
+   "outcome_index": 0,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 6.1,
+   "traders_entry": 0.59,
+   "avg_price": 0.6,
+   "shares": 14.837517026658883,
+   "cost": 9.15,
+   "fees": 0.2475,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-okc-mem-2026-11-06",
+    "long": true,
+    "fee_rate": 0.0695
+   },
+   "quotes": {
+    "polymarket_us": 0.6167,
+    "kalshi": 0.6169
+   },
+   "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

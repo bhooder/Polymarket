@@ -302,5 +302,32 @@
   "profit": -3.9,
   "venue": "kalshi",
   "ref": "KXNBASPREAD-26NOV05MIAGSW-GSW7"
+ },
+ {
+  "at": "2026-11-06T13:53:37.787115+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.51,
+  "fees": 0.07,
+  "bet": "Cavaliers +2.5",
+  "pick": "Cavaliers",
+  "market": "Spread: 76ers (-2.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-nba-phi-cle-2026-11-06-neg-2pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.51,
+  "share": 0.009997277793748352,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.52,
+  "dollars": 1.96,
+  "bankroll": 196.29,
+  "order_id": "074c260f-7038-5b8a-8671-c6feef99ad9a",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DJ7WPVJG13YB\",\"executions\":[{\"id\":\"DJ7WPVK073YH\",\"order\":{\"id\":\"DJ7WPVJG13YB\",\"marketSlug\":\"asc-nba-phi-cle-2026-11-06-neg-2pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.48\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"asc-nba-phi-cle-2026-11-06-neg-2pt5\",\"icon\":\"\",\"title\":\"PHI 76ers vs. CLE Cavaliers\",\"outcome\":\"+2.50\",\"eventSlug\":\"nba-phi-cle-2026-11-06\",\"teamId\":38,\"team\":{\"id\":38,\"name\":\"Cleveland Cavaliers\",\"abbreviation\":\"cle\",\"league\":\"nba\",\"record\":\"4-4\",\"logo\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_light_inset6.png\",\"alias\":\"Cleveland Cavaliers\",\"safeName\":\"Cavaliers\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_light_inset6.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_light_inset6.png\",\"colorPrimary\":\"#b31445\",\"providerId\":12,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_light_inset6.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_light_inset6.png\",\"displayAbbreviation\":\"CLE\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"12\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"583ec773-fb46-11e1-82cb-f4ce4684ea4c\"},{\"provider\":\"PROVIDER_OPTICODDS\",\"providerId\":\"D5348BDFEBCC\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nba-cle/CLE_dark_i"
+  }
  }
 ]

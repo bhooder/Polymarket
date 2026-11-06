@@ -239,6 +239,40 @@
    "profit": 2.13,
    "settled_at": "2026-11-06T04:44:17.496128+00:00",
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T13:53:37.787121+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Cavaliers",
+   "market": "Spread: 76ers (-2.5)",
+   "link": "https://polymarket.com/event/nba-phi-cle-2026-11-06",
+   "market_type": "spreads",
+   "condition_id": "0xbab476bced4b179e692fa4299926f2ce13ede7b521fdb2e67e79a6d956220400",
+   "token_id": "76983930647091228273016519760619754030642250146538588581532961229862459862521",
+   "outcome_index": 1,
+   "ends": "2026-11-07T00:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 30.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 4.0,
+   "cost": 2.11,
+   "fees": 0.07,
+   "contracts_ordered": 4,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-phi-cle-2026-11-06-neg-2pt5",
+    "long": false,
+    "fee_rate": 0.0695
+   },
+   "paper_price": 0.5099999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -297,8 +331,15 @@
    "venue": "kalshi",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-06T13:53:37.787105+00:00",
+   "pick": "Cavaliers",
+   "venue": "polymarket_us",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-06",
- "balances_checked_at": "2026-11-06T12:37:25.994016+00:00"
+ "balances_checked_at": "2026-11-06T13:53:37.551662+00:00"
 }
