@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 832.9931758560118,
+ "cash": 835.9511600656705,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4522,7 +4522,7 @@
   },
   {
    "placed_at": "2026-11-06T18:19:45.959487+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Carlos Alcaraz",
    "market": "Rolex Paris Masters: Taylor Fritz vs Carlos Alcaraz",
@@ -4551,9 +4551,9 @@
     "kalshi": 0.754
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.13,
+   "profit": 2.98,
+   "settled_at": "2026-11-06T22:21:58.495472+00:00",
    "topped_up_at": null
   },
   {
@@ -4587,6 +4587,42 @@
     "kalshi": 0.696
    },
    "intl_cost_per_share": 0.6811,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-06T22:23:27.023092+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Spurs",
+   "market": "Spurs vs. Kings",
+   "link": "https://polymarket.com/event/nba-sas-sac-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcd4e5842ed6bfd511ee064ab6636e21b0fe469e913b67f5f7f82537e311a8b83",
+   "token_id": "32924695622793285114951583172136341629481167461705331651564850034446713417963",
+   "outcome_index": 0,
+   "ends": "2026-11-07T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.5,
+   "traders_entry": 0.89,
+   "avg_price": 0.91,
+   "shares": 10.013835910685756,
+   "cost": 9.17,
+   "fees": 0.06,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06SASSAC-SAS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.916
+   },
+   "intl_cost_per_share": 0.9045,
    "payout": null,
    "profit": null,
    "settled_at": null,
