@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 956.4185571253324,
+ "cash": 946.6589626606005,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -668,7 +668,7 @@
   {
    "placed_at": "2026-11-06T18:19:46.494353+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Cavaliers",
    "market": "76ers vs. Cavaliers",
    "link": "https://polymarket.com/event/nba-phi-cle-2026-11-06",
@@ -682,9 +682,9 @@
    "avg_bankroll_pct": 4.0,
    "traders_entry": 0.41,
    "avg_price": 0.42,
-   "shares": 22.308558249361628,
-   "cost": 9.76,
-   "fees": 0.39,
+   "shares": 44.617116498723256,
+   "cost": 19.52,
+   "fees": 0.78,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -700,7 +700,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-06T19:20:57.118697+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 19.1,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }
