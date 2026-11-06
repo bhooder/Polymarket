@@ -280,5 +280,16 @@
   "profit": 3.86,
   "venue": "kalshi",
   "ref": "KXNBATOTAL-26NOV05ORLPHX-223"
+ },
+ {
+  "at": "2026-11-06T04:44:17.496189+00:00",
+  "event": "settled",
+  "bet": "Florida Atlantic +6.5",
+  "status": "won",
+  "cost": 1.87,
+  "payout": 4.0,
+  "profit": 2.13,
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-utsa-flatl-2026-11-05-neg-6pt5"
  }
 ]
