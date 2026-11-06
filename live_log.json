@@ -383,5 +383,32 @@
    "status": 200,
    "body": "{\"id\":\"DJAXJWY014F1\",\"executions\":[{\"id\":\"DJAXJWYG33YH\",\"order\":{\"id\":\"DJAXJWY014F1\",\"marketSlug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.5\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"asc-cfb-nebr-ill-2026-11-06-neg-4pt5\",\"icon\":\"\",\"title\":\"Nebraska vs. Illinois\",\"outcome\":\"-4.50\",\"eventSlug\":\"cfb-nebr-ill-2026-11-06\",\"teamId\":1130,\"team\":{\"id\":1130,\"name\":\"Nebraska\",\"abbreviation\":\"nebr\",\"league\":\"cfb\",\"record\":\"5-3\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_nebr_50000099.png\",\"alias\":\"Cornhuskers\",\"safeName\":\"Nebraska\",\"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_R%40160x160.png\",\"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Nebraska+Cornhuskers_L%40160x160.png\",\"colorPrimary\":\"#E41C38\",\"providerId\":99,\"ordering\":\"away\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_L@320x320.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Nebraska-Cornhuskers_R@320x320.png\",\"displayAbbreviation\":\"NEB\",\"ranking\":\"0\",\"conference\":\"Big Ten\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"99\"},{\"provider\":\"PROVID"
   }
+ },
+ {
+  "at": "2026-11-06T20:10:02.497770+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.68,
+  "fees": 0.0456,
+  "bet": "Casper Ruud to win (vs. Nuno Borges)",
+  "pick": "Casper Ruud",
+  "market": "Rolex Paris Masters: Casper Ruud vs Nuno Borges",
+  "venue": "kalshi",
+  "ref": "KXATPMATCH-26NOV06RUUBOR-RUU",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.68,
+  "share": 0.009997277793748352,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.7,
+  "dollars": 1.96,
+  "bankroll": 196.29,
+  "order_id": "6b00b0e3-cac4-537a-981f-10be18fe00a8",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0152\",\"average_fill_price\":\"0.6800\",\"client_order_id\":\"6b00b0e3-cac4-537a-981f-10be18fe00a8\",\"fill_count\":\"3.00\",\"order_id\":\"01a1b27b-8590-7f77-ac18-c970df116a8c\",\"remaining_count\":\"0.00\",\"ts_ms\":1793995802474}"
+  }
  }
 ]

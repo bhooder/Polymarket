@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1095.4374207720857,
+ "cash": 1084.1545569223204,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1771,6 +1771,42 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 32.8,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-06T20:10:00.749981+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Casper Ruud",
+   "market": "Rolex Paris Masters: Casper Ruud vs Nuno Borges",
+   "link": "https://polymarket.com/event/atp-ruud-borges-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaafa9dd0b668b5db4241e66f624d8ebd862ecbe77711825be56381ae5136b260",
+   "token_id": "99266656372661208462624322712036759912938005585982528706481783522810059005606",
+   "outcome_index": 0,
+   "ends": "2026-11-06T20:45:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 26.3,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 16.224799779066558,
+   "cost": 11.28,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPMATCH-26NOV06RUUBOR-RUU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6954
+   },
+   "intl_cost_per_share": 0.7007,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
