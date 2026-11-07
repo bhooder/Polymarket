@@ -646,5 +646,32 @@
   "profit": 1.24,
   "venue": "kalshi",
   "ref": "KXSERIEAGAME-26NOV07CAGFRO-FRO"
+ },
+ {
+  "at": "2026-11-07T19:26:57.564315+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.48,
+  "fees": 0.0696,
+  "bet": "Tennessee -6.5",
+  "pick": "Tennessee",
+  "market": "Spread: Tennessee (-6.5)",
+  "venue": "kalshi",
+  "ref": "KXNCAAFSPREAD-26NOV07UKTENN-TENN7",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.48,
+  "share": 0.010002105830424698,
+  "side": "YES",
+  "contracts": 4,
+  "max_price": 0.5,
+  "dollars": 1.99,
+  "bankroll": 198.63,
+  "order_id": "5477eb35-f487-5b96-a24b-7386ed637e7b",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"5477eb35-f487-5b96-a24b-7386ed637e7b\",\"fill_count\":\"4.00\",\"order_id\":\"01a1b77a-6fe8-7892-bd50-8ff37b82569a\",\"remaining_count\":\"0.00\",\"ts_ms\":1794079617552}"
+  }
  }
 ]
