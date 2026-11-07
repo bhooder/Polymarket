@@ -444,6 +444,40 @@
    "profit": 0.19,
    "settled_at": "2026-11-07T05:58:49.566432+00:00",
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T08:51:04.232859+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "No",
+   "market": "Will Frosinone Calcio win on 2026-11-07?",
+   "link": "https://polymarket.com/event/sea-cag-fro-2026-11-07",
+   "market_type": "moneyline",
+   "condition_id": "0xc32e864c070f97f0484effb81875cdea6c6410b0f2347bb022387c8757adf54e",
+   "token_id": "107733164631894035076066295957784638028370319559337273330615936458591237818905",
+   "outcome_index": 1,
+   "ends": "2026-11-07T14:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.57,
+   "shares": 3.0,
+   "cost": 1.76,
+   "fees": 0.0513,
+   "contracts_ordered": 3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV07CAGFRO-FRO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.57,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -551,8 +585,15 @@
    "venue": "kalshi",
    "ordered": 2,
    "filled": 2.0
+  },
+  {
+   "at": "2026-11-07T08:51:04.232824+00:00",
+   "pick": "No",
+   "venue": "kalshi",
+   "ordered": 3,
+   "filled": 3.0
   }
  ],
  "daily_check": "2026-11-07",
- "balances_checked_at": "2026-11-07T07:58:38.352843+00:00"
+ "balances_checked_at": "2026-11-07T08:51:04.063564+00:00"
 }

@@ -581,5 +581,32 @@
   "max_price": 0.59,
   "dollars": 1.98,
   "bankroll": 197.46
+ },
+ {
+  "at": "2026-11-07T08:51:04.232848+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.5700000000000001,
+  "fees": 0.0513,
+  "bet": "Frosinone Calcio not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will Frosinone Calcio win on 2026-11-07?",
+  "venue": "kalshi",
+  "ref": "KXSERIEAGAME-26NOV07CAGFRO-FRO",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.57,
+  "share": 0.01000197263808908,
+  "side": "NO",
+  "contracts": 3,
+  "max_price": 0.58,
+  "dollars": 1.98,
+  "bankroll": 197.46,
+  "order_id": "a26632af-18d8-5a87-970e-54ad6e611189",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0171\",\"average_fill_price\":\"0.4300\",\"client_order_id\":\"a26632af-18d8-5a87-970e-54ad6e611189\",\"fill_count\":\"3.00\",\"order_id\":\"01a1b534-44c0-7026-b482-6e45e4bc2649\",\"remaining_count\":\"0.00\",\"ts_ms\":1794041464203}"
+  }
  }
 ]
