@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 794.2478669688759,
+ "cash": 784.812913797108,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5448,6 +5448,43 @@
     "kalshi": 0.3763
    },
    "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T22:39:43.095211+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Spread: Hawks (-6.5)",
+   "link": "https://polymarket.com/event/nba-bkn-atl-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x619c0b9ea7fa6523fd1aa67bd43a4495205e3fd01a1fd87d8315edecd96caca7",
+   "token_id": "101953555480015551015950398272232497920315801946866546288663044013087192467309",
+   "outcome_index": 1,
+   "ends": "2026-11-08T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.8,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 18.581537085240583,
+   "cost": 9.43,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV07BKNATL-ATL7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5078,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
