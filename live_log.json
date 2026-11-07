@@ -524,5 +524,16 @@
   "profit": 1.89,
   "venue": "polymarket_us",
   "ref": "asc-nba-phi-cle-2026-11-06-neg-2pt5"
+ },
+ {
+  "at": "2026-11-07T04:15:10.414396+00:00",
+  "event": "settled",
+  "bet": "Thunder to win (vs. Grizzlies)",
+  "status": "won",
+  "cost": 1.91,
+  "payout": 3.0,
+  "profit": 1.09,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06OKCMEM-OKC"
  }
 ]

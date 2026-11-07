@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 962.0066708694824,
+ "cash": 991.2732370168186,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -707,7 +707,7 @@
   },
   {
    "placed_at": "2026-11-06T21:34:16.063253+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Wild",
    "market": "Sharks vs. Wild",
@@ -737,9 +737,9 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7301,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.46,
+   "profit": 3.7,
+   "settled_at": "2026-11-07T04:15:10.258346+00:00",
    "topped_up_at": null
   },
   {
@@ -780,7 +780,7 @@
   },
   {
    "placed_at": "2026-11-06T23:45:52.043704+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Raptors vs. Bucks",
@@ -810,9 +810,9 @@
     "polymarket_us": 0.6228
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.81,
+   "profit": 6.06,
+   "settled_at": "2026-11-07T04:15:10.310801+00:00",
    "topped_up_at": null
   }
  ]

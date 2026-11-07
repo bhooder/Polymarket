@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 809.7030196537349,
+ "cash": 899.5132936776893,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4376,7 +4376,7 @@
   },
   {
    "placed_at": "2026-11-06T13:53:36.939568+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Thunder",
    "market": "Thunder vs. Grizzlies",
@@ -4406,9 +4406,9 @@
     "kalshi": 0.6169
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 29.26,
+   "profit": 10.93,
+   "settled_at": "2026-11-07T04:15:09.977534+00:00",
    "topped_up_at": "2026-11-06T23:45:51.013688+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 13.9,
@@ -4488,7 +4488,7 @@
   },
   {
    "placed_at": "2026-11-06T17:25:14.591821+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Wild",
    "market": "Sharks vs. Wild",
@@ -4518,9 +4518,9 @@
     "kalshi": 0.7251
    },
    "intl_cost_per_share": 0.7301,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.63,
+   "profit": 3.48,
+   "settled_at": "2026-11-07T04:15:10.052112+00:00",
    "topped_up_at": null
   },
   {
@@ -4636,7 +4636,7 @@
   },
   {
    "placed_at": "2026-11-06T23:45:50.896483+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Raptors vs. Bucks",
@@ -4666,14 +4666,14 @@
     "polymarket_us": 0.6228
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 29.77,
+   "profit": 11.4,
+   "settled_at": "2026-11-07T04:15:10.099176+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T00:25:53.356605+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Timberwolves vs. Pelicans",
@@ -4702,14 +4702,14 @@
     "kalshi": 0.417
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -17.69,
+   "settled_at": "2026-11-07T04:15:10.123877+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T00:25:54.067952+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Jazz vs. Mavericks: O/U 225.5",
@@ -4739,9 +4739,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.15,
+   "profit": 8.94,
+   "settled_at": "2026-11-07T04:15:10.147282+00:00",
    "topped_up_at": null
   },
   {
