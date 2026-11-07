@@ -1735,7 +1735,7 @@
   },
   {
    "placed_at": "2026-11-06T15:32:10.820580+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Nebraska",
    "market": "Spread: Nebraska (-4.5)",
@@ -1764,9 +1764,9 @@
     "polymarket_us": 0.5174
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.58,
+   "settled_at": "2026-11-07T05:12:08.878489+00:00",
    "topped_up_at": "2026-11-06T17:25:14.058907+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 32.8,

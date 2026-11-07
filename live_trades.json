@@ -276,7 +276,7 @@
   },
   {
    "placed_at": "2026-11-06T15:32:12.081627+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Nebraska",
@@ -303,9 +303,9 @@
     "fee_rate": 0.0695
    },
    "paper_price": 0.5000000000000001,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -4.14,
+   "settled_at": "2026-11-07T05:12:09.389312+00:00",
    "topped_up_at": "2026-11-06T17:25:15.547974+00:00",
    "top_up_size_multiplier": 1.0
   },
@@ -554,5 +554,5 @@
   }
  ],
  "daily_check": "2026-11-07",
- "balances_checked_at": "2026-11-07T04:16:23.915347+00:00"
+ "balances_checked_at": "2026-11-07T05:13:48.956167+00:00"
 }

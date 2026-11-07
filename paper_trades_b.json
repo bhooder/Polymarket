@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 899.5132936776893,
+ "cash": 890.082510321565,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4452,7 +4452,7 @@
   },
   {
    "placed_at": "2026-11-06T17:25:14.328861+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Nebraska",
    "market": "Spread: Nebraska (-4.5)",
@@ -4481,9 +4481,9 @@
     "polymarket_us": 0.5174
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.31,
+   "settled_at": "2026-11-07T05:12:09.083562+00:00",
    "topped_up_at": null
   },
   {
@@ -4813,6 +4813,43 @@
     "polymarket_us": 0.3613
    },
    "intl_cost_per_share": 0.3512,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T05:13:46.843051+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Leeds United FC win on 2026-11-07?",
+   "link": "https://polymarket.com/event/epl-lee-tot-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe7ba0f07d9c7811080bd3502736b49150e00b09a8b1171bbfe3b09016c59ba79",
+   "token_id": "69431818949794022251186638641896170472084194239711630951553933373116038849907",
+   "outcome_index": 1,
+   "ends": "2026-11-07T12:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.1,
+   "traders_entry": 0.65,
+   "avg_price": 0.66,
+   "shares": 13.955732357764004,
+   "cost": 9.43,
+   "fees": 0.22,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV07LEETOT-LEE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6758,
+    "polymarket_us": 0.6813
+   },
+   "intl_cost_per_share": 0.6712,
    "payout": null,
    "profit": null,
    "settled_at": null,

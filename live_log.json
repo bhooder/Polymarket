@@ -535,5 +535,16 @@
   "profit": 1.09,
   "venue": "kalshi",
   "ref": "KXNBAGAME-26NOV06OKCMEM-OKC"
+ },
+ {
+  "at": "2026-11-07T05:12:09.417754+00:00",
+  "event": "settled",
+  "bet": "Nebraska -4.5",
+  "status": "lost",
+  "cost": 4.14,
+  "payout": 0.0,
+  "profit": -4.14,
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-nebr-ill-2026-11-06-neg-4pt5"
  }
 ]
