@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 900.7985441799501,
+ "cash": 918.5956456292255,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4746,7 +4746,7 @@
   },
   {
    "placed_at": "2026-11-07T01:36:56.640304+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Trail Blazers vs. Lakers: O/U 231.5",
@@ -4776,9 +4776,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.8,
+   "profit": 8.58,
+   "settled_at": "2026-11-07T06:53:29.269012+00:00",
    "topped_up_at": null
   },
   {

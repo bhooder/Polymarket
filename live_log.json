@@ -557,5 +557,29 @@
   "profit": 0.19,
   "venue": "kalshi",
   "ref": "KXNBAGAME-26NOV06SASSAC-SAS"
+ },
+ {
+  "at": "2026-11-07T06:55:21.831097+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 403 on /trade-api/v2/portfolio/events/orders: {\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 403,
+   "body": "{\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}"
+  },
+  "bet": "Manchester City FC to win",
+  "pick": "Yes",
+  "market": "Will Manchester City FC win on 2026-11-07?",
+  "venue": "kalshi",
+  "ref": "KXEPLGAME-26NOV07NFOMCI-MCI",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.57,
+  "share": 0.010001989746637551,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.59,
+  "dollars": 1.98,
+  "bankroll": 197.46
  }
 ]
