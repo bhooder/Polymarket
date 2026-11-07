@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 784.812913797108,
+ "cash": 805.0974147120685,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5310,7 +5310,7 @@
   },
   {
    "placed_at": "2026-11-07T20:47:33.131492+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "D.C. United SC vs. New York City FC: O/U 2.5",
@@ -5340,9 +5340,9 @@
     "kalshi": 0.4674
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.28,
+   "profit": 10.88,
+   "settled_at": "2026-11-07T23:14:37.656252+00:00",
    "topped_up_at": null
   },
   {
