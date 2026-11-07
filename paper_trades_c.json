@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 901.5627812593929,
+ "cash": 882.7609035912011,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1083,7 +1083,7 @@
   {
    "placed_at": "2026-11-07T17:20:36.036835+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Kentucky",
    "market": "Spread: Tennessee (-5.5)",
    "link": "https://polymarket.com/event/cfb-uk-tenn-2026-11-07",
@@ -1096,10 +1096,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.47,
-   "avg_price": 0.49,
-   "shares": 19.54706764428278,
-   "cost": 9.93,
-   "fees": 0.35,
+   "avg_price": 0.485,
+   "shares": 39.64870150508298,
+   "cost": 19.94,
+   "fees": 0.71,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -1115,7 +1115,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T22:02:24.484882+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T20:10:36.088699+00:00",
@@ -1149,6 +1152,42 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T22:02:24.848127+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Knicks vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-nyk-cle-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0xfefc26258fb1bf9c7d9e46977fbef2cf247a994e2db7975ad7726b8fde300d3a",
+   "token_id": "60955229673760716456263204416898543673892689428977581401929964569716185748287",
+   "outcome_index": 1,
+   "ends": "2026-11-08T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.36,
+   "avg_price": 0.36,
+   "shares": 23.36970393057683,
+   "cost": 8.79,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV07NYKCLE-CLE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3763
+   },
+   "intl_cost_per_share": 0.3614,
    "payout": null,
    "profit": null,
    "settled_at": null,
