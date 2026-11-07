@@ -1,5 +1,5 @@
 {
- "cash": 195.46,
+ "cash": 197.46,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -413,7 +413,7 @@
   },
   {
    "placed_at": "2026-11-07T00:25:56.366842+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Spurs",
@@ -440,9 +440,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.9,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 2.0,
+   "profit": 0.19,
+   "settled_at": "2026-11-07T05:58:49.566432+00:00",
    "topped_up_at": null
   }
  ],
@@ -554,5 +554,5 @@
   }
  ],
  "daily_check": "2026-11-07",
- "balances_checked_at": "2026-11-07T05:13:48.956167+00:00"
+ "balances_checked_at": "2026-11-07T06:00:27.097731+00:00"
 }

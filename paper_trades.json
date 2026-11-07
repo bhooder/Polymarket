@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1124.2724315789787,
+ "cash": 1136.7738108132278,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1884,7 +1884,7 @@
   },
   {
    "placed_at": "2026-11-07T00:25:53.060744+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Spurs",
    "market": "Spurs vs. Kings",
@@ -1913,9 +1913,9 @@
     "kalshi": 0.9064
    },
    "intl_cost_per_share": 0.9045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.5,
+   "profit": 1.17,
+   "settled_at": "2026-11-07T05:58:49.351126+00:00",
    "topped_up_at": null
   }
  ]

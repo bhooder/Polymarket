@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 991.2732370168186,
+ "cash": 991.9004453188019,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -744,7 +744,7 @@
   },
   {
    "placed_at": "2026-11-06T22:23:27.677183+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Spurs",
    "market": "Spurs vs. Kings",
@@ -773,9 +773,9 @@
     "kalshi": 0.9166
    },
    "intl_cost_per_share": 0.9045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.65,
+   "profit": 0.89,
+   "settled_at": "2026-11-07T05:58:49.536431+00:00",
    "topped_up_at": null
   },
   {
@@ -813,6 +813,43 @@
    "payout": 15.81,
    "profit": 6.06,
    "settled_at": "2026-11-07T04:15:10.310801+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T06:00:26.701453+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Alabama",
+   "market": "Spread: LSU (-5.5)",
+   "link": "https://polymarket.com/event/cfb-ala-lsu-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd709c4c03dde4a05b4f89442c91c47ec7f11037b984067551ecf5da542e1dd26",
+   "token_id": "98303751704584585905234867837147346464940909029441363810497089487860093505925",
+   "outcome_index": 1,
+   "ends": "2026-11-07T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.475,
+   "shares": 20.092617542188606,
+   "cost": 10.02,
+   "fees": 0.476,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ala-lsu-2026-11-07-pos-5pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4987,
+    "kalshi": 0.5077
+   },
+   "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

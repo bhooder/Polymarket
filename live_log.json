@@ -546,5 +546,16 @@
   "profit": -4.14,
   "venue": "polymarket_us",
   "ref": "asc-cfb-nebr-ill-2026-11-06-neg-4pt5"
+ },
+ {
+  "at": "2026-11-07T05:58:49.566597+00:00",
+  "event": "settled",
+  "bet": "Spurs to win (vs. Kings)",
+  "status": "won",
+  "cost": 1.81,
+  "payout": 2.0,
+  "profit": 0.19,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06SASSAC-SAS"
  }
 ]
