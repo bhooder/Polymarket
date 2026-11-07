@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 909.0456456292255,
+ "cash": 899.501043928512,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4821,7 +4821,7 @@
   {
    "placed_at": "2026-11-07T05:13:46.843051+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Leeds United FC win on 2026-11-07?",
    "link": "https://polymarket.com/event/epl-lee-tot-2026-11-07",
@@ -4834,10 +4834,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 4.1,
    "traders_entry": 0.65,
-   "avg_price": 0.66,
-   "shares": 13.955732357764004,
-   "cost": 9.43,
-   "fees": 0.22,
+   "avg_price": 0.6648,
+   "shares": 27.873048328978214,
+   "cost": 18.97,
+   "fees": 0.44,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -4853,7 +4853,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T11:41:51.169659+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T06:00:25.522117+00:00",

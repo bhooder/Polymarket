@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 981.8804453188019,
+ "cash": 971.8664554839861,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -883,6 +883,43 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T11:41:52.287550+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Leeds United FC win on 2026-11-07?",
+   "link": "https://polymarket.com/event/epl-lee-tot-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe7ba0f07d9c7811080bd3502736b49150e00b09a8b1171bbfe3b09016c59ba79",
+   "token_id": "69431818949794022251186638641896170472084194239711630951553933373116038849907",
+   "outcome_index": 1,
+   "ends": "2026-11-07T12:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 4.3,
+   "traders_entry": 0.65,
+   "avg_price": 0.67,
+   "shares": 14.602969902710086,
+   "cost": 10.01,
+   "fees": 0.23,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV07LEETOT-LEE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6858,
+    "polymarket_us": 0.691
+   },
+   "intl_cost_per_share": 0.6712,
    "payout": null,
    "profit": null,
    "settled_at": null,
