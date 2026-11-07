@@ -1920,7 +1920,7 @@
   },
   {
    "placed_at": "2026-11-07T06:55:17.598251+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Manchester City FC win on 2026-11-07?",
@@ -1949,9 +1949,9 @@
     "kalshi": 0.5876
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.37,
+   "settled_at": "2026-11-07T20:08:25.979565+00:00",
    "topped_up_at": null
   },
   {
