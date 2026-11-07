@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 903.3331336392915,
+ "cash": 911.5727812593929,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -968,7 +968,7 @@
   {
    "placed_at": "2026-11-07T14:09:36.368345+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Brighton & Hove Albion FC win on 2026-11-08?",
    "link": "https://polymarket.com/event/epl-bri-bre-2026-11-08",
@@ -982,9 +982,9 @@
    "avg_bankroll_pct": 0.1,
    "traders_entry": 0.48,
    "avg_price": 0.49,
-   "shares": 19.724409991861958,
-   "cost": 10.01,
-   "fees": 0.35,
+   "shares": 39.42911527843734,
+   "cost": 20.02,
+   "fees": 0.7,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -999,11 +999,14 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T20:47:34.106090+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T15:25:02.090348+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Baylor",
    "market": "Spread: Baylor (-8.5)",
@@ -1032,9 +1035,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5375,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.24,
+   "profit": 8.32,
+   "settled_at": "2026-11-07T20:45:28.266962+00:00",
    "topped_up_at": null
   },
   {

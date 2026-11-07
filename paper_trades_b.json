@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 822.24625252505,
+ "cash": 811.2717412134822,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5011,7 +5011,7 @@
   {
    "placed_at": "2026-11-07T14:09:34.011611+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Brighton & Hove Albion FC win on 2026-11-08?",
    "link": "https://polymarket.com/event/epl-bri-bre-2026-11-08",
@@ -5024,10 +5024,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.1,
    "traders_entry": 0.48,
-   "avg_price": 0.49,
-   "shares": 18.798288843392918,
-   "cost": 9.54,
-   "fees": 0.33,
+   "avg_price": 0.4901,
+   "shares": 37.3010071074872,
+   "cost": 18.94,
+   "fees": 0.66,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -5042,11 +5042,14 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T20:47:32.454312+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T14:50:21.080982+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "BYU vs. Utah: O/U 49.5",
@@ -5075,14 +5078,14 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.35,
+   "settled_at": "2026-11-07T20:45:27.661974+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T15:24:59.515863+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Baylor",
    "market": "Spread: Baylor (-8.5)",
@@ -5111,9 +5114,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5375,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.21,
+   "profit": 7.85,
+   "settled_at": "2026-11-07T20:45:27.739244+00:00",
    "topped_up_at": null
   },
   {
@@ -5294,6 +5297,79 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T20:47:33.131492+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "D.C. United SC vs. New York City FC: O/U 2.5",
+   "link": "https://polymarket.com/event/mls-dcu-nyc-2026-11-07-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x16a9cc31ed8b836fb9aa606c892acd937e02440c5dc26afc3bb0e5003606d139",
+   "token_id": "19194309399459215235826044118124713144492786060255910289015866042090409557591",
+   "outcome_index": 1,
+   "ends": "2026-11-07T21:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.45,
+   "avg_price": 0.44,
+   "shares": 20.28450091496047,
+   "cost": 9.4,
+   "fees": 0.4748,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-mls-dcu-nyc-2026-11-07-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4634,
+    "kalshi": 0.4674
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T20:47:33.707510+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Aston Villa FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-mun-ast-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x86d17e7151cffa684bfe5765e629d9b0d317b8ff15f6c80f9f4568c48b5b9aa8",
+   "token_id": "94314704433522804490147054983710004686747549410117348652862732481932136607669",
+   "outcome_index": 1,
+   "ends": "2026-11-08T16:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.69,
+   "avg_price": 0.71,
+   "shares": 12.962219065643495,
+   "cost": 9.39,
+   "fees": 0.19,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08MUNAVL-AVL",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7247
+   },
+   "intl_cost_per_share": 0.7105,
    "payout": null,
    "profit": null,
    "settled_at": null,
