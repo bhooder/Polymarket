@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 882.7609035912011,
+ "cash": 923.4841150010859,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1122,7 +1122,7 @@
   },
   {
    "placed_at": "2026-11-07T20:10:36.088699+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Chicago Fire FC win on 2026-11-07?",
@@ -1152,9 +1152,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.72,
+   "profit": 20.86,
+   "settled_at": "2026-11-07T23:54:30.778451+00:00",
    "topped_up_at": null
   },
   {
