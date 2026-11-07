@@ -464,5 +464,43 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0134\",\"average_fill_price\":\"0.7400\",\"client_order_id\":\"0bfee676-dab0-5078-b925-a3f301d07d36\",\"fill_count\":\"5.00\",\"order_id\":\"01a1b341-2368-75fb-bc28-05aa9520c2ee\",\"remaining_count\":\"0.00\",\"ts_ms\":1794008753219}"
   }
+ },
+ {
+  "at": "2026-11-07T00:24:14.997768+00:00",
+  "event": "settled",
+  "bet": "Casper Ruud to win (vs. Nuno Borges)",
+  "status": "won",
+  "cost": 2.09,
+  "payout": 3.0,
+  "profit": 0.91,
+  "venue": "kalshi",
+  "ref": "KXATPMATCH-26NOV06RUUBOR-RUU"
+ },
+ {
+  "at": "2026-11-07T00:25:56.366834+00:00",
+  "event": "order",
+  "filled": 2.0,
+  "price": 0.9,
+  "fees": 0.0126,
+  "bet": "Spurs to win (vs. Kings)",
+  "pick": "Spurs",
+  "market": "Spurs vs. Kings",
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06SASSAC-SAS",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.9,
+  "share": 0.009997749708273785,
+  "side": "YES",
+  "contracts": 2,
+  "max_price": 0.91,
+  "dollars": 1.97,
+  "bankroll": 197.09,
+  "order_id": "3ab67833-2fbb-59a0-9255-e58a1228653f",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0063\",\"average_fill_price\":\"0.9000\",\"client_order_id\":\"3ab67833-2fbb-59a0-9255-e58a1228653f\",\"fill_count\":\"2.00\",\"order_id\":\"01a1b365-ce20-7dbf-8752-64da52909480\",\"remaining_count\":\"0.00\",\"ts_ms\":1794011156355}"
+  }
  }
 ]

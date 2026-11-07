@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 808.4012378866822,
+ "cash": 794.648021597568,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4561,7 +4561,7 @@
   },
   {
    "placed_at": "2026-11-06T21:34:14.545333+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Casper Ruud",
    "market": "Rolex Paris Masters: Casper Ruud vs Nuno Borges",
@@ -4590,9 +4590,9 @@
     "kalshi": 0.696
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.15,
+   "profit": 4.0,
+   "settled_at": "2026-11-07T00:24:14.468965+00:00",
    "topped_up_at": null
   },
   {
@@ -4663,6 +4663,79 @@
     "polymarket_us": 0.6228
    },
    "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T00:25:53.356605+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Pelicans",
+   "market": "Timberwolves vs. Pelicans",
+   "link": "https://polymarket.com/event/nba-min-nop-2026-11-06",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x81b63770a7d779d9d73737f06a0e6f974c78f8dfd5695f7d13ca8f30a5994270",
+   "token_id": "106455507602084473546652497404465577374067272135299808197872061269372010010883",
+   "outcome_index": 1,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 3.3,
+   "traders_entry": 0.4,
+   "avg_price": 0.4,
+   "shares": 42.41842610364683,
+   "cost": 17.69,
+   "fees": 0.72,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV06MINNOP-NOP",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.417
+   },
+   "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T00:25:54.067952+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Jazz vs. Mavericks: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-uta-dal-2026-11-06",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8a38bff139d19d28ed7cc993bd7f3edf4f69bc8bb49b24eb56ee01f5f6f4ecb6",
+   "token_id": "63638812484745342637160090665910013898047352139412724195058127924576738617755",
+   "outcome_index": 1,
+   "ends": "2026-11-07T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 18.14803356893593,
+   "cost": 9.21,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV06UTADAL-226",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5076,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
