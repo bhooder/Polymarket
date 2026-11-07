@@ -1,5 +1,5 @@
 {
- "cash": 188.46,
+ "cash": 192.46,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -242,7 +242,7 @@
   },
   {
    "placed_at": "2026-11-06T13:53:37.787121+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Cavaliers",
@@ -269,9 +269,9 @@
     "fee_rate": 0.0695
    },
    "paper_price": 0.5099999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.0,
+   "profit": 1.89,
+   "settled_at": "2026-11-07T03:20:58.962185+00:00",
    "topped_up_at": null
   },
   {
@@ -554,5 +554,5 @@
   }
  ],
  "daily_check": "2026-11-07",
- "balances_checked_at": "2026-11-07T02:29:31.323400+00:00"
+ "balances_checked_at": "2026-11-07T03:23:00.087884+00:00"
 }

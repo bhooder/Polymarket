@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 917.3895543707591,
+ "cash": 962.0066708694824,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -667,7 +667,7 @@
   },
   {
    "placed_at": "2026-11-06T18:19:46.494353+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Cavaliers",
    "market": "76ers vs. Cavaliers",
@@ -697,9 +697,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.62,
+   "profit": 25.1,
+   "settled_at": "2026-11-07T03:20:58.648494+00:00",
    "topped_up_at": "2026-11-06T19:20:57.118697+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 19.1,

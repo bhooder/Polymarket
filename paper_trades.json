@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1085.1420934065811,
+ "cash": 1106.5502921019704,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1698,7 +1698,7 @@
   },
   {
    "placed_at": "2026-11-06T13:53:35.966787+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Spread: 76ers (-2.5)",
@@ -1728,9 +1728,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.41,
+   "profit": 10.12,
+   "settled_at": "2026-11-07T03:20:57.061081+00:00",
    "topped_up_at": null
   },
   {

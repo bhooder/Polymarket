@@ -513,5 +513,16 @@
   "profit": 1.23,
   "venue": "kalshi",
   "ref": "KXNBAGAME-26NOV06WASATL-ATL"
+ },
+ {
+  "at": "2026-11-07T03:20:59.194762+00:00",
+  "event": "settled",
+  "bet": "Cavaliers +2.5",
+  "status": "won",
+  "cost": 2.11,
+  "payout": 4.0,
+  "profit": 1.89,
+  "venue": "polymarket_us",
+  "ref": "asc-nba-phi-cle-2026-11-06-neg-2pt5"
  }
 ]
