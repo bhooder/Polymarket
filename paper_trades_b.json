@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 861.5123817596025,
+ "cash": 842.7923817596024,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4861,7 +4861,7 @@
   {
    "placed_at": "2026-11-07T06:00:25.522117+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Alabama",
    "market": "Spread: LSU (-5.5)",
    "link": "https://polymarket.com/event/cfb-ala-lsu-2026-11-07",
@@ -4874,10 +4874,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.3,
    "traders_entry": 0.48,
-   "avg_price": 0.475,
-   "shares": 18.96967684122797,
-   "cost": 9.46,
-   "fees": 0.4494,
+   "avg_price": 0.4799,
+   "shares": 37.36848426040946,
+   "cost": 18.82,
+   "fees": 0.886,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -4893,7 +4893,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T15:24:58.566893+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T11:03:27.977217+00:00",
@@ -5072,6 +5075,42 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T15:24:59.515863+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Baylor",
+   "market": "Spread: Baylor (-8.5)",
+   "link": "https://polymarket.com/event/cfb-iowast-bayl-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc973e6257ecf53e51ff2c8017ffe58839022438cf43ae460a1ffe2d944143a8f",
+   "token_id": "84903858464023608470619609690319469820444742607863241271565835676019822600528",
+   "outcome_index": 0,
+   "ends": "2026-11-07T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.4,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 17.214996174445293,
+   "cost": 9.36,
+   "fees": 0.4082,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-iowast-bayl-2026-11-07-pos-8pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5375,
    "payout": null,
    "profit": null,
    "settled_at": null,
