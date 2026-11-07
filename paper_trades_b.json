@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 865.0578354463343,
+ "cash": 840.0588746937628,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5111,6 +5111,115 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5375,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T16:43:36.738462+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cincinnati",
+   "market": "Spread: Houston (-10.5)",
+   "link": "https://polymarket.com/event/cfb-cin-hou-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7e25dfbbeae5cbe35a80f6e5cbcbea6e9df074b3bff115556e4eea9b209fbeb0",
+   "token_id": "109186164679710595988955576718748542642962493089190875084250769056508861633713",
+   "outcome_index": 1,
+   "ends": "2026-11-07T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.7,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 18.338164251207733,
+   "cost": 9.5,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFSPREAD-26NOV07CINHOU-HOU11",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.518,
+    "polymarket_us": 0.5287
+   },
+   "intl_cost_per_share": 0.5175,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T16:43:37.531363+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Real Madrid CF win on 2026-11-07?",
+   "link": "https://polymarket.com/event/lal-val-rea-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 0.631,
+   "condition_id": "0x56073b6d47023b95516351125c953ba506dd7cbc960dbd6f753f3961402ecd99",
+   "token_id": "101497351989151903128193295635005138622284473545351366283602749908340450793965",
+   "outcome_index": 1,
+   "ends": "2026-11-07T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.25,
+   "avg_price": 0.22,
+   "shares": 25.81763012257987,
+   "cost": 6.0,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGAGAME-26NOV07VCFRMA-RMA",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.2324
+   },
+   "intl_cost_per_share": 0.2286,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T16:43:38.533920+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "UCLA",
+   "market": "Spread: UCLA (-4.5)",
+   "link": "https://polymarket.com/event/cfb-ucla-minnst-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x70feb586ec66ead00f861d0cc97459f30c0e1eb90a3933b8182e33882cdb3e92",
+   "token_id": "100012023882389654560358525834344620160251731385092726101435217544119959074533",
+   "outcome_index": 0,
+   "ends": "2026-11-07T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.46,
+   "shares": 19.644415402875943,
+   "cost": 9.5,
+   "fees": 0.4636,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ucla-minnst-2026-11-07-neg-4pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4775,
    "payout": null,
    "profit": null,
    "settled_at": null,
