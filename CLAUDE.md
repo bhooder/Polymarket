@@ -162,6 +162,10 @@ Check results after a few weeks. A handful of bets proves nothing.
   but it is used as a betting venue.
 - Leaderboards reward luck. Top traders hedge, and prices move after they buy.
 - Output is a research signal, not financial advice.
+- Kalshi geoblocks orders by the sender's location. GitHub's runners sometimes
+  land in a Washington data center, where Kalshi sports trading is blocked
+  (HTTP 403, seen 2026-11-07). The owner chose to accept the occasional failed
+  bet rather than change anything.
 
 ## Ideas / next steps
 1. Let the forward test run for a few weeks, then review won-lost, return
