@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 933.1230430019373,
+ "cash": 923.1930430019373,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -818,7 +818,7 @@
   {
    "placed_at": "2026-11-07T06:00:26.701453+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Alabama",
    "market": "Spread: LSU (-5.5)",
    "link": "https://polymarket.com/event/cfb-ala-lsu-2026-11-07",
@@ -831,10 +831,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.3,
    "traders_entry": 0.48,
-   "avg_price": 0.475,
-   "shares": 20.092617542188606,
-   "cost": 10.02,
-   "fees": 0.476,
+   "avg_price": 0.4799,
+   "shares": 39.61186515676897,
+   "cost": 19.95,
+   "fees": 0.9392,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -850,7 +850,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T18:42:33.136609+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 0.7,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-07T11:03:29.475294+00:00",
