@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 971.8664554839861,
+ "cash": 951.8410775075369,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -920,6 +920,79 @@
     "polymarket_us": 0.691
    },
    "intl_cost_per_share": 0.6712,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T14:09:36.034393+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Arsenal FC vs. Hull City AFC end in a draw?",
+   "link": "https://polymarket.com/event/epl-ars-hul-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaba896dd23c0e606deeceeaef770575bdcedb79ece6e4b3f0c9fa6751a182550",
+   "token_id": "113747302904629953753479933334985653920165541446808239954633881495225212510324",
+   "outcome_index": 1,
+   "ends": "2026-11-07T15:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.88,
+   "avg_price": 0.9,
+   "shares": 11.044907867152157,
+   "cost": 10.01,
+   "fees": 0.07,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV07ARSHUL-TIE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9063,
+    "polymarket_us": 0.9085
+   },
+   "intl_cost_per_share": 0.9045,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T14:09:36.368345+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Brighton & Hove Albion FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-bri-bre-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6d6ae0aa68a1fa18d02432651325dd8cfdc589f125b50f48ab863ec17df16da6",
+   "token_id": "70884205084565769489560971149938279780155689989074699285316676838248729913880",
+   "outcome_index": 1,
+   "ends": "2026-11-08T14:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 19.724409991861958,
+   "cost": 10.01,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08BRIBRE-BRI",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5077
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
