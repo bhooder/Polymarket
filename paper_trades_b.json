@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 840.0588746937628,
+ "cash": 841.0826501723357,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4936,7 +4936,7 @@
   },
   {
    "placed_at": "2026-11-07T14:09:33.290845+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Arsenal FC vs. Hull City AFC end in a draw?",
@@ -4966,9 +4966,9 @@
     "polymarket_us": 0.9085
    },
    "intl_cost_per_share": 0.9045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.53,
+   "profit": 0.99,
+   "settled_at": "2026-11-07T17:18:37.266346+00:00",
    "topped_up_at": null
   },
   {
@@ -5220,6 +5220,43 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4775,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T17:20:35.137417+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kentucky",
+   "market": "Spread: Tennessee (-5.5)",
+   "link": "https://polymarket.com/event/cfb-uk-tenn-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8a4dd1eaebba54992ca9c213b7a4b8baef6f90275cacb48047831f49af1de231",
+   "token_id": "15992515232974493223299796015282255433773650976608226987068794673521728795458",
+   "outcome_index": 1,
+   "ends": "2026-11-07T23:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.47,
+   "avg_price": 0.49,
+   "shares": 18.719470022246615,
+   "cost": 9.5,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFSPREAD-26NOV07UKTENN-TENN6",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5076,
+    "polymarket_us": 0.5087
+   },
+   "intl_cost_per_share": 0.4875,
    "payout": null,
    "profit": null,
    "settled_at": null,
