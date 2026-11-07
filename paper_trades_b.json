@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 794.648021597568,
+ "cash": 776.2134927200009,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4598,7 +4598,7 @@
   {
    "placed_at": "2026-11-06T22:23:27.023092+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Spurs",
    "market": "Spurs vs. Kings",
    "link": "https://polymarket.com/event/nba-sas-sac-2026-11-06",
@@ -4611,10 +4611,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 10.5,
    "traders_entry": 0.89,
-   "avg_price": 0.91,
-   "shares": 10.013835910685756,
-   "cost": 9.17,
-   "fees": 0.06,
+   "avg_price": 0.905,
+   "shares": 20.176033858385196,
+   "cost": 18.39,
+   "fees": 0.13,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -4629,7 +4629,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-07T01:36:56.391717+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 10.6,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-06T23:45:50.896483+00:00",
@@ -4736,6 +4739,43 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T01:36:56.640304+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Trail Blazers vs. Lakers: O/U 231.5",
+   "link": "https://polymarket.com/event/nba-por-lal-2026-11-06",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6497818c01791622b28dfce065ff7d69e116160d86f839686b32b644466d3996",
+   "token_id": "55317451067105990254007670524687406988584216332094063247681578589693463281155",
+   "outcome_index": 0,
+   "ends": "2026-11-07T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 17.797101449275367,
+   "cost": 9.22,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV06PORLAL-232",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.518,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
