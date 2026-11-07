@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 870.8661981847232,
+ "cash": 861.5123817596025,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4820,7 +4820,7 @@
   },
   {
    "placed_at": "2026-11-07T05:13:46.843051+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Leeds United FC win on 2026-11-07?",
@@ -4850,9 +4850,9 @@
     "polymarket_us": 0.6813
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.97,
+   "settled_at": "2026-11-07T14:48:48.860236+00:00",
    "topped_up_at": "2026-11-07T11:41:51.169659+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.3,
@@ -5036,6 +5036,42 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T14:50:21.080982+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "BYU vs. Utah: O/U 49.5",
+   "link": "https://polymarket.com/event/cfb-byu-utah-2026-11-07",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x560e689f765607f737b088c33520ae0c0417c0377563ba0a60da7ef069bd0f77",
+   "token_id": "48274449839287484992922003382329690587549376171011469509638716355587641603801",
+   "outcome_index": 0,
+   "ends": "2026-11-07T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 18.067632850241548,
+   "cost": 9.35,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFTOTAL-26NOV07BYUUTAH-50",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5177
+   },
+   "intl_cost_per_share": 0.4975,
    "payout": null,
    "profit": null,
    "settled_at": null,

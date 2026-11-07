@@ -890,7 +890,7 @@
   },
   {
    "placed_at": "2026-11-07T11:41:52.287550+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Leeds United FC win on 2026-11-07?",
@@ -920,9 +920,9 @@
     "polymarket_us": 0.691
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.01,
+   "settled_at": "2026-11-07T14:48:49.117338+00:00",
    "topped_up_at": null
   },
   {
