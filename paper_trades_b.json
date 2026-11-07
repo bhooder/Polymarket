@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 842.7923817596024,
+ "cash": 865.0578354463343,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4783,7 +4783,7 @@
   },
   {
    "placed_at": "2026-11-07T02:29:28.856529+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Cagliari Calcio win on 2026-11-07?",
@@ -4813,9 +4813,9 @@
     "polymarket_us": 0.3613
    },
    "intl_cost_per_share": 0.3512,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.27,
+   "profit": 14.35,
+   "settled_at": "2026-11-07T16:02:34.067797+00:00",
    "topped_up_at": null
   },
   {

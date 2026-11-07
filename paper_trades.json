@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1102.6714673413255,
+ "cash": 1122.018933180956,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -1956,7 +1956,7 @@
   },
   {
    "placed_at": "2026-11-07T08:50:59.656732+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Frosinone Calcio win on 2026-11-07?",
@@ -1986,9 +1986,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.35,
+   "profit": 7.98,
+   "settled_at": "2026-11-07T16:02:33.985964+00:00",
    "topped_up_at": null
   },
   {
