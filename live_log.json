@@ -502,5 +502,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0063\",\"average_fill_price\":\"0.9000\",\"client_order_id\":\"3ab67833-2fbb-59a0-9255-e58a1228653f\",\"fill_count\":\"2.00\",\"order_id\":\"01a1b365-ce20-7dbf-8752-64da52909480\",\"remaining_count\":\"0.00\",\"ts_ms\":1794011156355}"
   }
+ },
+ {
+  "at": "2026-11-07T02:27:34.969922+00:00",
+  "event": "settled",
+  "bet": "Hawks to win (vs. Wizards)",
+  "status": "won",
+  "cost": 3.77,
+  "payout": 5.0,
+  "profit": 1.23,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV06WASATL-ATL"
  }
 ]

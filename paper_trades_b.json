@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 776.2134927200009,
+ "cash": 768.2932384665121,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4776,6 +4776,43 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-07T02:29:28.856529+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Cagliari Calcio win on 2026-11-07?",
+   "link": "https://polymarket.com/event/sea-cag-fro-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 0.86,
+   "condition_id": "0xc7f7a033e689635a76cca4be416f26ef84a0a467b980d5a81d5b89594bf80c9d",
+   "token_id": "108248475082019329571582882098459739929439122973799510550877757535974292216491",
+   "outcome_index": 0,
+   "ends": "2026-11-07T14:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.34,
+   "avg_price": 0.34,
+   "shares": 22.265453686731817,
+   "cost": 7.92,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV07CAGFRO-CAG",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3557,
+    "polymarket_us": 0.3613
+   },
+   "intl_cost_per_share": 0.3512,
    "payout": null,
    "profit": null,
    "settled_at": null,
