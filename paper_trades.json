@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1087.6892449357895,
+ "cash": 1080.2595752691059,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2213,7 +2213,7 @@
   },
   {
    "placed_at": "2026-11-08T11:27:41.352541+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SS Lazio win on 2026-11-08?",
@@ -2243,9 +2243,9 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7203,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.29,
+   "profit": 4.48,
+   "settled_at": "2026-11-08T13:50:31.374738+00:00",
    "topped_up_at": null
   },
   {
@@ -2280,6 +2280,80 @@
     "kalshi": 0.4067
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T13:52:22.784236+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Giants",
+   "market": "Giants vs. Eagles",
+   "link": "https://polymarket.com/event/nfl-nyg-phi-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3dd5a9a57210560fe11f668ead4f31156443ce848c58135413a15d77d70e2a1b",
+   "token_id": "91471525512370531263048668917293652754626557427218687859075864659124414889076",
+   "outcome_index": 0,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 13.4,
+   "traders_entry": 0.59,
+   "avg_price": 0.6025,
+   "shares": 18.968354804596004,
+   "cost": 11.86,
+   "fees": 0.4316,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-nyg-phi-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.6253,
+    "kalshi": 0.6269
+   },
+   "intl_cost_per_share": 0.5973,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T13:52:23.292879+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Liverpool FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-cry-liv-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x24a5b445555143bb5886853164be2c4982246143a2884091d489da931b227cd4",
+   "token_id": "44873813926582831466562029301205294549646040023756448964822783230323218477385",
+   "outcome_index": 0,
+   "ends": "2026-11-08T14:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.0,
+   "traders_entry": 0.62,
+   "avg_price": 0.64,
+   "shares": 18.06050039016777,
+   "cost": 11.86,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08CRYLFC-LFC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6566,
+    "polymarket_us": 0.6619
+   },
+   "intl_cost_per_share": 0.6515,
    "payout": null,
    "profit": null,
    "settled_at": null,

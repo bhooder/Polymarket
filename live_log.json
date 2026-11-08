@@ -859,5 +859,70 @@
    "status": 200,
    "body": "{\"id\":\"DKFMA00014F1\",\"executions\":[{\"id\":\"DKFMA00G33YJ\",\"order\":{\"id\":\"DKFMA00014F1\",\"marketSlug\":\"aec-nba-lal-det-2026-11-08\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.4\",\"currency\":\"USD\"},\"quantity\":10,\"cumQuantity\":0,\"leavesQuantity\":10,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"aec-nba-lal-det-2026-11-08\",\"icon\":\"\",\"title\":\"LA Lakers vs. DET Pistons\",\"outcome\":\"Lakers\",\"eventSlug\":\"nba-lal-det-2026-11-08\",\"teamId\":24,\"team\":{\"id\":24,\"name\":\"Los Angeles Lakers\",\"abbreviation\":\"lal\",\"league\":\"nba\",\"record\":\"8-2\",\"logo\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"alias\":\"Los Angeles Lakers\",\"safeName\":\"Lakers\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"colorPrimary\":\"#862edc\",\"providerId\":27,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"displayAbbreviation\":\"LAL\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"27\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"583ecae2-fb46-11e1-82cb-f4ce4684ea4c\"},{\"provider\":\"PROVIDER_OPTICODDS\",\"providerId\":\"73AEB6743EC2\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_dark_inset6.png\",\"shortIconDark"
   }
+ },
+ {
+  "at": "2026-11-08T13:50:32.279296+00:00",
+  "event": "settled",
+  "bet": "SS Lazio not to win (draw or loss)",
+  "status": "won",
+  "cost": 2.17,
+  "payout": 3.0,
+  "profit": 0.83,
+  "venue": "kalshi",
+  "ref": "KXSERIEAGAME-26NOV08NAPLAZ-LAZ"
+ },
+ {
+  "at": "2026-11-08T13:52:26.157630+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.6025,
+  "fees": 0.07,
+  "bet": "Giants to win (vs. Eagles)",
+  "pick": "Giants",
+  "market": "Giants vs. Eagles",
+  "venue": "polymarket_us",
+  "ref": "aec-nfl-nyg-phi-2026-11-08",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.6025,
+  "share": 0.010002797616183551,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.61,
+  "dollars": 2.08,
+  "bankroll": 207.73,
+  "order_id": "227b4701-20c7-5de4-9e10-f8e7ecf7bc94",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DKH2GVQG14F1\",\"executions\":[{\"id\":\"DKH2GVR093YG\",\"order\":{\"id\":\"DKH2GVQG14F1\",\"marketSlug\":\"aec-nfl-nyg-phi-2026-11-08\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.61\",\"currency\":\"USD\"},\"quantity\":3,\"cumQuantity\":0,\"leavesQuantity\":3,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"aec-nfl-nyg-phi-2026-11-08\",\"icon\":\"\",\"title\":\"NY Giants vs. PHI Eagles\",\"outcome\":\"Giants\",\"eventSlug\":\"nfl-nyg-phi-2026-11-08\",\"teamId\":71,\"team\":{\"id\":71,\"name\":\"New York Giants\",\"abbreviation\":\"nyg\",\"league\":\"nfl\",\"record\":\"4-2-1\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/NYG.png\",\"alias\":\"Giants\",\"safeName\":\"NY Giants\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_home.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_away.png\",\"colorPrimary\":\"#0B2265\",\"providerId\":23,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_home.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_away.png\",\"displayAbbreviation\":\"NYG\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"23\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"04aa1c9d-66da-489d-b16a-1dee3f2eec4d\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_home.png\",\"shortIconDark\":\"https://static.polymarket.us/images/teams/nfl-nyg/NYG_away.png\",\"color\":{\"light\":\"#0B2265"
+  }
+ },
+ {
+  "at": "2026-11-08T13:52:26.753465+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.64,
+  "fees": 0.048299999999999996,
+  "bet": "Liverpool FC to win",
+  "pick": "Yes",
+  "market": "Will Liverpool FC win on 2026-11-08?",
+  "venue": "kalshi",
+  "ref": "KXEPLGAME-26NOV08CRYLFC-LFC",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.64,
+  "share": 0.010002797616183551,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.64,
+  "dollars": 2.08,
+  "bankroll": 207.73,
+  "order_id": "ca748a57-7b56-55a3-bc8a-be4db136ec43",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0161\",\"average_fill_price\":\"0.6400\",\"client_order_id\":\"ca748a57-7b56-55a3-bc8a-be4db136ec43\",\"fill_count\":\"3.00\",\"order_id\":\"01a1bb6e-8990-7596-8f62-db934caf3462\",\"remaining_count\":\"0.00\",\"ts_ms\":1794145946741}"
+  }
  }
 ]

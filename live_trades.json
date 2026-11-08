@@ -1,5 +1,5 @@
 {
- "cash": 200.71,
+ "cash": 203.71,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -583,7 +583,7 @@
   },
   {
    "placed_at": "2026-11-08T11:27:42.668818+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "No",
@@ -610,9 +610,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.71,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 0.83,
+   "settled_at": "2026-11-08T13:50:32.211841+00:00",
    "topped_up_at": null
   },
   {
@@ -644,6 +644,74 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.38000000000000006,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T13:52:26.157641+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Giants",
+   "market": "Giants vs. Eagles",
+   "link": "https://polymarket.com/event/nfl-nyg-phi-2026-11-08",
+   "market_type": "moneyline",
+   "condition_id": "0x3dd5a9a57210560fe11f668ead4f31156443ce848c58135413a15d77d70e2a1b",
+   "token_id": "91471525512370531263048668917293652754626557427218687859075864659124414889076",
+   "outcome_index": 0,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 13.4,
+   "traders_entry": 0.59,
+   "avg_price": 0.6025,
+   "shares": 3.0,
+   "cost": 1.88,
+   "fees": 0.07,
+   "contracts_ordered": 3,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-nyg-phi-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.6025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T13:52:26.753474+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Yes",
+   "market": "Will Liverpool FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-cry-liv-2026-11-08",
+   "market_type": "moneyline",
+   "condition_id": "0x24a5b445555143bb5886853164be2c4982246143a2884091d489da931b227cd4",
+   "token_id": "44873813926582831466562029301205294549646040023756448964822783230323218477385",
+   "outcome_index": 0,
+   "ends": "2026-11-08T14:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.0,
+   "traders_entry": 0.62,
+   "avg_price": 0.64,
+   "shares": 3.0,
+   "cost": 1.97,
+   "fees": 0.0483,
+   "contracts_ordered": 3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08CRYLFC-LFC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.64,
    "payout": null,
    "profit": null,
    "settled_at": null,
@@ -797,8 +865,22 @@
    "venue": "polymarket_us",
    "ordered": 10,
    "filled": 10.0
+  },
+  {
+   "at": "2026-11-08T13:52:26.157606+00:00",
+   "pick": "Giants",
+   "venue": "polymarket_us",
+   "ordered": 3,
+   "filled": 3.0
+  },
+  {
+   "at": "2026-11-08T13:52:26.753440+00:00",
+   "pick": "Yes",
+   "venue": "kalshi",
+   "ordered": 3,
+   "filled": 3.0
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T13:02:28.909784+00:00"
+ "balances_checked_at": "2026-11-08T13:52:25.952330+00:00"
 }
