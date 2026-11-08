@@ -1,5 +1,5 @@
 {
- "cash": 198.4,
+ "cash": 196.34,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -920,6 +920,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T23:53:28.595322+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Under",
+   "market": "Jazz vs. Timberwolves: O/U 222.5",
+   "link": "https://polymarket.com/event/nba-uta-min-2026-11-08",
+   "market_type": "totals",
+   "condition_id": "0x09515c8440c135ef1837afc3c7e6699f81b8372ab57cf8aaf20ecf8ec9da273a",
+   "token_id": "76327664735482737930552353309953404226845523803320147247576185250067705913386",
+   "outcome_index": 1,
+   "ends": "2026-11-09T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.4,
+   "traders_entry": 0.51,
+   "avg_price": 0.5215,
+   "shares": 3.95,
+   "cost": 2.06,
+   "fees": 0.0,
+   "contracts_ordered": 2.06,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9f0bd316ee9a279153dfcae478a748e0",
+    "fee_rate": 0.01,
+    "event_id": 1704710770
+   },
+   "paper_price": 0.5215,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1128,5 +1162,5 @@
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T23:46:59.722476+00:00"
+ "balances_checked_at": "2026-11-08T23:53:28.595246+00:00"
 }

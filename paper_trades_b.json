@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 787.9294122570329,
+ "cash": 778.619412257033,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6657,6 +6657,42 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T23:53:27.494413+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Flames",
+   "market": "Flyers vs. Flames",
+   "link": "https://polymarket.com/event/nhl-phi-cal-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7f05496a86d73af14c820457af939739a9d2de781c94be239a39c0bb2ff9e909",
+   "token_id": "57471711631901667606975280993647043661956624367813282664659576410336895787020",
+   "outcome_index": 1,
+   "ends": "2026-11-09T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.3,
+   "traders_entry": 0.47,
+   "avg_price": 0.4651,
+   "shares": 19.81831683168317,
+   "cost": 9.31,
+   "fees": 0.0922,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7a4439c0d902e712458ed4ac72174c71",
+    "fee_rate": 0.01,
+    "event_id": 1704710644
+   },
+   "quotes": {
+    "prophetx": 0.4698
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
