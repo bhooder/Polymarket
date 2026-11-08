@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 782.3813000513679,
+ "cash": 751.0805898668635,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5568,7 +5568,7 @@
   },
   {
    "placed_at": "2026-11-08T07:33:57.933338+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "RC Celta de Vigo vs. Levante UD: O/U 2.5",
@@ -5597,9 +5597,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.67,
+   "profit": 8.06,
+   "settled_at": "2026-11-08T19:50:43.082229+00:00",
    "topped_up_at": null
   },
   {
@@ -6309,6 +6309,115 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T19:52:54.964230+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will FC Barcelona win on 2026-11-08?",
+   "link": "https://polymarket.com/event/lal-mad-bar-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xda551aac8682348117a22c847462af81151834653c39872e5b99056d372a6392",
+   "token_id": "87827908830212192327690613817318271261892984170098082581635338880145898600305",
+   "outcome_index": 1,
+   "ends": "2026-11-08T20:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 5.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.4878,
+   "shares": 39.761881188118814,
+   "cost": 19.59,
+   "fees": 0.194,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "8f536e3aa84aa5f2732bd6ae2380feda",
+    "fee_rate": 0.01,
+    "event_id": 90117233
+   },
+   "quotes": {
+    "prophetx": 0.4927
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T19:52:55.587890+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "76ers vs. Bulls: O/U 238.5",
+   "link": "https://polymarket.com/event/nba-phi-chi-2026-11-08",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x19264fcf29926f2d375dd5d11ab7b6e9911a335ee1c2f88d7cf0c639386e4110",
+   "token_id": "69460545040086020055936443850196288717121810598257105378325762712189249473060",
+   "outcome_index": 0,
+   "ends": "2026-11-08T20:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.48,
+   "avg_price": 0.5,
+   "shares": 37.40334128878281,
+   "cost": 19.59,
+   "fees": 0.8883,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-phi-chi-2026-11-08-238pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T19:52:56.957641+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texans",
+   "market": "Texans vs. Chargers",
+   "link": "https://polymarket.com/event/nfl-hou-lac-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9d038b5e1e46d49dad8c2a586efcbba2678000aa9318f45af10933be5cf97684",
+   "token_id": "9026347656725652188657151828080650152818525279370267441646300484684940179692",
+   "outcome_index": 0,
+   "ends": "2026-11-08T21:05:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.2,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 14.081630304704044,
+   "cost": 9.8,
+   "fees": 0.22,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV08HOULAC-HOU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6956,
+    "polymarket_us": 0.6983
+   },
+   "intl_cost_per_share": 0.6766,
    "payout": null,
    "profit": null,
    "settled_at": null,

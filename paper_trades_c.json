@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 918.6991898282477,
+ "cash": 927.0580639380704,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1195,7 +1195,7 @@
   },
   {
    "placed_at": "2026-11-08T07:33:59.179153+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "RC Celta de Vigo vs. Levante UD: O/U 2.5",
@@ -1224,9 +1224,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.43,
+   "profit": 8.41,
+   "settled_at": "2026-11-08T19:50:44.257669+00:00",
    "topped_up_at": null
   },
   {
@@ -1493,7 +1493,7 @@
   {
    "placed_at": "2026-11-08T17:12:46.852094+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: 76ers (-9.5)",
    "link": "https://polymarket.com/event/nba-phi-chi-2026-11-08",
@@ -1506,10 +1506,10 @@
    "bettors": 5,
    "avg_bankroll_pct": 0.9,
    "traders_entry": 0.48,
-   "avg_price": 0.49,
-   "shares": 19.192569011008473,
-   "cost": 9.86,
-   "fees": 0.4556,
+   "avg_price": 0.495,
+   "shares": 38.419299321271,
+   "cost": 19.93,
+   "fees": 0.9122,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1525,7 +1525,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T19:52:57.262217+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 7.1,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T19:14:19.277085+00:00",
