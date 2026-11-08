@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1110.3392449357896,
+ "cash": 1087.6892449357895,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2243,6 +2243,43 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7203,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T12:11:27.347950+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Lakers",
+   "market": "Lakers vs. Pistons",
+   "link": "https://polymarket.com/event/nba-lal-det-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x86ced242518f12a9168a7b47e5a57fc0ac4e12e3bcb4981d560abe6b161fb696",
+   "token_id": "107249524867003095940240818670705535932024592288480068704346762748076084471491",
+   "outcome_index": 0,
+   "ends": "2026-11-08T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 25.1,
+   "traders_entry": 0.38,
+   "avg_price": 0.38,
+   "shares": 56.28979427509182,
+   "cost": 22.65,
+   "fees": 1.2599,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-lal-det-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4024,
+    "kalshi": 0.4067
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,

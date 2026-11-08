@@ -1,5 +1,5 @@
 {
- "cash": 206.9,
+ "cash": 204.73,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -614,6 +614,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T12:11:28.753677+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "size_multiplier": 0.959,
+   "pick": "Lakers",
+   "market": "Lakers vs. Pistons",
+   "link": "https://polymarket.com/event/nba-lal-det-2026-11-08",
+   "market_type": "moneyline",
+   "condition_id": "0x86ced242518f12a9168a7b47e5a57fc0ac4e12e3bcb4981d560abe6b161fb696",
+   "token_id": "107249524867003095940240818670705535932024592288480068704346762748076084471491",
+   "outcome_index": 0,
+   "ends": "2026-11-08T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 25.1,
+   "traders_entry": 0.38,
+   "avg_price": 0.38,
+   "shares": 10.0,
+   "cost": 4.02,
+   "fees": 0.22,
+   "contracts_ordered": 10,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-lal-det-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.38000000000000006,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -756,8 +790,15 @@
    "venue": "kalshi",
    "ordered": 3,
    "filled": 3.0
+  },
+  {
+   "at": "2026-11-08T12:11:28.753648+00:00",
+   "pick": "Lakers",
+   "venue": "polymarket_us",
+   "ordered": 10,
+   "filled": 10.0
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T11:27:42.527801+00:00"
+ "balances_checked_at": "2026-11-08T12:11:28.473293+00:00"
 }

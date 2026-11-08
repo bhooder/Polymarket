@@ -832,5 +832,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0144\",\"average_fill_price\":\"0.2900\",\"client_order_id\":\"5ae3792e-c348-5628-b4cd-f9cea2b94f8c\",\"fill_count\":\"3.00\",\"order_id\":\"01a1baea-07b0-79bc-8fb9-233c9b119b04\",\"remaining_count\":\"0.00\",\"ts_ms\":1794137262646}"
   }
+ },
+ {
+  "at": "2026-11-08T12:11:28.753668+00:00",
+  "event": "order",
+  "filled": 10.0,
+  "price": 0.38,
+  "fees": 0.22,
+  "bet": "Lakers to win (vs. Pistons)",
+  "pick": "Lakers",
+  "market": "Lakers vs. Pistons",
+  "venue": "polymarket_us",
+  "ref": "aec-nba-lal-det-2026-11-08",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.38,
+  "share": 0.019175589429982723,
+  "side": "YES",
+  "contracts": 10,
+  "max_price": 0.4,
+  "dollars": 3.97,
+  "bankroll": 206.86,
+  "order_id": "7a8cb18c-393f-501f-9910-d5ad6d2ec8d3",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DKFMA00014F1\",\"executions\":[{\"id\":\"DKFMA00G33YJ\",\"order\":{\"id\":\"DKFMA00014F1\",\"marketSlug\":\"aec-nba-lal-det-2026-11-08\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.4\",\"currency\":\"USD\"},\"quantity\":10,\"cumQuantity\":0,\"leavesQuantity\":10,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"aec-nba-lal-det-2026-11-08\",\"icon\":\"\",\"title\":\"LA Lakers vs. DET Pistons\",\"outcome\":\"Lakers\",\"eventSlug\":\"nba-lal-det-2026-11-08\",\"teamId\":24,\"team\":{\"id\":24,\"name\":\"Los Angeles Lakers\",\"abbreviation\":\"lal\",\"league\":\"nba\",\"record\":\"8-2\",\"logo\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"alias\":\"Los Angeles Lakers\",\"safeName\":\"Lakers\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"colorPrimary\":\"#862edc\",\"providerId\":27,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_light_inset6.png\",\"displayAbbreviation\":\"LAL\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"27\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"583ecae2-fb46-11e1-82cb-f4ce4684ea4c\"},{\"provider\":\"PROVIDER_OPTICODDS\",\"providerId\":\"73AEB6743EC2\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nba-lal/LAL_dark_inset6.png\",\"shortIconDark"
+  }
  }
 ]
