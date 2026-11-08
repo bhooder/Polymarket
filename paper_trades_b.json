@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 799.2792551107731,
+ "cash": 814.8292781370832,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5013,7 +5013,7 @@
   },
   {
    "placed_at": "2026-11-07T14:09:34.011611+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Brighton & Hove Albion FC win on 2026-11-08?",
@@ -5042,9 +5042,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.94,
+   "settled_at": "2026-11-08T16:24:45.837407+00:00",
    "topped_up_at": "2026-11-07T20:47:32.454312+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.2,
@@ -5637,7 +5637,7 @@
   },
   {
    "placed_at": "2026-11-08T10:11:12.044678+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Chelsea FC win on 2026-11-08?",
@@ -5666,9 +5666,9 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.72,
+   "profit": 16.51,
+   "settled_at": "2026-11-08T16:24:46.196684+00:00",
    "topped_up_at": null
   },
   {
@@ -5750,7 +5750,7 @@
   },
   {
    "placed_at": "2026-11-08T12:11:27.840961+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Stade Rennais FC 1901 win on 2026-11-08?",
@@ -5779,9 +5779,9 @@
     "kalshi": 0.6071
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.82,
+   "profit": 6.22,
+   "settled_at": "2026-11-08T16:24:46.375889+00:00",
    "topped_up_at": null
   },
   {
@@ -5859,7 +5859,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:24.170566+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ben Shelton",
    "market": "Rolex Paris Masters: Ben Shelton vs Carlos Alcaraz",
@@ -5888,9 +5888,9 @@
     "kalshi": 0.2529
    },
    "intl_cost_per_share": 0.2491,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -6.47,
+   "settled_at": "2026-11-08T16:24:46.631932+00:00",
    "topped_up_at": null
   },
   {
@@ -6036,6 +6036,117 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T16:27:01.748995+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Yes",
+   "market": "Will FC Internazionale Milano win on 2026-11-08?",
+   "link": "https://polymarket.com/event/sea-int-com-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb08d4211cc9304192c286ad59ff893bc3e8ade214587b31e48356b83a86cf329",
+   "token_id": "75700996757636199984161357126699600525356737868093660601079576767461202980691",
+   "outcome_index": 0,
+   "ends": "2026-11-08T17:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 6.2,
+   "traders_entry": 0.47,
+   "avg_price": 0.45,
+   "shares": 40.80145719489982,
+   "cost": 19.32,
+   "fees": 0.9593,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-sea-int-com-2026-11-08-int",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4735,
+    "kalshi": 0.4776
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T16:27:03.296540+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Spread: 76ers (-9.5)",
+   "link": "https://polymarket.com/event/nba-phi-chi-2026-11-08",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xab51f54175130112a7303a235dc4a5b84860ffe7f39c40937c0f6825f85cd5c8",
+   "token_id": "84403335141098502806666543426960269984374299239850846927829531307823526929725",
+   "outcome_index": 0,
+   "ends": "2026-11-08T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 18.8032674083511,
+   "cost": 9.66,
+   "fees": 0.4464,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-phi-chi-2026-11-08-neg-9pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5137,
+    "kalshi": 0.5177
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T16:27:03.791916+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Dolphins",
+   "market": "Lions vs. Dolphins",
+   "link": "https://polymarket.com/event/nfl-det-mia-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 0.726,
+   "condition_id": "0xef96bd5e7cf502e392a078cc7bb84e6aef1f405e8351141ca5788b2c73a81480",
+   "token_id": "105595942090130073190364000757535921800908124200569723529646419542572239411796",
+   "outcome_index": 1,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.26,
+   "avg_price": 0.265,
+   "shares": 24.726315227891703,
+   "cost": 7.01,
+   "fees": 0.4575,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-det-mia-2026-11-08",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.2835,
+    "kalshi": 0.2842
+   },
+   "intl_cost_per_share": 0.2759,
    "payout": null,
    "profit": null,
    "settled_at": null,

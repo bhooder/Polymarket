@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1068.399575269106,
+ "cash": 1106.1556079288616,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2141,7 +2141,7 @@
   },
   {
    "placed_at": "2026-11-08T10:11:10.651257+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Chelsea FC win on 2026-11-08?",
@@ -2170,9 +2170,9 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.93,
+   "profit": 20.32,
+   "settled_at": "2026-11-08T16:24:45.061917+00:00",
    "topped_up_at": null
   },
   {
@@ -2324,7 +2324,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:23.292879+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Liverpool FC win on 2026-11-08?",
@@ -2354,9 +2354,9 @@
     "polymarket_us": 0.6619
    },
    "intl_cost_per_share": 0.6515,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.06,
+   "profit": 6.2,
+   "settled_at": "2026-11-08T16:24:45.484370+00:00",
    "topped_up_at": null
   },
   {
@@ -2391,6 +2391,42 @@
     "kalshi": 0.8116
    },
    "intl_cost_per_share": 0.8048,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T16:27:01.088716+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Manchester United FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-mun-ast-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7ef37ab1c5a9aa47e03e9ca4fbc77aa2511c9275b8a064802a44f2461c1f691a",
+   "token_id": "37963250997753521906866129723248982492258708342787520962045033796109690419241",
+   "outcome_index": 1,
+   "ends": "2026-11-08T16:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 32.1,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 45.08141819480828,
+   "cost": 24.23,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08MUNAVL-MUN",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5375
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,

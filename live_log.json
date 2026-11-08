@@ -951,5 +951,40 @@
    "status": 200,
    "body": "{\"id\":\"DKHKSG9014EX\",\"executions\":[{\"id\":\"DKHKSG9G33YG\",\"order\":{\"id\":\"DKHKSG9014EX\",\"marketSlug\":\"aec-nfl-lv-sf-2026-11-08\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.18\",\"currency\":\"USD\"},\"quantity\":3,\"cumQuantity\":0,\"leavesQuantity\":3,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"aec-nfl-lv-sf-2026-11-08\",\"icon\":\"\",\"title\":\"LV Raiders vs. SF 49ers\",\"outcome\":\"49ers\",\"eventSlug\":\"nfl-lv-sf-2026-11-08\",\"teamId\":76,\"team\":{\"id\":76,\"name\":\"San Francisco 49ers\",\"abbreviation\":\"sf\",\"league\":\"nfl\",\"record\":\"6-1\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/SF.png\",\"alias\":\"49ers\",\"safeName\":\"SF 49ers\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"colorPrimary\":\"#AA0000\",\"providerId\":31,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"displayAbbreviation\":\"SF\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"31\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"f0e724b0-4cbf-495a-be47-013907608da9\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"shortIconDark\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"color\":{\"light\":\"#AA0000\",\"dark\":\"#AA0000\"}},"
   }
+ },
+ {
+  "at": "2026-11-08T16:24:47.821449+00:00",
+  "event": "settled",
+  "bet": "Liverpool FC to win",
+  "status": "won",
+  "cost": 1.97,
+  "payout": 3.0,
+  "profit": 1.03,
+  "venue": "kalshi",
+  "ref": "KXEPLGAME-26NOV08CRYLFC-LFC"
+ },
+ {
+  "at": "2026-11-08T16:27:05.300537+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 403 on /trade-api/v2/portfolio/events/orders: {\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 403,
+   "body": "{\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}"
+  },
+  "bet": "Manchester United FC not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will Manchester United FC win on 2026-11-08?",
+  "venue": "kalshi",
+  "ref": "KXEPLGAME-26NOV08MUNAVL-MUN",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.019996899071783765,
+  "side": "NO",
+  "contracts": 8,
+  "max_price": 0.54,
+  "dollars": 4.17,
+  "bankroll": 208.76
  }
 ]
