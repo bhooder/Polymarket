@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 766.325038344569,
+ "cash": 783.1462313153545,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6285,7 +6285,7 @@
   },
   {
    "placed_at": "2026-11-08T19:14:18.688463+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Juventus FC win on 2026-11-08?",
@@ -6315,9 +6315,9 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.82,
+   "profit": 7.1,
+   "settled_at": "2026-11-08T21:56:39.567052+00:00",
    "topped_up_at": null
   },
   {
