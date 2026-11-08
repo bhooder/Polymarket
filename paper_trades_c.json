@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 972.2257386119612,
+ "cash": 962.2057386119612,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1224,6 +1224,42 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T09:21:49.715652+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will NEC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/ere-utr-nec-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x95643788b26c6102c58ae0c1a65714a5e8e0111438001459d24dcc44161a897d",
+   "token_id": "90161094221530293429263143669411132473152414805712818531342988120137963576027",
+   "outcome_index": 1,
+   "ends": "2026-11-08T19:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 6.9,
+   "traders_entry": 0.65,
+   "avg_price": 0.65,
+   "shares": 14.919317314671776,
+   "cost": 10.02,
+   "fees": 0.3224,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ere-utr-nec-2026-11-08-nec",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.6716
+   },
+   "intl_cost_per_share": 0.6614,
    "payout": null,
    "profit": null,
    "settled_at": null,
