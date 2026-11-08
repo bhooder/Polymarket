@@ -192,11 +192,52 @@ def pm_us_order(ref, count, max_price, preview=False):
     return filled, px, fees
 
 
+# ---------------- ProphetX ----------------
+
+def px_request(method, path, params=None, body=None):
+    return checked(venues.px_call(method, path, params, body))
+
+
+def px_account():
+    """(cash, {strike id: (dollars staked, cost)})."""
+    cash = float((px_request("GET", "/v4/mm/get_balance").get("data") or {}).get("balance") or 0)
+    held = {}
+    for pos in px_request("GET", "/v4/mm/positions").get("data") or []:
+        for s in pos.get("sides") or []:
+            if float(s.get("size") or 0) > 0:
+                held[s["strike_id"]] = (float(s["size"]), float(s.get("cost_basis") or s["size"]))
+    return cash, held
+
+
+def px_order(ref, stake, max_price, order_id):
+    """Stake `stake` dollars at no worse than max_price, fill now or cancel the rest.
+    Returns (shares, average price paid, fees); shares pay $1 each if the bet wins."""
+    odds = venues.px_ladder_price(max_price)
+    if odds is None:
+        raise VenueError("no ProphetX price ladder value at or under the price limit")
+    r = px_request("POST", "/v4/mm/submit_order", body={
+        "external_id": order_id, "strike_id": ref["ref"], "price": odds, "quantity": stake,
+        "order_strategy": "fillOrKill"})  # what can't fill at once is cancelled about 2 s after
+    order = (r.get("data") or {}).get("order") or {}
+    for _ in range(10):  # wait for the leftover to be cancelled, so the numbers are final
+        if not order.get("order_id") or not float(order.get("open_quantity") or 0):
+            break
+        time.sleep(1)
+        order = px_request("GET", f"/v4/mm/get_order/{order['order_id']}").get("data") or order
+    filled = float(order.get("filled_quantity") or 0)  # dollars staked
+    win = float(order.get("profit") or 0)              # what those dollars win
+    if not filled or win <= 0:
+        return 0.0, 0.0, 0.0
+    shares = filled + win
+    return shares, filled / shares, float(order.get("fee") or 0)
+
+
 # ---------------- mirroring Strategy A ----------------
 
-VENUE_LABEL = {"kalshi": "Kalshi", "polymarket_us": "Polymarket US"}
-KEYS = {"kalshi": ("KALSHI_KEY_ID", "KALSHI_PRIVATE_KEY"), "polymarket_us": ("PM_US_KEY_ID", "PM_US_SECRET_KEY")}
-ACCOUNT = {"kalshi": kalshi_account, "polymarket_us": pm_us_account}
+VENUE_LABEL = {"kalshi": "Kalshi", "polymarket_us": "Polymarket US", "prophetx": "ProphetX"}
+KEYS = {"kalshi": ("KALSHI_KEY_ID", "KALSHI_PRIVATE_KEY"), "polymarket_us": ("PM_US_KEY_ID", "PM_US_SECRET_KEY"),
+        "prophetx": ("PROPHETX_ACCESS_KEY", "PROPHETX_SECRET_KEY")}
+ACCOUNT = {"kalshi": kalshi_account, "polymarket_us": pm_us_account, "prophetx": px_account}
 
 
 def record(state, it, ref, filled, px, fees, count):
@@ -219,7 +260,7 @@ def record(state, it, ref, filled, px, fees, count):
                                    "outcome_index", "ends", "bettors", "avg_bankroll_pct")},
         "traders_entry": it["entry"], "avg_price": round(px, 4), "shares": filled, "cost": cost,
         "fees": round(fees, 4), "contracts_ordered": count, "venue": ref["venue"],
-        "venue_ref": {k: ref[k] for k in ("venue", "ref", "long", "yes", "fee_rate") if k in ref},
+        "venue_ref": {k: ref[k] for k in ("venue", "ref", "long", "yes", "fee_rate", "event_id") if k in ref},
         "paper_price": ref.get("avg_price"),  # what the paper test paid for the same bet, same moment
         "payout": None, "profit": None, "settled_at": None, "topped_up_at": None,
     })
@@ -340,6 +381,42 @@ def run(intents, max_above, state):
             continue
         max_price = it["entry"] + max_above  # the traders' average entry when this bet was made
         rate = ref.get("fee_rate") or 0
+        if venue == "prophetx":  # ProphetX orders are in dollars staked, not contracts
+            room = MAX_EXPOSURE * bankroll - exposure
+            stake = math.floor(min(dollars, cash, room) / (1 + rate) * 100) / 100
+            if stake < 1:
+                skip(f"${dollars:.2f} is under ProphetX's $1 minimum after the cash and 50% limits.")
+                continue
+            info.update(side="BUY", stake=stake, max_price=round(max_price, 4), dollars=dollars,
+                        bankroll=round(bankroll, 2))
+            kind = "Top-up" if it["top_up"] else "Bet"
+            order_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f'{bet["token_id"]}-{bet["placed_at"]}-{it["top_up"]}'))
+            try:
+                if m == "practice":
+                    log("practice", **info)
+                    alert(f"🧪 Practice: would {kind.lower()}",
+                          f"{what}\n${stake:.2f} on {where} at up to {cents(max_price)}")
+                    continue
+                filled, px, fees = px_order(ref, stake, max_price, order_id)
+                info.update(order_id=order_id, reply=dict(LAST_REPLY))
+            except Exception as e:
+                log("order failed", error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY), **info)
+                alert("⚠️ Problem", f"{what}\n{where} order failed. Details in the log.")
+                continue
+            staked = round(filled * px, 2)
+            state.setdefault("orders", []).append({"at": now_iso(), "pick": bet["pick"], "venue": venue,
+                                                   "ordered": stake, "filled": staked})
+            log("order", filled=filled, price=px, fees=fees, **info)
+            if filled:
+                record(state, it, ref, filled, px, fees, stake)
+                spent = filled * px + fees
+                exposure += spent
+                accounts[venue] = (cash - spent, held)
+                alert(f"🟢 {kind} placed ({pct(it['share'])} @ {american(px)})",
+                      f"{what}\n${spent:.2f} on {where} at {cents(px)}")
+            else:
+                alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")
+            continue
         per_share = max_price + rate * max_price * (1 - max_price) + 0.005  # worst case, fee rounding
         # whole contracts: the count closest to the stake at the price seen this run (the order still
         # won't pay more than max_price), never more than the venue's cash or the 50% cap at worst case

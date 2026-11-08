@@ -7,13 +7,13 @@ Each run:
 2. Runs the scanner (polymarket_smart_money.py defaults: top 100 sports traders by
    monthly PnL, hedges and crypto bots removed).
 3. Keeps picks that meet a staking tier, haven't started, and are decided within 3 days.
-4. "Buys" them with pretend money on the cheaper US venue, Polymarket US or Kalshi
+4. "Buys" them with pretend money on the cheapest US venue (Polymarket US, Kalshi or ProphetX)
    (see venues.py), from real order books with fees, if the price is no more than 2c
    above or 4c below the traders' average entry.
 5. Does steps 1, 3 and 4 separately for each strategy (own $1,000 pretend bankroll).
 6. Writes paper_trades.json / paper_trades_b.json (state), matching CSVs and paper_report.html.
 
-No real orders are placed. Runs every 15 minutes on GitHub Actions.
+Real orders (Strategy A only) are placed by live.py. Runs every 10 minutes on GitHub Actions.
 
 Usage:
     python3 forward_test.py
@@ -47,7 +47,7 @@ LIVE_LOG = "live_log.json"  # every live order sent, the venue's reply, skips an
 LOG_KEEP = 2000             # entries kept
 
 LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.csv",
-        "rules": "Real money on Kalshi and Polymarket US, copying each Strategy A paper bet at the same "
+        "rules": "Real money on Kalshi, Polymarket US and ProphetX, copying each Strategy A paper bet at the same "
                  "% of the real bankroll, with the same price rule."}
 
 # Each strategy has its own pretend bankroll and state file; all other rules are shared.
@@ -124,8 +124,9 @@ def settle(state):
     Returns the bets settled in this call."""
     pending = open_bets(state)
     settled = []
-    # bets from before the US-venue switch were "placed" on international Polymarket
-    intl = [b for b in pending if b.get("venue", "polymarket_intl") == "polymarket_intl"]
+    # bets from before the US-venue switch were "placed" on international Polymarket; ProphetX has
+    # no public results, so its bets settle by the international result of the same game and line
+    intl = [b for b in pending if b.get("venue", "polymarket_intl") in ("polymarket_intl", "prophetx")]
     ids = sorted({b["condition_id"] for b in intl})
     results = {}
     for i in range(0, len(ids), 20):
@@ -213,7 +214,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None):
     else:
         choices = venues.quotes(pick, info, dollars)
     if not choices:
-        print(f"  skip (not on Polymarket US or Kalshi, or book too thin): {label}")
+        print(f"  skip (not on Polymarket US, Kalshi or ProphetX, or book too thin): {label}")
         return None
     entry = pick["Avg entry price"]
     ok = [q for q in choices if in_band(q["avg_price"], entry)]
@@ -247,7 +248,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None):
         "traders_entry": pick["Avg entry price"], "avg_price": round(fill["avg_price"], 4),
         "shares": fill["shares"], "cost": round(fill["cost"], 2), "fees": round(fill["fees"], 4),
         "venue": fill["venue"],
-        "venue_ref": {k: fill[k] for k in ("venue", "ref", "long", "yes", "fee_rate") if k in fill},
+        "venue_ref": {k: fill[k] for k in ("venue", "ref", "long", "yes", "fee_rate", "event_id") if k in fill},
         # what the same bet would have cost per share on each venue (fees included)
         "quotes": {q["venue"]: round(q["cost"] / q["shares"], 4) for q in choices},
         "intl_cost_per_share": round(intl["cost"] / intl["shares"], 4) if intl else None,
@@ -546,7 +547,7 @@ __ODDS_TOGGLE__
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
 <p class="note">Strategies A, B and C use pretend money; Real bets use real money. Each bet goes to
-whichever US venue (Polymarket US or Kalshi) had the lowest price including fees, from the real order
+whichever US venue (Polymarket US, Kalshi or ProphetX) had the lowest price including fees, from the real order
 books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
 <script>
@@ -564,7 +565,7 @@ try {
 """
 
 
-VENUE_NAMES = {"kalshi": "Kalshi", "polymarket_us": "Polymarket US",
+VENUE_NAMES = {"kalshi": "Kalshi", "polymarket_us": "Polymarket US", "prophetx": "ProphetX",
                "polymarket_intl": "Polymarket (intl, before US switch)"}
 
 

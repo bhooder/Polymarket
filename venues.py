@@ -18,8 +18,12 @@ Matching (only exact equivalents, otherwise the venue is skipped):
 """
 import json
 import math
+import os
 import re
+import unicodedata
 from datetime import datetime, timedelta
+
+import requests
 
 import polymarket_smart_money as scanner
 
@@ -302,6 +306,202 @@ def kalshi_result(ref):
     return 1.0 if (m["result"] == "yes") == ref["yes"] else 0.0
 
 
+# ---------------- ProphetX ----------------
+# Needs PROPHETX_ACCESS_KEY + PROPHETX_SECRET_KEY (prices aren't public); without them it's skipped.
+# Prices are American odds. Each listed price on a selection is one a taker can bet at now;
+# "value" is how many dollars can be staked there. An order's "quantity" is the dollars staked.
+# Settled through the international Polymarket result (same game, same line).
+
+PX = "https://cash.api.prophetx.co/partner"
+PX_FEE = 0.01  # ESTIMATE: fee as a share of the stake. ProphetX sets each account's rate privately;
+               # real fills record the actual fee, so check live_trades.json and adjust this.
+PX_LEAGUES = {"nba": ["nba"], "wnba": ["wnba"], "nfl": ["nfl"], "nhl": ["nhl"], "mlb": ["mlb"],
+              "cfb": ["college football"], "cbb": ["college basketball"],
+              "epl": ["premier league", "english premier league"], "lal": ["la liga"],
+              "sea": ["serie a"], "bun": ["bundesliga"], "fl1": ["ligue 1"],
+              "ucl": ["uefa champions league", "champions league"],
+              "uel": ["uefa europa league", "europa league"], "mls": ["mls", "major league soccer"]}
+_px = {}  # login token and per-run caches
+
+
+def px_keys():
+    return os.environ.get("PROPHETX_ACCESS_KEY"), os.environ.get("PROPHETX_SECRET_KEY")
+
+
+def px_call(method, path, params=None, body=None):
+    """A logged-in ProphetX request (logs in again once if the token has expired)."""
+    for attempt in range(2):
+        if "token" not in _px:
+            key, secret = px_keys()
+            r = requests.post(PX + "/auth/login", json={"access_key": key, "secret_key": secret}, timeout=30)
+            r.raise_for_status()
+            _px["token"] = r.json()["data"]["access_token"]
+        r = requests.request(method, PX + path, params=params, json=body, timeout=30,
+                             headers={"Authorization": f"Bearer {_px['token']}"})
+        if r.status_code == 401 and attempt == 0:
+            _px.pop("token")
+            continue
+        return r
+
+
+def px_get(path, params=None):
+    if not all(px_keys()) or _px.get("down"):
+        return None
+    try:
+        r = px_call("GET", path, params)
+    except Exception:
+        _px["down"] = True  # login failed or site unreachable: skip ProphetX for this run
+        return None
+    return r.json() if r.status_code < 400 else None
+
+
+def american_to_p(odds):
+    """+150 -> 0.40, -150 -> 0.60."""
+    odds = float(odds)
+    return 100 / (100 + odds) if odds > 0 else -odds / (100 - odds)
+
+
+def px_ladder_price(max_price):
+    """The ladder's American odds whose price is the highest that's still <= max_price."""
+    if "ladder" not in _px:
+        _px["ladder"] = (px_get("/v4/mm/get_price_ladder") or {}).get("data") or []
+    ok = [o for o in _px["ladder"] if american_to_p(o) <= max_price + 1e-9]
+    return max(ok, key=american_to_p) if ok else None
+
+
+def px_events(league):
+    """ProphetX games for an international league prefix (cached for this run)."""
+    names = PX_LEAGUES.get(league)
+    if not names and league not in TENNIS:
+        return []
+    if "tournaments" not in _px:
+        r = px_get("/mm/get_tournaments", {"has_active_events": "true"}) or {}
+        _px["tournaments"] = (r.get("data") or {}).get("tournaments") or []
+    ids = [t["id"] for t in _px["tournaments"]
+           if (t.get("name") or "").lower() in (names or [])
+           or (league in TENNIS and (t.get("name") or "").lower().startswith(league + " "))]
+    out = []
+    for tid in ids:
+        key = f"events-{tid}"
+        if key not in _px:
+            r = px_get("/mm/get_sport_events", {"tournament_id": tid}) or {}
+            _px[key] = (r.get("data") or {}).get("sport_events") or []
+        out += _px[key]
+    return out
+
+
+def plain_tokens(name):
+    """Lower-case words without accents or filler: 'Club Atlético de Madrid' -> ['atletico', 'madrid']."""
+    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return name_tokens(name)
+
+
+def px_same(a, b):
+    """'Bulls' ~ 'Chicago Bulls', 'Atlético Madrid' ~ 'Club Atlético de Madrid'."""
+    x, y = plain_tokens(a), plain_tokens(b)
+    if not x or not y:
+        return False
+    short, long_ = sorted((x, y), key=len)
+    return all(any(w == v or (len(w) >= 3 and v.startswith(w)) for v in long_) for w in short)
+
+
+def px_team(competitors, name):
+    """The one competitor matching `name`, else None."""
+    hits = [c for c in competitors if px_same(name, c.get("name") or "")
+            or px_same(name, c.get("display_name") or "")]
+    return hits[0] if len(hits) == 1 else None
+
+
+def px_levels(market_list, strike_id):
+    """[(price 0-1, shares)] a taker can buy now on this selection, from the markets reply."""
+    levels = []
+    for m in market_list:
+        for mm in [m] + (m.get("market_strikes") or []):
+            for group in mm.get("selections") or []:
+                for s in group:
+                    if s.get("strike_id") != strike_id or not s.get("price"):
+                        continue
+                    odds, qty = float(s["price"]), float(s.get("quantity") or 0)
+                    stake = qty * 100 / odds if odds > 0 else qty * -odds / 100  # dollars a taker can stake
+                    if s.get("value") is not None:
+                        stake = min(stake, float(s["value"]))
+                    p = american_to_p(odds)
+                    if stake > 0:
+                        levels.append((p, stake / p))
+    return levels
+
+
+def px_markets(event_id):
+    r = px_get("/v4/mm/get_markets", {"event_id": event_id}) or {}
+    return (r.get("data") or {}).get("markets") or []
+
+
+def px_ref(pick, d, intl_market, intl_price):
+    league = d["event"].split("-")[0]
+    events = px_events(league)
+    start = intl_market.get("gameStartTime")
+    if not events or not start:
+        return None
+    start = datetime.fromisoformat(start.replace("Z", "+00:00"))
+    title = ((intl_market.get("events") or [{}])[0].get("title") or "").split(": ")[-1]
+    teams = d.get("outcomes") if d["kind"] in ("winner", "spread") else d.get("names")
+    teams = teams or [t.strip() for t in re.split(r" vs\.? ", title)]
+    if len(teams) != 2:
+        return None
+    games = []
+    for e in events:
+        try:
+            when = datetime.fromisoformat(e["scheduled"].replace("Z", "+00:00"))
+        except (KeyError, ValueError):
+            continue
+        comps = e.get("competitors") or []
+        if abs((when - start).total_seconds()) <= 3 * 3600 and all(px_team(comps, t) for t in teams):
+            games.append(e)
+    if len(games) != 1:
+        return None  # not listed, or ambiguous: don't guess
+    game = games[0]
+    markets = [m for m in px_markets(game["event_id"]) if m.get("status") == "active"]
+    sels = lambda m: [s for mm in [m] + (m.get("market_strikes") or [])
+                      for group in mm.get("selections") or [] for s in group]
+    full_game = lambda m: (m.get("category_name") or "Game Lines") == "Game Lines"
+    sel = None
+    if d["kind"] == "winner":
+        team = px_team(game["competitors"], pick["Pick"])
+        m = next((m for m in markets if m.get("type") == "moneyline"
+                  and (m.get("name") or "").lower() == "moneyline"), None)
+        sel = team and m and next((s for s in sels(m) if s.get("competitor_id") == team["id"]), None)
+    elif d["kind"] == "1x2":
+        if d["team"] == "draw":
+            m = next((m for m in markets if (m.get("name") or "") == "Draw (90 Min)"), None)
+        else:
+            m = next((m for m in markets if (m.get("name") or "").endswith(" to Win (90 Min)")
+                      and px_same(d["team_name"], m["name"][:-len(" to Win (90 Min)")])), None)
+        want = "YES" if pick["Pick"] == "Yes" else "NO"
+        sel = m and next((s for s in sels(m) if (s.get("name") or "").upper() == want), None)
+    elif d["kind"] == "total":
+        m = next((m for m in markets if m.get("type") == "total" and full_game(m)), None)
+        sel = m and next((s for s in sels(m) if s.get("strike") == d["line"]
+                          and (s.get("name") or "").lower().startswith(str(pick["Pick"]).lower())), None)
+    else:  # spread: the favourite (listed first internationally) gives the points
+        team = px_team(game["competitors"], pick["Pick"])
+        line = -d["line"] if pick["Pick"] == d["outcomes"][0] else d["line"]
+        m = next((m for m in markets if m.get("type") == "spread" and full_game(m)), None)
+        sel = team and m and next((s for s in sels(m) if s.get("competitor_id") == team["id"]
+                                   and s.get("strike") == line), None)
+    if not sel:
+        return None
+    levels = px_levels(markets, sel["strike_id"])
+    if not levels or abs(min(levels)[0] - intl_price) > SANITY:
+        return None  # priced too differently: probably the wrong game or line
+    return {"venue": "prophetx", "ref": sel["strike_id"], "event_id": game["event_id"], "fee_rate": PX_FEE,
+            "_levels": levels}
+
+
+def px_quote(ref, dollars):
+    levels = ref.pop("_levels", None) or px_levels(px_markets(ref["event_id"]), ref["ref"])
+    return fill(levels, dollars, lambda p: PX_FEE * p)  # fee estimate: PX_FEE of each dollar staked
+
+
 # ---------------- public helpers ----------------
 
 def quotes(pick, intl_market, dollars):
@@ -311,16 +511,26 @@ def quotes(pick, intl_market, dollars):
         return []
     intl_price = float(pick.get("Price now") or 0)
     out = []
-    for ref_fn, quote_fn in ((pm_us_ref, pm_us_quote), (kalshi_ref, kalshi_quote)):
-        ref = ref_fn(pick, d) if ref_fn is pm_us_ref else ref_fn(pick, d, intl_price)
-        got = ref and quote_fn(ref, dollars)
+    for venue, quote_fn in (("polymarket_us", pm_us_quote), ("kalshi", kalshi_quote), ("prophetx", px_quote)):
+        try:
+            if venue == "polymarket_us":
+                ref = pm_us_ref(pick, d)
+            elif venue == "kalshi":
+                ref = kalshi_ref(pick, d, intl_price)
+            else:
+                ref = px_ref(pick, d, intl_market, intl_price)
+            got = ref and quote_fn(ref, dollars)
+        except Exception as e:  # one venue's surprise reply must not stop the others
+            print(f"  ({venue} lookup error: {type(e).__name__}: {e})")
+            continue
         if got:
             out.append({**ref, **got})
     return sorted(out, key=lambda q: q["cost"] / q["shares"])  # lowest all-in cost per share
 
 
 def top_up_quote(ref, dollars):
-    return (pm_us_quote if ref["venue"] == "polymarket_us" else kalshi_quote)(ref, dollars)
+    fn = {"polymarket_us": pm_us_quote, "kalshi": kalshi_quote, "prophetx": px_quote}[ref["venue"]]
+    return fn(dict(ref), dollars)
 
 
 def result(ref):

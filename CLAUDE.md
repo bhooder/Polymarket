@@ -8,20 +8,20 @@ explain simply, give exact commands, and keep replies short and plain.
 This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 
-Last updated: 2026-10-28.
+Last updated: 2026-11-08.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
 which outcomes have "smart money" consensus, and test whether following them
 would make money. Paper trading, plus (from 2026-11-03) optional real-money
-betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
+betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`).
 
 ## Files (Python 3.11, needs `requests`)
 - `polymarket_smart_money.py`: the scanner. Finds consensus picks.
 - `forward_test.py`: paper trading. Runs the scanner every hour and places
   pretend bets by the owner's rules.
-- `venues.py`: finds the same bet on Polymarket US and Kalshi, prices it from
-  real order books with fees, and settles it.
+- `venues.py`: finds the same bet on Polymarket US, Kalshi and ProphetX, prices
+  it from real order books with fees, and settles it.
 - `live.py`: real-money betting. Copies each new Strategy A paper bet (and
   top-up) to the same venue, sized as the same share of the real bankroll
   (cash + open positions on both accounts), same price rule, "fill now or
@@ -29,7 +29,7 @@ betting that mirrors Strategy A on Kalshi and Polymarket US (`live.py`).
   holds. Mode from the LIVE_TRADING repository variable: off (default),
   practice (no orders; Polymarket US orders previewed), on. Keys in GitHub
   Secrets: KALSHI_KEY_ID, KALSHI_PRIVATE_KEY, PM_US_KEY_ID, PM_US_SECRET_KEY,
-  TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (alerts go to a Telegram group; ntfy was
+  PROPHETX_ACCESS_KEY, PROPHETX_SECRET_KEY, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (alerts go to a Telegram group; ntfy was
   tried first and removed 2026-11-04 because its pushes didn't reach the iPhone). Filled real bets are saved to `live_trades.json` / `.csv` (public,
   owner's choice) and shown on the report's first tab, "Real bets"; the
   Statistics tab adds Real next to A and B plus a "Real vs paper" table (fill
@@ -100,8 +100,8 @@ The owner's rules:
   the same luck risk as a 40c bet: 30c x0.80, 20c x0.61, 10c x0.41. No price
   floor. Uses the current Polymarket price. Older bets are unchanged.
 - Hold until the market is decided. At most 50% of the bankroll in open bets.
-- Venues: only US-regulated venues, Polymarket US and
-  Kalshi. Each bet goes to whichever has the lowest all-in cost per share
+- Venues: only US-regulated venues: Polymarket US, Kalshi and (from
+  2026-11-08) ProphetX. Each bet goes to whichever has the lowest all-in cost per share
   (fees included) and passes the price rule. The international Polymarket
   price is recorded for comparison only.
 - Runs on GitHub Actions, asked for every 10 minutes (actual timing varies).
@@ -151,6 +151,15 @@ Check results after a few weeks. A handful of bets proves nothing.
   soccer is matched by team name. Tennis tickers carry the tournament date.
   Fee = roundup(0.07 x C x P x (1-P)). A Kalshi match priced >15c away from
   Polymarket is discarded as a probable mismatch.
+- ProphetX (CFTC exchange, added 2026-11-08): https://cash.api.prophetx.co/partner,
+  docs https://docs.prophetx.co. Needs the API keys even for prices (login ->
+  Bearer token). Prices are American odds; each selection lists levels a taker can
+  bet now (`value` = dollars that can be staked). Orders are in dollars staked,
+  `fillOrKill`, price must be on the price ladder. Games are matched by league,
+  start time (+-3h) and team names; >15c from Polymarket = discarded. The fee rate
+  is set per account and not published: venues.PX_FEE (1% of stake) is an
+  estimate; real fills record the actual fee. No public results: ProphetX bets
+  settle by the international Polymarket result. No Premier League seen.
 
 ## Things learned / caveats
 - US-venue fees are roughly double the international ones: about
