@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 898.7823291995128,
+ "cash": 914.8718443204433,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1344,7 +1344,7 @@
   },
   {
    "placed_at": "2026-11-08T14:30:08.822503+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Giants",
    "market": "Giants vs. Eagles",
@@ -1374,9 +1374,9 @@
     "kalshi": 0.6268
    },
    "intl_cost_per_share": 0.5973,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.09,
+   "profit": 6.03,
+   "settled_at": "2026-11-08T21:43:06.417879+00:00",
    "topped_up_at": null
   },
   {

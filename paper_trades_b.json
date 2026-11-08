@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 721.414637108169,
+ "cash": 766.325038344569,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4976,7 +4976,7 @@
   },
   {
    "placed_at": "2026-11-07T14:09:33.678786+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Panthers",
    "market": "Broncos vs. Panthers",
@@ -5006,9 +5006,9 @@
     "kalshi": 0.4473
    },
    "intl_cost_per_share": 0.4273,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.82,
+   "settled_at": "2026-11-08T21:43:05.431741+00:00",
    "topped_up_at": "2026-11-08T17:48:51.411095+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,
@@ -5792,7 +5792,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:23.616665+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Giants",
    "market": "Giants vs. Eagles",
@@ -5822,9 +5822,9 @@
     "kalshi": 0.6268
    },
    "intl_cost_per_share": 0.5973,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 30.98,
+   "profit": 11.61,
+   "settled_at": "2026-11-08T21:43:05.580861+00:00",
    "topped_up_at": null
   },
   {
@@ -6172,7 +6172,7 @@
   },
   {
    "placed_at": "2026-11-08T17:12:45.770504+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Giants vs. Eagles: O/U 38.5",
@@ -6201,14 +6201,14 @@
     "kalshi": 0.4975
    },
    "intl_cost_per_share": 0.4675,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.65,
+   "settled_at": "2026-11-08T21:43:05.807932+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-08T17:12:45.983032+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cowboys",
    "market": "Cowboys vs. Colts",
@@ -6238,9 +6238,9 @@
     "kalshi": 0.6958
    },
    "intl_cost_per_share": 0.6766,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.93,
+   "profit": 4.27,
+   "settled_at": "2026-11-08T21:43:05.887986+00:00",
    "topped_up_at": null
   },
   {

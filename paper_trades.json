@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1128.050441956015,
+ "cash": 1186.4765829035844,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2104,7 +2104,7 @@
   },
   {
    "placed_at": "2026-11-08T07:33:57.319796+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Colts",
    "market": "Spread: Cowboys (-4.5)",
@@ -2134,9 +2134,9 @@
     "polymarket_us": 0.5287
    },
    "intl_cost_per_share": 0.5175,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.37,
+   "profit": 10.56,
+   "settled_at": "2026-11-08T21:43:04.749669+00:00",
    "topped_up_at": null
   },
   {
@@ -2287,7 +2287,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:22.784236+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Giants",
    "market": "Giants vs. Eagles",
@@ -2317,9 +2317,9 @@
     "kalshi": 0.6269
    },
    "intl_cost_per_share": 0.5973,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.97,
+   "profit": 7.11,
+   "settled_at": "2026-11-08T21:43:04.972166+00:00",
    "topped_up_at": null
   },
   {
@@ -2471,7 +2471,7 @@
   },
   {
    "placed_at": "2026-11-08T17:12:45.292902+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Giants vs. Eagles: O/U 38.5",
@@ -2500,14 +2500,14 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4675,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -24.24,
+   "settled_at": "2026-11-08T21:43:05.087424+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-08T17:48:50.704304+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Saints",
    "market": "Browns vs. Saints",
@@ -2537,9 +2537,9 @@
     "polymarket_us": 0.6958
    },
    "intl_cost_per_share": 0.6964,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.09,
+   "profit": 5.2,
+   "settled_at": "2026-11-08T21:43:05.129734+00:00",
    "topped_up_at": null
   }
  ]

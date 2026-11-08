@@ -1078,5 +1078,38 @@
   "profit": 2.07,
   "venue": "polymarket_us",
   "ref": "atc-sea-int-com-2026-11-08-int"
+ },
+ {
+  "at": "2026-11-08T21:43:07.055182+00:00",
+  "event": "settled",
+  "bet": "Giants to win (vs. Eagles)",
+  "status": "won",
+  "cost": 1.88,
+  "payout": 3.0,
+  "profit": 1.12,
+  "venue": "polymarket_us",
+  "ref": "aec-nfl-nyg-phi-2026-11-08"
+ },
+ {
+  "at": "2026-11-08T21:43:07.610323+00:00",
+  "event": "settled",
+  "bet": "Over 38.5 (Giants vs. Eagles)",
+  "status": "lost",
+  "cost": 3.98,
+  "payout": 0.0,
+  "profit": -3.98,
+  "venue": "kalshi",
+  "ref": "KXNFLTOTAL-26NOV08NYGPHI-39"
+ },
+ {
+  "at": "2026-11-08T21:43:08.096076+00:00",
+  "event": "settled",
+  "bet": "Saints to win (vs. Browns)",
+  "status": "won",
+  "cost": 2.09,
+  "payout": 3.0,
+  "profit": 0.91,
+  "venue": "kalshi",
+  "ref": "KXNFLGAME-26NOV08CLENO-NO"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "cash": 196.44,
+ "cash": 202.44,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -651,7 +651,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:26.157641+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Giants",
@@ -678,9 +678,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.6025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 1.12,
+   "settled_at": "2026-11-08T21:43:06.889272+00:00",
    "topped_up_at": null
   },
   {
@@ -787,7 +787,7 @@
   },
   {
    "placed_at": "2026-11-08T17:12:47.236113+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "size_multiplier": 1.0,
    "pick": "Over",
@@ -814,14 +814,14 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.48,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.98,
+   "settled_at": "2026-11-08T21:43:07.011830+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-08T17:48:52.881257+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Saints",
@@ -848,9 +848,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.68,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 0.91,
+   "settled_at": "2026-11-08T21:43:07.054963+00:00",
    "topped_up_at": null
   }
  ],
@@ -1046,5 +1046,5 @@
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T21:18:42.019723+00:00"
+ "balances_checked_at": "2026-11-08T21:45:05.859624+00:00"
 }
