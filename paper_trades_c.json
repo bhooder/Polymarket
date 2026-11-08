@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 931.2437739582288,
+ "cash": 921.9037739582287,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1713,6 +1713,44 @@
    "quotes": {
     "kalshi": 0.1486,
     "polymarket_us": 0.1514
+   },
+   "intl_cost_per_share": 0.146,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T23:56:37.786868+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Jazz",
+   "market": "Jazz vs. Timberwolves",
+   "link": "https://polymarket.com/event/nba-uta-min-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 0.473,
+   "condition_id": "0x2c4bfe202662b7e2b300f97b0811708cade3fa89998cd8bbac233f0b2e77747f",
+   "token_id": "72951661521570586306276938106991413550414137975378590124874751079920074474086",
+   "outcome_index": 0,
+   "ends": "2026-11-09T00:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.15,
+   "avg_price": 0.1515,
+   "shares": 61.033663366336626,
+   "cost": 9.34,
+   "fees": 0.0925,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c898c4b9a697909372ea2f564c5993b5",
+    "fee_rate": 0.01,
+    "event_id": 1704710770
+   },
+   "quotes": {
+    "prophetx": 0.153,
+    "kalshi": 0.159,
+    "polymarket_us": 0.1621
    },
    "intl_cost_per_share": 0.146,
    "payout": null,
