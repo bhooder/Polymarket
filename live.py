@@ -219,17 +219,39 @@ def px_order(ref, stake, max_price, order_id):
         "external_id": order_id, "strike_id": ref["ref"], "price": odds, "quantity": stake,
         "order_strategy": "fillOrKill"})  # what can't fill at once is cancelled about 2 s after
     order = (r.get("data") or {}).get("order") or {}
-    for _ in range(10):  # wait for the leftover to be cancelled, so the numbers are final
-        if not order.get("order_id") or not float(order.get("open_quantity") or 0):
+    oid = order.get("order_id")
+    # The leftover is cancelled ~2 s after the last fill, and a new order can take a few seconds
+    # to show up in get_order (it answered "not found" on 2026-11-08), so keep asking for a while.
+    final = order if order.get("matching_status") == "fully_matched" else None
+    for _ in range(15):
+        if final or not oid:
             break
         time.sleep(1)
-        order = px_request("GET", f"/v4/mm/get_order/{order['order_id']}").get("data") or order
-    filled = float(order.get("filled_quantity") or 0)  # dollars staked
-    win = float(order.get("profit") or 0)              # what those dollars win
+        try:
+            got = px_request("GET", f"/v4/mm/get_order/{oid}").get("data") or {}
+        except VenueError:
+            continue  # not there yet
+        if got and not float(got.get("open_quantity") or 0):
+            final = got
+    if final:
+        filled = float(final.get("filled_quantity") or 0)  # dollars staked
+        win = float(final.get("profit") or 0)              # what those dollars win
+        fee = float(final.get("fee") or 0)
+    else:  # still unknown: read the account's position on this bet (it held none before)
+        side = next((s for pos in px_request("GET", "/v4/mm/positions").get("data") or []
+                     for s in pos.get("sides") or [] if s.get("strike_id") == ref["ref"]), None)
+        if not side:
+            raise VenueError(f"order {oid} sent but its result is unknown and no position was found; "
+                             "check the ProphetX app")
+        filled = float(side.get("size") or 0)
+        avg = float(side.get("average_price") or 0)
+        p = venues.american_to_p(avg) if abs(avg) >= 100 else avg  # American odds or a 0-1 price
+        win = filled / p - filled if 0 < p < 1 else 0
+        fee = max(float(side.get("cost_basis") or filled) - filled, 0)
     if not filled or win <= 0:
         return 0.0, 0.0, 0.0
     shares = filled + win
-    return shares, filled / shares, float(order.get("fee") or 0)
+    return shares, filled / shares, fee
 
 
 # ---------------- mirroring Strategy A ----------------
@@ -401,7 +423,11 @@ def run(intents, max_above, state):
                 info.update(order_id=order_id, reply=dict(LAST_REPLY))
             except Exception as e:
                 log("order failed", error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY), **info)
-                alert("⚠️ Problem", f"{what}\n{where} order failed. Details in the log.")
+                if "result is unknown" in str(e):
+                    alert("⚠️ Check ProphetX", f"{what}\nOrder sent, but couldn't confirm if it filled. "
+                                               f"Look in the ProphetX app.")
+                else:
+                    alert("⚠️ Problem", f"{what}\n{where} order failed. Details in the log.")
                 continue
             staked = round(filled * px, 2)
             state.setdefault("orders", []).append({"at": now_iso(), "pick": bet["pick"], "venue": venue,
