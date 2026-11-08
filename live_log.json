@@ -1040,5 +1040,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"9771d192-c503-5ce2-9324-8dac5a5637db\",\"fill_count\":\"8.00\",\"order_id\":\"01a1bc25-f698-71ca-9bb5-d790e6fd5e88\",\"remaining_count\":\"0.00\",\"ts_ms\":1794157967236}"
   }
+ },
+ {
+  "at": "2026-11-08T17:48:52.881251+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.68,
+  "fees": 0.0456,
+  "bet": "Saints to win (vs. Browns)",
+  "pick": "Saints",
+  "market": "Browns vs. Saints",
+  "venue": "kalshi",
+  "ref": "KXNFLGAME-26NOV08CLENO-NO",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.68,
+  "share": 0.010003646378042765,
+  "side": "YES",
+  "contracts": 3,
+  "max_price": 0.69,
+  "dollars": 2.09,
+  "bankroll": 208.62,
+  "order_id": "cfc9c598-bd89-5ab0-b541-a27f21aa5889",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0152\",\"average_fill_price\":\"0.6800\",\"client_order_id\":\"cfc9c598-bd89-5ab0-b541-a27f21aa5889\",\"fill_count\":\"3.00\",\"order_id\":\"01a1bc46-ffa0-7dfc-8ab5-e63d762a6267\",\"remaining_count\":\"0.00\",\"ts_ms\":1794160132869}"
+  }
  }
 ]

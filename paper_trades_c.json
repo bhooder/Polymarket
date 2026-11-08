@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 896.7869003655551,
+ "cash": 887.0269003655551,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1232,7 +1232,7 @@
   {
    "placed_at": "2026-11-08T09:21:49.715652+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will NEC win on 2026-11-08?",
    "link": "https://polymarket.com/event/ere-utr-nec-2026-11-08",
@@ -1245,10 +1245,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 6.9,
    "traders_entry": 0.65,
-   "avg_price": 0.65,
-   "shares": 14.919317314671776,
-   "cost": 10.02,
-   "fees": 0.3224,
+   "avg_price": 0.64,
+   "shares": 29.88532561497945,
+   "cost": 19.78,
+   "fees": 0.6538,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -1263,7 +1263,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T17:48:52.051699+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 6.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T10:53:45.564909+00:00",
@@ -1304,7 +1307,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:25.336820+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Falcons",
    "market": "Spread: Bengals (-3.5)",
@@ -1334,9 +1337,9 @@
     "polymarket_us": 0.5487
    },
    "intl_cost_per_share": 0.5275,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.06,
+   "settled_at": "2026-11-08T17:46:53.263509+00:00",
    "topped_up_at": null
   },
   {

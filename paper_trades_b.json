@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 766.5474918544645,
+ "cash": 747.8074918544645,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -4977,7 +4977,7 @@
   {
    "placed_at": "2026-11-07T14:09:33.678786+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Panthers",
    "market": "Broncos vs. Panthers",
    "link": "https://polymarket.com/event/nfl-den-car-2026-11-08",
@@ -4990,10 +4990,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.3,
    "traders_entry": 0.42,
-   "avg_price": 0.4225,
-   "shares": 21.427958900669985,
-   "cost": 9.55,
-   "fees": 0.4967,
+   "avg_price": 0.4085,
+   "shares": 43.62078088736446,
+   "cost": 18.82,
+   "fees": 1.0005,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -5009,7 +5009,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T17:48:51.411095+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.4,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-07T14:09:34.011611+00:00",
@@ -5602,7 +5605,7 @@
   {
    "placed_at": "2026-11-08T09:21:49.412034+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will NEC win on 2026-11-08?",
    "link": "https://polymarket.com/event/ere-utr-nec-2026-11-08",
@@ -5615,10 +5618,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 6.9,
    "traders_entry": 0.65,
-   "avg_price": 0.65,
-   "shares": 14.308846246905766,
-   "cost": 9.61,
-   "fees": 0.3092,
+   "avg_price": 0.6399,
+   "shares": 28.830167825175614,
+   "cost": 19.08,
+   "fees": 0.6308,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -5633,7 +5636,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T17:48:50.968513+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 6.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T10:11:12.044678+00:00",
@@ -5823,7 +5829,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:23.887825+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bengals vs. Falcons: O/U 52.5",
@@ -5852,9 +5858,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.68,
+   "settled_at": "2026-11-08T17:46:52.658376+00:00",
    "topped_up_at": null
   },
   {
@@ -5895,7 +5901,7 @@
   },
   {
    "placed_at": "2026-11-08T13:52:24.991639+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Falcons",
    "market": "Spread: Bengals (-3.5)",
@@ -5925,9 +5931,9 @@
     "polymarket_us": 0.5487
    },
    "intl_cost_per_share": 0.5275,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.68,
+   "settled_at": "2026-11-08T17:46:52.684737+00:00",
    "topped_up_at": null
   },
   {
