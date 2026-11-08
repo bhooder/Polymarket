@@ -760,7 +760,7 @@ def main():
               net=cfg.get("net", False))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
-        live.run(live_bets, MAX_ABOVE, live_state)
+        live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"])
     except Exception as e:
         print(f"Live betting error ({type(e).__name__}); details sent to the phone alert channel")
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")

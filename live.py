@@ -198,15 +198,29 @@ def px_request(method, path, params=None, body=None):
     return checked(venues.px_call(method, path, params, body))
 
 
+PX_SIDES = {}  # strike id -> the account's position details, from the latest px_account()
+
+
 def px_account():
     """(cash, {strike id: (dollars staked, cost)})."""
     cash = float((px_request("GET", "/v4/mm/get_balance").get("data") or {}).get("balance") or 0)
     held = {}
+    PX_SIDES.clear()
     for pos in px_request("GET", "/v4/mm/positions").get("data") or []:
         for s in pos.get("sides") or []:
             if float(s.get("size") or 0) > 0:
                 held[s["strike_id"]] = (float(s["size"]), float(s.get("cost_basis") or s["size"]))
+                PX_SIDES[s["strike_id"]] = s
     return cash, held
+
+
+def px_side_fill(side):
+    """(dollars staked, what they win, fees) from a ProphetX position."""
+    filled = float(side.get("size") or 0)
+    avg = float(side.get("average_price") or 0)
+    p = venues.american_to_p(avg) if abs(avg) >= 100 else avg  # American odds or a 0-1 price
+    win = filled / p - filled if 0 < p < 1 else 0
+    return filled, win, max(float(side.get("cost_basis") or filled) - filled, 0)
 
 
 def px_order(ref, stake, max_price, order_id):
@@ -243,11 +257,7 @@ def px_order(ref, stake, max_price, order_id):
         if not side:
             raise VenueError(f"order {oid} sent but its result is unknown and no position was found; "
                              "check the ProphetX app")
-        filled = float(side.get("size") or 0)
-        avg = float(side.get("average_price") or 0)
-        p = venues.american_to_p(avg) if abs(avg) >= 100 else avg  # American odds or a 0-1 price
-        win = filled / p - filled if 0 < p < 1 else 0
-        fee = max(float(side.get("cost_basis") or filled) - filled, 0)
+        filled, win, fee = px_side_fill(side)
     if not filled or win <= 0:
         return 0.0, 0.0, 0.0
     shares = filled + win
@@ -336,11 +346,38 @@ def american(p):
     return f"-{p / (1 - p) * 100:.0f}" if p > 0.5 else f"+{(1 - p) / p * 100:.0f}"
 
 
-def run(intents, max_above, state):
+def adopt_unrecorded(state, accounts, paper_bets):
+    """Record ProphetX bets the account holds that copy an open Strategy A paper bet but are
+    missing from live_trades.json (an order whose fill couldn't be confirmed at the time)."""
+    if "prophetx" not in accounts or not paper_bets:
+        return
+    recorded = {(b.get("venue_ref") or {}).get("ref") for b in state["bets"] if b["status"] == "open"}
+    for pb in paper_bets:
+        ref = dict(pb.get("venue_ref") or {})
+        side = PX_SIDES.get(ref.get("ref"))
+        if pb["status"] != "open" or ref.get("venue") != "prophetx" or ref["ref"] in recorded or not side:
+            continue
+        filled, win, fees = px_side_fill(side)
+        if filled <= 0 or win <= 0:
+            continue
+        shares = filled + win
+        ref["avg_price"] = pb["avg_price"]
+        record(state, {"bet": pb, "top_up": False, "entry": pb["traders_entry"]}, ref,
+               shares, filled / shares, fees, round(filled, 2))
+        recorded.add(ref["ref"])
+        what = plain(pb["pick"], pb["market"])
+        log("adopted", bet=what, venue="prophetx", ref=ref["ref"], staked=filled, price=filled / shares,
+            fees=fees, position=side)
+        alert("📝 Recorded", f"{what}\nFound ${filled:.2f} on ProphetX at {cents(filled / shares)} "
+                            f"that wasn't in the records. Added.")
+
+
+def run(intents, max_above, state, paper_bets=None):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
     max_above: the price rule (pay at most this much over the traders' average entry).
     state: live_trades.json contents; filled orders are added to it (only when mode is "on").
+    paper_bets: all Strategy A paper bets, to find ProphetX bets held but not yet recorded.
     Every run in practice/on checks both accounts; once a day it sends their status."""
     m = mode()
     if m == "off":
@@ -371,6 +408,10 @@ def run(intents, max_above, state):
     bankroll = sum(cash + sum(cost for _, cost in held.values()) for cash, held in accounts.values())
     state["cash"] = round(sum(cash for cash, _ in accounts.values()), 2)  # shown on the Real bets tab
     state["balances_checked_at"] = now_iso()
+    try:
+        adopt_unrecorded(state, accounts, paper_bets)
+    except Exception as e:  # bookkeeping only: never let it stop betting
+        log("adopt failed", error=f"{type(e).__name__}: {e}")
     exposure = sum(sum(cost for _, cost in held.values()) for _, held in accounts.values())
 
     for it in intents:
