@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1057.9068853735375,
+ "cash": 1128.050441956015,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2398,7 +2398,7 @@
   },
   {
    "placed_at": "2026-11-08T16:27:01.088716+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Manchester United FC win on 2026-11-08?",
@@ -2427,14 +2427,14 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.08,
+   "profit": 20.85,
+   "settled_at": "2026-11-08T19:11:56.661821+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-08T16:42:28.814387+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will FC Internazionale Milano win on 2026-11-08?",
@@ -2464,9 +2464,9 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.06,
+   "profit": 12.94,
+   "settled_at": "2026-11-08T19:11:56.762696+00:00",
    "topped_up_at": null
   },
   {

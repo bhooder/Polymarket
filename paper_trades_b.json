@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 738.3374918544645,
+ "cash": 782.3813000513679,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5350,7 +5350,7 @@
   },
   {
    "placed_at": "2026-11-07T20:47:33.707510+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Aston Villa FC win on 2026-11-08?",
@@ -5379,9 +5379,9 @@
     "kalshi": 0.7247
    },
    "intl_cost_per_share": 0.7105,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.96,
+   "profit": 3.57,
+   "settled_at": "2026-11-08T19:11:57.038460+00:00",
    "topped_up_at": null
   },
   {
@@ -6055,7 +6055,7 @@
   },
   {
    "placed_at": "2026-11-08T16:27:01.748995+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will FC Internazionale Milano win on 2026-11-08?",
@@ -6085,9 +6085,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.8,
+   "profit": 21.48,
+   "settled_at": "2026-11-08T19:11:57.755280+00:00",
    "topped_up_at": null
   },
   {
@@ -6272,6 +6272,43 @@
     "kalshi": 0.812
    },
    "intl_cost_per_share": 0.8048,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T19:14:18.688463+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Juventus FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/sea-fio-juv-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf1fd379b580e871de36038019b02d1fa9e2078646b5474602a94594da9d77dc0",
+   "token_id": "79359010295067423144817893283443998191001248920426671935419427767182103434768",
+   "outcome_index": 1,
+   "ends": "2026-11-08T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.56,
+   "avg_price": 0.56,
+   "shares": 16.821192970785518,
+   "cost": 9.72,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV08FIOJUV-JUV",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5778,
+    "polymarket_us": 0.5834
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

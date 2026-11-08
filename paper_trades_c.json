@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 887.0269003655551,
+ "cash": 918.6991898282477,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1381,7 +1381,7 @@
   },
   {
    "placed_at": "2026-11-08T16:27:04.301700+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will FC Internazionale Milano win on 2026-11-08?",
@@ -1411,9 +1411,9 @@
     "kalshi": 0.4774
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.65,
+   "profit": 21.93,
+   "settled_at": "2026-11-08T19:11:58.633879+00:00",
    "topped_up_at": null
   },
   {
@@ -1522,6 +1522,43 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T19:14:19.277085+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Spread: Pistons (-5.5)",
+   "link": "https://polymarket.com/event/nba-lal-det-2026-11-08",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6d7f46dea2a4d59b9b7d130885ba41a8f6139a6318b2ede64b65e02f3172109b",
+   "token_id": "10685825311772861824152131697141946737515430378831652460285948966368383742759",
+   "outcome_index": 1,
+   "ends": "2026-11-08T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.48,
+   "avg_price": 0.44,
+   "shares": 21.80435999720065,
+   "cost": 9.97,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV08LALDET-DET6",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "polymarket_us": 0.4533,
+    "kalshi": 0.4574
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1067,5 +1067,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0152\",\"average_fill_price\":\"0.6800\",\"client_order_id\":\"cfc9c598-bd89-5ab0-b541-a27f21aa5889\",\"fill_count\":\"3.00\",\"order_id\":\"01a1bc46-ffa0-7dfc-8ab5-e63d762a6267\",\"remaining_count\":\"0.00\",\"ts_ms\":1794160132869}"
   }
+ },
+ {
+  "at": "2026-11-08T19:11:59.409231+00:00",
+  "event": "settled",
+  "bet": "FC Internazionale Milano to win",
+  "status": "won",
+  "cost": 1.93,
+  "payout": 4.0,
+  "profit": 2.07,
+  "venue": "polymarket_us",
+  "ref": "atc-sea-int-com-2026-11-08-int"
  }
 ]

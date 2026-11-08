@@ -1,5 +1,5 @@
 {
- "cash": 192.44,
+ "cash": 196.44,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -753,7 +753,7 @@
   },
   {
    "placed_at": "2026-11-08T16:42:30.703825+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Yes",
@@ -780,9 +780,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.4600000000000001,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.0,
+   "profit": 2.07,
+   "settled_at": "2026-11-08T19:11:59.292771+00:00",
    "topped_up_at": null
   },
   {
@@ -1046,5 +1046,5 @@
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T18:22:41.010525+00:00"
+ "balances_checked_at": "2026-11-08T19:14:19.805249+00:00"
 }
