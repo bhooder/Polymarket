@@ -711,5 +711,27 @@
   "profit": 2.01,
   "venue": "kalshi",
   "ref": "KXNCAAFSPREAD-26NOV07UKTENN-TENN7"
+ },
+ {
+  "at": "2026-11-08T03:37:17.834863+00:00",
+  "event": "settled",
+  "bet": "Under 220.5 (Wizards vs. Thunder)",
+  "status": "won",
+  "cost": 1.91,
+  "payout": 4.0,
+  "profit": 2.09,
+  "venue": "kalshi",
+  "ref": "KXNBATOTAL-26NOV07WASOKC-221"
+ },
+ {
+  "at": "2026-11-08T03:37:18.293447+00:00",
+  "event": "settled",
+  "bet": "Thunder -13.5",
+  "status": "won",
+  "cost": 3.9,
+  "payout": 8.0,
+  "profit": 4.1,
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV07WASOKC-OKC14"
  }
 ]

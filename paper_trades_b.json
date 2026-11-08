@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 885.5933688863792,
+ "cash": 922.7564430568603,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5383,7 +5383,7 @@
   },
   {
    "placed_at": "2026-11-07T22:02:23.498850+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Knicks vs. Cavaliers: O/U 222.5",
@@ -5412,14 +5412,14 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.58,
+   "profit": 9.15,
+   "settled_at": "2026-11-08T03:37:17.608477+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T22:02:23.963391+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Knicks vs. Cavaliers",
@@ -5448,14 +5448,14 @@
     "kalshi": 0.3763
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.29,
+   "settled_at": "2026-11-08T03:37:17.632097+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T22:39:43.095211+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Hawks (-6.5)",
@@ -5485,14 +5485,14 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.58,
+   "profit": 9.15,
+   "settled_at": "2026-11-08T03:37:17.657615+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-07T23:56:37.398855+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Wizards",
    "market": "Wizards vs. Thunder",
@@ -5522,9 +5522,9 @@
     "polymarket_us": 0.1834
    },
    "intl_cost_per_share": 0.1874,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -5.39,
+   "settled_at": "2026-11-08T03:37:17.683649+00:00",
    "topped_up_at": null
   },
   {
