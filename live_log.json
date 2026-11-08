@@ -805,5 +805,32 @@
   "max_price": 0.5,
   "dollars": 4.14,
   "bankroll": 206.9
+ },
+ {
+  "at": "2026-11-08T11:27:42.668809+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.71,
+  "fees": 0.0432,
+  "bet": "SS Lazio not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will SS Lazio win on 2026-11-08?",
+  "venue": "kalshi",
+  "ref": "KXSERIEAGAME-26NOV08NAPLAZ-LAZ",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.71,
+  "share": 0.009998438255375946,
+  "side": "NO",
+  "contracts": 3,
+  "max_price": 0.71,
+  "dollars": 2.07,
+  "bankroll": 206.9,
+  "order_id": "5ae3792e-c348-5628-b4cd-f9cea2b94f8c",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0144\",\"average_fill_price\":\"0.2900\",\"client_order_id\":\"5ae3792e-c348-5628-b4cd-f9cea2b94f8c\",\"fill_count\":\"3.00\",\"order_id\":\"01a1baea-07b0-79bc-8fb9-233c9b119b04\",\"remaining_count\":\"0.00\",\"ts_ms\":1794137262646}"
+  }
  }
 ]
