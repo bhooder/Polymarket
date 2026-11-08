@@ -5529,7 +5529,7 @@
   },
   {
    "placed_at": "2026-11-08T02:52:10.675307+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Spurs vs. Trail Blazers",
@@ -5558,9 +5558,9 @@
     "kalshi": 0.356
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.45,
+   "settled_at": "2026-11-08T06:22:59.153808+00:00",
    "topped_up_at": null
   }
  ]
