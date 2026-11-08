@@ -757,5 +757,53 @@
   "max_price": 0.52,
   "dollars": 2.07,
   "bankroll": 206.9
+ },
+ {
+  "at": "2026-11-08T10:11:14.030598+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 403 on /trade-api/v2/portfolio/events/orders: {\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 403,
+   "body": "{\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}"
+  },
+  "bet": "Chelsea FC not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will Chelsea FC win on 2026-11-08?",
+  "venue": "kalshi",
+  "ref": "KXEPLGAME-26NOV08SUNCFC-CFC",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.019996899048036778,
+  "side": "NO",
+  "contracts": 8,
+  "max_price": 0.52,
+  "dollars": 4.14,
+  "bankroll": 206.9
+ },
+ {
+  "at": "2026-11-08T10:11:15.196421+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 403 on /trade-api/v2/portfolio/events/orders: {\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 403,
+   "body": "{\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}"
+  },
+  "bet": "Over 52.5 (Bengals vs. Falcons)",
+  "pick": "Over",
+  "market": "Bengals vs. Falcons: O/U 52.5",
+  "venue": "kalshi",
+  "ref": "KXNFLTOTAL-26NOV08CINATL-53",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.49,
+  "share": 0.01999694124096719,
+  "side": "YES",
+  "contracts": 8,
+  "max_price": 0.5,
+  "dollars": 4.14,
+  "bankroll": 206.9
  }
 ]

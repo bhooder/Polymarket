@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 903.5364430568603,
+ "cash": 874.7209203021691,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5630,6 +5630,79 @@
     "polymarket_us": 0.6716
    },
    "intl_cost_per_share": 0.6614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T10:11:12.044678+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Chelsea FC win on 2026-11-08?",
+   "link": "https://polymarket.com/event/epl-sun-che-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe7c0c5512d77261c314114f7139d5e7d07a2a7cd3e6c6277e27e6d9a20eb83cc",
+   "token_id": "100951298589208920483835295498790862896503054090620529841546246846021688301782",
+   "outcome_index": 1,
+   "ends": "2026-11-08T14:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 37.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.52,
+   "shares": 35.722791140747795,
+   "cost": 19.21,
+   "fees": 0.63,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV08SUNCFC-CFC",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5376
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T10:11:12.606829+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SS Lazio win on 2026-11-08?",
+   "link": "https://polymarket.com/event/sea-nap-laz-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x334ff786b5736dfa5e0ef1b4e6726b95d522289b65bed759d84edfc14928e820",
+   "token_id": "69210367891333886204757108230644862196458853511447109663086353362657739743508",
+   "outcome_index": 1,
+   "ends": "2026-11-08T11:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.7,
+   "traders_entry": 0.66,
+   "avg_price": 0.68,
+   "shares": 13.808340237503453,
+   "cost": 9.61,
+   "fees": 0.22,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV08NAPLAZ-LAZ",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6959,
+    "polymarket_us": 0.7007
+   },
+   "intl_cost_per_share": 0.6909,
    "payout": null,
    "profit": null,
    "settled_at": null,
