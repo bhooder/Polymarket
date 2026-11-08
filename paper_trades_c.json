@@ -1082,7 +1082,7 @@
   },
   {
    "placed_at": "2026-11-07T17:20:36.036835+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Kentucky",
    "market": "Spread: Tennessee (-5.5)",
@@ -1112,9 +1112,9 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.94,
+   "settled_at": "2026-11-08T02:49:47.426187+00:00",
    "topped_up_at": "2026-11-07T22:02:24.484882+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,

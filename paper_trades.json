@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1087.9013362795677,
+ "cash": 1110.8976054163231,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2030,7 +2030,7 @@
   },
   {
    "placed_at": "2026-11-07T19:26:56.519313+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Tennessee",
    "market": "Spread: Tennessee (-6.5)",
@@ -2060,9 +2060,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.0,
+   "profit": 11.55,
+   "settled_at": "2026-11-08T02:49:46.320194+00:00",
    "topped_up_at": null
   },
   {

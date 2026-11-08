@@ -700,5 +700,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4700\",\"client_order_id\":\"534063c4-fdb9-5401-b238-25e0d59524d6\",\"fill_count\":\"8.00\",\"order_id\":\"01a1b8aa-7bd8-7f15-8853-6a1af36471a2\",\"remaining_count\":\"0.00\",\"ts_ms\":1794099543597}"
   }
+ },
+ {
+  "at": "2026-11-08T02:49:47.655929+00:00",
+  "event": "settled",
+  "bet": "Tennessee -6.5",
+  "status": "won",
+  "cost": 1.99,
+  "payout": 4.0,
+  "profit": 2.01,
+  "venue": "kalshi",
+  "ref": "KXNCAAFSPREAD-26NOV07UKTENN-TENN7"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "cash": 190.9,
+ "cash": 194.9,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -515,7 +515,7 @@
   },
   {
    "placed_at": "2026-11-07T19:26:57.564324+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Tennessee",
@@ -542,9 +542,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.48,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.0,
+   "profit": 2.01,
+   "settled_at": "2026-11-08T02:49:47.598341+00:00",
    "topped_up_at": null
   },
   {
@@ -718,5 +718,5 @@
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T02:01:16.610214+00:00"
+ "balances_checked_at": "2026-11-08T02:52:11.276938+00:00"
 }

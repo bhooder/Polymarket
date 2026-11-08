@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 894.0406600352991,
+ "cash": 885.5933688863792,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5233,7 +5233,7 @@
   },
   {
    "placed_at": "2026-11-07T17:20:35.137417+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Kentucky",
    "market": "Spread: Tennessee (-5.5)",
@@ -5263,9 +5263,9 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.94,
+   "settled_at": "2026-11-08T02:49:46.817727+00:00",
    "topped_up_at": "2026-11-07T22:02:23.064628+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.4,
@@ -5522,6 +5522,42 @@
     "polymarket_us": 0.1834
    },
    "intl_cost_per_share": 0.1874,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T02:52:10.675307+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Trail Blazers",
+   "market": "Spurs vs. Trail Blazers",
+   "link": "https://polymarket.com/event/nba-sas-por-2026-11-07",
+   "market_type": "moneyline",
+   "size_multiplier": 0.86,
+   "condition_id": "0x4c724036f06d2eb9fc9e983a7637d1ad11fb9dd3687a3ec9f12178dd0e119d83",
+   "token_id": "100938068625435351729413355008380181702901748373348600743777690605897615529768",
+   "outcome_index": 1,
+   "ends": "2026-11-08T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.34,
+   "avg_price": 0.34,
+   "shares": 23.727326908587944,
+   "cost": 8.45,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV07SASPOR-POR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.356
+   },
+   "intl_cost_per_share": 0.3411,
    "payout": null,
    "profit": null,
    "settled_at": null,
