@@ -214,21 +214,25 @@ def px_account():
     return cash, held
 
 
-def px_side_fill(side):
-    """(dollars staked, what they win, fees) from a ProphetX position. Seen 2026-11-08: "size" is
-    the payout if it wins ($1 shares), "average_price" a 0-1 price, "cost_basis" the dollars paid."""
-    shares = float(side.get("size") or 0)
-    avg = float(side.get("average_price") or 0)
-    p = venues.american_to_p(avg) if abs(avg) >= 100 else avg  # American odds or a 0-1 price
-    if not shares or not 0 < p < 1:
+def px_side_fill(side, before=None, fees=0.0):
+    """(dollars staked, what they win, fees) from a ProphetX position, minus what was held
+    `before` (size, cost) for a top-up. Seen 2026-11-08: "size" is the payout if it wins
+    ($1 shares) and "cost_basis" the dollars paid ("average_price" is rounded, so not used)."""
+    shares = float(side.get("size") or 0) - (before[0] if before else 0)
+    cost = float(side.get("cost_basis") or 0) - (before[1] if before else 0)
+    if shares <= 0 or cost <= 0 or cost >= shares:
         return 0.0, 0.0, 0.0
-    cost = float(side.get("cost_basis") or shares * p)
-    fees = max(round(cost - shares * p, 4), 0)
     return cost - fees, shares - (cost - fees), fees
 
 
-def px_order(ref, stake, max_price, order_id):
+def px_position(strike_id):
+    return next((s for pos in px_request("GET", "/v4/mm/positions").get("data") or []
+                 for s in pos.get("sides") or [] if s.get("strike_id") == strike_id), None)
+
+
+def px_order(ref, stake, max_price, order_id, before=None):
     """Stake `stake` dollars at no worse than max_price, fill now or cancel the rest.
+    before: (size, cost) already held on this bet (a top-up), else None.
     Returns (shares, average price paid, fees); shares pay $1 each if the bet wins."""
     odds = venues.px_ladder_price(max_price)
     if odds is None:
@@ -251,19 +255,25 @@ def px_order(ref, stake, max_price, order_id):
             continue  # not there yet
         if got and not float(got.get("open_quantity") or 0):
             final = got
-    if final:
-        filled = float(final.get("filled_quantity") or 0)  # dollars staked
-        win = float(final.get("profit") or 0)              # what those dollars win
-        fee = float(final.get("fee") or 0)
-    else:  # still unknown: read the account's position on this bet (it held none before)
-        side = next((s for pos in px_request("GET", "/v4/mm/positions").get("data") or []
-                     for s in pos.get("sides") or [] if s.get("strike_id") == ref["ref"]), None)
-        if not side:
-            raise VenueError(f"order {oid} sent but its result is unknown and no position was found; "
-                             "check the ProphetX app")
-        filled, win, fee = px_side_fill(side)
-    if not filled or win <= 0:
-        return 0.0, 0.0, 0.0
+    if final and not float(final.get("filled_quantity") or 0):
+        return 0.0, 0.0, 0.0  # confirmed: nothing filled
+    # The order's "profit" stays 0 and its "price" is our limit until the game settles, so the
+    # real fill (shares and cost) comes from the account's position on this bet.
+    fee = float((final or {}).get("fee") or 0)
+    side = None
+    for _ in range(5):
+        side = px_position(ref["ref"])
+        if side and px_side_fill(side, before)[0] > 0:
+            break
+        time.sleep(1)
+    filled, win, fee = px_side_fill(side, before, fee) if side else (0.0, 0.0, 0.0)
+    if not filled and final:  # position not updated yet: assume the limit price (the worst case)
+        filled = float(final["filled_quantity"])
+        p = venues.american_to_p(final.get("price") or odds)
+        win = filled / p - filled
+    if not filled:
+        raise VenueError(f"order {oid} sent but its result is unknown and no position was found; "
+                         "check the ProphetX app")
     shares = filled + win
     return shares, filled / shares, fee
 
@@ -464,7 +474,7 @@ def run(intents, max_above, state, paper_bets=None):
                     alert(f"🧪 Practice: would {kind.lower()}",
                           f"{what}\n${stake:.2f} on {where} at up to {cents(max_price)}")
                     continue
-                filled, px, fees = px_order(ref, stake, max_price, order_id)
+                filled, px, fees = px_order(ref, stake, max_price, order_id, held.get(ref["ref"]))
                 info.update(order_id=order_id, reply=dict(LAST_REPLY))
             except Exception as e:
                 log("order failed", error=f"{type(e).__name__}: {e}", reply=dict(LAST_REPLY), **info)
