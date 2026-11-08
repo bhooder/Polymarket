@@ -857,7 +857,7 @@
   },
   {
    "placed_at": "2026-11-07T11:03:29.475294+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Liberty",
    "market": "Spread: Liberty (-16.5)",
@@ -886,9 +886,9 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.03,
+   "settled_at": "2026-11-08T04:33:41.359569+00:00",
    "topped_up_at": "2026-11-07T21:23:55.636212+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.9,
