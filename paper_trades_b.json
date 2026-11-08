@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 741.2805898668636,
+ "cash": 707.0436674734466,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6019,7 +6019,7 @@
   {
    "placed_at": "2026-11-08T15:53:10.632980+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Heat vs. Kings: O/U 238.5",
    "link": "https://polymarket.com/event/nba-mia-sac-2026-11-08",
@@ -6032,10 +6032,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 1.3,
    "traders_entry": 0.51,
-   "avg_price": 0.51,
-   "shares": 18.35095442024823,
-   "cost": 9.69,
-   "fees": 0.33,
+   "avg_price": 0.5199,
+   "shares": 36.234290767627016,
+   "cost": 19.49,
+   "fees": 0.65,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -6051,7 +6051,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T20:27:13.891567+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.8,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T16:27:01.748995+00:00",
@@ -6243,7 +6246,7 @@
   {
    "placed_at": "2026-11-08T18:22:40.551253+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "49ers",
    "market": "Raiders vs. 49ers",
    "link": "https://polymarket.com/event/nfl-lv-sf-2026-11-08",
@@ -6257,9 +6260,9 @@
    "avg_bankroll_pct": 6.8,
    "traders_entry": 0.8,
    "avg_price": 0.795,
-   "shares": 11.684396072031774,
-   "cost": 9.47,
-   "fees": 0.1809,
+   "shares": 23.77595694910795,
+   "cost": 19.27,
+   "fees": 0.3681,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -6275,7 +6278,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T20:27:12.929187+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 5.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T19:14:18.688463+00:00",
@@ -6426,7 +6432,7 @@
   {
    "placed_at": "2026-11-08T20:02:12.451294+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Seahawks",
    "market": "Cardinals vs. Seahawks",
    "link": "https://polymarket.com/event/nfl-ari-sea-2026-11-08",
@@ -6440,9 +6446,9 @@
    "avg_bankroll_pct": 5.0,
    "traders_entry": 0.78,
    "avg_price": 0.7895,
-   "shares": 12.290429042904291,
-   "cost": 9.8,
-   "fees": 0.097,
+   "shares": 24.580858085808583,
+   "cost": 19.6,
+   "fees": 0.194,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -6456,6 +6462,46 @@
     "kalshi": 0.8023
    },
    "intl_cost_per_share": 0.795,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-08T20:27:13.655289+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.9,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-08T20:27:15.567182+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bucks",
+   "market": "Celtics vs. Bucks",
+   "link": "https://polymarket.com/event/nba-bos-mil-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 0.494,
+   "condition_id": "0xc2c8c1692b4f29d36ca4b0763046f46b4c1606cdb9355d5d466ea1730c265ab9",
+   "token_id": "64168382624750108408723147956653598224491055997369521642332976513006048573067",
+   "outcome_index": 1,
+   "ends": "2026-11-09T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.14,
+   "avg_price": 0.15,
+   "shares": 30.39169419537517,
+   "cost": 4.84,
+   "fees": 0.28,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV08BOSMIL-MIL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.1592,
+    "polymarket_us": 0.1621
+   },
+   "intl_cost_per_share": 0.1564,
    "payout": null,
    "profit": null,
    "settled_at": null,
