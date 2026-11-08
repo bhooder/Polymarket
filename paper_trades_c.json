@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 962.2057386119612,
+ "cash": 952.1916249978574,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1260,6 +1260,43 @@
     "polymarket_us": 0.6716
    },
    "intl_cost_per_share": 0.6614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T10:53:45.564909+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SS Lazio win on 2026-11-08?",
+   "link": "https://polymarket.com/event/sea-nap-laz-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x334ff786b5736dfa5e0ef1b4e6726b95d522289b65bed759d84edfc14928e820",
+   "token_id": "69210367891333886204757108230644862196458853511447109663086353362657739743508",
+   "outcome_index": 1,
+   "ends": "2026-11-08T11:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 8.1,
+   "traders_entry": 0.68,
+   "avg_price": 0.7,
+   "shares": 14.005876591576886,
+   "cost": 10.01,
+   "fees": 0.21,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV08NAPLAZ-LAZ",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.715,
+    "polymarket_us": 0.7199
+   },
+   "intl_cost_per_share": 0.7203,
    "payout": null,
    "profit": null,
    "settled_at": null,
