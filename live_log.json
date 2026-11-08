@@ -1184,5 +1184,54 @@
    "status": 200,
    "body": "{\"data\":{\"aggregator_id\":\"\",\"created_at\":\"2026-11-08T23:17:22Z\",\"external_id\":\"673f5ad9-6067-5953-a2c7-66e2c51db9a7\",\"fee\":0,\"filled_quantity\":1.98,\"market_id\":219,\"matching_status\":\"fully_matched\",\"open_quantity\":0,\"order_id\":\"partner_fd943756-8d35-4250-a9fd-ae04181acdf0\",\"original_quantity\":1.98,\"outcome_id\":4,\"price\":158,\"profit\":0,\"quantity\":1.98,\"settled_at\":null,\"sport_event_id\":1700008847,\"status\":\"open\",\"strike\":0,\"strike_id\":\"946e5f8242d2b00fc1a51ff6e0150348\",\"updated_at\":\"2026-11-08T23:17:23Z\",\"user_id\":\"98df2cd2-3320-4565-be6f-f55312b78781\",\"winning_status\":\"tbd\"},\"last_synced_at\":\"2026-11-08T23:17:24.548826Z\"}"
   }
+ },
+ {
+  "at": "2026-11-08T23:46:59.722735+00:00",
+  "event": "adopted",
+  "bet": "Vikings to win (vs. Bills)",
+  "venue": "prophetx",
+  "ref": "946e5f8242d2b00fc1a51ff6e0150348",
+  "staked": 1.98,
+  "price": 0.38747553816046965,
+  "fees": 0,
+  "position": {
+   "average_price": 0.39,
+   "closable_size": 5.11,
+   "closed_size": 0,
+   "cost_basis": 1.98,
+   "liquidation_value": 1.94,
+   "mark_price": 0.38,
+   "mark_value": 1.94,
+   "outcome_id": 4,
+   "size": 5.11,
+   "strike_id": "946e5f8242d2b00fc1a51ff6e0150348"
+  }
+ },
+ {
+  "at": "2026-11-08T23:47:11.931942+00:00",
+  "event": "order",
+  "filled": 0.0,
+  "price": 0.0,
+  "fees": 0.0,
+  "bet": "Under 222.5 (Jazz vs. Timberwolves)",
+  "pick": "Under",
+  "market": "Jazz vs. Timberwolves: O/U 222.5",
+  "venue": "prophetx",
+  "ref": "9f0bd316ee9a279153dfcae478a748e0",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5215,
+  "share": 0.01000010988733704,
+  "side": "BUY",
+  "stake": 2.06,
+  "max_price": 0.53,
+  "dollars": 2.09,
+  "bankroll": 208.89,
+  "order_id": "c5e060b7-919c-5c9e-ade8-524081eb838d",
+  "reply": {
+   "path": "/partner/v4/mm/get_order/partner_957a89a6-f5c5-4a82-a281-e9672c384d3a",
+   "status": 200,
+   "body": "{\"data\":{\"aggregator_id\":\"\",\"created_at\":\"2026-11-08T23:47:00Z\",\"external_id\":\"c5e060b7-919c-5c9e-ade8-524081eb838d\",\"fee\":0,\"filled_quantity\":2.06,\"market_id\":225,\"matching_status\":\"fully_matched\",\"open_quantity\":0,\"order_id\":\"partner_957a89a6-f5c5-4a82-a281-e9672c384d3a\",\"original_quantity\":2.06,\"outcome_id\":13,\"price\":-112,\"profit\":0,\"quantity\":2.06,\"settled_at\":null,\"sport_event_id\":1704710770,\"status\":\"open\",\"strike\":222.5,\"strike_id\":\"9f0bd316ee9a279153dfcae478a748e0\",\"updated_at\":\"2026-11-08T23:47:01Z\",\"user_id\":\"98df2cd2-3320-4565-be6f-f55312b78781\",\"winning_status\":\"tbd\"},\"last_synced_at\":\"2026-11-08T23:47:09.647932Z\"}"
+  }
  }
 ]
