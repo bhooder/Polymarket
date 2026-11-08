@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 751.0805898668635,
+ "cash": 741.2805898668636,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6418,6 +6418,44 @@
     "polymarket_us": 0.6983
    },
    "intl_cost_per_share": 0.6766,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T20:02:12.451294+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Seahawks",
+   "market": "Cardinals vs. Seahawks",
+   "link": "https://polymarket.com/event/nfl-ari-sea-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc5bb8d1793765a6d827da8c88290816c857440ece5e31e74350b6910a5f61b97",
+   "token_id": "12130305189237849839458849509685051961849231405794268935470902437002300737867",
+   "outcome_index": 1,
+   "ends": "2026-11-08T21:25:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.0,
+   "traders_entry": 0.78,
+   "avg_price": 0.7895,
+   "shares": 12.290429042904291,
+   "cost": 9.8,
+   "fees": 0.097,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "40f79ec1d5202a89e00c0baf54d673a5",
+    "fee_rate": 0.01,
+    "event_id": 1700008774
+   },
+   "quotes": {
+    "prophetx": 0.7974,
+    "polymarket_us": 0.801,
+    "kalshi": 0.8023
+   },
+   "intl_cost_per_share": 0.795,
    "payout": null,
    "profit": null,
    "settled_at": null,

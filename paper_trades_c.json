@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 927.0580639380704,
+ "cash": 916.9880639380704,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1562,6 +1562,44 @@
     "kalshi": 0.4574
    },
    "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T20:02:13.510952+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "76ers vs. Bulls: O/U 239.5",
+   "link": "https://polymarket.com/event/nba-phi-chi-2026-11-08",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ba2129cf4a06e5f851fcb866467fe5b16564fb3c5029fe4b57bbabcba957ad4",
+   "token_id": "70936387222476857436876848673672231548432736995563558652478874205093257165990",
+   "outcome_index": 0,
+   "ends": "2026-11-08T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.1,
+   "traders_entry": 0.46,
+   "avg_price": 0.4739,
+   "shares": 21.037326732673268,
+   "cost": 10.07,
+   "fees": 0.0997,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b3f43ac9b23ff2196fe62ec1d5f0acaf",
+    "fee_rate": 0.01,
+    "event_id": 1704710762
+   },
+   "quotes": {
+    "prophetx": 0.4787,
+    "kalshi": 0.4978,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
