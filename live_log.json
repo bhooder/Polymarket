@@ -1111,5 +1111,29 @@
   "profit": 0.91,
   "venue": "kalshi",
   "ref": "KXNFLGAME-26NOV08CLENO-NO"
+ },
+ {
+  "at": "2026-11-08T22:37:53.648495+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 404 on /partner/v4/mm/get_order/partner_7ee2da33-09eb-4e9d-bfd5-4df5f4a646cf: {\"error\":\"data_not_found\",\"message\":\"Data not found\"}",
+  "reply": {
+   "path": "/partner/v4/mm/get_order/partner_7ee2da33-09eb-4e9d-bfd5-4df5f4a646cf",
+   "status": 404,
+   "body": "{\"error\":\"data_not_found\",\"message\":\"Data not found\"}"
+  },
+  "bet": "Under 226.5 (Pelicans vs. Clippers)",
+  "pick": "Under",
+  "market": "Pelicans vs. Clippers: O/U 226.5",
+  "venue": "prophetx",
+  "ref": "208fcb9efb89adc125a33a8698b82890",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5025,
+  "share": 0.01000010988733704,
+  "side": "BUY",
+  "stake": 2.06,
+  "max_price": 0.51,
+  "dollars": 2.09,
+  "bankroll": 208.89
  }
 ]

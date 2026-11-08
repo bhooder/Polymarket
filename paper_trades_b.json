@@ -6322,7 +6322,7 @@
   },
   {
    "placed_at": "2026-11-08T19:52:54.964230+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FC Barcelona win on 2026-11-08?",
@@ -6351,9 +6351,9 @@
     "prophetx": 0.4927
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.59,
+   "settled_at": "2026-11-08T22:36:13.359410+00:00",
    "topped_up_at": null
   },
   {
