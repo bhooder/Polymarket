@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 707.0436674734466,
+ "cash": 721.414637108169,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5604,7 +5604,7 @@
   },
   {
    "placed_at": "2026-11-08T09:21:49.412034+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will NEC win on 2026-11-08?",
@@ -5633,9 +5633,9 @@
     "polymarket_us": 0.6716
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.08,
+   "settled_at": "2026-11-08T21:13:37.239031+00:00",
    "topped_up_at": "2026-11-08T17:48:50.968513+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 6.3,
@@ -5978,7 +5978,7 @@
   },
   {
    "placed_at": "2026-11-08T15:14:19.210708+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Chiefs",
    "market": "Jets vs. Chiefs",
@@ -6008,9 +6008,9 @@
     "polymarket_us": 0.8223
    },
    "intl_cost_per_share": 0.8146,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.55,
+   "profit": 4.22,
+   "settled_at": "2026-11-08T21:13:37.388325+00:00",
    "topped_up_at": "2026-11-08T17:12:45.466804+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 6.3,
@@ -6135,7 +6135,7 @@
   },
   {
    "placed_at": "2026-11-08T16:27:03.791916+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Dolphins",
    "market": "Lions vs. Dolphins",
@@ -6165,9 +6165,9 @@
     "kalshi": 0.2842
    },
    "intl_cost_per_share": 0.2759,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.01,
+   "settled_at": "2026-11-08T21:13:37.512259+00:00",
    "topped_up_at": null
   },
   {
@@ -6502,6 +6502,44 @@
     "polymarket_us": 0.1621
    },
    "intl_cost_per_share": 0.1564,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T21:15:11.409046+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Packers",
+   "market": "Packers vs. Patriots",
+   "link": "https://polymarket.com/event/nfl-gb-ne-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x3ad22bb372e857f97155f099d1352f34c712ff83d34390c272b9ede7d298a62f",
+   "token_id": "14633126211415203319992104727819834222167634471206768236497617418739936203562",
+   "outcome_index": 0,
+   "ends": "2026-11-08T21:25:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.38,
+   "avg_price": 0.3817,
+   "shares": 23.813465346534652,
+   "cost": 9.18,
+   "fees": 0.0909,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b3be518c5cc2cfead15696810739ca5a",
+    "fee_rate": 0.01,
+    "event_id": 1700008920
+   },
+   "quotes": {
+    "prophetx": 0.3855,
+    "kalshi": 0.4069,
+    "polymarket_us": 0.41
+   },
+   "intl_cost_per_share": 0.3971,
    "payout": null,
    "profit": null,
    "settled_at": null,

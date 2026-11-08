@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 886.7814471042198,
+ "cash": 898.7823291995128,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1231,7 +1231,7 @@
   },
   {
    "placed_at": "2026-11-08T09:21:49.715652+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will NEC win on 2026-11-08?",
@@ -1260,9 +1260,9 @@
     "polymarket_us": 0.6716
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.78,
+   "settled_at": "2026-11-08T21:13:37.979295+00:00",
    "topped_up_at": "2026-11-08T17:48:52.051699+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 6.3,
@@ -1455,7 +1455,7 @@
   },
   {
    "placed_at": "2026-11-08T17:12:46.628547+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Chiefs",
    "market": "Jets vs. Chiefs",
@@ -1485,9 +1485,9 @@
     "polymarket_us": 0.8223
    },
    "intl_cost_per_share": 0.8146,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.0,
+   "profit": 2.15,
+   "settled_at": "2026-11-08T21:13:38.085941+00:00",
    "topped_up_at": null
   },
   {
