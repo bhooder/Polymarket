@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1110.5707239953135,
+ "cash": 1087.9013362795677,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2060,6 +2060,43 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T00:59:01.988410+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Thunder",
+   "market": "Spread: Thunder (-13.5)",
+   "link": "https://polymarket.com/event/nba-was-okc-2026-11-07",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc52b03fa76023b79b8b745bb5967b152b76281f536dcfbcba07b110c86f94736",
+   "token_id": "60569182418488379522594488059962940770936096812194415071989791549065764273847",
+   "outcome_index": 0,
+   "ends": "2026-11-08T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 36.4,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 46.48805896967198,
+   "cost": 22.67,
+   "fees": 0.82,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV07WASOKC-OKC14",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4876,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,

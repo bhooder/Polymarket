@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 923.4841150010859,
+ "cash": 982.2457386119612,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -817,7 +817,7 @@
   },
   {
    "placed_at": "2026-11-07T06:00:26.701453+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Alabama",
    "market": "Spread: LSU (-5.5)",
@@ -847,9 +847,9 @@
     "kalshi": 0.5077
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.61,
+   "profit": 19.66,
+   "settled_at": "2026-11-08T00:57:00.468669+00:00",
    "topped_up_at": "2026-11-07T18:42:33.136609+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 0.7,
@@ -1045,7 +1045,7 @@
   },
   {
    "placed_at": "2026-11-07T16:43:40.598270+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cincinnati",
    "market": "Spread: Houston (-10.5)",
@@ -1075,9 +1075,9 @@
     "polymarket_us": 0.5287
    },
    "intl_cost_per_share": 0.5175,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.15,
+   "profit": 9.24,
+   "settled_at": "2026-11-08T00:57:00.651464+00:00",
    "topped_up_at": null
   },
   {

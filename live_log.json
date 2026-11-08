@@ -673,5 +673,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"5477eb35-f487-5b96-a24b-7386ed637e7b\",\"fill_count\":\"4.00\",\"order_id\":\"01a1b77a-6fe8-7892-bd50-8ff37b82569a\",\"remaining_count\":\"0.00\",\"ts_ms\":1794079617552}"
   }
+ },
+ {
+  "at": "2026-11-08T00:59:03.620733+00:00",
+  "event": "order",
+  "filled": 8.0,
+  "price": 0.47,
+  "fees": 0.1392,
+  "bet": "Thunder -13.5",
+  "pick": "Thunder",
+  "market": "Spread: Thunder (-13.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV07WASOKC-OKC14",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.47,
+  "share": 0.020001928302435745,
+  "side": "YES",
+  "contracts": 8,
+  "max_price": 0.48,
+  "dollars": 3.97,
+  "bankroll": 198.56,
+  "order_id": "534063c4-fdb9-5401-b238-25e0d59524d6",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4700\",\"client_order_id\":\"534063c4-fdb9-5401-b238-25e0d59524d6\",\"fill_count\":\"8.00\",\"order_id\":\"01a1b8aa-7bd8-7f15-8853-6a1af36471a2\",\"remaining_count\":\"0.00\",\"ts_ms\":1794099543597}"
+  }
  }
 ]
