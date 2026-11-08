@@ -986,5 +986,32 @@
   "max_price": 0.54,
   "dollars": 4.17,
   "bankroll": 208.76
+ },
+ {
+  "at": "2026-11-08T16:42:30.703819+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.46,
+  "fees": 0.09,
+  "bet": "FC Internazionale Milano to win",
+  "pick": "Yes",
+  "market": "Will FC Internazionale Milano win on 2026-11-08?",
+  "venue": "polymarket_us",
+  "ref": "atc-sea-int-com-2026-11-08-int",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.46,
+  "share": 0.009998468815933404,
+  "side": "YES",
+  "contracts": 4,
+  "max_price": 0.49,
+  "dollars": 2.09,
+  "bankroll": 208.76,
+  "order_id": "2189e479-3fe4-5800-ab20-05ac13667998",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DKKGC6QG14F0\",\"executions\":[{\"id\":\"DKKGC6QGK3YG\",\"order\":{\"id\":\"DKKGC6QG14F0\",\"marketSlug\":\"atc-sea-int-com-2026-11-08-int\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.49\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"atc-sea-int-com-2026-11-08-int\",\"icon\":\"\",\"title\":\"FC Internazionale Milano vs. Como 1907\",\"outcome\":\"Yes\",\"eventSlug\":\"sea-int-com-2026-11-08\",\"teamId\":3427,\"team\":{\"id\":3427,\"name\":\"FC Internazionale Milano\",\"abbreviation\":\"int\",\"league\":\"sea\",\"record\":\"8-1-1\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"alias\":\"La Beneamata\",\"safeName\":\"Inter\",\"homeIcon\":\"\",\"awayIcon\":\"\",\"colorPrimary\":\"#010E80\",\"providerId\":668,\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"displayAbbreviation\":\"INT\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"668\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"sr:competitor:2697\"}],\"longIconDark\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"shortIconDark\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"color\":{"
+  }
  }
 ]

@@ -750,6 +750,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T16:42:30.703825+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Yes",
+   "market": "Will FC Internazionale Milano win on 2026-11-08?",
+   "link": "https://polymarket.com/event/sea-int-com-2026-11-08",
+   "market_type": "moneyline",
+   "condition_id": "0xb08d4211cc9304192c286ad59ff893bc3e8ade214587b31e48356b83a86cf329",
+   "token_id": "75700996757636199984161357126699600525356737868093660601079576767461202980691",
+   "outcome_index": 0,
+   "ends": "2026-11-08T17:00:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 15.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.46,
+   "shares": 4.0,
+   "cost": 1.93,
+   "fees": 0.09,
+   "contracts_ordered": 4,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-sea-int-com-2026-11-08-int",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.4600000000000001,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -920,8 +954,15 @@
    "venue": "polymarket_us",
    "ordered": 3,
    "filled": 3.0
+  },
+  {
+   "at": "2026-11-08T16:42:30.703806+00:00",
+   "pick": "Yes",
+   "venue": "polymarket_us",
+   "ordered": 4,
+   "filled": 4.0
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T16:27:05.031284+00:00"
+ "balances_checked_at": "2026-11-08T16:42:30.448480+00:00"
 }
