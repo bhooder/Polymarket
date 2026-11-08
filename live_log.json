@@ -1013,5 +1013,32 @@
    "status": 200,
    "body": "{\"id\":\"DKKGC6QG14F0\",\"executions\":[{\"id\":\"DKKGC6QGK3YG\",\"order\":{\"id\":\"DKKGC6QG14F0\",\"marketSlug\":\"atc-sea-int-com-2026-11-08-int\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.49\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"atc-sea-int-com-2026-11-08-int\",\"icon\":\"\",\"title\":\"FC Internazionale Milano vs. Como 1907\",\"outcome\":\"Yes\",\"eventSlug\":\"sea-int-com-2026-11-08\",\"teamId\":3427,\"team\":{\"id\":3427,\"name\":\"FC Internazionale Milano\",\"abbreviation\":\"int\",\"league\":\"sea\",\"record\":\"8-1-1\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"alias\":\"La Beneamata\",\"safeName\":\"Inter\",\"homeIcon\":\"\",\"awayIcon\":\"\",\"colorPrimary\":\"#010E80\",\"providerId\":668,\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"displayAbbreviation\":\"INT\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"668\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"sr:competitor:2697\"}],\"longIconDark\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"shortIconDark\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/random-team-images/serie-a/Inter.png\",\"color\":{"
   }
+ },
+ {
+  "at": "2026-11-08T17:12:47.236104+00:00",
+  "event": "order",
+  "filled": 8.0,
+  "price": 0.48,
+  "fees": 0.1392,
+  "bet": "Over 38.5 (Giants vs. Eagles)",
+  "pick": "Over",
+  "market": "Giants vs. Eagles: O/U 38.5",
+  "venue": "kalshi",
+  "ref": "KXNFLTOTAL-26NOV08NYGPHI-39",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.48,
+  "share": 0.019996937631866805,
+  "side": "YES",
+  "contracts": 8,
+  "max_price": 0.49,
+  "dollars": 4.17,
+  "bankroll": 208.76,
+  "order_id": "9771d192-c503-5ce2-9324-8dac5a5637db",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"9771d192-c503-5ce2-9324-8dac5a5637db\",\"fill_count\":\"8.00\",\"order_id\":\"01a1bc25-f698-71ca-9bb5-d790e6fd5e88\",\"remaining_count\":\"0.00\",\"ts_ms\":1794157967236}"
+  }
  }
 ]

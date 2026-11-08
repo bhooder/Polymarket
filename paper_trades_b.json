@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 805.171908242326,
+ "cash": 766.5474918544645,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5973,7 +5973,7 @@
   {
    "placed_at": "2026-11-08T15:14:19.210708+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Chiefs",
    "market": "Jets vs. Chiefs",
    "link": "https://polymarket.com/event/nfl-nyj-kc-2026-11-08",
@@ -5986,10 +5986,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 11.3,
    "traders_entry": 0.81,
-   "avg_price": 0.81,
-   "shares": 11.793760272328644,
-   "cost": 9.68,
-   "fees": 0.13,
+   "avg_price": 0.8097,
+   "shares": 23.550969634722385,
+   "cost": 19.33,
+   "fees": 0.26,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -6005,7 +6005,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T17:12:45.466804+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 6.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T15:53:10.632980+00:00",
@@ -6084,7 +6087,7 @@
   {
    "placed_at": "2026-11-08T16:27:03.296540+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: 76ers (-9.5)",
    "link": "https://polymarket.com/event/nba-phi-chi-2026-11-08",
@@ -6098,9 +6101,9 @@
    "avg_bankroll_pct": 0.9,
    "traders_entry": 0.48,
    "avg_price": 0.49,
-   "shares": 18.8032674083511,
-   "cost": 9.66,
-   "fees": 0.4464,
+   "shares": 37.6065348167022,
+   "cost": 19.32,
+   "fees": 0.8928,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -6116,7 +6119,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-08T17:12:45.586368+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-08T16:27:03.791916+00:00",
@@ -6150,6 +6156,79 @@
     "kalshi": 0.2842
    },
    "intl_cost_per_share": 0.2759,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T17:12:45.770504+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Giants vs. Eagles: O/U 38.5",
+   "link": "https://polymarket.com/event/nfl-nyg-phi-2026-11-08",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe2fb57cb0a628241003197d2c31ab974d2576e96c863ea6f10b1ecbdb79c4318",
+   "token_id": "50173754203387167565404468989278658343227039767069033393744629067897148809921",
+   "outcome_index": 0,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 25.2,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 19.3980766756722,
+   "cost": 9.65,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV08NYGPHI-39",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4975
+   },
+   "intl_cost_per_share": 0.4675,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T17:12:45.983032+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cowboys",
+   "market": "Cowboys vs. Colts",
+   "link": "https://polymarket.com/event/nfl-dal-ind-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf2b6f73984047ec5f5e1b733d01b41536d63f349fcf9e38f2e281f1f8b047147",
+   "token_id": "15958206371881608074550160382583815733297192883347780465607399192524953510027",
+   "outcome_index": 0,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.4,
+   "traders_entry": 0.67,
+   "avg_price": 0.6725,
+   "shares": 13.93088752939955,
+   "cost": 9.66,
+   "fees": 0.2915,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-dal-ind-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.6934,
+    "kalshi": 0.6958
+   },
+   "intl_cost_per_share": 0.6766,
    "payout": null,
    "profit": null,
    "settled_at": null,
