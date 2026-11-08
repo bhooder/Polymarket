@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 982.2457386119612,
+ "cash": 972.2257386119612,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1191,6 +1191,42 @@
    "payout": 0.0,
    "profit": -8.79,
    "settled_at": "2026-11-08T03:37:17.791412+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T07:33:59.179153+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "RC Celta de Vigo vs. Levante UD: O/U 2.5",
+   "link": "https://polymarket.com/event/lal-cel-lev-2026-11-08-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa7298ac16ab577c93f3527628eda0e257a30feba1337f67075f86870ed417f8a",
+   "token_id": "107140101958717410006862049128627629380160384814241224488394908145854254727174",
+   "outcome_index": 1,
+   "ends": "2026-11-08T17:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.52,
+   "shares": 18.428874109822846,
+   "cost": 10.02,
+   "fees": 0.437,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-lal-cel-lev-2026-11-08-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

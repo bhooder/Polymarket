@@ -733,5 +733,29 @@
   "profit": 4.1,
   "venue": "kalshi",
   "ref": "KXNBASPREAD-26NOV07WASOKC-OKC14"
+ },
+ {
+  "at": "2026-11-08T07:34:00.049597+00:00",
+  "event": "order failed",
+  "error": "VenueError: HTTP 403 on /trade-api/v2/portfolio/events/orders: {\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 403,
+   "body": "{\"error\":{\"code\":\"Trading_is_not_currently_allowed_in_Washington_on_markets_in_Sports,_Elections,_Politics,_Culture,_Tech_and_Science,_and_Mentions.\",\"message\":\"Trading is not currently allowed in Washington on markets in Sports, Elections, Politics, Culture, Tech and Science, and Mentions.\"}}"
+  },
+  "bet": "Colts +4.5",
+  "pick": "Colts",
+  "market": "Spread: Cowboys (-4.5)",
+  "venue": "kalshi",
+  "ref": "KXNFLSPREAD-26NOV08DALIND-DAL5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.51,
+  "share": 0.009998460678906924,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.52,
+  "dollars": 2.07,
+  "bankroll": 206.9
  }
 ]

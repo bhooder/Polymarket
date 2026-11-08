@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1181.181821809307,
+ "cash": 1169.3731396087849,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2100,6 +2100,43 @@
    "payout": 46.49,
    "profit": 23.82,
    "settled_at": "2026-11-08T03:37:17.449698+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T07:33:57.319796+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Colts",
+   "market": "Spread: Cowboys (-4.5)",
+   "link": "https://polymarket.com/event/nfl-dal-ind-2026-11-08",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc54e0f7abc8f77f5f7d77ff4f6ad2697749dde77b20d6d5f473600d98e924781",
+   "token_id": "18375076738989960239950203428843457237479440935964557641280962198473407816478",
+   "outcome_index": 1,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 22.369965099062927,
+   "cost": 11.81,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV08DALIND-DAL5",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5279,
+    "polymarket_us": 0.5287
+   },
+   "intl_cost_per_share": 0.5175,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
