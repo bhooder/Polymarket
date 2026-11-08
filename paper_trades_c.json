@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 956.1376148627425,
+ "cash": 946.0776148627425,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1334,6 +1334,43 @@
     "polymarket_us": 0.5487
    },
    "intl_cost_per_share": 0.5275,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T14:30:08.822503+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Giants",
+   "market": "Giants vs. Eagles",
+   "link": "https://polymarket.com/event/nfl-nyg-phi-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3dd5a9a57210560fe11f668ead4f31156443ce848c58135413a15d77d70e2a1b",
+   "token_id": "91471525512370531263048668917293652754626557427218687859075864659124414889076",
+   "outcome_index": 0,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 11.8,
+   "traders_entry": 0.59,
+   "avg_price": 0.6025,
+   "shares": 16.089515120930507,
+   "cost": 10.06,
+   "fees": 0.3661,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-nyg-phi-2026-11-08",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.6253,
+    "kalshi": 0.6268
+   },
+   "intl_cost_per_share": 0.5973,
    "payout": null,
    "profit": null,
    "settled_at": null,

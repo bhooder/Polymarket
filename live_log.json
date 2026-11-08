@@ -924,5 +924,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0161\",\"average_fill_price\":\"0.6400\",\"client_order_id\":\"ca748a57-7b56-55a3-bc8a-be4db136ec43\",\"fill_count\":\"3.00\",\"order_id\":\"01a1bb6e-8990-7596-8f62-db934caf3462\",\"remaining_count\":\"0.00\",\"ts_ms\":1794145946741}"
   }
+ },
+ {
+  "at": "2026-11-08T14:30:09.783525+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.795,
+  "fees": 0.05,
+  "bet": "49ers to win (vs. Raiders)",
+  "pick": "49ers",
+  "market": "Raiders vs. 49ers",
+  "venue": "polymarket_us",
+  "ref": "aec-nfl-lv-sf-2026-11-08",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.795,
+  "share": 0.010002786819682195,
+  "side": "NO",
+  "contracts": 3,
+  "max_price": 0.82,
+  "dollars": 2.08,
+  "bankroll": 207.68,
+  "order_id": "4639308f-f829-5723-8504-85a826ededb0",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DKHKSG9014EX\",\"executions\":[{\"id\":\"DKHKSG9G33YG\",\"order\":{\"id\":\"DKHKSG9014EX\",\"marketSlug\":\"aec-nfl-lv-sf-2026-11-08\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.18\",\"currency\":\"USD\"},\"quantity\":3,\"cumQuantity\":0,\"leavesQuantity\":3,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"aec-nfl-lv-sf-2026-11-08\",\"icon\":\"\",\"title\":\"LV Raiders vs. SF 49ers\",\"outcome\":\"49ers\",\"eventSlug\":\"nfl-lv-sf-2026-11-08\",\"teamId\":76,\"team\":{\"id\":76,\"name\":\"San Francisco 49ers\",\"abbreviation\":\"sf\",\"league\":\"nfl\",\"record\":\"6-1\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/SF.png\",\"alias\":\"49ers\",\"safeName\":\"SF 49ers\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"colorPrimary\":\"#AA0000\",\"providerId\":31,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"displayAbbreviation\":\"SF\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"31\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"f0e724b0-4cbf-495a-be47-013907608da9\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_home.png\",\"shortIconDark\":\"https://static.polymarket.us/images/teams/nfl-sf/SF_away.png\",\"color\":{\"light\":\"#AA0000\",\"dark\":\"#AA0000\"}},"
+  }
  }
 ]

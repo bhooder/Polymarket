@@ -1,5 +1,5 @@
 {
- "cash": 203.71,
+ "cash": 199.86,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -716,6 +716,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T14:30:09.783534+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "49ers",
+   "market": "Raiders vs. 49ers",
+   "link": "https://polymarket.com/event/nfl-lv-sf-2026-11-08",
+   "market_type": "moneyline",
+   "condition_id": "0x71cb322cecc95314c0492f68a8ddddf870b7df42e155d557b0703b21769da6c3",
+   "token_id": "3056245129719015156340485110272793966206131869899261981635577172569123390532",
+   "outcome_index": 1,
+   "ends": "2026-11-08T21:25:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.2,
+   "traders_entry": 0.8,
+   "avg_price": 0.795,
+   "shares": 3.0,
+   "cost": 2.44,
+   "fees": 0.05,
+   "contracts_ordered": 3,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-lv-sf-2026-11-08",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.7949999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -879,8 +913,15 @@
    "venue": "kalshi",
    "ordered": 3,
    "filled": 3.0
+  },
+  {
+   "at": "2026-11-08T14:30:09.783505+00:00",
+   "pick": "49ers",
+   "venue": "polymarket_us",
+   "ordered": 3,
+   "filled": 3.0
   }
  ],
  "daily_check": "2026-11-08",
- "balances_checked_at": "2026-11-08T13:52:25.952330+00:00"
+ "balances_checked_at": "2026-11-08T14:30:09.464133+00:00"
 }
