@@ -215,12 +215,16 @@ def px_account():
 
 
 def px_side_fill(side):
-    """(dollars staked, what they win, fees) from a ProphetX position."""
-    filled = float(side.get("size") or 0)
+    """(dollars staked, what they win, fees) from a ProphetX position. Seen 2026-11-08: "size" is
+    the payout if it wins ($1 shares), "average_price" a 0-1 price, "cost_basis" the dollars paid."""
+    shares = float(side.get("size") or 0)
     avg = float(side.get("average_price") or 0)
     p = venues.american_to_p(avg) if abs(avg) >= 100 else avg  # American odds or a 0-1 price
-    win = filled / p - filled if 0 < p < 1 else 0
-    return filled, win, max(float(side.get("cost_basis") or filled) - filled, 0)
+    if not shares or not 0 < p < 1:
+        return 0.0, 0.0, 0.0
+    cost = float(side.get("cost_basis") or shares * p)
+    fees = max(round(cost - shares * p, 4), 0)
+    return cost - fees, shares - (cost - fees), fees
 
 
 def px_order(ref, stake, max_price, order_id):
