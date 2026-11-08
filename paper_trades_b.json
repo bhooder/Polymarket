@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 818.6511876856858,
+ "cash": 808.9682418650997,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5962,6 +5962,43 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-08T15:14:19.210708+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Chiefs",
+   "market": "Jets vs. Chiefs",
+   "link": "https://polymarket.com/event/nfl-nyj-kc-2026-11-08",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x525051eaca67266968cf515f20aa390fa2cc2ff05a394520f0c44696698a9d7b",
+   "token_id": "98755400007403441339753945703224591459369800189557728169704036790777451198150",
+   "outcome_index": 1,
+   "ends": "2026-11-08T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.3,
+   "traders_entry": 0.81,
+   "avg_price": 0.81,
+   "shares": 11.793760272328644,
+   "cost": 9.68,
+   "fees": 0.13,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV08NYJKC-KC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.821,
+    "polymarket_us": 0.8223
+   },
+   "intl_cost_per_share": 0.8146,
    "payout": null,
    "profit": null,
    "settled_at": null,
