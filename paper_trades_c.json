@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 914.8718443204433,
+ "cash": 935.9091710531166,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1492,7 +1492,7 @@
   },
   {
    "placed_at": "2026-11-08T17:12:46.852094+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: 76ers (-9.5)",
@@ -1522,9 +1522,9 @@
     "kalshi": 0.5179
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.93,
+   "settled_at": "2026-11-08T23:15:24.712771+00:00",
    "topped_up_at": "2026-11-08T19:52:57.262217+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 7.1,
@@ -1572,7 +1572,7 @@
   },
   {
    "placed_at": "2026-11-08T20:02:13.510952+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "76ers vs. Bulls: O/U 239.5",
@@ -1603,9 +1603,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.04,
+   "profit": 10.97,
+   "settled_at": "2026-11-08T23:15:24.793974+00:00",
    "topped_up_at": null
   },
   {

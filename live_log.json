@@ -1157,5 +1157,32 @@
    "size": 4.1,
    "strike_id": "208fcb9efb89adc125a33a8698b82890"
   }
+ },
+ {
+  "at": "2026-11-08T23:17:33.771825+00:00",
+  "event": "order",
+  "filled": 0.0,
+  "price": 0.0,
+  "fees": 0.0,
+  "bet": "Vikings to win (vs. Bills)",
+  "pick": "Vikings",
+  "market": "Bills vs. Vikings",
+  "venue": "prophetx",
+  "ref": "946e5f8242d2b00fc1a51ff6e0150348",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.3876,
+  "share": 0.009590604977945678,
+  "side": "BUY",
+  "stake": 1.98,
+  "max_price": 0.39,
+  "dollars": 2.0,
+  "bankroll": 208.89,
+  "order_id": "673f5ad9-6067-5953-a2c7-66e2c51db9a7",
+  "reply": {
+   "path": "/partner/v4/mm/get_order/partner_fd943756-8d35-4250-a9fd-ae04181acdf0",
+   "status": 200,
+   "body": "{\"data\":{\"aggregator_id\":\"\",\"created_at\":\"2026-11-08T23:17:22Z\",\"external_id\":\"673f5ad9-6067-5953-a2c7-66e2c51db9a7\",\"fee\":0,\"filled_quantity\":1.98,\"market_id\":219,\"matching_status\":\"fully_matched\",\"open_quantity\":0,\"order_id\":\"partner_fd943756-8d35-4250-a9fd-ae04181acdf0\",\"original_quantity\":1.98,\"outcome_id\":4,\"price\":158,\"profit\":0,\"quantity\":1.98,\"settled_at\":null,\"sport_event_id\":1700008847,\"status\":\"open\",\"strike\":0,\"strike_id\":\"946e5f8242d2b00fc1a51ff6e0150348\",\"updated_at\":\"2026-11-08T23:17:23Z\",\"user_id\":\"98df2cd2-3320-4565-be6f-f55312b78781\",\"winning_status\":\"tbd\"},\"last_synced_at\":\"2026-11-08T23:17:24.548826Z\"}"
+  }
  }
 ]
