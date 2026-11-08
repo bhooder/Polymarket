@@ -372,7 +372,7 @@ def adopt_unrecorded(state, accounts, paper_bets):
         what = plain(pb["pick"], pb["market"])
         log("adopted", bet=what, venue="prophetx", ref=ref["ref"], staked=filled, price=filled / shares,
             fees=fees, position=side)
-        alert("📝 Recorded", f"{what}\nFound ${filled:.2f} on ProphetX at {cents(filled / shares)} "
+        alert("📝 Recorded", f"{what}\nFound ${filled + fees:.2f} on ProphetX at {cents(filled / shares)} "
                             f"that wasn't in the records. Added.")
 
 
