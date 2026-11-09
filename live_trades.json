@@ -988,6 +988,40 @@
    "profit": 2.24,
    "settled_at": "2026-11-09T05:00:39.412257+00:00",
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T13:58:01.289035+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Under",
+   "market": "Bills vs. Vikings: O/U 44.5",
+   "link": "https://polymarket.com/event/nfl-buf-min-2026-11-10",
+   "market_type": "totals",
+   "condition_id": "0xee8df37d79bca56589475dc457241d70b3a02e4ecc9bac6ec6f4b3fba9c0ed58",
+   "token_id": "8148082094582932912518355292372998709515019150477926073885870500195831747835",
+   "outcome_index": 1,
+   "ends": "2026-11-10T01:15:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.9,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 4.28,
+   "cost": 2.14,
+   "fees": 0.0,
+   "contracts_ordered": 2.14,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a161e61046da4d52f035f70876d8004b",
+    "fee_rate": 0.01,
+    "event_id": 1700008847
+   },
+   "paper_price": 0.5,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1200,8 +1234,15 @@
    "venue": "prophetx",
    "ordered": 2.07,
    "filled": 2.07
+  },
+  {
+   "at": "2026-11-09T13:58:01.289005+00:00",
+   "pick": "Under",
+   "venue": "prophetx",
+   "ordered": 2.14,
+   "filled": 2.14
   }
  ],
  "daily_check": "2026-11-09",
- "balances_checked_at": "2026-11-09T12:40:38.448414+00:00"
+ "balances_checked_at": "2026-11-09T13:57:50.322601+00:00"
 }
