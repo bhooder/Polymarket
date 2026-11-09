@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 903.7765784973844,
+ "cash": 883.6469649708143,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2028,6 +2028,43 @@
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 7.6,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-09T23:30:42.941988+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Lakers",
+   "market": "Spread: Hawks (-2.5)",
+   "link": "https://polymarket.com/event/nba-lal-atl-2026-11-09",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa17225373cc86760a72285b4980d11bb4db7eaa9f5f20807bc82988456885e74",
+   "token_id": "95635431072891290037927897095158675008481363061395292826722018794941609071512",
+   "outcome_index": 1,
+   "ends": "2026-11-10T00:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 38.87922705314009,
+   "cost": 20.13,
+   "fees": 0.69,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV09LALATL-ATL3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5177,
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
