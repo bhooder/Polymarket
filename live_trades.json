@@ -890,7 +890,7 @@
   {
    "placed_at": "2026-11-08T23:46:59.722547+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "size_multiplier": 0.959,
    "pick": "Vikings",
    "market": "Bills vs. Vikings",
@@ -903,10 +903,10 @@
    "bettors": 3,
    "avg_bankroll_pct": 30.7,
    "traders_entry": 0.37,
-   "avg_price": 0.3875,
-   "shares": 5.11,
-   "cost": 1.98,
-   "fees": 0,
+   "avg_price": 0.3844,
+   "shares": 10.38,
+   "cost": 3.99,
+   "fees": 0.0,
    "contracts_ordered": 1.98,
    "venue": "prophetx",
    "venue_ref": {
@@ -919,7 +919,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T15:51:44.506848+00:00",
+   "top_up_size_multiplier": 0.939
   },
   {
    "placed_at": "2026-11-08T23:53:28.595322+00:00",
@@ -1241,8 +1242,15 @@
    "venue": "prophetx",
    "ordered": 2.14,
    "filled": 2.14
+  },
+  {
+   "at": "2026-11-09T15:51:44.506799+00:00",
+   "pick": "Vikings",
+   "venue": "prophetx",
+   "ordered": 2.01,
+   "filled": 2.01
   }
  ],
  "daily_check": "2026-11-09",
- "balances_checked_at": "2026-11-09T14:54:41.616277+00:00"
+ "balances_checked_at": "2026-11-09T15:51:33.212930+00:00"
 }
