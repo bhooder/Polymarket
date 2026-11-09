@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 844.4940850912881,
+ "cash": 834.544085091288,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7083,7 +7083,7 @@
   {
    "placed_at": "2026-11-09T18:30:12.119069+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Raptors",
    "market": "Spread: Raptors (-3.5)",
    "link": "https://polymarket.com/event/nba-mem-tor-2026-11-09",
@@ -7096,10 +7096,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 6.2,
    "traders_entry": 0.46,
-   "avg_price": 0.4762,
-   "shares": 20.68811881188119,
-   "cost": 9.95,
-   "fees": 0.0985,
+   "avg_price": 0.4706,
+   "shares": 41.86881188118812,
+   "cost": 19.9,
+   "fees": 0.197,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -7116,7 +7116,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T21:28:40.745142+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.7,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-09T18:30:13.304272+00:00",

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 933.9569545459814,
+ "cash": 923.8968291964491,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1952,6 +1952,43 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-09T21:28:41.377523+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Raptors (-3.5)",
+   "link": "https://polymarket.com/event/nba-mem-tor-2026-11-09",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x97f70345e187e643ab479bbcb5abc6e24073be9b4c2b18e76e8bdf931b9b0d42",
+   "token_id": "66794377167576699920884698605194050603235436988903413790858108312200012347616",
+   "outcome_index": 0,
+   "ends": "2026-11-10T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 4.7,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 20.638564573473086,
+   "cost": 10.06,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV09MEMTOR-TOR4",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4874,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.476,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
