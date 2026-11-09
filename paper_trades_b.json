@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 985.4792058642352,
+ "cash": 979.1992058642352,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6840,6 +6840,43 @@
     "kalshi": 0.7728
    },
    "intl_cost_per_share": 0.7594,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T08:52:38.541198+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Pelicans vs. Warriors",
+   "link": "https://polymarket.com/event/nba-nop-gsw-2026-11-09",
+   "market_type": "moneyline",
+   "size_multiplier": 0.631,
+   "condition_id": "0xeb5633bfb5a36d41d7fb04f65a8933404bfc8a1784189f62d70a187308492819",
+   "token_id": "29761819082777832649428754437422239896605409325140952549185627004133565272791",
+   "outcome_index": 0,
+   "ends": "2026-11-10T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.3,
+   "traders_entry": 0.22,
+   "avg_price": 0.2273,
+   "shares": 27.35841584158416,
+   "cost": 6.28,
+   "fees": 0.0622,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0ec1da750fde3e8c0f032b8ec33626aa",
+    "fee_rate": 0.01,
+    "event_id": 1704711407
+   },
+   "quotes": {
+    "prophetx": 0.2295,
+    "kalshi": 0.2428
+   },
+   "intl_cost_per_share": 0.2286,
    "payout": null,
    "profit": null,
    "settled_at": null,
