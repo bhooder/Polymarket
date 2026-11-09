@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 854.4440850912881,
+ "cash": 844.4940850912881,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7002,7 +7002,7 @@
   {
    "placed_at": "2026-11-09T15:51:29.937534+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Sharks",
    "market": "Islanders vs. Sharks",
    "link": "https://polymarket.com/event/nhl-nyi-sj-2026-11-09",
@@ -7015,10 +7015,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 5.2,
    "traders_entry": 0.43,
-   "avg_price": 0.4367,
-   "shares": 22.559900990099006,
-   "cost": 9.95,
-   "fees": 0.0985,
+   "avg_price": 0.4357,
+   "shares": 45.21831683168317,
+   "cost": 19.9,
+   "fees": 0.197,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -7035,7 +7035,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T19:40:53.097578+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 5.1,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-09T15:51:30.545194+00:00",
