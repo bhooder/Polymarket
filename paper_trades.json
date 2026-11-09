@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1209.0296335054231,
+ "cash": 1232.2096680226364,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2617,7 +2617,7 @@
   },
   {
    "placed_at": "2026-11-08T23:46:58.468299+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Jazz vs. Timberwolves: O/U 222.5",
@@ -2648,9 +2648,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.18,
+   "profit": 10.97,
+   "settled_at": "2026-11-09T02:56:26.965605+00:00",
    "topped_up_at": null
   },
   {

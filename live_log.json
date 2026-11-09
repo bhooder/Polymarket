@@ -1304,5 +1304,16 @@
   "profit": 5.98,
   "venue": "polymarket_us",
   "ref": "aec-nba-lal-det-2026-11-08"
+ },
+ {
+  "at": "2026-11-09T02:56:27.568863+00:00",
+  "event": "settled",
+  "bet": "Under 222.5 (Jazz vs. Timberwolves)",
+  "status": "won",
+  "cost": 2.06,
+  "payout": 3.95,
+  "profit": 1.89,
+  "venue": "prophetx",
+  "ref": "9f0bd316ee9a279153dfcae478a748e0"
  }
 ]

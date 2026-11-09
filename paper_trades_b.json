@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 849.3780032759297,
+ "cash": 839.7380032759297,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6588,7 +6588,7 @@
   },
   {
    "placed_at": "2026-11-08T23:17:20.111712+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Jazz",
    "market": "Jazz vs. Timberwolves",
@@ -6619,9 +6619,9 @@
     "polymarket_us": 0.1728
    },
    "intl_cost_per_share": 0.1667,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.58,
+   "settled_at": "2026-11-09T02:56:27.277438+00:00",
    "topped_up_at": null
   },
   {
@@ -6802,6 +6802,44 @@
     "kalshi": 0.7345
    },
    "intl_cost_per_share": 0.726,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T02:57:39.561550+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Rockets",
+   "market": "Nuggets vs. Rockets",
+   "link": "https://polymarket.com/event/nba-den-hou-2026-11-09",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x976e35b2d3bf476e3fd84a4162a831a613a7102dd156b85d964f47e9302df828",
+   "token_id": "110064005408310059453252375085215074361164748331910370751580048394847117555392",
+   "outcome_index": 1,
+   "ends": "2026-11-10T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.74,
+   "avg_price": 0.7561,
+   "shares": 12.623442989460237,
+   "cost": 9.64,
+   "fees": 0.0954,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b181941f6cc60f04f43d89f550541f08",
+    "fee_rate": 0.01,
+    "event_id": 1704711262
+   },
+   "quotes": {
+    "prophetx": 0.7637,
+    "polymarket_us": 0.7678,
+    "kalshi": 0.7728
+   },
+   "intl_cost_per_share": 0.7594,
    "payout": null,
    "profit": null,
    "settled_at": null,

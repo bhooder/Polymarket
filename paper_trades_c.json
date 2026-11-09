@@ -1722,7 +1722,7 @@
   },
   {
    "placed_at": "2026-11-08T23:56:37.786868+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Jazz",
    "market": "Jazz vs. Timberwolves",
@@ -1753,9 +1753,9 @@
     "polymarket_us": 0.1621
    },
    "intl_cost_per_share": 0.146,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.34,
+   "settled_at": "2026-11-09T02:56:27.541706+00:00",
    "topped_up_at": null
   },
   {
