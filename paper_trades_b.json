@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 979.1992058642352,
+ "cash": 973.1092058642352,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6848,7 +6848,7 @@
   {
    "placed_at": "2026-11-09T08:52:38.541198+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pelicans",
    "market": "Pelicans vs. Warriors",
    "link": "https://polymarket.com/event/nba-nop-gsw-2026-11-09",
@@ -6861,10 +6861,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 3.3,
    "traders_entry": 0.22,
-   "avg_price": 0.2273,
-   "shares": 27.35841584158416,
-   "cost": 6.28,
-   "fees": 0.0622,
+   "avg_price": 0.2235,
+   "shares": 54.79356435643565,
+   "cost": 12.37,
+   "fees": 0.1225,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -6880,7 +6880,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T11:37:01.078019+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 2.7,
+   "top_up_size_multiplier": 0.612
   }
  ]
 }
