@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 923.8968291964491,
+ "cash": 913.8367038469167,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1985,6 +1985,42 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.476,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T22:19:54.165840+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Bills vs. Vikings: O/U 44.5",
+   "link": "https://polymarket.com/event/nfl-buf-min-2026-11-10",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xee8df37d79bca56589475dc457241d70b3a02e4ecc9bac6ec6f4b3fba9c0ed58",
+   "token_id": "8148082094582932912518355292372998709515019150477926073885870500195831747835",
+   "outcome_index": 1,
+   "ends": "2026-11-10T01:15:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 9.2,
+   "traders_entry": 0.49,
+   "avg_price": 0.47,
+   "shares": 20.638564573473086,
+   "cost": 10.06,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV09BUFMIN-45",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4874
+   },
+   "intl_cost_per_share": 0.4775,
    "payout": null,
    "profit": null,
    "settled_at": null,
