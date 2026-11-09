@@ -1,5 +1,5 @@
 {
- "cash": 211.18,
+ "cash": 215.45,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -855,7 +855,7 @@
   },
   {
    "placed_at": "2026-11-08T22:47:18.438926+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Under",
@@ -882,9 +882,9 @@
     "event_id": 1704710845
    },
    "paper_price": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.06,
+   "settled_at": "2026-11-09T05:00:39.412205+00:00",
    "topped_up_at": null
   },
   {
@@ -957,7 +957,7 @@
   },
   {
    "placed_at": "2026-11-09T01:01:54.943881+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Kings",
@@ -984,9 +984,9 @@
     "event_id": 1704710814
    },
    "paper_price": 0.4807692307692307,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.31,
+   "profit": 2.24,
+   "settled_at": "2026-11-09T05:00:39.412257+00:00",
    "topped_up_at": null
   }
  ],
@@ -1203,5 +1203,5 @@
   }
  ],
  "daily_check": "2026-11-09",
- "balances_checked_at": "2026-11-09T03:56:24.156128+00:00"
+ "balances_checked_at": "2026-11-09T05:02:07.872207+00:00"
 }

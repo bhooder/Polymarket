@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 967.7796044015045,
+ "cash": 1006.6987224438772,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1647,7 +1647,7 @@
   },
   {
    "placed_at": "2026-11-08T20:27:18.068523+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Heat vs. Kings: O/U 238.5",
@@ -1678,9 +1678,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.38,
+   "profit": 8.31,
+   "settled_at": "2026-11-09T05:00:39.357307+00:00",
    "topped_up_at": null
   },
   {
@@ -1760,7 +1760,7 @@
   },
   {
    "placed_at": "2026-11-09T01:01:42.040282+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Clippers",
    "market": "Pelicans vs. Clippers",
@@ -1790,9 +1790,9 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.54,
+   "profit": 10.66,
+   "settled_at": "2026-11-09T05:00:39.357354+00:00",
    "topped_up_at": null
   }
  ]

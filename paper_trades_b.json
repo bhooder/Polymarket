@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 859.5563201076129,
+ "cash": 985.4792058642352,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6018,7 +6018,7 @@
   },
   {
    "placed_at": "2026-11-08T15:53:10.632980+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Heat vs. Kings: O/U 238.5",
@@ -6048,9 +6048,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 36.23,
+   "profit": 16.74,
+   "settled_at": "2026-11-09T05:00:39.130002+00:00",
    "topped_up_at": "2026-11-08T20:27:13.891567+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
@@ -6626,7 +6626,7 @@
   },
   {
    "placed_at": "2026-11-08T23:17:21.332000+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kings",
    "market": "Spread: Heat (-9.5)",
@@ -6657,9 +6657,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.37,
+   "profit": 11.06,
+   "settled_at": "2026-11-09T05:00:39.130043+00:00",
    "topped_up_at": null
   },
   {
@@ -6700,7 +6700,7 @@
   },
   {
    "placed_at": "2026-11-09T01:01:39.727390+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Clippers",
    "market": "Pelicans vs. Clippers",
@@ -6729,14 +6729,14 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.55,
+   "profit": 19.36,
+   "settled_at": "2026-11-09T05:00:39.156469+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-09T01:01:40.661664+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Buccaneers vs. Bears: O/U 46.5",
@@ -6766,14 +6766,14 @@
     "kalshi": 0.5574
    },
    "intl_cost_per_share": 0.5375,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.7,
+   "profit": 8.1,
+   "settled_at": "2026-11-09T05:00:39.156499+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-09T01:01:41.274630+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bears",
    "market": "Buccaneers vs. Bears",
@@ -6802,9 +6802,9 @@
     "kalshi": 0.7345
    },
    "intl_cost_per_share": 0.726,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.06,
+   "profit": 3.46,
+   "settled_at": "2026-11-09T05:00:39.185150+00:00",
    "topped_up_at": null
   },
   {

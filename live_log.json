@@ -1315,5 +1315,27 @@
   "profit": 1.89,
   "venue": "prophetx",
   "ref": "9f0bd316ee9a279153dfcae478a748e0"
+ },
+ {
+  "at": "2026-11-09T05:00:39.412327+00:00",
+  "event": "settled",
+  "bet": "Under 226.5 (Pelicans vs. Clippers)",
+  "status": "lost",
+  "cost": 2.06,
+  "payout": 0.0,
+  "profit": -2.06,
+  "venue": "prophetx",
+  "ref": "208fcb9efb89adc125a33a8698b82890"
+ },
+ {
+  "at": "2026-11-09T05:00:39.947629+00:00",
+  "event": "settled",
+  "bet": "Kings +10.5",
+  "status": "won",
+  "cost": 2.07,
+  "payout": 4.31,
+  "profit": 2.24,
+  "venue": "prophetx",
+  "ref": "bb2898d7d245ae8f641344d7cc2be380"
  }
 ]
