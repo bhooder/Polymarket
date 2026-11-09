@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1232.8167967355075,
+ "cash": 1220.1272975573195,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2726,6 +2726,44 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.5075,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T18:30:10.822305+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Wizards vs. Pistons: O/U 218.5",
+   "link": "https://polymarket.com/event/nba-was-det-2026-11-09",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcd25d5091bf7ea63d2514086c175eb80466e9dd3ae4baf532e2886bf474116e1",
+   "token_id": "22324394791631052636879732549943640711226716940559851026574627628465816309905",
+   "outcome_index": 0,
+   "ends": "2026-11-10T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 30.6,
+   "traders_entry": 0.49,
+   "avg_price": 0.51,
+   "shares": 24.038233682721856,
+   "cost": 12.69,
+   "fees": 0.43,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV09WASDET-219",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5244,
+    "kalshi": 0.5279,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,
