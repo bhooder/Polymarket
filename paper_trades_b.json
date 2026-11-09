@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 973.1092058642352,
+ "cash": 963.1592058642351,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6810,7 +6810,7 @@
   {
    "placed_at": "2026-11-09T02:57:39.561550+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Rockets",
    "market": "Nuggets vs. Rockets",
    "link": "https://polymarket.com/event/nba-den-hou-2026-11-09",
@@ -6823,10 +6823,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.74,
-   "avg_price": 0.7561,
-   "shares": 12.623442989460237,
-   "cost": 9.64,
-   "fees": 0.0954,
+   "avg_price": 0.7497,
+   "shares": 25.871991982290552,
+   "cost": 19.59,
+   "fees": 0.1939,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -6843,7 +6843,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T12:40:37.565819+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 4.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-09T08:52:38.541198+00:00",
