@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1220.1272975573195,
+ "cash": 1207.4372975573194,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2764,6 +2764,44 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T20:02:57.762462+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Oilers",
+   "market": "Rangers vs. Oilers",
+   "link": "https://polymarket.com/event/nhl-nyr-edm-2026-11-09",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb23db781702d8225b014cfcafe9ccd55ede492bb7ea4507ac221d54f2375b579",
+   "token_id": "10452995573570362999513434028765268483260470483368345213771931300133339378766",
+   "outcome_index": 1,
+   "ends": "2026-11-10T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 20.7,
+   "traders_entry": 0.59,
+   "avg_price": 0.6063,
+   "shares": 20.72302944580172,
+   "cost": 12.69,
+   "fees": 0.1256,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9a00981fdf88d4de0d55f52dbde6a859",
+    "fee_rate": 0.01,
+    "event_id": 1704711208
+   },
+   "quotes": {
+    "prophetx": 0.6124,
+    "polymarket_us": 0.6228,
+    "kalshi": 0.6268
+   },
+   "intl_cost_per_share": 0.612,
    "payout": null,
    "profit": null,
    "settled_at": null,

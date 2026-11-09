@@ -1057,6 +1057,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T20:03:14.343092+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Oilers",
+   "market": "Rangers vs. Oilers",
+   "link": "https://polymarket.com/event/nhl-nyr-edm-2026-11-09",
+   "market_type": "moneyline",
+   "condition_id": "0xb23db781702d8225b014cfcafe9ccd55ede492bb7ea4507ac221d54f2375b579",
+   "token_id": "10452995573570362999513434028765268483260470483368345213771931300133339378766",
+   "outcome_index": 1,
+   "ends": "2026-11-10T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 20.7,
+   "traders_entry": 0.59,
+   "avg_price": 0.6062,
+   "shares": 3.53,
+   "cost": 2.14,
+   "fees": 0.0,
+   "contracts_ordered": 2.14,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9a00981fdf88d4de0d55f52dbde6a859",
+    "fee_rate": 0.01,
+    "event_id": 1704711208
+   },
+   "paper_price": 0.6062992125984252,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1290,8 +1324,15 @@
    "venue": "kalshi",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-09T20:03:14.343060+00:00",
+   "pick": "Oilers",
+   "venue": "prophetx",
+   "ordered": 2.14,
+   "filled": 2.14
   }
  ],
  "daily_check": "2026-11-09",
- "balances_checked_at": "2026-11-09T19:40:53.752504+00:00"
+ "balances_checked_at": "2026-11-09T20:02:58.503507+00:00"
 }

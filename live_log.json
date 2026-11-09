@@ -1418,5 +1418,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5100\",\"client_order_id\":\"7bd06465-5360-5293-ac53-3c4d270d268e\",\"fill_count\":\"4.00\",\"order_id\":\"01a1c193-3ed8-7639-98a5-e77aae8fd016\",\"remaining_count\":\"0.00\",\"ts_ms\":1794249015496}"
   }
+ },
+ {
+  "at": "2026-11-09T20:03:14.343083+00:00",
+  "event": "order",
+  "filled": 3.53,
+  "price": 0.6062322946175638,
+  "fees": 0.0,
+  "bet": "Oilers to win (vs. Rangers)",
+  "pick": "Oilers",
+  "market": "Rangers vs. Oilers",
+  "venue": "prophetx",
+  "ref": "9a00981fdf88d4de0d55f52dbde6a859",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.6063,
+  "share": 0.009998996967778059,
+  "side": "BUY",
+  "stake": 2.14,
+  "max_price": 0.61,
+  "dollars": 2.17,
+  "bankroll": 217.36,
+  "order_id": "ec66b873-5ae4-5879-84fe-9cb79c79739f",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.36,\"mark_value\":3.76,\"market_id\":219,\"net_cost_basis\":3.99,\"net_outcome_id\":4,\"net_size\":10.38,\"sides\":[{\"average_price\":0.38,\"closable_size\":10.38,\"closed_size\":0,\"cost_basis\":3.99,\"liquidation_value\":3.76,\"mark_price\":0.36,\"mark_value\":3.76,\"outcome_id\":4,\"size\":10.38,\"strike_id\":\"946e5f8242d2b00fc1a51ff6e0150348\"}],\"sport_event_id\":1700008847,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":1.99,\"market_id\":225,\"net_cost_basis\":2.14,\"net_outcome_id\":13,\"net_size\":4.28,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.28,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":1.99,\"mark_price\":0.47,\"mark_value\":1.99,\"outcome_id\":13,\"size\":4.28,\"strike_id\":\"a161e61046da4d52f035f70876d8004b\"}],\"sport_event_id\":1700008847,\"strike\":44.5},{\"high_risk\":false,\"mark_price\":0.6,\"mark_value\":2.12,\"market_id\":406,\"net_cost_basis\":2.14,\"net_outcome_id\":4,\"net_size\":3.53,\"sides\":[{\"average_price\":0.61,\"closable_size\":3.53,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":2.12,\"mark_price\":0.6,\"mark_value\":2.12,\"outcome_id\":4,\"size\":3.53,\"strike_id\":\"9a00981fdf88d4de0d55f52dbde6a859\"}],\"sport_event_id\":1704711208,\"strike\":0}]}"
+  }
  }
 ]
