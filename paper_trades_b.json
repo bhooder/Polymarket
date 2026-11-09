@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 871.0540850912881,
+ "cash": 854.4440850912881,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7118,7 +7118,7 @@
   {
    "placed_at": "2026-11-09T18:30:13.304272+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Suns",
    "market": "Spurs vs. Suns",
    "link": "https://polymarket.com/event/nba-sas-phx-2026-11-09",
@@ -7132,9 +7132,9 @@
    "avg_bankroll_pct": 1.2,
    "traders_entry": 0.22,
    "avg_price": 0.2326,
-   "shares": 27.545544554455446,
-   "cost": 6.47,
-   "fees": 0.0641,
+   "shares": 55.900000000000006,
+   "cost": 13.13,
+   "fees": 0.13,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -7150,7 +7150,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-09T18:50:14.595594+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.2,
+   "top_up_size_multiplier": 0.669
   },
   {
    "placed_at": "2026-11-09T18:30:14.236312+00:00",
@@ -7185,6 +7188,44 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-09T18:50:15.970977+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Wizards vs. Pistons: O/U 218.5",
+   "link": "https://polymarket.com/event/nba-was-det-2026-11-09",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcd25d5091bf7ea63d2514086c175eb80466e9dd3ae4baf532e2886bf474116e1",
+   "token_id": "22324394791631052636879732549943640711226716940559851026574627628465816309905",
+   "outcome_index": 0,
+   "ends": "2026-11-10T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 24.8,
+   "traders_entry": 0.51,
+   "avg_price": 0.528,
+   "shares": 18.656382602545968,
+   "cost": 9.95,
+   "fees": 0.0985,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "460a45edaf2f563fd30cc70799daca54",
+    "fee_rate": 0.01,
+    "event_id": 1704711360
+   },
+   "quotes": {
+    "prophetx": 0.5333,
+    "kalshi": 0.5378,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.534,
    "payout": null,
    "profit": null,
    "settled_at": null,
