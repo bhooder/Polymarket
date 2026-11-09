@@ -1418,7 +1418,7 @@
   },
   {
    "placed_at": "2026-11-08T16:42:29.898232+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Celtics vs. Bucks: O/U 222.5",
@@ -1448,9 +1448,9 @@
     "kalshi": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.86,
+   "settled_at": "2026-11-09T03:24:38.665515+00:00",
    "topped_up_at": null
   },
   {
@@ -1685,7 +1685,7 @@
   },
   {
    "placed_at": "2026-11-08T23:46:59.156770+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bucks",
    "market": "Celtics vs. Bucks",
@@ -1715,9 +1715,9 @@
     "polymarket_us": 0.1514
    },
    "intl_cost_per_share": 0.146,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -4.67,
+   "settled_at": "2026-11-09T03:24:38.778694+00:00",
    "topped_up_at": null
   },
   {

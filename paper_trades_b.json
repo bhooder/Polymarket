@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 839.7380032759297,
+ "cash": 859.5563201076129,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -5938,7 +5938,7 @@
   },
   {
    "placed_at": "2026-11-08T14:30:08.436146+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Celtics vs. Bucks: O/U 222.5",
@@ -5968,9 +5968,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.35,
+   "settled_at": "2026-11-09T03:24:38.087650+00:00",
    "topped_up_at": "2026-11-08T16:42:29.030601+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.4,
@@ -6472,7 +6472,7 @@
   },
   {
    "placed_at": "2026-11-08T20:27:15.567182+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Bucks",
    "market": "Celtics vs. Bucks",
@@ -6502,9 +6502,9 @@
     "polymarket_us": 0.1621
    },
    "intl_cost_per_share": 0.1564,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.24,
+   "settled_at": "2026-11-09T03:24:38.318000+00:00",
    "topped_up_at": "2026-11-08T23:46:58.640119+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.5,
@@ -6550,7 +6550,7 @@
   },
   {
    "placed_at": "2026-11-08T22:47:17.979651+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Mavericks (-7.5)",
@@ -6581,9 +6581,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.33,
+   "settled_at": "2026-11-09T03:24:38.318039+00:00",
    "topped_up_at": null
   },
   {
@@ -6664,7 +6664,7 @@
   },
   {
    "placed_at": "2026-11-08T23:53:27.494413+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Flames",
    "market": "Flyers vs. Flames",
@@ -6693,9 +6693,9 @@
     "prophetx": 0.4698
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.82,
+   "profit": 10.51,
+   "settled_at": "2026-11-09T03:24:38.318052+00:00",
    "topped_up_at": null
   },
   {
