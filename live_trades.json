@@ -1,5 +1,5 @@
 {
- "cash": 199.34,
+ "cash": 207.27,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -617,7 +617,7 @@
   },
   {
    "placed_at": "2026-11-08T12:11:28.753677+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "size_multiplier": 0.959,
    "pick": "Lakers",
@@ -644,9 +644,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.38000000000000006,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.0,
+   "profit": 5.98,
+   "settled_at": "2026-11-09T02:08:56.242054+00:00",
    "topped_up_at": null
   },
   {
@@ -1203,5 +1203,5 @@
   }
  ],
  "daily_check": "2026-11-09",
- "balances_checked_at": "2026-11-09T01:01:43.603857+00:00"
+ "balances_checked_at": "2026-11-09T02:10:49.494852+00:00"
 }

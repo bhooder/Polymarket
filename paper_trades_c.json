@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 924.4484696757958,
+ "cash": 967.7796044015045,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1532,7 +1532,7 @@
   },
   {
    "placed_at": "2026-11-08T19:14:19.277085+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Spread: Pistons (-5.5)",
@@ -1562,9 +1562,9 @@
     "kalshi": 0.4574
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.33,
+   "profit": 23.29,
+   "settled_at": "2026-11-09T02:08:55.885901+00:00",
    "topped_up_at": "2026-11-08T20:27:17.225725+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,

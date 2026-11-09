@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1152.7398392303314,
+ "cash": 1209.0296335054231,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2250,7 +2250,7 @@
   },
   {
    "placed_at": "2026-11-08T12:11:27.347950+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Lakers vs. Pistons",
@@ -2280,9 +2280,9 @@
     "kalshi": 0.4067
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 56.29,
+   "profit": 33.64,
+   "settled_at": "2026-11-09T02:08:54.845003+00:00",
    "topped_up_at": null
   },
   {
