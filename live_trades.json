@@ -1193,6 +1193,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T17:25:08.743040+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 0.959,
+   "pick": "Maple Leafs",
+   "market": "Avalanche vs. Maple Leafs",
+   "link": "https://polymarket.com/event/nhl-col-tor-2026-11-10",
+   "market_type": "moneyline",
+   "condition_id": "0x0ee0dc2b7a5ec07cc77ff41112b275c51ea5e56bab244a86addfe950bc8eb8a7",
+   "token_id": "60225744687747879480356450937299420035838387094507438478342156609105766748358",
+   "outcome_index": 1,
+   "ends": "2026-11-11T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 21.2,
+   "traders_entry": 0.39,
+   "avg_price": 0.3827,
+   "shares": 5.2,
+   "cost": 2.03,
+   "fees": 0.04,
+   "contracts_ordered": 2.03,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e42e5389b5d049bdb4f17e3d62a03f13",
+    "fee_rate": 0.02,
+    "event_id": 1704711539
+   },
+   "paper_price": 0.390625,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1447,8 +1481,15 @@
    "venue": "prophetx",
    "ordered": 2.12,
    "filled": 2.12
+  },
+  {
+   "at": "2026-11-10T17:25:08.743015+00:00",
+   "pick": "Maple Leafs",
+   "venue": "prophetx",
+   "ordered": 2.03,
+   "filled": 1.99
   }
  ],
  "daily_check": "2026-11-10",
- "balances_checked_at": "2026-11-10T16:27:06.352327+00:00"
+ "balances_checked_at": "2026-11-10T17:24:56.862508+00:00"
 }

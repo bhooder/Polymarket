@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1240.1172735571301,
+ "cash": 1227.98727355713,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2916,6 +2916,44 @@
     "polymarket_us": 0.7963
    },
    "intl_cost_per_share": 0.7789,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T17:24:55.233592+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maple Leafs",
+   "market": "Avalanche vs. Maple Leafs",
+   "link": "https://polymarket.com/event/nhl-col-tor-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x0ee0dc2b7a5ec07cc77ff41112b275c51ea5e56bab244a86addfe950bc8eb8a7",
+   "token_id": "60225744687747879480356450937299420035838387094507438478342156609105766748358",
+   "outcome_index": 1,
+   "ends": "2026-11-11T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 21.2,
+   "traders_entry": 0.39,
+   "avg_price": 0.3906,
+   "shares": 30.67890089533807,
+   "cost": 12.13,
+   "fees": 0.1461,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e42e5389b5d049bdb4f17e3d62a03f13",
+    "fee_rate": 0.02,
+    "event_id": 1704711539
+   },
+   "quotes": {
+    "prophetx": 0.3954,
+    "kalshi": 0.4068,
+    "polymarket_us": 0.4126
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,
