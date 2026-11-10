@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1059.9678267397453,
+ "cash": 1049.2578267397453,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7348,6 +7348,44 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T14:35:48.258452+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Heat vs. Jazz",
+   "link": "https://polymarket.com/event/nba-mia-uta-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec8bca230a30557ec12761af6cf5d1bf20a71bb3be7ae91f98179d3f280433c3",
+   "token_id": "33747808436994377857996385879503164661284291893891735553785799957751504558039",
+   "outcome_index": 0,
+   "ends": "2026-11-11T02:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 23.1,
+   "traders_entry": 0.75,
+   "avg_price": 0.75,
+   "shares": 14.208955223880597,
+   "cost": 10.71,
+   "fees": 0.0533,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "aa94123bf6d062219584ce6f39d13046",
+    "fee_rate": 0.02,
+    "event_id": 1704711904
+   },
+   "quotes": {
+    "prophetx": 0.7538,
+    "polymarket_us": 0.7678,
+    "kalshi": 0.773
+   },
+   "intl_cost_per_share": 0.7594,
    "payout": null,
    "profit": null,
    "settled_at": null,
