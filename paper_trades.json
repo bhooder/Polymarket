@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1195.5272975573193,
+ "cash": 1219.5655312400413,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2733,7 +2733,7 @@
   },
   {
    "placed_at": "2026-11-09T18:30:10.822305+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Wizards vs. Pistons: O/U 218.5",
@@ -2764,9 +2764,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.04,
+   "profit": 11.35,
+   "settled_at": "2026-11-10T03:24:05.870036+00:00",
    "topped_up_at": null
   },
   {

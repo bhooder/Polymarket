@@ -1491,5 +1491,16 @@
    "size": 5.23,
    "strike_id": "8a47d513a2b787a66b9afee43184c1e0"
   }
+ },
+ {
+  "at": "2026-11-10T03:24:06.563932+00:00",
+  "event": "settled",
+  "bet": "Over 218.5 (Wizards vs. Pistons)",
+  "status": "won",
+  "cost": 2.11,
+  "payout": 4.0,
+  "profit": 1.89,
+  "venue": "kalshi",
+  "ref": "KXNBATOTAL-26NOV09WASDET-219"
  }
 ]

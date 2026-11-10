@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 922.5261920239544,
+ "cash": 961.4054190770945,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1915,7 +1915,7 @@
   },
   {
    "placed_at": "2026-11-09T15:51:32.080271+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pistons",
    "market": "Spread: Pistons (-10.5)",
@@ -1945,9 +1945,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.88,
+   "profit": 18.74,
+   "settled_at": "2026-11-10T03:24:06.428778+00:00",
    "topped_up_at": "2026-11-09T18:30:14.469624+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,
@@ -1955,7 +1955,7 @@
   },
   {
    "placed_at": "2026-11-09T21:28:41.377523+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Raptors (-3.5)",
@@ -1985,9 +1985,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.476,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.06,
+   "settled_at": "2026-11-10T03:24:06.456516+00:00",
    "topped_up_at": null
   },
   {

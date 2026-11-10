@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 813.533759811956,
+ "cash": 939.8739181833831,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6926,7 +6926,7 @@
   },
   {
    "placed_at": "2026-11-09T13:57:49.583618+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Hornets",
    "market": "Cavaliers vs. Hornets",
@@ -6957,9 +6957,9 @@
     "polymarket_us": 0.2573
    },
    "intl_cost_per_share": 0.2491,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.7,
+   "profit": 21.04,
+   "settled_at": "2026-11-10T03:24:06.111514+00:00",
    "topped_up_at": null
   },
   {
@@ -7045,7 +7045,7 @@
   },
   {
    "placed_at": "2026-11-09T15:51:30.545194+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pistons",
    "market": "Spread: Pistons (-10.5)",
@@ -7075,9 +7075,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.42,
+   "profit": 18.54,
+   "settled_at": "2026-11-10T03:24:06.144997+00:00",
    "topped_up_at": "2026-11-09T18:30:11.099178+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,
@@ -7085,7 +7085,7 @@
   },
   {
    "placed_at": "2026-11-09T18:30:12.119069+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Spread: Raptors (-3.5)",
@@ -7116,9 +7116,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.9,
+   "settled_at": "2026-11-10T03:24:06.145020+00:00",
    "topped_up_at": "2026-11-09T21:28:40.745142+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.7,
@@ -7166,7 +7166,7 @@
   },
   {
    "placed_at": "2026-11-09T18:30:14.236312+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Spread: Hawks (-1.5)",
@@ -7197,9 +7197,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.57,
+   "profit": 21.67,
+   "settled_at": "2026-11-10T03:24:06.145028+00:00",
    "topped_up_at": "2026-11-09T23:02:14.079421+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.8,
@@ -7207,7 +7207,7 @@
   },
   {
    "placed_at": "2026-11-09T18:50:15.970977+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Wizards vs. Pistons: O/U 218.5",
@@ -7238,9 +7238,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.534,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.66,
+   "profit": 8.71,
+   "settled_at": "2026-11-10T03:24:06.145036+00:00",
    "topped_up_at": null
   },
   {
