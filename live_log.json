@@ -1681,5 +1681,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4600\",\"client_order_id\":\"42a734a6-917f-5f3f-8cba-47159c3501d0\",\"fill_count\":\"5.00\",\"order_id\":\"01a1c6ad-5250-71ae-a2b8-58838752b9ce\",\"remaining_count\":\"0.00\",\"ts_ms\":1794334610922}"
   }
+ },
+ {
+  "at": "2026-11-10T21:07:48.864476+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.51,
+  "fees": 0.09,
+  "bet": "Miami (OH) +1.5",
+  "pick": "Miami (OH)",
+  "market": "Spread: Ohio (-1.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.51,
+  "share": 0.009996692314401093,
+  "side": "NO",
+  "contracts": 4,
+  "max_price": 0.52,
+  "dollars": 2.17,
+  "bankroll": 216.58,
+  "order_id": "dda5939c-2a64-51b6-a118-5a87a6f592c8",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DN0G5ZRG14EX\",\"executions\":[{\"id\":\"DN0G5ZS033YH\",\"order\":{\"id\":\"DN0G5ZRG14EX\",\"marketSlug\":\"asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.48\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5\",\"icon\":\"\",\"title\":\"Ohio vs. Miami (OH)\",\"outcome\":\"+1.50\",\"eventSlug\":\"cfb-ohio-miaoh-2026-11-10\",\"teamId\":1181,\"team\":{\"id\":1181,\"name\":\"Miami (OH)\",\"abbreviation\":\"miaoh\",\"league\":\"cfb\",\"record\":\"5-4\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_miaoh_50000182.png\",\"alias\":\"RedHawks\",\"safeName\":\"Miami (OH)\",\"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Miami+OH+Redhawks_R%40160x160.png\",\"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Miami+OH+Redhawks_L%40160x160.png\",\"colorPrimary\":\"#C41230\",\"providerId\":182,\"ordering\":\"away\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Miami-OH-Redhawks_L@320x320.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Miami-OH-Redhawks_R@320x320.png\",\"displayAbbreviation\":\"M-OH\",\"ranking\":\"0\",\"conference\":\"Mid-American\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"182\"},{\"provider\":\""
+  }
  }
 ]

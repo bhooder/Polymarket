@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 959.925205722017,
+ "cash": 938.5096345170092,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7613,6 +7613,79 @@
     "kalshi": 0.1065
    },
    "intl_cost_per_share": 0.1045,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T21:07:47.825510+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Miami (OH)",
+   "market": "Spread: Ohio (-1.5)",
+   "link": "https://polymarket.com/event/cfb-ohio-miaoh-2026-11-10",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3df896061e2c48a8cbc9892d02fe082f0f772b4abf7762597f815bfdbb465f3c",
+   "token_id": "76763573957834891129392021506207498617907545806062435922372565737773973355514",
+   "outcome_index": 1,
+   "ends": "2026-11-11T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 20.065930915866417,
+   "cost": 10.71,
+   "fees": 0.4764,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T21:07:48.084808+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Magic",
+   "market": "Magic vs. Kings",
+   "link": "https://polymarket.com/event/nba-orl-sac-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x15ea6c2a515c23411f3dbc8c901d86458a23b22c556324827fc1bd30c50e0409",
+   "token_id": "67492573967655753538890479353149117653413060155589084396503592350534732805703",
+   "outcome_index": 0,
+   "ends": "2026-11-11T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.8,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 15.390545889717393,
+   "cost": 10.71,
+   "fees": 0.24,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV10ORLSAC-ORL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6956,
+    "polymarket_us": 0.7007
+   },
+   "intl_cost_per_share": 0.6811,
    "payout": null,
    "profit": null,
    "settled_at": null,

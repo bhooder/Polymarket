@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1202.6885606749734,
+ "cash": 1190.0385606749733,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3029,6 +3029,42 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T21:07:47.184561+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Miami (OH)",
+   "market": "Spread: Ohio (-1.5)",
+   "link": "https://polymarket.com/event/cfb-ohio-miaoh-2026-11-10",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3df896061e2c48a8cbc9892d02fe082f0f772b4abf7762597f815bfdbb465f3c",
+   "token_id": "76763573957834891129392021506207498617907545806062435922372565737773973355514",
+   "outcome_index": 1,
+   "ends": "2026-11-11T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 23.700656030411782,
+   "cost": 12.65,
+   "fees": 0.5627,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,
