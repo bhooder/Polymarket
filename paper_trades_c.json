@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1043.223670336252,
+ "cash": 1017.5884398564779,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2173,6 +2173,78 @@
     "prophetx": 0.4574
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T20:15:49.868262+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Wild vs. Canadiens: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-min-mon-2026-11-10",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd79764333c011bfbdd704280ccce929a46ee4b2eb3f6564d14e7099d7ff69d33",
+   "token_id": "33332233345971378143416749782733868064115817456308806104069173344103291824826",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 8.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.46,
+   "shares": 44.45841380650871,
+   "cost": 21.5,
+   "fees": 1.0491,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nhl-min-mon-2026-11-10-6pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T20:15:50.356476+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bucks",
+   "market": "Bucks vs. Knicks",
+   "link": "https://polymarket.com/event/nba-mil-nyk-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 0.385,
+   "condition_id": "0x207b55230a7bbb99d558dd338abfb670e83a047a941f74cd87d5d4f8d21193cd",
+   "token_id": "45064652521325492473775134243546911953417276275881708307839571886187870207277",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.09,
+   "avg_price": 0.1,
+   "shares": 38.85230479774225,
+   "cost": 4.14,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV10MILNYK-MIL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.1064
+   },
+   "intl_cost_per_share": 0.1045,
    "payout": null,
    "profit": null,
    "settled_at": null,
