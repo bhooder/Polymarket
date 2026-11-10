@@ -1573,5 +1573,32 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.49,\"mark_value\":2.07,\"market_id\":219,\"net_cost_basis\":2.12,\"net_outcome_id\":4,\"net_size\":4.24,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.24,\"closed_size\":0,\"cost_basis\":2.12,\"liquidation_value\":2.07,\"mark_price\":0.49,\"mark_value\":2.07,\"outcome_id\":4,\"size\":4.24,\"strike_id\":\"0ba34460842fc4a9c4689a7b8bc3d0d4\"}],\"sport_event_id\":1704711347,\"strike\":0}]}"
   }
+ },
+ {
+  "at": "2026-11-10T13:42:15.883934+00:00",
+  "event": "order",
+  "filled": 2.75,
+  "price": 0.770909090909091,
+  "fees": 0.0,
+  "bet": "Heat to win (vs. Jazz)",
+  "pick": "Heat",
+  "market": "Heat vs. Jazz",
+  "venue": "prophetx",
+  "ref": "aa94123bf6d062219584ce6f39d13046",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.7701,
+  "share": 0.009996702482526121,
+  "side": "BUY",
+  "stake": 2.12,
+  "max_price": 0.79,
+  "dollars": 2.17,
+  "bankroll": 216.78,
+  "order_id": "39dd5766-ce97-5229-a508-d4da95c1d66e",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":2.01,\"market_id\":219,\"net_cost_basis\":2.12,\"net_outcome_id\":4,\"net_size\":4.24,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.24,\"closed_size\":0,\"cost_basis\":2.12,\"liquidation_value\":2.01,\"mark_price\":0.47,\"mark_value\":2.01,\"outcome_id\":4,\"size\":4.24,\"strike_id\":\"0ba34460842fc4a9c4689a7b8bc3d0d4\"}],\"sport_event_id\":1704711347,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.77,\"mark_value\":2.11,\"market_id\":219,\"net_cost_basis\":2.12,\"net_outcome_id\":5,\"net_size\":2.75,\"sides\":[{\"average_price\":0.77,\"closable_size\":2.75,\"closed_size\":0,\"cost_basis\":2.12,\"liquidation_value\":2.11,\"mark_price\":0.77,\"mark_value\":2.11,\"outcome_id\":5,\"size\":2.75,\"strike_id\":\"aa94123bf6d062219584ce6f39d13046\"}],\"sport_event_id\":1704711904,\"strike\":0}]}"
+  }
  }
 ]

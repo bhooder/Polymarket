@@ -1159,6 +1159,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T13:42:15.883945+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Heat",
+   "market": "Heat vs. Jazz",
+   "link": "https://polymarket.com/event/nba-mia-uta-2026-11-10",
+   "market_type": "moneyline",
+   "condition_id": "0xec8bca230a30557ec12761af6cf5d1bf20a71bb3be7ae91f98179d3f280433c3",
+   "token_id": "33747808436994377857996385879503164661284291893891735553785799957751504558039",
+   "outcome_index": 0,
+   "ends": "2026-11-11T02:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.6,
+   "traders_entry": 0.77,
+   "avg_price": 0.7709,
+   "shares": 2.75,
+   "cost": 2.12,
+   "fees": 0.0,
+   "contracts_ordered": 2.12,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "aa94123bf6d062219584ce6f39d13046",
+    "fee_rate": 0.02,
+    "event_id": 1704711904
+   },
+   "paper_price": 0.7701149425287356,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1406,8 +1440,15 @@
    "venue": "prophetx",
    "ordered": 2.12,
    "filled": 2.12
+  },
+  {
+   "at": "2026-11-10T13:42:15.883917+00:00",
+   "pick": "Heat",
+   "venue": "prophetx",
+   "ordered": 2.12,
+   "filled": 2.12
   }
  ],
  "daily_check": "2026-11-10",
- "balances_checked_at": "2026-11-10T12:26:51.664942+00:00"
+ "balances_checked_at": "2026-11-10T13:42:03.852256+00:00"
 }
