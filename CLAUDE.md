@@ -157,8 +157,9 @@ Check results after a few weeks. A handful of bets proves nothing.
   bet now (`value` = dollars that can be staked). Orders are in dollars staked,
   `fillOrKill`, price must be on the price ladder. Games are matched by league,
   start time (+-3h) and team names; >15c from Polymarket = discarded. The fee rate
-  is set per account and not published: venues.PX_FEE (1% of stake) is an
-  estimate; real fills record the actual fee. No public results: ProphetX bets
+  is set per account and not published. Seen 2026-11-09: no fee when a bet fills; about
+  2% of the winnings is charged when a bet wins (venues.PX_FEE = 0.02). Paper bets pay
+  the expected fee up front; real bets have it taken from the payout at settlement. No public results: ProphetX bets
   settle by the international Polymarket result. No Premier League seen.
 
 ## Things learned / caveats

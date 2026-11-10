@@ -119,9 +119,10 @@ def bankroll(state):
     return state["cash"] + sum(b["cost"] for b in open_bets(state))
 
 
-def settle(state):
+def settle(state, real=False):
     """Pay out bets whose market has resolved, on whichever venue they were placed.
-    Returns the bets settled in this call."""
+    real=True for real bets: ProphetX takes its fee out of the winnings then (paper bets
+    already paid the expected fee up front). Returns the bets settled in this call."""
     pending = open_bets(state)
     settled = []
     # bets from before the US-venue switch were "placed" on international Polymarket; ProphetX has
@@ -142,6 +143,10 @@ def settle(state):
         if per_share is None:
             continue
         payout = b["shares"] * per_share
+        if real and b.get("venue") == "prophetx" and payout > b["cost"] and not b.get("fees"):
+            fee = round(venues.PX_FEE * (payout - b["cost"]), 2)
+            payout -= fee
+            b["fees"] = fee
         b["payout"] = round(payout, 2)
         b["profit"] = round(payout - b["cost"], 2)
         b["status"] = "won" if payout > b["cost"] else "lost" if payout < b["cost"] else "push"
@@ -748,7 +753,7 @@ def main():
     live_path = os.path.join(HERE, LIVE["state"])
     live_state = load_state(live_path) if os.path.exists(live_path) else {"cash": 0.0, "bets": [], "orders": []}
     # real payouts land in the accounts by themselves; this records them and tells the group
-    for b in settle(live_state):
+    for b in settle(live_state, real=True):
         live.alert(*settled_alert(b, live_state))
     save_state(live_state, live_path)
     picks, _ = scanner.find_picks(scanner_args)

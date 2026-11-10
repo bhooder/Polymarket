@@ -313,8 +313,8 @@ def kalshi_result(ref):
 # Settled through the international Polymarket result (same game, same line).
 
 PX = "https://cash.api.prophetx.co/partner"
-PX_FEE = 0.01  # ESTIMATE: fee as a share of the stake. ProphetX sets each account's rate privately;
-               # real fills record the actual fee, so check live_trades.json and adjust this.
+PX_FEE = 0.02  # fee as a share of WINNINGS (payout - cost), charged when a bet wins. Seen 2026-11-09 in
+               # the wallet: $0.04 on $1.89 and on $2.24 won. Rates are set per account.
 PX_LEAGUES = {"nba": ["nba"], "wnba": ["wnba"], "nfl": ["nfl"], "nhl": ["nhl"], "mlb": ["mlb"],
               "cfb": ["college football"], "cbb": ["college basketball"],
               "epl": ["premier league", "english premier league"], "lal": ["la liga"],
@@ -499,7 +499,8 @@ def px_ref(pick, d, intl_market, intl_price):
 
 def px_quote(ref, dollars):
     levels = ref.pop("_levels", None) or px_levels(px_markets(ref["event_id"]), ref["ref"])
-    return fill(levels, dollars, lambda p: PX_FEE * p)  # fee estimate: PX_FEE of each dollar staked
+    # the fee is only paid on a win: PX_FEE x (1 - p) per share, times the p chance of winning
+    return fill(levels, dollars, lambda p: PX_FEE * p * (1 - p))
 
 
 # ---------------- public helpers ----------------

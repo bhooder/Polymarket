@@ -1,5 +1,5 @@
 {
- "cash": 205.01,
+ "cash": 204.9,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -941,7 +941,7 @@
    "avg_price": 0.5215,
    "shares": 3.95,
    "cost": 2.06,
-   "fees": 0.0,
+   "fees": 0.04,
    "contracts_ordered": 2.06,
    "venue": "prophetx",
    "venue_ref": {
@@ -951,8 +951,8 @@
     "event_id": 1704710770
    },
    "paper_price": 0.5215,
-   "payout": 3.95,
-   "profit": 1.89,
+   "payout": 3.91,
+   "profit": 1.85,
    "settled_at": "2026-11-09T02:56:27.568775+00:00",
    "topped_up_at": null
   },
@@ -975,7 +975,7 @@
    "avg_price": 0.4803,
    "shares": 4.31,
    "cost": 2.07,
-   "fees": 0.0,
+   "fees": 0.04,
    "contracts_ordered": 2.07,
    "venue": "prophetx",
    "venue_ref": {
@@ -985,8 +985,8 @@
     "event_id": 1704710814
    },
    "paper_price": 0.4807692307692307,
-   "payout": 4.31,
-   "profit": 2.24,
+   "payout": 4.27,
+   "profit": 2.2,
    "settled_at": "2026-11-09T05:00:39.412257+00:00",
    "topped_up_at": null
   },
@@ -1076,8 +1076,8 @@
    "traders_entry": 0.59,
    "avg_price": 0.6062,
    "shares": 3.53,
-   "cost": 2.14,
-   "fees": 0.0,
+   "cost": 2.17,
+   "fees": 0.03,
    "contracts_ordered": 2.14,
    "venue": "prophetx",
    "venue_ref": {
