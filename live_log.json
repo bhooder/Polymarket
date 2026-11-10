@@ -1627,5 +1627,59 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":1.97,\"market_id\":219,\"net_cost_basis\":2.12,\"net_outcome_id\":4,\"net_size\":4.24,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.24,\"closed_size\":0,\"cost_basis\":2.12,\"liquidation_value\":1.97,\"mark_price\":0.47,\"mark_value\":1.97,\"outcome_id\":4,\"size\":4.24,\"strike_id\":\"0ba34460842fc4a9c4689a7b8bc3d0d4\"}],\"sport_event_id\":1704711347,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.38,\"mark_value\":1.98,\"market_id\":406,\"net_cost_basis\":2.03,\"net_outcome_id\":4,\"net_size\":5.2,\"sides\":[{\"average_price\":0.39,\"closable_size\":5.2,\"closed_size\":0,\"cost_basis\":2.03,\"liquidation_value\":1.98,\"mark_price\":0.38,\"mark_value\":1.98,\"outcome_id\":4,\"size\":5.2,\"strike_id\":\"e42e5389b5d049bdb4f17e3d62a03f13\"}],\"sport_event_id\":1704711539,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.75,\"mark_value\":2.07,\"market_id\":219,\"net_cost_basis\":2.12,\"net_outcome_id\":5,\"net_size\":2.75,\"sides\":[{\"average_price\":0.77,\"closable_size\":2.75,\"closed_size\":0,\"cost_basis\":2.12,\"liquidation_value\":2.07,\"mark_price\":0.75,\"mark_value\":2.07,\"outcome_id\":5,\"size\":2.75,\"strike_id\":\"aa94123bf6d062219584ce6f39d13046\"}],\"sport_event_id\":1704711904,\"strike\":0}]}"
   }
+ },
+ {
+  "at": "2026-11-10T18:16:50.312275+00:00",
+  "event": "order",
+  "filled": 4.0,
+  "price": 0.52,
+  "fees": 0.0696,
+  "bet": "Panthers to win (vs. Blue Jackets)",
+  "pick": "Panthers",
+  "market": "Panthers vs. Blue Jackets",
+  "venue": "kalshi",
+  "ref": "KXNHLGAME-26NOV10FLACBJ-FLA",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.009996702482526123,
+  "side": "YES",
+  "contracts": 4,
+  "max_price": 0.54,
+  "dollars": 2.17,
+  "bankroll": 216.74,
+  "order_id": "7685a024-a974-5696-9546-ce15b8610556",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5200\",\"client_order_id\":\"7685a024-a974-5696-9546-ce15b8610556\",\"fill_count\":\"4.00\",\"order_id\":\"01a1c6ad-5250-7566-8193-e6b8503ddce0\",\"remaining_count\":\"0.00\",\"ts_ms\":1794334610298}"
+  }
+ },
+ {
+  "at": "2026-11-10T18:16:50.933170+00:00",
+  "event": "order",
+  "filled": 5.0,
+  "price": 0.46,
+  "fees": 0.087,
+  "bet": "Trail Blazers to win (vs. Thunder)",
+  "pick": "Trail Blazers",
+  "market": "Thunder vs. Trail Blazers",
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV10OKCPOR-POR",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.46,
+  "share": 0.009996695389718578,
+  "side": "YES",
+  "contracts": 5,
+  "max_price": 0.47,
+  "dollars": 2.17,
+  "bankroll": 216.74,
+  "order_id": "42a734a6-917f-5f3f-8cba-47159c3501d0",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4600\",\"client_order_id\":\"42a734a6-917f-5f3f-8cba-47159c3501d0\",\"fill_count\":\"5.00\",\"order_id\":\"01a1c6ad-5250-71ae-a2b8-58838752b9ce\",\"remaining_count\":\"0.00\",\"ts_ms\":1794334610922}"
+  }
  }
 ]

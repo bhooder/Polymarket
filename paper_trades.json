@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1227.98727355713,
+ "cash": 1202.6885606749734,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2954,6 +2954,81 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T18:16:47.468727+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Panthers",
+   "market": "Panthers vs. Blue Jackets",
+   "link": "https://polymarket.com/event/nhl-fla-cbj-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x091861b46e4e48204e60760011ca73f7a5585158a42408f326dc99a3d44032f9",
+   "token_id": "111544177939801442748648549137854039692797517855752435149131560479404460634807",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.8,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 23.517504167658966,
+   "cost": 12.65,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV10FLACBJ-FLA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5379,
+    "prophetx": 0.542,
+    "polymarket_us": 0.5537
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T18:16:47.951759+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Trail Blazers",
+   "market": "Thunder vs. Trail Blazers",
+   "link": "https://polymarket.com/event/nba-okc-por-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa95eb79c1280e453dea03f7eb0263c1c03dff2b7d6788c25d66b35e6d87ddaf8",
+   "token_id": "84271288087190837093913740296552838233678887887311897621545780683503965079452",
+   "outcome_index": 1,
+   "ends": "2026-11-11T04:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 22.9,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 26.47741459776953,
+   "cost": 12.65,
+   "fees": 0.47,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV10OKCPOR-POR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4778,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,
