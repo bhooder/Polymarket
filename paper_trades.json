@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1265.4172735571303,
+ "cash": 1252.7672735571302,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2843,6 +2843,44 @@
    "payout": 0.0,
    "profit": -11.91,
    "settled_at": "2026-11-10T04:26:23.164059+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T08:43:44.565627+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Celtics vs. 76ers",
+   "link": "https://polymarket.com/event/nba-bos-phi-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x93abfdbf43701bcca38c1aee7161b7952d52d0cad488ed6dfce11c5fb082f771",
+   "token_id": "44762705335281192307812004453570977550457854188024680839852928257251629870715",
+   "outcome_index": 1,
+   "ends": "2026-11-11T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 25.04950495049505,
+   "cost": 12.65,
+   "fees": 0.1252,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0ba34460842fc4a9c4689a7b8bc3d0d4",
+    "fee_rate": 0.02,
+    "event_id": 1704711347
+   },
+   "quotes": {
+    "prophetx": 0.505,
+    "kalshi": 0.5077,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
