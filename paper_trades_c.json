@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1053.973670336252,
+ "cash": 1043.223670336252,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2137,6 +2137,42 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T19:24:18.816715+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Predators",
+   "market": "Predators vs. Kings",
+   "link": "https://polymarket.com/event/nhl-nsh-lak-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x05f0219502994350bc24244f6532925af959fe4192a615e2fdb0f04f3de020c9",
+   "token_id": "3568856641995152496120241021044701610757370428775108859685282467787729332648",
+   "outcome_index": 0,
+   "ends": "2026-11-11T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.4525,
+   "shares": 23.500167845313758,
+   "cost": 10.75,
+   "fees": 0.1164,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c0553c7b5dc28e84a2b9a110e4e65d61",
+    "fee_rate": 0.02,
+    "event_id": 1704711544
+   },
+   "quotes": {
+    "prophetx": 0.4574
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
