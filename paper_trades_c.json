@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 883.6469649708143,
+ "cash": 922.5261920239544,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2031,7 +2031,7 @@
   },
   {
    "placed_at": "2026-11-09T23:30:42.941988+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Lakers",
    "market": "Spread: Hawks (-2.5)",
@@ -2061,9 +2061,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.88,
+   "profit": 18.75,
+   "settled_at": "2026-11-10T02:32:46.394865+00:00",
    "topped_up_at": null
   }
  ]
