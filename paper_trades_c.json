@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 987.9928778229691,
+ "cash": 1029.2700069699154,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1797,7 +1797,7 @@
   },
   {
    "placed_at": "2026-11-09T11:37:01.780368+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Pelicans vs. Warriors",
@@ -1826,9 +1826,9 @@
     "kalshi": 0.2321
    },
    "intl_cost_per_share": 0.2183,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.32,
+   "settled_at": "2026-11-10T05:26:46.079215+00:00",
    "topped_up_at": null
   },
   {
@@ -1992,7 +1992,7 @@
   },
   {
    "placed_at": "2026-11-09T22:19:54.165840+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Bills vs. Vikings: O/U 44.5",
@@ -2021,9 +2021,9 @@
     "kalshi": 0.4874
    },
    "intl_cost_per_share": 0.4775,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.28,
+   "profit": 21.16,
+   "settled_at": "2026-11-10T05:26:46.128681+00:00",
    "topped_up_at": "2026-11-09T23:05:45.587797+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 7.6,

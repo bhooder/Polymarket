@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 987.015904281118,
+ "cash": 1025.4506868898136,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6890,7 +6890,7 @@
   },
   {
    "placed_at": "2026-11-09T13:57:49.043587+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Bills vs. Vikings: O/U 44.5",
@@ -6919,9 +6919,9 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.43,
+   "profit": 18.53,
+   "settled_at": "2026-11-10T05:26:45.939361+00:00",
    "topped_up_at": null
   },
   {
@@ -6964,7 +6964,7 @@
   },
   {
    "placed_at": "2026-11-09T15:51:28.961206+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Vikings",
    "market": "Bills vs. Vikings",
@@ -6994,9 +6994,9 @@
     "kalshi": 0.407
    },
    "intl_cost_per_share": 0.3871,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.48,
+   "settled_at": "2026-11-10T05:26:45.939409+00:00",
    "topped_up_at": "2026-11-09T22:19:53.298169+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.7,
@@ -7126,7 +7126,7 @@
   },
   {
    "placed_at": "2026-11-09T18:30:13.304272+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Suns",
    "market": "Spurs vs. Suns",
@@ -7156,9 +7156,9 @@
     "kalshi": 0.2428
    },
    "intl_cost_per_share": 0.2389,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -13.13,
+   "settled_at": "2026-11-10T05:26:45.939427+00:00",
    "topped_up_at": "2026-11-09T18:50:14.595594+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.2,

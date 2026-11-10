@@ -1524,5 +1524,27 @@
   "profit": -2.01,
   "venue": "prophetx",
   "ref": "8a47d513a2b787a66b9afee43184c1e0"
+ },
+ {
+  "at": "2026-11-10T05:26:46.150236+00:00",
+  "event": "settled",
+  "bet": "Vikings to win (vs. Bills)",
+  "status": "lost",
+  "cost": 3.99,
+  "payout": 0.0,
+  "profit": -3.99,
+  "venue": "prophetx",
+  "ref": "946e5f8242d2b00fc1a51ff6e0150348"
+ },
+ {
+  "at": "2026-11-10T05:26:46.592832+00:00",
+  "event": "settled",
+  "bet": "Under 44.5 (Bills vs. Vikings)",
+  "status": "won",
+  "cost": 2.14,
+  "payout": 4.24,
+  "profit": 2.1,
+  "venue": "prophetx",
+  "ref": "a161e61046da4d52f035f70876d8004b"
  }
 ]

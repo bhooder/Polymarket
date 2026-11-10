@@ -1,5 +1,5 @@
 {
- "cash": 212.54,
+ "cash": 216.78,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -889,7 +889,7 @@
   },
   {
    "placed_at": "2026-11-08T23:46:59.722547+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "size_multiplier": 0.959,
    "pick": "Vikings",
@@ -916,9 +916,9 @@
     "event_id": 1700008847
    },
    "paper_price": 0.3876,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.99,
+   "settled_at": "2026-11-10T05:26:46.149914+00:00",
    "topped_up_at": "2026-11-09T15:51:44.506848+00:00",
    "top_up_size_multiplier": 0.939
   },
@@ -992,7 +992,7 @@
   },
   {
    "placed_at": "2026-11-09T13:58:01.289035+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Under",
@@ -1009,7 +1009,7 @@
    "avg_price": 0.5,
    "shares": 4.28,
    "cost": 2.14,
-   "fees": 0.0,
+   "fees": 0.04,
    "contracts_ordered": 2.14,
    "venue": "prophetx",
    "venue_ref": {
@@ -1019,9 +1019,9 @@
     "event_id": 1700008847
    },
    "paper_price": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.24,
+   "profit": 2.1,
+   "settled_at": "2026-11-10T05:26:46.149956+00:00",
    "topped_up_at": null
   },
   {
@@ -1368,5 +1368,5 @@
   }
  ],
  "daily_check": "2026-11-10",
- "balances_checked_at": "2026-11-10T04:27:55.592482+00:00"
+ "balances_checked_at": "2026-11-10T05:27:55.288852+00:00"
 }
