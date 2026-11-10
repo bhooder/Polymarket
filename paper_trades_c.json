@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1029.2700069699154,
+ "cash": 1075.033670336252,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1874,7 +1874,7 @@
   },
   {
    "placed_at": "2026-11-09T15:51:31.607162+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Sharks",
    "market": "Islanders vs. Sharks",
@@ -1905,9 +1905,9 @@
     "polymarket_us": 0.4634
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.76,
+   "profit": 25.62,
+   "settled_at": "2026-11-10T06:26:52.764931+00:00",
    "topped_up_at": "2026-11-09T20:32:05.096054+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.7,

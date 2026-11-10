@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1025.4506868898136,
+ "cash": 1070.6690037214967,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6850,7 +6850,7 @@
   },
   {
    "placed_at": "2026-11-09T08:52:38.541198+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Pelicans vs. Warriors",
@@ -6880,9 +6880,9 @@
     "kalshi": 0.2428
    },
    "intl_cost_per_share": 0.2286,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.37,
+   "settled_at": "2026-11-10T06:26:52.661849+00:00",
    "topped_up_at": "2026-11-09T11:37:01.078019+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 2.7,
@@ -7004,7 +7004,7 @@
   },
   {
    "placed_at": "2026-11-09T15:51:29.937534+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Sharks",
    "market": "Islanders vs. Sharks",
@@ -7035,9 +7035,9 @@
     "polymarket_us": 0.4634
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.22,
+   "profit": 25.32,
+   "settled_at": "2026-11-10T06:26:52.661899+00:00",
    "topped_up_at": "2026-11-09T19:40:53.097578+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.1,
