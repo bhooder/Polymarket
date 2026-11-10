@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 895.6893125601301,
+ "cash": 849.3911661073724,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7476,7 +7476,7 @@
   {
    "placed_at": "2026-11-10T18:16:48.736909+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Panthers",
    "market": "Panthers vs. Blue Jackets",
    "link": "https://polymarket.com/event/nhl-fla-cbj-2026-11-10",
@@ -7489,10 +7489,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 15.8,
    "traders_entry": 0.52,
-   "avg_price": 0.52,
-   "shares": 19.908013812812573,
-   "cost": 10.7,
-   "fees": 0.35,
+   "avg_price": 0.5249,
+   "shares": 39.45364189421737,
+   "cost": 21.41,
+   "fees": 0.7,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -7508,7 +7508,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-10T23:51:03.199303+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 10.7,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-10T19:24:16.420232+00:00",
@@ -7588,7 +7591,7 @@
   {
    "placed_at": "2026-11-10T20:15:49.547009+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Bucks",
    "market": "Bucks vs. Knicks",
    "link": "https://polymarket.com/event/nba-mil-nyk-2026-11-10",
@@ -7601,10 +7604,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.9,
    "traders_entry": 0.09,
-   "avg_price": 0.1,
-   "shares": 38.664158043273765,
-   "cost": 4.12,
-   "fees": 0.25,
+   "avg_price": 0.1048,
+   "shares": 73.83655413066563,
+   "cost": 8.24,
+   "fees": 0.5,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -7619,7 +7622,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-10T23:51:03.629161+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.9,
+   "top_up_size_multiplier": 0.385
   },
   {
    "placed_at": "2026-11-10T21:07:47.825510+00:00",
@@ -7697,7 +7703,7 @@
   {
    "placed_at": "2026-11-10T21:50:45.510450+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Western Michigan",
    "market": "Spread: Western Michigan (-14.5)",
    "link": "https://polymarket.com/event/cfb-wmich-akron-2026-11-10",
@@ -7710,10 +7716,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 4.7,
    "traders_entry": 0.51,
-   "avg_price": 0.515,
-   "shares": 19.8801390960059,
-   "cost": 10.71,
-   "fees": 0.4717,
+   "avg_price": 0.51,
+   "shares": 40.135549226689704,
+   "cost": 21.42,
+   "fees": 0.9527,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -7728,7 +7734,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-10T23:51:03.371382+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 5.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-10T22:28:50.549884+00:00",
@@ -7762,6 +7771,79 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T23:51:05.195677+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Kent State vs. Bowling Green: O/U 43.5",
+   "link": "https://polymarket.com/event/cfb-kentst-bowlgr-2026-11-10",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa2bb39dcbbbf5c687ea3ad64cdd36d91f316af96ae848b75117a74bad9084b00",
+   "token_id": "7277127947867183165536310389476713730209571563275168916817705544705531620669",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.9,
+   "traders_entry": 0.46,
+   "avg_price": 0.4384,
+   "shares": 24.156378887993245,
+   "cost": 10.71,
+   "fees": 0.1189,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "43020f925b1c91b286fa9c7b1e3215cb",
+    "fee_rate": 0.02,
+    "event_id": 1704709830
+   },
+   "quotes": {
+    "prophetx": 0.4434
+   },
+   "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T23:51:06.341260+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Clippers vs. Suns",
+   "link": "https://polymarket.com/event/nba-lac-phx-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 0.939,
+   "condition_id": "0xd04543337420634726237da84693d3eaaf7fc1e2383ba806c2e6a8c6bca16331",
+   "token_id": "43687102424840778193549147007256905475309842645480378994719764257112565181230",
+   "outcome_index": 0,
+   "ends": "2026-11-11T02:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 9.5,
+   "traders_entry": 0.38,
+   "avg_price": 0.3846,
+   "shares": 25.812310030395135,
+   "cost": 10.05,
+   "fees": 0.1222,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "3ee155801bb89ec7c5a406f2b2bc0e4b",
+    "fee_rate": 0.02,
+    "event_id": 1704712091
+   },
+   "quotes": {
+    "prophetx": 0.3893,
+    "kalshi": 0.407
+   },
+   "intl_cost_per_share": 0.3918,
    "payout": null,
    "profit": null,
    "settled_at": null,

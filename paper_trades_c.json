@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 985.3507709016292,
+ "cash": 953.1007709016292,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2320,6 +2320,80 @@
     "prophetx": 0.4904
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T23:51:08.258587+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Panthers",
+   "market": "Panthers vs. Blue Jackets",
+   "link": "https://polymarket.com/event/nhl-fla-cbj-2026-11-10",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x091861b46e4e48204e60760011ca73f7a5585158a42408f326dc99a3d44032f9",
+   "token_id": "111544177939801442748648549137854039692797517855752435149131560479404460634807",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:30:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 10.7,
+   "traders_entry": 0.52,
+   "avg_price": 0.5349,
+   "shares": 39.82518533360048,
+   "cost": 21.5,
+   "fees": 0.1982,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1ecddd8489cf0dedd59fc78100b9576a",
+    "fee_rate": 0.02,
+    "event_id": 1704711542
+   },
+   "quotes": {
+    "prophetx": 0.5399,
+    "kalshi": 0.5476,
+    "polymarket_us": 0.5537
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-10T23:51:08.903831+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Western Michigan",
+   "market": "Spread: Western Michigan (-14.5)",
+   "link": "https://polymarket.com/event/cfb-wmich-akron-2026-11-10",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc649fb3fcb6d76329b9c2e429298867424a2ceb6bc9a308afafead330e350068",
+   "token_id": "63734283299230114478937384236836471568517879770637217778616743726006917259093",
+   "outcome_index": 0,
+   "ends": "2026-11-11T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 5.9,
+   "traders_entry": 0.51,
+   "avg_price": 0.505,
+   "shares": 20.33106058868822,
+   "cost": 10.75,
+   "fees": 0.4828,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-wmich-akron-2026-11-10-neg-14pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5287
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
