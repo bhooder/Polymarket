@@ -1445,5 +1445,29 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.36,\"mark_value\":3.76,\"market_id\":219,\"net_cost_basis\":3.99,\"net_outcome_id\":4,\"net_size\":10.38,\"sides\":[{\"average_price\":0.38,\"closable_size\":10.38,\"closed_size\":0,\"cost_basis\":3.99,\"liquidation_value\":3.76,\"mark_price\":0.36,\"mark_value\":3.76,\"outcome_id\":4,\"size\":10.38,\"strike_id\":\"946e5f8242d2b00fc1a51ff6e0150348\"}],\"sport_event_id\":1700008847,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":1.99,\"market_id\":225,\"net_cost_basis\":2.14,\"net_outcome_id\":13,\"net_size\":4.28,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.28,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":1.99,\"mark_price\":0.47,\"mark_value\":1.99,\"outcome_id\":13,\"size\":4.28,\"strike_id\":\"a161e61046da4d52f035f70876d8004b\"}],\"sport_event_id\":1700008847,\"strike\":44.5},{\"high_risk\":false,\"mark_price\":0.6,\"mark_value\":2.12,\"market_id\":406,\"net_cost_basis\":2.14,\"net_outcome_id\":4,\"net_size\":3.53,\"sides\":[{\"average_price\":0.61,\"closable_size\":3.53,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":2.12,\"mark_price\":0.6,\"mark_value\":2.12,\"outcome_id\":4,\"size\":3.53,\"strike_id\":\"9a00981fdf88d4de0d55f52dbde6a859\"}],\"sport_event_id\":1704711208,\"strike\":0}]}"
   }
+ },
+ {
+  "at": "2026-11-10T00:26:24.982092+00:00",
+  "event": "order failed",
+  "error": "VenueError: order partner_745ce078-bc14-44e4-8c13-a0d0b5758aa8 sent but its result is unknown and no position was found; check the ProphetX app",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.36,\"mark_value\":3.76,\"market_id\":219,\"net_cost_basis\":3.99,\"net_outcome_id\":4,\"net_size\":10.38,\"sides\":[{\"average_price\":0.38,\"closable_size\":10.38,\"closed_size\":0,\"cost_basis\":3.99,\"liquidation_value\":3.76,\"mark_price\":0.36,\"mark_value\":3.76,\"outcome_id\":4,\"size\":10.38,\"strike_id\":\"946e5f8242d2b00fc1a51ff6e0150348\"}],\"sport_event_id\":1700008847,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.45,\"mark_value\":1.94,\"market_id\":225,\"net_cost_basis\":2.14,\"net_outcome_id\":13,\"net_size\":4.28,\"sides\":[{\"average_price\":0.5,\"closable_size\":4.28,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":1.94,\"mark_price\":0.45,\"mark_value\":1.94,\"outcome_id\":13,\"size\":4.28,\"strike_id\":\"a161e61046da4d52f035f70876d8004b\"}],\"sport_event_id\":1700008847,\"strike\":44.5},{\"high_risk\":false,\"mark_price\":0.6,\"mark_value\":2.11,\"market_id\":406,\"net_cost_basis\":2.14,\"net_outcome_id\":4,\"net_size\":3.53,\"sides\":[{\"average_price\":0.61,\"closable_size\":3.53,\"closed_size\":0,\"cost_basis\":2.14,\"liquidation_value\":2.11,\"mark_price\":0.6,\"mark_value\":2.11,\"outcome_id\":4,\"size\":3.53,\"strike_id\":\"9a00981fdf88d4de0d55f52dbde6a859\"}],\"sport_event_id\":1704711208,\"strike\":0}]}"
+  },
+  "bet": "Nuggets to win (vs. Rockets)",
+  "pick": "Nuggets",
+  "market": "Nuggets vs. Rockets",
+  "venue": "prophetx",
+  "ref": "8a47d513a2b787a66b9afee43184c1e0",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.3846,
+  "share": 0.009384401409474916,
+  "side": "BUY",
+  "stake": 2.01,
+  "max_price": 0.4,
+  "dollars": 2.04,
+  "bankroll": 217.33
  }
 ]
