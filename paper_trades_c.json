@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 961.4054190770945,
+ "cash": 987.9928778229691,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -1833,7 +1833,7 @@
   },
   {
    "placed_at": "2026-11-09T11:37:02.195436+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Rockets",
    "market": "Nuggets vs. Rockets",
@@ -1864,9 +1864,9 @@
     "polymarket_us": 0.7678
    },
    "intl_cost_per_share": 0.7594,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.59,
+   "profit": 6.45,
+   "settled_at": "2026-11-10T04:26:23.635429+00:00",
    "topped_up_at": "2026-11-09T14:54:40.527046+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 3.6,

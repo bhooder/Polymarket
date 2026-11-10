@@ -1502,5 +1502,27 @@
   "profit": 1.89,
   "venue": "kalshi",
   "ref": "KXNBATOTAL-26NOV09WASDET-219"
+ },
+ {
+  "at": "2026-11-10T04:26:23.713657+00:00",
+  "event": "settled",
+  "bet": "Oilers to win (vs. Rangers)",
+  "status": "won",
+  "cost": 2.17,
+  "payout": 3.53,
+  "profit": 1.36,
+  "venue": "prophetx",
+  "ref": "9a00981fdf88d4de0d55f52dbde6a859"
+ },
+ {
+  "at": "2026-11-10T04:26:24.218294+00:00",
+  "event": "settled",
+  "bet": "Nuggets to win (vs. Rockets)",
+  "status": "lost",
+  "cost": 2.01,
+  "payout": 0.0,
+  "profit": -2.01,
+  "venue": "prophetx",
+  "ref": "8a47d513a2b787a66b9afee43184c1e0"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "cash": 209.01,
+ "cash": 212.54,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1060,7 +1060,7 @@
   },
   {
    "placed_at": "2026-11-09T20:03:14.343092+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Oilers",
@@ -1087,14 +1087,14 @@
     "event_id": 1704711208
    },
    "paper_price": 0.6062992125984252,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.53,
+   "profit": 1.36,
+   "settled_at": "2026-11-10T04:26:23.713466+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T00:53:51.710710+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "size_multiplier": 0.939,
    "pick": "Nuggets",
@@ -1121,9 +1121,9 @@
     "event_id": 1704711262
    },
    "paper_price": 0.3846,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.01,
+   "settled_at": "2026-11-10T04:26:23.713485+00:00",
    "topped_up_at": null
   }
  ],
@@ -1368,5 +1368,5 @@
   }
  ],
  "daily_check": "2026-11-10",
- "balances_checked_at": "2026-11-10T03:25:47.865421+00:00"
+ "balances_checked_at": "2026-11-10T04:27:55.592482+00:00"
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 939.8739181833831,
+ "cash": 987.015904281118,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -6809,7 +6809,7 @@
   },
   {
    "placed_at": "2026-11-09T02:57:39.561550+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Rockets",
    "market": "Nuggets vs. Rockets",
@@ -6840,9 +6840,9 @@
     "kalshi": 0.7728
    },
    "intl_cost_per_share": 0.7594,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.87,
+   "profit": 6.28,
+   "settled_at": "2026-11-10T04:26:23.318816+00:00",
    "topped_up_at": "2026-11-09T12:40:37.565819+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 4.4,
@@ -7281,7 +7281,7 @@
   },
   {
    "placed_at": "2026-11-09T23:48:27.456457+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pacers",
    "market": "Spread: Mavericks (-3.5)",
@@ -7311,9 +7311,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.27,
+   "profit": 11.33,
+   "settled_at": "2026-11-10T04:26:23.439199+00:00",
    "topped_up_at": null
   }
  ]
