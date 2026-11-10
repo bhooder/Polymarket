@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 906.3993125601302,
+ "cash": 895.6893125601301,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7400,7 +7400,7 @@
   {
    "placed_at": "2026-11-10T16:27:05.196914+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Bucks vs. Knicks: O/U 221.5",
    "link": "https://polymarket.com/event/nba-mil-nyk-2026-11-10",
@@ -7413,10 +7413,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 2.5,
    "traders_entry": 0.47,
-   "avg_price": 0.4854,
-   "shares": 21.8378608495099,
-   "cost": 10.71,
-   "fees": 0.1091,
+   "avg_price": 0.4866,
+   "shares": 43.570731443425885,
+   "cost": 21.42,
+   "fees": 0.2177,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -7431,7 +7431,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-10T23:14:11.301192+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-10T17:24:55.644888+00:00",
