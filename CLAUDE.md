@@ -93,13 +93,14 @@ The owner's rules:
   Per game, at most one moneyline-or-spread bet and at most one total bet
   (added 2026-10-29). If two compete in one run, the higher pick wins.
 - Only markets decided within 3 days. Skip games that have already started.
-- Price rule: the price actually paid (before fees) must be at most 2c ABOVE
-  or 4c BELOW the traders' average entry. (The scanner's 4c filter is off
+- Price rule: the price actually paid (before fees) must be at most 1c ABOVE
+  (2c until 2026-11-10) or 4c BELOW the traders' average entry, and at least 35c
+  (price floor added 2026-11-10; all strategies and real bets). (The scanner's 4c filter is off
   in the forward test.)
 - Underdog sizing (added 2026-10-30, both strategies, top-ups too): picks
   priced under 40c get stake x sqrt((p/(1-p)) / (0.4/0.6)), so each bet has about
   the same luck risk as a 40c bet: 30c x0.80, 20c x0.61, 10c x0.41. No price
-  floor. Uses the current Polymarket price. Older bets are unchanged.
+  floor until 2026-11-10, now 35c. Uses the current Polymarket price. Older bets are unchanged.
 - Hold until the market is decided. At most 50% of the bankroll in open bets.
 - Venues: only US-regulated venues: Polymarket US, Kalshi and (from
   2026-11-08) ProphetX. Each bet goes to whichever has the lowest all-in cost per share
@@ -120,7 +121,8 @@ tabs: Real bets, Strategy A, B, C, Statistics.
 
 Strategy D (added 2026-11-10): a fifth $1,000 paper bankroll for late money. Bets only
 90 to 15 minutes before the start (GitHub runs come ~40 min apart, so a narrower window
-would often be missed). Staked by NET bettors: 1% at net 3-4, 2% at net 5+. Skipped
+would often be missed). Staked by NET bettors: 1% at net 3-4, 2% at net 5+, and avg
+bankroll % must be 10%+ (added the same day: under 10% showed no edge). Skipped
 unless 2/3+ of the top traders' money in the market (the scanner's "Total $ in" vs
 "Against $ in", by cost) is on our side. State in paper_trades_d.json / .csv.
 

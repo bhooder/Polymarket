@@ -8,7 +8,7 @@ Each run:
    monthly PnL, hedges and crypto bots removed).
 3. Keeps picks that meet a staking tier, haven't started, and are decided within 3 days.
 4. "Buys" them with pretend money on the cheapest US venue (Polymarket US, Kalshi or ProphetX)
-   (see venues.py), from real order books with fees, if the price is no more than 2c
+   (see venues.py), from real order books with fees, if the price is no more than 1c
    above or 4c below the traders' average entry.
 5. Does steps 1, 3 and 4 separately for each strategy (own $1,000 pretend bankroll).
 6. Writes paper_trades.json / paper_trades_b.json (state), matching CSVs and paper_report.html.
@@ -40,8 +40,9 @@ ICLOUD = os.path.expanduser("~/Library/Mobile Documents/com~apple~CloudDocs/Poly
 START_BANKROLL = 1000.0
 MAX_DAYS_TO_END = 3      # only markets that end within this many days
 MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at once
-MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry...
+MAX_ABOVE = 0.01         # pay at most 1c more than the traders' average entry (2c until 2026-11-10)...
 MAX_BELOW = 0.04         # ...and at most 4c less
+MIN_PRICE = 0.35         # never bet a pick priced under 35c (added 2026-11-10: underdogs lost money)
 UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
 LIVE_LOG = "live_log.json"  # every live order sent, the venue's reply, skips and errors
@@ -75,10 +76,11 @@ STRATEGIES = {
     # late money: only 90 to 15 minutes before the start, when top traders have mostly placed their bets
     "d": {"name": "Strategy D", "state": "paper_trades_d.json", "csv": "paper_trades_d.csv",
           "rules": "Late bets only: placed 90 to 15 minutes before the game starts. Stake by NET bettors "
-                   "(bettors minus top traders on the other side): 1% at net 3-4, 2% at net 5+. Skipped "
-                   "unless at least two-thirds of the top traders' money in that market is on our side.",
-          "tiers": [(0.02, [(5, 0)]),
-                    (0.01, [(3, 0)])],
+                   "(bettors minus top traders on the other side): 1% at net 3-4, 2% at net 5+, and the "
+                   "average bankroll % must be 10%+. Skipped unless at least two-thirds of the top "
+                   "traders' money in that market is on our side.",
+          "tiers": [(0.02, [(5, 10)]),
+                    (0.01, [(3, 10)])],
           "net": True, "window": (15, 90), "min_money_share": 2 / 3},
     # copies only traders whose bets beat the closing price (see claude_strategy.py)
     "claude": {"name": "Claude", "state": "paper_trades_claude.json", "csv": "paper_trades_claude.csv",
@@ -214,8 +216,9 @@ def simulate_buy(token_id, dollars, fee):
 
 
 def in_band(price, entry):
-    """Price we'd pay may be at most 2c above, or 4c below, the traders' average entry."""
-    return -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9
+    """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
+    and never under 35c."""
+    return price >= MIN_PRICE - 1e-9 and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9
 
 
 def place(state, pick, info, stake, existing=None, on_bet=None):
@@ -243,7 +246,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None):
     ok = [q for q in choices if in_band(q["avg_price"], entry)]
     if not ok:
         prices = ", ".join(f"{q['venue']} {q['avg_price']:.3f}" for q in choices)
-        print(f"  skip (US prices {prices} outside {entry - MAX_BELOW:.2f}-{entry + MAX_ABOVE:.2f}): {label}")
+        print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{entry + MAX_ABOVE:.2f}): {label}")
         return None
     fill = ok[0]  # cheapest all-in cost per share that passes the price rule
     intl = simulate_buy(pick["token_id"], dollars, info.get("feeSchedule"))  # for comparison only
