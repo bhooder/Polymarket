@@ -1735,5 +1735,27 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5000\",\"client_order_id\":\"d1306faf-423d-5ce8-bb4b-15dbca8a449a\",\"fill_count\":\"6.00\",\"order_id\":\"01a1c871-2260-782f-867e-861c75838c19\",\"remaining_count\":\"0.00\",\"ts_ms\":1794364220284}"
   }
+ },
+ {
+  "at": "2026-11-11T03:22:33.047627+00:00",
+  "event": "settled",
+  "bet": "Maple Leafs to win (vs. Avalanche)",
+  "status": "lost",
+  "cost": 2.03,
+  "payout": 0.0,
+  "profit": -2.03,
+  "venue": "prophetx",
+  "ref": "e42e5389b5d049bdb4f17e3d62a03f13"
+ },
+ {
+  "at": "2026-11-11T03:22:33.503547+00:00",
+  "event": "settled",
+  "bet": "Panthers to win (vs. Blue Jackets)",
+  "status": "won",
+  "cost": 2.15,
+  "payout": 4.0,
+  "profit": 1.85,
+  "venue": "kalshi",
+  "ref": "KXNHLGAME-26NOV10FLACBJ-FLA"
  }
 ]

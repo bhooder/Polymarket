@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 839.3411661073725,
+ "cash": 1027.2267262986772,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7399,7 +7399,7 @@
   },
   {
    "placed_at": "2026-11-10T16:27:05.196914+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Bucks vs. Knicks: O/U 221.5",
@@ -7428,9 +7428,9 @@
     "prophetx": 0.4904
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.57,
+   "profit": 22.15,
+   "settled_at": "2026-11-11T03:22:32.173822+00:00",
    "topped_up_at": "2026-11-10T23:14:11.301192+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.9,
@@ -7438,7 +7438,7 @@
   },
   {
    "placed_at": "2026-11-10T17:24:55.644888+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Avalanche vs. Maple Leafs",
@@ -7468,14 +7468,14 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.27,
+   "settled_at": "2026-11-11T03:22:32.209175+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T18:16:48.736909+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Panthers",
    "market": "Panthers vs. Blue Jackets",
@@ -7505,9 +7505,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.45,
+   "profit": 18.04,
+   "settled_at": "2026-11-11T03:22:32.245779+00:00",
    "topped_up_at": "2026-11-10T23:51:03.199303+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 10.7,
@@ -7553,7 +7553,7 @@
   },
   {
    "placed_at": "2026-11-10T20:15:49.118246+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Wild vs. Canadiens: O/U 6.5",
@@ -7583,14 +7583,14 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.41,
+   "settled_at": "2026-11-11T03:22:32.283488+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T20:15:49.547009+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Bucks",
    "market": "Bucks vs. Knicks",
@@ -7619,9 +7619,9 @@
     "kalshi": 0.1065
    },
    "intl_cost_per_share": 0.1045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.24,
+   "settled_at": "2026-11-11T03:22:32.317392+00:00",
    "topped_up_at": "2026-11-10T23:51:03.629161+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.9,
@@ -7702,7 +7702,7 @@
   },
   {
    "placed_at": "2026-11-10T21:50:45.510450+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Western Michigan",
    "market": "Spread: Western Michigan (-14.5)",
@@ -7731,9 +7731,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.14,
+   "profit": 18.72,
+   "settled_at": "2026-11-11T03:22:32.424617+00:00",
    "topped_up_at": "2026-11-10T23:51:03.371382+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.9,
@@ -7741,7 +7741,7 @@
   },
   {
    "placed_at": "2026-11-10T22:28:50.549884+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Capitals",
    "market": "Capitals vs. Senators",
@@ -7771,14 +7771,14 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.57,
+   "profit": 19.17,
+   "settled_at": "2026-11-11T03:22:32.465006+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T23:51:05.195677+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Kent State vs. Bowling Green: O/U 43.5",
@@ -7807,9 +7807,9 @@
     "prophetx": 0.4434
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.16,
+   "profit": 13.45,
+   "settled_at": "2026-11-11T03:22:32.465046+00:00",
    "topped_up_at": null
   },
   {

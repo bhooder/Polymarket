@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1177.3960002884999,
+ "cash": 1200.9135044561588,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2923,7 +2923,7 @@
   },
   {
    "placed_at": "2026-11-10T17:24:55.233592+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Avalanche vs. Maple Leafs",
@@ -2954,14 +2954,14 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.13,
+   "settled_at": "2026-11-11T03:22:31.778425+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T18:16:47.468727+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Panthers",
    "market": "Panthers vs. Blue Jackets",
@@ -2992,9 +2992,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.52,
+   "profit": 10.87,
+   "settled_at": "2026-11-11T03:22:31.873678+00:00",
    "topped_up_at": null
   },
   {

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 953.1007709016292,
+ "cash": 1036.0721724972318,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2106,7 +2106,7 @@
   },
   {
    "placed_at": "2026-11-10T17:24:56.197966+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Avalanche vs. Maple Leafs",
@@ -2137,9 +2137,9 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.31,
+   "settled_at": "2026-11-11T03:22:32.602096+00:00",
    "topped_up_at": null
   },
   {
@@ -2180,7 +2180,7 @@
   },
   {
    "placed_at": "2026-11-10T20:15:49.868262+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Wild vs. Canadiens: O/U 6.5",
@@ -2209,14 +2209,14 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.5,
+   "settled_at": "2026-11-11T03:22:32.639898+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T20:15:50.356476+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bucks",
    "market": "Bucks vs. Knicks",
@@ -2245,14 +2245,14 @@
     "kalshi": 0.1064
    },
    "intl_cost_per_share": 0.1045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -4.14,
+   "settled_at": "2026-11-11T03:22:32.674521+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-10T22:28:51.193212+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Capitals",
    "market": "Capitals vs. Senators",
@@ -2281,9 +2281,9 @@
     "kalshi": 0.5277
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.72,
+   "profit": 19.24,
+   "settled_at": "2026-11-11T03:22:32.713127+00:00",
    "topped_up_at": "2026-11-10T23:14:12.076906+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 1.6,
@@ -2291,7 +2291,7 @@
   },
   {
    "placed_at": "2026-11-10T22:28:51.941801+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Bucks vs. Knicks: O/U 221.5",
@@ -2320,9 +2320,9 @@
     "prophetx": 0.4904
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.92,
+   "profit": 11.17,
+   "settled_at": "2026-11-11T03:22:32.713168+00:00",
    "topped_up_at": null
   },
   {
@@ -2365,7 +2365,7 @@
   },
   {
    "placed_at": "2026-11-10T23:51:08.903831+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Western Michigan",
    "market": "Spread: Western Michigan (-14.5)",
@@ -2394,9 +2394,9 @@
     "polymarket_us": 0.5287
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.33,
+   "profit": 9.58,
+   "settled_at": "2026-11-11T03:22:32.750225+00:00",
    "topped_up_at": null
   }
  ]
