@@ -22,9 +22,11 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   pretend bets by the owner's rules.
 - `venues.py`: finds the same bet on Polymarket US, Kalshi and ProphetX, prices
   it from real order books with fees, and settles it.
-- `live.py`: real-money betting. Copies each new Strategy A paper bet (and
-  top-up) to the same venue, sized as the same share of the real bankroll
-  (cash + open positions on both accounts), same price rule, "fill now or
+- `live.py`: real-money betting. Copies each new Strategy A paper bet to the
+  same venue. From 2026-11-10 every real bet is a FLAT 1.5% of the real bankroll
+  (cash + open positions on all accounts), times the underdog multiplier, and
+  real bets are never topped up (live.FLAT_SHARE; before that they copied A's
+  1%/2% stakes and top-ups). Same price rule, "fill now or
   cancel" limit orders, 50% exposure cap, never doubles a position it already
   holds. Mode from the LIVE_TRADING repository variable: off (default),
   practice (no orders; Polymarket US orders previewed), on. Keys in GitHub

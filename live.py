@@ -386,6 +386,12 @@ def adopt_unrecorded(state, accounts, paper_bets):
                             f"that wasn't in the records. Added.")
 
 
+# Every real bet is the same share of the real bankroll (times the underdog multiplier), whatever
+# stake Strategy A's paper bet used, and real bets are never topped up. Chosen 2026-11-10: A's 2% bets
+# had shown no edge over its 1% bets, so doubling up on them only doubled the risk.
+FLAT_SHARE = 0.015
+
+
 def run(intents, max_above, state, paper_bets=None):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
@@ -433,14 +439,18 @@ def run(intents, max_above, state, paper_bets=None):
         venue = ref["venue"]
         what = plain(bet["pick"], bet["market"])
         where = VENUE_LABEL.get(venue, venue)
+        share = FLAT_SHARE * (bet.get("size_multiplier") or 1.0)
         info = {"bet": what, "pick": bet["pick"], "market": bet["market"], "venue": venue, "ref": ref.get("ref"),
-                "top_up": it["top_up"], "mode": m, "paper_price": bet["avg_price"], "share": it["share"]}
+                "top_up": it["top_up"], "mode": m, "paper_price": bet["avg_price"], "share": share}
 
         def skip(reason, tell=True):
             log("skipped", reason=reason, **info)
             if tell:
                 alert(f"⏭️ Skipped{' top-up' if it['top_up'] else ''}", f"{what}\n{reason}")
 
+        if it["top_up"]:
+            skip("Flat stakes: real bets are never topped up.", tell=False)
+            continue
         if venue not in accounts:
             skip(f"{where} account isn't working.")
             continue
@@ -452,7 +462,7 @@ def run(intents, max_above, state, paper_bets=None):
         if not it["top_up"] and holding:
             skip("Already holding this bet.", tell=False)  # e.g. a repeat run; never double up
             continue
-        dollars = round(it["share"] * bankroll, 2)
+        dollars = round(share * bankroll, 2)
         if exposure + dollars > MAX_EXPOSURE * bankroll or dollars > cash:
             skip(f"Would need ${dollars:.2f}: over the 50% cap or more than the ${cash:.2f} cash on {where}.")
             continue
