@@ -1920,5 +1920,32 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":true,\"mark_price\":0.48,\"mark_value\":3.13,\"market_id\":186,\"net_cost_basis\":3.17,\"net_outcome_id\":5,\"net_size\":6.47,\"sides\":[{\"average_price\":0.49,\"closable_size\":6.47,\"closed_size\":0,\"cost_basis\":3.17,\"liquidation_value\":3.13,\"mark_price\":0.48,\"mark_value\":3.13,\"outcome_id\":5,\"size\":6.47,\"strike_id\":\"f6b228938f5800df78755809378684f6\"}],\"sport_event_id\":1704713198,\"strike\":0}]}"
   }
+ },
+ {
+  "at": "2026-11-11T21:08:39.931787+00:00",
+  "event": "order",
+  "filled": 6.0,
+  "price": 0.52,
+  "fees": 0.10439999999999999,
+  "bet": "Bulls +15.5",
+  "pick": "Bulls",
+  "market": "Spread: Spurs (-15.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV11SASCHI-SAS16",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 6,
+  "max_price": 0.53,
+  "dollars": 3.24,
+  "bankroll": 216.31,
+  "order_id": "79ea437b-4e18-5ef4-a3a2-599f9f6d16c0",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"79ea437b-4e18-5ef4-a3a2-599f9f6d16c0\",\"fill_count\":\"6.00\",\"order_id\":\"01a1cc70-fbd8-7e18-960a-d2b6d7baa334\",\"remaining_count\":\"0.00\",\"ts_ms\":1794431319924}"
+  }
  }
 ]
