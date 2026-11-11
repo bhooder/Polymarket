@@ -450,12 +450,136 @@ def real_vs_paper(live_state, paper_state):
 
 
 def stats_html(strats, extra=""):
-    """Statistics tab: the strategies side by side. strats = [(config, settled bets), ...]"""
+    """Statistics tab, phone first: a card per strategy, two comparison charts, breakdowns as bars,
+    and the full numbers table + explanations in tap-to-open sections.
+    strats = [(config, settled bets), ...]"""
+    esc = html.escape
     fmt_z = lambda z: f"{z:+.2f}" if z is not None else "&ndash;"
-    money = lambda v: f'<span class="{"up" if v > 0 else "down" if v < 0 else ""}">{v:+,.2f}</span>'
+    money = lambda v: f'<span class="{"up" if v > 0 else "down" if v < 0 else ""}">{"+" if v >= 0 else "&minus;"}${abs(v):,.2f}</span>'
     pct = lambda a, n: f"{a / n:.0%}" if n else "&ndash;"
+    ret = lambda t: t["profit"] / t["staked"] if t["staked"] else None
     sums = [(cfg, summarize(bets), bets) for cfg, bets in strats]
 
+    def badge(t):
+        z = t["z_market"]
+        if t["n"] < MIN_BETS or z is None:
+            return '<span class="pill">Too early</span>'
+        if z >= 2:
+            return '<span class="pill good">&#9650; Possible edge</span>'
+        if z <= -2:
+            return '<span class="pill bad">&#9660; Worse than luck</span>'
+        return '<span class="pill">Within normal luck</span>'
+
+    def spark(bets):
+        """Running profit, one point per settled bet, with a zero line."""
+        bets = sorted(bets, key=lambda b: b.get("settled_at") or b["placed_at"])
+        if len(bets) < 2:
+            return '<div class="spark empty">Chart appears after 2 settled bets</div>'
+        run, pts = 0.0, [0.0]
+        for b in bets:
+            run += b["profit"]
+            pts.append(run)
+        lo, hi = min(pts + [0]), max(pts + [0])
+        span = (hi - lo) or 1
+        W, H = 300, 56
+        y = lambda v: 4 + (H - 8) * (hi - v) / span
+        xy = " ".join(f"{i * W / (len(pts) - 1):.1f},{y(v):.1f}" for i, v in enumerate(pts))
+        end = "up" if run >= 0 else "down"
+        return (f'<svg class="spark" viewBox="0 0 {W} {H}" preserveAspectRatio="none" role="img" '
+                f'aria-label="Running profit over {len(bets)} settled bets, now {run:+.2f} dollars">'
+                f'<line x1="0" x2="{W}" y1="{y(0):.1f}" y2="{y(0):.1f}" class="zero"/>'
+                f'<polyline points="{xy}" class="line {end}" vector-effect="non-scaling-stroke"/></svg>')
+
+    def card(cfg, t):
+        if not t["n"]:
+            return (f'<div class="scard"><div class="shead"><b>{esc(cfg["name"])}</b>{badge(t)}</div>'
+                    f'<div class="ssub">No settled bets yet.</div></div>')
+        r = ret(t)
+        progress = min(t["n"] / REVIEW_AT, 1)
+        return f"""<div class="scard">
+<div class="shead"><b>{esc(cfg["name"])}</b>{badge(t)}</div>
+<div class="sbig">{money(t["profit"])}</div>
+<div class="ssub">{f"{r:+.1%} per $ bet" if r is not None else "No settled bets yet"} &middot; {t["wins"]}-{t["n"] - t["wins"]}
+ &middot; won {pct(t["wins"], t["n"])} <span class="muted">(market said {pct(t["exp_wins"], t["n"])})</span></div>
+{spark(t["bets"])}
+<div class="prog" role="img" aria-label="{t["n"]} of {REVIEW_AT} settled bets"><i style="width:{progress:.0%}"></i></div>
+<div class="ssub">{t["n"]} of {REVIEW_AT} settled bets before the verdict</div>
+</div>"""
+
+    def bars(rows, lim, fmt, marks=(), ticks=()):
+        """Horizontal bars from a zero line in the middle. rows = [(label, value or None, faded, tooltip)]."""
+        out = []
+        for m in marks:  # reference lines, e.g. the +-2 SD lines
+            out.append(f'<i class="mark" style="left:{50 + 50 * m / lim:.2f}%"></i>')
+        marks_html = "".join(out)
+        body = []
+        for label, v, faded, tip in rows:
+            if v is None:
+                bar, val = "", "&ndash;"
+            else:
+                w = min(abs(v) / lim, 1) * 50
+                side = f"left:50%;width:{w:.2f}%" if v >= 0 else f"right:50%;width:{w:.2f}%"
+                bar = f'<i class="bar {"pos" if v >= 0 else "neg"}" style="{side}"></i>'
+                val = fmt(v)
+            body.append(f'<div class="brow{" faded" if faded else ""}" title="{esc(tip)}"><span class="blabel">{esc(label)}</span>'
+                        f'<span class="track"><i class="axis0"></i>{marks_html}{bar}</span>'
+                        f'<span class="bval">{val}</span></div>')
+        if ticks:  # labels under the reference lines
+            labels = "".join(f'<span style="left:{50 + 50 * v / lim:.2f}%">{esc(text)}</span>' for v, text in ticks)
+            body.append(f'<div class="brow ticks"><span></span><span class="track">{labels}</span><span></span></div>')
+        return '<div class="bars">' + "".join(body) + "</div>"
+
+    for cfg, t, bets in sums:
+        t["bets"] = bets
+    out = ['<h2>At a glance</h2><div class="scards">'
+           + "".join(card(cfg, t) for cfg, t, _ in sums) + "</div>"]
+
+    tip = lambda cfg, t: (f'{cfg["name"]}: {t["n"]} settled bets, profit {t["profit"]:+.2f}, '
+                          f'Z beat market {fmt_z(t["z_market"])}, Z make money {fmt_z(t["z_money"])}')
+    out.append('<h2>Beating the market&rsquo;s odds?</h2><p class="hint">How many &ldquo;luck units&rdquo; (SD) each '
+               'result is above what the prices predicted. Past the <b>+2</b> line hints at a real edge. Faded = under '
+               f'{MIN_BETS} settled bets, too early to read.</p>')
+    out.append(bars([(cfg["name"], t["z_market"], t["n"] < MIN_BETS, tip(cfg, t)) for cfg, t, _ in sums],
+                    4, lambda v: f"{v:+.1f}", marks=(-2, 2), ticks=((-2, "−2"), (0, "0"), (2, "+2"))))
+    rets = [ret(t) for _, t, _ in sums if ret(t) is not None]
+    lim = max([abs(r) for r in rets] + [0.05])
+    out.append('<h2>Return per $ bet</h2><p class="hint">Profit divided by money staked, settled bets only.</p>')
+    out.append(bars([(cfg["name"], ret(t), t["n"] < MIN_BETS, tip(cfg, t)) for cfg, t, _ in sums],
+                    lim, lambda v: f"{v:+.0%}"))
+    out.append(extra)
+
+    # breakdowns: one strategy at a time, picked from a menu
+    def breakdown(title, bets, key):
+        groups = {}
+        for b in bets:
+            groups.setdefault(key(b), []).append(b)
+        rows = []
+        for name, gb in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+            g = summarize(gb)
+            rows.append((f"{name} ({g['n']})", ret(g), g["n"] < MIN_BETS,
+                         f'{name}: {g["n"]} bets, {g["wins"]}-{g["n"] - g["wins"]}, profit {g["profit"]:+.2f}, '
+                         f'Z {fmt_z(g["z_market"])}'))
+        if not rows:
+            return f'<h3>{title}</h3><p class="muted">None yet.</p>'
+        lim = max([abs(r[1]) for r in rows if r[1] is not None] + [0.05])
+        return f"<h3>{title}</h3>" + bars(rows, lim, lambda v: f"{v:+.0%}")
+
+    opts = "".join(f'<option value="{i}">{esc(cfg["name"])}</option>' for i, (cfg, _, _) in enumerate(sums))
+    out.append('<h2>Breakdowns</h2><p class="hint">Return per $ bet by group. Number of bets in brackets; '
+               f'faded = under {MIN_BETS} bets.</p>'
+               f'<select class="pick-strat" aria-label="Strategy">{opts}</select>')
+    for i, (cfg, _, bets) in enumerate(sums):
+        out.append(f'<div class="bd" data-i="{i}"{"" if i == 0 else " hidden"}>'
+                   + breakdown("By bet type", bets, lambda b: TYPE_NAMES.get(bet_type(b), "Other"))
+                   + breakdown("By stake", bets, lambda b: f'{b["stake"]:.0%}')
+                   + breakdown("By sport", bets, sport_of) + "</div>")
+    out.append("""<script>
+document.querySelectorAll(".pick-strat").forEach(s => s.addEventListener("change", () => {
+  document.querySelectorAll(".bd").forEach(d => d.hidden = d.dataset.i !== s.value);
+}));
+</script>""")
+
+    # the full numbers, as a table (also the text version of the charts above)
     metrics = [
         ("Settled bets", lambda t: f'{t["n"]} / {REVIEW_AT}'),
         ("Won-lost", lambda t: f'{t["wins"]}-{t["n"] - t["wins"]}'),
@@ -464,56 +588,19 @@ def stats_html(strats, extra=""):
         ("Staked", lambda t: f'${t["staked"]:,.2f}'),
         ("Actual profit", lambda t: money(t["profit"])),
         ("Expected if market is right", lambda t: money(t["exp_profit"])),
-        ("Return per $ bet", lambda t: f'{t["profit"] / t["staked"]:+.1%}' if t["staked"] else "&ndash;"),
+        ("Return per $ bet", lambda t: f'{ret(t):+.1%}' if ret(t) is not None else "&ndash;"),
         ("1 SD (normal luck range)", lambda t: f'&plusmn;${t["sd"]:,.2f}'),
         ("Z: beat the market's odds", lambda t: fmt_z(t["z_market"])),
         ("Z: make money after fees", lambda t: fmt_z(t["z_money"])),
     ]
-    head = "".join(f'<th class="num">{cfg["name"]}</th>' for cfg, _, _ in sums)
+    head = "".join(f'<th class="num">{esc(cfg["name"])}</th>' for cfg, _, _ in sums)
     body = "".join(f'<tr><td class="pick">{label}</td>'
                    + "".join(f'<td class="num">{f(t)}</td>' for _, t, _ in sums) + "</tr>"
                    for label, f in metrics)
-    out = [f'<h2>Head to head</h2><div class="wrap"><table><thead><tr><th></th>{head}</tr></thead>'
-           f'<tbody>{body}</tbody></table></div>', extra]
-
-    out.append('<div class="verdicts">')
-    for cfg, t, _ in sums:
-        for title, z, goal in (("beat the market's odds?", t["z_market"], "beat the market's odds"),
-                               ("make money after fees?", t["z_money"], "make money after fees")):
-            cls, text = verdict(t["n"], z, goal)
-            out.append(f'<div class="verdict {cls}"><h3>{cfg["name"]}: does it {title}</h3>'
-                       f'<div class="z">Z = {fmt_z(z)}</div><p>{text}</p></div>')
-    out.append("</div>")
-
-    def table(title, bets, key):
-        groups = {}
-        for b in bets:
-            groups.setdefault(key(b), []).append(b)
-        rows = []
-        for name, gb in sorted(groups.items(), key=lambda kv: -len(kv[1])):
-            g = summarize(gb)
-            ret = f'{g["profit"] / g["staked"]:+.1%}' if g["staked"] else "&ndash;"
-            z_cls = "num" + (" muted" if g["n"] < MIN_BETS else "")
-            rows.append(
-                f'<tr><td class="pick">{html.escape(str(name))}</td><td class="num">{g["n"]}</td>'
-                f'<td class="num">{g["wins"]}-{g["n"] - g["wins"]}</td>'
-                f'<td class="num">{pct(g["wins"], g["n"])} <span class="muted">({pct(g["exp_wins"], g["n"])})</span></td>'
-                f'<td class="num">{money(g["profit"])}</td><td class="num">{ret}</td>'
-                f'<td class="{z_cls}">{fmt_z(g["z_market"])}</td></tr>')
-        body = "".join(rows) or '<tr><td colspan="7">None yet.</td></tr>'
-        return (f'<h3>{title}</h3><div class="wrap"><table><thead><tr><th>{title[3:]}</th>'
-                f'<th class="num">Bets</th><th class="num">Won-lost</th><th class="num">Win % (exp.)</th>'
-                f'<th class="num">Profit</th><th class="num">Return</th><th class="num">Z</th>'
-                f'</tr></thead><tbody>{body}</tbody></table></div>')
-
-    out.append('<h2>Breakdowns</h2><div class="compare">')
-    for cfg, _, bets in sums:
-        out.append(f'<div><h2 class="col">{cfg["name"]}</h2>'
-                   + table("By bet type", bets, lambda b: TYPE_NAMES.get(bet_type(b), "Other"))
-                   + table("By stake", bets, lambda b: f'{b["stake"]:.0%}')
-                   + table("By sport", bets, sport_of) + "</div>")
-    out.append("</div>")
-    out.append(f"""<h2>What these numbers mean</h2><div class="explain">
+    out.append(f'<details class="more"><summary>All the numbers (table)</summary>'
+               f'<div class="wrap"><table class="sticky1"><thead><tr><th></th>{head}</tr></thead>'
+               f'<tbody>{body}</tbody></table></div></details>')
+    out.append(f"""<details class="more"><summary>What these numbers mean</summary><div class="explain">
 <p><b>Expected if market is right:</b> each price is the market's guess at the chance of winning
 (0.60 = 60%). If those guesses are right, this is what the bets should make on average: a small loss,
 the fees.</p>
@@ -524,11 +611,52 @@ the actual profit lands within 1 SD of expected; about 95% of the time within 2 
 expected loss from fees; "make money" compares with breaking even, which is a harder bar.</p>
 <p><b>Be patient:</b> with a real 10% edge it takes about 400 bets on average to reach 2 SD. Checking
 often and stopping the first time Z touches 2 makes a fluke much more likely, so the decision point
-is fixed at {REVIEW_AT} settled bets. Group Z-scores in grey have under {MIN_BETS} bets and mean little.</p>
-<p><b>Comparing strategies:</b> both bet on the same picks feed, so they often share bets and their
-results move together. A gap between them only means something once both have many settled bets.</p>
-</div>""")
+is fixed at {REVIEW_AT} settled bets.</p>
+<p><b>Comparing strategies:</b> they all bet from the same picks feed, so they often share bets and their
+results move together. A gap between them only means something once they have many settled bets.</p>
+</div></details>""")
     return "\n".join(out)
+
+STATS_CSS = """
+  .scards { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; }
+  .scard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; min-width:0; }
+  .shead { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .shead b { font-size:16px; }
+  .sbig { font-size:26px; font-weight:700; margin:6px 0 2px; }
+  .ssub { color:var(--muted); font-size:13px; }
+  .pill { font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px; white-space:nowrap;
+          background:var(--line); color:var(--muted); }
+  .pill.good { background:color-mix(in srgb, var(--up) 15%, transparent); color:var(--up); }
+  .pill.bad { background:color-mix(in srgb, var(--down) 15%, transparent); color:var(--down); }
+  svg.spark { display:block; width:100%; height:56px; margin:10px 0 8px; overflow:visible; }
+  svg.spark .zero { stroke:var(--line); stroke-width:1; }
+  svg.spark .line { fill:none; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; }
+  svg.spark .line.up { stroke:var(--up); } svg.spark .line.down { stroke:var(--down); }
+  .spark.empty { height:56px; margin:10px 0 8px; display:flex; align-items:center; justify-content:center;
+                 color:var(--muted); font-size:12px; border:1px dashed var(--line); border-radius:8px; }
+  .prog { height:6px; background:var(--line); border-radius:3px; overflow:hidden; margin-bottom:4px; }
+  .prog i { display:block; height:100%; background:var(--accent); border-radius:3px; }
+  .hint { color:var(--muted); font-size:13px; margin:-4px 0 10px; }
+  .bars { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:8px 12px; }
+  .brow { display:grid; grid-template-columns:minmax(84px, 34%) 1fr 52px; align-items:center; gap:8px;
+          min-height:30px; font-size:14px; }
+  .brow.faded { opacity:.45; }
+  .blabel { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .bval { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
+  .track { position:relative; height:16px; }
+  .track .axis0 { position:absolute; left:50%; top:-4px; bottom:-4px; width:1px; background:var(--muted); opacity:.5; }
+  .track .mark { position:absolute; top:-4px; bottom:-4px; width:1px; background:var(--muted); opacity:.35; }
+  .track .bar { position:absolute; top:2px; height:12px; border-radius:4px; }
+  .track .bar.pos { background:var(--chart-pos); } .track .bar.neg { background:var(--chart-neg); }
+  .brow.ticks { min-height:18px; font-size:11px; color:var(--muted); }
+  .brow.ticks .track span { position:absolute; transform:translateX(-50%); top:0; }
+  .pick-strat { font:inherit; font-size:15px; padding:8px 10px; border-radius:10px; border:1px solid var(--line);
+                background:var(--card); color:var(--text); margin-bottom:4px; max-width:100%; }
+  details.more { margin-top:18px; }
+  details.more summary { cursor:pointer; font-weight:600; padding:10px 0; color:var(--accent); }
+  table.sticky1 td:first-child, table.sticky1 th:first-child { position:sticky; left:0; background:var(--card); }
+"""
+
 
 REPORT = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -536,10 +664,12 @@ REPORT = """<!doctype html>
 <title>Betting Results</title>
 <style>
   :root { --bg:#f7f7f5; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea;
-          --accent:#2f6fed; --up:#1a8a4a; --down:#c4372b; }
+          --accent:#2f6fed; --up:#1a8a4a; --down:#c4372b;
+          --chart-pos:#2a78d6; --chart-neg:#e34948; }
   @media (prefers-color-scheme: dark) {
     :root { --bg:#141416; --card:#1e1e21; --text:#f2f2f4; --muted:#9a9aa0; --line:#2e2e33;
-            --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e; } }
+            --accent:#6b9bff; --up:#4cc27e; --down:#ff6b5e;
+            --chart-pos:#3987e5; --chart-neg:#e66767; } }
   body { margin:0; padding:24px 16px; background:var(--bg); color:var(--text);
          font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   main { max-width:1280px; margin:0 auto; }
@@ -584,6 +714,7 @@ REPORT = """<!doctype html>
   .compare th { font-size:11px; }
   @media (max-width: 640px) { .compare, .verdicts { grid-template-columns:1fr; } }
 __ODDS_CSS__
+__STATS_CSS__
 </style></head><body><main>
 <h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
@@ -730,7 +861,7 @@ def write_reports(states, live_state, card=None):
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
     sub = f"Real-money bets and pretend-money tests of six strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
-    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
+    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS).replace("__STATS_CSS__", STATS_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
             .replace("__SUB__", html.escape(sub))
