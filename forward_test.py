@@ -920,6 +920,10 @@ def main():
     for key, cfg in STRATEGIES.items():
         path = os.path.join(HERE, cfg["state"])
         states[key] = load_state(path)
+        if cfg.get("claude") and states[key].get("version") != claude_strategy.VERSION:
+            # the Claude rules changed: restart its pretend bankroll (its old bets came from the old rules)
+            print(f"{cfg['name']}: restarting under rules version {claude_strategy.VERSION}")
+            states[key] = {**load_state("/nonexistent"), "version": claude_strategy.VERSION}
         settle(states[key])
         save_state(states[key], path)
     log_path = os.path.join(HERE, LIVE_LOG)
@@ -936,11 +940,13 @@ def main():
     write_picks(picks)
     card_path = os.path.join(HERE, CARD)
     card = load_state(card_path) if os.path.exists(card_path) else claude_strategy.new_card()
+    if card.get("version") != claude_strategy.VERSION:
+        card = claude_strategy.new_card()  # rules changed: grade everyone again from scratch
     claude_picks = []
     try:  # the report card must never stop the other strategies or real bets
         positions = {**scanner.POSITIONS, **claude_strategy.extra_positions(
             card, scanner.POSITIONS, scanner_args.min_value)}
-        claude_strategy.record(card, positions)
+        claude_strategy.record(card, positions, scanner.PACE)
         print(f"Report card: graded {claude_strategy.grade(card)} positions, "
               f"{len(card['pending'])} waiting, {len(claude_strategy.qualified(card))} traders qualified")
         claude_picks = claude_strategy.picks(card, positions)

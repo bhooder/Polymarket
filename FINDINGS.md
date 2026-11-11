@@ -65,6 +65,11 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
 - 2026-11-10: Strategy E (per-trader conviction = 10%+ of bankroll, net counts).
   The $5,000 alternative was dropped the same day (finding 5). E's first bet (Celtics,
   Nov 10 7:45 PM) was placed under the old rule and left as is.
+- 2026-11-10: Strategy Claude rules v2. Within an hour of starting, a high-speed bot
+  (~320 trades/hour, both sides of many markets) "qualified" on 26 positions from one
+  evening, mostly alternate spreads of one game, and 7 paper bets were copied. Fix: each
+  game counts once per trader, 5+ different days required, traders over 50 trades/hour
+  never copied. The report card and the Claude bankroll were restarted.
 - 2026-11-10: real bets switched to a FLAT 1.5% of the real bankroll, no top-ups
   (finding 2). Paper Strategy A keeps its 1%/2% tiers so its test stays clean.
 

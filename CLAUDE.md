@@ -140,7 +140,13 @@ bankroll that copies only traders with a proven record of beating the closing pr
 Report card (`trader_card.json`): every run notes each scanned trader's game positions
 ($100+, games within 3 days) with their average entry; when the game starts it is graded
 vs the last price before the start (Polymarket /prices-history): CLV = close - entry.
-A trader qualifies at 25+ graded positions, average CLV +1c or better and t-score 2.5+.
+Each game counts once per trader (average CLV of their positions in it). A trader
+qualifies at 25+ graded games on 5+ different days, average CLV +1c or better, t-score
+2.5+, and not trading at bot speed (>50 trades/hour over their last 500 trades; the
+scanner notes this in PACE). Rules version 2 (2026-11-10): v1 counted every position and
+had no day minimum or bot filter, so a 300+ trades/hour bot qualified in one evening on
+alternate lines of one game; the card and the Claude bankroll restarted automatically
+(claude_strategy.VERSION).
 Qualified traders who drop off the leaderboard are still followed. Picks: outcomes held
 by qualified traders, at least one of whom first bought within 6 hours. 1% with one
 qualified trader, 2% with two or more (top-up once); all other rules as A. No bets until

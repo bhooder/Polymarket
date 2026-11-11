@@ -112,9 +112,16 @@ def event_tags(event_ids):
     return tags
 
 
+PACE = {}  # wallet -> trades per hour over their last 500 trades (filled by crypto_share)
+
+
 def crypto_share(wallet):
-    """Fraction of the wallet's last 500 trades that are on crypto price markets."""
+    """Fraction of the wallet's last 500 trades that are on crypto price markets.
+    Also notes the wallet's trading pace in PACE (bots trade far faster than people)."""
     trades = get("/trades", {"user": wallet, "limit": 500}).get("data") or []
+    stamps = [t["timestamp"] for t in trades if t.get("timestamp")]
+    if len(stamps) >= 100:  # too few trades says nothing about pace
+        PACE[wallet] = len(stamps) / max((max(stamps) - min(stamps)) / 3600, 0.01)
     if not trades:
         return 0.0
     return sum(bool(CRYPTO_PRICE.search(t.get("title") or "")) for t in trades) / len(trades)
