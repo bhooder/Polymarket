@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1058.2925508280837,
+ "cash": 1036.024357080496,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2541,6 +2541,42 @@
     "kalshi": 0.3967
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T18:32:55.211003+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Knicks",
+   "market": "Spread: Knicks (-4.5)",
+   "link": "https://polymarket.com/event/nba-cle-nyk-2026-11-11",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x103757e332d1d33f25c81d452bc461b893c9a566d989fbb1b4c22420b2b7adfd",
+   "token_id": "52336183995970556189745424399727540711627583887416847791225915728194154860076",
+   "outcome_index": 0,
+   "ends": "2026-11-12T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.48,
+   "shares": 44.746236974141254,
+   "cost": 22.27,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV11CLENYK-NYK5",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4977
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

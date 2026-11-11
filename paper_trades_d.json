@@ -1,6 +1,43 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1000.0,
+ "cash": 990.0,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
- "bets": []
+ "bets": [
+  {
+   "placed_at": "2026-11-11T18:32:55.384226+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Juventus FC win on 2026-11-11?",
+   "link": "https://polymarket.com/event/uwcl-juv-oly-2026-11-11",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbd5c7e5d10341c4d57e714299d9cfc16eb8714bb7f80571943beb4138cddf0c2",
+   "token_id": "103057380575680540611498631160913812850081934613137938143629399483285694011126",
+   "outcome_index": 1,
+   "ends": "2026-11-11T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 13.4,
+   "traders_entry": 0.94,
+   "avg_price": 0.94,
+   "shares": 10.578003253793801,
+   "cost": 10.0,
+   "fees": 0.0567,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-uwcl-juv-oly-2026-11-11-juv",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.9454
+   },
+   "intl_cost_per_share": 0.9371,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  }
+ ]
 }
