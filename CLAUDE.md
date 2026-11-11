@@ -195,7 +195,10 @@ Status: see FINDINGS.md (results snapshot and what the data has shown).
   `fillOrKill`, price must be on the price ladder. Games are matched by league,
   start time (+-3h) and team names; >15c from Polymarket = discarded. The fee rate
   is set per account and not published. Seen 2026-11-09: no fee when a bet fills; about
-  2% of the winnings is charged when a bet wins (venues.PX_FEE = 0.02). Paper bets pay
+  2% of the winnings is charged when a bet wins (venues.PX_FEE = 0.02). Seen 2026-11-10
+  (Maple Leafs; the Oilers bet on 11-09 was the same): some fills DO charge a fee at once, on top
+  of the stake (position cost_basis $2.03, fee $0.04, balance fell $2.07). live.py records that fee
+  in the bet's cost, and such a bet is not charged again when it wins. Paper bets pay
   the expected fee up front; real bets have it taken from the payout at settlement. No public results: ProphetX bets
   settle by the international Polymarket result. No Premier League seen.
 
