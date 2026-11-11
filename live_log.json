@@ -1893,5 +1893,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5200\",\"client_order_id\":\"c4742493-4a2b-5bad-b854-9a68ccadada0\",\"fill_count\":\"7.00\",\"order_id\":\"01a1cb76-ffc0-7fb7-af5f-14858a2bab55\",\"remaining_count\":\"0.00\",\"ts_ms\":1794414936791}"
   }
+ },
+ {
+  "at": "2026-11-11T19:42:41.636072+00:00",
+  "event": "order",
+  "filled": 6.47,
+  "price": 0.4899536321483771,
+  "fees": 0.0,
+  "bet": "Mirra Andreeva to win (vs. Aryna Sabalenka)",
+  "pick": "Mirra Andreeva",
+  "market": "WTA Finals, Group B: Aryna Sabalenka vs Mirra Andreeva",
+  "venue": "prophetx",
+  "ref": "f6b228938f5800df78755809378684f6",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.4902,
+  "share": 0.015,
+  "side": "BUY",
+  "stake": 3.17,
+  "max_price": 0.51,
+  "dollars": 3.24,
+  "bankroll": 216.31,
+  "order_id": "434f2220-2265-5725-a352-60aca6077fe6",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":true,\"mark_price\":0.48,\"mark_value\":3.13,\"market_id\":186,\"net_cost_basis\":3.17,\"net_outcome_id\":5,\"net_size\":6.47,\"sides\":[{\"average_price\":0.49,\"closable_size\":6.47,\"closed_size\":0,\"cost_basis\":3.17,\"liquidation_value\":3.13,\"mark_price\":0.48,\"mark_value\":3.13,\"outcome_id\":5,\"size\":6.47,\"strike_id\":\"f6b228938f5800df78755809378684f6\"}],\"sport_event_id\":1704713198,\"strike\":0}]}"
+  }
  }
 ]

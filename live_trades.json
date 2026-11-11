@@ -1465,6 +1465,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T19:42:41.636081+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Mirra Andreeva",
+   "market": "WTA Finals, Group B: Aryna Sabalenka vs Mirra Andreeva",
+   "link": "https://polymarket.com/event/wta-sabalen-andreev-2026-11-10",
+   "market_type": "moneyline",
+   "condition_id": "0x98a9905b6499c46698e23fefea493c0b1d78cf95c9e1935f2b1d3f3a77b9fb72",
+   "token_id": "76878020521429597777605109850999121074892400110522624992058528824244186687078",
+   "outcome_index": 1,
+   "ends": "2026-11-11T21:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 27.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.49,
+   "shares": 6.47,
+   "cost": 3.17,
+   "fees": 0.0,
+   "contracts_ordered": 3.17,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "f6b228938f5800df78755809378684f6",
+    "fee_rate": 0.02,
+    "event_id": 1704713198
+   },
+   "paper_price": 0.4901960784313725,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1775,8 +1809,15 @@
    "venue": "kalshi",
    "ordered": 7,
    "filled": 7.0
+  },
+  {
+   "at": "2026-11-11T19:42:41.636051+00:00",
+   "pick": "Mirra Andreeva",
+   "venue": "prophetx",
+   "ordered": 3.17,
+   "filled": 3.17
   }
  ],
  "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T19:38:41.755788+00:00"
+ "balances_checked_at": "2026-11-11T19:42:29.892148+00:00"
 }
