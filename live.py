@@ -394,10 +394,11 @@ def adopt_unrecorded(state, accounts, paper_bets):
 FLAT_SHARE = 0.015
 
 
-def run(intents, max_above, state, paper_bets=None):
+def run(intents, max_above, state, paper_bets=None, cap=1.0):
     """intents: Strategy A paper bets placed this run, as dicts with bet, fill (venue quote),
     share (of the paper bankroll), top_up and entry (traders' average entry price).
     max_above: the price rule (pay at most this much over the traders' average entry).
+    cap: never pay more than this per share (75c, added 2026-11-11).
     state: live_trades.json contents; filled orders are added to it (only when mode is "on").
     paper_bets: all Strategy A paper bets, to find ProphetX bets held but not yet recorded.
     Every run in practice/on checks both accounts; once a day it sends their status."""
@@ -468,7 +469,7 @@ def run(intents, max_above, state, paper_bets=None):
         if exposure + dollars > MAX_EXPOSURE * bankroll or dollars > cash:
             skip(f"Would need ${dollars:.2f}: over the 50% cap or more than the ${cash:.2f} cash on {where}.")
             continue
-        max_price = it["entry"] + max_above  # the traders' average entry when this bet was made
+        max_price = min(it["entry"] + max_above, cap)  # traders' average entry when this bet was made, capped
         rate = ref.get("fee_rate") or 0
         if venue == "prophetx":  # ProphetX orders are in dollars staked, not contracts
             room = MAX_EXPOSURE * bankroll - exposure

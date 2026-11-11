@@ -9,7 +9,7 @@ This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 **Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
-Last updated: 2026-11-10.
+Last updated: 2026-11-11.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -98,7 +98,8 @@ The owner's rules:
 - Only markets decided within 3 days. Skip games that have already started.
 - Price rule: the price actually paid (before fees) must be at most 1c ABOVE
   (2c until 2026-11-10) or 4c BELOW the traders' average entry, and at least 35c
-  (price floor added 2026-11-10; all strategies and real bets). (The scanner's 4c filter is off
+  (price floor added 2026-11-10; all strategies and real bets). Strategy A and real
+  bets also never pay more than 75c (A_MAX_PRICE, added 2026-11-11; others uncapped). (The scanner's 4c filter is off
   in the forward test.)
 - Underdog sizing (added 2026-10-30, both strategies, top-ups too): picks
   priced under 40c get stake x sqrt((p/(1-p)) / (0.4/0.6)), so each bet has about

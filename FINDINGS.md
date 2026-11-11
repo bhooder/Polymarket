@@ -72,6 +72,9 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
   never copied. The report card and the Claude bankroll were restarted.
 - 2026-11-10: real bets switched to a FLAT 1.5% of the real bankroll, no top-ups
   (finding 2). Paper Strategy A keeps its 1%/2% tiers so its test stays clean.
+- 2026-11-11: owner's choice: Strategy A and real bets never pay over 75c (about -300).
+  Not from a data finding; other strategies keep no cap. A's results from here on mix
+  old (uncapped) and new bets.
 
 ## Open questions / what to check next
 - Does CLV turn positive for any trader? (Claude tab report card; qualified traders

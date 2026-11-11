@@ -43,6 +43,7 @@ MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at on
 MAX_ABOVE = 0.01         # pay at most 1c more than the traders' average entry (2c until 2026-11-10)...
 MAX_BELOW = 0.04         # ...and at most 4c less
 MIN_PRICE = 0.35         # never bet a pick priced under 35c (added 2026-11-10: underdogs lost money)
+A_MAX_PRICE = 0.75       # Strategy A and real bets: never pay more than 75c (added 2026-11-11)
 UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
 LIVE_LOG = "live_log.json"  # every live order sent, the venue's reply, skips and errors
@@ -51,7 +52,7 @@ LOG_KEEP = 2000             # entries kept
 LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.csv",
         "rules": "Real money on Kalshi, Polymarket US and ProphetX, copying each Strategy A paper bet with the "
                  "same price rule. Since Nov 10 every real bet is a flat 1.5% of the real balance (smaller on "
-                 "35-40c picks), with no top-ups."}
+                 "35-40c picks), with no top-ups. Since Nov 11, never over 75c."}
 
 # Each strategy has its own pretend bankroll and state file; all other rules are shared.
 # tiers: (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...]),
@@ -59,9 +60,10 @@ LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.cs
 STRATEGIES = {
     "a": {"name": "Strategy A", "state": "paper_trades.json", "csv": "paper_trades.csv",
           "rules": "Stake by bettors and avg bankroll %. 2%: 3+ bettors & 35%+, 4+ & 25%+, or 5+ & 20%+. "
-                   "1%: 3+ & 20%+, 4+ & 15%+, or 5+ & 10%+.",
+                   "1%: 3+ & 20%+, 4+ & 15%+, or 5+ & 10%+. Since Nov 11, never pays over 75c.",
           "tiers": [(0.02, [(3, 35), (4, 25), (5, 20)]),
-                    (0.01, [(3, 20), (4, 15), (5, 10)])]},
+                    (0.01, [(3, 20), (4, 15), (5, 10)])],
+          "max_price": A_MAX_PRICE},
     "b": {"name": "Strategy B", "state": "paper_trades_b.json", "csv": "paper_trades_b.csv",
           "rules": "Stake by number of bettors only. 2%: 5+ bettors. 1%: 4 bettors. "
                    "Avg bankroll % is ignored.",
@@ -224,13 +226,14 @@ def simulate_buy(token_id, dollars, fee):
     return {"shares": shares, "cost": spent, "fees": fees, "avg_price": (spent - fees) / shares}
 
 
-def in_band(price, entry):
+def in_band(price, entry, max_price=1.0):
     """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
-    and never under 35c."""
-    return price >= MIN_PRICE - 1e-9 and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9
+    never under 35c, and never over max_price (75c for Strategy A)."""
+    return (MIN_PRICE - 1e-9 <= price <= max_price + 1e-9
+            and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9)
 
 
-def place(state, pick, info, stake, existing=None, on_bet=None):
+def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0):
     """Paper-buy `stake` of the bankroll on this pick (or top up an existing bet) on
     whichever US venue (Polymarket US or Kalshi) is cheapest, fees included.
     on_bet, if given, is called with each bet placed (live.py mirrors Strategy A's).
@@ -252,10 +255,10 @@ def place(state, pick, info, stake, existing=None, on_bet=None):
         print(f"  skip (not on Polymarket US, Kalshi or ProphetX, or book too thin): {label}")
         return None
     entry = pick["Avg entry price"]
-    ok = [q for q in choices if in_band(q["avg_price"], entry)]
+    ok = [q for q in choices if in_band(q["avg_price"], entry, max_price)]
     if not ok:
         prices = ", ".join(f"{q['venue']} {q['avg_price']:.3f}" for q in choices)
-        print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{entry + MAX_ABOVE:.2f}): {label}")
+        print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{min(entry + MAX_ABOVE, max_price):.2f}): {label}")
         return None
     fill = ok[0]  # cheapest all-in cost per share that passes the price rule
     intl = simulate_buy(pick["token_id"], dollars, info.get("feeSchedule"))  # for comparison only
@@ -317,7 +320,8 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0, count=None):
+def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0, count=None,
+          max_price=1.0):
     """window = (min, max) minutes before the start, to bet only then (Strategy D).
     min_money_share = least share of the top traders' money in the market that must be on our side.
     count = (bettors key, against key) to count other columns than Bettors / Against (Strategy E)."""
@@ -359,7 +363,7 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
         existing = by_token.get(pick["token_id"])
         if existing:
             if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):
-                place(state, pick, m, stake, existing, on_bet)
+                place(state, pick, m, stake, existing, on_bet, max_price)
             continue
         if pick["condition_id"] in by_market:
             continue  # we already bet the other side; never hold both
@@ -368,7 +372,7 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
             kind = "moneyline/spread" if slot[1] == "side" else "total"
             print(f"  skip (already have a {kind} bet on this game): {label}")
             continue
-        bet = place(state, pick, m, stake, on_bet=on_bet)
+        bet = place(state, pick, m, stake, on_bet=on_bet, max_price=max_price)
         if bet:
             by_token[pick["token_id"]] = bet
             by_market.add(pick["condition_id"])
@@ -958,10 +962,11 @@ def main():
         print(f"-- {cfg['name']} --")
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
-              min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"))
+              min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"),
+              max_price=cfg.get("max_price", 1.0))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
-        live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"])
+        live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"], A_MAX_PRICE)
     except Exception as e:
         print(f"Live betting error ({type(e).__name__}); details sent to the phone alert channel")
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
