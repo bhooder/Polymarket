@@ -1812,5 +1812,32 @@
   "profit": 2.61,
   "venue": "kalshi",
   "ref": "KXNBAGAME-26NOV10OKCPOR-POR"
+ },
+ {
+  "at": "2026-11-11T13:57:31.430863+00:00",
+  "event": "order",
+  "filled": 6.0,
+  "price": 0.53,
+  "fees": 0.14,
+  "bet": "Jazz +4.5",
+  "pick": "Jazz",
+  "market": "Spread: Magic (-4.5)",
+  "venue": "polymarket_us",
+  "ref": "asc-nba-orl-uta-2026-11-11-neg-4pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.53,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 6,
+  "max_price": 0.53,
+  "dollars": 3.25,
+  "bankroll": 216.44,
+  "order_id": "cbd64d2f-bb61-5100-ac1d-606cb53955e9",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DNEYCMR033YB\",\"executions\":[{\"id\":\"DNEYCMRG33YF\",\"order\":{\"id\":\"DNEYCMR033YB\",\"marketSlug\":\"asc-nba-orl-uta-2026-11-11-neg-4pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.47\",\"currency\":\"USD\"},\"quantity\":6,\"cumQuantity\":0,\"leavesQuantity\":6,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"asc-nba-orl-uta-2026-11-11-neg-4pt5\",\"icon\":\"\",\"title\":\"ORL Magic vs. UTA Jazz\",\"outcome\":\"+4.50\",\"eventSlug\":\"nba-orl-uta-2026-11-11\",\"teamId\":35,\"team\":{\"id\":35,\"name\":\"Utah Jazz\",\"abbreviation\":\"uta\",\"league\":\"nba\",\"record\":\"1-10\",\"logo\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"alias\":\"Utah Jazz\",\"safeName\":\"Jazz\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"colorPrimary\":\"#4f0190\",\"providerId\":17,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"displayAbbreviation\":\"UTA\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"17\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"583ece50-fb46-11e1-82cb-f4ce4684ea4c\"},{\"provider\":\"PROVIDER_OPTICODDS\",\"providerId\":\"7C902BB2E272\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_dark_inset6.png\",\"shortIconDark\":\"h"
+  }
  }
 ]
