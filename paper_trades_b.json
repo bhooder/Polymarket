@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 989.9444938999379,
+ "cash": 958.0476795218588,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7928,7 +7928,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:31.167211+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Juventus FC win on 2026-11-11?",
@@ -7957,9 +7957,9 @@
     "polymarket_us": 0.9362
    },
    "intl_cost_per_share": 0.9333,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.75,
+   "profit": 1.52,
+   "settled_at": "2026-11-11T23:03:32.831306+00:00",
    "topped_up_at": null
   },
   {
@@ -8117,7 +8117,7 @@
   {
    "placed_at": "2026-11-11T21:08:38.918068+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Magic",
    "market": "Spread: Magic (-4.5)",
    "link": "https://polymarket.com/event/nba-orl-uta-2026-11-11",
@@ -8130,10 +8130,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 2.2,
    "traders_entry": 0.47,
-   "avg_price": 0.48,
-   "shares": 22.056254367575125,
-   "cost": 11.11,
-   "fees": 0.523,
+   "avg_price": 0.485,
+   "shares": 43.72088855545792,
+   "cost": 22.24,
+   "fees": 1.0373,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -8146,6 +8146,83 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-11T23:04:44.527887+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 2.5,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-11T23:04:44.426398+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Cavaliers vs. Knicks: O/U 221.5",
+   "link": "https://polymarket.com/event/nba-cle-nyk-2026-11-11",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfa0cf0b8512574582784d1b3ce3a0f3a8e2a6468214b9cd9ef8cdef8ecbbaedd",
+   "token_id": "79532234717342165048804185291267050693939823816068641595242689713043346758994",
+   "outcome_index": 1,
+   "ends": "2026-11-12T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 42.180654530012724,
+   "cost": 22.25,
+   "fees": 0.74,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV11CLENYK-222",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5275
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T23:04:44.928468+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Wizards",
+   "market": "Wizards vs. Pacers",
+   "link": "https://polymarket.com/event/nba-was-ind-2026-11-11",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0257cca223d12ff69b28064220c4052c63eb89e8b0ab8bad1be974396f6f0d46",
+   "token_id": "24487170024008903029016236544026028717300511867664337899898548032773662643768",
+   "outcome_index": 0,
+   "ends": "2026-11-12T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.41,
+   "avg_price": 0.42,
+   "shares": 50.23220547815374,
+   "cost": 22.26,
+   "fees": 1.1625,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-was-ind-2026-11-11",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.425,
+    "polymarket_us": 0.4431,
+    "kalshi": 0.4473
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,

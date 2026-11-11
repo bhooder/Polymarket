@@ -1,5 +1,5 @@
 {
- "cash": 200.43,
+ "cash": 203.43,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1400,7 +1400,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:36.053094+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "No",
@@ -1427,9 +1427,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.9299999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 0.19,
+   "settled_at": "2026-11-11T23:03:33.312370+00:00",
    "topped_up_at": null
   },
   {
@@ -1529,6 +1529,74 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.52,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T23:04:57.008202+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 0.879,
+   "pick": "Cavaliers",
+   "market": "Cavaliers vs. Knicks",
+   "link": "https://polymarket.com/event/nba-cle-nyk-2026-11-11",
+   "market_type": "moneyline",
+   "condition_id": "0x50feee38cd63eaf7d2eec5d29c9bab3eaebdda0c8e51bb409ec7b162d767c861",
+   "token_id": "39765084129756049593920440088501070903753999889785374595806575864803462556515",
+   "outcome_index": 0,
+   "ends": "2026-11-12T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 18.8,
+   "traders_entry": 0.35,
+   "avg_price": 0.3545,
+   "shares": 7.87,
+   "cost": 2.79,
+   "fees": 0.0,
+   "contracts_ordered": 2.79,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e34a63ad30991eb1454cecaa8c021418",
+    "fee_rate": 0.02,
+    "event_id": 1704712880
+   },
+   "paper_price": 0.3546099290780142,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T23:04:57.693426+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Celtics",
+   "market": "Celtics vs. Raptors",
+   "link": "https://polymarket.com/event/nba-bos-tor-2026-11-11",
+   "market_type": "moneyline",
+   "condition_id": "0x60022c5a948ad070b3c95018820c30e924698de9e38ca2c9e9c72ce1803f7ecc",
+   "token_id": "29353926278244585040638565375620765842969064323176420591789200664848661976632",
+   "outcome_index": 0,
+   "ends": "2026-11-12T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 13.9,
+   "traders_entry": 0.69,
+   "avg_price": 0.67,
+   "shares": 5.0,
+   "cost": 3.43,
+   "fees": 0.077,
+   "contracts_ordered": 5,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV11BOSTOR-BOS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.6699999999999999,
    "payout": null,
    "profit": null,
    "settled_at": null,
@@ -1857,8 +1925,22 @@
    "venue": "kalshi",
    "ordered": 6,
    "filled": 6.0
+  },
+  {
+   "at": "2026-11-11T23:04:57.008176+00:00",
+   "pick": "Cavaliers",
+   "venue": "prophetx",
+   "ordered": 2.79,
+   "filled": 2.79
+  },
+  {
+   "at": "2026-11-11T23:04:57.693393+00:00",
+   "pick": "Celtics",
+   "venue": "kalshi",
+   "ordered": 5,
+   "filled": 5.0
   }
  ],
  "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T22:14:48.204800+00:00"
+ "balances_checked_at": "2026-11-11T23:04:45.398506+00:00"
 }

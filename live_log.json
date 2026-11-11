@@ -1947,5 +1947,70 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4800\",\"client_order_id\":\"79ea437b-4e18-5ef4-a3a2-599f9f6d16c0\",\"fill_count\":\"6.00\",\"order_id\":\"01a1cc70-fbd8-7e18-960a-d2b6d7baa334\",\"remaining_count\":\"0.00\",\"ts_ms\":1794431319924}"
   }
+ },
+ {
+  "at": "2026-11-11T23:03:33.359507+00:00",
+  "event": "settled",
+  "bet": "Juventus FC not to win (draw or loss)",
+  "status": "won",
+  "cost": 2.81,
+  "payout": 3.0,
+  "profit": 0.19,
+  "venue": "polymarket_us",
+  "ref": "atc-uwcl-juv-oly-2026-11-11-juv"
+ },
+ {
+  "at": "2026-11-11T23:04:57.008195+00:00",
+  "event": "order",
+  "filled": 7.87,
+  "price": 0.3545108005082592,
+  "fees": 0.0,
+  "bet": "Cavaliers to win (vs. Knicks)",
+  "pick": "Cavaliers",
+  "market": "Cavaliers vs. Knicks",
+  "venue": "prophetx",
+  "ref": "e34a63ad30991eb1454cecaa8c021418",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.3546,
+  "share": 0.013184999999999999,
+  "side": "BUY",
+  "stake": 2.79,
+  "max_price": 0.36,
+  "dollars": 2.85,
+  "bankroll": 216.4,
+  "order_id": "62b6b1cd-c263-5092-84d7-3980939d16f9",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.35,\"mark_value\":2.75,\"market_id\":219,\"net_cost_basis\":2.79,\"net_outcome_id\":5,\"net_size\":7.87,\"sides\":[{\"average_price\":0.35,\"closable_size\":7.87,\"closed_size\":0,\"cost_basis\":2.79,\"liquidation_value\":2.75,\"mark_price\":0.35,\"mark_value\":2.75,\"outcome_id\":5,\"size\":7.87,\"strike_id\":\"e34a63ad30991eb1454cecaa8c021418\"}],\"sport_event_id\":1704712880,\"strike\":0},{\"high_risk\":true,\"mark_price\":0.38,\"mark_value\":2.45,\"market_id\":186,\"net_cost_basis\":3.17,\"net_outcome_id\":5,\"net_size\":6.47,\"sides\":[{\"average_price\":0.49,\"closable_size\":6.47,\"closed_size\":0,\"cost_basis\":3.17,\"liquidation_value\":2.45,\"mark_price\":0.38,\"mark_value\":2.45,\"outcome_id\":5,\"size\":6.47,\"strike_id\":\"f6b228938f5800df78755809378684f6\"}],\"sport_event_id\":1704713198,\"strike\":0}]}"
+  }
+ },
+ {
+  "at": "2026-11-11T23:04:57.693415+00:00",
+  "event": "order",
+  "filled": 5.0,
+  "price": 0.67,
+  "fees": 0.077,
+  "bet": "Celtics to win (vs. Raptors)",
+  "pick": "Celtics",
+  "market": "Celtics vs. Raptors",
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV11BOSTOR-BOS",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.67,
+  "share": 0.015,
+  "side": "YES",
+  "contracts": 5,
+  "max_price": 0.7,
+  "dollars": 3.25,
+  "bankroll": 216.4,
+  "order_id": "2cd49a89-b463-5591-bc3b-b6597a22cb85",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0154\",\"average_fill_price\":\"0.6700\",\"client_order_id\":\"2cd49a89-b463-5591-bc3b-b6597a22cb85\",\"fill_count\":\"5.00\",\"order_id\":\"01a1ccdb-75a8-76f6-9672-c4036e53fa77\",\"remaining_count\":\"0.00\",\"ts_ms\":1794438297684}"
+  }
  }
 ]
