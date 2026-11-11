@@ -82,6 +82,14 @@ STRATEGIES = {
           "tiers": [(0.02, [(5, 10)]),
                     (0.01, [(3, 10)])],
           "net": True, "window": (15, 90), "min_money_share": 2 / 3},
+    # like C, but only traders with conviction count (10%+ of their bankroll, or $5,000+)
+    "e": {"name": "Strategy E", "state": "paper_trades_e.json", "csv": "paper_trades_e.csv",
+          "rules": "Counts only traders with conviction: a position of 10%+ of their bankroll or $5,000+. "
+                   "Stake by NET conviction bettors (ours minus the other side's): 1% at net 3-4, 2% at "
+                   "net 5+. Bets as soon as a pick qualifies. 'Bettors' = conviction bettors.",
+          "tiers": [(0.02, [(5, 0)]),
+                    (0.01, [(3, 0)])],
+          "net": True, "count": ("Conviction bettors", "Conviction against")},
     # copies only traders whose bets beat the closing price (see claude_strategy.py)
     "claude": {"name": "Claude", "state": "paper_trades_claude.json", "csv": "paper_trades_claude.csv",
                "rules": "Copies only traders with a proven record of beating the closing price (see the "
@@ -308,15 +316,18 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0):
+def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0, count=None):
     """window = (min, max) minutes before the start, to bet only then (Strategy D).
-    min_money_share = least share of the top traders' money in the market that must be on our side."""
+    min_money_share = least share of the top traders' money in the market that must be on our side.
+    count = (bettors key, against key) to count other columns than Bettors / Against (Strategy E)."""
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
     by_market = {b["condition_id"] for b in open_bets(state)}
     by_slot = {game_slot(b["link"], bet_type(b)) for b in open_bets(state)} - {None}
     for pick in picks:
+        if count:
+            pick = {**pick, "Bettors": pick.get(count[0], 0), "Against": pick.get(count[1], 0)}
         bettors = pick["Bettors"] - (pick.get("Against", 0) if net else 0)
         stake = stake_for(bettors, pick["Avg bankroll %"], tiers)
         if not stake:
@@ -583,7 +594,7 @@ __ODDS_TOGGLE__
 <section id="tab-real">__BETS_REAL__</section>
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
-<p class="note">Strategies A, B, C, D and Claude use pretend money; Real bets use real money. Each bet goes to
+<p class="note">Strategies A to E and Claude use pretend money; Real bets use real money. Each bet goes to
 whichever US venue (Polymarket US, Kalshi or ProphetX) had the lowest price including fees, from the real order
 books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
@@ -718,7 +729,7 @@ def write_reports(states, live_state, card=None):
     write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
-    sub = f"Real-money bets and pretend-money tests of five strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    sub = f"Real-money bets and pretend-money tests of six strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
@@ -809,7 +820,7 @@ def main():
         print(f"-- {cfg['name']} --")
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
-              min_money_share=cfg.get("min_money_share", 0))
+              min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
         live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"])
