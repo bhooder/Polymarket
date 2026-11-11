@@ -1768,5 +1768,38 @@
   "profit": -2.12,
   "venue": "prophetx",
   "ref": "0ba34460842fc4a9c4689a7b8bc3d0d4"
+ },
+ {
+  "at": "2026-11-11T05:30:03.929639+00:00",
+  "event": "settled",
+  "bet": "Heat to win (vs. Jazz)",
+  "status": "won",
+  "cost": 2.12,
+  "payout": 2.74,
+  "profit": 0.62,
+  "venue": "prophetx",
+  "ref": "aa94123bf6d062219584ce6f39d13046"
+ },
+ {
+  "at": "2026-11-11T05:30:04.409019+00:00",
+  "event": "settled",
+  "bet": "Miami (OH) +1.5",
+  "status": "won",
+  "cost": 2.13,
+  "payout": 4.0,
+  "profit": 1.87,
+  "venue": "polymarket_us",
+  "ref": "asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5"
+ },
+ {
+  "at": "2026-11-11T05:30:04.818632+00:00",
+  "event": "settled",
+  "bet": "Kings +5.5",
+  "status": "lost",
+  "cost": 3.1,
+  "payout": 0.0,
+  "profit": -3.1,
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV10ORLSAC-ORL6"
  }
 ]

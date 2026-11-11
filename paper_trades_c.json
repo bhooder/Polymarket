@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1075.8973578308323,
+ "cash": 1089.9921296324387,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2068,7 +2068,7 @@
   },
   {
    "placed_at": "2026-11-10T15:27:38.032495+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Heat vs. Jazz",
@@ -2099,9 +2099,9 @@
     "polymarket_us": 0.7773
    },
    "intl_cost_per_share": 0.7691,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.09,
+   "profit": 3.34,
+   "settled_at": "2026-11-11T05:30:03.832695+00:00",
    "topped_up_at": null
   },
   {

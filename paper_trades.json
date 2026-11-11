@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1200.9135044561588,
+ "cash": 1240.9651031417159,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2885,7 +2885,7 @@
   },
   {
    "placed_at": "2026-11-10T13:42:02.733920+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Heat vs. Jazz",
@@ -2916,9 +2916,9 @@
     "polymarket_us": 0.7963
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.35,
+   "profit": 3.7,
+   "settled_at": "2026-11-11T05:30:03.320306+00:00",
    "topped_up_at": null
   },
   {
@@ -3036,7 +3036,7 @@
   },
   {
    "placed_at": "2026-11-10T21:07:47.184561+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Miami (OH)",
    "market": "Spread: Ohio (-1.5)",
@@ -3065,14 +3065,14 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.7,
+   "profit": 11.05,
+   "settled_at": "2026-11-11T05:30:03.510744+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-11T02:30:19.471594+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Kings",
    "market": "Spread: Magic (-5.5)",
@@ -3103,9 +3103,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.64,
+   "settled_at": "2026-11-11T05:30:03.533976+00:00",
    "topped_up_at": null
   }
  ]

@@ -1,5 +1,5 @@
 {
- "cash": 204.7,
+ "cash": 211.44,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1162,7 +1162,7 @@
   },
   {
    "placed_at": "2026-11-10T13:42:15.883945+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Heat",
@@ -1179,7 +1179,7 @@
    "avg_price": 0.7709,
    "shares": 2.75,
    "cost": 2.12,
-   "fees": 0.0,
+   "fees": 0.01,
    "contracts_ordered": 2.12,
    "venue": "prophetx",
    "venue_ref": {
@@ -1189,9 +1189,9 @@
     "event_id": 1704711904
    },
    "paper_price": 0.7701149425287356,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 2.74,
+   "profit": 0.62,
+   "settled_at": "2026-11-11T05:30:03.855787+00:00",
    "topped_up_at": null
   },
   {
@@ -1298,7 +1298,7 @@
   },
   {
    "placed_at": "2026-11-10T21:07:48.864487+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Miami (OH)",
@@ -1325,14 +1325,14 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.51,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.0,
+   "profit": 1.87,
+   "settled_at": "2026-11-11T05:30:03.903787+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-11T02:30:20.296884+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Kings",
@@ -1359,9 +1359,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.1,
+   "settled_at": "2026-11-11T05:30:03.929391+00:00",
    "topped_up_at": null
   }
  ],
@@ -1655,5 +1655,5 @@
   }
  ],
  "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T04:32:06.515536+00:00"
+ "balances_checked_at": "2026-11-11T05:31:16.768613+00:00"
 }
