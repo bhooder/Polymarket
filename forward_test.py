@@ -72,6 +72,14 @@ STRATEGIES = {
           "tiers": [(0.02, [(5, 0)]),
                     (0.01, [(4, 0)])],
           "net": True},
+    # late money: only 90 to 15 minutes before the start, when top traders have mostly placed their bets
+    "d": {"name": "Strategy D", "state": "paper_trades_d.json", "csv": "paper_trades_d.csv",
+          "rules": "Late bets only: placed 90 to 15 minutes before the game starts. Stake by NET bettors "
+                   "(bettors minus top traders on the other side): 1% at net 3-4, 2% at net 5+. Skipped "
+                   "unless at least two-thirds of the top traders' money in that market is on our side.",
+          "tiers": [(0.02, [(5, 0)]),
+                    (0.01, [(3, 0)])],
+          "net": True, "window": (15, 90), "min_money_share": 2 / 3},
     # copies only traders whose bets beat the closing price (see claude_strategy.py)
     "claude": {"name": "Claude", "state": "paper_trades_claude.json", "csv": "paper_trades_claude.csv",
                "rules": "Copies only traders with a proven record of beating the closing price (see the "
@@ -297,7 +305,9 @@ def bet_type(b):
     return "spreads" if b["market"].startswith("Spread:") else "totals" if "O/U" in b["market"] else "moneyline"
 
 
-def trade(state, picks, tiers, on_bet=None, net=False):
+def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0):
+    """window = (min, max) minutes before the start, to bet only then (Strategy D).
+    min_money_share = least share of the top traders' money in the market that must be on our side."""
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
     info = market_info({p["condition_id"] for p in picks})
     by_token = {b["token_id"]: b for b in open_bets(state)}
@@ -319,6 +329,15 @@ def trade(state, picks, tiers, on_bet=None, net=False):
         if decided_by(m) > cutoff:
             print(f"  skip (decided {decided_by(m):%Y-%m-%d}, more than {MAX_DAYS_TO_END} days away): {label}")
             continue
+        if window:
+            mins = (decided_by(m) - now()).total_seconds() / 60
+            if not window[0] <= mins <= window[1]:
+                continue  # outside the betting window (no message: most picks are)
+        if min_money_share:
+            ours, theirs = pick.get("Total $ in", 0), pick.get("Against $ in", 0)
+            if ours < min_money_share * (ours + theirs):
+                print(f"  skip (only {ours / (ours + theirs):.0%} of top traders' money on this side): {label}")
+                continue
         if pick.get("Against", 0) >= pick["Bettors"]:  # never bet the minority side, or a tie
             print(f"  skip (other side has {pick['Against']} top traders vs {pick['Bettors']}): {label}")
             continue
@@ -561,7 +580,7 @@ __ODDS_TOGGLE__
 <section id="tab-real">__BETS_REAL__</section>
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
-<p class="note">Strategies A, B, C and Claude use pretend money; Real bets use real money. Each bet goes to
+<p class="note">Strategies A, B, C, D and Claude use pretend money; Real bets use real money. Each bet goes to
 whichever US venue (Polymarket US, Kalshi or ProphetX) had the lowest price including fees, from the real order
 books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
@@ -696,7 +715,7 @@ def write_reports(states, live_state, card=None):
     write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
-    sub = f"Real-money bets and pretend-money tests of four strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    sub = f"Real-money bets and pretend-money tests of five strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
@@ -786,7 +805,8 @@ def main():
     for key, cfg in STRATEGIES.items():
         print(f"-- {cfg['name']} --")
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
-              net=cfg.get("net", False))
+              net=cfg.get("net", False), window=cfg.get("window"),
+              min_money_share=cfg.get("min_money_share", 0))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
         live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"])

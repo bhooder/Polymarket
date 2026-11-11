@@ -387,6 +387,8 @@ def find_picks(args):
             # how much of their bankroll the average holder has on this pick
             "Avg bankroll %": round(sum(pcts) / len(pcts), 1) if pcts else 0.0,
             "Total $ in": round(m["cost"]),
+            # top traders' money on the other side(s) of the same market
+            "Against $ in": round(sum(markets[(cond, o)]["cost"] for o in sides[cond] if o != outcome)),
             "Avg entry price": round(avg_entry, 2),
             "Price now": round(price_now, 2),
             "Link": f"https://polymarket.com/event/{m['slug']}" if m["slug"] else "",

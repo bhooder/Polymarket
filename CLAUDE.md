@@ -118,6 +118,12 @@ rules but staked by NET bettors (Bettors minus Against): 1% at net 4, 2% at net
 5+, avg bankroll % ignored. State in paper_trades_c.json / .csv. The report's
 tabs: Real bets, Strategy A, B, C, Statistics.
 
+Strategy D (added 2026-11-10): a fifth $1,000 paper bankroll for late money. Bets only
+90 to 15 minutes before the start (GitHub runs come ~40 min apart, so a narrower window
+would often be missed). Staked by NET bettors: 1% at net 3-4, 2% at net 5+. Skipped
+unless 2/3+ of the top traders' money in the market (the scanner's "Total $ in" vs
+"Against $ in", by cost) is on our side. State in paper_trades_d.json / .csv.
+
 Strategy "Claude" (added 2026-11-10, paper only, `claude_strategy.py`): a fourth $1,000
 bankroll that copies only traders with a proven record of beating the closing price.
 Report card (`trader_card.json`): every run notes each scanned trader's game positions
