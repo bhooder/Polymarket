@@ -1708,5 +1708,32 @@
    "status": 200,
    "body": "{\"id\":\"DN0G5ZRG14EX\",\"executions\":[{\"id\":\"DN0G5ZS033YH\",\"order\":{\"id\":\"DN0G5ZRG14EX\",\"marketSlug\":\"asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.48\",\"currency\":\"USD\"},\"quantity\":4,\"cumQuantity\":0,\"leavesQuantity\":4,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"asc-cfb-ohio-miaoh-2026-11-10-neg-1pt5\",\"icon\":\"\",\"title\":\"Ohio vs. Miami (OH)\",\"outcome\":\"+1.50\",\"eventSlug\":\"cfb-ohio-miaoh-2026-11-10\",\"teamId\":1181,\"team\":{\"id\":1181,\"name\":\"Miami (OH)\",\"abbreviation\":\"miaoh\",\"league\":\"cfb\",\"record\":\"5-4\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/team_logos/football/cfb/_miaoh_50000182.png\",\"alias\":\"RedHawks\",\"safeName\":\"Miami (OH)\",\"homeIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Miami+OH+Redhawks_R%40160x160.png\",\"awayIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us/ncaa/Polymarket_Miami+OH+Redhawks_L%40160x160.png\",\"colorPrimary\":\"#C41230\",\"providerId\":182,\"ordering\":\"away\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Miami-OH-Redhawks_L@320x320.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/CFB/Polymarket_CFB_Miami-OH-Redhawks_R@320x320.png\",\"displayAbbreviation\":\"M-OH\",\"ranking\":\"0\",\"conference\":\"Mid-American\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"182\"},{\"provider\":\""
   }
+ },
+ {
+  "at": "2026-11-11T02:30:20.296874+00:00",
+  "event": "order",
+  "filled": 6.0,
+  "price": 0.5,
+  "fees": 0.10500000000000001,
+  "bet": "Kings +5.5",
+  "pick": "Kings",
+  "market": "Spread: Magic (-5.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV10ORLSAC-ORL6",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 6,
+  "max_price": 0.5,
+  "dollars": 3.25,
+  "bankroll": 216.58,
+  "order_id": "d1306faf-423d-5ce8-bb4b-15dbca8a449a",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5000\",\"client_order_id\":\"d1306faf-423d-5ce8-bb4b-15dbca8a449a\",\"fill_count\":\"6.00\",\"order_id\":\"01a1c871-2260-782f-867e-861c75838c19\",\"remaining_count\":\"0.00\",\"ts_ms\":1794364220284}"
+  }
  }
 ]

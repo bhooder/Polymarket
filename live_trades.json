@@ -1329,6 +1329,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T02:30:20.296884+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Kings",
+   "market": "Spread: Magic (-5.5)",
+   "link": "https://polymarket.com/event/nba-orl-sac-2026-11-10",
+   "market_type": "spreads",
+   "condition_id": "0x65189082401352e38db2d53c3769e9edc0b4efdcbac08c3a2cd3a2a72ebf4f8c",
+   "token_id": "7488677729969078102942863900057659427389740092552676565053867870610090605239",
+   "outcome_index": 1,
+   "ends": "2026-11-11T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.7,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 6.0,
+   "cost": 3.1,
+   "fees": 0.105,
+   "contracts_ordered": 6,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV10ORLSAC-ORL6",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.5,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1611,8 +1645,15 @@
    "venue": "polymarket_us",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-11T02:30:20.296859+00:00",
+   "pick": "Kings",
+   "venue": "kalshi",
+   "ordered": 6,
+   "filled": 6.0
   }
  ],
  "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T01:41:23.470403+00:00"
+ "balances_checked_at": "2026-11-11T02:30:20.159179+00:00"
 }
