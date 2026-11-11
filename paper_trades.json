@@ -2847,7 +2847,7 @@
   },
   {
    "placed_at": "2026-11-10T08:43:44.565627+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Celtics vs. 76ers",
@@ -2878,9 +2878,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.65,
+   "settled_at": "2026-11-11T04:29:52.660435+00:00",
    "topped_up_at": null
   },
   {

@@ -1128,7 +1128,7 @@
   },
   {
    "placed_at": "2026-11-10T08:43:56.924995+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "76ers",
@@ -1155,9 +1155,9 @@
     "event_id": 1704711347
    },
    "paper_price": 0.5,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.12,
+   "settled_at": "2026-11-11T04:29:53.857303+00:00",
    "topped_up_at": null
   },
   {
@@ -1655,5 +1655,5 @@
   }
  ],
  "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T03:25:40.962743+00:00"
+ "balances_checked_at": "2026-11-11T04:32:06.515536+00:00"
 }

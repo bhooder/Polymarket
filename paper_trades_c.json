@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1036.0721724972318,
+ "cash": 1075.8973578308323,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2327,7 +2327,7 @@
   },
   {
    "placed_at": "2026-11-10T23:51:08.258587+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Panthers",
    "market": "Panthers vs. Blue Jackets",
@@ -2358,9 +2358,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.83,
+   "profit": 18.33,
+   "settled_at": "2026-11-11T04:29:53.633275+00:00",
    "topped_up_at": null
   },
   {

@@ -1757,5 +1757,16 @@
   "profit": 1.85,
   "venue": "kalshi",
   "ref": "KXNHLGAME-26NOV10FLACBJ-FLA"
+ },
+ {
+  "at": "2026-11-11T04:29:54.087521+00:00",
+  "event": "settled",
+  "bet": "76ers to win (vs. Celtics)",
+  "status": "lost",
+  "cost": 2.12,
+  "payout": 0.0,
+  "profit": -2.12,
+  "venue": "prophetx",
+  "ref": "0ba34460842fc4a9c4689a7b8bc3d0d4"
  }
 ]

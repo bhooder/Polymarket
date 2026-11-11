@@ -1,11 +1,11 @@
 {
  "start_bankroll": 1000.0,
- "cash": 990.0,
+ "cash": 1008.3776294735198,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
    "placed_at": "2026-11-11T00:45:58.779075+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Celtics vs. 76ers",
@@ -36,9 +36,9 @@
     "kalshi": 0.5579
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.38,
+   "profit": 8.38,
+   "settled_at": "2026-11-11T04:29:53.823085+00:00",
    "topped_up_at": null
   }
  ]
