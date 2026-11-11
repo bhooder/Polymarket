@@ -8,7 +8,7 @@ explain simply, give exact commands, and keep replies short and plain.
 This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 
-Last updated: 2026-11-08.
+Last updated: 2026-11-10.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -40,6 +40,7 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
 - `.github/workflows/hourly.yml`: GitHub Actions runs the forward test, asked
   for every 10 minutes (:03, :13, ...; every 15 until 2026-11-04). GitHub throttles
   free schedules: in practice runs came about hourly overnight. Commits results back.
+- `claude_strategy.py`: Strategy Claude (trader report card by closing-price value).
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
@@ -116,6 +117,18 @@ Strategy C (added 2026-11-04): a third separate $1,000 paper bankroll, same
 rules but staked by NET bettors (Bettors minus Against): 1% at net 4, 2% at net
 5+, avg bankroll % ignored. State in paper_trades_c.json / .csv. The report's
 tabs: Real bets, Strategy A, B, C, Statistics.
+
+Strategy "Claude" (added 2026-11-10, paper only, `claude_strategy.py`): a fourth $1,000
+bankroll that copies only traders with a proven record of beating the closing price.
+Report card (`trader_card.json`): every run notes each scanned trader's game positions
+($100+, games within 3 days) with their average entry; when the game starts it is graded
+vs the last price before the start (Polymarket /prices-history): CLV = close - entry.
+A trader qualifies at 25+ graded positions, average CLV +1c or better and t-score 2.5+.
+Qualified traders who drop off the leaderboard are still followed. Picks: outcomes held
+by qualified traders, at least one of whom first bought within 6 hours. 1% with one
+qualified trader, 2% with two or more (top-up once); all other rules as A. No bets until
+traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.
+The report card shows on the Claude tab.
 
 Statistics tab (paper_report.html, added 2026-10-29): null hypothesis = the
 market price is the true win chance. Per bet, expected profit = shares x price

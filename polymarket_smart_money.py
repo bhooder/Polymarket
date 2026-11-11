@@ -305,8 +305,12 @@ def build_parser():
     return ap
 
 
+POSITIONS = {}  # wallet -> (name, open positions without hedges), filled by find_picks
+
+
 def find_picks(args):
     """Scan the leaderboard and return (picks, traders), picks sorted best first."""
+    POSITIONS.clear()
     board = leaderboard(args.top, args.period, args.category, args.sort)
     print(f"Leaderboard: {len(board)} traders ({args.period}, {args.category}, {args.sort})")
 
@@ -331,6 +335,7 @@ def find_picks(args):
             print(f"  skip {name}: {e}")
             continue
         positions = [p for p in positions if p["condition_id"] not in hedged]
+        POSITIONS[wallet] = (name, positions)
         trader_rows.append({"rank": t.get("rank", i), "name": name, "wallet": wallet,
                             "pnl": t.get("pnl"), "volume": t.get("volume"),
                             "crypto_share": round(crypto, 2),

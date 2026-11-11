@@ -27,6 +27,7 @@ import shutil
 import time
 from datetime import datetime, timedelta, timezone
 
+import claude_strategy
 import live
 import polymarket_smart_money as scanner
 import venues
@@ -71,7 +72,16 @@ STRATEGIES = {
           "tiers": [(0.02, [(5, 0)]),
                     (0.01, [(4, 0)])],
           "net": True},
+    # copies only traders whose bets beat the closing price (see claude_strategy.py)
+    "claude": {"name": "Claude", "state": "paper_trades_claude.json", "csv": "paper_trades_claude.csv",
+               "rules": "Copies only traders with a proven record of beating the closing price (see the "
+                        "report card below). 1% with one qualified trader on a pick, 2% with two or more. "
+                        "Only positions they first bought in the last 6 hours. 'Bettors' = qualified traders.",
+               "tiers": [(0.02, [(2, 0)]),
+                         (0.01, [(1, 0)])],
+               "claude": True},
 }
+CARD = "trader_card.json"  # the Claude strategy's trader report card
 
 
 def now():
@@ -551,7 +561,7 @@ __ODDS_TOGGLE__
 <section id="tab-real">__BETS_REAL__</section>
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
-<p class="note">Strategies A, B and C use pretend money; Real bets use real money. Each bet goes to
+<p class="note">Strategies A, B, C and Claude use pretend money; Real bets use real money. Each bet goes to
 whichever US venue (Polymarket US, Kalshi or ProphetX) had the lowest price including fees, from the real order
 books. Bankroll = cash + open bets at cost. Research only, not financial advice.</p>
 </main>
@@ -679,14 +689,14 @@ def tab_label(name):
     return name.replace("Strategy ", '<span class="long">Strategy </span>')
 
 
-def write_reports(states, live_state):
+def write_reports(states, live_state, card=None):
     """states = {strategy key: state}; live_state = real bets. Writes the CSVs and the report page."""
     for key, state in states.items():
         write_csv(os.path.join(HERE, STRATEGIES[key]["csv"]), state["bets"])
     write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
-    sub = f"Real-money bets and pretend-money tests of three staking strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    sub = f"Real-money bets and pretend-money tests of four strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
@@ -695,7 +705,8 @@ def write_reports(states, live_state):
             .replace("__STRATEGY_TABS__", "".join(
                 f'<button data-tab="{k}">{tab_label(cfg["name"])}</button>' for k, cfg in STRATEGIES.items()))
             .replace("__STRATEGY_SECTIONS__", "\n".join(
-                f'<section id="tab-{k}" hidden>{bets_html(cfg, states[k])}</section>'
+                f'<section id="tab-{k}" hidden>{bets_html(cfg, states[k])}'
+                f'{claude_strategy.card_html(card, html.escape) if cfg.get("claude") and card else ""}</section>'
                 for k, cfg in STRATEGIES.items()))
             .replace("__STATS__", stats_html(settled, real_vs_paper(live_state, states["a"]))))
     with open(os.path.join(HERE, "paper_report.html"), "w") as f:
@@ -758,10 +769,23 @@ def main():
     save_state(live_state, live_path)
     picks, _ = scanner.find_picks(scanner_args)
     write_picks(picks)
+    card_path = os.path.join(HERE, CARD)
+    card = load_state(card_path) if os.path.exists(card_path) else claude_strategy.new_card()
+    claude_picks = []
+    try:  # the report card must never stop the other strategies or real bets
+        positions = {**scanner.POSITIONS, **claude_strategy.extra_positions(
+            card, scanner.POSITIONS, scanner_args.min_value)}
+        claude_strategy.record(card, positions)
+        print(f"Report card: graded {claude_strategy.grade(card)} positions, "
+              f"{len(card['pending'])} waiting, {len(claude_strategy.qualified(card))} traders qualified")
+        claude_picks = claude_strategy.picks(card, positions)
+        claude_strategy.save(card, card_path)
+    except Exception as e:
+        print(f"Report card error: {type(e).__name__}: {e}")
     live_bets = []  # Strategy A's new paper bets, mirrored with real money by live.py
     for key, cfg in STRATEGIES.items():
         print(f"-- {cfg['name']} --")
-        trade(states[key], picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
+        trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
               net=cfg.get("net", False))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
@@ -771,7 +795,7 @@ def main():
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     save_state(live_state, live_path)
     save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
-    write_reports(states, live_state)
+    write_reports(states, live_state, card)
     for key, cfg in STRATEGIES.items():
         st = states[key]
         print(f"{cfg['name']}: bankroll ${bankroll(st):,.2f} (cash ${st['cash']:,.2f}, "
