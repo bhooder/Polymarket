@@ -1839,5 +1839,59 @@
    "status": 200,
    "body": "{\"id\":\"DNEYCMR033YB\",\"executions\":[{\"id\":\"DNEYCMRG33YF\",\"order\":{\"id\":\"DNEYCMR033YB\",\"marketSlug\":\"asc-nba-orl-uta-2026-11-11-neg-4pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.47\",\"currency\":\"USD\"},\"quantity\":6,\"cumQuantity\":0,\"leavesQuantity\":6,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"asc-nba-orl-uta-2026-11-11-neg-4pt5\",\"icon\":\"\",\"title\":\"ORL Magic vs. UTA Jazz\",\"outcome\":\"+4.50\",\"eventSlug\":\"nba-orl-uta-2026-11-11\",\"teamId\":35,\"team\":{\"id\":35,\"name\":\"Utah Jazz\",\"abbreviation\":\"uta\",\"league\":\"nba\",\"record\":\"1-10\",\"logo\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"alias\":\"Utah Jazz\",\"safeName\":\"Jazz\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"colorPrimary\":\"#4f0190\",\"providerId\":17,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_light_inset6.png\",\"displayAbbreviation\":\"UTA\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"17\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"583ece50-fb46-11e1-82cb-f4ce4684ea4c\"},{\"provider\":\"PROVIDER_OPTICODDS\",\"providerId\":\"7C902BB2E272\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nba-uta/UTA_dark_inset6.png\",\"shortIconDark\":\"h"
   }
+ },
+ {
+  "at": "2026-11-11T16:35:36.053082+00:00",
+  "event": "order",
+  "filled": 3.0,
+  "price": 0.9299999999999999,
+  "fees": 0.02,
+  "bet": "Juventus FC not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will Juventus FC win on 2026-11-11?",
+  "venue": "polymarket_us",
+  "ref": "atc-uwcl-juv-oly-2026-11-11-juv",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.93,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 3,
+  "max_price": 0.95,
+  "dollars": 3.25,
+  "bankroll": 216.44,
+  "order_id": "5de7d3f8-7a97-532c-a9fd-03e24c24d798",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DNH6R7J013Z6\",\"executions\":[{\"id\":\"DNH6R7J073YH\",\"order\":{\"id\":\"DNH6R7J013Z6\",\"marketSlug\":\"atc-uwcl-juv-oly-2026-11-11-juv\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.05\",\"currency\":\"USD\"},\"quantity\":3,\"cumQuantity\":0,\"leavesQuantity\":3,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"atc-uwcl-juv-oly-2026-11-11-juv\",\"icon\":\"\",\"title\":\"Juventus FC vs. OL Lyonnes\",\"outcome\":\"No\",\"eventSlug\":\"uwcl-juv-oly-2026-11-11\",\"teamId\":19222,\"team\":{\"id\":19222,\"name\":\"Juventus FC\",\"abbreviation\":\"juv\",\"league\":\"uwcl\",\"record\":\"\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-womens-champions-league/juventus-fc.png\",\"alias\":\"\",\"safeName\":\"\",\"colorPrimary\":\"#547C55\",\"providerId\":5074,\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-womens-champions-league/juventus-fc.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/soccer/uefa-womens-champions-league/juventus-fc.png\",\"displayAbbreviation\":\"JUV\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"5074\"}],\"color\":{\"light\":\"#547C55\",\"dark\":\"#547C55\"}},\"eventId\":\"243035\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\","
+  }
+ },
+ {
+  "at": "2026-11-11T16:35:36.811405+00:00",
+  "event": "order",
+  "filled": 7.0,
+  "price": 0.48,
+  "fees": 0.12179999999999999,
+  "bet": "Bucks +13.5",
+  "pick": "Bucks",
+  "market": "Spread: Lakers (-13.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV11LALMIL-LAL14",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.48,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 7,
+  "max_price": 0.48,
+  "dollars": 3.25,
+  "bankroll": 216.44,
+  "order_id": "c4742493-4a2b-5bad-b854-9a68ccadada0",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.5200\",\"client_order_id\":\"c4742493-4a2b-5bad-b854-9a68ccadada0\",\"fill_count\":\"7.00\",\"order_id\":\"01a1cb76-ffc0-7fb7-af5f-14858a2bab55\",\"remaining_count\":\"0.00\",\"ts_ms\":1794414936791}"
+  }
  }
 ]

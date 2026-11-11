@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1254.7725177394852,
+ "cash": 1229.437156874954,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3141,6 +3141,79 @@
     "kalshi": 0.5576
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T16:35:29.742478+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Juventus FC win on 2026-11-11?",
+   "link": "https://polymarket.com/event/uwcl-juv-oly-2026-11-11",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbd5c7e5d10341c4d57e714299d9cfc16eb8714bb7f80571943beb4138cddf0c2",
+   "token_id": "103057380575680540611498631160913812850081934613137938143629399483285694011126",
+   "outcome_index": 1,
+   "ends": "2026-11-11T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 13.6,
+   "traders_entry": 0.94,
+   "avg_price": 0.93,
+   "shares": 13.533657094301391,
+   "cost": 12.67,
+   "fees": 0.0837,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-uwcl-juv-oly-2026-11-11-juv",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.9362
+   },
+   "intl_cost_per_share": 0.9333,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-11T16:35:30.401424+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bucks",
+   "market": "Spread: Lakers (-13.5)",
+   "link": "https://polymarket.com/event/nba-lal-mil-2026-11-11",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x248c0275e32433aaac62abd349cb22b77afbb6030ac33ea050901375dbc0c1f9",
+   "token_id": "15490414139103755506979378014094670900651274829702129723305764437701201270588",
+   "outcome_index": 1,
+   "ends": "2026-11-12T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.3,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 25.44866846777306,
+   "cost": 12.67,
+   "fees": 0.45,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV11LALMIL-LAL14",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4977,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
