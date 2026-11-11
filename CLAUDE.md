@@ -7,6 +7,7 @@ explain simply, give exact commands, and keep replies short and plain.
 
 This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
+**Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
 Last updated: 2026-11-10.
 
@@ -113,13 +114,11 @@ The owner's rules:
 Strategy B (added 2026-10-29): a second, separate $1,000 paper bankroll with
 the same rules except staking by bettor count only: 1% at 4 bettors, 2% at 5+,
 avg bankroll % ignored. State in paper_trades_b.json / paper_trades_b.csv.
-Strategy settings live in STRATEGIES in forward_test.py. The report has tabs:
-Strategy A, Strategy B, Statistics (A and B side by side).
+Strategy settings live in STRATEGIES in forward_test.py.
 
 Strategy C (added 2026-11-04): a third separate $1,000 paper bankroll, same
 rules but staked by NET bettors (Bettors minus Against): 1% at net 4, 2% at net
-5+, avg bankroll % ignored. State in paper_trades_c.json / .csv. The report's
-tabs: Real bets, Strategy A, B, C, Statistics.
+5+, avg bankroll % ignored. State in paper_trades_c.json / .csv.
 
 Strategy D (added 2026-11-10): a fifth $1,000 paper bankroll for late money. Bets only
 90 to 15 minutes before the start (GitHub runs come ~40 min apart, so a narrower window
@@ -136,7 +135,7 @@ late). A "$5,000+ put in" alternative was dropped the same day, before any bets:
 all saved picks (Oct 29 - Nov 11), picks let in only by big dollars had no edge (+1c over
 153), while bankroll % held up. Dollar size is NOT a proven signal here.
 
-Strategy "Claude" (added 2026-11-10, paper only, `claude_strategy.py`): a fourth $1,000
+Strategy "Claude" (added 2026-11-10, paper only, `claude_strategy.py`): a $1,000
 bankroll that copies only traders with a proven record of beating the closing price.
 Report card (`trader_card.json`): every run notes each scanned trader's game positions
 ($100+, games within 3 days) with their average entry; when the game starts it is graded
@@ -148,16 +147,17 @@ qualified trader, 2% with two or more (top-up once); all other rules as A. No be
 traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.
 The report card shows on the Claude tab.
 
-Statistics tab (paper_report.html, added 2026-10-29): null hypothesis = the
+Report tabs (paper_report.html): Real bets, A, B, C, D, E, Claude, Statistics.
+
+Statistics tab (added 2026-10-29, redesigned phone-first 2026-11-10: a card per
+strategy, bar charts, breakdown picker, full table tap-to-open). Null hypothesis = the
 market price is the true win chance. Per bet, expected profit = shares x price
 - cost (minus the fees), variance = shares^2 x p(1-p). Z "beat the market" =
 (profit - expected) / SD; Z "make money" = profit / SD. Verdicts need 30+
 settled bets; the decision point is fixed at 200 settled bets (no early
 stopping). Breakdowns by bet type, stake tier and sport (from the event slug).
 
-Status as of 2026-10-27: 2 open bets. Perricard (tennis, placed on
-international Polymarket before the switch to US venues) and Knicks (Kalshi).
-Check results after a few weeks. A handful of bets proves nothing.
+Status: see FINDINGS.md (results snapshot and what the data has shown).
 
 ## Data sources (all public, no API key)
 - Polymarket Data API v2: https://data-api.polymarket.com/v2
@@ -209,10 +209,11 @@ Check results after a few weeks. A handful of bets proves nothing.
   bet rather than change anything.
 
 ## Ideas / next steps
-1. Let the forward test run for a few weeks, then review won-lost, return
-   per dollar bet, and how much choosing the cheaper venue saved.
+1. Let every strategy reach 200 settled bets before judging or re-tuning it
+   (open questions are listed in FINDINGS.md).
 2. Multi-window consistency (traders who rank in day, week AND month) is not
    built yet. `--period` takes one window.
-3. Only after a convincing forward test: consider small real-money trades
-   with strict caps and manual approval. Check each platform's terms first.
-4. Done 2026-10-28: project moved to GitHub, hourly runs on GitHub Actions.
+3. Don't raise real-money stakes until A nears 200 settled bets and the
+   closing-price (CLV) question is understood.
+4. Done: GitHub Actions runs (2026-10-28); real money (2026-11-03); ProphetX
+   (2026-11-08).
