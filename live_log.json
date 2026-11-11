@@ -1801,5 +1801,16 @@
   "profit": -3.1,
   "venue": "kalshi",
   "ref": "KXNBASPREAD-26NOV10ORLSAC-ORL6"
+ },
+ {
+  "at": "2026-11-11T07:49:49.355746+00:00",
+  "event": "settled",
+  "bet": "Trail Blazers to win (vs. Thunder)",
+  "status": "won",
+  "cost": 2.39,
+  "payout": 5.0,
+  "profit": 2.61,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV10OKCPOR-POR"
  }
 ]

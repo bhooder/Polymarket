@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1240.9651031417159,
+ "cash": 1267.4425177394853,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -2999,7 +2999,7 @@
   },
   {
    "placed_at": "2026-11-10T18:16:47.951759+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Thunder vs. Trail Blazers",
@@ -3029,9 +3029,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.48,
+   "profit": 13.83,
+   "settled_at": "2026-11-11T07:49:49.079593+00:00",
    "topped_up_at": null
   },
   {
