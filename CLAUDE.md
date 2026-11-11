@@ -129,11 +129,12 @@ unless 2/3+ of the top traders' money in the market (the scanner's "Total $ in" 
 "Against $ in", by cost) is on our side. State in paper_trades_d.json / .csv.
 
 Strategy E (added 2026-11-10): a sixth $1,000 paper bankroll. Like C, but a trader only
-counts if the position shows conviction: worth 10%+ of their open bets, or $5,000+ put in
-(scanner CONVICTION_PCT / CONVICTION_USD; picks carry "Conviction bettors" / "Conviction
-against"). 1% at net 3-4 conviction bettors, 2% at net 5+. Bets as soon as a pick
-qualifies (D tests betting late). Why: in 249 past bets, picks low on both avg bankroll
-% (<10%) and $ per bettor (<$5k) had zero edge; every other mix did well.
+counts if the position shows conviction: worth 10%+ of their open bets (scanner
+CONVICTION_PCT; picks carry "Conviction bettors" / "Conviction against"). 1% at net 3-4
+conviction bettors, 2% at net 5+. Bets as soon as a pick qualifies (D tests betting
+late). A "$5,000+ put in" alternative was dropped the same day, before any bets: replaying
+all saved picks (Oct 29 - Nov 11), picks let in only by big dollars had no edge (+1c over
+153), while bankroll % held up. Dollar size is NOT a proven signal here.
 
 Strategy "Claude" (added 2026-11-10, paper only, `claude_strategy.py`): a fourth $1,000
 bankroll that copies only traders with a proven record of beating the closing price.

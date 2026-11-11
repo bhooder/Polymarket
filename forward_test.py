@@ -83,9 +83,9 @@ STRATEGIES = {
           "tiers": [(0.02, [(5, 10)]),
                     (0.01, [(3, 10)])],
           "net": True, "window": (15, 90), "min_money_share": 2 / 3},
-    # like C, but only traders with conviction count (10%+ of their bankroll, or $5,000+)
+    # like C, but only traders with conviction count (10%+ of their bankroll on the pick)
     "e": {"name": "Strategy E", "state": "paper_trades_e.json", "csv": "paper_trades_e.csv",
-          "rules": "Counts only traders with conviction: a position of 10%+ of their bankroll or $5,000+. "
+          "rules": "Counts only traders with conviction: a position worth 10%+ of their bankroll. "
                    "Stake by NET conviction bettors (ours minus the other side's): 1% at net 3-4, 2% at "
                    "net 5+. Bets as soon as a pick qualifies. 'Bettors' = conviction bettors.",
           "tiers": [(0.02, [(5, 0)]),

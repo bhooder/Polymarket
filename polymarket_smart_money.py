@@ -305,9 +305,9 @@ def build_parser():
     return ap
 
 
-# A trader shows conviction on a position worth 10%+ of their open bets, or $5,000+ put in
+# A trader shows conviction on a position worth 10%+ of their open bets. (A "$5,000+ put in" rule
+# was dropped 2026-11-10 before any bets: replaying the saved picks, big-dollar picks had no edge.)
 CONVICTION_PCT = 10
-CONVICTION_USD = 5000
 POSITIONS = {}  # wallet -> (name, open positions without hedges), filled by find_picks
 
 
@@ -355,7 +355,7 @@ def find_picks(args):
             m["outcome_index"] = p.get("outcome_index")
             m["traders"].add(wallet)
             pct = 100 * (p.get("current_value") or 0) / bankroll if bankroll > 0 else 0
-            if pct >= CONVICTION_PCT or (p.get("entry_cost_usdc") or 0) >= CONVICTION_USD:
+            if pct >= CONVICTION_PCT:
                 m["convinced"].add(wallet)  # a real bet for them, not a token one
             if bankroll > 0:
                 m["bankroll_pcts"].append(100 * (p.get("current_value") or 0) / bankroll)
@@ -391,7 +391,7 @@ def find_picks(args):
             "Bettors": len(m["traders"]),
             # top traders ($100+ positions) on the other side(s) of the same market
             "Against": len(set().union(*(t for o, t in sides[cond].items() if o != outcome))),
-            # traders with conviction (see CONVICTION_PCT / CONVICTION_USD) on this side and the other(s)
+            # traders with conviction (see CONVICTION_PCT) on this side and the other(s)
             "Conviction bettors": len(m["convinced"]),
             "Conviction against": len(set().union(*(markets[(cond, o)]["convinced"]
                                                     for o in sides[cond] if o != outcome))),
