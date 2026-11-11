@@ -42,7 +42,7 @@ MAX_DAYS_TO_END = 3      # only markets that end within this many days
 MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at once
 MAX_ABOVE = 0.01         # pay at most 1c more than the traders' average entry (2c until 2026-11-10)...
 MAX_BELOW = 0.04         # ...and at most 4c less
-MIN_PRICE = 0.35         # never bet a pick priced under 35c (added 2026-11-10: underdogs lost money)
+MIN_PRICE = 0.30         # never bet a pick priced under 30c (35c from 2026-11-10, 30c from 2026-11-11)
 A_MAX_PRICE = 0.75       # Strategy A and real bets: never pay more than 75c (added 2026-11-11)
 UNDERDOG_BELOW = 0.40    # bets on picks priced under this get smaller (see size_multiplier)
 
@@ -228,7 +228,7 @@ def simulate_buy(token_id, dollars, fee):
 
 def in_band(price, entry, max_price=1.0):
     """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
-    never under 35c, and never over max_price (75c for Strategy A)."""
+    never under 30c, and never over max_price (75c for Strategy A)."""
     return (MIN_PRICE - 1e-9 <= price <= max_price + 1e-9
             and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9)
 
