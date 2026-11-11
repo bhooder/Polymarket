@@ -572,7 +572,7 @@ def stats_html(strats, extra=""):
     for i, (cfg, _, bets) in enumerate(sums):
         out.append(f'<div class="bd" data-i="{i}"{"" if i == 0 else " hidden"}>'
                    + breakdown("By bet type", bets, lambda b: TYPE_NAMES.get(bet_type(b), "Other"))
-                   + breakdown("By stake", bets, lambda b: f'{b["stake"]:.0%}')
+                   + breakdown("By stake", bets, lambda b: live.pct(b["stake"]))
                    + breakdown("By sport", bets, sport_of) + "</div>")
     out.append("""<script>
 document.querySelectorAll(".pick-strat").forEach(s => s.addEventListener("change", () => {
@@ -794,7 +794,7 @@ def bets_html(cfg, state, tiles=None):
         """Stake tier, plus the underdog size multiplier when it shrank the bet."""
         mults = dict.fromkeys(m for m in (b.get("size_multiplier"), b.get("top_up_size_multiplier"))
                               if m and m < 1)  # once if the bet and its top-up shrank the same
-        return f'{b["stake"]:.0%}' + "".join(f' <span class="muted">&times;{m:.2f}</span>' for m in mults)
+        return live.pct(b["stake"]) + "".join(f' <span class="muted">&times;{m:.2f}</span>' for m in mults)
 
     def bettors_text(b):
         """Bettors when placed, and at the top-up if there was one (older top-ups didn't record it)."""

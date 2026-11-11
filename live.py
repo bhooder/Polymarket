@@ -217,12 +217,14 @@ def px_account():
 def px_side_fill(side, before=None, fees=0.0):
     """(dollars staked, what they win, fees) from a ProphetX position, minus what was held
     `before` (size, cost) for a top-up. Seen 2026-11-08: "size" is the payout if it wins
-    ($1 shares) and "cost_basis" the dollars paid ("average_price" is rounded, so not used)."""
+    ($1 shares) and "cost_basis" the dollars staked ("average_price" is rounded, so not used).
+    A fee charged when the bet fills comes ON TOP of cost_basis (seen 2026-11-10, Maple Leafs:
+    cost_basis $2.03, fee $0.04, and the balance fell $2.07), so it is not taken out of the stake."""
     shares = float(side.get("size") or 0) - (before[0] if before else 0)
     cost = float(side.get("cost_basis") or 0) - (before[1] if before else 0)
     if shares <= 0 or cost <= 0 or cost >= shares:
         return 0.0, 0.0, 0.0
-    return cost - fees, shares - (cost - fees), fees
+    return cost, shares - cost, fees
 
 
 def px_position(strike_id):
@@ -301,7 +303,7 @@ def record(state, it, ref, filled, px, fees, count):
             return
     state["bets"].append({
         "placed_at": now_iso(), "status": "open",
-        "stake": bet["stake"], "size_multiplier": bet.get("size_multiplier"),
+        "stake": FLAT_SHARE, "size_multiplier": bet.get("size_multiplier"),  # the real stake, not paper A's 1%/2%
         **{k: bet.get(k) for k in ("pick", "market", "link", "market_type", "condition_id", "token_id",
                                    "outcome_index", "ends", "bettors", "avg_bankroll_pct")},
         "traders_entry": it["entry"], "avg_price": round(px, 4), "shares": filled, "cost": cost,
@@ -503,7 +505,7 @@ def run(intents, max_above, state, paper_bets=None):
                 spent = filled * px + fees
                 exposure += spent
                 accounts[venue] = (cash - spent, held)
-                alert(f"🟢 {kind} placed ({pct(it['share'])} @ {american(px)})",
+                alert(f"🟢 {kind} placed ({pct(share)} @ {american(px)})",
                       f"{what}\n${spent:.2f} on {where} at {cents(px)}")
             else:
                 alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")
@@ -548,6 +550,6 @@ def run(intents, max_above, state, paper_bets=None):
             spent = filled * px + fees
             exposure += spent
             accounts[venue] = (cash - spent, held)
-            alert(f"🟢 {kind} placed ({pct(it['share'])} @ {american(px)})", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
+            alert(f"🟢 {kind} placed ({pct(share)} @ {american(px)})", f"{what}\n${spent:.2f} on {where} · {filled:g} contracts at {cents(px)}")
         else:
             alert("⚪ Not filled", f"{what}\nThe price moved above {cents(max_price)}. Nothing bought.")
