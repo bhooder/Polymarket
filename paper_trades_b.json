@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 849.3911661073724,
+ "cash": 839.3411661073725,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7815,7 +7815,7 @@
   {
    "placed_at": "2026-11-10T23:51:06.341260+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Clippers",
    "market": "Clippers vs. Suns",
    "link": "https://polymarket.com/event/nba-lac-phx-2026-11-10",
@@ -7829,9 +7829,9 @@
    "avg_bankroll_pct": 9.5,
    "traders_entry": 0.38,
    "avg_price": 0.3846,
-   "shares": 25.812310030395135,
-   "cost": 10.05,
-   "fees": 0.1222,
+   "shares": 51.62462006079027,
+   "cost": 20.1,
+   "fees": 0.2444,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -7847,7 +7847,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-11T00:27:03.036017+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 6.5,
+   "top_up_size_multiplier": 0.939
   }
  ]
 }
