@@ -97,14 +97,14 @@ The owner's rules:
   (added 2026-10-29). If two compete in one run, the higher pick wins.
 - Only markets decided within 3 days. Skip games that have already started.
 - Price rule: the price actually paid (before fees) must be at most 1c ABOVE
-  (2c until 2026-11-10) or 4c BELOW the traders' average entry, and at least 30c
-  (price floor added 2026-11-10 at 35c, lowered to 30c 2026-11-11; all strategies and real bets). Strategy A and real
+  (2c until 2026-11-10) or 4c BELOW the traders' average entry, and at least 28.6c (+250)
+  (price floor added 2026-11-10 at 35c, lowered to +250 on 2026-11-11; all strategies and real bets). Strategy A and real
   bets also never pay more than 75c (A_MAX_PRICE, added 2026-11-11; others uncapped). (The scanner's 4c filter is off
   in the forward test.)
 - Underdog sizing (added 2026-10-30, both strategies, top-ups too): picks
   priced under 40c get stake x sqrt((p/(1-p)) / (0.4/0.6)), so each bet has about
   the same luck risk as a 40c bet: 30c x0.80, 20c x0.61, 10c x0.41. No price
-  floor until 2026-11-10, then 35c, now 30c. Uses the current Polymarket price. Older bets are unchanged.
+  floor until 2026-11-10, then 35c, now 28.6c (+250). Uses the current Polymarket price. Older bets are unchanged.
 - Hold until the market is decided. At most 50% of the bankroll in open bets.
 - Venues: only US-regulated venues: Polymarket US, Kalshi and (from
   2026-11-08) ProphetX. Each bet goes to whichever has the lowest all-in cost per share

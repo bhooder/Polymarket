@@ -75,8 +75,9 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
 - 2026-11-11: owner's choice: Strategy A and real bets never pay over 75c (about -300).
   Not from a data finding; other strategies keep no cap. A's results from here on mix
   old (uncapped) and new bets.
-- 2026-11-11: owner's choice: price floor lowered 35c -> 30c (all strategies + real bets).
-  Finding 4 (under-40c bets lost money) still stands; 30-35c bets get stake x0.80-0.90.
+- 2026-11-11: owner's choice: price floor lowered 35c -> 30c, then the same day to
+  +250 (~28.6c), all strategies + real bets. Finding 4 (under-40c bets lost money) still
+  stands; these bets get stake x0.77-0.90.
 
 ## Open questions / what to check next
 - Does CLV turn positive for any trader? (Claude tab report card; qualified traders
