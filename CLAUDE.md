@@ -9,7 +9,7 @@ This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 **Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
-Last updated: 2026-11-11.
+Last updated: 2026-11-12.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -154,7 +154,10 @@ qualified trader, 2% with two or more (top-up once); all other rules as A. No be
 traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.
 The report card shows on the Claude tab.
 
-Report tabs (paper_report.html): Real bets, A, B, C, D, E, Claude, Statistics.
+Report tabs (paper_report.html): Real bets, Calendar, A, B, C, D, E, Claude, Statistics.
+Calendar tab (added 2026-11-12): a month grid with each day's profit (green/red), month totals, a
+picker for Real bets (default) or any paper strategy, and the day's bets on tap. A bet's day is its
+game day in Eastern time, or the day it settled if earlier (forward_test.day_of / calendar_html / CAL_JS).
 Both report pages have a Refresh button (added 2026-11-11) and reload themselves when reopened
 after 5+ minutes: the owner uses the site as an iPhone home-screen app, which has no reload button
 (scanner REFRESH_CSS / REFRESH_JS).

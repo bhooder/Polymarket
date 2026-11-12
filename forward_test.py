@@ -663,6 +663,159 @@ STATS_CSS = """
 """
 
 
+def day_of(b):
+    """The calendar day (Eastern on GitHub) a bet belongs to: the day its game started, or the
+    day it settled if that came first. Open bets go on their game day."""
+    times = [t for t in (b.get("ends"), b.get("settled_at")) if t]
+    if not times:
+        return None
+    first = min(datetime.fromisoformat(t.replace("Z", "+00:00")) for t in times)
+    return first.astimezone().strftime("%Y-%m-%d")
+
+
+def calendar_html(strats):
+    """Calendar tab: a month grid with each day's profit, a picker to switch between Real bets
+    and the paper strategies, and the day's bets on tap. strats = [(key, config, state), ...].
+    The bets go into the page as data; CAL_JS draws the grid."""
+    data = {}
+    for key, cfg, state in strats:
+        rows = []
+        for b in state["bets"]:
+            day = day_of(b)
+            if day:
+                rows.append({"d": day, "pick": str(b["pick"]), "market": b["market"], "status": b["status"],
+                             "cost": round(b["cost"], 2), "profit": round(b.get("profit") or 0, 2)})
+        data[key] = {"name": cfg["name"], "bets": rows}
+    options = "".join(f'<option value="{k}">{html.escape(v["name"])}</option>' for k, v in data.items())
+    blob = json.dumps(data).replace("</", "<\\/")  # must not close the script tag early
+    return f"""<select id="cal-strat" class="pick-strat" aria-label="Which bets to show">{options}</select>
+<div class="cal-head"><button id="cal-prev" aria-label="Previous month">&lsaquo;</button>
+<b id="cal-title"></b><button id="cal-next" aria-label="Next month">&rsaquo;</button></div>
+<div class="tiles" id="cal-tiles"></div>
+<div class="cal-grid" id="cal-grid"></div>
+<p class="hint" style="margin-top:10px">Each day shows the profit on bets from that day's games ($10 and up
+is rounded to the dollar). Tap a day to see its bets and exact amounts. Open bets are listed but not counted until they settle.</p>
+<div id="cal-day"></div>
+<script type="application/json" id="cal-data">{blob}</script>"""
+
+
+CAL_CSS = """
+  .cal-head { display:flex; align-items:center; justify-content:space-between; margin:8px 0 12px; }
+  .cal-head b { font-size:18px; }
+  .cal-head button { border:1px solid var(--line); background:var(--card); color:var(--text); font:inherit;
+                     font-size:22px; line-height:1; width:44px; height:40px; border-radius:10px; cursor:pointer; }
+  .cal-head button:disabled { opacity:.3; cursor:default; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7, minmax(0, 1fr)); gap:4px; margin-top:14px; }
+  .cal-dow { text-align:center; font-size:11px; font-weight:600; color:var(--muted); text-transform:uppercase; }
+  .cal-cell { background:var(--card); border:1px solid var(--line); border-radius:8px; min-height:62px;
+              padding:4px 5px; font:inherit; color:var(--text); text-align:left; display:flex;
+              flex-direction:column; gap:1px; min-width:0; }
+  button.cal-cell { cursor:pointer; }
+  .cal-cell.blank { background:none; border-color:transparent; }
+  .cal-cell.win { background:color-mix(in srgb, var(--up) 16%, var(--card)); border-color:color-mix(in srgb, var(--up) 40%, var(--line)); }
+  .cal-cell.loss { background:color-mix(in srgb, var(--down) 16%, var(--card)); border-color:color-mix(in srgb, var(--down) 40%, var(--line)); }
+  .cal-cell.today .cal-num { color:var(--accent); font-weight:700; }
+  .cal-cell.sel { outline:2px solid var(--accent); outline-offset:-1px; }
+  .cal-num { font-size:11px; color:var(--muted); }
+  .cal-amt { font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .cal-rec { font-size:10px; color:var(--muted); white-space:nowrap; }
+  @media (max-width: 480px) { .cal-amt { font-size:11.5px; letter-spacing:-.03em; } .cal-cell { padding:4px 3px; } }
+  .cal-bet { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 14px;
+             margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+  .cal-bet b { display:block; } .cal-bet small { color:var(--muted); }
+  .cal-bet .amt { font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right; }
+"""
+
+CAL_JS = r"""<script>
+(function () {
+  const data = JSON.parse(document.getElementById("cal-data").textContent);
+  const sel = document.getElementById("cal-strat"), grid = document.getElementById("cal-grid");
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const pad = n => String(n).padStart(2, "0");
+  const money = (v, cents) => (v >= 0 ? "+" : "−") + "$" + Math.abs(v).toLocaleString("en-US",
+      {minimumFractionDigits: cents ? 2 : 0, maximumFractionDigits: cents ? 2 : 0});
+  const cls = v => v > 0 ? "up" : v < 0 ? "down" : "";
+  const now = new Date(), today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+  let month = today.slice(0, 7), picked = null;
+
+  const bets = () => data[sel.value].bets;
+  const settled = list => list.filter(b => b.status !== "open");
+  function sum(list) {
+    const s = settled(list);
+    return {profit: s.reduce((t, b) => t + b.profit, 0), cost: s.reduce((t, b) => t + b.cost, 0),
+            won: s.filter(b => b.status === "won").length, lost: s.filter(b => b.status === "lost").length,
+            n: s.length, open: list.length - s.length};
+  }
+  function shift(ym, by) {
+    const d = new Date(+ym.slice(0, 4), +ym.slice(5, 7) - 1 + by, 1);
+    return d.getFullYear() + "-" + pad(d.getMonth() + 1);
+  }
+  function draw() {
+    const all = bets(), inMonth = all.filter(b => b.d.slice(0, 7) === month), m = sum(inMonth);
+    const months = all.map(b => b.d.slice(0, 7)).concat(today.slice(0, 7)).sort();
+    document.getElementById("cal-title").textContent = MONTHS[+month.slice(5, 7) - 1] + " " + month.slice(0, 4);
+    document.getElementById("cal-prev").disabled = month <= months[0];
+    document.getElementById("cal-next").disabled = month >= months[months.length - 1];
+    const tile = (v, k) => '<div class="tile"><b>' + v + "</b><span>" + k + "</span></div>";
+    document.getElementById("cal-tiles").innerHTML =
+      tile('<span class="' + cls(m.profit) + '">' + money(m.profit, true) + "</span>", "Profit this month") +
+      tile(m.won + "-" + m.lost, "Won-lost") +
+      tile(m.cost ? (m.profit / m.cost >= 0 ? "+" : "−") + Math.abs(100 * m.profit / m.cost).toFixed(1) + "%" : "–", "Return per $ bet");
+    const y = +month.slice(0, 4), mo = +month.slice(5, 7) - 1;
+    const first = new Date(y, mo, 1).getDay(), days = new Date(y, mo + 1, 0).getDate();
+    let out = ["S","M","T","W","T","F","S"].map(d => '<div class="cal-dow">' + d + "</div>").join("");
+    for (let i = 0; i < first; i++) out += '<div class="cal-cell blank"></div>';
+    for (let d = 1; d <= days; d++) {
+      const key = month + "-" + pad(d), s = sum(inMonth.filter(b => b.d === key));
+      const mark = (key === today ? " today" : "") + (key === picked ? " sel" : "");
+      if (!s.n && !s.open) { out += '<div class="cal-cell' + mark + '"><span class="cal-num">' + d + "</span></div>"; continue; }
+      const tint = !s.n ? "" : s.profit > 0 ? " win" : s.profit < 0 ? " loss" : "";
+      out += '<button class="cal-cell' + tint + mark + '" data-day="' + key + '"><span class="cal-num">' + d + "</span>" +
+        (s.n ? '<span class="cal-amt ' + cls(s.profit) + '">' + money(s.profit, Math.abs(s.profit) < 10) + "</span>" +
+               '<span class="cal-rec">' + s.won + "-" + s.lost + "</span>" : "") +
+        (s.open ? '<span class="cal-rec">' + s.open + " open</span>" : "") + "</button>";
+    }
+    grid.innerHTML = out;
+    drawDay();
+  }
+  function drawDay() {
+    const box = document.getElementById("cal-day");
+    const list = picked ? bets().filter(b => b.d === picked) : [];
+    if (!list.length) { box.innerHTML = ""; return; }
+    const s = sum(list), d = new Date(+picked.slice(0, 4), +picked.slice(5, 7) - 1, +picked.slice(8));
+    box.innerHTML = "<h2>" + d.toLocaleDateString("en-US", {weekday: "long", month: "short", day: "numeric"}) +
+      (s.n ? ': <span class="' + cls(s.profit) + '">' + money(s.profit, true) + "</span>" : "") + "</h2>" +
+      list.map(b => '<div class="cal-bet"><div><b>' + esc(b.pick) + "</b><small>" + esc(b.market) + "</small></div>" +
+        '<div class="amt">' + (b.status === "open" ? '<span class="muted">Open</span>'
+          : '<span class="' + cls(b.profit) + '">' + money(b.profit, true) + "</span>") +
+        "<br><small class=\"muted\">$" + b.cost.toFixed(2) + " bet</small></div></div>").join("");
+  }
+  function latest() {  // open on the newest month that has bets
+    const ms = bets().map(b => b.d.slice(0, 7)).sort();
+    month = ms.length ? ms[ms.length - 1] : today.slice(0, 7);
+    if (month > today.slice(0, 7)) month = today.slice(0, 7);
+    picked = null;
+  }
+  grid.addEventListener("click", e => {
+    const c = e.target.closest("[data-day]");
+    if (!c) return;
+    picked = picked === c.dataset.day ? null : c.dataset.day;
+    draw();
+    if (picked) document.getElementById("cal-day").scrollIntoView({behavior: "smooth", block: "nearest"});
+  });
+  document.getElementById("cal-prev").addEventListener("click", () => { month = shift(month, -1); picked = null; draw(); });
+  document.getElementById("cal-next").addEventListener("click", () => { month = shift(month, 1); picked = null; draw(); });
+  sel.addEventListener("change", () => {
+    try { localStorage.setItem("cal-strat", sel.value); } catch (e) {}
+    latest(); draw();
+  });
+  try { const k = localStorage.getItem("cal-strat"); if (k && data[k]) sel.value = k; } catch (e) {}
+  latest(); draw();
+})();
+</script>"""
+
+
 REPORT = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -720,14 +873,17 @@ REPORT = """<!doctype html>
   @media (max-width: 640px) { .compare, .verdicts { grid-template-columns:1fr; } }
 __ODDS_CSS__
 __STATS_CSS__
+__CAL_CSS__
 </style></head><body><main>
 <h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
 <div class="tabs" role="tablist"><button data-tab="real" class="on">Real<span class="long"> bets</span></button>
+<button data-tab="cal">Calendar</button>
 __STRATEGY_TABS__
 <button data-tab="stats">Stat<span class="long">istic</span>s</button></div>
 __ODDS_TOGGLE__
 <section id="tab-real">__BETS_REAL__</section>
+<section id="tab-cal" hidden>__CALENDAR__</section>
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
 <p class="note">Strategies A to E and Claude use pretend money; Real bets use real money. Each bet goes to
@@ -866,11 +1022,13 @@ def write_reports(states, live_state, card=None):
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
     sub = f"Real-money bets and pretend-money tests of six strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
-    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS + scanner.REFRESH_CSS).replace("__STATS_CSS__", STATS_CSS)
+    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS + scanner.REFRESH_CSS).replace("__STATS_CSS__", STATS_CSS).replace("__CAL_CSS__", CAL_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
-            .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + scanner.REFRESH_JS + "</body>")
+            .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + scanner.REFRESH_JS + CAL_JS + "</body>")
             .replace("__SUB__", html.escape(sub))
             .replace("__BETS_REAL__", bets_html(LIVE, live_state, real_tiles(live_state)))
+            .replace("__CALENDAR__", calendar_html(
+                [("real", LIVE, live_state)] + [(k, STRATEGIES[k], st) for k, st in states.items()]))
             .replace("__STRATEGY_TABS__", "".join(
                 f'<button data-tab="{k}">{tab_label(cfg["name"])}</button>' for k, cfg in STRATEGIES.items()))
             .replace("__STRATEGY_SECTIONS__", "\n".join(
