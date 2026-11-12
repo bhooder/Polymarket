@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1193.8084307673494,
+ "cash": 1219.3943546803928,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3221,7 +3221,7 @@
   },
   {
    "placed_at": "2026-11-11T19:42:29.036915+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Mirra Andreeva",
    "market": "WTA Finals, Group B: Aryna Sabalenka vs Mirra Andreeva",
@@ -3251,9 +3251,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.59,
+   "profit": 12.92,
+   "settled_at": "2026-11-12T00:50:45.162400+00:00",
    "topped_up_at": null
   },
   {

@@ -1468,7 +1468,7 @@
   },
   {
    "placed_at": "2026-11-11T19:42:41.636081+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Mirra Andreeva",
@@ -1485,7 +1485,7 @@
    "avg_price": 0.49,
    "shares": 6.47,
    "cost": 3.17,
-   "fees": 0.0,
+   "fees": 0.07,
    "contracts_ordered": 3.17,
    "venue": "prophetx",
    "venue_ref": {
@@ -1495,9 +1495,9 @@
     "event_id": 1704713198
    },
    "paper_price": 0.4901960784313725,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 6.4,
+   "profit": 3.23,
+   "settled_at": "2026-11-12T00:50:46.252756+00:00",
    "topped_up_at": null
   },
   {
@@ -1941,6 +1941,6 @@
    "filled": 5.0
   }
  ],
- "daily_check": "2026-11-11",
- "balances_checked_at": "2026-11-11T23:56:31.414558+00:00"
+ "daily_check": "2026-11-12",
+ "balances_checked_at": "2026-11-12T00:53:03.055434+00:00"
 }

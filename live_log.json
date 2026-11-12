@@ -2012,5 +2012,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0154\",\"average_fill_price\":\"0.6700\",\"client_order_id\":\"2cd49a89-b463-5591-bc3b-b6597a22cb85\",\"fill_count\":\"5.00\",\"order_id\":\"01a1ccdb-75a8-76f6-9672-c4036e53fa77\",\"remaining_count\":\"0.00\",\"ts_ms\":1794438297684}"
   }
+ },
+ {
+  "at": "2026-11-12T00:50:46.315946+00:00",
+  "event": "settled",
+  "bet": "Mirra Andreeva to win (vs. Aryna Sabalenka)",
+  "status": "won",
+  "cost": 3.17,
+  "payout": 6.4,
+  "profit": 3.23,
+  "venue": "prophetx",
+  "ref": "f6b228938f5800df78755809378684f6"
  }
 ]

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 914.8864468040787,
+ "cash": 892.630304194046,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8336,6 +8336,81 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T00:52:55.185888+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Sharks",
+   "market": "Penguins vs. Sharks",
+   "link": "https://polymarket.com/event/nhl-pit-sj-2026-11-11",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x16c487b2daac449cb41da7e175b4422415ba498e81614898acde6fd0ed73042f",
+   "token_id": "20476310242667536338413915411773286333614142338196971726695614039368415065292",
+   "outcome_index": 1,
+   "ends": "2026-11-12T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.0,
+   "traders_entry": 0.43,
+   "avg_price": 0.42,
+   "shares": 25.443196690553982,
+   "cost": 11.13,
+   "fees": 0.44,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV11PITSJ-SJ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4373,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T00:52:56.154659+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Spread: Nuggets (-4.5)",
+   "link": "https://polymarket.com/event/nba-den-mem-2026-11-11",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x01cabe7b620bbb3bc68c0a747adad119c30ce07f1b02890cb31c308d457afa19",
+   "token_id": "112280389247956496914754278847185082363413349383040536533600720675977709155144",
+   "outcome_index": 0,
+   "ends": "2026-11-12T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.46,
+   "avg_price": 0.463,
+   "shares": 23.78532795895933,
+   "cost": 11.13,
+   "fees": 0.1183,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "2e4580238a90024f6f8cb5f4abeed837",
+    "fee_rate": 0.02,
+    "event_id": 1704712778
+   },
+   "quotes": {
+    "prophetx": 0.4679,
+    "kalshi": 0.4875,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
