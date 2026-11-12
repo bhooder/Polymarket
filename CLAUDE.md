@@ -155,6 +155,9 @@ traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them
 The report card shows on the Claude tab.
 
 Report tabs (paper_report.html): Real bets, A, B, C, D, E, Claude, Statistics.
+Both report pages have a Refresh button (added 2026-11-11) and reload themselves when reopened
+after 5+ minutes: the owner uses the site as an iPhone home-screen app, which has no reload button
+(scanner REFRESH_CSS / REFRESH_JS).
 
 Statistics tab (added 2026-10-29, redesigned phone-first 2026-11-10: a card per
 strategy, bar charts, breakdown picker, full table tap-to-open). Null hypothesis = the
