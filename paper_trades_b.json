@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1017.3193267211811,
+ "cash": 1052.0384934142864,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8572,7 +8572,7 @@
   },
   {
    "placed_at": "2026-11-12T15:53:26.522224+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will France win on 2026-11-12?",
@@ -8601,9 +8601,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.0,
+   "profit": 9.58,
+   "settled_at": "2026-11-12T22:13:01.143757+00:00",
    "topped_up_at": null
   },
   {
@@ -8681,7 +8681,7 @@
   },
   {
    "placed_at": "2026-11-12T19:21:38.082731+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Spain win on 2026-11-12?",
@@ -8710,9 +8710,9 @@
     "polymarket_us": 0.8246
    },
    "intl_cost_per_share": 0.8177,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.72,
+   "profit": 2.41,
+   "settled_at": "2026-11-12T22:13:01.206740+00:00",
    "topped_up_at": null
   },
   {
