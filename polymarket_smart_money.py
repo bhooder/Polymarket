@@ -167,6 +167,32 @@ document.querySelectorAll("table").forEach(t => {  // label each cell with its c
   });
 });
 </script>"""
+# Refresh button, shared by picks.html and paper_report.html. An iPhone home-screen app has no
+# reload button and reopens showing the old page, so the page also reloads itself when it is
+# reopened after 5+ minutes. The "?r=" number makes the phone fetch a fresh copy, not a saved one.
+REFRESH_CSS = """
+  .refresh { float:right; margin:2px 0 0 12px; border:1px solid var(--line); border-radius:8px;
+             background:var(--card); color:var(--accent); font:inherit; font-size:13px; font-weight:600;
+             padding:6px 12px; cursor:pointer; }
+"""
+REFRESH_JS = """<script>
+function refreshPage() {
+  const u = new URL(location.href);
+  u.searchParams.set("r", Date.now());
+  location.replace(u);
+}
+(() => {
+  const b = document.createElement("button");
+  b.className = "refresh";
+  b.textContent = "\\u21bb Refresh";
+  b.addEventListener("click", () => { b.textContent = "Refreshing\\u2026"; refreshPage(); });
+  document.querySelector("main").prepend(b);
+  const loaded = Date.now();
+  const stale = () => { if (!document.hidden && Date.now() - loaded > 5 * 60 * 1000) refreshPage(); };
+  document.addEventListener("visibilitychange", stale);
+  window.addEventListener("pageshow", stale);
+})();
+</script>"""
 ODDS_TOGGLE = """<div class="toggle" role="group" aria-label="Price format">
 <button data-fmt="price" class="on">Price</button><button data-fmt="odds">American odds</button></div>"""
 ODDS_JS = """<script>
@@ -285,8 +311,8 @@ def write_html(path, rows, args):
                 + (f"price within {args.max_move * 100:.0f}¢ of their entry. " if args.max_move < 1
                    else "no price-move filter. ")
                 + f"Generated {time.strftime('%b %d, %Y %I:%M %p')}.")
-    page = (HTML_PAGE.replace("__ODDS_CSS__", ODDS_CSS + MOBILE_CSS).replace("__ODDS_TOGGLE__", ODDS_TOGGLE)
-            .replace("</body>", ODDS_JS + MOBILE_JS + "</body>")
+    page = (HTML_PAGE.replace("__ODDS_CSS__", ODDS_CSS + MOBILE_CSS + REFRESH_CSS).replace("__ODDS_TOGGLE__", ODDS_TOGGLE)
+            .replace("</body>", ODDS_JS + MOBILE_JS + REFRESH_JS + "</body>")
             .replace("__CATEGORY__", esc(args.category.title()))
             .replace("__SUBTITLE__", esc(subtitle)).replace("__ROWS__", "\n".join(out)))
     with open(path, "w") as f:

@@ -866,9 +866,9 @@ def write_reports(states, live_state, card=None):
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
     sub = f"Real-money bets and pretend-money tests of six strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
-    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS).replace("__STATS_CSS__", STATS_CSS)
+    page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS + scanner.REFRESH_CSS).replace("__STATS_CSS__", STATS_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
-            .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + "</body>")
+            .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + scanner.REFRESH_JS + "</body>")
             .replace("__SUB__", html.escape(sub))
             .replace("__BETS_REAL__", bets_html(LIVE, live_state, real_tiles(live_state)))
             .replace("__STRATEGY_TABS__", "".join(
