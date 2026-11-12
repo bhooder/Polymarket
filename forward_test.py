@@ -698,7 +698,8 @@ def calendar_html(strats):
 <div class="perf">
 <div class="perf-nums"><div><span>Profit</span><b id="perf-profit"></b></div>
 <div><span>ROI</span><b id="perf-roi"></b></div><div><span>Record</span><b id="perf-record"></b></div></div>
-<div id="perf-chart"></div>
+<div id="perf-chart" class="pchart"></div>
+<div id="perf-info" class="perf-info"></div>
 <div class="perf-range" role="group" aria-label="Time range"><button data-range="7">Week</button>
 <button data-range="30">Month</button><button data-range="365">Year</button><button data-range="0">All</button></div>
 </div>
@@ -725,12 +726,24 @@ CAL_CSS = """
   .perf-nums { display:flex; gap:28px; flex-wrap:wrap; }
   .perf-nums > div > span { display:block; color:var(--muted); font-size:14px; }
   .perf-nums b { font-size:21px; font-variant-numeric:tabular-nums; }
-  #perf-chart svg { display:block; width:100%; height:150px; margin:14px 0 10px; overflow:visible; }
-  #perf-chart .line { fill:none; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
-  #perf-chart .line.up { stroke:var(--up); } #perf-chart .line.down { stroke:var(--down); }
-  #perf-chart .zero { stroke:var(--line); stroke-width:1; stroke-dasharray:4 4; }
-  #perf-chart .none { height:150px; margin:14px 0 10px; display:flex; align-items:center; justify-content:center;
-                      color:var(--muted); font-size:14px; }
+  .pchart { position:relative; height:190px; margin:12px 0 6px; touch-action:pan-y; user-select:none;
+            -webkit-user-select:none; -webkit-tap-highlight-color:transparent; cursor:crosshair; }
+  .pchart svg { position:absolute; left:0; top:26px; width:100%; height:138px; overflow:visible; }
+  .pchart .line { fill:none; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+  .pchart .line.up { stroke:var(--up); } .pchart .line.down { stroke:var(--down); }
+  .pchart .line.after { opacity:.3; }
+  .pchart .zero { stroke:var(--line); stroke-width:1; stroke-dasharray:4 4; }
+  .pchart .none { height:100%; display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:14px; }
+  .plabel { position:absolute; transform:translateX(-50%); font-size:14px; font-weight:600; color:var(--muted);
+            font-variant-numeric:tabular-nums; white-space:nowrap; pointer-events:none; }
+  .plabel.hi { top:0; } .plabel.lo { bottom:0; }
+  .pdate { position:absolute; top:0; right:0; font-size:14px; font-weight:600; color:var(--muted); pointer-events:none; }
+  .pdot { position:absolute; width:12px; height:12px; margin:-6px 0 0 -6px; border-radius:50%; background:currentColor;
+          box-shadow:0 0 0 26px color-mix(in srgb, currentColor 22%, transparent); pointer-events:none; }
+  .pdot.up { color:var(--up); } .pdot.down { color:var(--down); }
+  .perf-info { min-height:21px; text-align:center; font-size:14px; color:var(--muted); margin:0 0 8px;
+               white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .perf-info b { color:var(--text); font-weight:600; }
   .perf-range { display:flex; justify-content:space-around; }
   .perf-range button { border:0; background:none; color:var(--muted); font:inherit; font-size:16px;
                        padding:7px 16px; border-radius:999px; cursor:pointer; }
@@ -808,24 +821,76 @@ CAL_JS = r"""<script>
   }
   const DOW = ["S","M","T","W","T","F","S"].map(d => '<div class="cal-dow">' + d + "</div>").join("");
 
-  function drawPerf() {
+  let perfPts = [], perfSel = null, perfDrag = false;
+  function drawPerf() {  // the numbers, chart and buttons for the chosen time range
     const from = range ? ymd(new Date(Date.now() - (range - 1) * 864e5)) : "";
     const list = bets().filter(b => b.status !== "open" && b.d >= from).sort((a, b) => a.t < b.t ? -1 : 1);
-    const s = sum(list);
-    $("perf-profit").innerHTML = '<span class="' + cls(s.profit) + '">' + money(s.profit) + "</span>";
-    $("perf-roi").innerHTML = s.cost ? '<span class="' + cls(s.profit) + '">' + (s.profit >= 0 ? "+" : "−") +
-      Math.abs(100 * s.profit / s.cost).toFixed(2) + "%</span>" : "–";
-    $("perf-record").textContent = s.won + "-" + s.lost + "-" + s.push;
+    const z = {profit: 0, cost: 0, won: 0, lost: 0, push: 0, bet: null};
+    perfPts = [z];  // point 0 = the start of the period; point i = after the i-th bet settled
+    list.forEach(b => {
+      const p = perfPts[perfPts.length - 1];
+      perfPts.push({profit: p.profit + b.profit, cost: p.cost + b.cost, won: p.won + (b.status === "won"),
+                    lost: p.lost + (b.status === "lost"), push: p.push + (b.status === "push"), bet: b});
+    });
+    perfSel = null;
     document.querySelectorAll(".perf-range button").forEach(b => b.classList.toggle("on", +b.dataset.range === range));
-    if (!list.length) { $("perf-chart").innerHTML = '<div class="none">No settled bets in this period yet.</div>'; return; }
-    let run = 0; const ys = [0].concat(list.map(b => run += b.profit));
-    const lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys), span = hi - lo || 1, W = 300, H = 120;
-    const x = i => (i / (ys.length - 1) * W).toFixed(1), y = v => (H - 4 - (v - lo) / span * (H - 8)).toFixed(1);
-    $("perf-chart").innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" role="img" ' +
-      'aria-label="Running profit"><line class="zero" x1="0" x2="' + W + '" y1="' + y(0) + '" y2="' + y(0) +
-      '" vector-effect="non-scaling-stroke"/><polyline class="line ' + (run >= 0 ? "up" : "down") +
-      '" vector-effect="non-scaling-stroke" points="' + ys.map((v, i) => x(i) + "," + y(v)).join(" ") + '"/></svg>';
+    drawPerfChart();
   }
+  function drawPerfChart() {  // redrawn on every touch, so the numbers follow your finger
+    const pts = perfPts, n = pts.length, at = pts[perfSel === null ? n - 1 : perfSel];
+    $("perf-profit").innerHTML = '<span class="' + cls(at.profit) + '">' + money(at.profit) + "</span>";
+    $("perf-roi").innerHTML = at.cost ? '<span class="' + cls(at.profit) + '">' + (at.profit >= 0 ? "+" : "−") +
+      Math.abs(100 * at.profit / at.cost).toFixed(2) + "%</span>" : "–";
+    $("perf-record").textContent = at.won + "-" + at.lost + "-" + at.push;
+    if (n < 2) {
+      $("perf-chart").innerHTML = '<div class="none">No settled bets in this period yet.</div>';
+      $("perf-info").innerHTML = ""; return;
+    }
+    const ys = pts.map(p => p.profit), lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys);
+    const span = hi - lo || 1, W = 300, H = 120, SVG_TOP = 26, SVG_H = 138;
+    const xp = i => i / (n - 1) * 100;  // percent across
+    const yv = v => H - 4 - (v - lo) / span * (H - 8);
+    const pts2 = (a, b) => ys.slice(a, b + 1).map((v, k) => (xp(a + k) * W / 100).toFixed(1) + "," + yv(v).toFixed(1)).join(" ");
+    const end = perfSel === null ? n - 1 : perfSel, tone = (perfSel === null ? ys[n - 1] : at.profit) >= 0 ? "up" : "down";
+    let svg = '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+      '<line class="zero" x1="0" x2="' + W + '" y1="' + yv(0).toFixed(1) + '" y2="' + yv(0).toFixed(1) +
+      '" vector-effect="non-scaling-stroke"/>' +
+      '<polyline class="line ' + tone + '" vector-effect="non-scaling-stroke" points="' + pts2(0, end) + '"/>' +
+      (end < n - 1 ? '<polyline class="line after ' + tone + '" vector-effect="non-scaling-stroke" points="' +
+        pts2(end, n - 1) + '"/>' : "") + "</svg>";
+    const clamp = v => Math.min(88, Math.max(12, v));
+    const iHi = ys.indexOf(hi), iLo = ys.indexOf(lo);
+    if (hi > lo && !(perfSel !== null && clamp(xp(iHi)) > 55))  // keep the high label clear of the date
+      svg += '<span class="plabel hi" style="left:' + clamp(xp(iHi)) + '%">' + money(hi) + "</span>";
+    if (hi > lo) svg += '<span class="plabel lo" style="left:' + clamp(xp(iLo)) + '%">' + money(lo) + "</span>";
+    const b = at.bet, when = b ? new Date(b.t).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"}) : "";
+    if (perfSel !== null) {
+      svg += '<span class="pdate">' + (b ? when : "Start") + "</span>" +
+        '<span class="pdot ' + tone + '" style="left:' + xp(perfSel) + "%;top:" +
+        (SVG_TOP + yv(at.profit) / H * SVG_H).toFixed(1) + 'px"></span>';
+    }
+    $("perf-chart").innerHTML = svg;
+    $("perf-info").innerHTML = perfSel === null ? "Tap or drag the chart to see any point" :
+      !b ? "Start of this period" :
+      "Bet " + perfSel + " of " + (n - 1) + ": <b>" + esc(b.pick) + (b.type ? " · " + esc(b.type) : "") +
+      '</b> <span class="' + cls(b.profit) + '">' + money(b.profit) + "</span>";
+  }
+  function perfPick(e) {
+    const r = $("perf-chart").getBoundingClientRect(), n = perfPts.length;
+    if (n < 2 || !r.width) return;
+    const i = Math.round(Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)) * (n - 1));
+    if (i !== perfSel) { perfSel = i; drawPerfChart(); }
+  }
+  $("perf-chart").addEventListener("pointerdown", e => { e.onPerfChart = true; perfDrag = true; perfPick(e); });
+  $("perf-chart").addEventListener("pointermove", e => { if (perfDrag || e.pointerType === "mouse") perfPick(e); });
+  ["pointerup", "pointercancel"].forEach(t => $("perf-chart").addEventListener(t, () => { perfDrag = false; }));
+  $("perf-chart").addEventListener("pointerleave", e => {
+    perfDrag = false;
+    if (e.pointerType === "mouse" && perfSel !== null) { perfSel = null; drawPerfChart(); }
+  });
+  document.addEventListener("pointerdown", e => {  // tapping anywhere else goes back to the totals
+    if (perfSel !== null && !e.onPerfChart) { perfSel = null; drawPerfChart(); }
+  });
   function drawStrip() {  // last week and this week
     const start = new Date(); start.setDate(start.getDate() - start.getDay() - 7);
     let out = DOW;

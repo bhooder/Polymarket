@@ -158,7 +158,8 @@ Report tabs (paper_report.html): Summary, Real bets, A, B, C, D, E, Claude, Stat
 Summary tab (added 2026-11-12 as "Calendar", redesigned the same day after the owner's bet-tracker app;
 the first tab and the page a fresh open lands on, while a Refresh keeps the current tab): a picker for
 Real bets (default) or any paper strategy; a Performance card (profit, ROI, record W-L-push, running-profit
-chart, Week / Month / Year / All = last 7 / 30 / 365 days / everything); a two-week calendar strip; and
+chart, Week / Month / Year / All = last 7 / 30 / 365 days / everything; tap or drag the chart to see
+profit, ROI and record up to that bet, with its date and the bet itself; high and low are labelled); a two-week calendar strip; and
 "View full calendar", which opens a month calendar (coloured squares with each day's profit, month total,
 the day's bets with odds on tap, back arrow to the summary). A bet's day is its game day in Eastern time,
 or the day it settled if earlier (forward_test.day_of / calendar_html / CAL_CSS / CAL_JS).
