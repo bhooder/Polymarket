@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1071.5683304058896,
+ "cash": 1092.649178872125,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2474,7 +2474,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:34.010865+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Spread: Thunder (-1.5)",
@@ -2504,9 +2504,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.08,
+   "profit": 9.96,
+   "settled_at": "2026-11-12T06:23:16.030068+00:00",
    "topped_up_at": null
   },
   {
@@ -2696,7 +2696,7 @@
   },
   {
    "placed_at": "2026-11-12T00:52:57.854965+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Sharks",
    "market": "Penguins vs. Sharks",
@@ -2726,9 +2726,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.15,
+   "settled_at": "2026-11-12T06:23:16.061489+00:00",
    "topped_up_at": null
   },
   {
