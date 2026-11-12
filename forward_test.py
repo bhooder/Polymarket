@@ -674,144 +674,229 @@ def day_of(b):
 
 
 def calendar_html(strats):
-    """Calendar tab: a month grid with each day's profit, a picker to switch between Real bets
-    and the paper strategies, and the day's bets on tap. strats = [(key, config, state), ...].
-    The bets go into the page as data; CAL_JS draws the grid."""
+    """Summary tab (the home page): a Performance card (profit, ROI, record and a running-profit
+    chart for the last week / month / year / all), a two-week calendar strip, and a full month
+    calendar that opens from it, with each day's bets on tap. A picker switches between Real bets
+    and the paper strategies. strats = [(key, config, state), ...]. The bets go into the page as
+    data; CAL_JS draws everything."""
     data = {}
     for key, cfg, state in strats:
         rows = []
         for b in state["bets"]:
             day = day_of(b)
             if day:
-                rows.append({"d": day, "pick": str(b["pick"]), "market": b["market"], "status": b["status"],
+                rows.append({"d": day, "t": b.get("settled_at") or b["placed_at"], "pick": str(b["pick"]),
+                             "market": b["market"], "type": TYPE_NAMES.get(bet_type(b), ""),
+                             "status": b["status"], "price": round(b["avg_price"], 4),
                              "cost": round(b["cost"], 2), "profit": round(b.get("profit") or 0, 2)})
         data[key] = {"name": cfg["name"], "bets": rows}
     options = "".join(f'<option value="{k}">{html.escape(v["name"])}</option>' for k, v in data.items())
     blob = json.dumps(data).replace("</", "<\\/")  # must not close the script tag early
     return f"""<select id="cal-strat" class="pick-strat" aria-label="Which bets to show">{options}</select>
-<div class="cal-head"><button id="cal-prev" aria-label="Previous month">&lsaquo;</button>
-<b id="cal-title"></b><button id="cal-next" aria-label="Next month">&rsaquo;</button></div>
-<div class="tiles" id="cal-tiles"></div>
+<div id="cal-home">
+<h2 class="cal-h">Performance</h2>
+<div class="perf">
+<div class="perf-nums"><div><span>Profit</span><b id="perf-profit"></b></div>
+<div><span>ROI</span><b id="perf-roi"></b></div><div><span>Record</span><b id="perf-record"></b></div></div>
+<div id="perf-chart"></div>
+<div class="perf-range" role="group" aria-label="Time range"><button data-range="7">Week</button>
+<button data-range="30">Month</button><button data-range="365">Year</button><button data-range="0">All</button></div>
+</div>
+<h2 class="cal-h">Calendar</h2>
+<div class="cal-grid" id="cal-strip"></div>
+<button class="cal-link" id="cal-open">View full calendar &rarr;</button>
+</div>
+<div id="cal-full" hidden>
+<div class="cal-head"><button id="cal-back" class="cal-round" aria-label="Back to summary">&lsaquo;</button>
+<b id="cal-title"></b><span id="cal-total"></span><span class="cal-space"></span>
+<button id="cal-prev" class="cal-round small" aria-label="Previous month">&lsaquo;</button>
+<button id="cal-next" class="cal-round small" aria-label="Next month">&rsaquo;</button></div>
 <div class="cal-grid" id="cal-grid"></div>
-<p class="hint" style="margin-top:10px">Each day shows the profit on bets from that day's games ($10 and up
-is rounded to the dollar). Tap a day to see its bets and exact amounts. Open bets are listed but not counted until they settle.</p>
 <div id="cal-day"></div>
+<p class="hint" style="margin-top:14px">Each day shows the profit or loss on bets from that day's games. Tap a day
+to see its bets. Open bets are listed but not counted until they settle.</p>
+</div>
 <script type="application/json" id="cal-data">{blob}</script>"""
 
 
 CAL_CSS = """
-  .cal-head { display:flex; align-items:center; justify-content:space-between; margin:8px 0 12px; }
-  .cal-head b { font-size:18px; }
-  .cal-head button { border:1px solid var(--line); background:var(--card); color:var(--text); font:inherit;
-                     font-size:22px; line-height:1; width:44px; height:40px; border-radius:10px; cursor:pointer; }
-  .cal-head button:disabled { opacity:.3; cursor:default; }
-  .cal-grid { display:grid; grid-template-columns:repeat(7, minmax(0, 1fr)); gap:4px; margin-top:14px; }
-  .cal-dow { text-align:center; font-size:11px; font-weight:600; color:var(--muted); text-transform:uppercase; }
-  .cal-cell { background:var(--card); border:1px solid var(--line); border-radius:8px; min-height:62px;
-              padding:4px 5px; font:inherit; color:var(--text); text-align:left; display:flex;
-              flex-direction:column; gap:1px; min-width:0; }
-  button.cal-cell { cursor:pointer; }
-  .cal-cell.blank { background:none; border-color:transparent; }
-  .cal-cell.win { background:color-mix(in srgb, var(--up) 16%, var(--card)); border-color:color-mix(in srgb, var(--up) 40%, var(--line)); }
-  .cal-cell.loss { background:color-mix(in srgb, var(--down) 16%, var(--card)); border-color:color-mix(in srgb, var(--down) 40%, var(--line)); }
+  .cal-h { font-size:22px; margin:22px 0 12px; }
+  .perf { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px 16px 14px; }
+  .perf-nums { display:flex; gap:28px; flex-wrap:wrap; }
+  .perf-nums > div > span { display:block; color:var(--muted); font-size:14px; }
+  .perf-nums b { font-size:21px; font-variant-numeric:tabular-nums; }
+  #perf-chart svg { display:block; width:100%; height:150px; margin:14px 0 10px; overflow:visible; }
+  #perf-chart .line { fill:none; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+  #perf-chart .line.up { stroke:var(--up); } #perf-chart .line.down { stroke:var(--down); }
+  #perf-chart .zero { stroke:var(--line); stroke-width:1; stroke-dasharray:4 4; }
+  #perf-chart .none { height:150px; margin:14px 0 10px; display:flex; align-items:center; justify-content:center;
+                      color:var(--muted); font-size:14px; }
+  .perf-range { display:flex; justify-content:space-around; }
+  .perf-range button { border:0; background:none; color:var(--muted); font:inherit; font-size:16px;
+                       padding:7px 16px; border-radius:999px; cursor:pointer; }
+  .perf-range button.on { background:var(--line); color:var(--text); font-weight:600; }
+  .cal-link { border:0; background:none; color:var(--accent); font:inherit; font-size:16px; font-weight:500;
+              padding:14px 0 4px; cursor:pointer; }
+  .cal-head { display:flex; align-items:center; gap:10px; margin:6px 0 16px; }
+  .cal-head b { font-size:24px; white-space:nowrap; }
+  #cal-total { font-size:15px; font-weight:600; color:var(--muted); white-space:nowrap; }
+  .cal-space { flex:1; }
+  .cal-round { border:1px solid var(--line); background:var(--card); color:var(--text); font:inherit; font-size:24px;
+               line-height:1; width:44px; height:44px; border-radius:50%; cursor:pointer; flex:none; padding:0 0 3px; }
+  .cal-round.small { width:38px; height:38px; font-size:20px; }
+  .cal-round:disabled { opacity:.3; cursor:default; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7, minmax(0, 1fr)); gap:5px; }
+  .cal-dow { text-align:center; font-size:15px; color:var(--muted); padding-bottom:6px; }
+  .cal-cell { border:0; background:none; border-radius:13px; aspect-ratio:1 / 1.04; padding:0; font:inherit;
+              color:var(--muted); display:flex; flex-direction:column; align-items:center; justify-content:center;
+              gap:4px; min-width:0; }
+  button.cal-cell { cursor:pointer; background:color-mix(in srgb, var(--muted) 16%, var(--card)); }
+  .cal-cell.other { opacity:.45; }
+  .cal-cell.win { background:color-mix(in srgb, var(--up) 22%, var(--card)); }
+  .cal-cell.loss { background:color-mix(in srgb, var(--down) 22%, var(--card)); }
+  .cal-cell.sel { box-shadow:0 0 0 2px var(--accent); }
   .cal-cell.today .cal-num { color:var(--accent); font-weight:700; }
-  .cal-cell.sel { outline:2px solid var(--accent); outline-offset:-1px; }
-  .cal-num { font-size:11px; color:var(--muted); }
-  .cal-amt { font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
-  .cal-rec { font-size:10px; color:var(--muted); white-space:nowrap; }
-  @media (max-width: 480px) { .cal-amt { font-size:11.5px; letter-spacing:-.03em; } .cal-cell { padding:4px 3px; } }
-  .cal-bet { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 14px;
-             margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
-  .cal-bet b { display:block; } .cal-bet small { color:var(--muted); }
-  .cal-bet .amt { font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right; }
+  .cal-num { font-size:15px; line-height:1; }
+  .cal-amt { font-size:13.5px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums; white-space:nowrap;
+             color:var(--text); }
+  .cal-amt.up { color:var(--up); } .cal-amt.down { color:var(--down); }
+  .cal-amt.open { font-weight:500; font-size:11.5px; color:var(--muted); }
+  @media (max-width: 420px) { .cal-grid { gap:4px; } .cal-amt { font-size:12px; letter-spacing:-.02em; }
+                              .cal-num { font-size:14px; } .cal-head b { font-size:21px; } }
+  .cal-count { font-size:20px; margin:24px 0 4px; }
+  .cal-bet { display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 0;
+             border-bottom:1px solid var(--line); }
+  .cal-bet b { display:block; font-size:16px; } .cal-bet small { color:var(--muted); font-size:14px; }
+  .cal-bet .amt { text-align:right; white-space:nowrap; }
+  .cal-bet .amt b { font-variant-numeric:tabular-nums; }
 """
 
 CAL_JS = r"""<script>
 (function () {
   const data = JSON.parse(document.getElementById("cal-data").textContent);
-  const sel = document.getElementById("cal-strat"), grid = document.getElementById("cal-grid");
-  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const $ = id => document.getElementById(id);
+  const sel = $("cal-strat");
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const pad = n => String(n).padStart(2, "0");
-  const money = (v, cents) => (v >= 0 ? "+" : "−") + "$" + Math.abs(v).toLocaleString("en-US",
-      {minimumFractionDigits: cents ? 2 : 0, maximumFractionDigits: cents ? 2 : 0});
+  const ymd = d => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const toDate = s => new Date(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
+  const money = v => (v > 0 ? "+" : v < 0 ? "−" : "") + "$" + Math.abs(v).toLocaleString("en-US",
+      {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  function short(v) {  // a day's total, short enough for a calendar square: -$89.3, $118, $9
+    const a = Math.abs(v), t = a >= 99.95 ? Math.round(a).toLocaleString("en-US") : String(+a.toFixed(1));
+    return (v < 0 ? "−" : "") + "$" + t;
+  }
   const cls = v => v > 0 ? "up" : v < 0 ? "down" : "";
-  const now = new Date(), today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
-  let month = today.slice(0, 7), picked = null;
+  const today = ymd(new Date());
+  let month = today.slice(0, 7), picked = null, range = 0;
 
   const bets = () => data[sel.value].bets;
-  const settled = list => list.filter(b => b.status !== "open");
   function sum(list) {
-    const s = settled(list);
+    const s = list.filter(b => b.status !== "open"), count = st => s.filter(b => b.status === st).length;
     return {profit: s.reduce((t, b) => t + b.profit, 0), cost: s.reduce((t, b) => t + b.cost, 0),
-            won: s.filter(b => b.status === "won").length, lost: s.filter(b => b.status === "lost").length,
-            n: s.length, open: list.length - s.length};
+            won: count("won"), lost: count("lost"), push: count("push"), n: s.length, open: list.length - s.length};
   }
-  function shift(ym, by) {
-    const d = new Date(+ym.slice(0, 4), +ym.slice(5, 7) - 1 + by, 1);
-    return d.getFullYear() + "-" + pad(d.getMonth() + 1);
+  function cell(key, other) {  // one calendar square
+    const s = sum(bets().filter(b => b.d === key)), num = '<span class="cal-num">' + +key.slice(8) + "</span>";
+    const mark = (key === today ? " today" : "") + (key === picked ? " sel" : "") + (other ? " other" : "");
+    if (!s.n && !s.open) return '<div class="cal-cell' + mark + '">' + num + "</div>";
+    const tint = !s.n ? "" : s.profit > 0.004 ? " win" : s.profit < -0.004 ? " loss" : "";
+    return '<button class="cal-cell' + tint + mark + '" data-day="' + key + '">' + num +
+      (s.n ? '<span class="cal-amt ' + cls(Math.round(s.profit * 100)) + '">' + short(s.profit) + "</span>"
+           : '<span class="cal-amt open">' + s.open + " open</span>") + "</button>";
   }
-  function draw() {
-    const all = bets(), inMonth = all.filter(b => b.d.slice(0, 7) === month), m = sum(inMonth);
+  const DOW = ["S","M","T","W","T","F","S"].map(d => '<div class="cal-dow">' + d + "</div>").join("");
+
+  function drawPerf() {
+    const from = range ? ymd(new Date(Date.now() - (range - 1) * 864e5)) : "";
+    const list = bets().filter(b => b.status !== "open" && b.d >= from).sort((a, b) => a.t < b.t ? -1 : 1);
+    const s = sum(list);
+    $("perf-profit").innerHTML = '<span class="' + cls(s.profit) + '">' + money(s.profit) + "</span>";
+    $("perf-roi").innerHTML = s.cost ? '<span class="' + cls(s.profit) + '">' + (s.profit >= 0 ? "+" : "−") +
+      Math.abs(100 * s.profit / s.cost).toFixed(2) + "%</span>" : "–";
+    $("perf-record").textContent = s.won + "-" + s.lost + "-" + s.push;
+    document.querySelectorAll(".perf-range button").forEach(b => b.classList.toggle("on", +b.dataset.range === range));
+    if (!list.length) { $("perf-chart").innerHTML = '<div class="none">No settled bets in this period yet.</div>'; return; }
+    let run = 0; const ys = [0].concat(list.map(b => run += b.profit));
+    const lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys), span = hi - lo || 1, W = 300, H = 120;
+    const x = i => (i / (ys.length - 1) * W).toFixed(1), y = v => (H - 4 - (v - lo) / span * (H - 8)).toFixed(1);
+    $("perf-chart").innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" role="img" ' +
+      'aria-label="Running profit"><line class="zero" x1="0" x2="' + W + '" y1="' + y(0) + '" y2="' + y(0) +
+      '" vector-effect="non-scaling-stroke"/><polyline class="line ' + (run >= 0 ? "up" : "down") +
+      '" vector-effect="non-scaling-stroke" points="' + ys.map((v, i) => x(i) + "," + y(v)).join(" ") + '"/></svg>';
+  }
+  function drawStrip() {  // last week and this week
+    const start = new Date(); start.setDate(start.getDate() - start.getDay() - 7);
+    let out = DOW;
+    for (let i = 0; i < 14; i++) { out += cell(ymd(start), false); start.setDate(start.getDate() + 1); }
+    $("cal-strip").innerHTML = out;
+  }
+  function drawFull() {
+    const all = bets(), m = sum(all.filter(b => b.d.slice(0, 7) === month));
     const months = all.map(b => b.d.slice(0, 7)).concat(today.slice(0, 7)).sort();
-    document.getElementById("cal-title").textContent = MONTHS[+month.slice(5, 7) - 1] + " " + month.slice(0, 4);
-    document.getElementById("cal-prev").disabled = month <= months[0];
-    document.getElementById("cal-next").disabled = month >= months[months.length - 1];
-    const tile = (v, k) => '<div class="tile"><b>' + v + "</b><span>" + k + "</span></div>";
-    document.getElementById("cal-tiles").innerHTML =
-      tile('<span class="' + cls(m.profit) + '">' + money(m.profit, true) + "</span>", "Profit this month") +
-      tile(m.won + "-" + m.lost, "Won-lost") +
-      tile(m.cost ? (m.profit / m.cost >= 0 ? "+" : "−") + Math.abs(100 * m.profit / m.cost).toFixed(1) + "%" : "–", "Return per $ bet");
+    $("cal-title").textContent = MONTHS[+month.slice(5, 7) - 1] + " " + month.slice(0, 4);
+    $("cal-total").innerHTML = m.n ? '<span class="' + cls(m.profit) + '">' + money(m.profit) + "</span>" : "";
+    $("cal-prev").disabled = month <= months[0];
+    $("cal-next").disabled = month >= months[months.length - 1];
     const y = +month.slice(0, 4), mo = +month.slice(5, 7) - 1;
     const first = new Date(y, mo, 1).getDay(), days = new Date(y, mo + 1, 0).getDate();
-    let out = ["S","M","T","W","T","F","S"].map(d => '<div class="cal-dow">' + d + "</div>").join("");
-    for (let i = 0; i < first; i++) out += '<div class="cal-cell blank"></div>';
-    for (let d = 1; d <= days; d++) {
-      const key = month + "-" + pad(d), s = sum(inMonth.filter(b => b.d === key));
-      const mark = (key === today ? " today" : "") + (key === picked ? " sel" : "");
-      if (!s.n && !s.open) { out += '<div class="cal-cell' + mark + '"><span class="cal-num">' + d + "</span></div>"; continue; }
-      const tint = !s.n ? "" : s.profit > 0 ? " win" : s.profit < 0 ? " loss" : "";
-      out += '<button class="cal-cell' + tint + mark + '" data-day="' + key + '"><span class="cal-num">' + d + "</span>" +
-        (s.n ? '<span class="cal-amt ' + cls(s.profit) + '">' + money(s.profit, Math.abs(s.profit) < 10) + "</span>" +
-               '<span class="cal-rec">' + s.won + "-" + s.lost + "</span>" : "") +
-        (s.open ? '<span class="cal-rec">' + s.open + " open</span>" : "") + "</button>";
-    }
-    grid.innerHTML = out;
-    drawDay();
+    let out = DOW;
+    for (let i = 0; i < first; i++) out += "<div></div>";
+    for (let d = 1; d <= days; d++) out += cell(month + "-" + pad(d), false);
+    $("cal-grid").innerHTML = out;
+    const list = picked ? all.filter(b => b.d === picked) : [];
+    $("cal-day").innerHTML = !list.length ? "" :
+      '<h2 class="cal-count">' + list.length + (list.length === 1 ? " Bet" : " Bets") + ' <small class="muted" style="font-size:15px;' +
+      'font-weight:500">' + toDate(picked).toLocaleDateString("en-US", {weekday: "short", month: "short", day: "numeric"}) + "</small></h2>" +
+      list.map(b => '<div class="cal-bet"><div><b>' + esc(b.pick) + (b.type ? " · " + esc(b.type) : "") + "</b><small>" +
+        esc(b.market) + " · " + (b.status === "open" ? "Open" : b.status === "push" ? "Push" : "Final") +
+        " · $" + b.cost.toFixed(2) + " bet</small></div>" +
+        '<div class="amt"><b class="' + (b.status === "open" ? "muted" : cls(b.profit)) + '">' +
+        (b.status === "open" ? "Open" : money(b.profit)) + '</b><small><span class="px" data-p="' + b.price + '">' +
+        b.price.toFixed(2) + "</span></small></div></div>").join("");
+    let fmt = "price"; try { fmt = localStorage.getItem("price-format") || "price"; } catch (e) {}
+    if (typeof showPrices === "function") showPrices(fmt);  // honour the Price / American odds switch
   }
-  function drawDay() {
-    const box = document.getElementById("cal-day");
-    const list = picked ? bets().filter(b => b.d === picked) : [];
-    if (!list.length) { box.innerHTML = ""; return; }
-    const s = sum(list), d = new Date(+picked.slice(0, 4), +picked.slice(5, 7) - 1, +picked.slice(8));
-    box.innerHTML = "<h2>" + d.toLocaleDateString("en-US", {weekday: "long", month: "short", day: "numeric"}) +
-      (s.n ? ': <span class="' + cls(s.profit) + '">' + money(s.profit, true) + "</span>" : "") + "</h2>" +
-      list.map(b => '<div class="cal-bet"><div><b>' + esc(b.pick) + "</b><small>" + esc(b.market) + "</small></div>" +
-        '<div class="amt">' + (b.status === "open" ? '<span class="muted">Open</span>'
-          : '<span class="' + cls(b.profit) + '">' + money(b.profit, true) + "</span>") +
-        "<br><small class=\"muted\">$" + b.cost.toFixed(2) + " bet</small></div></div>").join("");
+  function show(full) {
+    $("cal-home").hidden = full; $("cal-full").hidden = !full;
+    if (full) drawFull(); else { drawPerf(); drawStrip(); }
+    try { sessionStorage.setItem("cal-view", full ? "full" : "home"); } catch (e) {}
   }
-  function latest() {  // open on the newest month that has bets
-    const ms = bets().map(b => b.d.slice(0, 7)).sort();
-    month = ms.length ? ms[ms.length - 1] : today.slice(0, 7);
-    if (month > today.slice(0, 7)) month = today.slice(0, 7);
-    picked = null;
+  function shift(by) {
+    const d = new Date(+month.slice(0, 4), +month.slice(5, 7) - 1 + by, 1);
+    month = d.getFullYear() + "-" + pad(d.getMonth() + 1); picked = null; drawFull();
   }
-  grid.addEventListener("click", e => {
+  $("cal-strip").addEventListener("click", e => {
+    const c = e.target.closest("[data-day]");
+    if (c) { picked = c.dataset.day; month = picked.slice(0, 7); show(true); }
+  });
+  $("cal-grid").addEventListener("click", e => {
     const c = e.target.closest("[data-day]");
     if (!c) return;
     picked = picked === c.dataset.day ? null : c.dataset.day;
-    draw();
-    if (picked) document.getElementById("cal-day").scrollIntoView({behavior: "smooth", block: "nearest"});
+    drawFull();
   });
-  document.getElementById("cal-prev").addEventListener("click", () => { month = shift(month, -1); picked = null; draw(); });
-  document.getElementById("cal-next").addEventListener("click", () => { month = shift(month, 1); picked = null; draw(); });
+  $("cal-open").addEventListener("click", () => { month = today.slice(0, 7); picked = null; show(true); window.scrollTo(0, 0); });
+  $("cal-back").addEventListener("click", () => show(false));
+  $("cal-prev").addEventListener("click", () => shift(-1));
+  $("cal-next").addEventListener("click", () => shift(1));
+  document.querySelectorAll(".perf-range button").forEach(b => b.addEventListener("click", () => {
+    range = +b.dataset.range;
+    try { localStorage.setItem("cal-range", range); } catch (e) {}
+    drawPerf();
+  }));
   sel.addEventListener("change", () => {
     try { localStorage.setItem("cal-strat", sel.value); } catch (e) {}
-    latest(); draw();
+    picked = null; show(!$("cal-full").hidden);
   });
-  try { const k = localStorage.getItem("cal-strat"); if (k && data[k]) sel.value = k; } catch (e) {}
-  latest(); draw();
+  let full = false;
+  try {
+    const k = localStorage.getItem("cal-strat"); if (k && data[k]) sel.value = k;
+    const r = localStorage.getItem("cal-range"); if (r !== null && [0, 7, 30, 365].includes(+r)) range = +r;
+    full = sessionStorage.getItem("cal-view") === "full";  // a Refresh keeps the calendar open
+  } catch (e) {}
+  show(full);
 })();
 </script>"""
 
@@ -877,7 +962,7 @@ __CAL_CSS__
 </style></head><body><main>
 <h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
-<div class="tabs" role="tablist"><button data-tab="cal" class="on">Calendar</button>
+<div class="tabs" role="tablist"><button data-tab="cal" class="on">Summary</button>
 <button data-tab="real">Real<span class="long"> bets</span></button>
 __STRATEGY_TABS__
 <button data-tab="stats">Stat<span class="long">istic</span>s</button></div>

@@ -154,10 +154,14 @@ qualified trader, 2% with two or more (top-up once); all other rules as A. No be
 traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.
 The report card shows on the Claude tab.
 
-Report tabs (paper_report.html): Calendar, Real bets, A, B, C, D, E, Claude, Statistics.
-Calendar tab (added 2026-11-12; the first tab and the page a fresh open lands on, while a Refresh keeps the current tab): a month grid with each day's profit (green/red), month totals, a
-picker for Real bets (default) or any paper strategy, and the day's bets on tap. A bet's day is its
-game day in Eastern time, or the day it settled if earlier (forward_test.day_of / calendar_html / CAL_JS).
+Report tabs (paper_report.html): Summary, Real bets, A, B, C, D, E, Claude, Statistics.
+Summary tab (added 2026-11-12 as "Calendar", redesigned the same day after the owner's bet-tracker app;
+the first tab and the page a fresh open lands on, while a Refresh keeps the current tab): a picker for
+Real bets (default) or any paper strategy; a Performance card (profit, ROI, record W-L-push, running-profit
+chart, Week / Month / Year / All = last 7 / 30 / 365 days / everything); a two-week calendar strip; and
+"View full calendar", which opens a month calendar (coloured squares with each day's profit, month total,
+the day's bets with odds on tap, back arrow to the summary). A bet's day is its game day in Eastern time,
+or the day it settled if earlier (forward_test.day_of / calendar_html / CAL_CSS / CAL_JS).
 Both report pages have a Refresh button (added 2026-11-11) and reload themselves when reopened
 after 5+ minutes: the owner uses the site as an iPhone home-screen app, which has no reload button
 (scanner REFRESH_CSS / REFRESH_JS).
