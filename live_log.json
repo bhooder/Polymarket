@@ -2023,5 +2023,16 @@
   "profit": 3.23,
   "venue": "prophetx",
   "ref": "f6b228938f5800df78755809378684f6"
+ },
+ {
+  "at": "2026-11-12T02:41:59.601283+00:00",
+  "event": "settled",
+  "bet": "Celtics to win (vs. Raptors)",
+  "status": "won",
+  "cost": 3.43,
+  "payout": 5.0,
+  "profit": 1.57,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV11BOSTOR-BOS"
  }
 ]
