@@ -2078,5 +2078,32 @@
   "profit": -3.32,
   "venue": "polymarket_us",
   "ref": "asc-nba-orl-uta-2026-11-11-neg-4pt5"
+ },
+ {
+  "at": "2026-11-12T16:57:44.903584+00:00",
+  "event": "order",
+  "filled": 7.0,
+  "price": 0.48,
+  "fees": 0.17,
+  "bet": "Belgium not to win (draw or loss)",
+  "pick": "No",
+  "market": "Will Belgium win on 2026-11-12?",
+  "venue": "polymarket_us",
+  "ref": "atc-unl-tur-bel-2026-11-12-bel",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.48,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 7,
+  "max_price": 0.5,
+  "dollars": 3.44,
+  "bankroll": 229.38,
+  "order_id": "66e3aff4-218c-5dc1-a957-51fa41537ac1",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DP642CJG13ZD\",\"executions\":[{\"id\":\"DP642CKG13YH\",\"order\":{\"id\":\"DP642CJG13ZD\",\"marketSlug\":\"atc-unl-tur-bel-2026-11-12-bel\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.5\",\"currency\":\"USD\"},\"quantity\":7,\"cumQuantity\":0,\"leavesQuantity\":7,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"atc-unl-tur-bel-2026-11-12-bel\",\"icon\":\"\",\"title\":\"Turkiye vs. Belgium\",\"outcome\":\"No\",\"eventSlug\":\"unl-tur-bel-2026-11-12\",\"teamId\":34913,\"team\":{\"id\":34913,\"name\":\"Belgium\",\"abbreviation\":\"bel\",\"league\":\"unl\",\"record\":\"\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"alias\":\"Belgium\",\"safeName\":\"Belgium\",\"colorPrimary\":\"#000000\",\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"displayAbbreviation\":\"BEL\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"sr:competitor:4717\"}],\"color\":{\"light\":\"#000000\",\"dark\":\"#FFFFFF\"}},\"eventId\":\"234796\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"insertTime\":\"2026-11-12T16:57:44.782370130Z\",\"createTime\":\"2026-11-12T16:57:44.779625484Z\",\"outcomeSide\":\"OUT"
+  }
  }
 ]

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1073.9665497034305,
+ "cash": 1062.5465497034304,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8635,6 +8635,42 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T16:57:43.591044+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Belgium win on 2026-11-12?",
+   "link": "https://polymarket.com/event/unl-tur-bel-2026-11-12",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x652584ab989f148c6728a673bcaaaac3790e323e551c2d8018e914f49d025674",
+   "token_id": "60567514681012960567298089020804730709429221955332447751742500250627359157894",
+   "outcome_index": 1,
+   "ends": "2026-11-12T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.2,
+   "traders_entry": 0.49,
+   "avg_price": 0.48,
+   "shares": 22.67168540753447,
+   "cost": 11.42,
+   "fees": 0.5376,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-unl-tur-bel-2026-11-12-bel",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,

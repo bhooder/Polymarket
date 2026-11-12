@@ -1601,6 +1601,40 @@
    "profit": 1.57,
    "settled_at": "2026-11-12T02:41:59.601049+00:00",
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T16:57:44.903593+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "No",
+   "market": "Will Belgium win on 2026-11-12?",
+   "link": "https://polymarket.com/event/unl-tur-bel-2026-11-12",
+   "market_type": "moneyline",
+   "condition_id": "0x652584ab989f148c6728a673bcaaaac3790e323e551c2d8018e914f49d025674",
+   "token_id": "60567514681012960567298089020804730709429221955332447751742500250627359157894",
+   "outcome_index": 1,
+   "ends": "2026-11-12T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 15.2,
+   "traders_entry": 0.49,
+   "avg_price": 0.48,
+   "shares": 7.0,
+   "cost": 3.53,
+   "fees": 0.17,
+   "contracts_ordered": 7,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-unl-tur-bel-2026-11-12-bel",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.4799999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -1939,8 +1973,15 @@
    "venue": "kalshi",
    "ordered": 5,
    "filled": 5.0
+  },
+  {
+   "at": "2026-11-12T16:57:44.903563+00:00",
+   "pick": "No",
+   "venue": "polymarket_us",
+   "ordered": 7,
+   "filled": 7.0
   }
  ],
  "daily_check": "2026-11-12",
- "balances_checked_at": "2026-11-12T15:59:10.094064+00:00"
+ "balances_checked_at": "2026-11-12T16:57:44.497985+00:00"
 }
