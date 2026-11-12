@@ -2132,5 +2132,43 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0165\",\"average_fill_price\":\"0.3800\",\"client_order_id\":\"a930a41a-b506-5325-ac9e-ca0d4f2a3286\",\"fill_count\":\"8.00\",\"order_id\":\"01a1d0e4-8a68-7b9e-a1a8-f6e09e0aa1c1\",\"remaining_count\":\"0.00\",\"ts_ms\":1794506001769}"
   }
+ },
+ {
+  "at": "2026-11-12T19:20:16.977155+00:00",
+  "event": "settled",
+  "bet": "Belgium not to win (draw or loss)",
+  "status": "lost",
+  "cost": 3.53,
+  "payout": 0.0,
+  "profit": -3.53,
+  "venue": "polymarket_us",
+  "ref": "atc-unl-tur-bel-2026-11-12-bel"
+ },
+ {
+  "at": "2026-11-12T19:21:39.172412+00:00",
+  "event": "order",
+  "filled": 6.0,
+  "price": 0.52,
+  "fees": 0.14,
+  "bet": "Under 224.5 (Raptors vs. 76ers)",
+  "pick": "Under",
+  "market": "Raptors vs. 76ers: O/U 224.5",
+  "venue": "polymarket_us",
+  "ref": "tsc-nba-tor-phi-2026-11-12-224pt5",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.52,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 6,
+  "max_price": 0.53,
+  "dollars": 3.39,
+  "bankroll": 225.72,
+  "order_id": "243c8cc9-3a2e-56bd-a4e1-2ede6c20f596",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DP85YCK013Z6\",\"executions\":[{\"id\":\"DP85YCK0B3YG\",\"order\":{\"id\":\"DP85YCK013Z6\",\"marketSlug\":\"tsc-nba-tor-phi-2026-11-12-224pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.47\",\"currency\":\"USD\"},\"quantity\":6,\"cumQuantity\":0,\"leavesQuantity\":6,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"tsc-nba-tor-phi-2026-11-12-224pt5\",\"icon\":\"\",\"title\":\"TOR Raptors vs. PHI 76ers\",\"outcome\":\"Under\",\"eventSlug\":\"nba-tor-phi-2026-11-12\",\"eventId\":\"205501\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"insertTime\":\"2026-11-12T19:21:39.149146225Z\",\"createTime\":\"2026-11-12T19:21:39.148101993Z\",\"outcomeSide\":\"OUTCOME_SIDE_NO\",\"action\":\"ORDER_ACTION_BUY\",\"manualOrderIndicator\":\"MANUAL_ORDER_INDICATOR_AUTOMATIC\",\"lastTransactTime\":\"2026-11-12T19:21:39.149146225Z\",\"estimatedAmount\":null,\"principal\":null,\"estimatedCommission\":null},\"lastShares\":\"0.0000\",\"lastPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"type\":\"EXECUTION_TYPE_NEW\",\"text\":\"\",\"orderRejectReason\":\"ORD_REJECT_REASON_EXCHANGE_OPTION\",\"transactTime\":\"2026-11-12T19:21:39.149146225Z\",\"legPrices\":[],\"tradeId\":\"\",\"aggressor\":false,\"commissionNotionalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"unsolicitedCancelReason\":\"UNSOLICITED_CX"
+  }
  }
 ]

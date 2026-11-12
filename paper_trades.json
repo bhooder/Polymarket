@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1292.1088720957243,
+ "cash": 1279.0588720957244,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3368,7 +3368,7 @@
   },
   {
    "placed_at": "2026-11-12T16:57:43.274860+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Belgium win on 2026-11-12?",
@@ -3397,9 +3397,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -13.18,
+   "settled_at": "2026-11-12T19:20:16.754585+00:00",
    "topped_up_at": null
   },
   {
@@ -3434,6 +3434,43 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T19:21:37.792188+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Raptors vs. 76ers: O/U 224.5",
+   "link": "https://polymarket.com/event/nba-tor-phi-2026-11-12",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0d73476e2ba40f3afb5aabe933cb2a99a1f9dc9bfd41b504b087cca7258b1835",
+   "token_id": "113007874266455840800213420810020978074218930466356454791329626144737761229140",
+   "outcome_index": 1,
+   "ends": "2026-11-13T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.9,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 24.001677358601615,
+   "cost": 13.05,
+   "fees": 0.5691,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-tor-phi-2026-11-12-224pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5437,
+    "kalshi": 0.5476
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,

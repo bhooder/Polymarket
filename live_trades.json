@@ -1604,7 +1604,7 @@
   },
   {
    "placed_at": "2026-11-12T16:57:44.903593+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "No",
@@ -1631,9 +1631,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.4799999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.53,
+   "settled_at": "2026-11-12T19:20:16.970274+00:00",
    "topped_up_at": null
   },
   {
@@ -1665,6 +1665,40 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.38,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T19:21:39.172422+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Under",
+   "market": "Raptors vs. 76ers: O/U 224.5",
+   "link": "https://polymarket.com/event/nba-tor-phi-2026-11-12",
+   "market_type": "totals",
+   "condition_id": "0x0d73476e2ba40f3afb5aabe933cb2a99a1f9dc9bfd41b504b087cca7258b1835",
+   "token_id": "113007874266455840800213420810020978074218930466356454791329626144737761229140",
+   "outcome_index": 1,
+   "ends": "2026-11-13T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.9,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 6.0,
+   "cost": 3.26,
+   "fees": 0.14,
+   "contracts_ordered": 6,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-tor-phi-2026-11-12-224pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.5199999999999999,
    "payout": null,
    "profit": null,
    "settled_at": null,
@@ -2021,8 +2055,15 @@
    "venue": "kalshi",
    "ordered": 8,
    "filled": 8.0
+  },
+  {
+   "at": "2026-11-12T19:21:39.172392+00:00",
+   "pick": "Under",
+   "venue": "polymarket_us",
+   "ordered": 6,
+   "filled": 6.0
   }
  ],
  "daily_check": "2026-11-12",
- "balances_checked_at": "2026-11-12T18:54:41.105062+00:00"
+ "balances_checked_at": "2026-11-12T19:21:39.013692+00:00"
 }
