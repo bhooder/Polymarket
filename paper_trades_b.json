@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 892.630304194046,
+ "cash": 859.2453302106195,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8411,6 +8411,80 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T01:57:05.528137+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Rockets",
+   "market": "Warriors vs. Rockets",
+   "link": "https://polymarket.com/event/nba-gsw-hou-2026-11-11",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe3ae72ec65621e5c0fc6872d0021f97df258dff5146db4a812c024ffccee3983",
+   "token_id": "105377211947873206407121712772231688474463191815103188587037789203054599766089",
+   "outcome_index": 1,
+   "ends": "2026-11-12T02:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.5,
+   "traders_entry": 0.68,
+   "avg_price": 0.6875,
+   "shares": 32.177075098814235,
+   "cost": 22.26,
+   "fees": 0.1383,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a24eca91bd500f2270ef68d997703ef1",
+    "fee_rate": 0.02,
+    "event_id": 1704712707
+   },
+   "quotes": {
+    "prophetx": 0.6918,
+    "kalshi": 0.7052
+   },
+   "intl_cost_per_share": 0.6909,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T01:57:06.093756+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Flyers vs. Oilers: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-phi-edm-2026-11-11",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x898df8722b5903f613c90ebb8ebc95546f8511c0d63260c67c883ccae58d6363",
+   "token_id": "55557255741461432139130970021676574465728111698333460128782616920682176938809",
+   "outcome_index": 0,
+   "ends": "2026-11-12T02:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 23.293421703101046,
+   "cost": 11.12,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLTOTAL-26NOV11PHIEDM-7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4776,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
