@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1304.743529945063,
+ "cash": 1292.1088720957243,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3397,6 +3397,43 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T17:53:20.772279+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maple Leafs",
+   "market": "Wild vs. Maple Leafs",
+   "link": "https://polymarket.com/event/nhl-min-tor-2026-11-12",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x9140fdb46975bda8c1f10f2bd52f5a353928dc86f1c5755f1420685626ff1407",
+   "token_id": "76020702527424394023381340407006538028590640057344169802650603938527910746981",
+   "outcome_index": 1,
+   "ends": "2026-11-13T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 34.5,
+   "traders_entry": 0.38,
+   "avg_price": 0.38,
+   "shares": 31.854362761417633,
+   "cost": 12.63,
+   "fees": 0.53,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV12MINTOR-TOR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3966,
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -2105,5 +2105,32 @@
    "status": 200,
    "body": "{\"id\":\"DP642CJG13ZD\",\"executions\":[{\"id\":\"DP642CKG13YH\",\"order\":{\"id\":\"DP642CJG13ZD\",\"marketSlug\":\"atc-unl-tur-bel-2026-11-12-bel\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.5\",\"currency\":\"USD\"},\"quantity\":7,\"cumQuantity\":0,\"leavesQuantity\":7,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"atc-unl-tur-bel-2026-11-12-bel\",\"icon\":\"\",\"title\":\"Turkiye vs. Belgium\",\"outcome\":\"No\",\"eventSlug\":\"unl-tur-bel-2026-11-12\",\"teamId\":34913,\"team\":{\"id\":34913,\"name\":\"Belgium\",\"abbreviation\":\"bel\",\"league\":\"unl\",\"record\":\"\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"alias\":\"Belgium\",\"safeName\":\"Belgium\",\"colorPrimary\":\"#000000\",\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-countries/BEL.png\",\"displayAbbreviation\":\"BEL\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"sr:competitor:4717\"}],\"color\":{\"light\":\"#000000\",\"dark\":\"#FFFFFF\"}},\"eventId\":\"234796\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"insertTime\":\"2026-11-12T16:57:44.782370130Z\",\"createTime\":\"2026-11-12T16:57:44.779625484Z\",\"outcomeSide\":\"OUT"
   }
+ },
+ {
+  "at": "2026-11-12T17:53:21.795958+00:00",
+  "event": "order",
+  "filled": 8.0,
+  "price": 0.38,
+  "fees": 0.132,
+  "bet": "Maple Leafs to win (vs. Wild)",
+  "pick": "Maple Leafs",
+  "market": "Wild vs. Maple Leafs",
+  "venue": "kalshi",
+  "ref": "KXNHLGAME-26NOV12MINTOR-TOR",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.38,
+  "share": 0.014384999999999998,
+  "side": "YES",
+  "contracts": 8,
+  "max_price": 0.39,
+  "dollars": 3.3,
+  "bankroll": 229.38,
+  "order_id": "a930a41a-b506-5325-ac9e-ca0d4f2a3286",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0165\",\"average_fill_price\":\"0.3800\",\"client_order_id\":\"a930a41a-b506-5325-ac9e-ca0d4f2a3286\",\"fill_count\":\"8.00\",\"order_id\":\"01a1d0e4-8a68-7b9e-a1a8-f6e09e0aa1c1\",\"remaining_count\":\"0.00\",\"ts_ms\":1794506001769}"
+  }
  }
 ]
