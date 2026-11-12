@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1039.9341903708732,
+ "cash": 1028.6241903708733,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8710,6 +8710,43 @@
     "polymarket_us": 0.8246
    },
    "intl_cost_per_share": 0.8177,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T19:39:39.287662+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Vikings",
+   "market": "Vikings vs. Packers",
+   "link": "https://polymarket.com/event/nfl-min-gb-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75",
+   "token_id": "108534542077320679697693708499731792701102813975517222080622181321794355009924",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 26.75023651844844,
+   "cost": 11.31,
+   "fees": 0.6099,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-min-gb-2026-11-15",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4228,
+    "kalshi": 0.427
+   },
+   "intl_cost_per_share": 0.4173,
    "payout": null,
    "profit": null,
    "settled_at": null,
