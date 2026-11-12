@@ -694,6 +694,7 @@ def calendar_html(strats):
     blob = json.dumps(data).replace("</", "<\\/")  # must not close the script tag early
     return f"""<select id="cal-strat" class="pick-strat" aria-label="Which bets to show">{options}</select>
 <div id="cal-home">
+<div class="home-perf">
 <h2 class="cal-h">Performance</h2>
 <div class="perf">
 <div class="perf-nums"><div><span>Profit</span><b id="perf-profit"></b></div>
@@ -703,19 +704,24 @@ def calendar_html(strats):
 <div class="perf-range" role="group" aria-label="Time range"><button data-range="7">Week</button>
 <button data-range="30">Month</button><button data-range="365">Year</button><button data-range="0">All</button></div>
 </div>
-<h2 class="cal-h">Calendar</h2>
+</div>
+<div class="home-cal">
+<h2 class="cal-h">Calendar <span id="strip-title" class="muted"></span></h2>
 <div class="cal-grid" id="cal-strip"></div>
 <button class="cal-link" id="cal-open">View full calendar &rarr;</button>
+</div>
 </div>
 <div id="cal-full" hidden>
 <div class="cal-head"><button id="cal-back" class="cal-round" aria-label="Back to summary">&lsaquo;</button>
 <b id="cal-title"></b><span id="cal-total"></span><span class="cal-space"></span>
 <button id="cal-prev" class="cal-round small" aria-label="Previous month">&lsaquo;</button>
 <button id="cal-next" class="cal-round small" aria-label="Next month">&rsaquo;</button></div>
+<div class="full-body"><div class="full-main">
 <div class="cal-grid" id="cal-grid"></div>
-<div id="cal-day"></div>
 <p class="hint" style="margin-top:14px">Each day shows the profit or loss on bets from that day's games. Tap a day
 to see its bets. Open bets are listed but not counted until they settle.</p>
+</div>
+<div class="full-side" id="cal-day"></div></div>
 </div>
 <script type="application/json" id="cal-data">{blob}</script>"""
 
@@ -776,6 +782,34 @@ CAL_CSS = """
   .cal-amt.open { font-weight:500; font-size:11.5px; color:var(--muted); }
   @media (max-width: 420px) { .cal-grid { gap:4px; } .cal-amt { font-size:12px; letter-spacing:-.02em; }
                               .cal-num { font-size:14px; } .cal-head b { font-size:21px; } }
+  .cal-more, .cal-msum { display:none; }
+  @media (min-width: 900px) {
+    #cal-home:not([hidden]) { display:grid; grid-template-columns:minmax(0, 1.1fr) minmax(0, 1fr); gap:32px; align-items:start; }
+    .full-body { display:grid; grid-template-columns:minmax(0, 1.7fr) minmax(300px, 1fr); gap:32px; align-items:start; }
+    .full-side { position:sticky; top:16px; max-height:calc(100vh - 32px); overflow-y:auto; }
+    .full-side .cal-count { margin-top:0; }
+    .cal-h .muted { font-weight:500; font-size:17px; margin-left:6px; }
+    .cal-cell { box-sizing:border-box; aspect-ratio:auto; height:84px; align-items:flex-start; justify-content:flex-start; padding:8px 10px;
+                gap:5px; border-radius:12px; text-align:left; }
+    #cal-grid .cal-cell { height:108px; padding:10px 12px; }
+    #cal-grid .cal-amt.open, .cal-amt.open { font-size:13px; }
+    #cal-strip .cal-n { display:none; }
+    .cal-cell .cal-num { font-size:14px; }
+    .cal-amt { font-size:16px; }
+    #cal-grid .cal-amt { font-size:19px; }
+    .cal-more { display:block; font-size:12px; color:var(--muted); white-space:nowrap; overflow:hidden;
+                text-overflow:ellipsis; max-width:100%; }
+  }
+  @media (min-width: 900px) and (max-width: 1199px) { #cal-grid .cal-n { display:none; } #cal-grid .cal-amt { font-size:16px; } }
+  @media (min-width: 900px) {
+    .cal-msum { display:block; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px; }
+    .cal-msum h3 { margin:0 0 8px; font-size:18px; }
+    .msum-row { display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom:1px solid var(--line);
+                font-size:15px; }
+    .msum-row:last-of-type { border-bottom:0; }
+    .msum-row span { color:var(--muted); }
+    .msum-row b { font-variant-numeric:tabular-nums; text-align:right; }
+  }
   .cal-count { font-size:20px; margin:24px 0 4px; }
   .cal-bet { display:flex; justify-content:space-between; align-items:center; gap:14px; padding:14px 0;
              border-bottom:1px solid var(--line); }
@@ -788,7 +822,7 @@ CAL_JS = r"""<script>
 (function () {
   const data = JSON.parse(document.getElementById("cal-data").textContent);
   const $ = id => document.getElementById(id);
-  const sel = $("cal-strat");
+  const sel = $("cal-strat"), wide = window.matchMedia("(min-width: 900px)");
   const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const pad = n => String(n).padStart(2, "0");
@@ -816,8 +850,12 @@ CAL_JS = r"""<script>
     if (!s.n && !s.open) return '<div class="cal-cell' + mark + '">' + num + "</div>";
     const tint = !s.n ? "" : s.profit > 0.004 ? " win" : s.profit < -0.004 ? " loss" : "";
     return '<button class="cal-cell' + tint + mark + '" data-day="' + key + '">' + num +
-      (s.n ? '<span class="cal-amt ' + cls(Math.round(s.profit * 100)) + '">' + short(s.profit) + "</span>"
-           : '<span class="cal-amt open">' + s.open + " open</span>") + "</button>";
+      (s.n ? '<span class="cal-amt ' + cls(Math.round(s.profit * 100)) + '">' +
+             (wide.matches ? money(s.profit) : short(s.profit)) + "</span>"
+           : '<span class="cal-amt open">' + s.open + " open</span>") +
+      (s.n ? '<span class="cal-more">' + s.won + "-" + s.lost + (s.push ? "-" + s.push : "") +
+             '<span class="cal-n"> \u00b7 ' + (s.n + s.open) + (s.n + s.open === 1 ? " bet" : " bets") + "</span></span>" : "") +
+      "</button>";
   }
   const DOW = ["S","M","T","W","T","F","S"].map(d => '<div class="cal-dow">' + d + "</div>").join("");
 
@@ -891,12 +929,21 @@ CAL_JS = r"""<script>
   document.addEventListener("pointerdown", e => {  // tapping anywhere else goes back to the totals
     if (perfSel !== null && !e.onPerfChart) { perfSel = null; drawPerfChart(); }
   });
-  function drawStrip() {  // last week and this week
-    const start = new Date(); start.setDate(start.getDate() - start.getDay() - 7);
+  function drawStrip() {  // phones: last week and this week; computer screens: this whole month
     let out = DOW;
-    for (let i = 0; i < 14; i++) { out += cell(ymd(start), false); start.setDate(start.getDate() + 1); }
+    if (wide.matches) {
+      const now = new Date(), y = now.getFullYear(), mo = now.getMonth();
+      for (let i = 0; i < new Date(y, mo, 1).getDay(); i++) out += "<div></div>";
+      for (let d = 1; d <= new Date(y, mo + 1, 0).getDate(); d++) out += cell(today.slice(0, 7) + "-" + pad(d), false);
+      $("strip-title").textContent = now.toLocaleDateString("en-US", {month: "long"});
+    } else {
+      const start = new Date(); start.setDate(start.getDate() - start.getDay() - 7);
+      for (let i = 0; i < 14; i++) { out += cell(ymd(start), false); start.setDate(start.getDate() + 1); }
+      $("strip-title").textContent = "";
+    }
     $("cal-strip").innerHTML = out;
   }
+  wide.addEventListener("change", () => { if (!$("cal-home").hidden) drawStrip(); else drawFull(); });
   function drawFull() {
     const all = bets(), m = sum(all.filter(b => b.d.slice(0, 7) === month));
     const months = all.map(b => b.d.slice(0, 7)).concat(today.slice(0, 7)).sort();
@@ -911,7 +958,7 @@ CAL_JS = r"""<script>
     for (let d = 1; d <= days; d++) out += cell(month + "-" + pad(d), false);
     $("cal-grid").innerHTML = out;
     const list = picked ? all.filter(b => b.d === picked) : [];
-    $("cal-day").innerHTML = !list.length ? "" :
+    $("cal-day").innerHTML = !list.length ? monthSummary(all.filter(b => b.d.slice(0, 7) === month)) :
       '<h2 class="cal-count">' + list.length + (list.length === 1 ? " Bet" : " Bets") + ' <small class="muted" style="font-size:15px;' +
       'font-weight:500">' + toDate(picked).toLocaleDateString("en-US", {weekday: "short", month: "short", day: "numeric"}) + "</small></h2>" +
       list.map(b => '<div class="cal-bet"><div><b>' + esc(b.pick) + (b.type ? " · " + esc(b.type) : "") + "</b><small>" +
@@ -922,6 +969,26 @@ CAL_JS = r"""<script>
         b.price.toFixed(2) + "</span></small></div></div>").join("");
     let fmt = "price"; try { fmt = localStorage.getItem("price-format") || "price"; } catch (e) {}
     if (typeof showPrices === "function") showPrices(fmt);  // honour the Price / American odds switch
+  }
+  function monthSummary(list) {  // computer screens: the side panel before a day is tapped
+    const m = sum(list), days = {};
+    list.filter(b => b.status !== "open").forEach(b => { days[b.d] = (days[b.d] || 0) + b.profit; });
+    const ds = Object.entries(days).sort((a, b) => a[1] - b[1]);
+    const label = d => toDate(d).toLocaleDateString("en-US", {weekday: "short", month: "short", day: "numeric"});
+    const row = (k, v) => '<div class="msum-row"><span>' + k + "</span><b>" + v + "</b></div>";
+    if (!m.n && !m.open) return '<div class="cal-msum"><p class="muted">No bets this month.</p></div>';
+    return '<div class="cal-msum"><h3>' + $("cal-title").textContent + "</h3>" +
+      row("Profit", '<span class="' + cls(m.profit) + '">' + money(m.profit) + "</span>") +
+      row("ROI", m.cost ? '<span class="' + cls(m.profit) + '">' + (m.profit >= 0 ? "+" : "−") +
+          Math.abs(100 * m.profit / m.cost).toFixed(2) + "%</span>" : "–") +
+      row("Record", m.won + "-" + m.lost + "-" + m.push) +
+      row("Settled bets", m.n + (m.open ? " (+" + m.open + " open)" : "")) +
+      row("Amount bet", "$" + m.cost.toFixed(2)) +
+      row("Up days / down days", ds.filter(d => d[1] > 0.004).length + " / " + ds.filter(d => d[1] < -0.004).length) +
+      (ds.length ? row("Best day", label(ds[ds.length - 1][0]) + ' <span class="' + cls(ds[ds.length - 1][1]) + '">' +
+          money(ds[ds.length - 1][1]) + "</span>") +
+        row("Worst day", label(ds[0][0]) + ' <span class="' + cls(ds[0][1]) + '">' + money(ds[0][1]) + "</span>") : "") +
+      '<p class="muted" style="margin:12px 0 0;font-size:13px">Click a day to see its bets.</p></div>';
   }
   function show(full) {
     $("cal-home").hidden = full; $("cal-full").hidden = !full;

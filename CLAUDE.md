@@ -163,6 +163,9 @@ profit, ROI and record up to that bet, with its date and the bet itself; high an
 "View full calendar", which opens a month calendar (coloured squares with each day's profit, month total,
 the day's bets with odds on tap, back arrow to the summary). A bet's day is its game day in Eastern time,
 or the day it settled if earlier (forward_test.day_of / calendar_html / CAL_CSS / CAL_JS).
+On computer screens (900px+): Performance and the calendar side by side, the calendar shows the whole
+month, squares also show the record and number of bets, and the full calendar has a side panel (month
+summary: profit, ROI, record, best/worst day; or the clicked day's bets). Phones are unchanged.
 Both report pages have a Refresh button (added 2026-11-11) and reload themselves when reopened
 after 5+ minutes: the owner uses the site as an iPhone home-screen app, which has no reload button
 (scanner REFRESH_CSS / REFRESH_JS).
