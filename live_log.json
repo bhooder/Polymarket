@@ -2034,5 +2034,16 @@
   "profit": 1.57,
   "venue": "kalshi",
   "ref": "KXNBAGAME-26NOV11BOSTOR-BOS"
+ },
+ {
+  "at": "2026-11-12T03:12:36.756958+00:00",
+  "event": "settled",
+  "bet": "Cavaliers to win (vs. Knicks)",
+  "status": "won",
+  "cost": 2.79,
+  "payout": 7.77,
+  "profit": 4.98,
+  "venue": "prophetx",
+  "ref": "e34a63ad30991eb1454cecaa8c021418"
  }
 ]

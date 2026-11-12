@@ -1,5 +1,5 @@
 {
- "cash": 208.61,
+ "cash": 216.38,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1536,7 +1536,7 @@
   },
   {
    "placed_at": "2026-11-11T23:04:57.008202+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 0.879,
    "pick": "Cavaliers",
@@ -1553,7 +1553,7 @@
    "avg_price": 0.3545,
    "shares": 7.87,
    "cost": 2.79,
-   "fees": 0.0,
+   "fees": 0.1,
    "contracts_ordered": 2.79,
    "venue": "prophetx",
    "venue_ref": {
@@ -1563,9 +1563,9 @@
     "event_id": 1704712880
    },
    "paper_price": 0.3546099290780142,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 7.77,
+   "profit": 4.98,
+   "settled_at": "2026-11-12T03:12:36.756715+00:00",
    "topped_up_at": null
   },
   {
@@ -1942,5 +1942,5 @@
   }
  ],
  "daily_check": "2026-11-12",
- "balances_checked_at": "2026-11-12T02:43:46.976992+00:00"
+ "balances_checked_at": "2026-11-12T03:14:19.338096+00:00"
 }

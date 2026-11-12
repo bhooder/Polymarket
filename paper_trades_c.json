@@ -2548,7 +2548,7 @@
   },
   {
    "placed_at": "2026-11-11T18:32:55.211003+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Knicks",
    "market": "Spread: Knicks (-4.5)",
@@ -2577,14 +2577,14 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.27,
+   "settled_at": "2026-11-12T03:12:36.463259+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-11T21:08:39.375123+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Spread: Celtics (-5.5)",
@@ -2615,9 +2615,9 @@
     "kalshi": 0.5379
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.13,
+   "settled_at": "2026-11-12T03:12:36.463309+00:00",
    "topped_up_at": null
   },
   {
