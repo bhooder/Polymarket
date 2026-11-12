@@ -2045,5 +2045,27 @@
   "profit": 4.98,
   "venue": "prophetx",
   "ref": "e34a63ad30991eb1454cecaa8c021418"
+ },
+ {
+  "at": "2026-11-12T03:48:44.288677+00:00",
+  "event": "settled",
+  "bet": "Bucks +13.5",
+  "status": "won",
+  "cost": 3.48,
+  "payout": 7.0,
+  "profit": 3.52,
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV11LALMIL-LAL14"
+ },
+ {
+  "at": "2026-11-12T03:48:44.859224+00:00",
+  "event": "settled",
+  "bet": "Bulls +15.5",
+  "status": "won",
+  "cost": 3.22,
+  "payout": 6.0,
+  "profit": 2.78,
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV11SASCHI-SAS16"
  }
 ]

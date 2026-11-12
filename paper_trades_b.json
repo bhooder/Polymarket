@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 935.3187424890888,
+ "cash": 1045.462784713505,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -7894,7 +7894,7 @@
   },
   {
    "placed_at": "2026-11-11T14:23:03.169134+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Lakers vs. Bucks: O/U 228.5",
@@ -7924,9 +7924,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.65,
+   "profit": 9.54,
+   "settled_at": "2026-11-12T03:48:43.429824+00:00",
    "topped_up_at": null
   },
   {
@@ -7967,7 +7967,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:31.618059+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bucks",
    "market": "Spread: Lakers (-13.5)",
@@ -7997,9 +7997,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.63,
+   "profit": 22.43,
+   "settled_at": "2026-11-12T03:48:43.463080+00:00",
    "topped_up_at": "2026-11-11T18:32:54.828247+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.0,
@@ -8045,7 +8045,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:32.774906+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Spread: Pelicans (-7.5)",
@@ -8074,9 +8074,9 @@
     "kalshi": 0.3968
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.66,
+   "settled_at": "2026-11-12T03:48:43.536373+00:00",
    "topped_up_at": null
   },
   {
@@ -8307,7 +8307,7 @@
   },
   {
    "placed_at": "2026-11-11T23:56:30.184110+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bulls",
    "market": "Spread: Spurs (-15.5)",
@@ -8336,9 +8336,9 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.08,
+   "profit": 9.96,
+   "settled_at": "2026-11-12T03:48:43.671081+00:00",
    "topped_up_at": null
   },
   {
@@ -8380,7 +8380,7 @@
   },
   {
    "placed_at": "2026-11-12T00:52:56.154659+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nuggets",
    "market": "Spread: Nuggets (-4.5)",
@@ -8411,9 +8411,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.79,
+   "profit": 12.66,
+   "settled_at": "2026-11-12T03:48:43.707631+00:00",
    "topped_up_at": null
   },
   {

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 959.5057629621294,
+ "cash": 1004.536369041526,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2401,7 +2401,7 @@
   },
   {
    "placed_at": "2026-11-11T14:23:03.490164+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Lakers vs. Bucks: O/U 228.5",
@@ -2431,9 +2431,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.69,
+   "profit": 9.56,
+   "settled_at": "2026-11-12T03:48:43.904899+00:00",
    "topped_up_at": null
   },
   {
@@ -2622,7 +2622,7 @@
   },
   {
    "placed_at": "2026-11-12T00:52:56.848999+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Spurs",
    "market": "Spurs vs. Bulls",
@@ -2651,9 +2651,9 @@
     "kalshi": 0.9158
    },
    "intl_cost_per_share": 0.9141,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.34,
+   "profit": 2.05,
+   "settled_at": "2026-11-12T03:48:44.021394+00:00",
    "topped_up_at": null
   },
   {
