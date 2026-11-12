@@ -80,6 +80,10 @@
     td.bettors { font-size:15px; }
   }
 
+  .refresh { float:right; margin:2px 0 0 12px; border:1px solid var(--line); border-radius:8px;
+             background:var(--card); color:var(--accent); font:inherit; font-size:13px; font-weight:600;
+             padding:6px 12px; cursor:pointer; }
+
 
   .scards { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; }
   .scard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; min-width:0; }
@@ -121,7 +125,7 @@
 
 </style></head><body><main>
 <h1>Betting Results</h1>
-<p class="sub">Real-money bets and pretend-money tests of six strategies. Last updated Nov 11 08:03 PM.</p>
+<p class="sub">Real-money bets and pretend-money tests of six strategies. Last updated Nov 11 08:06 PM.</p>
 <div class="tabs" role="tablist"><button data-tab="real" class="on">Real<span class="long"> bets</span></button>
 <button data-tab="a"><span class="long">Strategy </span>A</button><button data-tab="b"><span class="long">Strategy </span>B</button><button data-tab="c"><span class="long">Strategy </span>C</button><button data-tab="d"><span class="long">Strategy </span>D</button><button data-tab="e"><span class="long">Strategy </span>E</button><button data-tab="claude">Claude</button>
 <button data-tab="stats">Stat<span class="long">istic</span>s</button></div>
@@ -202,7 +206,7 @@ Beating that "closing price" on average is the best quick sign of a sharp bettor
 per trader. A trader qualifies at 25+ graded games on 5+ different days, an average of
 +1&cent; or better, and a t-score of 2.5+ (how sure we can be it isn't luck). Bots
 (over 50 trades an hour) are never copied. Collecting since 2026-11-11.</p>
-<div class="tiles"><div class="tile"><b>456</b><span>Positions waiting for game start</span></div><div class="tile"><b>520</b><span>Games graded</span></div><div class="tile"><b>50</b><span>Traders graded</span></div><div class="tile"><b>0</b><span>Traders qualified</span></div></div>
+<div class="tiles"><div class="tile"><b>461</b><span>Positions waiting for game start</span></div><div class="tile"><b>520</b><span>Games graded</span></div><div class="tile"><b>50</b><span>Traders graded</span></div><div class="tile"><b>0</b><span>Traders qualified</span></div></div>
 <h2>Best graded traders (5+ games)</h2>
 <div class="wrap"><table><thead><tr><th>Trader</th><th class="num">Games / days</th>
 <th class="num">Avg vs close</th><th class="num">t-score</th><th>Status</th></tr></thead>
@@ -330,4 +334,21 @@ document.querySelectorAll("table").forEach(t => {  // label each cell with its c
     [...tr.cells].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; });
   });
 });
+</script><script>
+function refreshPage() {
+  const u = new URL(location.href);
+  u.searchParams.set("r", Date.now());
+  location.replace(u);
+}
+(() => {
+  const b = document.createElement("button");
+  b.className = "refresh";
+  b.textContent = "\u21bb Refresh";
+  b.addEventListener("click", () => { b.textContent = "Refreshing\u2026"; refreshPage(); });
+  document.querySelector("main").prepend(b);
+  const loaded = Date.now();
+  const stale = () => { if (!document.hidden && Date.now() - loaded > 5 * 60 * 1000) refreshPage(); };
+  document.addEventListener("visibilitychange", stale);
+  window.addEventListener("pageshow", stale);
+})();
 </script></body></html>
