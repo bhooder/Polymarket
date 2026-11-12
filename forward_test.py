@@ -877,13 +877,13 @@ __CAL_CSS__
 </style></head><body><main>
 <h1>Betting Results</h1>
 <p class="sub">__SUB__</p>
-<div class="tabs" role="tablist"><button data-tab="real" class="on">Real<span class="long"> bets</span></button>
-<button data-tab="cal">Calendar</button>
+<div class="tabs" role="tablist"><button data-tab="cal" class="on">Calendar</button>
+<button data-tab="real">Real<span class="long"> bets</span></button>
 __STRATEGY_TABS__
 <button data-tab="stats">Stat<span class="long">istic</span>s</button></div>
 __ODDS_TOGGLE__
-<section id="tab-real">__BETS_REAL__</section>
-<section id="tab-cal" hidden>__CALENDAR__</section>
+<section id="tab-cal">__CALENDAR__</section>
+<section id="tab-real" hidden>__BETS_REAL__</section>
 __STRATEGY_SECTIONS__
 <section id="tab-stats" hidden>__STATS__</section>
 <p class="note">Strategies A to E and Claude use pretend money; Real bets use real money. Each bet goes to
@@ -894,11 +894,11 @@ books. Bankroll = cash + open bets at cost. Research only, not financial advice.
 function showTab(name) {
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === name));
   document.querySelectorAll("section[id^=tab-]").forEach(s => s.hidden = s.id !== "tab-" + name);
-  try { localStorage.setItem("report-tab", name); } catch (e) {}
+  try { sessionStorage.setItem("report-tab", name); } catch (e) {}  // kept through a Refresh; a fresh open starts on Calendar
 }
 document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
 try {
-  const t = localStorage.getItem("report-tab");
+  const t = sessionStorage.getItem("report-tab");
   if (t && document.querySelector(`.tabs button[data-tab="${t}"]`)) showTab(t);
 } catch (e) {}
 </script></body></html>
