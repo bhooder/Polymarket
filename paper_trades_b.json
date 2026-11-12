@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1119.6531169400039,
+ "cash": 1108.2340443750059,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8530,6 +8530,42 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.3,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-12T12:44:15.367501+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Giants",
+   "market": "Commanders vs. Giants",
+   "link": "https://polymarket.com/event/nfl-was-nyg-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3e2266088f5b074f7c6e5805ac2eb29b03a65aabce5c7f557d209f92edb92321",
+   "token_id": "90978318138056424349879863963191598530239503816117974544393964089156206571532",
+   "outcome_index": 1,
+   "ends": "2026-11-13T01:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.7,
+   "traders_entry": 0.56,
+   "avg_price": 0.56,
+   "shares": 19.766201008925105,
+   "cost": 11.42,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV12WASNYG-NYG",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5777
+   },
+   "intl_cost_per_share": 0.5574,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
