@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1004.536369041526,
+ "cash": 1028.255133422566,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2511,7 +2511,7 @@
   },
   {
    "placed_at": "2026-11-11T16:35:34.680876+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Spread: Pelicans (-7.5)",
@@ -2541,9 +2541,9 @@
     "kalshi": 0.3967
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.68,
+   "settled_at": "2026-11-12T04:11:34.569559+00:00",
    "topped_up_at": null
   },
   {
@@ -2658,7 +2658,7 @@
   },
   {
    "placed_at": "2026-11-12T00:52:57.532754+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bucks",
    "market": "Spread: Lakers (-13.5)",
@@ -2689,9 +2689,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.72,
+   "profit": 12.57,
+   "settled_at": "2026-11-12T04:11:34.569609+00:00",
    "topped_up_at": null
   },
   {
