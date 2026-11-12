@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1028.255133422566,
+ "cash": 1071.5683304058896,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2733,7 +2733,7 @@
   },
   {
    "placed_at": "2026-11-12T01:57:06.824774+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Magic",
    "market": "Spread: Magic (-4.5)",
@@ -2764,14 +2764,14 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.74,
+   "profit": 11.59,
+   "settled_at": "2026-11-12T05:14:38.416541+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-12T01:57:07.225178+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Rockets",
    "market": "Warriors vs. Rockets",
@@ -2800,14 +2800,14 @@
     "kalshi": 0.7052
    },
    "intl_cost_per_share": 0.6909,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 31.62,
+   "profit": 9.32,
+   "settled_at": "2026-11-12T05:14:38.446828+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-12T01:57:07.540797+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Flyers vs. Oilers: O/U 6.5",
@@ -2837,6 +2837,43 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4624,
+   "payout": 0.0,
+   "profit": -11.14,
+   "settled_at": "2026-11-12T05:14:38.498661+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-12T05:16:14.628107+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pistons",
+   "market": "Pistons vs. Wizards",
+   "link": "https://polymarket.com/event/nba-det-was-2026-11-12",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6c7cda134b82fe6f27a91ae42180b5abf9eb166944c2de8c5743273cc0c951e6",
+   "token_id": "53740092730143768094692133948678424663191158368723828949936778208526708136600",
+   "outcome_index": 0,
+   "ends": "2026-11-13T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.78,
+   "avg_price": 0.79,
+   "shares": 13.772231737758744,
+   "cost": 11.04,
+   "fees": 0.16,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV12DETWAS-DET",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8016,
+    "polymarket_us": 0.8152
+   },
+   "intl_cost_per_share": 0.7886,
    "payout": null,
    "profit": null,
    "settled_at": null,

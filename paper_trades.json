@@ -3110,7 +3110,7 @@
   },
   {
    "placed_at": "2026-11-11T13:57:29.947763+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Jazz",
    "market": "Spread: Magic (-4.5)",
@@ -3141,9 +3141,9 @@
     "kalshi": 0.5576
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.67,
+   "settled_at": "2026-11-12T05:14:37.758392+00:00",
    "topped_up_at": null
   },
   {

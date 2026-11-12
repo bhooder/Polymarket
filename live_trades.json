@@ -1366,7 +1366,7 @@
   },
   {
    "placed_at": "2026-11-11T13:57:31.430872+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Jazz",
@@ -1393,9 +1393,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.5299999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.32,
+   "settled_at": "2026-11-12T05:14:38.579300+00:00",
    "topped_up_at": null
   },
   {
@@ -1942,5 +1942,5 @@
   }
  ],
  "daily_check": "2026-11-12",
- "balances_checked_at": "2026-11-12T04:13:44.373620+00:00"
+ "balances_checked_at": "2026-11-12T05:16:15.443805+00:00"
 }

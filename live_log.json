@@ -2067,5 +2067,16 @@
   "profit": 2.78,
   "venue": "kalshi",
   "ref": "KXNBASPREAD-26NOV11SASCHI-SAS16"
+ },
+ {
+  "at": "2026-11-12T05:14:38.579386+00:00",
+  "event": "settled",
+  "bet": "Jazz +4.5",
+  "status": "lost",
+  "cost": 3.32,
+  "payout": 0.0,
+  "profit": -3.32,
+  "venue": "polymarket_us",
+  "ref": "asc-nba-orl-uta-2026-11-11-neg-4pt5"
  }
 ]
