@@ -28,6 +28,7 @@ import time
 from datetime import datetime, timedelta, timezone
 
 import claude_strategy
+import pick_log
 import live
 import polymarket_smart_money as scanner
 import venues
@@ -1355,6 +1356,14 @@ def main():
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     save_state(live_state, live_path)
     save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
+    try:  # research log of every pick (pick_log.py); must never stop the betting
+        plog = pick_log.load(HERE)
+        pick_log.record(plog, picks, market_info)
+        done = pick_log.settle(plog, HERE, states, live_state)
+        pick_log.save(plog, HERE)
+        print(f"Pick log: {len(plog['open'])} open, {done} finished this run")
+    except Exception as e:
+        print(f"Pick log error: {type(e).__name__}: {e}")
     write_reports(states, live_state, card)
     for key, cfg in STRATEGIES.items():
         st = states[key]

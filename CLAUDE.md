@@ -44,6 +44,11 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   for every 10 minutes (:03, :13, ...; every 15 until 2026-11-04). GitHub throttles
   free schedules: in practice runs came about hourly overnight. Commits results back.
 - `claude_strategy.py`: Strategy Claude (trader report card by closing-price value).
+- `pick_log.py` (added 2026-11-13, research only, not on the report): logs EVERY game pick,
+  bet or not. `pick_log_open.json` = undecided picks (first and last look before the start:
+  bettors, against, conviction, bankroll %, $ in, entry, price). `pick_log.csv` = finished
+  picks, one row each, append-only: + closing price, result (1/0/0.5) and which strategies
+  bet it. Use it to test new strategy ideas on all picks.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
