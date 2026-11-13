@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1006.3263391771641,
+ "cash": 1034.6941425935258,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8492,7 +8492,7 @@
   },
   {
    "placed_at": "2026-11-12T05:16:14.238640+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pistons",
    "market": "Pistons vs. Wizards",
@@ -8523,9 +8523,9 @@
     "polymarket_us": 0.8152
    },
    "intl_cost_per_share": 0.7886,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 28.37,
+   "profit": 5.62,
+   "settled_at": "2026-11-13T03:25:41.880586+00:00",
    "topped_up_at": "2026-11-12T06:24:31.106559+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.3,
@@ -8608,7 +8608,7 @@
   },
   {
    "placed_at": "2026-11-12T15:59:08.897089+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Spread: 76ers (-9.5)",
@@ -8638,9 +8638,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.85,
+   "settled_at": "2026-11-13T03:25:41.944452+00:00",
    "topped_up_at": null
   },
   {
@@ -8793,7 +8793,7 @@
   },
   {
    "placed_at": "2026-11-13T00:29:58.719592+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Mavericks",
    "market": "Spread: Timberwolves (-5.5)",
@@ -8824,9 +8824,9 @@
     "kalshi": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.86,
+   "settled_at": "2026-11-13T03:25:42.186134+00:00",
    "topped_up_at": null
   },
   {

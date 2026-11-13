@@ -1638,7 +1638,7 @@
   },
   {
    "placed_at": "2026-11-12T17:53:21.795972+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 0.959,
    "pick": "Maple Leafs",
@@ -1665,9 +1665,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.38,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.17,
+   "settled_at": "2026-11-13T03:25:42.337497+00:00",
    "topped_up_at": null
   },
   {
@@ -2065,5 +2065,5 @@
   }
  ],
  "daily_check": "2026-11-13",
- "balances_checked_at": "2026-11-13T02:32:40.757772+00:00"
+ "balances_checked_at": "2026-11-13T03:27:21.632895+00:00"
 }

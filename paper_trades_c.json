@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1037.4803386892554,
+ "cash": 1064.8497104664618,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2844,7 +2844,7 @@
   },
   {
    "placed_at": "2026-11-12T05:16:14.628107+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pistons",
    "market": "Pistons vs. Wizards",
@@ -2874,9 +2874,9 @@
     "polymarket_us": 0.8152
    },
    "intl_cost_per_share": 0.7886,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.37,
+   "profit": 5.29,
+   "settled_at": "2026-11-13T03:25:42.281342+00:00",
    "topped_up_at": "2026-11-12T15:59:09.092905+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 17.5,
@@ -2884,7 +2884,7 @@
   },
   {
    "placed_at": "2026-11-12T15:59:09.420145+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Spread: 76ers (-9.5)",
@@ -2914,9 +2914,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.06,
+   "settled_at": "2026-11-13T03:25:42.299128+00:00",
    "topped_up_at": null
   },
   {

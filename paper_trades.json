@@ -3404,7 +3404,7 @@
   },
   {
    "placed_at": "2026-11-12T17:53:20.772279+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Wild vs. Maple Leafs",
@@ -3434,9 +3434,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.63,
+   "settled_at": "2026-11-13T03:25:41.846784+00:00",
    "topped_up_at": null
   },
   {
