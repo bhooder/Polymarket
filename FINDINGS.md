@@ -81,6 +81,11 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
 - 2026-11-13: owner's choice: price rule back to +2c above entry (all strategies + real
   bets). Re-check: bets paid +1.5-2.5c over entry: A +20c (11 bets), all strategies +4c
   (50), about the same as +1c bets (+3c, 104). Paying BELOW entry is still where the edge is.
+- 2026-11-13: UFC added (all strategies + real bets). ~37 more soccer leagues + CS2/LoL esports
+  added for paper strategies only (venues.PAPER_ONLY): ~110 A-qualifying picks in 2 weeks had
+  been skipped because no venue matched. Almost all of A's record is NBA/NFL/CFB/NHL, so the
+  edge in these sports is unknown. Decide on real money after ~30 settled bets (sport breakdown
+  on the Statistics tab).
 
 ## Open questions / what to check next
 - Does CLV turn positive for any trader? (Claude tab report card; qualified traders

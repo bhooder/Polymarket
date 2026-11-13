@@ -37,7 +37,22 @@ KALSHI_LEAGUES = {
     "cfb": "KXNCAAF", "cbb": "KXNCAAMB", "epl": "KXEPL", "ucl": "KXUCL", "uel": "KXUEL",
     "lal": "KXLALIGA", "sea": "KXSERIEA", "bun": "KXBUNDESLIGA", "fl1": "KXLIGUE1",
     "mls": "KXMLS", "atp": "KXATP", "wta": "KXWTA",
+    # added 2026-11-13 (paper only at first, see PAPER_ONLY)
+    "elc": "KXEFLCHAMPIONSHIP", "el1": "KXEFLL1", "el2": "KXEFLL2", "efa": "KXFACUP", "efl": "KXEFLCUP",
+    "arg": "KXARGPREMDIV", "spl": "KXSAUDIPL", "ere": "KXEREDIVISIE", "jap": "KXJLEAGUE",
+    "ja2": "KXJ2LEAGUE", "bra": "KXBRASILEIRO", "bra2": "KXBRASILEIROB", "por": "KXLIGAPORTUGAL",
+    "bel1": "KXBELGIANPL", "swe": "KXALLSVENSKAN", "bl2": "KXBUNDESLIGA2", "mex": "KXLIGAMX",
+    "unl": "KXUEFANL", "pol": "KXEKSTRAKLASA", "den": "KXDENSUPERLIGA", "tur": "KXSUPERLIG",
+    "kor": "KXKLEAGUE", "aus": "KXALEAGUE", "es2": "KXLALIGA2", "fr2": "KXLIGUE2", "itsb": "KXSERIEB",
+    "nor": "KXELITESERIEN", "aut": "KXAUTBUNDES", "col1": "KXDIMAYOR", "scop": "KXSCOTTISHPREM",
+    "nwsl": "KXNWSL", "uwcl": "KXUCLW", "acle": "KXAFCCL", "cdr": "KXCOPADELREY", "gre1": "KXSLGREECE",
+    "chi1": "KXCHLLDP", "ecu1": "KXECULP", "per1": "KXPERLIGA1",
 }
+# Matched by date + both names (each site uses its own codes): series and name matcher.
+KALSHI_NAMED = {"ufc": "KXUFCFIGHT", "cs2": "KXCS2GAME", "lol": "KXLOLGAME"}
+# Sports bet on paper only (no real money) until ~30 bets settle; then decide. Added 2026-11-13.
+PAPER_ONLY = (set(KALSHI_LEAGUES) - {"nba", "nfl", "nhl", "mlb", "wnba", "cfb", "cbb", "epl", "ucl", "uel",
+                                     "lal", "sea", "bun", "fl1", "mls", "atp", "wta"}) | {"cs2", "lol"}
 TENNIS = {"atp", "wta"}
 SANITY = 0.15  # a "match" priced this far from Polymarket is probably the wrong team
 
@@ -186,9 +201,13 @@ def name_tokens(name):
 
 
 def same_team(kalshi_name, intl_name):
-    """'Manchester U' matches 'Manchester United FC' but not 'Manchester City FC'."""
+    """'Manchester U' matches 'Manchester United FC' but not 'Manchester City FC'.
+    Also 'Broendby' ~ 'Brøndby IF' and 'Estrela Amadora' ~ 'CF Estrela da Amadora' (2026-11-13).
+    Callers also require the other team, the date and the price to agree."""
     k, i = name_tokens(kalshi_name), name_tokens(intl_name)
-    return bool(k) and len(k) <= len(i) and all(b.startswith(a) for a, b in zip(k, i))
+    if bool(k) and len(k) <= len(i) and all(b.startswith(a) for a, b in zip(k, i)):
+        return True
+    return px_same(kalshi_name, intl_name)
 
 
 def kalshi_soccer_event(series, dates, names):
@@ -226,41 +245,40 @@ def open_events(series):
     return _open_events[series]
 
 
-KALSHI_UFC = "KXUFCFIGHT"  # Kalshi's UFC fight series (added 2026-11-13)
-
-
-def kalshi_ufc_ref(pick, d, intl_price):
-    """A UFC fight on Kalshi, found among open fights by date and both fighters' names
-    (Kalshi's fighter codes differ from Polymarket's)."""
+def kalshi_named_ref(pick, d, intl_price, league):
+    """A UFC fight or esports match on Kalshi, found among open events by date and both
+    names (Kalshi's codes differ from Polymarket's)."""
     if d["kind"] != "winner" or len(d["outcomes"]) != 2:
         return None
+    series = KALSHI_NAMED[league]
+    same = same_fighter if league == "ufc" else same_esports_team
     try:
         day = datetime.strptime("-".join(d["event"].split("-")[-3:]), "%Y-%m-%d")
     except ValueError:
         return None
     dates = [(day + timedelta(days=k)).strftime("%y%b%d").upper() for k in (0, 1, -1)]  # time-zone slack
-    for ticker in open_events(KALSHI_UFC):
+    for ticker in open_events(series):
         if not any(ticker.split("-")[1].startswith(day) for day in dates):
             continue
         e = (safe_get(f"/events/{ticker}", {"with_nested_markets": "true"}, base=KALSHI) or {}).get("event")
         markets = [m for m in (e or {}).get("markets") or [] if m.get("status") == "active"]
         names = [m.get("yes_sub_title") or "" for m in markets]
-        if len(names) != 2 or not all(sum(same_fighter(k, n) for k in names) == 1 for n in d["outcomes"]):
+        if len(names) != 2 or not all(sum(same(k, n) for k in names) == 1 for n in d["outcomes"]):
             continue
-        hits = [m for m in markets if same_fighter(m.get("yes_sub_title") or "", pick["Pick"])]
+        hits = [m for m in markets if same(m.get("yes_sub_title") or "", pick["Pick"])]
         m = hits[0] if len(hits) == 1 else None
         ask = float((m or {}).get("yes_ask_dollars") or 0)
         if not ask or abs(ask - intl_price) > SANITY:
             return None
-        mult = float((safe_get(f"/series/{KALSHI_UFC}", base=KALSHI) or {}).get("series", {}).get("fee_multiplier") or 1)
+        mult = float((safe_get(f"/series/{series}", base=KALSHI) or {}).get("series", {}).get("fee_multiplier") or 1)
         return {"venue": "kalshi", "ref": m["ticker"], "yes": True, "fee_rate": KALSHI_FEE * mult}
     return None
 
 
 def kalshi_ref(pick, d, intl_price):
     league = d["event"].split("-")[0]
-    if league == "ufc":
-        return kalshi_ufc_ref(pick, d, intl_price)
+    if league in KALSHI_NAMED:
+        return kalshi_named_ref(pick, d, intl_price, league)
     base = KALSHI_LEAGUES.get(league)
     codes = base and kalshi_codes(league, d["event"])
     if not codes:
@@ -425,9 +443,13 @@ def px_events(league):
     return out
 
 
+SPELL = str.maketrans({"ø": "oe", "Ø": "Oe", "æ": "ae", "Æ": "Ae", "ß": "ss", "ı": "i", "ł": "l", "Ł": "L"})
+
+
 def plain_tokens(name):
-    """Lower-case words without accents or filler: 'Club Atlético de Madrid' -> ['atletico', 'madrid']."""
-    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    """Lower-case words without accents or filler: 'Club Atlético de Madrid' -> ['atletico', 'madrid'],
+    'Brøndby' -> ['broendby'] (the way Kalshi spells it)."""
+    name = unicodedata.normalize("NFKD", name.translate(SPELL)).encode("ascii", "ignore").decode()
     return name_tokens(name)
 
 
@@ -446,6 +468,17 @@ def same_fighter(a, b):
     fighters (and the date) must match, so a shared last name alone can't pick the wrong fight."""
     x, y = plain_tokens(a), plain_tokens(b)
     return bool(x and y) and (px_same(a, b) or "".join(x) == "".join(y) or x[-1] == y[-1])
+
+
+ESPORTS_FILLER = {"esports", "esport", "gaming", "team", "gg", "club", "academy"}
+
+
+def same_esports_team(a, b):
+    """'Bilibili Gaming' ~ 'Bilibili', 'Gen.G' ~ 'Gen.G Esports', 'BetBoom Team' ~ 'BetBoom'.
+    Ignores filler words, then needs the same words (or the same letters without spaces)."""
+    x = [w for w in plain_tokens(a) if w not in ESPORTS_FILLER]
+    y = [w for w in plain_tokens(b) if w not in ESPORTS_FILLER]
+    return bool(x and y) and (x == y or "".join(x) == "".join(y))
 
 
 def px_team(competitors, name, same=None):

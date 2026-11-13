@@ -1333,9 +1333,17 @@ def main():
     except Exception as e:
         print(f"Report card error: {type(e).__name__}: {e}")
     live_bets = []  # Strategy A's new paper bets, mirrored with real money by live.py
+
+    def copy_real(intent):
+        """Real money copies A's bets, except sports still on paper only (venues.PAPER_ONLY)."""
+        sport = venues.base_event(intent["bet"]["link"].rstrip("/").rsplit("/", 1)[-1]).split("-")[0]
+        if sport in venues.PAPER_ONLY:
+            print(f"  (paper only, no real bet: {sport.upper()} is new)")
+            return
+        live_bets.append(intent)
     for key, cfg in STRATEGIES.items():
         print(f"-- {cfg['name']} --")
-        trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=live_bets.append if key == "a" else None,
+        trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=copy_real if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
               min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"),
               max_price=cfg.get("max_price", 1.0))

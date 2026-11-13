@@ -205,6 +205,11 @@ Status: see FINDINGS.md (results snapshot and what the data has shown).
   Polymarket is discarded as a probable mismatch. UFC (added 2026-11-13): series
   KXUFCFIGHT, matched by date + both fighters' names (venues.same_fighter: full name,
   name without spaces, or last name); Kalshi lists a card about a week ahead.
+  More leagues (added 2026-11-13): ~37 extra soccer leagues (venues.KALSHI_LEAGUES: EFL
+  Championship, Eredivisie, Liga MX, Brazil, Portugal, Japan, Saudi, Nations League, ...) and
+  esports CS2 + LoL (KALSHI_NAMED, matched by team names). Names are matched without accents
+  (Brøndby = Broendby). Tested on two weeks of past picks: ~85% found. The new sports are
+  PAPER ONLY (venues.PAPER_ONLY): real bets skip them until ~30 settle; then the owner decides.
 - ProphetX (CFTC exchange, added 2026-11-08): https://cash.api.prophetx.co/partner,
   docs https://docs.prophetx.co. Needs the API keys even for prices (login ->
   Bearer token). Prices are American odds; each selection lists levels a taker can
