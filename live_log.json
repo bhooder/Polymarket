@@ -2192,5 +2192,32 @@
   "profit": -3.17,
   "venue": "kalshi",
   "ref": "KXNHLGAME-26NOV12MINTOR-TOR"
+ },
+ {
+  "at": "2026-11-13T07:58:20.895507+00:00",
+  "event": "order",
+  "filled": 7.0,
+  "price": 0.43999999999999995,
+  "fees": 0.16,
+  "bet": "MOUZ: Counter-Strike: Vitality vs MOUZ (BO3) - BLAST Rivals Playoffs",
+  "pick": "MOUZ",
+  "market": "Counter-Strike: Vitality vs MOUZ (BO3) - BLAST Rivals Playoffs",
+  "venue": "polymarket_us",
+  "ref": "aec-cs2-vit-mouz-2026-11-13",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.44,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 7,
+  "max_price": 0.45,
+  "dollars": 3.29,
+  "bankroll": 219.42,
+  "order_id": "0464e908-4861-5001-b6c6-e9d87850e54e",
+  "reply": {
+   "path": "/v1/orders",
+   "status": 200,
+   "body": "{\"id\":\"DPK0AS6G13ZK\",\"executions\":[{\"id\":\"DPK0AS7053YH\",\"order\":{\"id\":\"DPK0AS6G13ZK\",\"marketSlug\":\"aec-cs2-vit-mouz-2026-11-13\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.55\",\"currency\":\"USD\"},\"quantity\":7,\"cumQuantity\":0,\"leavesQuantity\":7,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"aec-cs2-vit-mouz-2026-11-13\",\"icon\":\"\",\"title\":\"Vitality vs. MOUZ\",\"outcome\":\"MOUZ\",\"eventSlug\":\"cs2-vit-mouz-2026-11-13\",\"teamId\":5163,\"team\":{\"id\":5163,\"name\":\"MOUZ\",\"abbreviation\":\"mouz\",\"league\":\"cs2\",\"record\":\"\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/esports/cs2/mouz.png\",\"alias\":\"\",\"safeName\":\"MOUZ\",\"colorPrimary\":\"#FF0000\",\"ordering\":\"home\",\"longIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/esports/cs2/mouz.png\",\"shortIcon\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/esports/cs2/mouz.png\",\"displayAbbreviation\":\"MOUZ\",\"providerIds\":[{\"provider\":\"PROVIDER_PANDASCORE\",\"providerId\":\"3240\"}],\"color\":{\"light\":\"#FF0000\",\"dark\":\"#FF0000\"}},\"eventId\":\"261458\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"insertTime\":\"2026-11-13T07:58:20.829542617Z\",\"createTime\":\"2026-11-13T07:58:20.827393112Z\",\"outcomeSide\":\"OUTCOME"
+  }
  }
 ]

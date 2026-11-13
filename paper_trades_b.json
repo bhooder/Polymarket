@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1094.237362890362,
+ "cash": 1072.127362890362,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8864,6 +8864,42 @@
    "payout": 26.4,
    "profit": 14.97,
    "settled_at": "2026-11-13T04:30:24.903448+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T07:58:19.164470+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "MOUZ",
+   "market": "Counter-Strike: Vitality vs MOUZ (BO3) - BLAST Rivals Playoffs",
+   "link": "https://polymarket.com/event/cs2-vit-mouz-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x50d996e1f6d3688db3a25d675e10312d08fe9bca4877990661ce0abf61552741",
+   "token_id": "26637825756168915914282289001396003065583087388281876665620611932413886740925",
+   "outcome_index": 1,
+   "ends": "2026-11-13T08:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 25.7,
+   "traders_entry": 0.44,
+   "avg_price": 0.44,
+   "shares": 47.71173566274212,
+   "cost": 22.11,
+   "fees": 1.1168,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-cs2-vit-mouz-2026-11-13",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4634
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
