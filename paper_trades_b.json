@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1052.0384934142864,
+ "cash": 1017.7484934142866,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8783,6 +8783,81 @@
     "kalshi": 0.6858
    },
    "intl_cost_per_share": 0.6909,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T00:29:58.719592+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Mavericks",
+   "market": "Spread: Timberwolves (-5.5)",
+   "link": "https://polymarket.com/event/nba-dal-min-2026-11-12",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3d078969f4deb67560f1fe37a0296d40e89fcdafc15e324e70c83d6052422962",
+   "token_id": "97377271082553327361152140471640084050036202550324015268554276896566038762460",
+   "outcome_index": 1,
+   "ends": "2026-11-13T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 9.4,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 45.38307604345341,
+   "cost": 22.86,
+   "fees": 1.0761,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-dal-min-2026-11-12-pos-5pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.496,
+    "polymarket_us": 0.5037,
+    "kalshi": 0.5075
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T00:30:00.962265+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Blackhawks",
+   "market": "Sabres vs. Blackhawks",
+   "link": "https://polymarket.com/event/nhl-buf-chi-2026-11-12",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa78998bdf212722f63a450a5c7cef8185aa01f5cd951c57aadbb17e2186bb5eb",
+   "token_id": "17471738264181222406210566644910374597499719939115441310901348358222765575916",
+   "outcome_index": 1,
+   "ends": "2026-11-13T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.8,
+   "traders_entry": 0.4,
+   "avg_price": 0.41,
+   "shares": 26.398417480694853,
+   "cost": 11.43,
+   "fees": 0.6066,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-buf-chi-2026-11-12",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.433,
+    "kalshi": 0.4372
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,
