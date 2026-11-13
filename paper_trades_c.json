@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1043.7497776233624,
+ "cash": 1055.718331776156,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3034,7 +3034,7 @@
   },
   {
    "placed_at": "2026-11-13T19:31:28.603115+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Faroe Islands win on 2026-11-13?",
@@ -3063,9 +3063,9 @@
     "kalshi": 0.9158
    },
    "intl_cost_per_share": 0.9141,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.97,
+   "profit": 1.01,
+   "settled_at": "2026-11-13T22:08:45.615415+00:00",
    "topped_up_at": null
   },
   {
