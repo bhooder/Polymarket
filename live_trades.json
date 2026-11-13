@@ -1,5 +1,5 @@
 {
- "cash": 216.18,
+ "cash": 223.18,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1706,7 +1706,7 @@
   },
   {
    "placed_at": "2026-11-13T07:58:20.895516+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "MOUZ",
@@ -1733,9 +1733,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.4399999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 7.0,
+   "profit": 3.76,
+   "settled_at": "2026-11-13T10:57:10.278532+00:00",
    "topped_up_at": null
   }
  ],
@@ -2106,5 +2106,5 @@
   }
  ],
  "daily_check": "2026-11-13",
- "balances_checked_at": "2026-11-13T09:57:50.339572+00:00"
+ "balances_checked_at": "2026-11-13T10:58:51.235111+00:00"
 }

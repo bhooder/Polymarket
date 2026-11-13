@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1072.127362890362,
+ "cash": 1119.8390985531041,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8868,7 +8868,7 @@
   },
   {
    "placed_at": "2026-11-13T07:58:19.164470+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "MOUZ",
    "market": "Counter-Strike: Vitality vs MOUZ (BO3) - BLAST Rivals Playoffs",
@@ -8897,9 +8897,9 @@
     "polymarket_us": 0.4634
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 47.71,
+   "profit": 25.6,
+   "settled_at": "2026-11-13T10:57:10.155118+00:00",
    "topped_up_at": null
   }
  ]
