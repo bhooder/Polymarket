@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1044.738331776156,
+ "cash": 1033.758331776156,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3171,6 +3171,43 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T23:34:33.873281+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Knicks vs. Pacers",
+   "link": "https://polymarket.com/event/nba-nyk-ind-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc31a3f047367e05c7c92b9553b7cf00252bb86b3291cf3dda9e6868644a0de6b",
+   "token_id": "102308519620570288741472404277263169915173182329464518463626564371196565067917",
+   "outcome_index": 0,
+   "ends": "2026-11-14T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 10.7,
+   "traders_entry": 0.73,
+   "avg_price": 0.7333,
+   "shares": 14.893296358813602,
+   "cost": 10.98,
+   "fees": 0.0582,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "4b5cafac180ea3493048779bcb021729",
+    "fee_rate": 0.02,
+    "event_id": 1704740183
+   },
+   "quotes": {
+    "prophetx": 0.7372,
+    "kalshi": 0.7537
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,
