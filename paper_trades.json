@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1295.588609691968,
+ "cash": 1284.096005983308,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3545,6 +3545,43 @@
     "kalshi": 0.4374
    },
    "intl_cost_per_share": 0.4273,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T15:58:16.259330+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Josh Hokit",
+   "market": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+   "link": "https://polymarket.com/event/ufc-jos52-cir-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0xc8cfc009e5ef7798f16727298e98712da56877f3c78d0bd1a69992c91371ef69",
+   "token_id": "30289940090088667668050088376461003061362172048916753227271073157706533834577",
+   "outcome_index": 0,
+   "ends": "2026-11-14T22:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.5,
+   "traders_entry": 0.36,
+   "avg_price": 0.34,
+   "shares": 32.30177561370563,
+   "cost": 11.49,
+   "fees": 0.51,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUFCFIGHT-26NOV14GANHOK-HOK",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3558,
+    "prophetx": 0.3723
+   },
+   "intl_cost_per_share": 0.3614,
    "payout": null,
    "profit": null,
    "settled_at": null,

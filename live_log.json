@@ -2257,5 +2257,32 @@
    "status": 200,
    "body": "{\"id\":\"DPSR9B3014ET\",\"executions\":[{\"id\":\"DPSR9B3G33YF\",\"order\":{\"id\":\"DPSR9B3014ET\",\"marketSlug\":\"aec-nfl-min-gb-2026-11-15\",\"side\":\"ORDER_SIDE_BUY\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.41\",\"currency\":\"USD\"},\"quantity\":8,\"cumQuantity\":0,\"leavesQuantity\":8,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_LONG\",\"marketMetadata\":{\"slug\":\"aec-nfl-min-gb-2026-11-15\",\"icon\":\"\",\"title\":\"MIN Vikings vs. GB Packers\",\"outcome\":\"Vikings\",\"eventSlug\":\"nfl-min-gb-2026-11-15\",\"teamId\":68,\"team\":{\"id\":68,\"name\":\"Minnesota Vikings\",\"abbreviation\":\"min\",\"league\":\"nfl\",\"record\":\"6-2\",\"logo\":\"https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/MIN.png\",\"alias\":\"Vikings\",\"safeName\":\"MIN Vikings\",\"homeIcon\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_home.png\",\"awayIcon\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_away.png\",\"colorPrimary\":\"#4F2683\",\"providerId\":20,\"ordering\":\"away\",\"longIcon\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_home.png\",\"shortIcon\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_away.png\",\"displayAbbreviation\":\"MIN\",\"conference\":\"\",\"providerIds\":[{\"provider\":\"PROVIDER_SPORTSDATAIO\",\"providerId\":\"20\"},{\"provider\":\"PROVIDER_SPORTRADAR\",\"providerId\":\"33405046-04ee-4058-a950-d606f8c30852\"}],\"longIconDark\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_home.png\",\"shortIconDark\":\"https://static.polymarket.us/images/teams/nfl-min/MIN_away.png\",\"color\":{\"light\":\"#4F2"
   }
+ },
+ {
+  "at": "2026-11-13T15:58:19.309287+00:00",
+  "event": "order",
+  "filled": 8.0,
+  "price": 0.34,
+  "fees": 0.1256,
+  "bet": "Josh Hokit to win (vs. Ciryl Gane (Heavyweight, Main Card))",
+  "pick": "Josh Hokit",
+  "market": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+  "venue": "kalshi",
+  "ref": "KXUFCFIGHT-26NOV14GANHOK-HOK",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.34,
+  "share": 0.013184999999999999,
+  "side": "YES",
+  "contracts": 8,
+  "max_price": 0.38,
+  "dollars": 2.94,
+  "bankroll": 223.18,
+  "order_id": "71e29337-2683-5a8f-999d-839379886a53",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0157\",\"average_fill_price\":\"0.3400\",\"client_order_id\":\"71e29337-2683-5a8f-999d-839379886a53\",\"fill_count\":\"8.00\",\"order_id\":\"01a1d5a1-9578-7311-a65a-903176993f88\",\"remaining_count\":\"0.00\",\"ts_ms\":1794585499281}"
+  }
  }
 ]
