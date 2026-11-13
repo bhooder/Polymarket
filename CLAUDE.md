@@ -103,8 +103,8 @@ The owner's rules:
   Per game, at most one moneyline-or-spread bet and at most one total bet
   (added 2026-10-29). If two compete in one run, the higher pick wins.
 - Only markets decided within 3 days. Skip games that have already started.
-- Price rule: the price actually paid (before fees) must be at most 2c ABOVE
-  (1c from 2026-11-10 to 2026-11-13) or 4c BELOW the traders' average entry, and at least 28.6c (+250)
+- Price rule: the price actually paid (before fees) must be at most 1c ABOVE
+  (2c until 2026-11-10 and briefly on 2026-11-13) or 4c BELOW the traders' average entry, and at least 28.6c (+250)
   (price floor added 2026-11-10 at 35c, lowered to +250 on 2026-11-11; all strategies and real bets). Strategy A and real
   bets also never pay more than 75c (A_MAX_PRICE, added 2026-11-11; others uncapped). (The scanner's 4c filter is off
   in the forward test.)

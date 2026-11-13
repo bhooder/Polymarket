@@ -8,7 +8,7 @@ Each run:
    monthly PnL, hedges and crypto bots removed).
 3. Keeps picks that meet a staking tier, haven't started, and are decided within 3 days.
 4. "Buys" them with pretend money on the cheapest US venue (Polymarket US, Kalshi or ProphetX)
-   (see venues.py), from real order books with fees, if the price is no more than 2c
+   (see venues.py), from real order books with fees, if the price is no more than 1c
    above or 4c below the traders' average entry.
 5. Does steps 1, 3 and 4 separately for each strategy (own $1,000 pretend bankroll).
 6. Writes paper_trades.json / paper_trades_b.json (state), matching CSVs and paper_report.html.
@@ -41,7 +41,7 @@ ICLOUD = os.path.expanduser("~/Library/Mobile Documents/com~apple~CloudDocs/Poly
 START_BANKROLL = 1000.0
 MAX_DAYS_TO_END = 3      # only markets that end within this many days
 MAX_EXPOSURE = 0.50      # at most this share of the bankroll in open bets at once
-MAX_ABOVE = 0.02         # pay at most 2c more than the traders' average entry (1c from 2026-11-10 to 11-13)...
+MAX_ABOVE = 0.01         # pay at most 1c more than the traders' average entry (2c before 2026-11-10 and on 11-13)...
 MAX_BELOW = 0.04         # ...and at most 4c less
 MIN_PRICE = 100 / 350   # never bet longer than +250 (~28.6c). 35c from 2026-11-10, 30c then +250 from 2026-11-11
 A_MAX_PRICE = 0.75       # Strategy A and real bets: never pay more than 75c (added 2026-11-11)
@@ -228,7 +228,7 @@ def simulate_buy(token_id, dollars, fee):
 
 
 def in_band(price, entry, max_price=1.0):
-    """Price we'd pay may be at most 2c above, or 4c below, the traders' average entry,
+    """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
     never longer than +250 (~28.6c), and never over max_price (75c for Strategy A)."""
     return (MIN_PRICE - 1e-9 <= price <= max_price + 1e-9
             and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9)
