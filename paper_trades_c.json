@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1064.8497104664618,
+ "cash": 1096.8059028697148,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -2921,7 +2921,7 @@
   },
   {
    "placed_at": "2026-11-12T23:01:22.407492+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Suns",
    "market": "Hornets vs. Suns",
@@ -2950,9 +2950,9 @@
     "kalshi": 0.6958
    },
    "intl_cost_per_share": 0.6909,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 31.96,
+   "profit": 9.89,
+   "settled_at": "2026-11-13T05:32:05.759662+00:00",
    "topped_up_at": "2026-11-13T01:45:59.196921+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 5.3,
