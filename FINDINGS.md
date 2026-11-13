@@ -78,6 +78,9 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
 - 2026-11-11: owner's choice: price floor lowered 35c -> 30c, then the same day to
   +250 (~28.6c), all strategies + real bets. Finding 4 (under-40c bets lost money) still
   stands; these bets get stake x0.77-0.90.
+- 2026-11-13: owner's choice: price rule back to +2c above entry (all strategies + real
+  bets). Re-check: bets paid +1.5-2.5c over entry: A +20c (11 bets), all strategies +4c
+  (50), about the same as +1c bets (+3c, 104). Paying BELOW entry is still where the edge is.
 
 ## Open questions / what to check next
 - Does CLV turn positive for any trader? (Claude tab report card; qualified traders
