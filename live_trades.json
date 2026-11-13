@@ -1737,6 +1737,40 @@
    "profit": 3.76,
    "settled_at": "2026-11-13T10:57:10.278532+00:00",
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T15:50:06.510462+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Vikings",
+   "market": "Vikings vs. Packers",
+   "link": "https://polymarket.com/event/nfl-min-gb-2026-11-15",
+   "market_type": "moneyline",
+   "condition_id": "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75",
+   "token_id": "108534542077320679697693708499731792701102813975517222080622181321794355009924",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 10.9,
+   "traders_entry": 0.39,
+   "avg_price": 0.4075,
+   "shares": 8.0,
+   "cost": 3.44,
+   "fees": 0.18,
+   "contracts_ordered": 8,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-min-gb-2026-11-15",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "paper_price": 0.4074999999999999,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -2103,8 +2137,15 @@
    "venue": "polymarket_us",
    "ordered": 7,
    "filled": 7.0
+  },
+  {
+   "at": "2026-11-13T15:50:06.510438+00:00",
+   "pick": "Vikings",
+   "venue": "polymarket_us",
+   "ordered": 8,
+   "filled": 8.0
   }
  ],
  "daily_check": "2026-11-13",
- "balances_checked_at": "2026-11-13T15:38:57.426561+00:00"
+ "balances_checked_at": "2026-11-13T15:50:06.326163+00:00"
 }
