@@ -226,8 +226,41 @@ def open_events(series):
     return _open_events[series]
 
 
+KALSHI_UFC = "KXUFCFIGHT"  # Kalshi's UFC fight series (added 2026-11-13)
+
+
+def kalshi_ufc_ref(pick, d, intl_price):
+    """A UFC fight on Kalshi, found among open fights by date and both fighters' names
+    (Kalshi's fighter codes differ from Polymarket's)."""
+    if d["kind"] != "winner" or len(d["outcomes"]) != 2:
+        return None
+    try:
+        day = datetime.strptime("-".join(d["event"].split("-")[-3:]), "%Y-%m-%d")
+    except ValueError:
+        return None
+    dates = [(day + timedelta(days=k)).strftime("%y%b%d").upper() for k in (0, 1, -1)]  # time-zone slack
+    for ticker in open_events(KALSHI_UFC):
+        if not any(ticker.split("-")[1].startswith(day) for day in dates):
+            continue
+        e = (safe_get(f"/events/{ticker}", {"with_nested_markets": "true"}, base=KALSHI) or {}).get("event")
+        markets = [m for m in (e or {}).get("markets") or [] if m.get("status") == "active"]
+        names = [m.get("yes_sub_title") or "" for m in markets]
+        if len(names) != 2 or not all(sum(same_fighter(k, n) for k in names) == 1 for n in d["outcomes"]):
+            continue
+        hits = [m for m in markets if same_fighter(m.get("yes_sub_title") or "", pick["Pick"])]
+        m = hits[0] if len(hits) == 1 else None
+        ask = float((m or {}).get("yes_ask_dollars") or 0)
+        if not ask or abs(ask - intl_price) > SANITY:
+            return None
+        mult = float((safe_get(f"/series/{KALSHI_UFC}", base=KALSHI) or {}).get("series", {}).get("fee_multiplier") or 1)
+        return {"venue": "kalshi", "ref": m["ticker"], "yes": True, "fee_rate": KALSHI_FEE * mult}
+    return None
+
+
 def kalshi_ref(pick, d, intl_price):
     league = d["event"].split("-")[0]
+    if league == "ufc":
+        return kalshi_ufc_ref(pick, d, intl_price)
     base = KALSHI_LEAGUES.get(league)
     codes = base and kalshi_codes(league, d["event"])
     if not codes:
@@ -320,7 +353,8 @@ PX_LEAGUES = {"nba": ["nba"], "wnba": ["wnba"], "nfl": ["nfl"], "nhl": ["nhl"], 
               "epl": ["premier league", "english premier league"], "lal": ["la liga"],
               "sea": ["serie a"], "bun": ["bundesliga"], "fl1": ["ligue 1"],
               "ucl": ["uefa champions league", "champions league"],
-              "uel": ["uefa europa league", "europa league"], "mls": ["mls", "major league soccer"]}
+              "uel": ["uefa europa league", "europa league"], "mls": ["mls", "major league soccer"],
+              "ufc": ["ufc"]}  # UFC added 2026-11-13: any tournament whose name contains "ufc"
 _px = {}  # login token and per-run caches
 
 
@@ -379,6 +413,7 @@ def px_events(league):
         _px["tournaments"] = (r.get("data") or {}).get("tournaments") or []
     ids = [t["id"] for t in _px["tournaments"]
            if (t.get("name") or "").lower() in (names or [])
+           or (league == "ufc" and "ufc" in (t.get("name") or "").lower())
            or (league in TENNIS and (t.get("name") or "").lower().startswith(league + " "))]
     out = []
     for tid in ids:
@@ -405,10 +440,19 @@ def px_same(a, b):
     return all(any(w == v or (len(w) >= 3 and v.startswith(w)) for v in long_) for w in short)
 
 
-def px_team(competitors, name):
+def same_fighter(a, b):
+    """UFC names vary by site: 'Bia Mesquita' ~ 'Beatriz Mesquita', 'Alatengheili' ~ 'Alateng Heili'.
+    Matches on the full name, the name without spaces, or the last name. Only used where both
+    fighters (and the date) must match, so a shared last name alone can't pick the wrong fight."""
+    x, y = plain_tokens(a), plain_tokens(b)
+    return bool(x and y) and (px_same(a, b) or "".join(x) == "".join(y) or x[-1] == y[-1])
+
+
+def px_team(competitors, name, same=None):
     """The one competitor matching `name`, else None."""
-    hits = [c for c in competitors if px_same(name, c.get("name") or "")
-            or px_same(name, c.get("display_name") or "")]
+    same = same or px_same
+    hits = [c for c in competitors if same(name, c.get("name") or "")
+            or same(name, c.get("display_name") or "")]
     return hits[0] if len(hits) == 1 else None
 
 
@@ -455,7 +499,10 @@ def px_ref(pick, d, intl_market, intl_price):
         except (KeyError, ValueError):
             continue
         comps = e.get("competitors") or []
-        if abs((when - start).total_seconds()) <= 3 * 3600 and all(px_team(comps, t) for t in teams):
+        # UFC: Polymarket's time is the card's start; a main event can be hours later
+        slack = 12 if league == "ufc" else 3
+        same = same_fighter if league == "ufc" else None
+        if abs((when - start).total_seconds()) <= slack * 3600 and all(px_team(comps, t, same) for t in teams):
             games.append(e)
     if len(games) != 1:
         return None  # not listed, or ambiguous: don't guess
@@ -466,9 +513,12 @@ def px_ref(pick, d, intl_market, intl_price):
     full_game = lambda m: (m.get("category_name") or "Game Lines") == "Game Lines"
     sel = None
     if d["kind"] == "winner":
-        team = px_team(game["competitors"], pick["Pick"])
+        team = px_team(game["competitors"], pick["Pick"], same_fighter if league == "ufc" else None)
         m = next((m for m in markets if m.get("type") == "moneyline"
                   and (m.get("name") or "").lower() == "moneyline"), None)
+        if not m and league == "ufc":  # fight-winner market may have another name: use it if it's the only one
+            ml = [m for m in markets if m.get("type") == "moneyline"]
+            m = ml[0] if len(ml) == 1 else None
         sel = team and m and next((s for s in sels(m) if s.get("competitor_id") == team["id"]), None)
     elif d["kind"] == "1x2":
         if d["team"] == "draw":

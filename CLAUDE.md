@@ -202,7 +202,9 @@ Status: see FINDINGS.md (results snapshot and what the data has shown).
   KXNBAGAME-26OCT27PORLAL-POR. Soccer team codes differ from Polymarket's, so
   soccer is matched by team name. Tennis tickers carry the tournament date.
   Fee = roundup(0.07 x C x P x (1-P)). A Kalshi match priced >15c away from
-  Polymarket is discarded as a probable mismatch.
+  Polymarket is discarded as a probable mismatch. UFC (added 2026-11-13): series
+  KXUFCFIGHT, matched by date + both fighters' names (venues.same_fighter: full name,
+  name without spaces, or last name); Kalshi lists a card about a week ahead.
 - ProphetX (CFTC exchange, added 2026-11-08): https://cash.api.prophetx.co/partner,
   docs https://docs.prophetx.co. Needs the API keys even for prices (login ->
   Bearer token). Prices are American odds; each selection lists levels a taker can
@@ -215,7 +217,9 @@ Status: see FINDINGS.md (results snapshot and what the data has shown).
   of the stake (position cost_basis $2.03, fee $0.04, balance fell $2.07). live.py records that fee
   in the bet's cost, and such a bet is not charged again when it wins. Paper bets pay
   the expected fee up front; real bets have it taken from the payout at settlement. No public results: ProphetX bets
-  settle by the international Polymarket result. No Premier League seen.
+  settle by the international Polymarket result. No Premier League seen. UFC (added
+  2026-11-13): any tournament named with "ufc", start time +-12h (Polymarket's time is the
+  card's start), fight-winner = the moneyline market; untested until a GitHub run.
 
 ## Things learned / caveats
 - US-venue fees are roughly double the international ones: about
