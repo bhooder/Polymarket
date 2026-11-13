@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1017.7484934142866,
+ "cash": 1006.3263391771641,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8755,7 +8755,7 @@
   {
    "placed_at": "2026-11-12T20:31:30.130551+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Suns",
    "market": "Hornets vs. Suns",
    "link": "https://polymarket.com/event/nba-cha-phx-2026-11-12",
@@ -8768,10 +8768,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 2.5,
    "traders_entry": 0.67,
-   "avg_price": 0.67,
-   "shares": 16.484871118943456,
-   "cost": 11.3,
-   "fees": 0.26,
+   "avg_price": 0.6698,
+   "shares": 33.14480281614118,
+   "cost": 22.72,
+   "fees": 0.52,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -8786,7 +8786,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-13T01:45:58.907395+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 5.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-13T00:29:58.719592+00:00",
