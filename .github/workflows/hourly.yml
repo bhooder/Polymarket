@@ -25,6 +25,10 @@ jobs:
       TZ: America/New_York  # times in the reports show Eastern time
     steps:
       - uses: actions/checkout@v5
+        with:
+          # the newest results when this run STARTS (a run queued behind another must not use the
+          # files from when it was triggered, or it can't save; seen 2026-11-13, run 509)
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
