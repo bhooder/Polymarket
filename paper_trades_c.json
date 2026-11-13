@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1076.2011619024045,
+ "cash": 1043.7497776233624,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3027,6 +3027,114 @@
     "prophetx": 0.3723
    },
    "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T19:31:28.603115+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Faroe Islands win on 2026-11-13?",
+   "link": "https://polymarket.com/event/unl-svk-far-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x51ba8bace6c817532803e14ea80182aa1982f577fb5bb20819ba09a120f6a8bd",
+   "token_id": "98891853398028223688103372112048457163718859385881544667681302437429132922508",
+   "outcome_index": 1,
+   "ends": "2026-11-13T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.0,
+   "traders_entry": 0.91,
+   "avg_price": 0.91,
+   "shares": 11.968554152793446,
+   "cost": 10.96,
+   "fees": 0.07,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV13SVKFRO-FRO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9158
+   },
+   "intl_cost_per_share": 0.9141,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T19:31:28.983856+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Florida State",
+   "market": "Florida State vs. Pittsburgh",
+   "link": "https://polymarket.com/event/cfb-flst-pitt-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0xd2a03fad445e7a40ec8674bf35feb854bf94d155e6120d8b7336a58d8d6259cd",
+   "token_id": "21163995553402517232754245269508953353039800367929776436767834648013227695006",
+   "outcome_index": 0,
+   "ends": "2026-11-14T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.39,
+   "avg_price": 0.3968,
+   "shares": 26.19440401505646,
+   "cost": 10.52,
+   "fees": 0.1254,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "5db47f8a3f2111daf0b2ec0aa957a7c8",
+    "fee_rate": 0.02,
+    "event_id": 1704710934
+   },
+   "quotes": {
+    "prophetx": 0.4016
+   },
+   "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T19:31:29.270504+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jaguars",
+   "market": "Spread: Jaguars (-10.5)",
+   "link": "https://polymarket.com/event/nfl-jax-ten-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb270e47243545807d3376068d57b8a4cb3323c85691388c3b5c7db0a9f56e786",
+   "token_id": "88812579120898174806491546555621646436716645764968969895312728803383024183560",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.51,
+   "avg_price": 0.515,
+   "shares": 20.362756851837975,
+   "cost": 10.97,
+   "fees": 0.4832,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-jax-ten-2026-11-15-neg-10pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5387
+   },
+   "intl_cost_per_share": 0.5175,
    "payout": null,
    "profit": null,
    "settled_at": null,
