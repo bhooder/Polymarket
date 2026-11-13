@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1055.718331776156,
+ "cash": 1044.738331776156,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3135,6 +3135,42 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5175,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T22:54:32.465119+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Bucks vs. Magic: O/U 223.5",
+   "link": "https://polymarket.com/event/nba-mil-orl-2026-11-13",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ad8596bd50da48fb4fef4ea09f6b3cfd31c9bfc07e0c6dd93ef5c3de7c39458",
+   "token_id": "6855260585506751148612576444350582158229053654824331037639994181475415345280",
+   "outcome_index": 0,
+   "ends": "2026-11-14T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.5,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 20.96420047732697,
+   "cost": 10.98,
+   "fees": 0.4979,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-mil-orl-2026-11-13-223pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
