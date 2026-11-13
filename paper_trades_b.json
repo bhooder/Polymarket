@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1034.6941425935258,
+ "cash": 1061.0925600742207,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8533,7 +8533,7 @@
   },
   {
    "placed_at": "2026-11-12T12:44:15.367501+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Giants",
    "market": "Commanders vs. Giants",
@@ -8562,9 +8562,9 @@
     "kalshi": 0.5777
    },
    "intl_cost_per_share": 0.5574,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.72,
+   "settled_at": "2026-11-13T04:30:24.641349+00:00",
    "topped_up_at": "2026-11-12T19:21:37.934843+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 3.9,
@@ -8831,7 +8831,7 @@
   },
   {
    "placed_at": "2026-11-13T00:30:00.962265+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Blackhawks",
    "market": "Sabres vs. Blackhawks",
@@ -8861,9 +8861,9 @@
     "kalshi": 0.4372
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.4,
+   "profit": 14.97,
+   "settled_at": "2026-11-13T04:30:24.903448+00:00",
    "topped_up_at": null
   }
  ]
