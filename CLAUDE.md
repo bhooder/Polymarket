@@ -51,6 +51,10 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   bet it. Use it to test new strategy ideas on all picks. Rows first seen before 2026-11-13
   were backfilled from the picks.html history: no conviction or against-$ columns, and no
   Against count before ~2026-10-31.
+  `pick_log_200.csv` / `pick_log_200_open.json` (added 2026-11-13): the same, but picks counted
+  over the top 200 traders (forward test sets scanner --research-top 200; picks in
+  scanner.WIDE_PICKS), plus bettors_top100 / against_top100. Research only: every strategy and
+  real bet still uses picks from the top 100 only (checked identical).
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
@@ -155,7 +159,9 @@ scanner notes this in PACE). Rules version 2 (2026-11-10): v1 counted every posi
 had no day minimum or bot filter, so a 300+ trades/hour bot qualified in one evening on
 alternate lines of one game; the card and the Claude bankroll restarted automatically
 (claude_strategy.VERSION).
-Qualified traders who drop off the leaderboard are still followed. Picks: outcomes held
+Qualified traders who drop off the leaderboard are still followed. From 2026-11-13 the card
+grades the top 200 traders, not 100 (no restart: same rules, bigger pool; ~1 lucky qualifier
+expected instead of 0-1). Picks: outcomes held
 by qualified traders, at least one of whom first bought within 6 hours. 1% with one
 qualified trader, 2% with two or more (top-up once); all other rules as A. No bets until
 traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.

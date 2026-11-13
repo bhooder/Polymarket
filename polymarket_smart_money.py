@@ -322,6 +322,8 @@ def write_html(path, rows, args):
 def build_parser():
     ap = argparse.ArgumentParser()
     ap.add_argument("--top", type=int, default=100, help="how many leaderboard traders")
+    ap.add_argument("--research-top", type=int, default=0,
+                    help="also scan down to this rank for research (doesn't change the picks)")
     ap.add_argument("--period", default="month", choices=["day", "week", "month", "all"])
     ap.add_argument("--category", default="sports",
                     help="sports, politics, crypto, esports, ... or overall. Also keeps only "
@@ -342,20 +344,22 @@ def build_parser():
 # was dropped 2026-11-10 before any bets: replaying the saved picks, big-dollar picks had no edge.)
 CONVICTION_PCT = 10
 POSITIONS = {}  # wallet -> (name, open positions without hedges), filled by find_picks
+WIDE_PICKS = []  # picks counted over ALL scanned traders (research_top), research only
 
 
 def find_picks(args):
-    """Scan the leaderboard and return (picks, traders), picks sorted best first."""
+    """Scan the leaderboard and return (picks, traders), picks sorted best first.
+    With args.research_top > args.top, the extra traders (e.g. ranks 101-200) are scanned too:
+    their positions go into POSITIONS (Strategy Claude's report card) and WIDE_PICKS (research
+    log), but the returned picks still come from the top args.top only."""
     POSITIONS.clear()
-    board = leaderboard(args.top, args.period, args.category, args.sort)
-    print(f"Leaderboard: {len(board)} traders ({args.period}, {args.category}, {args.sort})")
+    WIDE_PICKS.clear()
+    research_top = max(getattr(args, "research_top", 0) or 0, args.top)
+    board = leaderboard(research_top, args.period, args.category, args.sort)
+    print(f"Leaderboard: {len(board)} traders ({args.period}, {args.category}, {args.sort})"
+          + (f"; picks from the top {args.top}, the rest for research only" if research_top > args.top else ""))
 
-    markets = defaultdict(lambda: {"title": "", "event_id": "", "slug": "", "token_id": "",
-                                   "outcome_index": None, "traders": set(),
-                                   "bankroll_pcts": [], "cost": 0.0, "value": 0.0, "shares": 0.0,
-                                   "convinced": set()})
-    trader_rows = []
-
+    trader_rows, scanned = [], []  # scanned: (wallet, positions, bankroll, in the top args.top)
     for i, t in enumerate(board, 1):
         wallet = t.get("user_id") or t.get("proxy_wallet")
         name = t.get("user_name") or wallet
@@ -373,12 +377,34 @@ def find_picks(args):
             continue
         positions = [p for p in positions if p["condition_id"] not in hedged]
         POSITIONS[wallet] = (name, positions)
-        trader_rows.append({"rank": t.get("rank", i), "name": name, "wallet": wallet,
-                            "pnl": t.get("pnl"), "volume": t.get("volume"),
-                            "crypto_share": round(crypto, 2),
-                            "open_positions": len(positions),
-                            "hedged_markets_dropped": len(hedged),
-                            "open_value": round(sum(p.get("current_value") or 0 for p in positions), 2)})
+        top = i <= args.top
+        scanned.append((wallet, positions, bankroll, top))
+        if top:
+            trader_rows.append({"rank": t.get("rank", i), "name": name, "wallet": wallet,
+                                "pnl": t.get("pnl"), "volume": t.get("volume"),
+                                "crypto_share": round(crypto, 2),
+                                "open_positions": len(positions),
+                                "hedged_markets_dropped": len(hedged),
+                                "open_value": round(sum(p.get("current_value") or 0 for p in positions), 2)})
+        print(f"  [{i}/{len(board)}] {name}: {len(positions)} open positions"
+              f" ({len(hedged)} hedged markets dropped)")
+
+    tags = {} if args.category != "overall" else None
+    rows = build_rows([s for s in scanned if s[3]], args, tags)
+    if research_top > args.top:
+        top_wallets = {s[0] for s in scanned if s[3]}
+        WIDE_PICKS.extend(build_rows(scanned, args, tags, top_wallets))
+    return rows, trader_rows
+
+
+def build_rows(scanned, args, tags, top_wallets=None):
+    """Picks from these traders' positions. tags: event_id -> tags cache (None = no category
+    filter). top_wallets: also count how many bettors / against are among them."""
+    markets = defaultdict(lambda: {"title": "", "event_id": "", "slug": "", "token_id": "",
+                                   "outcome_index": None, "traders": set(),
+                                   "bankroll_pcts": [], "cost": 0.0, "value": 0.0, "shares": 0.0,
+                                   "convinced": set()})
+    for wallet, positions, bankroll, _ in scanned:
         for p in positions:
             m = markets[(p["condition_id"], p.get("outcome"))]
             m["title"] = p.get("title", "")
@@ -395,13 +421,13 @@ def find_picks(args):
             m["cost"] += p.get("entry_cost_usdc") or 0
             m["value"] += p.get("current_value") or 0
             m["shares"] += p.get("current_size") or 0
-        print(f"  [{i}/{len(board)}] {name}: {len(positions)} open positions"
-              f" ({len(hedged)} hedged markets dropped)")
 
-    tags = None
-    if args.category != "overall":
+    if tags is not None:
         candidates = {m["event_id"] for m in markets.values() if len(m["traders"]) >= args.min_traders}
-        tags = event_tags(candidates)
+        missing = candidates - set(tags)
+        if missing:
+            tags.update(event_tags(missing))
+            tags.update({e: set() for e in missing if e not in tags})
 
     # top traders on each side of each market (hedgers already removed, so nobody is on two sides)
     sides = defaultdict(dict)
@@ -418,12 +444,13 @@ def find_picks(args):
         if abs(price_now - avg_entry) > args.max_move:  # price already ran (or fell) too far
             continue
         pcts = m["bankroll_pcts"]
-        rows.append({
+        against = set().union(*(t for o, t in sides[cond].items() if o != outcome))
+        row = {
             "Pick": outcome,
             "Market": m["title"],
             "Bettors": len(m["traders"]),
             # top traders ($100+ positions) on the other side(s) of the same market
-            "Against": len(set().union(*(t for o, t in sides[cond].items() if o != outcome))),
+            "Against": len(against),
             # traders with conviction (see CONVICTION_PCT) on this side and the other(s)
             "Conviction bettors": len(m["convinced"]),
             "Conviction against": len(set().union(*(markets[(cond, o)]["convinced"]
@@ -439,9 +466,13 @@ def find_picks(args):
             "condition_id": cond,
             "token_id": m["token_id"],
             "outcome_index": m["outcome_index"],
-        })
+        }
+        if top_wallets is not None:
+            row["Bettors top 100"] = len(m["traders"] & top_wallets)
+            row["Against top 100"] = len(against & top_wallets)
+        rows.append(row)
     rows.sort(key=lambda r: (r["Bettors"], r["Avg bankroll %"]), reverse=True)
-    return rows, trader_rows
+    return rows
 
 
 def main():

@@ -19,32 +19,45 @@ import polymarket_smart_money as scanner
 
 OPEN = "pick_log_open.json"
 CSV = "pick_log.csv"
+# The research log of picks counted over the top 200 traders (2026-11-13): pick_log_200.csv and
+# pick_log_200_open.json, with extra columns for how many bettors / against are in the top 100.
 GIVE_UP_DAYS = 14  # no result this long after the start: written with an empty result
 
 # pick column -> short name used in the log
 SNAP = {"Bettors": "bettors", "Against": "against", "Conviction bettors": "conv_bettors",
         "Conviction against": "conv_against", "Avg bankroll %": "bankroll_pct", "Total $ in": "usd_in",
         "Against $ in": "against_usd", "Avg entry price": "entry", "Price now": "price"}
+WIDE_SNAP = {**SNAP, "Bettors top 100": "bettors_top100", "Against top 100": "against_top100"}
 COLUMNS = (["sport", "start", "market", "pick", "market_type", "link", "first_seen", "last_seen", "runs_seen",
             "max_bettors"]
            + [f"first_{v}" for v in SNAP.values()] + [f"last_{v}" for v in SNAP.values()]
            + ["close_price", "result", "bet_by", "token_id", "condition_id"])
 
 
+def columns(snap):
+    return (COLUMNS[:10] + [f"first_{v}" for v in snap.values()] + [f"last_{v}" for v in snap.values()]
+            + COLUMNS[-5:])
+
+
+def files(name):
+    """pick_log -> (pick_log_open.json, pick_log.csv); pick_log_200 -> its own pair."""
+    return f"{name}_open.json", f"{name}.csv"
+
+
 def now():
     return datetime.now(timezone.utc)
 
 
-def load(here):
-    path = os.path.join(here, OPEN)
+def load(here, name="pick_log"):
+    path = os.path.join(here, files(name)[0])
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
     return {"open": {}, "not_games": []}
 
 
-def save(log, here):
-    path = os.path.join(here, OPEN)
+def save(log, here, name="pick_log"):
+    path = os.path.join(here, files(name)[0])
     tmp = path + ".tmp"
     with open(tmp, "w") as f:
         json.dump(log, f, separators=(",", ":"))
@@ -58,7 +71,7 @@ def start_of(m):
     return datetime.fromisoformat(when.replace("Z", "+00:00").replace(" ", "T"))
 
 
-def record(log, picks, market_info):
+def record(log, picks, market_info, snap_fields=SNAP):
     """Note this run's picks. market_info(condition_ids) -> {condition_id: Gamma market}."""
     t = now()
     stamp = t.isoformat(timespec="seconds")
@@ -70,7 +83,7 @@ def record(log, picks, market_info):
         tok = p.get("token_id")
         if not tok:
             continue
-        snap = {v: p.get(k) for k, v in SNAP.items()}
+        snap = {v: p.get(k) for k, v in snap_fields.items()}
         e = log["open"].get(tok)
         if e is None:
             if p["condition_id"] not in new:
@@ -105,7 +118,7 @@ def resolutions(condition_ids):
     return out
 
 
-def settle(log, here, states, live_state):
+def settle(log, here, states, live_state, name="pick_log", snap_fields=SNAP):
     """Add closing prices and results; move finished picks to the CSV. Returns how many."""
     t = now()
     cache = {}
@@ -139,10 +152,10 @@ def settle(log, here, states, live_state):
         rows.append(row)
         del log["open"][tok]
     if rows:
-        path = os.path.join(here, CSV)
+        path = os.path.join(here, files(name)[1])
         new_file = not os.path.exists(path)
         with open(path, "a", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=COLUMNS)
+            w = csv.DictWriter(f, fieldnames=columns(snap_fields))
             if new_file:
                 w.writeheader()
             w.writerows(rows)

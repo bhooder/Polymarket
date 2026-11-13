@@ -84,6 +84,9 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
 - 2026-11-13 (later): back to +1c. A logistic regression on the pick log (1,448 picks, price as
   offset) found price-above-entry the strongest predictor: about -1 point of win chance per cent
   paid over entry (z -2.2). Leave this rule alone until A has 200 settled bets.
+- 2026-11-13: research scan widened to the top 200 traders: pick_log_200 (about 3x the picks)
+  and Strategy Claude's report card. Betting picks for A-E and real bets are unchanged (top 100).
+  Open question: do ranks 101-200 have an edge too? (bettors_top100 columns.)
 - 2026-11-13: UFC added (all strategies + real bets). ~37 more soccer leagues + CS2/LoL esports
   added for paper strategies only (venues.PAPER_ONLY): ~110 A-qualifying picks in 2 weeks had
   been skipped because no venue matched. Almost all of A's record is NBA/NFL/CFB/NHL, so the

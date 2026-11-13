@@ -1272,6 +1272,7 @@ def copy_to_icloud(name):
 
 scanner_args = scanner.build_parser().parse_args([])  # scanner defaults...
 scanner_args.max_move = 1  # ...except the price rule, applied below to the real US-venue price
+scanner_args.research_top = 200  # also scan ranks 101-200: Claude's report card + pick_log_200 only
 
 
 def write_picks(picks):
@@ -1362,6 +1363,11 @@ def main():
         done = pick_log.settle(plog, HERE, states, live_state)
         pick_log.save(plog, HERE)
         print(f"Pick log: {len(plog['open'])} open, {done} finished this run")
+        wide = pick_log.load(HERE, "pick_log_200")
+        pick_log.record(wide, scanner.WIDE_PICKS, market_info, pick_log.WIDE_SNAP)
+        done = pick_log.settle(wide, HERE, states, live_state, "pick_log_200", pick_log.WIDE_SNAP)
+        pick_log.save(wide, HERE, "pick_log_200")
+        print(f"Pick log (top 200, research): {len(wide['open'])} open, {done} finished this run")
     except Exception as e:
         print(f"Pick log error: {type(e).__name__}: {e}")
     write_reports(states, live_state, card)
