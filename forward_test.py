@@ -776,6 +776,7 @@ CAL_CSS = """
   .cal-cell.loss { background:color-mix(in srgb, var(--down) 22%, var(--card)); }
   .cal-cell.sel { box-shadow:0 0 0 2px var(--accent); }
   .cal-cell.today .cal-num { color:var(--accent); font-weight:700; }
+  .cal-cell.today { outline:1.5px solid var(--accent); outline-offset:-1.5px; }  /* today's square */
   .cal-num { font-size:15px; line-height:1; }
   .cal-amt { font-size:13.5px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums; white-space:nowrap;
              color:var(--text); }
