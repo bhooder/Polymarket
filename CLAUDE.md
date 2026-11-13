@@ -48,7 +48,9 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   bet or not. `pick_log_open.json` = undecided picks (first and last look before the start:
   bettors, against, conviction, bankroll %, $ in, entry, price). `pick_log.csv` = finished
   picks, one row each, append-only: + closing price, result (1/0/0.5) and which strategies
-  bet it. Use it to test new strategy ideas on all picks.
+  bet it. Use it to test new strategy ideas on all picks. Rows first seen before 2026-11-13
+  were backfilled from the picks.html history: no conviction or against-$ columns, and no
+  Against count before ~2026-10-31.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
