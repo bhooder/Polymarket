@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1119.8390985531041,
+ "cash": 1111.2077019636024,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8900,6 +8900,44 @@
    "payout": 47.71,
    "profit": 25.6,
    "settled_at": "2026-11-13T10:57:10.155118+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-13T15:35:43.048898+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Thunder vs. Clippers",
+   "link": "https://polymarket.com/event/nba-okc-lac-2026-11-13",
+   "market_type": "moneyline",
+   "size_multiplier": 0.764,
+   "condition_id": "0x6c0dac1551a12d7ade3ac5585a587c251f9d78e00f55ee6e42b72c2bf38a9955",
+   "token_id": "68055810094972513392879807829512470462982648977211641654146147780303380024799",
+   "outcome_index": 1,
+   "ends": "2026-11-14T03:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.5,
+   "traders_entry": 0.28,
+   "avg_price": 0.29,
+   "shares": 28.349643412075043,
+   "cost": 8.63,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV13OKCLAC-LAC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.2983,
+    "kalshi": 0.3045,
+    "polymarket_us": 0.3096
+   },
+   "intl_cost_per_share": 0.3003,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
