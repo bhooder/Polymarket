@@ -3441,7 +3441,7 @@
   },
   {
    "placed_at": "2026-11-12T19:21:37.792188+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Raptors vs. 76ers: O/U 224.5",
@@ -3471,9 +3471,9 @@
     "kalshi": 0.5476
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -13.05,
+   "settled_at": "2026-11-13T02:30:57.173597+00:00",
    "topped_up_at": null
   }
  ]

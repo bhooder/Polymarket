@@ -2170,5 +2170,16 @@
    "status": 200,
    "body": "{\"id\":\"DP85YCK013Z6\",\"executions\":[{\"id\":\"DP85YCK0B3YG\",\"order\":{\"id\":\"DP85YCK013Z6\",\"marketSlug\":\"tsc-nba-tor-phi-2026-11-12-224pt5\",\"side\":\"ORDER_SIDE_SELL\",\"type\":\"ORDER_TYPE_LIMIT\",\"price\":{\"value\":\"0.47\",\"currency\":\"USD\"},\"quantity\":6,\"cumQuantity\":0,\"leavesQuantity\":6,\"tif\":\"TIME_IN_FORCE_IMMEDIATE_OR_CANCEL\",\"goodTillTime\":null,\"intent\":\"ORDER_INTENT_BUY_SHORT\",\"marketMetadata\":{\"slug\":\"tsc-nba-tor-phi-2026-11-12-224pt5\",\"icon\":\"\",\"title\":\"TOR Raptors vs. PHI 76ers\",\"outcome\":\"Under\",\"eventSlug\":\"nba-tor-phi-2026-11-12\",\"eventId\":\"205501\"},\"state\":\"ORDER_STATE_NEW\",\"commissionNotionalTotalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"commissionsBasisPoints\":\"0\",\"makerCommissionsBasisPoints\":\"0\",\"avgPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"cashOrderQty\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"insertTime\":\"2026-11-12T19:21:39.149146225Z\",\"createTime\":\"2026-11-12T19:21:39.148101993Z\",\"outcomeSide\":\"OUTCOME_SIDE_NO\",\"action\":\"ORDER_ACTION_BUY\",\"manualOrderIndicator\":\"MANUAL_ORDER_INDICATOR_AUTOMATIC\",\"lastTransactTime\":\"2026-11-12T19:21:39.149146225Z\",\"estimatedAmount\":null,\"principal\":null,\"estimatedCommission\":null},\"lastShares\":\"0.0000\",\"lastPx\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"type\":\"EXECUTION_TYPE_NEW\",\"text\":\"\",\"orderRejectReason\":\"ORD_REJECT_REASON_EXCHANGE_OPTION\",\"transactTime\":\"2026-11-12T19:21:39.149146225Z\",\"legPrices\":[],\"tradeId\":\"\",\"aggressor\":false,\"commissionNotionalCollected\":{\"value\":\"0.0000\",\"currency\":\"USD\"},\"unsolicitedCancelReason\":\"UNSOLICITED_CX"
   }
+ },
+ {
+  "at": "2026-11-13T02:30:57.695363+00:00",
+  "event": "settled",
+  "bet": "Under 224.5 (Raptors vs. 76ers)",
+  "status": "lost",
+  "cost": 3.26,
+  "payout": 0.0,
+  "profit": -3.26,
+  "venue": "polymarket_us",
+  "ref": "tsc-nba-tor-phi-2026-11-12-224pt5"
  }
 ]
