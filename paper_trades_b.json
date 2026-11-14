@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 912.6104251467583,
+ "cash": 901.5223465525708,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9382,6 +9382,42 @@
     "kalshi": 0.4975
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T00:40:20.449155+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Patriots vs. Lions: O/U 50.5",
+   "link": "https://polymarket.com/event/nfl-ne-det-2026-11-15",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe",
+   "token_id": "105890309526528561086228730920206947021794795382433150705390842000479371147150",
+   "outcome_index": 0,
+   "ends": "2026-11-15T14:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 21.832813457525525,
+   "cost": 11.09,
+   "fees": 0.39,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV15NEDET-51",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5079
+   },
+   "intl_cost_per_share": 0.4775,
    "payout": null,
    "profit": null,
    "settled_at": null,
