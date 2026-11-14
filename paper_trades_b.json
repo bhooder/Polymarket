@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 948.0682454471017,
+ "cash": 926.7601692590703,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9783,6 +9783,78 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T17:01:39.125981+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texas A&M",
+   "market": "Tennessee vs. Texas A&M",
+   "link": "https://polymarket.com/event/cfb-tenn-txam-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3",
+   "token_id": "110928135630107004379466635088434329420618188499293405738749382464138298417980",
+   "outcome_index": 1,
+   "ends": "2026-11-14T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 8.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 20.985511130202784,
+   "cost": 10.65,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFGAME-26NOV14TENNTXAM-TXAM",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5076
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T17:01:39.948986+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Capitals",
+   "market": "Devils vs. Capitals",
+   "link": "https://polymarket.com/event/nhl-nj-wsh-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3fcc57ff2ce2624279ac9d3223991736fb5057f28ace0d2ce52025d7233d0b71",
+   "token_id": "37624992287523834288529847632230181034105136017223404980409738187965279999022",
+   "outcome_index": 1,
+   "ends": "2026-11-15T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.47,
+   "avg_price": 0.45,
+   "shares": 22.789279409404593,
+   "cost": 10.66,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV14NJWSH-WSH",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4676
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
