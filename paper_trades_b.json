@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 779.5418728608752,
+ "cash": 768.9918728608752,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10086,7 +10086,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:28.731662+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Sweden vs. Bosnia and Herzegovina: O/U 2.5",
@@ -10116,9 +10116,9 @@
     "kalshi": 0.4171
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.22,
+   "settled_at": "2026-11-14T21:12:04.602924+00:00",
    "topped_up_at": null
   },
   {
@@ -10189,6 +10189,42 @@
     "prophetx": 0.505
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T21:16:09.397300+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Stanford",
+   "market": "Spread: Virginia Tech (-16.5)",
+   "link": "https://polymarket.com/event/cfb-stan-vtech-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7872fb173a8804b5fe90238f7447e1ae342e7ebe4966d5f833376cd56d627ab0",
+   "token_id": "57415209243859213234938616857048370712666159844334387184506980438384936884872",
+   "outcome_index": 1,
+   "ends": "2026-11-15T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.47,
+   "avg_price": 0.47,
+   "shares": 21.370789270850956,
+   "cost": 10.55,
+   "fees": 0.5057,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-stan-vtech-2026-11-14-pos-16pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
