@@ -2412,5 +2412,32 @@
   "mode": "on",
   "paper_price": 0.3447,
   "share": 0.013184999999999999
+ },
+ {
+  "at": "2026-11-14T23:11:53.884198+00:00",
+  "event": "order",
+  "filled": 6.0,
+  "price": 0.5,
+  "fees": 0.10500000000000001,
+  "bet": "Nets +2.5",
+  "pick": "Nets",
+  "market": "Spread: Grizzlies (-2.5)",
+  "venue": "kalshi",
+  "ref": "KXNBASPREAD-26NOV14BKNMEM-MEM3",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5,
+  "share": 0.015,
+  "side": "NO",
+  "contracts": 6,
+  "max_price": 0.51,
+  "dollars": 3.2,
+  "bankroll": 213.09,
+  "order_id": "fecd3d50-8d6f-5046-a4eb-caf0be438674",
+  "reply": {
+   "path": "/trade-api/v2/portfolio/events/orders",
+   "status": 201,
+   "body": "{\"average_fee_paid\":\"0.0175\",\"average_fill_price\":\"0.5000\",\"client_order_id\":\"fecd3d50-8d6f-5046-a4eb-caf0be438674\",\"fill_count\":\"6.00\",\"order_id\":\"01a1dc54-e2a8-72a9-ad1c-08a34276b763\",\"remaining_count\":\"0.00\",\"ts_ms\":1794697913876}"
+  }
  }
 ]
