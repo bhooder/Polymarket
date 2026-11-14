@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 926.7601692590703,
+ "cash": 905.4501692590703,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9855,6 +9855,43 @@
     "kalshi": 0.4676
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T17:39:14.492353+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Vanderbilt",
+   "market": "Spread: Alabama (-14.5)",
+   "link": "https://polymarket.com/event/cfb-ala-vand-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf7ab147a6878321568ae4f7ea180cec13aebc70f775d18714d22ec3f176ecd11",
+   "token_id": "2801025360205501288271612203496967951715062665189224895240305088092077730973",
+   "outcome_index": 1,
+   "ends": "2026-11-14T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 5.7,
+   "traders_entry": 0.51,
+   "avg_price": 0.4878,
+   "shares": 43.242527764365036,
+   "cost": 21.31,
+   "fees": 0.2161,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "651d6f3c1ca7a636251a33880bcef9db",
+    "fee_rate": 0.02,
+    "event_id": 1704710982
+   },
+   "quotes": {
+    "prophetx": 0.4928,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
