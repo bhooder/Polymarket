@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 935.958580222084,
+ "cash": 973.2117534114702,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9425,7 +9425,7 @@
   },
   {
    "placed_at": "2026-11-14T01:20:08.370246+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Jazz",
    "market": "Spread: Rockets (-15.5)",
@@ -9455,14 +9455,14 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.01,
+   "profit": 9.93,
+   "settled_at": "2026-11-14T04:54:40.941864+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-14T01:41:03.712010+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Rangers",
    "market": "Rangers vs. Canucks",
@@ -9492,9 +9492,9 @@
     "kalshi": 0.6861
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.25,
+   "profit": 5.16,
+   "settled_at": "2026-11-14T04:54:41.012452+00:00",
    "topped_up_at": null
   },
   {
