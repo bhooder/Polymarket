@@ -2376,5 +2376,16 @@
   "profit": -3.28,
   "venue": "prophetx",
   "ref": "4b5cafac180ea3493048779bcb021729"
+ },
+ {
+  "at": "2026-11-14T04:02:31.099598+00:00",
+  "event": "settled",
+  "bet": "Pelicans to win (vs. Grizzlies)",
+  "status": "lost",
+  "cost": 3.42,
+  "payout": 0.0,
+  "profit": -3.42,
+  "venue": "kalshi",
+  "ref": "KXNBAGAME-26NOV13MEMNOP-NOP"
  }
 ]

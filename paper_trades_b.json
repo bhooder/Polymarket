@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 868.7161974911569,
+ "cash": 935.958580222084,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8982,7 +8982,7 @@
   },
   {
    "placed_at": "2026-11-13T18:28:01.132820+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Grizzlies vs. Pelicans",
@@ -9012,9 +9012,9 @@
     "kalshi": 0.4372
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.62,
+   "settled_at": "2026-11-14T04:02:30.341533+00:00",
    "topped_up_at": null
   },
   {
@@ -9092,7 +9092,7 @@
   },
   {
    "placed_at": "2026-11-13T19:31:27.126042+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Cavaliers vs. Heat: O/U 235.5",
@@ -9121,14 +9121,14 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.8,
+   "profit": 9.49,
+   "settled_at": "2026-11-14T04:02:30.401648+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-13T19:31:27.596951+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Florida State",
    "market": "Florida State vs. Pittsburgh",
@@ -9157,9 +9157,9 @@
     "prophetx": 0.4016
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.02,
+   "profit": 16.17,
+   "settled_at": "2026-11-14T04:02:30.401687+00:00",
    "topped_up_at": null
   },
   {
@@ -9274,7 +9274,7 @@
   },
   {
    "placed_at": "2026-11-13T23:34:29.396512+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Cavaliers vs. Heat",
@@ -9305,14 +9305,14 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.42,
+   "profit": 8.33,
+   "settled_at": "2026-11-14T04:02:30.450831+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-13T23:34:32.897135+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Hawks",
    "market": "Spread: Hawks (-6.5)",
@@ -9342,9 +9342,9 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.18,
+   "settled_at": "2026-11-14T04:02:30.513736+00:00",
    "topped_up_at": "2026-11-14T00:15:09.224567+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 20.2,

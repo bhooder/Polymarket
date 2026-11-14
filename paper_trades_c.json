@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 991.3882864691527,
+ "cash": 1040.5619023621784,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3076,7 +3076,7 @@
   },
   {
    "placed_at": "2026-11-13T19:31:28.983856+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Florida State",
    "market": "Florida State vs. Pittsburgh",
@@ -3105,9 +3105,9 @@
     "prophetx": 0.4016
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.19,
+   "profit": 15.67,
+   "settled_at": "2026-11-14T04:02:30.852447+00:00",
    "topped_up_at": null
   },
   {
@@ -3221,7 +3221,7 @@
   },
   {
    "placed_at": "2026-11-14T00:15:12.144248+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Grizzlies",
    "market": "Spread: Grizzlies (-4.5)",
@@ -3250,9 +3250,9 @@
     "kalshi": 0.4774
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.98,
+   "profit": 12.01,
+   "settled_at": "2026-11-14T04:02:30.931143+00:00",
    "topped_up_at": null
   },
   {
