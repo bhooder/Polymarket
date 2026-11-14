@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 973.2117534114702,
+ "cash": 1022.5074985431748,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -8907,7 +8907,7 @@
   },
   {
    "placed_at": "2026-11-13T15:35:43.048898+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Clippers",
    "market": "Thunder vs. Clippers",
@@ -8938,9 +8938,9 @@
     "polymarket_us": 0.3096
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 28.35,
+   "profit": 19.72,
+   "settled_at": "2026-11-14T06:35:39.050382+00:00",
    "topped_up_at": null
   },
   {
@@ -9499,7 +9499,7 @@
   },
   {
    "placed_at": "2026-11-14T03:10:24.788830+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Thunder vs. Clippers: O/U 222.5",
@@ -9529,9 +9529,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.95,
+   "profit": 10.32,
+   "settled_at": "2026-11-14T06:35:39.119767+00:00",
    "topped_up_at": null
   }
  ]
