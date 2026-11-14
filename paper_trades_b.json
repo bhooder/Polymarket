@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 979.4882454471017,
+ "cash": 968.6182454471017,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9674,6 +9674,42 @@
     "kalshi": 0.5775
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T13:25:12.521885+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Liberty",
+   "market": "Spread: Liberty (-20.5)",
+   "link": "https://polymarket.com/event/cfb-mtnst-librty-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe2ff415cc856c428aae97db07b2510558bae8504eb3510b84aa25afa926ea4b6",
+   "token_id": "113949115320171693655150099425850118957246447221642473760451308541137471218451",
+   "outcome_index": 0,
+   "ends": "2026-11-14T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.7,
+   "traders_entry": 0.53,
+   "avg_price": 0.535,
+   "shares": 19.458191404070963,
+   "cost": 10.87,
+   "fees": 0.4599,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-mtnst-librty-2026-11-14-pos-20pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5586
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
