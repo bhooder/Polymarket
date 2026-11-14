@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1033.758331776156,
+ "cash": 1011.80789431229,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3208,6 +3208,79 @@
     "kalshi": 0.7537
    },
    "intl_cost_per_share": 0.7399,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T00:15:12.144248+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Grizzlies",
+   "market": "Spread: Grizzlies (-4.5)",
+   "link": "https://polymarket.com/event/nba-mem-nop-2026-11-13",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc71264e683e4c414f7aa73b734ed7c701358adf182941937cf2b7d55a269de6d",
+   "token_id": "83231484253791116557595216836487677160127221380305700362121162413621475204247",
+   "outcome_index": 0,
+   "ends": "2026-11-14T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 22.979211877969284,
+   "cost": 10.97,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV13MEMNOP-MEM5",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4774
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T00:15:12.921409+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Warriors vs. Spurs: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-gsw-sas-2026-11-13",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa0218e40ad8e8568b879ce9c54a734c5b14231f22527b7b9733bf72dfab13d0e",
+   "token_id": "29956911865258890219351006739888503677859102132331060969395183005349366131422",
+   "outcome_index": 0,
+   "ends": "2026-11-14T02:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.49,
+   "avg_price": 0.4695,
+   "shares": 23.141857288859985,
+   "cost": 10.98,
+   "fees": 0.1153,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a3c9f81f6b51febd5e894e4112683cf5",
+    "fee_rate": 0.02,
+    "event_id": 1704740192
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4977
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

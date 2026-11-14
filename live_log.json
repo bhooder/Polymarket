@@ -2338,5 +2338,32 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0169\",\"average_fill_price\":\"0.4100\",\"client_order_id\":\"dccf74a3-076e-5cbf-9e45-53b3b895149b\",\"fill_count\":\"8.00\",\"order_id\":\"01a1d743-81c0-7fcb-8dfb-92db90fe5089\",\"remaining_count\":\"0.00\",\"ts_ms\":1794612888402}"
   }
+ },
+ {
+  "at": "2026-11-14T00:15:31.582024+00:00",
+  "event": "order",
+  "filled": 6.48,
+  "price": 0.5046296296296297,
+  "fees": 0.0,
+  "bet": "Hawks -6.5",
+  "pick": "Hawks",
+  "market": "Spread: Hawks (-6.5)",
+  "venue": "prophetx",
+  "ref": "e6060bcaa664a3d0be8c2a9438c2fa4b",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.505,
+  "share": 0.015,
+  "side": "BUY",
+  "stake": 3.27,
+  "max_price": 0.51,
+  "dollars": 3.34,
+  "bankroll": 222.92,
+  "order_id": "ac218e0e-6c8a-5ab1-b1f6-a7189975a836",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.67,\"mark_value\":2.98,\"market_id\":219,\"net_cost_basis\":3.28,\"net_outcome_id\":5,\"net_size\":4.47,\"sides\":[{\"average_price\":0.73,\"closable_size\":4.47,\"closed_size\":0,\"cost_basis\":3.28,\"liquidation_value\":2.98,\"mark_price\":0.67,\"mark_value\":2.98,\"outcome_id\":5,\"size\":4.47,\"strike_id\":\"4b5cafac180ea3493048779bcb021729\"}],\"sport_event_id\":1704740183,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.5,\"mark_value\":3.22,\"market_id\":223,\"net_cost_basis\":3.27,\"net_outcome_id\":1715,\"net_size\":6.48,\"sides\":[{\"average_price\":0.5,\"closable_size\":6.48,\"closed_size\":0,\"cost_basis\":3.27,\"liquidation_value\":3.22,\"mark_price\":0.5,\"mark_value\":3.22,\"outcome_id\":1715,\"size\":6.48,\"strike_id\":\"e6060bcaa664a3d0be8c2a9438c2fa4b\"}],\"sport_event_id\":1704740184,\"strike\":-6.5}]}"
+  }
  }
 ]

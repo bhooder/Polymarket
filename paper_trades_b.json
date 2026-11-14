@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 934.7904251467584,
+ "cash": 912.6104251467583,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9313,7 +9313,7 @@
   {
    "placed_at": "2026-11-13T23:34:32.897135+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Hawks",
    "market": "Spread: Hawks (-6.5)",
    "link": "https://polymarket.com/event/nba-atl-chi-2026-11-13",
@@ -9327,9 +9327,9 @@
    "avg_bankroll_pct": 0.3,
    "traders_entry": 0.52,
    "avg_price": 0.5,
-   "shares": 21.174224343675416,
-   "cost": 11.09,
-   "fees": 0.5029,
+   "shares": 42.34844868735083,
+   "cost": 22.18,
+   "fees": 1.0058,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -9342,6 +9342,46 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-14T00:15:09.224567+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 20.2,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-14T00:15:11.482744+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Warriors vs. Spurs: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-gsw-sas-2026-11-13",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa0218e40ad8e8568b879ce9c54a734c5b14231f22527b7b9733bf72dfab13d0e",
+   "token_id": "29956911865258890219351006739888503677859102132331060969395183005349366131422",
+   "outcome_index": 0,
+   "ends": "2026-11-14T02:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.49,
+   "avg_price": 0.4695,
+   "shares": 23.373697389203752,
+   "cost": 11.09,
+   "fees": 0.1164,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a3c9f81f6b51febd5e894e4112683cf5",
+    "fee_rate": 0.02,
+    "event_id": 1704740192
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4975
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
