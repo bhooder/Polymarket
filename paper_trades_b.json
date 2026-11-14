@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 990.3537518498956,
+ "cash": 979.4882454471017,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9638,6 +9638,42 @@
     "polymarket_us": 0.7007
    },
    "intl_cost_per_share": 0.6811,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T12:24:49.500116+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will CD Castell\u00f3n win on 2026-11-14?",
+   "link": "https://polymarket.com/event/es2-vld-cas-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x16677e906062f14bb4a90555d9683a089e68043c82939e2486c6016c75d3b8b9",
+   "token_id": "44719775552818551951517826636246314686246679556974082228745301792614620107610",
+   "outcome_index": 1,
+   "ends": "2026-11-14T13:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.8,
+   "traders_entry": 0.55,
+   "avg_price": 0.56,
+   "shares": 18.81340429070347,
+   "cost": 10.87,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGA2GAME-26NOV14VLLCAS-CAS",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5775
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,
