@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 790.2018728608751,
+ "cash": 779.5418728608752,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10153,6 +10153,42 @@
     "kalshi": 0.4272
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T20:31:06.081348+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Auburn vs. Mississippi State: O/U 51.5",
+   "link": "https://polymarket.com/event/cfb-aubrn-mspst-2026-11-14",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ac570c71354cd4ff8536a77bf933ec4d95575294d111aa9d07f7dca35cfa453",
+   "token_id": "55504977283807609046987221282174012402691244522109598413076182222042149364599",
+   "outcome_index": 0,
+   "ends": "2026-11-14T21:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 21.10891089108911,
+   "cost": 10.66,
+   "fees": 0.1055,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "be3fbd1d09dc7f8ecbbb02863a200233",
+    "fee_rate": 0.02,
+    "event_id": 1704710984
+   },
+   "quotes": {
+    "prophetx": 0.505
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
