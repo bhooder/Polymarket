@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 901.5223465525708,
+ "cash": 890.4397873337755,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9418,6 +9418,43 @@
     "kalshi": 0.5079
    },
    "intl_cost_per_share": 0.4775,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T01:20:08.370246+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jazz",
+   "market": "Spread: Rockets (-15.5)",
+   "link": "https://polymarket.com/event/nba-uta-hou-2026-11-13",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6081c64c1df6e24f5808d3e75cfe4f8b1916a9a54e3524ce43ada53b0ddfa76e",
+   "token_id": "114808293815708651664633988638450683638092296317322123540886625757423701401448",
+   "outcome_index": 1,
+   "ends": "2026-11-14T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 21.005018076069256,
+   "cost": 11.08,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV13UTAHOU-HOU16",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5276,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
