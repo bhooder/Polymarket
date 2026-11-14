@@ -3589,7 +3589,7 @@
   },
   {
    "placed_at": "2026-11-13T23:34:26.764852+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Knicks",
    "market": "Knicks vs. Pacers",
@@ -3619,9 +3619,9 @@
     "kalshi": 0.7538
    },
    "intl_cost_per_share": 0.7399,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -13.09,
+   "settled_at": "2026-11-14T03:07:21.641918+00:00",
    "topped_up_at": null
   },
   {

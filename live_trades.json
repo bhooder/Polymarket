@@ -1808,7 +1808,7 @@
   },
   {
    "placed_at": "2026-11-13T23:34:47.731565+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Knicks",
@@ -1835,9 +1835,9 @@
     "event_id": 1704740183
    },
    "paper_price": 0.7333333333333333,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.28,
+   "settled_at": "2026-11-14T03:07:23.051615+00:00",
    "topped_up_at": null
   },
   {
@@ -2311,5 +2311,5 @@
   }
  ],
  "daily_check": "2026-11-14",
- "balances_checked_at": "2026-11-14T02:18:45.509975+00:00"
+ "balances_checked_at": "2026-11-14T03:10:27.156431+00:00"
 }

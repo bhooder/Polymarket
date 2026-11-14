@@ -2365,5 +2365,16 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.67,\"mark_value\":2.98,\"market_id\":219,\"net_cost_basis\":3.28,\"net_outcome_id\":5,\"net_size\":4.47,\"sides\":[{\"average_price\":0.73,\"closable_size\":4.47,\"closed_size\":0,\"cost_basis\":3.28,\"liquidation_value\":2.98,\"mark_price\":0.67,\"mark_value\":2.98,\"outcome_id\":5,\"size\":4.47,\"strike_id\":\"4b5cafac180ea3493048779bcb021729\"}],\"sport_event_id\":1704740183,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.5,\"mark_value\":3.22,\"market_id\":223,\"net_cost_basis\":3.27,\"net_outcome_id\":1715,\"net_size\":6.48,\"sides\":[{\"average_price\":0.5,\"closable_size\":6.48,\"closed_size\":0,\"cost_basis\":3.27,\"liquidation_value\":3.22,\"mark_price\":0.5,\"mark_value\":3.22,\"outcome_id\":1715,\"size\":6.48,\"strike_id\":\"e6060bcaa664a3d0be8c2a9438c2fa4b\"}],\"sport_event_id\":1704740184,\"strike\":-6.5}]}"
   }
+ },
+ {
+  "at": "2026-11-14T03:07:23.116022+00:00",
+  "event": "settled",
+  "bet": "Knicks to win (vs. Pacers)",
+  "status": "lost",
+  "cost": 3.28,
+  "payout": 0.0,
+  "profit": -3.28,
+  "venue": "prophetx",
+  "ref": "4b5cafac180ea3493048779bcb021729"
  }
 ]

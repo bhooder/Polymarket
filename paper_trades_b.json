@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 879.3497873337755,
+ "cash": 868.7161974911569,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9200,7 +9200,7 @@
   },
   {
    "placed_at": "2026-11-13T22:54:29.866287+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Bucks vs. Magic: O/U 223.5",
@@ -9230,14 +9230,14 @@
     "polymarket_us": 0.5268
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.17,
+   "settled_at": "2026-11-14T03:07:22.205244+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-13T23:34:28.147812+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Knicks",
    "market": "Knicks vs. Pacers",
@@ -9267,9 +9267,9 @@
     "kalshi": 0.7536
    },
    "intl_cost_per_share": 0.7399,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.17,
+   "settled_at": "2026-11-14T03:07:22.205280+00:00",
    "topped_up_at": null
   },
   {
@@ -9492,6 +9492,43 @@
     "kalshi": 0.6861
    },
    "intl_cost_per_share": 0.6712,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T03:10:24.788830+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Thunder vs. Clippers: O/U 222.5",
+   "link": "https://polymarket.com/event/nba-okc-lac-2026-11-13",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf1cf6b5eca386089a41dc1a15e171dc6a98e590c88e747e6096e7a7e493f89db",
+   "token_id": "93580832944410409673327892831668545177985789442177394200023029401273946731972",
+   "outcome_index": 0,
+   "ends": "2026-11-14T03:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 20.946101719629635,
+   "cost": 10.63,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV13OKCLAC-223",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5077,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,

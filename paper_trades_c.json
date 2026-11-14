@@ -3148,7 +3148,7 @@
   },
   {
    "placed_at": "2026-11-13T22:54:32.465119+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bucks vs. Magic: O/U 223.5",
@@ -3177,14 +3177,14 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.98,
+   "settled_at": "2026-11-14T03:07:22.800092+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-13T23:34:33.873281+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Knicks",
    "market": "Knicks vs. Pacers",
@@ -3214,9 +3214,9 @@
     "kalshi": 0.7537
    },
    "intl_cost_per_share": 0.7399,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.98,
+   "settled_at": "2026-11-14T03:07:22.800123+00:00",
    "topped_up_at": null
   },
   {
