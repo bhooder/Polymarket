@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1232.0240757038496,
+ "cash": 1196.1072859318306,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3553,7 +3553,7 @@
   {
    "placed_at": "2026-11-13T15:58:16.259330+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Josh Hokit",
    "market": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
    "link": "https://polymarket.com/event/ufc-jos52-cir-2026-11-14",
@@ -3566,10 +3566,10 @@
    "bettors": 5,
    "avg_bankroll_pct": 12.5,
    "traders_entry": 0.36,
-   "avg_price": 0.34,
-   "shares": 32.30177561370563,
-   "cost": 11.49,
-   "fees": 0.51,
+   "avg_price": 0.3447,
+   "shares": 61.78869233161231,
+   "cost": 22.28,
+   "fees": 0.98,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -3585,7 +3585,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-14T07:46:47.904521+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 23.1,
+   "top_up_size_multiplier": 0.86
   },
   {
    "placed_at": "2026-11-13T23:34:26.764852+00:00",
@@ -3696,6 +3699,42 @@
    "payout": 0.0,
    "profit": -26.17,
    "settled_at": "2026-11-14T04:54:40.578111+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T07:46:48.451094+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "MOUZ",
+   "market": "Counter-Strike: Spirit vs MOUZ (BO3) - BLAST Rivals Playoffs",
+   "link": "https://polymarket.com/event/cs2-ts7-mouz-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6cd1330980f778692947d0ef31f533b0375046b335c8845ca265c8c42d8db753",
+   "token_id": "35243610203114140475638716555852668946467974164967105956078357552772356445150",
+   "outcome_index": 1,
+   "ends": "2026-11-14T08:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 35.7,
+   "traders_entry": 0.54,
+   "avg_price": 0.54,
+   "shares": 45.06734985324405,
+   "cost": 25.13,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV140300MOUZTS-MOUZ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5575
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

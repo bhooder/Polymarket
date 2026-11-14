@@ -2398,5 +2398,19 @@
   "profit": -3.27,
   "venue": "prophetx",
   "ref": "e6060bcaa664a3d0be8c2a9438c2fa4b"
+ },
+ {
+  "at": "2026-11-14T07:46:53.352837+00:00",
+  "event": "skipped",
+  "reason": "Flat stakes: real bets are never topped up.",
+  "bet": "Josh Hokit to win (vs. Ciryl Gane (Heavyweight, Main Card))",
+  "pick": "Josh Hokit",
+  "market": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+  "venue": "kalshi",
+  "ref": "KXUFCFIGHT-26NOV14GANHOK-HOK",
+  "top_up": true,
+  "mode": "on",
+  "paper_price": 0.3447,
+  "share": 0.013184999999999999
  }
 ]
