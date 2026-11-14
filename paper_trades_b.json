@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1022.5074985431748,
+ "cash": 1011.6418366719766,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9532,6 +9532,42 @@
    "payout": 20.95,
    "profit": 10.32,
    "settled_at": "2026-11-14T06:35:39.119767+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T10:19:05.718855+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Team Falcons",
+   "market": "Counter-Strike: FURIA vs Team Falcons (BO3) - BLAST Rivals Playoffs",
+   "link": "https://polymarket.com/event/cs2-furia-fal2-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x721b4f5aeacd64d011b1d52234b52111b10466e60c81f51fcfb50ce686152010",
+   "token_id": "32017896468660101089348809996836868536053704676247704599557402601839845523297",
+   "outcome_index": 1,
+   "ends": "2026-11-14T10:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.3,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 21.399309941220864,
+   "cost": 10.87,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV140530FALFURIA-FAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5078
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

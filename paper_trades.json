@@ -3703,7 +3703,7 @@
   },
   {
    "placed_at": "2026-11-14T07:46:48.451094+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "MOUZ",
    "market": "Counter-Strike: Spirit vs MOUZ (BO3) - BLAST Rivals Playoffs",
@@ -3732,9 +3732,9 @@
     "kalshi": 0.5575
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -25.13,
+   "settled_at": "2026-11-14T10:16:25.467716+00:00",
    "topped_up_at": null
   }
  ]
