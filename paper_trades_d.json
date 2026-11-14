@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 979.3826838170382,
+ "cash": 1026.8283270344202,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -81,7 +81,7 @@
   },
   {
    "placed_at": "2026-11-14T18:18:07.007918+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Bosnia and Herzegovina win on 2026-11-14?",
@@ -111,14 +111,14 @@
     "polymarket_us": 0.8714
    },
    "intl_cost_per_share": 0.866,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.24,
+   "profit": 3.06,
+   "settled_at": "2026-11-14T21:50:55.961216+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-14T19:14:34.916905+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Portugal win on 2026-11-14?",
@@ -147,9 +147,9 @@
     "kalshi": 0.4169
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.21,
+   "profit": 14.12,
+   "settled_at": "2026-11-14T21:50:55.972625+00:00",
    "topped_up_at": null
   }
  ]

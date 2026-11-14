@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 768.9918728608752,
+ "cash": 857.9787741792869,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9573,7 +9573,7 @@
   {
    "placed_at": "2026-11-14T11:04:38.124503+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Nuggets (-9.5)",
    "link": "https://polymarket.com/event/nba-den-nop-2026-11-14",
@@ -9587,9 +9587,9 @@
    "avg_bankroll_pct": 5.4,
    "traders_entry": 0.38,
    "avg_price": 0.39,
-   "shares": 25.62381194777857,
-   "cost": 10.42,
-   "fees": 0.43,
+   "shares": 51.64107974120441,
+   "cost": 21.01,
+   "fees": 0.87,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -9604,11 +9604,14 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-14T21:53:25.013157+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 2.1,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-14T11:04:38.355047+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Sweden win on 2026-11-14?",
@@ -9638,9 +9641,9 @@
     "polymarket_us": 0.7007
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.84,
+   "profit": 4.98,
+   "settled_at": "2026-11-14T21:50:55.417083+00:00",
    "topped_up_at": null
   },
   {
@@ -9865,7 +9868,7 @@
   },
   {
    "placed_at": "2026-11-14T17:39:14.492353+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Vanderbilt",
    "market": "Spread: Alabama (-14.5)",
@@ -9895,14 +9898,14 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.31,
+   "settled_at": "2026-11-14T21:50:55.569639+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-14T18:18:03.573225+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Portugal win on 2026-11-14?",
@@ -9931,9 +9934,9 @@
     "kalshi": 0.3864
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.75,
+   "profit": 31.75,
+   "settled_at": "2026-11-14T21:50:55.581574+00:00",
    "topped_up_at": null
   },
   {
@@ -10013,7 +10016,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:24.785336+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Crici\u00fama EC win on 2026-11-14?",
@@ -10042,9 +10045,9 @@
     "kalshi": 0.6659
    },
    "intl_cost_per_share": 0.6515,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 31.99,
+   "profit": 10.69,
+   "settled_at": "2026-11-14T21:50:55.657219+00:00",
    "topped_up_at": null
   },
   {

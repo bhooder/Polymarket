@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 976.4317776097507,
+ "cash": 995.9482825534221,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3368,7 +3368,7 @@
   },
   {
    "placed_at": "2026-11-14T15:38:46.630782+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Bosnia and Herzegovina win on 2026-11-14?",
@@ -3398,9 +3398,9 @@
     "polymarket_us": 0.89
    },
    "intl_cost_per_share": 0.8853,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.63,
+   "profit": 2.99,
+   "settled_at": "2026-11-14T21:50:55.905819+00:00",
    "topped_up_at": "2026-11-14T18:18:05.831205+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 11.2,
@@ -3408,7 +3408,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:32.046446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Crici\u00fama EC win on 2026-11-14?",
@@ -3437,9 +3437,9 @@
     "kalshi": 0.666
    },
    "intl_cost_per_share": 0.6515,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.23,
+   "profit": 5.42,
+   "settled_at": "2026-11-14T21:50:55.916670+00:00",
    "topped_up_at": null
   },
   {
@@ -3473,6 +3473,43 @@
     "polymarket_us": 0.5586
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T21:53:28.020571+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Pelicans",
+   "market": "Spread: Nuggets (-9.5)",
+   "link": "https://polymarket.com/event/nba-den-nop-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 0.979,
+   "condition_id": "0xd2e4296ca1829990b51f153cfc462b1c02287944100c07c4f6192db135a009ef",
+   "token_id": "65628182997446473556500109521470580648997903492578904664465412128172907555673",
+   "outcome_index": 1,
+   "ends": "2026-11-15T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.38,
+   "avg_price": 0.39,
+   "shares": 52.477173413204866,
+   "cost": 21.35,
+   "fees": 0.88,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV14DENNOP-DEN10",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4003,
+    "kalshi": 0.4068
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,

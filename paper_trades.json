@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1171.4796467763604,
+ "cash": 1230.5487446650359,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3739,7 +3739,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:22.164658+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Portugal win on 2026-11-14?",
@@ -3768,9 +3768,9 @@
     "kalshi": 0.4169
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 59.07,
+   "profit": 34.44,
+   "settled_at": "2026-11-14T21:50:55.122450+00:00",
    "topped_up_at": null
   }
  ]
