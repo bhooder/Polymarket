@@ -9352,7 +9352,7 @@
   },
   {
    "placed_at": "2026-11-14T00:15:11.482744+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Warriors vs. Spurs: O/U 217.5",
@@ -9382,9 +9382,9 @@
     "kalshi": 0.4975
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.09,
+   "settled_at": "2026-11-14T05:48:39.258017+00:00",
    "topped_up_at": null
   },
   {

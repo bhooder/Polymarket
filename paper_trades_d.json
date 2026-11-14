@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 991.2496584189882,
+ "cash": 1009.6601404388812,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -44,7 +44,7 @@
   },
   {
    "placed_at": "2026-11-14T00:40:21.382626+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Illinois",
    "market": "Spread: UCLA (-10.5)",
@@ -74,9 +74,9 @@
     "kalshi": 0.5475
    },
    "intl_cost_per_share": 0.5323,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.41,
+   "profit": 8.4,
+   "settled_at": "2026-11-14T05:48:39.729991+00:00",
    "topped_up_at": null
   }
  ]
