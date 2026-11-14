@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 811.2941538371791,
+ "cash": 790.2018728608751,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9791,7 +9791,7 @@
   {
    "placed_at": "2026-11-14T17:01:39.125981+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Texas A&M",
    "market": "Tennessee vs. Texas A&M",
    "link": "https://polymarket.com/event/cfb-tenn-txam-2026-11-14",
@@ -9804,10 +9804,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 8.0,
    "traders_entry": 0.49,
-   "avg_price": 0.49,
-   "shares": 20.985511130202784,
-   "cost": 10.65,
-   "fees": 0.37,
+   "avg_price": 0.485,
+   "shares": 42.393751191955005,
+   "cost": 21.31,
+   "fees": 0.75,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -9822,7 +9822,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-14T19:54:59.057055+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 9.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-14T17:01:39.948986+00:00",
@@ -10113,6 +10116,43 @@
     "kalshi": 0.4171
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T19:55:01.501175+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kevin Holland",
+   "market": "UFC 334: Kevin Holland vs. Uro\u0161 Medic (Welterweight, Main Card)",
+   "link": "https://polymarket.com/event/ufc-kev-uro-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xe4701628a8a5a26993f4949c5e74712be1dba01793d3cd0eb7006c3c9dadf38c",
+   "token_id": "34717719393900922849944382031712742833012474823431263540945245516600188424297",
+   "outcome_index": 0,
+   "ends": "2026-11-14T22:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.4,
+   "avg_price": 0.41,
+   "shares": 24.430062796738596,
+   "cost": 10.44,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUFCFIGHT-26NOV14MEDHOL-HOL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4181,
+    "kalshi": 0.4272
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,
