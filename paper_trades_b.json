@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 857.9787741792869,
+ "cash": 877.9510266128196,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9980,7 +9980,7 @@
   },
   {
    "placed_at": "2026-11-14T18:18:04.960286+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kennesaw State",
    "market": "Spread: Kennesaw State (-7.5)",
@@ -10009,9 +10009,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.97,
+   "profit": 9.31,
+   "settled_at": "2026-11-14T22:23:37.614977+00:00",
    "topped_up_at": null
   },
   {
