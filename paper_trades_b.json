@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 905.4501692590703,
+ "cash": 864.1346384850455,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9892,6 +9892,114 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T18:18:03.573225+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Portugal win on 2026-11-14?",
+   "link": "https://polymarket.com/event/unl-prt-den-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 0.939,
+   "condition_id": "0x93af6e2437b372c5e76f92554251e2a808a0b9a91f49dfe1b5c51c68d607b354",
+   "token_id": "83637022184954703207737478662188007457709755569066716334137090299726584091548",
+   "outcome_index": 1,
+   "ends": "2026-11-14T19:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.6,
+   "traders_entry": 0.36,
+   "avg_price": 0.37,
+   "shares": 51.74506946367879,
+   "cost": 20.0,
+   "fees": 0.85,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV14PORDEN-POR",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3864
+   },
+   "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T18:18:04.615353+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Nuggets vs. Pelicans: O/U 235.5",
+   "link": "https://polymarket.com/event/nba-den-nop-2026-11-14",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcb18d42e96cc137fdd15527e9faf1dc86a7904f98f6189a6bb016f8bc9b1b35d",
+   "token_id": "83709530141681280194290425920486055989117328932313455939475493026153585224823",
+   "outcome_index": 1,
+   "ends": "2026-11-15T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 20.57971014492754,
+   "cost": 10.66,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV14DENNOP-236",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.518
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T18:18:04.960286+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kennesaw State",
+   "market": "Spread: Kennesaw State (-7.5)",
+   "link": "https://polymarket.com/event/cfb-kenest-smho-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe8c8280e8411ad4e1b06efca95ef72691b21f55e25cd50e92b634c28b2531ceb",
+   "token_id": "21199311419195425074059601209382222907790701222372894973478975678913489744800",
+   "outcome_index": 0,
+   "ends": "2026-11-14T19:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 19.972252433532773,
+   "cost": 10.66,
+   "fees": 0.4742,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-kenest-smho-2026-11-14-neg-7pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,
