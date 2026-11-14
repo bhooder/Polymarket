@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1019.6983086574376,
+ "cash": 1008.8783562575962,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3361,6 +3361,43 @@
     "kalshi": 0.3863
    },
    "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-14T15:38:46.630782+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Bosnia and Herzegovina win on 2026-11-14?",
+   "link": "https://polymarket.com/event/unl-swe-bih-2026-11-14",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfa94631462ab4ac9bc25c023df23fa4f62a68892bb9b1e6307156cd8d49a997c",
+   "token_id": "43745180836303345628131074039160538730697893689755112277867038317059583364964",
+   "outcome_index": 1,
+   "ends": "2026-11-14T19:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 7.7,
+   "traders_entry": 0.87,
+   "avg_price": 0.88,
+   "shares": 12.18176409072879,
+   "cost": 10.82,
+   "fees": 0.1,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV14SWEBIH-BIH",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8882,
+    "polymarket_us": 0.89
+   },
+   "intl_cost_per_share": 0.8853,
    "payout": null,
    "profit": null,
    "settled_at": null,
