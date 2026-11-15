@@ -2515,5 +2515,32 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":3,\"market_id\":223,\"net_cost_basis\":3.04,\"net_outcome_id\":1715,\"net_size\":6.35,\"sides\":[{\"average_price\":0.48,\"closable_size\":6.35,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":3,\"mark_price\":0.47,\"mark_value\":3,\"outcome_id\":1715,\"size\":6.35,\"strike_id\":\"3ee1d0b2f189a73480138174f615b38a\"}],\"sport_event_id\":1700008804,\"strike\":2.5},{\"high_risk\":false,\"mark_price\":0.5,\"mark_value\":2.97,\"market_id\":225,\"net_cost_basis\":3.04,\"net_outcome_id\":13,\"net_size\":5.88,\"sides\":[{\"average_price\":0.52,\"closable_size\":5.88,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":2.97,\"mark_price\":0.5,\"mark_value\":2.97,\"outcome_id\":13,\"size\":5.88,\"strike_id\":\"db9820c0fe2694968a60e67b58403056\"}],\"sport_event_id\":1700008804,\"strike\":50.5}]}"
   }
+ },
+ {
+  "at": "2026-11-15T15:03:38.235584+00:00",
+  "event": "order",
+  "filled": 7.45,
+  "price": 0.3758389261744966,
+  "fees": 0.0,
+  "bet": "Falcons to win (vs. Chiefs)",
+  "pick": "Falcons",
+  "market": "Chiefs vs. Falcons",
+  "venue": "prophetx",
+  "ref": "486012137417f413ef27897e1a140d45",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.3759,
+  "share": 0.013785,
+  "side": "BUY",
+  "stake": 2.8,
+  "max_price": 0.38,
+  "dollars": 2.86,
+  "bankroll": 207.26,
+  "order_id": "3c6033ff-a547-5875-b6c7-cabedec1b4fd",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.16,\"mark_value\":1.04,\"market_id\":223,\"net_cost_basis\":3.04,\"net_outcome_id\":1715,\"net_size\":6.35,\"sides\":[{\"average_price\":0.48,\"closable_size\":6.35,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":1.04,\"mark_price\":0.16,\"mark_value\":1.04,\"outcome_id\":1715,\"size\":6.35,\"strike_id\":\"3ee1d0b2f189a73480138174f615b38a\"}],\"sport_event_id\":1700008804,\"strike\":2.5},{\"high_risk\":false,\"mark_price\":0.5,\"mark_value\":2.94,\"market_id\":225,\"net_cost_basis\":3.04,\"net_outcome_id\":13,\"net_size\":5.88,\"sides\":[{\"average_price\":0.52,\"closable_size\":5.88,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":2.94,\"mark_price\":0.5,\"mark_value\":2.94,\"outcome_id\":13,\"size\":5.88,\"strike_id\":\"db9820c0fe2694968a60e67b58403056\"}],\"sport_event_id\":1700008804,\"strike\":50.5},{\"high_risk\":false,\"mark_price\":0.36,\"mark_value\":2.72,\"market_id\":219,\"net_cost_basis\":2.8,\"net_outcome_id\":4,\"net_size\":7.45,\"sides\":[{\"average_price\":0.38,\"closable_size\":7.45,\"closed_size\":0,\"cost_basis\":2.8,\"liquidation_value\":2.72,\"mark_price\":0.36,\"mark_value\":2.72,\"outcome_id\":4,\"size\":7.45,\"strike_id\":\"486012137417f413ef27897e1a140d45\"}],\"sport_event_id\":1700008820,\"strike\":0}]}"
+  }
  }
 ]

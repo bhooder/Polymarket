@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 977.7415274480245,
+ "cash": 956.0068405774001,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3780,6 +3780,81 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4939,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T15:03:24.565262+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Falcons",
+   "market": "Spread: Chiefs (-2.5)",
+   "link": "https://polymarket.com/event/nfl-kc-atl-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x82a91489832bae00b1abe91f3a0cb50f12b94d400b7ec22541bb60eddc090906",
+   "token_id": "16307152033388191751913316689119668415835504643262640465299438587358851322244",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.8,
+   "traders_entry": 0.43,
+   "avg_price": 0.4348,
+   "shares": 25.24462596732588,
+   "cost": 11.1,
+   "fees": 0.1241,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "daf2cc87ef6b69216314ac7f2c33440a",
+    "fee_rate": 0.02,
+    "event_id": 1700008820
+   },
+   "quotes": {
+    "prophetx": 0.4397,
+    "kalshi": 0.4473,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4374,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T15:03:24.886691+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Spain vs. England: O/U 2.5",
+   "link": "https://polymarket.com/event/unl-esp-eng-2026-11-15-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.959,
+   "condition_id": "0x8f637b834636282d1e077c7df63cd62e63fb2a42af74c86c3e3b7fbe8bb86e33",
+   "token_id": "94929478460113730047027347530329840850937911095277325523036694167090375097529",
+   "outcome_index": 1,
+   "ends": "2026-11-15T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.38,
+   "avg_price": 0.39,
+   "shares": 26.140222745190616,
+   "cost": 10.63,
+   "fees": 0.44,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLTOTAL-26NOV15ESPENG-3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4068,
+    "polymarket_us": 0.4126
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,
