@@ -632,3 +632,132 @@ def test_scanner_keeps_only_a_few_trade_fields(monkeypatch):
     assert sc.RESEARCH["trades"]["0x1"][0] == {"timestamp": 1700000000, "side": "BUY", "asset": "tokA", "size": 5}
     assert "bio" in sc.RESEARCH["trade_fields"] and "asset" in sc.RESEARCH["trade_fields"]
     sc._keep_trades("0x2", [None, 5])                                    # nonsense in: no error out
+
+
+# ---------- fixes of 2026-11-15: entry time as UTC text, no trade evidence without a previous look ----------
+
+OLD_HEAD = ",".join(rl.POSITION_COLS)
+# three rows exactly as the first production run wrote them (shortened ids), plus one already-correct row
+OLD_ROWS = [
+    "bc7e1cd7a1b2,2026-11-15T19:18:43Z,,0xf0318c3213,0,7e984e393951,baseline,217729.36,,77966.73,,0.358,77293.92,0.355,"
+    "5687101.85,1.36,1794765284,,,confirmed,1,2026-11-15T18:53:23Z,2026-11-15T18:53:23Z,176932.98",
+    "aaaaaaaaaaaa,2026-11-15T19:18:43Z,,0xf0318c3213,1,111111111111,baseline,500.0,,250.0,,0.5,255.0,0.51,"
+    "5687101.85,0.0,1794000000,,,none_in_list,0,,,",
+    "bbbbbbbbbbbb,2026-11-15T19:40:00Z,2026-11-15T19:18:43Z,0xf0318c3213,0,7e984e393951,shares_up,227729.36,10000.0,"
+    "81500.0,3533.27,0.358,80000.0,0.355,5687101.85,1.4,1794765284,,,confirmed,2,2026-11-15T19:20:00Z,"
+    "2026-11-15T19:30:00Z,10000.0",
+    "cccccccccccc,2026-11-15T19:50:00Z,2026-11-15T19:40:00Z,0xf0318c3213,0,222222222222,first_seen,10.0,,5.0,,0.5,5.0,0.5,"
+    "5687101.85,0.0,2026-11-15T19:45:00Z,,,none_in_list,0,,,",
+]
+
+
+def old_folder(tmp_path, extra=""):
+    d = tmp_path / "research" / "positions" / "2026-11-15"
+    d.mkdir(parents=True)
+    (d / "19.csv").write_text(OLD_HEAD + "\r\n" + "\r\n".join(OLD_ROWS) + "\r\n" + extra, newline="")
+    return str(tmp_path)
+
+
+def test_entry_time_is_utc_text():
+    assert rl.entry_time(1794765284) == rl.entry_time("1794765284") == "2026-11-15T17:54:44Z"
+    assert rl.entry_time(1794765284000) == "2026-11-15T17:54:44Z"               # milliseconds
+    assert rl.entry_time("2026-11-19T10:00:00Z") == "2026-11-19T10:00:00Z"
+    assert rl.entry_time("2026-11-19 05:00:00-05:00") == "2026-11-19T10:00:00Z"  # any zone -> UTC
+    assert rl.entry_time(None) == rl.entry_time("") == rl.entry_time("soon") == ""   # unknown stays blank
+
+
+def test_new_rows_use_utc_entry_time_and_claim_no_evidence_without_a_previous_look(tmp_path):
+    f = str(tmp_path)
+    at = lambda minutes: int((NOW + timedelta(minutes=minutes)).timestamp())
+    old_trades = {W1: [{"token_id": "t1", "timestamp": at(-90), "side": "BUY", "size": 100}]}   # before we ever looked
+    p1 = {**pos("t1", 100, 50), "first_entry_at": at(-3000)}
+    step(f, make_obs({W1: [p1]}, trades=old_trades), 0)
+    base = rl.read_log(f, "positions")[0]
+    assert base["change"] == "baseline" and base["prev_observed_at"] == ""
+    assert (base["trade_evidence"], base["trades_in_gap"], base["trade_first_at"], base["trade_shares"]) == (
+        "no_previous_look", "", "", "")                                        # an old trade is NOT a new purchase
+    assert base["position_first_entry_at"] == "2026-11-18T13:00:00Z"            # UTC text, not 17946...
+    # a trader read for the first time later on: also no previous look, so also no evidence claimed
+    step(f, make_obs({W1: [p1], W2: [pos("t2")]}, trades={W2: [{"token_id": "t2", "timestamp": at(5), "side": "BUY", "size": 9}]}), 10)
+    newcomer = rl.read_log(f, "positions")[-1]
+    assert (newcomer["w"], newcomer["change"], newcomer["trade_evidence"]) == (W2, "first_seen", "no_previous_look")
+    # with a previous look, evidence works as before
+    trades = {W1: old_trades[W1] + [{"token_id": "t1", "timestamp": at(15), "side": "BUY", "size": 50}]}
+    step(f, make_obs({W1: [{**p1, "current_size": 150, "entry_cost_usdc": 80}], W2: [pos("t2")]}, trades=trades), 20)
+    up = rl.read_log(f, "positions")[-1]
+    assert (up["change"], up["trade_evidence"], up["trades_in_gap"], up["trade_shares"]) == ("shares_up", "confirmed", "1", "50.0")
+
+
+def test_saved_rows_are_corrected_once_with_an_audit_trail(tmp_path):
+    f = old_folder(tmp_path, extra="dddddddddddd,2026-11-15T19:55:00Z,,0xf03")   # plus a row cut short
+    before = read(f, "positions")
+    step(f, make_obs({}), 0)
+    rows = {r["oid"]: r for r in rl.read_log(f, "positions")}
+    assert list(rows) == [r["oid"] for r in before[:4]]                         # same rows, same order, same ids
+    a, b, c, d = (rows[k] for k in ("bc7e1cd7a1b2", "aaaaaaaaaaaa", "bbbbbbbbbbbb", "cccccccccccc"))
+    assert a["position_first_entry_at"] == "2026-11-15T17:54:44Z" and b["position_first_entry_at"] == "2026-11-06T21:20:00Z"
+    assert [a[k] for k in rl.EVIDENCE_COLS] == ["no_previous_look", "", "", "", ""] == [b[k] for k in rl.EVIDENCE_COLS]
+    # a row that HAD a previous look keeps its real evidence; only its time format changes
+    assert [c[k] for k in rl.EVIDENCE_COLS] == ["confirmed", "2", "2026-11-15T19:20:00Z", "2026-11-15T19:30:00Z", "10000.0"]
+    assert c["position_first_entry_at"] == "2026-11-15T17:54:44Z"
+    assert d == before[3]                                                       # already correct: untouched
+    for old, new in zip(before[:3], (a, b, c)):                                 # nothing else changed
+        same = [k for k in old if k not in rl.EVIDENCE_COLS + ["position_first_entry_at"]]
+        assert all(old[k] == new[k] for k in same)
+    with open(os.path.join(f, "research", "positions", "2026-11-15", "19.csv")) as fh:
+        assert "dddddddddddd,2026-11-15T19:55:00Z,,0xf03" in fh.read()          # the torn row is left as it was
+    trail = rl.read_log(f, "corrections")
+    assert [(t["row_oid"], t["old_value"]) for t in trail if t["row_oid"]] == [   # rows that named real trades
+        ("bc7e1cd7a1b2", "confirmed|1|2026-11-15T18:53:23Z|2026-11-15T18:53:23Z|176932.98")]
+    summary = sorted(t["old_value"] for t in trail if not t["row_oid"])              # identical changes, counted
+    assert summary == ["Unix seconds in 3 rows", "none_in_list in 1 rows with no previous look"]
+    assert all(t["file"] == os.path.join("positions", "2026-11-15", "19.csv") and t["corrected_at"] == "2026-11-20T15:00:00Z"
+               and t["new_value"] and t["reason"] for t in trail)
+    assert "corrected 3 saved rows in 1 files" in read(f, "runs")[-1]["notes"]
+    # second run: nothing more to correct, nothing added to the trail
+    size = os.path.getsize(os.path.join(f, "research", "corrections.csv"))
+    step(f, make_obs({}), 10)
+    assert os.path.getsize(os.path.join(f, "research", "corrections.csv")) == size
+    assert "corrected" not in read(f, "runs")[-1]["notes"]
+    # even if the state is lost and the correction runs again, it finds nothing left to change
+    os.remove(os.path.join(f, "research", "state.json"))
+    step(f, make_obs({}), 20)
+    assert os.path.getsize(os.path.join(f, "research", "corrections.csv")) == size
+
+
+def test_failed_correction_is_retried_and_never_blocks_logging(tmp_path, monkeypatch):
+    f = old_folder(tmp_path)
+    name, real = rl.CORRECTIONS[0]
+    monkeypatch.setattr(rl, "CORRECTIONS", [(name, lambda *a: (_ for _ in ()).throw(OSError("disk error")))])
+    step(f, make_obs({W1: [pos("t1")]}), 0)
+    assert "correction not applied: OSError" in read(f, "runs")[-1]["notes"]
+    assert any(r["w"] == W1 for r in rl.read_log(f, "positions"))               # this run's rows were still written
+    assert read(f, "positions")[0]["trade_evidence"] == "confirmed"             # old rows untouched so far
+    monkeypatch.setattr(rl, "CORRECTIONS", [(name, real)])
+    step(f, make_obs({W1: [pos("t1")]}), 10)                                    # retried next run
+    assert read(f, "positions")[0]["trade_evidence"] == "no_previous_look"
+    assert len(rl.read_log(f, "corrections")) == 3                              # one row-level, two summaries
+
+
+def test_correction_only_ever_touches_the_positions_log(world, main_env):
+    scenario.build(world)
+    main_env.run()                                                              # creates every trading file + research logs
+    import shutil
+    from pathlib import Path
+    shutil.copytree(os.path.join(old_folder(Path(main_env.folder) / "x"), "research", "positions", "2026-11-15"),
+                    os.path.join(main_env.folder, "research", "positions", "2026-11-15"), dirs_exist_ok=True)
+    os.remove(os.path.join(main_env.folder, "research", "state.json"))          # so the correction runs again
+    def digest():
+        out = {}
+        for root, _, files in os.walk(main_env.folder):
+            for name in files:
+                path = os.path.join(root, name)
+                with open(path, "rb") as fh:
+                    out[os.path.relpath(path, main_env.folder)] = hashlib.sha1(fh.read()).hexdigest()
+        return out
+    before = digest()
+    name, fix = rl.CORRECTIONS[0]
+    assert fix(main_env.folder, NOW, name) == (3, 1)
+    changed = sorted(k for k, v in digest().items() if before.get(k) != v)
+    assert changed == [os.path.join("research", "corrections.csv"),
+                       os.path.join("research", "positions", "2026-11-15", "19.csv")]

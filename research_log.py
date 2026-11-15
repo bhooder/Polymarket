@@ -15,12 +15,14 @@ Files (plain CSV, append-only, one small file per UTC hour: research/<log>/<day>
   research/leaderboard/ the leaderboard once a day, and every change in whether a trader could be scanned
   research/rules.csv    each strategy's settings whenever they change (decisions carry the version)
   research/runs.csv     one row per run: how long it took, how much was logged, folder size, problems
+  research/corrections.csv  every value changed in an already-saved row, with the old value and the reason
   research/state.json   what was last seen, so only changes are written (not history; safe to lose)
 
 Reading these honestly:
 - "observed_at" is when WE looked. A change in shares happened some time between "prev_observed_at"
   and "observed_at". A trade time is only given when the trader's own trade list (already downloaded
-  for the bot check) shows trades in that market in that gap: "trade_evidence" = confirmed.
+  for the bot check) shows trades in that market in that gap: "trade_evidence" = confirmed. With no
+  previous look (every "baseline" row) there is no gap: it says no_previous_look and names no trades.
 - A position we stop seeing is "not_observed", never "sold": it may have fallen under the $100
   cut-off, the trader may have hedged (those markets are dropped), or the trader wasn't scanned.
 - A trader's record "as of" a moment must use only rows graded before it: see record_as_of().
@@ -86,6 +88,19 @@ def from_unix(ts):
     if ts > 1e11:
         ts /= 1000
     return iso(datetime.fromtimestamp(ts, timezone.utc)) if ts > 0 else ""
+
+
+def entry_time(value):
+    """The time a position was first entered, as UTC text. The data source gives Unix seconds; a date
+    text is passed through in the same UTC format; anything unreadable is left blank (never guessed)."""
+    if value in (None, ""):
+        return ""
+    if isinstance(value, (int, float)) or str(value).strip().replace(".", "", 1).isdigit():
+        return from_unix(value)
+    try:
+        return iso(parse(value))
+    except (TypeError, ValueError):
+        return ""
 
 
 def parse(text):
@@ -158,7 +173,7 @@ def read_log(here, kind):
 
 
 SECTIONS = {"positions": dict, "looked": dict, "decisions": dict, "snapshots": dict, "paths": dict,
-            "traders": dict, "rules": dict, "ready": dict, "board_day": str, "epoch": str}
+            "traders": dict, "rules": dict, "ready": dict, "board_day": str, "epoch": str, "corrected": list}
 
 
 def fresh_state(now):
@@ -247,6 +262,7 @@ def record_as_of(rows, wallet, when, sport=None):
 
 # ---------------- 2. position changes ----------------
 
+NO_PREVIOUS_LOOK = "no_previous_look"  # trade_evidence when there was no earlier look to compare with
 TRADE_TOKEN_KEYS = ("token_id", "asset", "asset_id", "tokenId")  # possible names of the market field
 TRADE_SIZE_KEYS = ("size", "shares", "amount")
 
@@ -255,7 +271,8 @@ def trade_evidence(trades, token, after, until):
     """Trades in this market from the trader's own trade list, made after `after` (None = any time) and
     no later than `until`. Returns (evidence, count, first time, last time, signed shares).
     evidence: confirmed = such trades are in the list; none_in_list = the list was read but shows none
-    (it only holds the latest 500 trades); unavailable = no list, or it doesn't name the market."""
+    (it only holds the latest 500 trades); unavailable = no list, or it doesn't name the market.
+    (position_rows writes no_previous_look instead when there was no earlier look: see there.)"""
     if not trades:
         return "unavailable", "", "", "", ""
     key = next((k for k in TRADE_TOKEN_KEYS if any(k in t for t in trades)), None)
@@ -339,7 +356,11 @@ def position_rows(state, obs, now):
                 change = None  # same shares and cost: any change in value is the price moving, not a trade
             n = (old or {}).get("n", 0) + (1 if change else 0)
             if change:
-                ev = trade_evidence(trades.get(wallet), token, parse(prev), now)
+                # Trade evidence means "trades made between our previous look and this one". With no
+                # previous look (a baseline, or a trader read for the first time) there is no such gap, and
+                # older trades in the list must not be counted as if the position had just been bought.
+                ev = (trade_evidence(trades.get(wallet), token, parse(prev), now) if prev
+                      else (NO_PREVIOUS_LOOK, "", "", "", ""))
                 rows.append({
                     "oid": oid("positions", key, epoch, n), "observed_at": stamp, "prev_observed_at": prev,
                     "w": w, "bot_speed": bot, "m": m, "change": change,
@@ -348,7 +369,7 @@ def position_rows(state, obs, now):
                     "avg_price": p.get("avg_price"), "value": value, "price": p.get("current_price"),
                     "trader_open_value": open_value,
                     "pct_of_open_value": round(100 * value / open_value, 2) if value and open_value else "",
-                    "position_first_entry_at": p.get("first_entry_at") or "", "trade_evidence": ev[0],
+                    "position_first_entry_at": entry_time(p.get("first_entry_at")), "trade_evidence": ev[0],
                     "trades_in_gap": ev[1], "trade_first_at": ev[2], "trade_last_at": ev[3],
                     "trade_shares": ev[4]})
             seen[key] = {"s": round(shares, 2), "c": round(cost, 2), "v": value, "t": int(start.timestamp()),
@@ -552,6 +573,90 @@ def board_rows(state, obs, now):
     return rows
 
 
+# ---------------- corrections to rows already saved ----------------
+# The logs are append-only. When saved rows turn out to be wrong, they are corrected ONCE, here, inside
+# a normal run (so the change is saved in the same commit as everything else and cannot collide with
+# it), and every changed value is written to research/corrections.csv. Git history keeps the originals.
+CORRECTION_COLS = ["oid", "corrected_at", "correction", "file", "row_oid", "column", "old_value",
+                   "new_value", "reason"]
+EVIDENCE_COLS = ["trade_evidence", "trades_in_gap", "trade_first_at", "trade_last_at", "trade_shares"]
+
+
+def correct_positions_2026_11_15(here, now, name):
+    """Rows written by the first version (from 2026-11-15T19:18Z until this ran):
+    1. position_first_entry_at held Unix seconds; it becomes the same moment as UTC text (nothing lost).
+    2. Rows with no previous look (every baseline row) counted ANY trade in the trader's recent list as
+       evidence, which reads as if an existing position had just been bought. Their evidence becomes
+       no_previous_look and the trade columns are blanked; the old values go to corrections.csv.
+    Row order, row count and every oid stay the same. Rows it cannot read are left exactly as they are.
+    Safe to run twice: corrected rows no longer match. Returns (rows changed, files changed)."""
+    base = os.path.join(here, FOLDER, "positions")
+    changed_rows = changed_files = 0
+    for root, _, files in sorted(os.walk(base)):
+        for fname in sorted(f for f in files if f.endswith(".csv")):
+            path = os.path.join(root, fname)
+            if os.path.getsize(path) > MAX_FILE:
+                continue
+            with open(path, newline="") as f:
+                lines = list(csv.reader(f))
+            if not lines or "position_first_entry_at" not in lines[0] or "oid" not in lines[0]:
+                continue
+            head = lines[0]
+            col = {c: head.index(c) for c in ["oid", "prev_observed_at", "position_first_entry_at"] + EVIDENCE_COLS
+                   if c in head}
+            if len(col) != 3 + len(EVIDENCE_COLS):
+                continue
+            rel = os.path.relpath(path, os.path.join(here, FOLDER))
+            notes, times, touched, plain = [], 0, 0, 0
+            for row in lines[1:]:
+                if len(row) != len(head):
+                    continue  # a row cut short by an interrupted write: not ours to interpret
+                hit = False
+                raw = row[col["position_first_entry_at"]]
+                if raw and raw.replace(".", "", 1).isdigit():
+                    row[col["position_first_entry_at"]] = entry_time(raw)
+                    times += 1
+                    hit = True
+                old = [row[col[c]] for c in EVIDENCE_COLS]
+                if row[col["prev_observed_at"]] == "" and old[0] in ("confirmed", "none_in_list"):
+                    new = [NO_PREVIOUS_LOOK, "", "", "", ""]
+                    for c, v in zip(EVIDENCE_COLS, new):
+                        row[col[c]] = v
+                    if old[0] == "confirmed":  # these named actual trades: keep each old value, row by row
+                        notes.append({"oid": oid("corrections", name, row[col["oid"]], "evidence"),
+                                      "row_oid": row[col["oid"]], "column": "+".join(EVIDENCE_COLS),
+                                      "old_value": "|".join(old), "new_value": NO_PREVIOUS_LOOK + "||||",
+                                      "reason": "no previous look"})
+                    else:
+                        plain += 1  # "none_in_list|0|||": identical in every such row, so counted once below
+                    hit = True
+                touched += hit
+            if not touched:
+                continue
+            if plain:
+                notes.append({"oid": oid("corrections", name, rel, "none_in_list"), "row_oid": "",
+                              "column": "trade_evidence", "old_value": f"none_in_list in {plain} rows with no previous look",
+                              "new_value": NO_PREVIOUS_LOOK, "reason": "no previous look: older trades in a "
+                              "trader's list are not evidence that an existing position was just bought"})
+            if times:
+                notes.append({"oid": oid("corrections", name, rel, "entry_time"), "row_oid": "",
+                              "column": "position_first_entry_at", "old_value": f"Unix seconds in {times} rows",
+                              "new_value": "the same moments as UTC text (YYYY-MM-DDTHH:MM:SSZ)",
+                              "reason": "format only, nothing lost"})
+            for n in notes:
+                n.update(corrected_at=iso(now), correction=name, file=rel)
+            append(here, "corrections", None, CORRECTION_COLS, notes)  # the audit trail first...
+            with open(path + ".tmp", "w", newline="") as f:
+                csv.writer(f).writerows(lines)
+            os.replace(path + ".tmp", path)                           # ...then the corrected file, whole
+            changed_rows += touched
+            changed_files += 1
+    return changed_rows, changed_files
+
+
+CORRECTIONS = [("2026-11-15-positions", correct_positions_2026_11_15)]
+
+
 # ---------------- the run ----------------
 
 def folder_bytes(here):
@@ -570,6 +675,17 @@ def run(here, obs, now=None):
     now = now or datetime.now(timezone.utc)
     state, problem = load_state(here, now)
     notes, counts, stamps = ([problem] if problem else []), {}, {}
+
+    for name, fix in CORRECTIONS:  # one-off corrections to saved rows; each runs once, before new rows
+        if name in state["corrected"]:
+            continue
+        try:
+            rows, files = fix(here, now, name)
+            state["corrected"].append(name)
+            if rows:
+                notes.append(f"corrected {rows} saved rows in {files} files (see corrections.csv)")
+        except Exception as e:  # nothing lost: it is tried again next run
+            notes.append(f"correction not applied: {type(e).__name__}: {clean(e)}")
 
     def log(name, sections, build):
         """build(view) -> [(kind, when, cols, rows), ...]; `view` is the state with copies of `sections`."""
