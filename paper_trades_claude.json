@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 816.9014511783433,
+ "cash": 840.0296127748561,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -38,11 +38,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-15T00:09:43.939134+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Bills vs. Jets: O/U 50.5",
@@ -71,9 +72,9 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.69,
+   "profit": 9.69,
+   "settled_at": "2026-11-15T21:17:01.820678+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -536,7 +537,7 @@
   },
   {
    "placed_at": "2026-11-15T17:07:06.931465+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Chiefs vs. Falcons: O/U 46.5",
@@ -565,15 +566,15 @@
     "kalshi": 0.4778
    },
    "intl_cost_per_share": 0.4675,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.4,
+   "settled_at": "2026-11-15T21:17:02.040988+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
   {
    "placed_at": "2026-11-15T17:34:07.294787+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Pacers vs. 76ers",
@@ -604,9 +605,9 @@
     "polymarket_us": 0.7487
    },
    "intl_cost_per_share": 0.7399,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.88,
+   "profit": 3.48,
+   "settled_at": "2026-11-15T21:17:02.041028+00:00",
    "topped_up_at": null,
    "close": 0.705
   },
@@ -714,6 +715,45 @@
     "prophetx": 0.4767
    },
    "intl_cost_per_share": 0.4875,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.475
+  },
+  {
+   "placed_at": "2026-11-15T21:21:09.499709+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Hornets vs. Clippers",
+   "link": "https://polymarket.com/event/nba-cha-lac-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc088b8e98815d7a3bedfc2eafde8009b039a560a645ef336d48566bf14606da1",
+   "token_id": "96183687246271817122349015358564812440473292001657961527459232361139620757187",
+   "outcome_index": 1,
+   "ends": "2026-11-15T21:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 17.54510002381519,
+   "cost": 9.43,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV15CHALAC-LAC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5265,
+    "kalshi": 0.5377,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,

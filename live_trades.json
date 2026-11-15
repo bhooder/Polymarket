@@ -1,5 +1,5 @@
 {
- "cash": 193.47,
+ "cash": 205.47,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -1791,7 +1791,7 @@
   },
   {
    "placed_at": "2026-11-13T15:50:06.510462+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Vikings",
@@ -1818,9 +1818,9 @@
     "fee_rate": 0.095
    },
    "paper_price": 0.4074999999999999,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 8.0,
+   "profit": 4.56,
+   "settled_at": "2026-11-15T21:17:02.337701+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -2203,6 +2203,40 @@
     "event_id": 1704742043
    },
    "paper_price": 0.5238095238095238,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T21:21:26.385766+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "49ers",
+   "market": "49ers vs. Cowboys",
+   "link": "https://polymarket.com/event/nfl-sf-dal-2026-11-15",
+   "market_type": "moneyline",
+   "condition_id": "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056",
+   "token_id": "55797876453514533289827581042178962732253572878799251929298422210642595743616",
+   "outcome_index": 0,
+   "ends": "2026-11-15T21:25:00+00:00",
+   "bettors": 14,
+   "avg_bankroll_pct": 11.7,
+   "traders_entry": 0.64,
+   "avg_price": 0.6352,
+   "shares": 3.18,
+   "cost": 2.02,
+   "fees": 0.0,
+   "contracts_ordered": 2.02,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "64d02238479904f87df24da22901a7a2",
+    "fee_rate": 0.02,
+    "event_id": 1700008807
+   },
+   "paper_price": 0.635036496350365,
    "payout": null,
    "profit": null,
    "settled_at": null,
@@ -2657,8 +2691,15 @@
    "venue": "prophetx",
    "ordered": 2.02,
    "filled": 2.02
+  },
+  {
+   "at": "2026-11-15T21:21:26.385743+00:00",
+   "pick": "49ers",
+   "venue": "prophetx",
+   "ordered": 2.02,
+   "filled": 2.02
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T20:40:55.965314+00:00"
+ "balances_checked_at": "2026-11-15T21:21:10.417616+00:00"
 }

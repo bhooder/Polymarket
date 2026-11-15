@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+cab271408e83,2026-11-15T21:21:32Z,status_change,0xa164b90167,0xa164b901678d14b57b89a8d4e928956fe46a8b02,SparYel,159,70505.17261728001,1676204.2585880002,scanned,,,0.0,0.4,0,63328.9507,1,0
+276a31b27d3d,2026-11-15T21:21:32Z,status_change,0x46072f22bc,0x46072f22bc5624f7ff43489d570fdc7e745ad542,0x46072f22bC5624f7Ff43489d570FDc7e745Ad542-1774720903403,193,54115.44238057999,753182.3515309999,scanned,,,0.0,0.1,0,869.6516,1,0
+4782fde65bc0,2026-11-15T21:21:32Z,status_change,0x549b491ac7,0x549b491ac7f6a675b56ff0a261d147daa73ac0ae,,,,,off_board,scanned,,,,,,,
+f9c391298e64,2026-11-15T21:21:32Z,status_change,0x7c1b3a6db8,0x7c1b3a6db8a1d57de8ee5d7bca620dc0623185c8,,,,,off_board,scanned,,,,,,,

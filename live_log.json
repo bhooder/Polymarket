@@ -2645,5 +2645,43 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.17,\"mark_value\":1.28,\"market_id\":219,\"net_cost_basis\":2.8,\"net_outcome_id\":4,\"net_size\":7.45,\"sides\":[{\"average_price\":0.38,\"closable_size\":7.45,\"closed_size\":0,\"cost_basis\":2.8,\"liquidation_value\":1.28,\"mark_price\":0.17,\"mark_value\":1.28,\"outcome_id\":4,\"size\":7.45,\"strike_id\":\"486012137417f413ef27897e1a140d45\"}],\"sport_event_id\":1700008820,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.45,\"mark_value\":2.73,\"market_id\":219,\"net_cost_basis\":3.04,\"net_outcome_id\":4,\"net_size\":6.11,\"sides\":[{\"average_price\":0.5,\"closable_size\":6.11,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":2.73,\"mark_price\":0.45,\"mark_value\":2.73,\"outcome_id\":4,\"size\":6.11,\"strike_id\":\"863f6aec738a5748e0b3693d7f610abb\"}],\"sport_event_id\":1700008886,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.52,\"mark_value\":2.01,\"market_id\":223,\"net_cost_basis\":2.02,\"net_outcome_id\":1715,\"net_size\":3.86,\"sides\":[{\"average_price\":0.52,\"closable_size\":3.86,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2.01,\"mark_price\":0.52,\"mark_value\":2.01,\"outcome_id\":1715,\"size\":3.86,\"strike_id\":\"e7f3d4e0944a6750ae915aeaad26e5bd\"}],\"sport_event_id\":1704742043,\"strike\":-7.5}]}"
   }
+ },
+ {
+  "at": "2026-11-15T21:17:02.345530+00:00",
+  "event": "settled",
+  "bet": "Vikings to win (vs. Packers)",
+  "status": "won",
+  "cost": 3.44,
+  "payout": 8.0,
+  "profit": 4.56,
+  "venue": "polymarket_us",
+  "ref": "aec-nfl-min-gb-2026-11-15"
+ },
+ {
+  "at": "2026-11-15T21:21:26.385759+00:00",
+  "event": "order",
+  "filled": 3.18,
+  "price": 0.6352201257861635,
+  "fees": 0.0,
+  "bet": "49ers to win (vs. Cowboys)",
+  "pick": "49ers",
+  "market": "49ers vs. Cowboys",
+  "venue": "prophetx",
+  "ref": "64d02238479904f87df24da22901a7a2",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.635,
+  "share": 0.01,
+  "side": "BUY",
+  "stake": 2.02,
+  "max_price": 0.65,
+  "dollars": 2.07,
+  "bankroll": 207.49,
+  "order_id": "1f35919b-44d9-5bce-9188-f0b3edd99430",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.63,\"mark_value\":2,\"market_id\":219,\"net_cost_basis\":2.02,\"net_outcome_id\":5,\"net_size\":3.18,\"sides\":[{\"average_price\":0.64,\"closable_size\":3.18,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2,\"mark_price\":0.63,\"mark_value\":2,\"outcome_id\":5,\"size\":3.18,\"strike_id\":\"64d02238479904f87df24da22901a7a2\"}],\"sport_event_id\":1700008807,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.52,\"mark_value\":2.02,\"market_id\":223,\"net_cost_basis\":2.02,\"net_outcome_id\":1715,\"net_size\":3.86,\"sides\":[{\"average_price\":0.52,\"closable_size\":3.86,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2.02,\"mark_price\":0.52,\"mark_value\":2.02,\"outcome_id\":1715,\"size\":3.86,\"strike_id\":\"e7f3d4e0944a6750ae915aeaad26e5bd\"}],\"sport_event_id\":1704742043,\"strike\":-7.5}]}"
+  }
  }
 ]

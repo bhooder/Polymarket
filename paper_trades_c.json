@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 888.8299288540074,
+ "cash": 984.8302809477766,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3039,7 +3039,7 @@
   },
   {
    "placed_at": "2026-11-13T15:50:05.608821+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Vikings",
    "market": "Vikings vs. Packers",
@@ -3069,9 +3069,9 @@
     "kalshi": 0.4371
    },
    "intl_cost_per_share": 0.4273,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 50.84,
+   "profit": 28.89,
+   "settled_at": "2026-11-15T21:17:00.948309+00:00",
    "topped_up_at": "2026-11-14T00:40:20.752445+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 9.8,
@@ -3195,7 +3195,7 @@
   },
   {
    "placed_at": "2026-11-13T19:31:29.270504+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Jaguars",
    "market": "Spread: Jaguars (-10.5)",
@@ -3224,9 +3224,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5175,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.58,
+   "profit": 18.82,
+   "settled_at": "2026-11-15T21:17:01.047320+00:00",
    "topped_up_at": "2026-11-15T00:09:42.449174+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.2,
@@ -3927,7 +3927,7 @@
   },
   {
    "placed_at": "2026-11-15T15:03:24.886691+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Spain vs. England: O/U 2.5",
@@ -3957,9 +3957,9 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.63,
+   "settled_at": "2026-11-15T21:17:01.145531+00:00",
    "topped_up_at": null,
    "close": 0.365
   },
@@ -4043,7 +4043,7 @@
   },
   {
    "placed_at": "2026-11-15T17:07:01.766622+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bills",
    "market": "Bills vs. Jets",
@@ -4074,15 +4074,15 @@
     "kalshi": 0.8113
    },
    "intl_cost_per_share": 0.795,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.39,
+   "profit": 5.19,
+   "settled_at": "2026-11-15T21:17:01.296026+00:00",
    "topped_up_at": null,
    "close": 0.795
   },
   {
    "placed_at": "2026-11-15T17:07:04.059653+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Chiefs vs. Falcons: O/U 46.5",
@@ -4112,9 +4112,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4675,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.1,
+   "settled_at": "2026-11-15T21:17:01.296068+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -4152,7 +4152,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-15T17:34:05.043261+00:00",
@@ -4224,6 +4225,42 @@
     "kalshi": 0.9065
    },
    "intl_cost_per_share": 0.8949,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T21:21:08.023650+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Knicks",
+   "market": "Knicks vs. Raptors",
+   "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb69fe3437bcc8c68cca5ef13f157052728db8470a5260041c7f3f2e76a71432f",
+   "token_id": "93086231645997458175247040156562949798458808560109278909517980426585479817179",
+   "outcome_index": 0,
+   "ends": "2026-11-15T23:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.64,
+   "avg_price": 0.63,
+   "shares": 35.29227917569861,
+   "cost": 22.81,
+   "fees": 0.58,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV15NYKTOR-NYK",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6464
+   },
+   "intl_cost_per_share": 0.6417,
    "payout": null,
    "profit": null,
    "settled_at": null,
