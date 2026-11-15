@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 853.6334745812752,
+ "cash": 844.2334745812752,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -293,7 +293,8 @@
    "payout": 0.0,
    "profit": -10.0,
    "settled_at": "2026-11-15T04:28:31.825719+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.48
   },
   {
    "placed_at": "2026-11-15T01:43:23.329855+00:00",
@@ -552,6 +553,44 @@
     "kalshi": 0.4778
    },
    "intl_cost_per_share": 0.4675,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T17:34:07.294787+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Pacers vs. 76ers",
+   "link": "https://polymarket.com/event/nba-ind-phi-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6939f2859abf4a29b7e4587d96b0f2ff88597ffdcafae357af8435b083289f19",
+   "token_id": "408349916607831705149098870254590243166365921478967008887645423541132146407",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.72,
+   "avg_price": 0.726,
+   "shares": 12.876613027607835,
+   "cost": 9.4,
+   "fees": 0.0512,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "2b10b6c7387870004cc1ce91a7369b1c",
+    "fee_rate": 0.02,
+    "event_id": 1704742040
+   },
+   "quotes": {
+    "prophetx": 0.73,
+    "kalshi": 0.7443,
+    "polymarket_us": 0.7487
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,
