@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 817.7708705559893,
+ "cash": 829.8054317818195,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11052,7 +11052,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-15T15:03:22.819833+00:00",
@@ -11396,7 +11397,7 @@
   },
   {
    "placed_at": "2026-11-15T17:06:57.648317+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will T\u00fcrkiye win on 2026-11-15?",
@@ -11426,9 +11427,9 @@
     "polymarket_us": 0.9454
    },
    "intl_cost_per_share": 0.9428,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.03,
+   "profit": 0.67,
+   "settled_at": "2026-11-15T21:49:36.777064+00:00",
    "topped_up_at": null,
    "close": 0.945
   },
@@ -11815,7 +11816,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-15T21:21:07.390476+00:00",

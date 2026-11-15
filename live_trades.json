@@ -2071,7 +2071,7 @@
   },
   {
    "placed_at": "2026-11-15T15:03:38.235590+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 0.919,
    "pick": "Falcons",
@@ -2098,15 +2098,15 @@
     "event_id": 1700008820
    },
    "paper_price": 0.3759398496240601,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.8,
+   "settled_at": "2026-11-15T21:49:38.084249+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
   {
    "placed_at": "2026-11-15T17:07:20.868302+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Saints",
@@ -2133,9 +2133,9 @@
     "event_id": 1700008886
    },
    "paper_price": 0.49751243781094534,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.04,
+   "settled_at": "2026-11-15T21:49:38.084285+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -2240,7 +2240,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   }
  ],
  "orders": [
@@ -2701,5 +2702,5 @@
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T21:24:58.243409+00:00"
+ "balances_checked_at": "2026-11-15T21:53:19.874701+00:00"
 }

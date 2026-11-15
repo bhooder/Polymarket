@@ -3888,7 +3888,7 @@
   },
   {
    "placed_at": "2026-11-15T15:03:24.565262+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Falcons",
    "market": "Spread: Chiefs (-2.5)",
@@ -3919,9 +3919,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4374,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.1,
+   "settled_at": "2026-11-15T21:49:37.209303+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -3998,7 +3998,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   },
   {
    "placed_at": "2026-11-15T16:24:01.098208+00:00",
@@ -4302,7 +4303,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   }
  ]
 }

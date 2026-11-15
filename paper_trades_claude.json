@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 833.9096272710366,
+ "cash": 875.551382349249,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -305,7 +305,7 @@
   },
   {
    "placed_at": "2026-11-15T01:43:23.329855+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bills",
    "market": "Bills vs. Jets",
@@ -336,9 +336,9 @@
     "kalshi": 0.8114
    },
    "intl_cost_per_share": 0.795,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.45,
+   "profit": 2.45,
+   "settled_at": "2026-11-15T21:49:37.772306+00:00",
    "topped_up_at": null,
    "close": 0.795
   },
@@ -421,7 +421,7 @@
   },
   {
    "placed_at": "2026-11-15T14:16:55.114352+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Chiefs",
    "market": "Spread: Falcons (-3.5)",
@@ -452,9 +452,9 @@
     "polymarket_us": 0.767
    },
    "intl_cost_per_share": 0.7556,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.42,
+   "profit": 3.02,
+   "settled_at": "2026-11-15T21:49:37.772344+00:00",
    "topped_up_at": null,
    "close": 0.745
   },
@@ -498,7 +498,7 @@
   },
   {
    "placed_at": "2026-11-15T16:24:05.104214+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Browns",
    "market": "Spread: Texans (-5.5)",
@@ -529,9 +529,9 @@
     "polymarket_us": 0.5785
    },
    "intl_cost_per_share": 0.5674,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.77,
+   "profit": 7.37,
+   "settled_at": "2026-11-15T21:49:37.801887+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -646,7 +646,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.365
   },
   {
    "placed_at": "2026-11-15T18:27:31.841994+00:00",
@@ -757,7 +758,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-15T21:24:56.878383+00:00",
@@ -830,7 +832,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   }
  ],
  "version": 2

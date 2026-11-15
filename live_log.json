@@ -2694,5 +2694,27 @@
   "profit": 1.77,
   "venue": "kalshi",
   "ref": "KXNFLSPREAD-26NOV15HOUCLE-HOU5"
+ },
+ {
+  "at": "2026-11-15T21:49:38.084579+00:00",
+  "event": "settled",
+  "bet": "Falcons to win (vs. Chiefs)",
+  "status": "lost",
+  "cost": 2.8,
+  "payout": 0.0,
+  "profit": -2.8,
+  "venue": "prophetx",
+  "ref": "486012137417f413ef27897e1a140d45"
+ },
+ {
+  "at": "2026-11-15T21:49:38.683596+00:00",
+  "event": "settled",
+  "bet": "Saints to win (vs. Panthers)",
+  "status": "lost",
+  "cost": 3.04,
+  "payout": 0.0,
+  "profit": -3.04,
+  "venue": "prophetx",
+  "ref": "863f6aec738a5748e0b3693d7f610abb"
  }
 ]

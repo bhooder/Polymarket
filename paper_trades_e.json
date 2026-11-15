@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 970.4025325822755,
+ "cash": 982.9482004667524,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -119,7 +119,7 @@
   },
   {
    "placed_at": "2026-11-15T13:24:01.160741+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bills",
    "market": "Bills vs. Jets",
@@ -150,9 +150,9 @@
     "kalshi": 0.8114
    },
    "intl_cost_per_share": 0.795,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.55,
+   "profit": 2.55,
+   "settled_at": "2026-11-15T21:49:37.567293+00:00",
    "topped_up_at": null,
    "close": 0.795
   },
@@ -194,7 +194,8 @@
    "topped_up_at": "2026-11-15T21:21:08.391987+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 11.7,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.635
   }
  ]
 }
