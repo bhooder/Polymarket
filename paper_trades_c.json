@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1044.3178045477675,
+ "cash": 999.9320291848057,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3698,6 +3698,82 @@
     "kalshi": 0.5379
    },
    "intl_cost_per_share": 0.5175,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T12:23:03.252628+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Saints",
+   "market": "Spread: Saints (-1.5)",
+   "link": "https://polymarket.com/event/nfl-car-no-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x35ebf9df56bde4e0134c4f88492f95a4756c5ad8705c6200bf2357639e3bbbde",
+   "token_id": "60230403969912010603116969344905960101981804180208006098111034385552187915252",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 4.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 43.72474103091077,
+   "cost": 22.2,
+   "fees": 0.77,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV15CARNO-NO2",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4976,
+    "kalshi": 0.5076,
+    "polymarket_us": 0.5087
+   },
+   "intl_cost_per_share": 0.4875,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T12:23:04.152549+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Browns",
+   "market": "Spread: Texans (-3.5)",
+   "link": "https://polymarket.com/event/nfl-hou-cle-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x66e26a6b9c525506dad6ae35242eaf161790ec50211e707649cf475816ddfb82",
+   "token_id": "16178961746084524585874256772295006243409950276376217902828413213442673332898",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 44.60552553711565,
+   "cost": 22.19,
+   "fees": 0.78,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV15HOUCLE-HOU4",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4925,
+    "kalshi": 0.4975,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4939,
    "payout": null,
    "profit": null,
    "settled_at": null,
