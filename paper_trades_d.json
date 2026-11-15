@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 996.026332013517,
+ "cash": 985.7563320135171,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -220,6 +220,44 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4975,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T16:34:08.839125+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bills",
+   "market": "Bills vs. Jets",
+   "link": "https://polymarket.com/event/nfl-buf-nyj-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xba45b9805fe8d9497c5117efe1ae4f28ecdf359788cf2c91de6dad9d00c1486f",
+   "token_id": "58143940831672657190277806878514061226499271064909458189824159543213466682953",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.1,
+   "traders_entry": 0.79,
+   "avg_price": 0.7959,
+   "shares": 12.850880758807588,
+   "cost": 10.27,
+   "fees": 0.0417,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "14a0fe81abcd6e715cd162a9aa685477",
+    "fee_rate": 0.02,
+    "event_id": 1700008799
+   },
+   "quotes": {
+    "prophetx": 0.7992,
+    "polymarket_us": 0.8105,
+    "kalshi": 0.8119
+   },
+   "intl_cost_per_share": 0.795,
    "payout": null,
    "profit": null,
    "settled_at": null,
