@@ -2461,5 +2461,59 @@
   "profit": -2.85,
   "venue": "kalshi",
   "ref": "KXUFCFIGHT-26NOV14GANHOK-HOK"
+ },
+ {
+  "at": "2026-11-15T11:00:58.423606+00:00",
+  "event": "order",
+  "filled": 6.35,
+  "price": 0.478740157480315,
+  "fees": 0.0,
+  "bet": "Patriots +2.5",
+  "pick": "Patriots",
+  "market": "Spread: Lions (-2.5)",
+  "venue": "prophetx",
+  "ref": "3ee1d0b2f189a73480138174f615b38a",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.4785,
+  "share": 0.015,
+  "side": "BUY",
+  "stake": 3.04,
+  "max_price": 0.48,
+  "dollars": 3.11,
+  "bankroll": 207.26,
+  "order_id": "a9596456-c960-5692-9f28-e6233bf96bf4",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":3,\"market_id\":223,\"net_cost_basis\":3.04,\"net_outcome_id\":1715,\"net_size\":6.35,\"sides\":[{\"average_price\":0.48,\"closable_size\":6.35,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":3,\"mark_price\":0.47,\"mark_value\":3,\"outcome_id\":1715,\"size\":6.35,\"strike_id\":\"3ee1d0b2f189a73480138174f615b38a\"}],\"sport_event_id\":1700008804,\"strike\":2.5}]}"
+  }
+ },
+ {
+  "at": "2026-11-15T11:01:14.848152+00:00",
+  "event": "order",
+  "filled": 5.88,
+  "price": 0.5170068027210885,
+  "fees": 0.0,
+  "bet": "Under 50.5 (Patriots vs. Lions)",
+  "pick": "Under",
+  "market": "Patriots vs. Lions: O/U 50.5",
+  "venue": "prophetx",
+  "ref": "db9820c0fe2694968a60e67b58403056",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5169,
+  "share": 0.015,
+  "side": "BUY",
+  "stake": 3.04,
+  "max_price": 0.53,
+  "dollars": 3.11,
+  "bankroll": 207.26,
+  "order_id": "37764730-29c2-53fe-a78e-48def8bc0745",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.47,\"mark_value\":3,\"market_id\":223,\"net_cost_basis\":3.04,\"net_outcome_id\":1715,\"net_size\":6.35,\"sides\":[{\"average_price\":0.48,\"closable_size\":6.35,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":3,\"mark_price\":0.47,\"mark_value\":3,\"outcome_id\":1715,\"size\":6.35,\"strike_id\":\"3ee1d0b2f189a73480138174f615b38a\"}],\"sport_event_id\":1700008804,\"strike\":2.5},{\"high_risk\":false,\"mark_price\":0.5,\"mark_value\":2.97,\"market_id\":225,\"net_cost_basis\":3.04,\"net_outcome_id\":13,\"net_size\":5.88,\"sides\":[{\"average_price\":0.52,\"closable_size\":5.88,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":2.97,\"mark_price\":0.5,\"mark_value\":2.97,\"outcome_id\":13,\"size\":5.88,\"strike_id\":\"db9820c0fe2694968a60e67b58403056\"}],\"sport_event_id\":1700008804,\"strike\":50.5}]}"
+  }
  }
 ]

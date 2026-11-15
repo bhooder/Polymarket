@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1217.8965224428136,
+ "cash": 1180.9665224428138,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3808,6 +3808,81 @@
    "payout": 0.0,
    "profit": -12.65,
    "settled_at": "2026-11-15T04:28:30.949599+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T11:00:37.109926+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Patriots",
+   "market": "Spread: Lions (-2.5)",
+   "link": "https://polymarket.com/event/nfl-ne-det-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe5911fe31ff6ada47f633e9cc21c8edfb3d1be97d580ebffe01d7e953f440a9c",
+   "token_id": "80155488726303746262792906309731448465755569481192475721564454117557312647836",
+   "outcome_index": 1,
+   "ends": "2026-11-15T14:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.47,
+   "avg_price": 0.4785,
+   "shares": 25.462312245477793,
+   "cost": 12.31,
+   "fees": 0.1271,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "3ee1d0b2f189a73480138174f615b38a",
+    "fee_rate": 0.02,
+    "event_id": 1700008804
+   },
+   "quotes": {
+    "prophetx": 0.4835,
+    "kalshi": 0.5077,
+    "polymarket_us": 0.5087
+   },
+   "intl_cost_per_share": 0.4875,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T11:00:38.028714+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Patriots vs. Lions: O/U 50.5",
+   "link": "https://polymarket.com/event/nfl-ne-det-2026-11-15",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe",
+   "token_id": "22743621636527629929709604166582236405821048137074470368218482018142236360498",
+   "outcome_index": 1,
+   "ends": "2026-11-15T14:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 22.7,
+   "traders_entry": 0.52,
+   "avg_price": 0.5169,
+   "shares": 47.173562581049055,
+   "cost": 24.62,
+   "fees": 0.2356,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "db9820c0fe2694968a60e67b58403056",
+    "fee_rate": 0.02,
+    "event_id": 1700008804
+   },
+   "quotes": {
+    "prophetx": 0.5219,
+    "kalshi": 0.5377
+   },
+   "intl_cost_per_share": 0.5175,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]
