@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 974.15434467478,
+ "cash": 952.5749366409534,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3113,7 +3113,7 @@
   {
    "placed_at": "2026-11-13T19:31:29.270504+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Jaguars",
    "market": "Spread: Jaguars (-10.5)",
    "link": "https://polymarket.com/event/nfl-jax-ten-2026-11-15",
@@ -3126,10 +3126,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.2,
    "traders_entry": 0.51,
-   "avg_price": 0.515,
-   "shares": 20.362756851837975,
-   "cost": 10.97,
-   "fees": 0.4832,
+   "avg_price": 0.5125,
+   "shares": 40.57857333943822,
+   "cost": 21.76,
+   "fees": 0.9631,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -3144,7 +3144,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-15T00:09:42.449174+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-13T22:54:32.465119+00:00",
@@ -3444,7 +3447,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:33.418043+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Liberty",
    "market": "Spread: Liberty (-20.5)",
@@ -3473,9 +3476,9 @@
     "polymarket_us": 0.5586
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.82,
+   "settled_at": "2026-11-15T00:07:11.740811+00:00",
    "topped_up_at": null
   },
   {
@@ -3545,6 +3548,43 @@
    "quotes": {
     "kalshi": 0.4472,
     "polymarket_us": 0.4634
+   },
+   "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T00:09:42.734675+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Spread: Mavericks (-5.5)",
+   "link": "https://polymarket.com/event/nba-dal-cle-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8254fda50da00856580b647720a4e53aed5fdd4010ebe47218e7e31326a05a4c",
+   "token_id": "27496200589907076898029812949009945785864100000614628671154338753621512652433",
+   "outcome_index": 1,
+   "ends": "2026-11-15T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.46,
+   "avg_price": 0.42,
+   "shares": 24.665257223396754,
+   "cost": 10.79,
+   "fees": 0.43,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV14DALCLE-DAL6",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4374,
+    "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
    "payout": null,
