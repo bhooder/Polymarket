@@ -85,7 +85,12 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   leaves nothing behind. "baseline" (not "first_seen") marks what already existed when tracking began
   or restarted. "bot_speed" = 1 marks traders over the report card's trades-per-hour limit (kept,
   labelled, leave out when wanted). Guards: at most 50,000 rows per log per run, never adds to a file
-  over 20 MB. A trader's record at a past moment: research_log.record_as_of (uses only rows graded
+  over 20 MB. Trade evidence needs a previous look: baseline rows, and a trader read for the first time,
+  say "no_previous_look" and name no trades (older trades in the list are not a new purchase).
+  position_first_entry_at is UTC text. Saved rows that turn out wrong are corrected once, inside a
+  normal run, by a function listed in research_log.CORRECTIONS, and every changed value goes to
+  `research/corrections.csv` (first use 2026-11-15: the first version wrote Unix seconds and counted
+  old trades as evidence on baseline rows). A trader's record at a past moment: research_log.record_as_of (uses only rows graded
   before it, one count per game). Archiving later: move finished day folders older than ~90 days into
   a zip attached to a GitHub Release and delete them from the repo (finished hour files never change,
   so they cost Git nothing more until then). Not collected (owner's decision 2026-11-15): order-book
