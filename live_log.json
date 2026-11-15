@@ -2450,5 +2450,16 @@
   "profit": -3.1,
   "venue": "kalshi",
   "ref": "KXNBASPREAD-26NOV14BKNMEM-MEM3"
+ },
+ {
+  "at": "2026-11-15T06:24:02.298054+00:00",
+  "event": "settled",
+  "bet": "Josh Hokit to win (vs. Ciryl Gane (Heavyweight, Main Card))",
+  "status": "lost",
+  "cost": 2.85,
+  "payout": 0.0,
+  "profit": -2.85,
+  "venue": "kalshi",
+  "ref": "KXUFCFIGHT-26NOV14GANHOK-HOK"
  }
 ]

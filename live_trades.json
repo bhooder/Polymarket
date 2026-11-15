@@ -1774,7 +1774,7 @@
   },
   {
    "placed_at": "2026-11-13T15:58:19.309304+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 0.879,
    "pick": "Josh Hokit",
@@ -1801,9 +1801,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.33999999999999997,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.85,
+   "settled_at": "2026-11-15T06:24:02.297721+00:00",
    "topped_up_at": null
   },
   {
@@ -2352,5 +2352,5 @@
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T05:27:26.364361+00:00"
+ "balances_checked_at": "2026-11-15T06:26:42.494118+00:00"
 }

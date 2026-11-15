@@ -79,7 +79,7 @@
   },
   {
    "placed_at": "2026-11-14T04:05:02.978566+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Josh Hokit",
    "market": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
@@ -109,9 +109,9 @@
     "kalshi": 0.3661
    },
    "intl_cost_per_share": 0.3512,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.67,
+   "settled_at": "2026-11-15T06:24:01.974211+00:00",
    "topped_up_at": null
   }
  ]
