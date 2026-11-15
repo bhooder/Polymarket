@@ -2,6 +2,9 @@
 
 Run from the repo folder with:   python3 -m pytest tests -q
 """
+import contextlib
+import io
+import json
 import os
 import sys
 from datetime import datetime, timedelta, timezone
@@ -73,6 +76,19 @@ class World:
         return fake_quote(ref["venue"], 0.5, dollars)
 
 
+@pytest.fixture(autouse=True)
+def no_network(monkeypatch):
+    """Every test runs with the internet switched off: any real request fails at once."""
+    import requests
+    import polymarket_smart_money as scanner
+
+    def blocked(*a, **k):
+        raise RuntimeError("tests must not use the network")
+
+    monkeypatch.setattr(requests.sessions.Session, "request", blocked)
+    monkeypatch.setattr(scanner, "get", blocked)
+
+
 @pytest.fixture
 def world(monkeypatch):
     w = World()
@@ -94,3 +110,57 @@ def run_strategy(key, state, picks, on_bet=None):
              min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"),
              max_price=cfg.get("max_price", 1.0), max_above=cfg.get("max_above"))
     return state
+
+
+class MainEnv:
+    """forward_test.main() with every outside call faked, writing into a temp folder.
+    seen: what main() handed to live.run, and which strategies had traded by then."""
+
+    def __init__(self, folder):
+        self.folder, self.seen, self.output = folder, {}, ""
+
+    def run(self):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            ft.main()
+        self.output += out.getvalue()
+
+    def path(self, key):
+        return os.path.join(self.folder, ft.STRATEGIES[key]["state"])
+
+    def state(self, key):
+        with open(self.path(key)) as f:
+            return json.load(f)
+
+
+@pytest.fixture
+def main_env(world, monkeypatch, tmp_path):
+    import live
+    env = MainEnv(str(tmp_path))
+    monkeypatch.setenv("LIVE_TRADING", "on")  # even with real betting switched on, nothing real can happen here
+
+    def fake_live_run(intents, max_above, state, paper_bets=None, cap=1.0):
+        env.seen.update(intents=list(intents), paper_bets=paper_bets, live_runs=env.seen.get("live_runs", 0) + 1,
+                        files_at_live_run=sorted(os.listdir(env.folder)))
+
+    cs, pl, sc = ft.claude_strategy, ft.pick_log, ft.scanner
+    monkeypatch.setattr(ft, "HERE", env.folder)
+    monkeypatch.setattr(sc, "find_picks", lambda args: (world.picks, None))
+    monkeypatch.setattr(sc, "POSITIONS", {}, raising=False)
+    monkeypatch.setattr(ft, "write_picks", lambda picks: None)
+    monkeypatch.setattr(ft, "copy_to_icloud", lambda name: None)
+    monkeypatch.setattr(ft, "fill_closes", lambda *a, **k: 0)
+    monkeypatch.setattr(cs, "extra_positions", lambda *a, **k: {})
+    monkeypatch.setattr(cs, "record", lambda *a, **k: None)
+    monkeypatch.setattr(cs, "grade", lambda *a, **k: 0)
+    monkeypatch.setattr(cs, "picks", lambda *a, **k: [])
+    monkeypatch.setattr(cs, "save", lambda *a, **k: None)
+    monkeypatch.setattr(pl, "load", lambda *a, **k: {"open": {}, "not_games": []})
+    monkeypatch.setattr(pl, "add_card", lambda *a, **k: [])
+    monkeypatch.setattr(pl, "record", lambda *a, **k: None)
+    monkeypatch.setattr(pl, "settle", lambda *a, **k: 0)
+    monkeypatch.setattr(pl, "save", lambda *a, **k: None)
+    monkeypatch.setattr(live, "run", fake_live_run)
+    monkeypatch.setattr(live, "alert", lambda *a, **k: None)
+    monkeypatch.setattr(live, "LOG", [])
+    return env

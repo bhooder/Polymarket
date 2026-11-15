@@ -1,14 +1,8 @@
 """Strategy ChatGPT's rules, one test per rule (numbers match the owner's list of 18).
 All data is fake: no network, no keys, no orders."""
-import io
-import contextlib
-import json
-import os
-
 import pytest
 
 import forward_test as ft
-import live
 from conftest import make_pick, new_state, run_strategy
 
 
@@ -169,45 +163,15 @@ def test_16_no_top_ups(world):
     assert b["topped_up_at"] is None and world.top_up_calls == 0
 
 
-def test_17_never_reaches_live_trading(world, monkeypatch, tmp_path):
+def test_17_never_reaches_live_trading(world, main_env):
     """Run the whole of forward_test.main() with fakes and look at what is handed to live.run."""
-    monkeypatch.setenv("LIVE_TRADING", "on")     # even with real betting switched on
     world.add(make_pick("both", bettors=5, pct=25, entry=0.50), ("kalshi", 0.50))    # A and ChatGPT both bet
     world.add(make_pick("gptonly", bettors=3, pct=12, entry=0.50), ("kalshi", 0.50))  # only ChatGPT bets
-    seen = {}
-
-    def fake_live_run(intents, max_above, state, paper_bets=None, cap=1.0):
-        seen["intents"], seen["paper_bets"] = list(intents), paper_bets
-
-    cs, pl, sc = ft.claude_strategy, ft.pick_log, ft.scanner
-    monkeypatch.setattr(ft, "HERE", str(tmp_path))
-    monkeypatch.setattr(sc, "find_picks", lambda args: (world.picks, None))
-    monkeypatch.setattr(sc, "POSITIONS", {}, raising=False)
-    monkeypatch.setattr(ft, "write_picks", lambda picks: None)
-    monkeypatch.setattr(ft, "write_reports", lambda *a, **k: None)
-    monkeypatch.setattr(ft, "fill_closes", lambda *a, **k: 0)
-    monkeypatch.setattr(cs, "extra_positions", lambda *a, **k: {})
-    monkeypatch.setattr(cs, "record", lambda *a, **k: None)
-    monkeypatch.setattr(cs, "grade", lambda *a, **k: 0)
-    monkeypatch.setattr(cs, "picks", lambda *a, **k: [])
-    monkeypatch.setattr(cs, "save", lambda *a, **k: None)
-    monkeypatch.setattr(pl, "load", lambda *a, **k: {"open": {}, "not_games": []})
-    monkeypatch.setattr(pl, "add_card", lambda *a, **k: [])
-    monkeypatch.setattr(pl, "record", lambda *a, **k: None)
-    monkeypatch.setattr(pl, "settle", lambda *a, **k: 0)
-    monkeypatch.setattr(pl, "save", lambda *a, **k: None)
-    monkeypatch.setattr(live, "run", fake_live_run)
-    monkeypatch.setattr(live, "alert", lambda *a, **k: None)
-    monkeypatch.setattr(live, "LOG", [])
-    with contextlib.redirect_stdout(io.StringIO()):
-        ft.main()
-
-    with open(os.path.join(tmp_path, "paper_trades_chatgpt.json")) as f:
-        gpt = json.load(f)
-    with open(os.path.join(tmp_path, "paper_trades.json")) as f:
-        a = json.load(f)
+    main_env.run()
+    gpt, a = main_env.state("chatgpt"), main_env.state("a")
     assert sorted(bets(gpt)) == ["tok-both-0", "tok-gptonly-0"]       # ChatGPT did bet on paper...
     assert bets(a) == ["tok-both-0"]
+    seen = main_env.seen
     assert [i["bet"]["token_id"] for i in seen["intents"]] == ["tok-both-0"]   # ...but only A's bet goes to live
     assert seen["intents"][0]["bet"]["placed_at"] == a["bets"][0]["placed_at"]  # and it is A's own bet record
     assert [b["token_id"] for b in seen["paper_bets"]] == ["tok-both-0"]

@@ -109,7 +109,10 @@ STRATEGIES = {
                          "higher than the traders' average entry (no 1c allowance). Never over 75c. "
                          "No top-ups. Paper only.",
                 "tiers": [(0.01, [(3, 10)])],  # no 2% tier, so a bet can never be topped up
-                "max_price": A_MAX_PRICE, "max_above": 0.0},
+                "max_price": A_MAX_PRICE, "max_above": 0.0,
+                # isolated: loaded, settled and traded only AFTER the real bets are placed and saved, inside
+                # its own error guard, so nothing it does can delay or stop Strategy A's real money
+                "isolated": True},
 }
 CARD = "trader_card.json"  # the Claude strategy's trader report card
 
@@ -1321,14 +1324,17 @@ def tab_label(name):
     return name.replace("Strategy ", '<span class="long">Strategy </span>')
 
 
-def write_reports(states, live_state, card=None):
-    """states = {strategy key: state}; live_state = real bets. Writes the CSVs and the report page."""
+def write_reports(states, live_state, card=None, skip_csv=()):
+    """states = {strategy key: state}; live_state = real bets. Writes the CSVs and the report page.
+    skip_csv: strategies whose state file couldn't be read this run (their CSV is left as it is)."""
     for key, state in states.items():
+        if key in skip_csv:
+            continue
         write_csv(os.path.join(HERE, STRATEGIES[key]["csv"]), state["bets"])
     write_csv(os.path.join(HERE, LIVE["csv"]), live_state["bets"])
     settled = [(cfg, [b for b in st["bets"] if b["status"] != "open"])
                for cfg, st in [(LIVE, live_state)] + [(STRATEGIES[k], st) for k, st in states.items()]]
-    sub = f"Real-money bets and pretend-money tests of six strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
+    sub = f"Real-money bets and pretend-money tests of seven strategies. Last updated {time.strftime('%b %d %I:%M %p')}."
     page = (REPORT.replace("__ODDS_CSS__", scanner.ODDS_CSS + scanner.MOBILE_CSS + scanner.REFRESH_CSS).replace("__STATS_CSS__", STATS_CSS).replace("__CAL_CSS__", CAL_CSS)
             .replace("__ODDS_TOGGLE__", scanner.ODDS_TOGGLE)
             .replace("</body>", scanner.ODDS_JS + scanner.MOBILE_JS + scanner.REFRESH_JS + CAL_JS + "</body>")
@@ -1386,8 +1392,10 @@ def settled_alert(b, state):
 
 def main():
     print(f"\n=== Forward test run {time.strftime('%Y-%m-%d %H:%M')} ===")
-    states = {}
+    states, broken = {}, set()  # broken: isolated strategies whose state file couldn't be read (never saved over)
     for key, cfg in STRATEGIES.items():
+        if cfg.get("isolated"):
+            continue  # handled after the real bets, see below
         path = os.path.join(HERE, cfg["state"])
         states[key] = load_state(path)
         if cfg.get("claude") and states[key].get("version") != claude_strategy.VERSION:
@@ -1433,6 +1441,8 @@ def main():
             return
         live_bets.append(intent)
     for key, cfg in STRATEGIES.items():
+        if cfg.get("isolated"):
+            continue
         print(f"-- {cfg['name']} --")
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=copy_real if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
@@ -1446,11 +1456,38 @@ def main():
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     save_state(live_state, live_path)
     save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
+    # Isolated paper strategies (Strategy ChatGPT) run only now, after the real bets are placed and saved.
+    # They never get on_bet, so they can't create real bets, and an error here stops only that strategy.
+    for key, cfg in STRATEGIES.items():
+        if not cfg.get("isolated"):
+            continue
+        print(f"-- {cfg['name']} --")
+        path = os.path.join(HERE, cfg["state"])
+        try:
+            states[key] = load_state(path)
+        except Exception as e:  # unreadable file: show it empty this run, and leave the file alone
+            print(f"{cfg['name']} error reading {cfg['state']} ({type(e).__name__}: {e}); skipped this run, "
+                  "file left untouched. Other strategies and real bets are unaffected.")
+            states[key] = load_state("/nonexistent")
+            broken.add(key)
+            continue
+        try:
+            settle(states[key])
+            trade(states[key], picks, cfg["tiers"], on_bet=None, net=cfg.get("net", False),
+                  window=cfg.get("window"), min_money_share=cfg.get("min_money_share", 0),
+                  count=cfg.get("count"), max_price=cfg.get("max_price", 1.0), max_above=cfg.get("max_above"))
+        except Exception as e:
+            print(f"{cfg['name']} error ({type(e).__name__}: {e}); other strategies and real bets are unaffected.")
+        try:
+            save_state(states[key], path)  # whatever it did manage (each bet is recorded whole)
+        except Exception as e:
+            print(f"{cfg['name']} could not be saved ({type(e).__name__}: {e})")
     try:  # closing prices for the CLV columns; must never stop the betting
         n = fill_closes(list(states.values()) + [live_state])
         if n:
             for key, cfg in STRATEGIES.items():
-                save_state(states[key], os.path.join(HERE, cfg["state"]))
+                if key not in broken:
+                    save_state(states[key], os.path.join(HERE, cfg["state"]))
             save_state(live_state, live_path)
         print(f"CLV: closing prices added to {n} bets")
     except Exception as e:
@@ -1469,7 +1506,7 @@ def main():
         print(f"Pick log (top 200, research): {len(wide['open'])} open, {done} finished this run")
     except Exception as e:
         print(f"Pick log error: {type(e).__name__}: {e}")
-    write_reports(states, live_state, card)
+    write_reports(states, live_state, card, skip_csv=broken)
     for key, cfg in STRATEGIES.items():
         st = states[key]
         print(f"{cfg['name']}: bankroll ${bankroll(st):,.2f} (cash ${st['cash']:,.2f}, "

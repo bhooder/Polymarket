@@ -51,6 +51,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add paper_trades.json paper_trades.csv paper_trades_b.json paper_trades_b.csv paper_trades_c.json paper_trades_c.csv paper_trades_d.json paper_trades_d.csv paper_trades_e.json paper_trades_e.csv paper_trades_claude.json paper_trades_claude.csv trader_card.json pick_log_open.json pick_log.csv pick_log_200_open.json pick_log_200.csv live_trades.json live_trades.csv live_log.json paper_report.html picks.html
+          # Strategy ChatGPT (paper only). On its own line and allowed to fail, so a missing ChatGPT
+          # file can never stop the other results (real bets included) from being saved.
+          git add paper_trades_chatgpt.json paper_trades_chatgpt.csv || true
           git diff --cached --quiet && exit 0
           git commit -m "Forward test run $(date '+%Y-%m-%d %H:%M')"
           # retry: a brief GitHub hiccup must not throw away a run's results (real bets included)
