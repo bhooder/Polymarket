@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1006.6158064848922,
+ "cash": 995.4280914971772,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4306,6 +4306,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.485
+  },
+  {
+   "placed_at": "2026-11-15T22:40:31.806820+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Rockets",
+   "market": "Rockets vs. Wizards",
+   "link": "https://polymarket.com/event/nba-hou-was-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf6b1a230e40d0635c294f12b0b18a310589343d5bbfbb8b79d15ce7c3b435078",
+   "token_id": "90092500659798801622355169229904716992685795179718424301565615637204790614764",
+   "outcome_index": 0,
+   "ends": "2026-11-16T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 5.5,
+   "traders_entry": 0.74,
+   "avg_price": 0.75,
+   "shares": 14.650286650286649,
+   "cost": 11.19,
+   "fees": 0.2,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV15HOUWAS-HOU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7637,
+    "polymarket_us": 0.7678
+   },
+   "intl_cost_per_share": 0.7496,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
