@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 985.7563320135171,
+ "cash": 1026.2100919668562,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -156,7 +156,7 @@
   },
   {
    "placed_at": "2026-11-15T13:24:00.438613+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Patriots",
    "market": "Spread: Lions (-2.5)",
@@ -186,15 +186,15 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.27,
+   "settled_at": "2026-11-15T17:45:26.292711+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-15T13:24:00.678768+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Patriots vs. Lions: O/U 50.5",
@@ -223,9 +223,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4975,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.45,
+   "profit": 19.92,
+   "settled_at": "2026-11-15T17:45:26.299598+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
