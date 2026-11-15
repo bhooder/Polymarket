@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 952.5749366409534,
+ "cash": 941.7865172144785,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3587,6 +3587,43 @@
     "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T00:25:11.812231+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bulls",
+   "market": "Spread: Timberwolves (-15.5)",
+   "link": "https://polymarket.com/event/nba-chi-min-2026-11-14",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ef440c9e780c5533bc1c7210caa7a60d30b9c6ab99a5566f8d02ed067127fad",
+   "token_id": "88985111196735276408989129149832825023823034448165117516874909505694647918471",
+   "outcome_index": 1,
+   "ends": "2026-11-15T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.9,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 21.24167229892826,
+   "cost": 10.79,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV14CHIMIN-MIN16",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5079,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
