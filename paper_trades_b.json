@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 888.580867504649,
+ "cash": 981.2938618946813,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9723,7 +9723,7 @@
   },
   {
    "placed_at": "2026-11-14T14:15:15.201798+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Pistons vs. Heat",
@@ -9753,9 +9753,9 @@
     "kalshi": 0.3864
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.9,
+   "profit": 16.01,
+   "settled_at": "2026-11-15T04:28:31.191773+00:00",
    "topped_up_at": null
   },
   {
@@ -10202,7 +10202,7 @@
   },
   {
    "placed_at": "2026-11-14T21:16:09.397300+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Stanford",
    "market": "Spread: Virginia Tech (-16.5)",
@@ -10231,9 +10231,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.23,
+   "profit": 21.89,
+   "settled_at": "2026-11-15T04:28:31.238509+00:00",
    "topped_up_at": "2026-11-14T23:48:06.153389+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.3,
@@ -10241,7 +10241,7 @@
   },
   {
    "placed_at": "2026-11-14T23:11:51.252882+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Grizzlies (-1.5)",
@@ -10271,9 +10271,9 @@
     "kalshi": 0.4959
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.91,
+   "settled_at": "2026-11-15T04:28:31.267292+00:00",
    "topped_up_at": null
   },
   {
@@ -10314,7 +10314,7 @@
   },
   {
    "placed_at": "2026-11-14T23:48:10.996664+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bulls",
    "market": "Spread: Timberwolves (-14.5)",
@@ -10345,9 +10345,9 @@
     "kalshi": 0.4673
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.59,
+   "profit": 12.8,
+   "settled_at": "2026-11-15T04:28:31.267339+00:00",
    "topped_up_at": null
   },
   {
@@ -10389,7 +10389,7 @@
   },
   {
    "placed_at": "2026-11-15T00:25:10.554828+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "New Mexico",
    "market": "Spread: New Mexico (-17.5)",
@@ -10418,14 +10418,14 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.68,
+   "settled_at": "2026-11-15T04:28:31.298954+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-15T00:25:10.775254+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Pistons vs. Heat: O/U 227.5",
@@ -10455,9 +10455,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.68,
+   "settled_at": "2026-11-15T04:28:31.326797+00:00",
    "topped_up_at": null
   },
   {

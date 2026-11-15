@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1008.1475584261477,
+ "cash": 1055.4178045477674,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3333,7 +3333,7 @@
   },
   {
    "placed_at": "2026-11-14T14:15:16.933803+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Pistons vs. Heat",
@@ -3364,9 +3364,9 @@
     "kalshi": 0.3863
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.03,
+   "profit": 16.09,
+   "settled_at": "2026-11-15T04:28:31.436508+00:00",
    "topped_up_at": null
   },
   {
@@ -3520,7 +3520,7 @@
   },
   {
    "placed_at": "2026-11-14T23:11:52.497836+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Nets",
    "market": "Nets vs. Grizzlies",
@@ -3550,9 +3550,9 @@
     "polymarket_us": 0.4634
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.79,
+   "settled_at": "2026-11-15T04:28:31.446437+00:00",
    "topped_up_at": null
   },
   {
@@ -3594,7 +3594,7 @@
   },
   {
    "placed_at": "2026-11-15T00:25:11.812231+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bulls",
    "market": "Spread: Timberwolves (-15.5)",
@@ -3624,9 +3624,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.24,
+   "profit": 10.45,
+   "settled_at": "2026-11-15T04:28:31.457854+00:00",
    "topped_up_at": null
   },
   {

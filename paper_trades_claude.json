@@ -78,7 +78,7 @@
   },
   {
    "placed_at": "2026-11-15T00:09:44.585498+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Grizzlies (-4.5)",
@@ -108,14 +108,14 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.0,
+   "settled_at": "2026-11-15T04:28:31.734356+00:00",
    "topped_up_at": null
   },
   {
    "placed_at": "2026-11-15T00:09:45.002129+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "South Carolina",
    "market": "Spread: South Carolina (-7.5)",
@@ -144,9 +144,9 @@
     "polymarket_us": 0.4987
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.0,
+   "settled_at": "2026-11-15T04:28:31.764508+00:00",
    "topped_up_at": null
   },
   {
@@ -187,7 +187,7 @@
   },
   {
    "placed_at": "2026-11-15T00:09:46.234793+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Purdue vs. Iowa: O/U 47.5",
@@ -216,9 +216,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.0,
+   "settled_at": "2026-11-15T04:28:31.817936+00:00",
    "topped_up_at": null
   },
   {
@@ -260,7 +260,7 @@
   },
   {
    "placed_at": "2026-11-15T00:25:12.779674+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Pistons vs. Heat: O/U 227.5",
@@ -290,9 +290,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.0,
+   "settled_at": "2026-11-15T04:28:31.825719+00:00",
    "topped_up_at": null
   },
   {
