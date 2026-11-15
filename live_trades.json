@@ -2043,6 +2043,40 @@
    "profit": null,
    "settled_at": null,
    "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T17:07:20.868302+00:00",
+   "status": "open",
+   "stake": 0.015,
+   "size_multiplier": 1.0,
+   "pick": "Saints",
+   "market": "Panthers vs. Saints",
+   "link": "https://polymarket.com/event/nfl-car-no-2026-11-15",
+   "market_type": "moneyline",
+   "condition_id": "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb",
+   "token_id": "27114035044658283375967909140541685457557569572156223347645825998778828656195",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 10.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.4975,
+   "shares": 6.11,
+   "cost": 3.04,
+   "fees": 0.0,
+   "contracts_ordered": 3.04,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "863f6aec738a5748e0b3693d7f610abb",
+    "fee_rate": 0.02,
+    "event_id": 1700008886
+   },
+   "paper_price": 0.49751243781094534,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -2472,8 +2506,15 @@
    "venue": "prophetx",
    "ordered": 2.8,
    "filled": 2.8
+  },
+  {
+   "at": "2026-11-15T17:07:20.868279+00:00",
+   "pick": "Saints",
+   "venue": "prophetx",
+   "ordered": 3.04,
+   "filled": 3.04
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T16:34:10.824872+00:00"
+ "balances_checked_at": "2026-11-15T17:07:08.662100+00:00"
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1157.350494729188,
+ "cash": 1145.0404947291881,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -3955,6 +3955,44 @@
     "polymarket_us": 0.3998
    },
    "intl_cost_per_share": 0.377,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T17:06:55.643514+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Saints",
+   "market": "Panthers vs. Saints",
+   "link": "https://polymarket.com/event/nfl-car-no-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb",
+   "token_id": "27114035044658283375967909140541685457557569572156223347645825998778828656195",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 10.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.4975,
+   "shares": 24.496912126884048,
+   "cost": 12.31,
+   "fees": 0.1225,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "863f6aec738a5748e0b3693d7f610abb",
+    "fee_rate": 0.02,
+    "event_id": 1700008886
+   },
+   "quotes": {
+    "prophetx": 0.5025,
+    "kalshi": 0.5177,
+    "polymarket_us": 0.5212
+   },
+   "intl_cost_per_share": 0.4975,
    "payout": null,
    "profit": null,
    "settled_at": null,
