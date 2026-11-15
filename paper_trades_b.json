@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 981.2938618946813,
+ "cash": 987.3167986035421,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10055,7 +10055,7 @@
   },
   {
    "placed_at": "2026-11-14T19:14:28.128515+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kayla Harrison",
    "market": "UFC 334: Amanda Nunes vs. Kayla Harrison (Women's Bantamweight, Main Card)",
@@ -10085,9 +10085,9 @@
     "kalshi": 0.6174
    },
    "intl_cost_per_share": 0.6219,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.27,
+   "profit": 6.61,
+   "settled_at": "2026-11-15T05:25:11.991848+00:00",
    "topped_up_at": null
   },
   {
@@ -10528,6 +10528,43 @@
     "prophetx": 0.3778
    },
    "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T05:27:25.645060+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bills",
+   "market": "Bills vs. Jets",
+   "link": "https://polymarket.com/event/nfl-buf-nyj-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xba45b9805fe8d9497c5117efe1ae4f28ecdf359788cf2c91de6dad9d00c1486f",
+   "token_id": "58143940831672657190277806878514061226499271064909458189824159543213466682953",
+   "outcome_index": 0,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 26.0,
+   "traders_entry": 0.79,
+   "avg_price": 0.795,
+   "shares": 13.880618353786424,
+   "cost": 11.25,
+   "fees": 0.2149,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-buf-nyj-2026-11-15",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.8105,
+    "kalshi": 0.8115
+   },
+   "intl_cost_per_share": 0.795,
    "payout": null,
    "profit": null,
    "settled_at": null,
