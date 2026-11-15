@@ -11588,7 +11588,7 @@
   },
   {
    "placed_at": "2026-11-15T17:49:11.525288+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Elina Svitolina",
    "market": "WTA Finals, Final Stage: Elina Svitolina vs Mirra Andreeva",
@@ -11617,9 +11617,9 @@
     "kalshi": 0.3044
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -16.91,
+   "settled_at": "2026-11-15T22:22:55.166204+00:00",
    "topped_up_at": "2026-11-15T18:27:26.067483+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 6.2,
