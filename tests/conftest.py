@@ -146,6 +146,13 @@ def main_env(world, monkeypatch, tmp_path):
     cs, pl, sc = ft.claude_strategy, ft.pick_log, ft.scanner
     monkeypatch.setattr(ft, "HERE", env.folder)
     monkeypatch.setattr(sc, "find_picks", lambda args: (world.picks, None))
+
+    def fake_get(path, params, retries=5, base=None):
+        if path == "/resolutions":
+            return {"data": []}  # nothing has been decided yet
+        raise RuntimeError("tests must not use the network")
+
+    monkeypatch.setattr(sc, "get", fake_get)
     monkeypatch.setattr(sc, "POSITIONS", {}, raising=False)
     monkeypatch.setattr(ft, "write_picks", lambda picks: None)
     monkeypatch.setattr(ft, "copy_to_icloud", lambda name: None)
@@ -156,7 +163,6 @@ def main_env(world, monkeypatch, tmp_path):
     monkeypatch.setattr(cs, "picks", lambda *a, **k: [])
     monkeypatch.setattr(cs, "save", lambda *a, **k: None)
     monkeypatch.setattr(pl, "load", lambda *a, **k: {"open": {}, "not_games": []})
-    monkeypatch.setattr(pl, "add_card", lambda *a, **k: [])
     monkeypatch.setattr(pl, "record", lambda *a, **k: None)
     monkeypatch.setattr(pl, "settle", lambda *a, **k: 0)
     monkeypatch.setattr(pl, "save", lambda *a, **k: None)

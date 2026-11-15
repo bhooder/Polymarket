@@ -96,6 +96,11 @@ def record(card, positions, pace=None):
                                     "last_price": p.get("current_price"), "pick": p.get("outcome"), "market": p.get("title", "")}
 
 
+# Research only (research_log.py, added 2026-11-15): kept in memory for this run, read by no strategy.
+GRADED = []   # every position graded (or dropped as ungradeable) this run, with wallet and token
+HISTORY = {}  # token -> (game start as a unix time, [(unix time, price), ...]) from closing_price's own request
+
+
 def closing_price(token, start, cache):
     """Last traded price before the game started (Polymarket price history), or None."""
     if token not in cache:
@@ -105,6 +110,7 @@ def closing_price(token, start, cache):
                                                   "endTs": ts, "fidelity": 1}, base=CLOB)
             points = [h for h in hist.get("history") or [] if h["t"] <= ts]
             cache[token] = points[-1]["p"] if points else None
+            HISTORY[token] = (ts, [(h["t"], h["p"]) for h in points])  # research log only
         except Exception:
             cache[token] = None
     return cache[token]
@@ -119,12 +125,18 @@ def grade(card):
             continue
         wallet, token = key.split("|")
         close = closing_price(token, p["start"], cache)
+        source = "price_history"
         if close is None:
             close = p.get("last_price")  # our own last look before the start
+            source = "last_look"
         del card["pending"][key]
         if close is None:
+            GRADED.append({**p, "wallet": wallet, "token_id": token, "close": None, "clv": None,
+                           "close_source": "none", "graded_at": t.isoformat()})  # research log only
             continue
         clv = close - p["entry"]
+        GRADED.append({**p, "wallet": wallet, "token_id": token, "close": close, "clv": clv,
+                       "close_source": source, "graded_at": t.isoformat()})  # research log only
         g = games.setdefault((wallet, p.get("game") or key), {"name": p["name"], "clvs": [], "day": p["start"][:10]})
         g["clvs"].append(clv)
         card["recent"].append({"name": p["name"], "pick": p["pick"], "market": p["market"],
