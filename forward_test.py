@@ -381,6 +381,61 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
                 by_slot.add(slot)
 
 
+# ---------------- Closing-price value (CLV), added 2026-11-15 ----------------
+# Each bet's "close" = the last international Polymarket price before the game started. CLV = close
+# minus the price we paid (before fees): positive = the market moved our way after we bet, the usual
+# sign of a good bet whatever the result. Note: US venues often price a little differently from
+# Polymarket international, so part of any gap can be that, not timing.
+CLOSE_LOOKUPS = 150  # price-history lookups per run at most (the first runs back-fill old bets)
+
+
+def fill_closes(states, now=None):
+    """Add "close" to every bet whose game has started. Returns how many were filled."""
+    now = now or datetime.now(timezone.utc)
+    cache, filled = {}, 0
+    for st in states:
+        for b in sorted(st["bets"], key=lambda b: b.get("ends") or "", reverse=True):
+            if "close" in b or not b.get("ends") or not b.get("token_id"):
+                continue
+            start = datetime.fromisoformat(b["ends"])
+            if start > now:
+                continue
+            if b["token_id"] not in cache and len(cache) >= CLOSE_LOOKUPS:
+                continue  # the rest next run
+            c = claude_strategy.closing_price(b["token_id"], b["ends"], cache)
+            if c is not None and 0.01 < c < 0.99:
+                b["close"] = c
+                filled += 1
+            elif start < now - timedelta(days=2):
+                b["close"] = None  # no usable price history: stop looking
+    return filled
+
+
+def clv(b):
+    """Closing-price value in cents, or None (game not started yet, or no price history)."""
+    return 100 * (b["close"] - b["avg_price"]) if b.get("close") is not None else None
+
+
+def clv_summary(bets):
+    """(average CLV in cents, t-score, number of bets with a CLV)."""
+    vals = [v for v in map(clv, bets) if v is not None]
+    n = len(vals)
+    if not n:
+        return None, None, 0
+    mean = sum(vals) / n
+    if n < 2:
+        return mean, None, n
+    sd = math.sqrt(sum((v - mean) ** 2 for v in vals) / (n - 1))
+    return mean, (mean / (sd / math.sqrt(n)) if sd else None), n
+
+
+def clv_cell(b):
+    v = clv(b)
+    if v is None:
+        return '<td class="num muted">&ndash;</td>'
+    return f'<td class="num {"up" if v > 0.05 else "down" if v < -0.05 else ""}">{v:+.1f}&cent;</td>'
+
+
 # ---------------- Statistics tab ----------------
 # Null hypothesis: the market price is the true chance of winning. Under it, a bet of `shares`
 # bought at pre-fee price q has expected profit shares*q - cost (i.e. minus the fees) and
@@ -510,7 +565,16 @@ def stats_html(strats, extra=""):
 {spark(t["bets"])}
 <div class="prog" role="img" aria-label="{t["n"]} of {REVIEW_AT} settled bets"><i style="width:{progress:.0%}"></i></div>
 <div class="ssub">{t["n"]} of {REVIEW_AT} settled bets before the verdict</div>
+<div class="ssub">{clv_line(t["bets"])}</div>
 </div>"""
+
+    def clv_line(bets):
+        mean, tz, n = clv_summary(bets)
+        if mean is None:
+            return "Closing price: no data yet"
+        return (f'Closing price: <span class="{"up" if mean > 0 else "down" if mean < 0 else ""}">'
+                f'{mean:+.1f}&cent;</span> per bet on average ({n} bets)'
+                + (f' <span class="muted">t {tz:+.1f}</span>' if tz is not None else ""))
 
     def bars(rows, lim, fmt, marks=(), ticks=()):
         """Horizontal bars from a zero line in the middle. rows = [(label, value or None, faded, tooltip)]."""
@@ -552,6 +616,16 @@ def stats_html(strats, extra=""):
     out.append('<h2>Return per $ bet</h2><p class="hint">Profit divided by money staked, settled bets only.</p>')
     out.append(bars([(cfg["name"], ret(t), t["n"] < MIN_BETS, tip(cfg, t)) for cfg, t, _ in sums],
                     lim, lambda v: f"{v:+.0%}"))
+    clvs = [clv_summary(t["bets"]) for _, t, _ in sums]
+    lim = max([abs(c[0]) for c in clvs if c[0] is not None] + [1.0])
+    out.append('<h2>Beating the closing price?</h2><p class="hint">Average CLV per bet, in cents: the last price '
+               'before the game started minus the price we paid. Positive = the market moved our way after we '
+               'bet, the usual sign of a real edge, and much less luck-driven than wins and losses. Part of a gap '
+               'can be US venues pricing a little differently from Polymarket. '
+               f'Faded = under {MIN_BETS} bets with a CLV.</p>')
+    out.append(bars([(cfg["name"], c[0], c[2] < MIN_BETS,
+                      f'{cfg["name"]}: {c[2]} bets, avg CLV {c[0]:+.2f}c' if c[0] is not None else cfg["name"])
+                     for (cfg, _, _), c in zip(sums, clvs)], lim, lambda v: f"{v:+.1f}&cent;"))
     out.append(extra)
 
     # breakdowns: one strategy at a time, picked from a menu
@@ -598,6 +672,8 @@ document.querySelectorAll(".pick-strat").forEach(s => s.addEventListener("change
         ("1 SD (normal luck range)", lambda t: f'&plusmn;${t["sd"]:,.2f}'),
         ("Z: beat the market's odds", lambda t: fmt_z(t["z_market"])),
         ("Z: make money after fees", lambda t: fmt_z(t["z_money"])),
+        ("Avg CLV per bet (t-score)", lambda t: (lambda c: f'{c[0]:+.2f}&cent; ({fmt_z(c[1])})'
+                                                 if c[0] is not None else "&ndash;")(clv_summary(t["bets"]))),
     ]
     head = "".join(f'<th class="num">{esc(cfg["name"])}</th>' for cfg, _, _ in sums)
     body = "".join(f'<tr><td class="pick">{label}</td>'
@@ -1192,19 +1268,19 @@ def bets_html(cfg, state, tiles=None):
         f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="num">{stake_text(b)}</td><td class="num">{bettors_text(b)}</td>'
         f'<td class="num">{b["avg_bankroll_pct"]:.1f}%</td><td class="num">{scanner.px(b["avg_price"], 3)}</td>'
-        f'<td class="num">${b["cost"]:.2f}</td><td>{venue_name(b)}</td>'
+        f'{clv_cell(b)}<td class="num">${b["cost"]:.2f}</td><td>{venue_name(b)}</td>'
         f'<td>{short_time(b["ends"]) if b["ends"] else ""}</td><td>{link(b)}</td></tr>'
-        for b in reversed(open_bets(state))) or '<tr><td colspan="11">None yet.</td></tr>'
+        for b in reversed(open_bets(state))) or '<tr><td colspan="12">None yet.</td></tr>'
     done_rows = "".join(
         f'<tr><td>{short_time(b["placed_at"])}</td><td class="pick">{esc(str(b["pick"]))}</td>'
         f'<td class="market">{esc(b["market"])}</td>'
         f'<td class="{"up" if b["status"] == "won" else "down" if b["status"] == "lost" else ""}">'
         f'{b["status"].title()}</td><td class="num">{stake_text(b)}</td>'
-        f'<td class="num">{scanner.px(b["avg_price"], 3)}</td><td class="num">${b["cost"]:.2f}</td>'
+        f'<td class="num">{scanner.px(b["avg_price"], 3)}</td>{clv_cell(b)}<td class="num">${b["cost"]:.2f}</td>'
         f'<td class="num">${b["payout"]:.2f}</td>'
         f'<td class="num {"up" if b["profit"] > 0 else "down" if b["profit"] < 0 else ""}">'
         f'{b["profit"]:+.2f}</td><td>{venue_name(b)}</td></tr>'
-        for b in reversed(done)) or '<tr><td colspan="10">None yet.</td></tr>'
+        for b in reversed(done)) or '<tr><td colspan="11">None yet.</td></tr>'
     started = (f'Started {short_time(state["started_at"])} with ${state["start_bankroll"]:,.0f}.'
                if "start_bankroll" in state else "")
     return f"""<p class="sub"><b>{cfg["name"]}.</b> {esc(cfg["rules"])} {started}</p>
@@ -1212,10 +1288,10 @@ def bets_html(cfg, state, tiles=None):
 <h2>Open bets</h2>
 <div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th>
 <th class="num">Stake</th><th class="num">Bettors</th><th class="num">Avg bankroll %</th>
-<th class="num">Price</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody>{open_rows}</tbody></table></div>
+<th class="num">Price</th><th class="num" title="Closing-price value: last price before the start minus the price paid">CLV</th><th class="num">Cost</th><th>Venue</th><th>Ends</th><th></th></tr></thead><tbody>{open_rows}</tbody></table></div>
 <h2>Settled bets</h2>
 <div class="wrap"><table><thead><tr><th>Placed</th><th>Pick</th><th>Market</th><th>Result</th>
-<th class="num">Stake</th><th class="num">Price</th><th class="num">Cost</th>
+<th class="num">Stake</th><th class="num">Price</th><th class="num" title="Closing-price value: last price before the start minus the price paid">CLV</th><th class="num">Cost</th>
 <th class="num">Paid</th><th class="num">Profit</th><th>Venue</th></tr></thead><tbody>{done_rows}</tbody></table></div>"""
 
 
@@ -1358,6 +1434,15 @@ def main():
         live.alert("Live betting crashed", f"{type(e).__name__}: {e}")
     save_state(live_state, live_path)
     save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
+    try:  # closing prices for the CLV columns; must never stop the betting
+        n = fill_closes(list(states.values()) + [live_state])
+        if n:
+            for key, cfg in STRATEGIES.items():
+                save_state(states[key], os.path.join(HERE, cfg["state"]))
+            save_state(live_state, live_path)
+        print(f"CLV: closing prices added to {n} bets")
+    except Exception as e:
+        print(f"CLV error: {type(e).__name__}: {e}")
     try:  # research log of every pick (pick_log.py); must never stop the betting
         plog = pick_log.load(HERE)
         pick_log.record(plog, pick_log.add_card(picks, card, scanner.SIDES, scanner.TOP_WALLETS), market_info)

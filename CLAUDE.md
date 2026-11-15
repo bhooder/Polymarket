@@ -189,6 +189,13 @@ Both report pages have a Refresh button (added 2026-11-11) and reload themselves
 after 5+ minutes: the owner uses the site as an iPhone home-screen app, which has no reload button
 (scanner REFRESH_CSS / REFRESH_JS).
 
+CLV on the report (added 2026-11-15): every bet (all strategies + real) gets "close" = the last
+international Polymarket price before its start (forward_test.fill_closes, up to 150 lookups a run;
+older bets back-filled; None = no price history). CLV = close - price paid before fees, in cents.
+Shown as a CLV column in each tab's bet lists, a "Closing price" line on each Statistics card, a
+"Beating the closing price?" bar chart and a table row (average and t-score). US venues price a bit
+differently from international Polymarket, so part of a negative CLV can be that, not timing.
+
 Statistics tab (added 2026-10-29, redesigned phone-first 2026-11-10: a card per
 strategy, bar charts, breakdown picker, full table tap-to-open). Null hypothesis = the
 market price is the true win chance. Per bet, expected profit = shares x price

@@ -74,6 +74,11 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
   (finding 2). Paper Strategy A keeps its 1%/2% tiers so its test stays clean.
 - 2026-11-15: real bets cut from a flat 1.5% to a flat 1% of the real bankroll (owner's choice;
   underdog multiplier and no top-ups unchanged). Paper strategies unchanged.
+- 2026-11-15: CLV added to the report for every bet. First back-fill (all bets so far): average CLV
+  per bet Real -0.9c (58 bets, t -2.4), A -0.3c (105, t -1.4), B -0.5c (281, t -3.7), C -0.4c (97),
+  Claude +0.1c (6). So the closing price still moves slightly AGAINST our bets (as in finding 8);
+  A's profits so far are not from getting better prices than the close. Part may be the US-venue
+  vs international price gap.
 - 2026-11-11: owner's choice: Strategy A and real bets never pay over 75c (about -300).
   Not from a data finding; other strategies keep no cap. A's results from here on mix
   old (uncapped) and new bets.
