@@ -202,12 +202,14 @@ def test_position_changes_are_shares_or_cost_not_price(tmp_path):
     step(f, make_obs({W1: [pos("t1", shares=150, cost=80, price=0.60)]}), 20)     # bought more
     step(f, make_obs({W1: [pos("t1", shares=40, cost=21, price=0.60)]}), 30)      # reduced
     rows = read_all(f, "positions")
-    assert [r["change"] for r in rows] == ["first_seen", "shares_up", "shares_down"]
+    assert [r["change"] for r in rows] == ["baseline", "shares_up", "shares_down"]   # baseline: held when tracking began
+    step(f, make_obs({W1: [pos("t1", shares=40, cost=21, price=0.60), pos("t2")]}), 40)
+    assert read_all(f, "positions")[-1]["change"] == "first_seen"                    # appeared while we were watching
     assert rows[1]["shares_delta"] == "50.0" and rows[1]["cost_delta"] == "30.0"
     assert rows[1]["prev_observed_at"] == "2026-11-20T15:10:00Z"   # the last look before the change
     assert rows[1]["observed_at"] == "2026-11-20T15:20:00Z" and rows[0]["prev_observed_at"] == ""
     market = read_all(f, "markets")
-    assert len(market) == 1 and market[0]["m"] == rows[0]["m"] and market[0]["token_id"] == "t1"   # code -> market
+    assert len(market) == 2 and market[0]["m"] == rows[0]["m"] and market[0]["token_id"] == "t1"   # code -> market
     assert market[0]["game"] == "nba-t1-2026-11-21" and market[0]["condition_id"] == "c-t1"
     assert rows[0]["position_first_entry_at"] == "2026-11-19T10:00:00Z" and rows[0]["pct_of_open_value"] == "5.0"
 
@@ -242,7 +244,7 @@ def test_hedged_drop_and_started_games_and_far_games(tmp_path):
     h = str(tmp_path / "started")
     step(h, make_obs({W1: [pos("t5")]}, start_in_hours=1), 0)
     step(h, make_obs({W1: []}, start_in_hours=1), 90)                             # game has started by now
-    assert [r["change"] for r in read_all(h, "positions")] == ["first_seen"]      # no "not_observed" after the start
+    assert [r["change"] for r in read_all(h, "positions")] == ["baseline"]        # no "not_observed" after the start
 
 
 def test_01_trade_times_only_with_transaction_evidence(tmp_path):
@@ -314,7 +316,7 @@ def test_snapshots_written_only_when_something_changes(tmp_path):
     step(f, obs, 40)                                         # a count changed: row
     rows = read_all(f, "snapshots")
     assert [(r["reason"], r["bettors"], r["price"]) for r in rows] == [
-        ("first_seen", "4", "0.5"), ("price", "4", "0.52"), ("counts", "5", "0.52")]
+        ("baseline", "4", "0.5"), ("price", "4", "0.52"), ("counts", "5", "0.52")]
     assert rows[0]["scope"] == "top100" and rows[0]["game"] == "nba-x-2026-12-01" and rows[0]["against"] == "1"
     assert rows[1]["m"] == rows[0]["m"] and rows[0]["token_id"] == "tok-x-0" and rows[1]["token_id"] == ""
     obs["card"]["markets"] = {}
@@ -372,7 +374,9 @@ def test_07_workflow_gains_one_tolerant_line_and_nothing_else():
     assert sorted(os.listdir(os.path.join(root, ".github", "workflows"))) == ["hourly.yml"]   # no new workflow
     with open(os.path.join(root, "research_log.py")) as f:
         code = f.read()
-    assert "import requests" not in code and "scanner" not in code and "venues" not in code   # it cannot fetch
+    for banned in ("import requests", "import polymarket_smart_money", "scanner.get", "import venues", "import live",
+                   "urllib", "http"):
+        assert banned not in code                                   # it has no way to fetch anything or place orders
 
 
 # ---------- the passive collection points themselves ----------
@@ -426,3 +430,205 @@ def test_report_card_grading_unchanged_and_each_position_noted(monkeypatch):
     assert "0x2" not in card["traders"]
     assert [(g["wallet"], g["token_id"], g["close_source"], g["close"]) for g in cs.GRADED] == [
         ("0x1", "t1", "price_history", 0.56), ("0x1", "t2", "last_look", 0.41), ("0x2", "t3", "none", None)]
+
+
+# ---------- final check 1: pushes that fail, retries, interrupted runs ----------
+
+def copy_tree(src, dst):
+    import shutil
+    if os.path.exists(dst):
+        shutil.rmtree(dst)
+    if os.path.exists(src):
+        shutil.copytree(src, dst)
+
+
+def raw(folder, kind):
+    return read(folder, kind)
+
+
+def test_run_whose_results_were_never_saved_leaves_no_trace_and_no_duplicates(tmp_path):
+    """A failed push or a killed run: GitHub's next run starts from the last SAVED folder (state and logs
+    are saved in one commit). Replaying from that saved copy must give exactly one record of each change."""
+    f, saved = str(tmp_path / "repo"), str(tmp_path / "saved")
+    step(f, make_obs({W1: [pos("t1", 100, 50)]}), 0)
+    copy_tree(os.path.join(f, "research"), saved)                       # the last commit that reached GitHub
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 10)                   # this run's push failed: lost
+    copy_tree(saved, os.path.join(f, "research"))                       # next run checks out the saved folder
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 20)
+    rows = raw(f, "positions")
+    assert [(r["change"], r["observed_at"], r["prev_observed_at"]) for r in rows] == [
+        ("baseline", "2026-11-20T15:00:00Z", ""), ("shares_up", "2026-11-20T15:20:00Z", "2026-11-20T15:00:00Z")]
+    assert len({r["oid"] for r in rows}) == 2 and len(read(f, "runs")) == 2
+
+
+def test_rows_written_but_state_not_saved_repeat_with_the_same_id(tmp_path, monkeypatch):
+    f = str(tmp_path)
+    step(f, make_obs({W1: [pos("t1", 100, 50)]}), 0)
+    real_save = rl.save_state
+    monkeypatch.setattr(rl, "save_state", lambda *a: (_ for _ in ()).throw(OSError("disk full")))
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 10)                   # rows written, state lost
+    assert "state not saved" in read(f, "runs")[-1]["notes"]
+    monkeypatch.setattr(rl, "save_state", real_save)
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 20)                   # the same change is seen again
+    rows = raw(f, "positions")
+    assert [r["change"] for r in rows] == ["baseline", "shares_up", "shares_up"]
+    assert rows[1]["oid"] == rows[2]["oid"] != rows[0]["oid"]           # the repeat is recognisable...
+    clean = rl.read_log(f, "positions")
+    assert [(r["change"], r["observed_at"]) for r in clean] == [
+        ("baseline", "2026-11-20T15:00:00Z"), ("shares_up", "2026-11-20T15:10:00Z")]   # ...and dropped, earliest kept
+    step(f, make_obs({W1: [pos("t1", 100, 50)]}), 30)
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 40)                   # a REAL second rise to the same numbers
+    assert [r["change"] for r in rl.read_log(f, "positions")] == ["baseline", "shares_up", "shares_down", "shares_up"]
+
+
+def test_failed_write_of_one_log_is_retried_without_loss_or_repeat(tmp_path, monkeypatch):
+    f = str(tmp_path)
+    p = make_pick("x", bettors=4, pct=15.0, entry=0.50)
+    def obs(shares):
+        o = make_obs({W1: [pos("t1", shares, shares / 2)]})
+        o["card"]["markets"][p["condition_id"]] = {"start": (NOW + timedelta(hours=30)).isoformat()}
+        o["picks"], o["top_wallets"], o["sides"] = [p], set(), {}
+        return o
+    real_append = rl.append
+    def flaky(here, kind, when, cols, rows):
+        if kind == "positions":
+            raise OSError("disk write error")
+        return real_append(here, kind, when, cols, rows)
+    monkeypatch.setattr(rl, "append", flaky)
+    step(f, obs(100), 0)
+    assert raw(f, "positions") == [] and len(raw(f, "snapshots")) == 1  # one log failed, the others were written
+    assert "positions: OSError" in read(f, "runs")[-1]["notes"]
+    monkeypatch.setattr(rl, "append", real_append)
+    step(f, obs(100), 10)
+    rows = raw(f, "positions")
+    assert [r["change"] for r in rows] == ["baseline"]                  # written now, once, still correctly labelled
+    assert len(raw(f, "snapshots")) == 1
+    # the market row had been written before the failure, so it was written again: same oid, dropped on reading
+    assert len(raw(f, "markets")) == 2 and len(rl.read_log(f, "markets")) == 1
+
+
+def test_torn_row_from_an_interrupted_write_is_isolated(tmp_path):
+    f = str(tmp_path)
+    step(f, make_obs({W1: [pos("t1", 100, 50)]}), 0)
+    path = os.path.join(f, "research", "positions", "2026-11-20", "15.csv")
+    with open(path, "a") as fh:
+        fh.write("abc123,2026-11-20T15:05:00Z,,0xaaa,,deadbeef,shares_up,12")   # cut off mid-row, no line end
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 10)
+    assert [r["change"] for r in rl.read_log(f, "positions")] == ["baseline", "shares_up"]   # torn row skipped
+    with open(path) as fh:
+        assert fh.read().count("\n") == 4                                 # header, row, torn row, new row
+
+
+def test_runaway_output_is_refused(tmp_path, monkeypatch):
+    f = str(tmp_path)
+    monkeypatch.setattr(rl, "MAX_ROWS", 3)
+    step(f, make_obs({W1: [pos(f"t{i}") for i in range(5)]}), 0)
+    assert raw(f, "positions") == [] and "over the 3 limit" in read(f, "runs")[-1]["notes"]
+    monkeypatch.setattr(rl, "MAX_ROWS", 50_000)
+    step(f, make_obs({W1: [pos(f"t{i}") for i in range(5)]}), 10)
+    monkeypatch.setattr(rl, "MAX_FILE", 10)
+    said = rl.run(f, make_obs({W1: [pos(f"t{i}", 999) for i in range(5)]}), now=NOW + timedelta(minutes=20))
+    assert len(raw(f, "positions")) == 5 and "nothing written" in said   # an oversized file is left alone
+
+
+# ---------- final check 2: research failures cannot touch trading ----------
+
+@pytest.mark.parametrize("state_text", ["not json at all", "[1, 2, 3]", "{}", '{"epoch": "x", "positions": [1], '
+                                        '"decisions": {"a|b": "junk"}, "snapshots": {"k": 5}, "traders": {"w": "scanned"}}',
+                                        '{"epoch": "x", "positions": {"w|m": {"s": "NaN"}, "bad": 7}}'])
+def test_malformed_state_never_stops_logging(tmp_path, state_text):
+    f = str(tmp_path)
+    os.makedirs(os.path.join(f, "research"))
+    with open(os.path.join(f, "research", "state.json"), "w") as fh:
+        fh.write(state_text)
+    step(f, make_obs({W1: [pos("t1")]}), 0)
+    step(f, make_obs({W1: [pos("t1", 150, 80)]}), 10)
+    assert [r["change"] for r in rl.read_log(f, "positions")] == ["baseline", "shares_up"]
+    notes = [r["notes"] for r in read(f, "runs")]
+    assert "Error:" not in notes[1] and ":" not in notes[1]                # second run is clean
+
+
+@pytest.mark.parametrize("broken", ["append", "save_state", "load_state", "makedirs", "open"])
+def test_disk_errors_in_research_leave_trading_untouched(world, main_env, monkeypatch, tmp_path, broken):
+    scenario.build(world)
+    monkeypatch.setenv("RESEARCH_LOG", "off")
+    main_env.run()                                                       # reference run without research
+    reference = snapshot_of_decisions(main_env)
+    folder = tmp_path / "with_broken_research"
+    folder.mkdir()
+    monkeypatch.setattr(ft, "HERE", str(folder))
+    main_env.folder = str(folder)
+    monkeypatch.setenv("RESEARCH_LOG", "on")
+    boom = lambda *a, **k: (_ for _ in ()).throw(OSError(28, "No space left on device"))
+    if broken in ("append", "save_state", "load_state"):
+        monkeypatch.setattr(rl, broken, boom)
+    elif broken == "makedirs":
+        real = os.makedirs
+        monkeypatch.setattr(rl.os, "makedirs", lambda path, **k: boom() if "research" in str(path) else real(path, **k))
+    else:
+        import builtins
+        real_open = builtins.open
+        monkeypatch.setattr(builtins, "open", lambda path, *a, **k: boom() if os.sep + "research" in str(path)
+                            else real_open(path, *a, **k))
+    main_env.seen.clear()
+    main_env.run()                                                       # must not raise
+    assert snapshot_of_decisions(main_env) == reference                  # same bets, same real-money intents
+    for name in ("paper_trades.json", "paper_trades_chatgpt.json", "live_trades.json", "live_log.json",
+                 "paper_report.html", "paper_trades.csv"):
+        assert os.path.getsize(os.path.join(main_env.folder, name)) > 0  # state saved and report written
+    assert main_env.seen["live_runs"] == 1
+
+
+# ---------- bot-speed label and nothing sensitive ----------
+
+def test_bot_speed_traders_are_kept_and_labelled(tmp_path):
+    f = str(tmp_path)
+    obs = make_obs({W1: [pos("t1")], W2: [pos("t2")], "0xccc": [pos("t3")]})
+    obs["pace"], obs["max_pace"] = {W1: 320.0, W2: 4.0}, 50
+    step(f, obs, 0)
+    assert {r["w"]: r["bot_speed"] for r in raw(f, "positions")} == {W1: "1", W2: "0", "0xccc": ""}   # '' = unknown
+    board = {r["wallet"]: (r["bot_speed"], r["trades_per_hour"]) for r in raw(f, "leaderboard")}
+    assert board == {W1: ("1", "320.0"), W2: ("0", "4.0"), "0xccc": ("", "")}
+
+
+def test_nothing_sensitive_reaches_the_research_folder(world, main_env, monkeypatch):
+    secrets = {name: f"SECRET-{name}-9f8e7d" for name in (
+        "KALSHI_KEY_ID", "KALSHI_PRIVATE_KEY", "PM_US_KEY_ID", "PM_US_SECRET_KEY", "PROPHETX_ACCESS_KEY",
+        "PROPHETX_SECRET_KEY", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID")}
+    for name, value in secrets.items():
+        monkeypatch.setenv(name, value)
+    scenario.build(world)
+    main_env.run()
+    obs = make_obs({W1: [pos("t1")]}, status={W2: "error"})
+    obs["scan"]["traders"][W1]["reason"] = "HTTPError: 403 for url: https://example.test/x?user=0xabc&apikey=SECRET-K"
+    obs["scan"]["board"][0]["user_id"] = W1
+    rl.run(main_env.folder, obs)
+    text, names = "", []
+    for root, _, files in os.walk(os.path.join(main_env.folder, "research")):
+        for name in files:
+            names.append(name)
+            with open(os.path.join(root, name)) as fh:
+                text += fh.read()
+    assert names and not any(v in text for v in secrets.values())
+    assert "apikey" not in text and "SECRET" not in text                 # web address details are cut off
+    with open(os.path.join(main_env.folder, "live_trades.json")) as fh:
+        assert '"cash"' in fh.read()                                     # the real account file has balances...
+    for word in ("cash", "balance", "private", "secret", "password", "bearer", "authorization", "chat_id", "@"):
+        assert word not in text.lower()                                  # ...the research folder has none of it
+    assert not [n for n in names if n.endswith(".tmp")]
+    allowed = set(rl.GRADED_COLS + rl.POSITION_COLS + rl.MARKET_COLS + rl.DECISION_COLS + rl.SNAPSHOT_COLS
+                  + rl.PATH_COLS + rl.BOARD_COLS + rl.RULES_COLS + rl.RUN_COLS)
+    assert not [c for c in allowed if any(w in c for w in ("key", "secret", "auth", "email", "cash", "balance"))]
+
+
+def test_scanner_keeps_only_a_few_trade_fields(monkeypatch):
+    sc = ft.scanner
+    for part in sc.RESEARCH.values():
+        part.clear()
+    monkeypatch.setattr(sc, "get", lambda path, params, **k: {"data": [
+        {"timestamp": 1700000000 + i, "side": "BUY", "asset": "tokA", "size": 5, "title": "A vs B",
+         "transaction_hash": "0xdead", "user_name": "someone", "bio": "x" * 500} for i in range(3)]})
+    assert sc.crypto_share("0x1") == 0.0
+    assert sc.RESEARCH["trades"]["0x1"][0] == {"timestamp": 1700000000, "side": "BUY", "asset": "tokA", "size": 5}
+    assert "bio" in sc.RESEARCH["trade_fields"] and "asset" in sc.RESEARCH["trade_fields"]
+    sc._keep_trades("0x2", [None, 5])                                    # nonsense in: no error out

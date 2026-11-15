@@ -26,6 +26,7 @@ Reading these honestly:
 - A trader's record "as of" a moment must use only rows graded before it: see record_as_of().
 - Several markets on one game are not independent: every row carries the game, count per game.
 """
+import copy
 import csv
 import hashlib
 import json
@@ -36,32 +37,37 @@ from datetime import datetime, timedelta, timezone
 import pick_log
 
 FOLDER = "research"
+MAX_ROWS = 50_000         # most rows one log may add in one run (a runaway bug must not fill the repo)
+MAX_FILE = 20_000_000     # never add to a file already this big (GitHub refuses pushes with huge files,
+                          # and a refused push would lose that run's trading results too)
 TRACK_DAYS = 3            # position changes: games starting within this many days (the bet window)
 PRICE_STEP = 0.01         # a pick snapshot is written when its price or entry moves this much...
 PCT_STEP = 2.0            # ...or its average bankroll % moves this much, or any count changes
 PATH_MINUTES = (360, 180, 60, 30, 15, 5)  # price path: minutes before the start
 SHARE_TOL, COST_TOL = 0.01, 0.01          # smaller differences are rounding, not a change
 
-GRADED_COLS = ["graded_at", "wallet", "name", "token_id", "game", "sport", "market", "pick", "start",
+# "oid" = a stable observation id. If a run's rows are ever written twice (see read_log), the copies
+# carry the same oid, so they can be recognised and dropped.
+GRADED_COLS = ["oid", "graded_at", "wallet", "name", "token_id", "game", "sport", "market", "pick", "start",
                "first_seen", "entry", "close", "clv", "close_source"]
 # To keep the files small, rows name a trader by "w" (the first 12 characters of the wallet; the full
 # wallet is in the leaderboard log) and a market outcome by "m" (a 12-character code; research/markets/
 # and each snapshot's first_seen row give the full token, market, game and start for that code).
-POSITION_COLS = ["observed_at", "prev_observed_at", "w", "m", "change", "shares", "shares_delta", "cost",
+POSITION_COLS = ["oid", "observed_at", "prev_observed_at", "w", "bot_speed", "m", "change", "shares", "shares_delta", "cost",
                  "cost_delta", "avg_price", "value", "price", "trader_open_value", "pct_of_open_value",
                  "position_first_entry_at", "not_observed_reason", "last_value", "trade_evidence",
                  "trades_in_gap", "trade_first_at", "trade_last_at", "trade_shares"]
-MARKET_COLS = ["observed_at", "m", "token_id", "condition_id", "game", "outcome", "start"]
-DECISION_COLS = ["observed_at", "strategy", "rules", "m", "token_id", "game", "market", "pick",
-                 "code", "stake", "dollars", "bettors", "against", "bankroll_pct", "entry", "price", "venue",
+MARKET_COLS = ["oid", "observed_at", "m", "token_id", "condition_id", "game", "outcome", "start"]
+DECISION_COLS = ["oid", "observed_at", "strategy", "rules", "m", "token_id", "game", "market", "pick",
+                 "code", "prev_code", "stake", "dollars", "bettors", "against", "bankroll_pct", "entry", "price", "venue",
                  "quotes"]
-SNAPSHOT_COLS = (["observed_at", "scope", "m", "reason", "token_id", "condition_id", "game", "sport", "market",
+SNAPSHOT_COLS = (["oid", "observed_at", "scope", "m", "reason", "token_id", "condition_id", "game", "sport", "market",
                   "pick", "start"] + list(pick_log.WIDE_SNAP.values()))
-PATH_COLS = (["observed_at", "token_id", "start", "points", "first_point_at"]
+PATH_COLS = (["oid", "observed_at", "token_id", "start", "points", "first_point_at"]
              + [f"p_{m}m" for m in PATH_MINUTES] + ["close", "source"])
-BOARD_COLS = ["observed_at", "reason", "w", "wallet", "name", "rank", "pnl", "volume", "status", "status_detail",
-              "crypto_share", "trades_per_hour", "open_value", "positions", "hedged_markets"]
-RULES_COLS = ["observed_at", "strategy", "rules", "settings"]
+BOARD_COLS = ["oid", "observed_at", "reason", "w", "wallet", "name", "rank", "pnl", "volume", "status",
+              "prev_status", "status_detail", "crypto_share", "trades_per_hour", "bot_speed", "open_value", "positions", "hedged_markets"]
+RULES_COLS = ["oid", "observed_at", "strategy", "rules", "settings"]
 RUN_COLS = ["observed_at", "run_seconds", "research_seconds", "board", "scanned", "skipped_bot", "errors",
             "picks", "wide_picks", "graded", "positions", "markets", "decisions", "snapshots", "price_paths",
             "leaderboard", "rules", "tracked_positions", "research_bytes", "state_bytes", "trade_fields", "notes"]
@@ -97,16 +103,33 @@ def short(token):
     return hashlib.sha1(str(token).encode()).hexdigest()[:12]
 
 
+def oid(*parts):
+    return hashlib.sha1("|".join(str(p) for p in parts).encode()).hexdigest()[:12]
+
+
 def append(here, kind, when, cols, rows):
     """Add rows to research/<kind>/<UTC day>/<UTC hour>.csv (or research/<kind>.csv when `when` is None).
-    One small file per hour: a finished hour's file never changes again, which Git stores cheaply."""
+    One small file per hour: a finished hour's file never changes again, which Git stores cheaply.
+    Refuses to write absurd amounts, and starts on a fresh line if an earlier write was cut short."""
     if not rows:
         return 0
+    if len(rows) > MAX_ROWS:
+        raise ValueError(f"{len(rows)} rows in one run is over the {MAX_ROWS} limit; nothing written")
     path = os.path.join(here, FOLDER, f"{kind}.csv" if when is None else os.path.join(
         kind, when.strftime("%Y-%m-%d"), when.strftime("%H") + ".csv"))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     new = not os.path.exists(path)
+    torn = False
+    if not new:
+        if os.path.getsize(path) > MAX_FILE:
+            raise ValueError(f"{os.path.relpath(path, here)} is over {MAX_FILE} bytes; nothing written")
+        with open(path, "rb") as f:
+            if os.path.getsize(path):
+                f.seek(-1, os.SEEK_END)
+                torn = f.read(1) != b"\n"  # an earlier write stopped mid-row
     with open(path, "a", newline="") as f:
+        if torn:
+            f.write("\r\n")
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         if new:
             w.writeheader()
@@ -114,17 +137,60 @@ def append(here, kind, when, cols, rows):
     return len(rows)
 
 
-def load_state(here):
+def read_log(here, kind):
+    """Every row of a log, oldest first, without repeats. Rows cut short by an interrupted write are
+    skipped, and a row whose oid was already seen (the same observation written twice) is dropped."""
+    base = os.path.join(here, FOLDER)
+    single = os.path.join(base, kind + ".csv")
+    paths = [single] if os.path.exists(single) else sorted(
+        os.path.join(root, f) for root, _, files in os.walk(os.path.join(base, kind)) for f in files
+        if f.endswith(".csv"))
+    out, seen = [], set()
+    for path in paths:
+        with open(path, newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if None in row or None in row.values() or not row.get("oid") or row["oid"] in seen:
+                    continue  # wrong number of fields (a torn row), or a repeat
+                seen.add(row["oid"])
+                out.append(row)
+    return out
+
+
+SECTIONS = {"positions": dict, "looked": dict, "decisions": dict, "snapshots": dict, "paths": dict,
+            "traders": dict, "rules": dict, "ready": dict, "board_day": str, "epoch": str}
+
+
+def fresh_state(now):
+    return {k: t() for k, t in SECTIONS.items()} | {"epoch": iso(now)}
+
+
+def load_state(here, now):
+    """(state, problem). A missing file is a normal first run. An unreadable or wrongly shaped file
+    starts again from nothing (the CSV history is untouched); malformed entries are dropped.
+    "epoch" marks when this state began: it is part of every oid, so ids never repeat across a restart.
+    "ready" lists the logs that have been written at least once since then (see "baseline")."""
     path = os.path.join(here, FOLDER, "state.json")
-    fresh = {"positions": {}, "decisions": {}, "snapshots": {}, "paths": {}, "traders": {}, "board_day": "",
-             "rules": {}}
     if not os.path.exists(path):
-        return fresh, ""
+        return fresh_state(now), ""
     try:
         with open(path) as f:
-            return {**fresh, **json.load(f)}, ""
-    except Exception as e:  # unreadable: start again (the CSV history itself is untouched)
-        return fresh, f"state reset ({type(e).__name__})"
+            loaded = json.load(f)
+        if not isinstance(loaded, dict) or not loaded.get("epoch"):
+            raise ValueError("not a research state")
+        state = fresh_state(now)
+        for key, kind in SECTIONS.items():
+            if isinstance(loaded.get(key), kind):
+                state[key] = loaded[key]
+        ok = lambda v: isinstance(v, dict) and all(isinstance(v.get(k), (int, float)) for k in ("s", "c", "t"))
+        state["positions"] = {k: v for k, v in state["positions"].items() if "|" in k and ok(v)}
+        state["decisions"] = {k: v for k, v in state["decisions"].items() if isinstance(v, list) and len(v) == 3}
+        state["snapshots"] = {k: v for k, v in state["snapshots"].items()
+                              if isinstance(v, dict) and isinstance(v.get("v"), list) and len(v["v"]) == 11}
+        state["traders"] = {k: v for k, v in state["traders"].items() if isinstance(v, list) and len(v) == 2}
+        return state, ""
+    except Exception as e:
+        return fresh_state(now), f"state reset ({type(e).__name__})"
 
 
 def save_state(here, state):
@@ -141,7 +207,8 @@ def graded_rows(graded):
     rows = []
     for g in graded:
         game = game_of(g.get("game"))
-        rows.append({"graded_at": iso(parse(g["graded_at"])), "wallet": g["wallet"], "name": g.get("name"),
+        rows.append({"oid": oid("graded", g["wallet"], g["token_id"], g.get("start"), g.get("first_seen")),
+                     "graded_at": iso(parse(g["graded_at"])), "wallet": g["wallet"], "name": g.get("name"),
                      "token_id": g["token_id"], "game": game, "sport": game.split("-")[0],
                      "market": g.get("market"), "pick": g.get("pick"), "start": g.get("start"),
                      "first_seen": g.get("first_seen"), "entry": g.get("entry"),
@@ -180,7 +247,7 @@ def record_as_of(rows, wallet, when, sport=None):
 
 # ---------------- 2. position changes ----------------
 
-TRADE_TOKEN_KEYS = ("token_id", "asset", "asset_id", "tokenId")
+TRADE_TOKEN_KEYS = ("token_id", "asset", "asset_id", "tokenId")  # possible names of the market field
 TRADE_SIZE_KEYS = ("size", "shares", "amount")
 
 
@@ -217,6 +284,12 @@ def wshort(wallet):
     return str(wallet)[:12]
 
 
+def bot_flag(obs, wallet):
+    """1 = trades at bot speed (over the report card's limit), 0 = slower, '' = pace unknown."""
+    pace, limit = (obs.get("pace") or {}).get(wallet), obs.get("max_pace")
+    return "" if pace is None or not limit else int(pace > limit)
+
+
 def position_rows(state, obs, now):
     """(position rows, market rows): tracked positions whose shares or cost changed, positions no longer
     seen, and a market row the first time any trader is seen holding that outcome.
@@ -224,7 +297,9 @@ def position_rows(state, obs, now):
     prev_observed_at = the previous time that trader's positions were read."""
     markets = (obs.get("card") or {}).get("markets") or {}
     traders, trades = obs["scan"].get("traders") or {}, obs["scan"].get("trades") or {}
-    seen, looked = state["positions"], state.setdefault("looked", {})
+    seen, looked, epoch = state["positions"], state["looked"], state["epoch"]
+    first = "first_seen" if state["ready"].get("positions") else "baseline"  # baseline = already held when
+    # tracking began (first run, or after a state restart): not evidence that it was just bought
     rows, market_rows, stamp, horizon = [], [], iso(now), now + timedelta(days=TRACK_DAYS)
     for key in [k for k, v in seen.items() if v["t"] <= now.timestamp()]:
         del seen[key]  # the game has started: nothing more to track
@@ -233,7 +308,7 @@ def position_rows(state, obs, now):
         info = traders.get(wallet) or {}
         if info.get("status") != "scanned":
             continue
-        w, prev = wshort(wallet), looked.get(wshort(wallet), "")
+        w, prev, bot = wshort(wallet), looked.get(wshort(wallet), ""), bot_flag(obs, wallet)
         current = set()
         for p in positions:
             start = parse((markets.get(p.get("condition_id")) or {}).get("start"))
@@ -245,7 +320,8 @@ def position_rows(state, obs, now):
             current.add(key)
             if m not in known:
                 known.add(m)
-                market_rows.append({"observed_at": stamp, "m": m, "token_id": token,
+                market_rows.append({"oid": oid("markets", m, iso(start)), "observed_at": stamp, "m": m,
+                                    "token_id": token,
                                     "condition_id": p.get("condition_id"), "game": game_of(p.get("event_slug")),
                                     "outcome": p.get("outcome"), "start": iso(start)})
             shares, cost = float(p.get("current_size") or 0), float(p.get("entry_cost_usdc") or 0)
@@ -254,17 +330,19 @@ def position_rows(state, obs, now):
             if old and old.get("g"):
                 change = "reappeared"
             elif not old:
-                change = "first_seen"
+                change = first
             elif abs(shares - old["s"]) > SHARE_TOL:
                 change = "shares_up" if shares > old["s"] else "shares_down"
             elif abs(cost - old["c"]) > COST_TOL:
                 change = "cost_changed"
             else:
                 change = None  # same shares and cost: any change in value is the price moving, not a trade
+            n = (old or {}).get("n", 0) + (1 if change else 0)
             if change:
                 ev = trade_evidence(trades.get(wallet), token, parse(prev), now)
                 rows.append({
-                    "observed_at": stamp, "prev_observed_at": prev, "w": w, "m": m, "change": change,
+                    "oid": oid("positions", key, epoch, n), "observed_at": stamp, "prev_observed_at": prev,
+                    "w": w, "bot_speed": bot, "m": m, "change": change,
                     "shares": round(shares, 2), "shares_delta": round(shares - old["s"], 2) if old else "",
                     "cost": round(cost, 2), "cost_delta": round(cost - old["c"], 2) if old else "",
                     "avg_price": p.get("avg_price"), "value": value, "price": p.get("current_price"),
@@ -274,14 +352,16 @@ def position_rows(state, obs, now):
                     "trades_in_gap": ev[1], "trade_first_at": ev[2], "trade_last_at": ev[3],
                     "trade_shares": ev[4]})
             seen[key] = {"s": round(shares, 2), "c": round(cost, 2), "v": value, "t": int(start.timestamp()),
-                         "h": short(p.get("condition_id"))}
+                         "h": short(p.get("condition_id")), "n": n}
         hedged = {short(c) for c in info.get("hedged") or ()}
         for key, old in seen.items():  # tracked before, not in this trader's list now
             if not key.startswith(w + "|") or key in current or old.get("g"):
                 continue
             m = key.split("|")[1]
+            old["n"] = old.get("n", 0) + 1
             rows.append({
-                "observed_at": stamp, "prev_observed_at": prev, "w": w, "m": m, "change": "not_observed",
+                "oid": oid("positions", key, epoch, old["n"]), "observed_at": stamp, "prev_observed_at": prev,
+                "w": w, "bot_speed": bot, "m": m, "change": "not_observed",
                 "trader_open_value": info.get("bankroll"), "last_value": old.get("v"),
                 "not_observed_reason": ("market_dropped_as_hedged" if old.get("h") in hedged
                                         else "not_in_positions_over_min_value"),
@@ -300,7 +380,8 @@ def rule_versions(state, rules, now):
         text = json.dumps(settings, sort_keys=True, default=str)
         stamps[key] = hashlib.sha1(text.encode()).hexdigest()[:8]
         if state["rules"].get(key) != stamps[key]:
-            rows.append({"observed_at": iso(now), "strategy": key, "rules": stamps[key], "settings": text})
+            rows.append({"oid": oid("rules", key, stamps[key], state["rules"].get(key), state["epoch"]),
+                         "observed_at": iso(now), "strategy": key, "rules": stamps[key], "settings": text})
             state["rules"][key] = stamps[key]
     return stamps, rows
 
@@ -321,8 +402,10 @@ def decision_rows(state, decisions, stamps, now):
         moved = best is not None and (not last or last[1] is None or abs(best - last[1]) >= PRICE_STEP - 1e-9)
         if last and last[0] == d["code"] and not moved:
             continue
-        state["decisions"][key] = [d["code"], best if best is not None else (last[1] if last else None)]
-        rows.append({**d, "observed_at": iso(now), "rules": stamps.get(d["strategy"], ""), "m": short(d["token_id"]),
+        n = (last[2] if last else 0) + 1
+        state["decisions"][key] = [d["code"], best if best is not None else (last[1] if last else None), n]
+        rows.append({**d, "oid": oid("decisions", key, state["epoch"], n), "prev_code": last[0] if last else "",
+                     "observed_at": iso(now), "rules": stamps.get(d["strategy"], ""), "m": short(d["token_id"]),
                      "game": game_of(d.get("link")),
                      "quotes": ";".join(f"{v}:{p}:{c}" for v, p, c in quotes)})
     for key in [k for k in state["decisions"] if k not in live]:
@@ -339,7 +422,8 @@ def path_rows(state, history, now):
         if key in state["paths"]:
             continue
         state["paths"][key] = day
-        row = {"observed_at": iso(now), "token_id": token, "start": from_unix(start_ts), "points": len(points),
+        row = {"oid": oid("price_paths", token, start_ts), "observed_at": iso(now), "token_id": token,
+               "start": from_unix(start_ts), "points": len(points),
                "first_point_at": from_unix(points[0][0]) if points else "",
                "close": points[-1][1] if points else "", "source": "clob /prices-history, 1-minute, 6h before start"}
         for m in PATH_MINUTES:
@@ -347,7 +431,7 @@ def path_rows(state, history, now):
             row[f"p_{m}m"] = before[-1] if before else ""
         rows.append(row)
     cutoff = (now - timedelta(days=4)).date().isoformat()
-    for key in [k for k, d in state["paths"].items() if d < cutoff]:
+    for key in [k for k, d in state["paths"].items() if not isinstance(d, str) or d < cutoff]:
         del state["paths"][key]
     return rows
 
@@ -363,6 +447,7 @@ def snapshot_rows(state, obs, now):
     change. scope: top100 = the picks the strategies use; top200 = the wider research picks."""
     markets = (obs.get("card") or {}).get("markets") or {}
     rows, live, skipped = [], set(), 0
+    first = "first_seen" if state["ready"].get("snapshots") else "baseline"  # see position_rows
     for scope, picks, only in (("top100", obs.get("picks") or [], obs.get("top_wallets")),
                                ("top200", obs.get("wide_picks") or [], None)):
         try:
@@ -379,11 +464,12 @@ def snapshot_rows(state, obs, now):
             snap = {v: p.get(k) for k, v in pick_log.WIDE_SNAP.items()}
             key = f'{scope}|{short(p["token_id"])}'
             live.add(key)
-            last = state["snapshots"].get(key)
+            had = state["snapshots"].get(key)
+            last = had["v"] if had else None
             now_vals = [snap.get(c) for c in COUNTS] + [snap.get("price"), snap.get("entry"),
                                                        snap.get("bankroll_pct")]
             if not last:
-                reason = "first_seen"
+                reason = first
             elif last[:len(COUNTS)] != now_vals[:len(COUNTS)]:
                 reason = "counts"
             elif _moved(last[-3], now_vals[-3], PRICE_STEP):
@@ -394,9 +480,11 @@ def snapshot_rows(state, obs, now):
                 reason = "bankroll_pct"
             else:
                 continue
-            state["snapshots"][key] = now_vals
-            row = {**snap, "observed_at": iso(now), "scope": scope, "m": short(p["token_id"]), "reason": reason}
-            if reason == "first_seen":  # the full description once; later rows carry only the code "m"
+            n = (had["n"] if had else 0) + 1
+            state["snapshots"][key] = {"v": now_vals, "n": n}
+            row = {**snap, "oid": oid("snapshots", key, state["epoch"], n), "observed_at": iso(now),
+                   "scope": scope, "m": short(p["token_id"]), "reason": reason}
+            if not last:  # the full description once; later rows carry only the code "m"
                 game = game_of(p.get("Link"))
                 row.update(token_id=p["token_id"], condition_id=p.get("condition_id"), game=game,
                            sport=game.split("-")[0], market=p.get("Market"), pick=p.get("Pick"), start=iso(start))
@@ -414,36 +502,52 @@ def _moved(old, new, step):
 
 # ---------------- 6. leaderboard ----------------
 
+def clean(text):
+    """An error message without any web address details (nothing after a '?'), kept short."""
+    words = [w.split("?")[0] + ("?..." if "?" in w else "") for w in str(text or "").split()]
+    return " ".join(words)[:120]
+
+
 def board_rows(state, obs, now):
     """The whole leaderboard on the first run of each UTC day; after that, only traders whose status
-    changed (scanned / skipped_bot / error / off_board). 'error' = their data could not be read."""
-    scan, day, stamp = obs["scan"], now.date().isoformat(), iso(now)
+    changed (scanned / skipped_bot / error / off_board). 'error' = their data could not be read.
+    bot_speed marks traders over the report card's trades-per-hour limit, so research can leave them out."""
+    scan, day, stamp, epoch = obs["scan"], now.date().isoformat(), iso(now), state["epoch"]
     traders, rows, full = scan.get("traders") or {}, [], state.get("board_day") != day
+    known = dict(state["traders"])
     on_board = {}
     for i, t in enumerate(scan.get("board") or [], 1):
         wallet = t.get("user_id") or t.get("proxy_wallet")
         info = traders.get(wallet) or {}
         status = info.get("status") or "not_reached"
-        on_board[wallet] = status
-        if full or state["traders"].get(wallet) != status:
-            rows.append({"observed_at": stamp, "reason": "daily" if full else "status_change",
+        was = known.get(wallet) or ["", 0]
+        changed = was[0] != status
+        on_board[wallet] = [status, was[1] + (1 if changed else 0)]
+        if full or changed:
+            pace = (obs.get("pace") or {}).get(wallet)
+            rows.append({"oid": oid("leaderboard", wallet, epoch, on_board[wallet][1], day if full else ""),
+                         "observed_at": stamp, "reason": "daily" if full else "status_change",
                          "w": wshort(wallet), "wallet": wallet,
                          "name": t.get("user_name") or wallet, "rank": t.get("rank", i), "pnl": t.get("pnl"),
-                         "volume": t.get("volume"), "status": status, "status_detail": info.get("reason", ""),
+                         "volume": t.get("volume"), "status": status, "prev_status": was[0],
+                         "status_detail": clean(info.get("reason")),
                          "crypto_share": info.get("crypto_share", ""),
-                         "trades_per_hour": round((obs.get("pace") or {}).get(wallet), 1)
-                         if (obs.get("pace") or {}).get(wallet) is not None else "",
+                         "trades_per_hour": round(pace, 1) if pace is not None else "",
+                         "bot_speed": bot_flag(obs, wallet),
                          "open_value": info.get("bankroll", ""), "positions": info.get("raw_positions", ""),
                          "hedged_markets": len(info["hedged"]) if "hedged" in info else ""})
     if not on_board:
         return rows  # no leaderboard this run: conclude nothing about anyone
-    for wallet, status in state["traders"].items():
-        if wallet not in on_board and status != "off_board":
-            rows.append({"observed_at": stamp, "reason": "status_change", "w": wshort(wallet),
-                         "wallet": wallet, "status": "off_board"})
-            on_board[wallet] = "off_board"
-        elif wallet not in on_board:
-            on_board[wallet] = "off_board"
+    for wallet, was in known.items():
+        if wallet in on_board:
+            continue
+        if was[0] != "off_board":
+            on_board[wallet] = ["off_board", was[1] + 1]
+            rows.append({"oid": oid("leaderboard", wallet, epoch, was[1] + 1, ""), "observed_at": stamp,
+                         "reason": "status_change", "w": wshort(wallet), "wallet": wallet,
+                         "status": "off_board", "prev_status": was[0]})
+        else:
+            on_board[wallet] = was
     state["traders"], state["board_day"] = on_board, day
     return rows
 
@@ -458,63 +562,73 @@ def folder_bytes(here):
 
 
 def run(here, obs, now=None):
-    """Write this run's research rows. Returns a short summary. Each log is written on its own, so a
-    problem in one is noted in runs.csv and does not lose the others."""
+    """Write this run's research rows. Returns a short summary.
+    Each log stands alone: its rows are worked out on a COPY of its part of the state, and that part is
+    only kept if the rows were written. So a failed write is simply tried again next run (with the same
+    oids), a problem in one log never loses or repeats another, and nothing here can raise."""
     began = time.time()
     now = now or datetime.now(timezone.utc)
-    state, problem = load_state(here)
-    notes, counts = ([problem] if problem else []), {}
-    stamps = {}
+    state, problem = load_state(here, now)
+    notes, counts, stamps = ([problem] if problem else []), {}, {}
 
-    def step(name, fn):
+    def log(name, sections, build):
+        """build(view) -> [(kind, when, cols, rows), ...]; `view` is the state with copies of `sections`."""
         try:
-            return fn()
+            view = {**state, **{k: copy.deepcopy(state[k]) for k in sections}}
+            for kind, when, cols, rows in build(view):
+                counts[kind] = append(here, kind, when, cols, rows)
+            for k in sections:
+                state[k] = view[k]
+            state["ready"][name] = 1
         except Exception as e:
-            notes.append(f"{name}: {type(e).__name__}: {e}"[:160])
-            return None
+            counts.setdefault(name, "")
+            notes.append(f"{name}: {type(e).__name__}: {clean(e)}")
 
-    def log_rules():
-        nonlocal stamps
-        stamps, rows = rule_versions(state, obs.get("rules"), now)
-        return append(here, "rules", None, RULES_COLS, rows)
+    def rules(view):
+        found, rows = rule_versions(view, obs.get("rules"), now)
+        stamps.update(found)
+        return [("rules", None, RULES_COLS, rows)]
 
-    def log_snapshots():
-        rows, skipped = snapshot_rows(state, obs, now)
+    def positions(view):
+        rows, market_rows = position_rows(view, obs, now)
+        return [("markets", now, MARKET_COLS, market_rows), ("positions", now, POSITION_COLS, rows)]
+
+    def snapshots(view):
+        rows, skipped = snapshot_rows(view, obs, now)
         if skipped:
             notes.append(f"{skipped} picks without a known game start")
-        return append(here, "snapshots", now, SNAPSHOT_COLS, rows)
+        return [("snapshots", now, SNAPSHOT_COLS, rows)]
 
-    counts["rules"] = step("rules", log_rules)
-    def log_positions():
-        rows, market_rows = position_rows(state, obs, now)
-        counts["markets"] = append(here, "markets", now, MARKET_COLS, market_rows)
-        return append(here, "positions", now, POSITION_COLS, rows)
+    log("rules", ["rules"], rules)
+    log("graded", [], lambda v: [("graded", now, GRADED_COLS, graded_rows(obs.get("graded") or []))])
+    log("positions", ["positions", "looked"], positions)
+    log("decisions", ["decisions"], lambda v: [
+        ("decisions", now, DECISION_COLS, decision_rows(v, obs.get("decisions"), stamps, now))])
+    log("snapshots", ["snapshots"], snapshots)
+    log("price_paths", ["paths"], lambda v: [("price_paths", now, PATH_COLS, path_rows(v, obs.get("history"), now))])
+    log("leaderboard", ["traders", "board_day"], lambda v: [
+        ("leaderboard", now, BOARD_COLS, board_rows(v, obs, now))])
+    try:
+        save_state(here, state)
+    except Exception as e:
+        notes.append(f"state not saved: {type(e).__name__}")  # next run repeats this run's rows, same oids
 
-    counts["graded"] = step("graded", lambda: append(here, "graded", now, GRADED_COLS,
-                                                     graded_rows(obs.get("graded") or [])))
-    counts["positions"] = step("positions", log_positions)
-    counts["decisions"] = step("decisions", lambda: append(
-        here, "decisions", now, DECISION_COLS, decision_rows(state, obs.get("decisions"), stamps, now)))
-    counts["snapshots"] = step("snapshots", log_snapshots)
-    counts["price_paths"] = step("price_paths", lambda: append(here, "price_paths", now, PATH_COLS,
-                                                               path_rows(state, obs.get("history"), now)))
-    counts["leaderboard"] = step("leaderboard", lambda: append(here, "leaderboard", now, BOARD_COLS,
-                                                               board_rows(state, obs, now)))
-    step("state", lambda: save_state(here, state))
-
-    scan = obs.get("scan") or {}
-    statuses = [t.get("status") for t in (scan.get("traders") or {}).values()]
-    first = next((t[0] for t in (scan.get("trades") or {}).values() if t), None)
-    state_path = os.path.join(here, FOLDER, "state.json")
-    append(here, "runs", None, RUN_COLS, [{
-        "observed_at": iso(now),
-        "run_seconds": round(began - obs["run_started"], 1) if obs.get("run_started") else "",
-        "research_seconds": round(time.time() - began, 2), "board": len(scan.get("board") or []),
-        "scanned": statuses.count("scanned"), "skipped_bot": statuses.count("skipped_bot"),
-        "errors": statuses.count("error"), "picks": len(obs.get("picks") or []),
-        "wide_picks": len(obs.get("wide_picks") or []), **{k: ("" if v is None else v) for k, v in counts.items()},
-        "tracked_positions": sum(not v.get("g") for v in state["positions"].values()), "research_bytes": folder_bytes(here),
-        "state_bytes": os.path.getsize(state_path) if os.path.exists(state_path) else 0,
-        "trade_fields": " ".join(sorted(first)) if isinstance(first, dict) else "", "notes": " | ".join(notes)}])
+    try:
+        scan = obs.get("scan") or {}
+        statuses = [t.get("status") for t in (scan.get("traders") or {}).values()]
+        state_path = os.path.join(here, FOLDER, "state.json")
+        append(here, "runs", None, RUN_COLS, [{
+            "observed_at": iso(now),
+            "run_seconds": round(began - obs["run_started"], 1) if obs.get("run_started") else "",
+            "research_seconds": round(time.time() - began, 2), "board": len(scan.get("board") or []),
+            "scanned": statuses.count("scanned"), "skipped_bot": statuses.count("skipped_bot"),
+            "errors": statuses.count("error"), "picks": len(obs.get("picks") or []),
+            "wide_picks": len(obs.get("wide_picks") or []), **counts,
+            "tracked_positions": sum(not v.get("g") for v in state["positions"].values()),
+            "research_bytes": folder_bytes(here),
+            "state_bytes": os.path.getsize(state_path) if os.path.exists(state_path) else 0,
+            "trade_fields": " ".join(scan.get("trade_fields") or []), "notes": " | ".join(notes)}])
+    except Exception as e:
+        notes.append(f"runs: {type(e).__name__}")
     done = ", ".join(f"{v} {k}" for k, v in counts.items() if v)
     return (done or "nothing new") + (f" ({'; '.join(notes)})" if notes else "")

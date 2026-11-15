@@ -78,7 +78,14 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   `leaderboard` (daily list + every change in whether a trader could be scanned), plus `rules.csv`
   (settings whenever they change), `runs.csv` (per run: seconds, rows, folder size, problems) and
   `state.json` (last seen values, so only changes are written; not history). "w" = first 12 characters
-  of a wallet. A trader's record at a past moment: research_log.record_as_of (uses only rows graded
+  of a wallet. Every row has "oid", a stable observation id: if rows are ever written twice (e.g. the
+  state could not be saved), the copies share an oid; always read logs with research_log.read_log,
+  which drops repeats and rows cut short by an interrupted write. Each log is all-or-nothing with its
+  own part of the state, and state + logs are saved in one commit, so a failed push or killed run
+  leaves nothing behind. "baseline" (not "first_seen") marks what already existed when tracking began
+  or restarted. "bot_speed" = 1 marks traders over the report card's trades-per-hour limit (kept,
+  labelled, leave out when wanted). Guards: at most 50,000 rows per log per run, never adds to a file
+  over 20 MB. A trader's record at a past moment: research_log.record_as_of (uses only rows graded
   before it, one count per game). Archiving later: move finished day folders older than ~90 days into
   a zip attached to a GitHub Release and delete them from the repo (finished hour files never change,
   so they cost Git nothing more until then). Not collected (owner's decision 2026-11-15): order-book

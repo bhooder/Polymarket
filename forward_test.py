@@ -1581,7 +1581,8 @@ def main():
                 "picks": picks, "wide_picks": scanner.WIDE_PICKS, "card": card, "decisions": DECISIONS,
                 "rules": rules_snapshot(), "run_started": run_started, "scan": scanner.RESEARCH,
                 "positions": scanner.POSITIONS, "pace": scanner.PACE, "sides": scanner.SIDES,
-                "top_wallets": scanner.TOP_WALLETS, "graded": claude_strategy.GRADED,
+                "top_wallets": scanner.TOP_WALLETS, "max_pace": claude_strategy.MAX_PACE,
+                "graded": claude_strategy.GRADED,
                 "history": claude_strategy.HISTORY})
             print(f"Research log: {wrote}")
     except Exception as e:

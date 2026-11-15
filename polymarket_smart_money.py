@@ -115,14 +115,28 @@ def event_tags(event_ids):
 PACE = {}  # wallet -> trades per hour over their last 500 trades (filled by crypto_share)
 # Research only (research_log.py, added 2026-11-15): things the scan downloads anyway, kept in memory
 # for this run so they can be logged afterwards. Nothing here is read by any strategy or real bet.
-RESEARCH = {"board": [], "traders": {}, "trades": {}}
+RESEARCH = {"board": [], "traders": {}, "trades": {}, "trade_fields": []}
+
+
+TRADE_KEEP = ("timestamp", "side", "token_id", "asset", "asset_id", "tokenId", "size", "shares", "amount")
+
+
+def _keep_trades(wallet, trades):
+    """Research log only: remember when and what each trade was (a few fields, not the whole reply),
+    and which fields the trade list has. Must never raise."""
+    try:
+        RESEARCH["trades"][wallet] = [{k: t[k] for k in TRADE_KEEP if k in t} for t in trades]
+        if trades and not RESEARCH["trade_fields"]:
+            RESEARCH["trade_fields"].extend(sorted(str(k) for k in trades[0]))
+    except Exception:
+        pass
 
 
 def crypto_share(wallet):
     """Fraction of the wallet's last 500 trades that are on crypto price markets.
     Also notes the wallet's trading pace in PACE (bots trade far faster than people)."""
     trades = get("/trades", {"user": wallet, "limit": 500}).get("data") or []
-    RESEARCH["trades"][wallet] = trades  # research log only
+    _keep_trades(wallet, trades)  # research log only
     stamps = [t["timestamp"] for t in trades if t.get("timestamp")]
     if len(stamps) >= 100:  # too few trades says nothing about pace
         PACE[wallet] = len(stamps) / max((max(stamps) - min(stamps)) / 3600, 0.01)
