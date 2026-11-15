@@ -1,0 +1,4 @@
+oid,observed_at,strategy,rules,m,token_id,game,market,pick,code,prev_code,stake,dollars,bettors,against,bankroll_pct,entry,price,venue,quotes
+fa619d9cfbe0,2026-11-15T20:03:09Z,b,3e7100c6,837c4f23c178,1339463723260226502438923715546767332463073367564908774776926562714272325194,nfl-sea-lv-2026-11-15,Seahawks vs. Raiders,Seahawks,bet,price_outside_band,0.01,10.82,4,3,9.7,0.71,0.72,kalshi,prophetx:0.726:0.73;kalshi:0.72:0.7343;polymarket_us:0.7175:0.7368
+c490eb606180,2026-11-15T20:03:09Z,b,3e7100c6,504a6b9632fb,2801362453105062112583805972655061634849159220472655250790018586729817346197,nfl-buf-nyj-2026-11-15,Bills vs. Jets: O/U 46.5,Over,game_started,,0.01,,4,1,0.2,0.54,0.28,,
+3a0388f6ac66,2026-11-15T20:03:09Z,chatgpt,de6bc850,b01ed2ee55e0,98901749911458965591223087822370246415920127987093719214770267736046456838640,wta-svitoli-andreev-2026-11-15,"WTA Finals, Final Stage: Elina Svitolina vs Mirra Andreeva",Elina Svitolina,game_started,bet,0.01,,3,2,14.4,0.29,0.28,,
