@@ -2683,5 +2683,16 @@
    "status": 200,
    "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.63,\"mark_value\":2,\"market_id\":219,\"net_cost_basis\":2.02,\"net_outcome_id\":5,\"net_size\":3.18,\"sides\":[{\"average_price\":0.64,\"closable_size\":3.18,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2,\"mark_price\":0.63,\"mark_value\":2,\"outcome_id\":5,\"size\":3.18,\"strike_id\":\"64d02238479904f87df24da22901a7a2\"}],\"sport_event_id\":1700008807,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.52,\"mark_value\":2.02,\"market_id\":223,\"net_cost_basis\":2.02,\"net_outcome_id\":1715,\"net_size\":3.86,\"sides\":[{\"average_price\":0.52,\"closable_size\":3.86,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2.02,\"mark_price\":0.52,\"mark_value\":2.02,\"outcome_id\":1715,\"size\":3.86,\"strike_id\":\"e7f3d4e0944a6750ae915aeaad26e5bd\"}],\"sport_event_id\":1704742043,\"strike\":-7.5}]}"
   }
+ },
+ {
+  "at": "2026-11-15T21:21:49.689537+00:00",
+  "event": "settled",
+  "bet": "Browns +4.5",
+  "status": "won",
+  "cost": 2.23,
+  "payout": 4.0,
+  "profit": 1.77,
+  "venue": "kalshi",
+  "ref": "KXNFLSPREAD-26NOV15HOUCLE-HOU5"
  }
 ]

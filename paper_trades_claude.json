@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 840.0296127748561,
+ "cash": 833.9096272710366,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -344,7 +344,7 @@
   },
   {
    "placed_at": "2026-11-15T12:23:06.381486+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Saints",
    "market": "Spread: Saints (-1.5)",
@@ -375,15 +375,15 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4875,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.4,
+   "settled_at": "2026-11-15T21:21:49.350382+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
   {
    "placed_at": "2026-11-15T14:16:54.415144+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Dolphins",
    "market": "Spread: Colts (-10.5)",
@@ -413,9 +413,9 @@
     "kalshi": 0.7443
    },
    "intl_cost_per_share": 0.726,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.64,
+   "profit": 3.24,
+   "settled_at": "2026-11-15T21:21:49.426089+00:00",
    "topped_up_at": null,
    "close": 0.685
   },
@@ -754,6 +754,79 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T21:24:56.878383+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Hawks vs. Bucks: O/U 232.5",
+   "link": "https://polymarket.com/event/nba-atl-mil-2026-11-15",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfc2cedcde400c680a58fa5054c1b39388ff5cada50919bdd2002630f93aa1293",
+   "token_id": "14592418269931962312844505297083244188915318703965343007338249061776011419966",
+   "outcome_index": 0,
+   "ends": "2026-11-16T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.5215,
+   "shares": 17.815025870690032,
+   "cost": 9.38,
+   "fees": 0.0889,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1195092dac1768279cf29ed5930624e7",
+    "fee_rate": 0.02,
+    "event_id": 1704742043
+   },
+   "quotes": {
+    "prophetx": 0.5265,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T21:24:57.517177+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "49ers vs. Cowboys: O/U 56.5",
+   "link": "https://polymarket.com/event/nfl-sf-dal-2026-11-15",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3ec56b9161607385140d1bb5ccf24f3bf41c47a0e0fbb4ed9488247e8e2925ee",
+   "token_id": "47526208337624258266601438513598593236554347346684119048456475725802835727141",
+   "outcome_index": 1,
+   "ends": "2026-11-15T21:25:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.52,
+   "shares": 17.433466301500356,
+   "cost": 9.38,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV15SFDAL-57",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5378
+   },
+   "intl_cost_per_share": 0.5375,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,5 +1,5 @@
 {
- "cash": 205.47,
+ "cash": 213.45,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -2141,7 +2141,7 @@
   },
   {
    "placed_at": "2026-11-15T17:34:08.865013+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Browns",
@@ -2168,9 +2168,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.54,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.0,
+   "profit": 1.77,
+   "settled_at": "2026-11-15T21:21:49.689448+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -2701,5 +2701,5 @@
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T21:21:10.417616+00:00"
+ "balances_checked_at": "2026-11-15T21:24:58.243409+00:00"
 }
