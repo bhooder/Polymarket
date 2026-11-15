@@ -1821,7 +1821,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-13T15:58:19.309304+00:00",
@@ -2000,7 +2001,7 @@
   },
   {
    "placed_at": "2026-11-15T11:00:58.423613+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Patriots",
@@ -2027,15 +2028,15 @@
     "event_id": 1700008804
    },
    "paper_price": 0.4784688995215311,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -3.04,
+   "settled_at": "2026-11-15T18:23:08.503409+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-15T11:01:14.848165+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.015,
    "size_multiplier": 1.0,
    "pick": "Under",
@@ -2052,7 +2053,7 @@
    "avg_price": 0.517,
    "shares": 5.88,
    "cost": 3.04,
-   "fees": 0.0,
+   "fees": 0.06,
    "contracts_ordered": 3.04,
    "venue": "prophetx",
    "venue_ref": {
@@ -2062,9 +2063,9 @@
     "event_id": 1700008804
    },
    "paper_price": 0.5169082125603865,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 5.82,
+   "profit": 2.78,
+   "settled_at": "2026-11-15T18:23:08.503449+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -2100,7 +2101,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-15T17:07:20.868302+00:00",
@@ -2134,7 +2136,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-15T17:34:08.865013+00:00",
@@ -2165,6 +2168,41 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.54,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.545
+  },
+  {
+   "placed_at": "2026-11-15T18:27:50.006384+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Hawks",
+   "market": "Spread: Hawks (-7.5)",
+   "link": "https://polymarket.com/event/nba-atl-mil-2026-11-15",
+   "market_type": "spreads",
+   "condition_id": "0x9eb0c3f278f5f566d57f8add8a2ec2d81fc96586d7e025163087e374a7ee05f2",
+   "token_id": "25026789798904774457172049479884052526290987810907953634457277392064209239111",
+   "outcome_index": 0,
+   "ends": "2026-11-16T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 24.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.5233,
+   "shares": 3.86,
+   "cost": 2.02,
+   "fees": 0.0,
+   "contracts_ordered": 2.02,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e7f3d4e0944a6750ae915aeaad26e5bd",
+    "fee_rate": 0.02,
+    "event_id": 1704742043
+   },
+   "paper_price": 0.5238095238095238,
    "payout": null,
    "profit": null,
    "settled_at": null,
@@ -2612,8 +2650,15 @@
    "venue": "kalshi",
    "ordered": 4,
    "filled": 4.0
+  },
+  {
+   "at": "2026-11-15T18:27:50.006358+00:00",
+   "pick": "Hawks",
+   "venue": "prophetx",
+   "ordered": 2.02,
+   "filled": 2.02
   }
  ],
  "daily_check": "2026-11-15",
- "balances_checked_at": "2026-11-15T17:49:17.379879+00:00"
+ "balances_checked_at": "2026-11-15T18:27:33.830120+00:00"
 }

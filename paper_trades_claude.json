@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 844.2334745812752,
+ "cash": 826.3014511783433,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -74,7 +74,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-15T00:09:44.585498+00:00",
@@ -111,7 +112,8 @@
    "payout": 0.0,
    "profit": -10.0,
    "settled_at": "2026-11-15T04:28:31.734356+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-15T00:09:45.002129+00:00",
@@ -147,7 +149,8 @@
    "payout": 0.0,
    "profit": -10.0,
    "settled_at": "2026-11-15T04:28:31.764508+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.44
   },
   {
    "placed_at": "2026-11-15T00:09:45.565916+00:00",
@@ -183,7 +186,8 @@
    "payout": 0.0,
    "profit": -10.0,
    "settled_at": "2026-11-15T07:40:19.335493+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-15T00:09:46.234793+00:00",
@@ -219,7 +223,8 @@
    "payout": 0.0,
    "profit": -10.0,
    "settled_at": "2026-11-15T04:28:31.817936+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-15T00:25:12.493390+00:00",
@@ -256,7 +261,8 @@
    "payout": 0.0,
    "profit": -9.99,
    "settled_at": "2026-11-15T03:25:57.103112+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-15T00:25:12.779674+00:00",
@@ -332,7 +338,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.795
   },
   {
    "placed_at": "2026-11-15T12:23:06.381486+00:00",
@@ -370,7 +377,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-15T14:16:54.415144+00:00",
@@ -407,7 +415,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.685
   },
   {
    "placed_at": "2026-11-15T14:16:55.114352+00:00",
@@ -445,7 +454,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.745
   },
   {
    "placed_at": "2026-11-15T16:24:03.243246+00:00",
@@ -520,7 +530,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-15T17:07:06.931465+00:00",
@@ -556,7 +567,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-15T17:34:07.294787+00:00",
@@ -591,6 +603,80 @@
     "polymarket_us": 0.7487
    },
    "intl_cost_per_share": 0.7399,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.705
+  },
+  {
+   "placed_at": "2026-11-15T18:27:31.199374+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cowboys",
+   "market": "49ers vs. Cowboys",
+   "link": "https://polymarket.com/event/nfl-sf-dal-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 0.909,
+   "condition_id": "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056",
+   "token_id": "111116445215105452402195447335570138990948116962434354359812521722521696149089",
+   "outcome_index": 1,
+   "ends": "2026-11-15T21:25:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.35,
+   "avg_price": 0.35,
+   "shares": 23.310787729726034,
+   "cost": 8.54,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV15SFDAL-DAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3663,
+    "polymarket_us": 0.369
+   },
+   "intl_cost_per_share": 0.3669,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T18:27:31.841994+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ravens",
+   "market": "Spread: Ravens (-3.5)",
+   "link": "https://polymarket.com/event/nfl-lac-bal-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x82fffe3310c79693b170fe3dbe72df418b63efa063400e090852835d2cc6c707",
+   "token_id": "86329317231193922717064126541331735626494972193274378630190417336618194201800",
+   "outcome_index": 0,
+   "ends": "2026-11-17T01:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.55,
+   "shares": 16.551359450050676,
+   "cost": 9.39,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV16LACBAL-BAL4",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5675
+   },
+   "intl_cost_per_share": 0.5574,
    "payout": null,
    "profit": null,
    "settled_at": null,

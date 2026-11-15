@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 867.2306039873296,
+ "cash": 888.8299288540074,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -306,7 +306,8 @@
    "payout": 37.83,
    "profit": 18.26,
    "settled_at": "2026-11-05T03:35:36.349710+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-04T20:39:07.060955+00:00",
@@ -1608,7 +1609,8 @@
    "topped_up_at": "2026-11-08T20:27:17.225725+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-08T20:02:13.510952+00:00",
@@ -1646,7 +1648,8 @@
    "payout": 21.04,
    "profit": 10.97,
    "settled_at": "2026-11-08T23:15:24.793974+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-08T20:27:17.003286+00:00",
@@ -2115,7 +2118,8 @@
    "payout": 38.88,
    "profit": 18.75,
    "settled_at": "2026-11-10T02:32:46.394865+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-10T15:27:38.032495+00:00",
@@ -2229,7 +2233,8 @@
    "payout": 23.5,
    "profit": 12.75,
    "settled_at": "2026-11-11T06:29:58.598339+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-10T20:15:49.868262+00:00",
@@ -2643,7 +2648,8 @@
    "payout": 0.0,
    "profit": -22.27,
    "settled_at": "2026-11-12T03:12:36.463259+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-11T21:08:39.375123+00:00",
@@ -2718,7 +2724,8 @@
    "payout": 24.34,
    "profit": 2.05,
    "settled_at": "2026-11-12T03:48:44.021394+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.905
   },
   {
    "placed_at": "2026-11-12T00:52:57.532754+00:00",
@@ -3068,7 +3075,8 @@
    "topped_up_at": "2026-11-14T00:40:20.752445+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 9.8,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-13T15:58:18.264920+00:00",
@@ -3145,7 +3153,8 @@
    "payout": 11.97,
    "profit": 1.01,
    "settled_at": "2026-11-13T22:08:45.615415+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.905
   },
   {
    "placed_at": "2026-11-13T19:31:28.983856+00:00",
@@ -3221,7 +3230,8 @@
    "topped_up_at": "2026-11-15T00:09:42.449174+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.2,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-13T22:54:32.465119+00:00",
@@ -3332,7 +3342,8 @@
    "payout": 22.98,
    "profit": 12.01,
    "settled_at": "2026-11-14T04:02:30.931143+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-14T00:15:12.921409+00:00",
@@ -3486,7 +3497,8 @@
    "topped_up_at": "2026-11-14T18:18:05.831205+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 11.2,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.865
   },
   {
    "placed_at": "2026-11-14T19:14:32.046446+00:00",
@@ -3635,7 +3647,8 @@
    "payout": 0.0,
    "profit": -21.79,
    "settled_at": "2026-11-15T04:28:31.446437+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.375
   },
   {
    "placed_at": "2026-11-15T00:09:42.734675+00:00",
@@ -3710,7 +3723,8 @@
    "payout": 21.24,
    "profit": 10.45,
    "settled_at": "2026-11-15T04:28:31.457854+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-15T01:43:22.276772+00:00",
@@ -3755,7 +3769,7 @@
   },
   {
    "placed_at": "2026-11-15T11:00:40.851003+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Patriots vs. Lions: O/U 50.5",
@@ -3785,9 +3799,9 @@
     "kalshi": 0.5379
    },
    "intl_cost_per_share": 0.5175,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.79,
+   "profit": 21.59,
+   "settled_at": "2026-11-15T18:23:07.425016+00:00",
    "topped_up_at": "2026-11-15T13:24:00.070025+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 19.0,
@@ -3830,7 +3844,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-15T12:23:04.152549+00:00",
@@ -3868,7 +3883,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-15T15:03:24.565262+00:00",
@@ -3906,7 +3922,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-15T15:03:24.886691+00:00",
@@ -3985,7 +4002,7 @@
   {
    "placed_at": "2026-11-15T16:24:01.098208+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Mavericks",
    "market": "Spread: Celtics (-13.5)",
    "link": "https://polymarket.com/event/nba-dal-bos-2026-11-15",
@@ -3998,10 +4015,10 @@
    "bettors": 5,
    "avg_bankroll_pct": 0.6,
    "traders_entry": 0.5,
-   "avg_price": 0.51,
-   "shares": 21.023975673610835,
-   "cost": 11.09,
-   "fees": 0.37,
+   "avg_price": 0.4891,
+   "shares": 43.77563383661447,
+   "cost": 22.18,
+   "fees": 0.77,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -4018,7 +4035,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-15T18:27:28.962413+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 3.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-15T17:07:01.766622+00:00",
@@ -4056,7 +4076,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.795
   },
   {
    "placed_at": "2026-11-15T17:07:04.059653+00:00",
@@ -4093,7 +4114,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-15T17:07:05.517927+00:00",
@@ -4163,6 +4185,43 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7301,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T18:27:29.748391+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Spurs",
+   "market": "Spurs vs. Jazz",
+   "link": "https://polymarket.com/event/nba-sas-uta-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xba473e6e80f951d867c398e25e52a19d9d5fad1dbebb799a91cdee4c97dc4663",
+   "token_id": "76536788993534950574727118296578291639820297661814889349260190950884754128503",
+   "outcome_index": 0,
+   "ends": "2026-11-15T22:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.0,
+   "traders_entry": 0.9,
+   "avg_price": 0.8936,
+   "shares": 12.39505611161662,
+   "cost": 11.1,
+   "fees": 0.0236,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "ca0e904693249b16e87202f52ac01315",
+    "fee_rate": 0.02,
+    "event_id": 1704742038
+   },
+   "quotes": {
+    "prophetx": 0.8955,
+    "kalshi": 0.9065
+   },
+   "intl_cost_per_share": 0.8949,
    "payout": null,
    "profit": null,
    "settled_at": null,

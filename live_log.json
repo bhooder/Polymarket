@@ -2596,5 +2596,54 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0174\",\"average_fill_price\":\"0.4600\",\"client_order_id\":\"66e2a62b-4beb-5ac6-978e-effd994afc4b\",\"fill_count\":\"4.00\",\"order_id\":\"01a1e046-0680-7070-9c46-67b4c80dd292\",\"remaining_count\":\"0.00\",\"ts_ms\":1794764048842}"
   }
+ },
+ {
+  "at": "2026-11-15T18:23:08.518107+00:00",
+  "event": "settled",
+  "bet": "Patriots +2.5",
+  "status": "lost",
+  "cost": 3.04,
+  "payout": 0.0,
+  "profit": -3.04,
+  "venue": "prophetx",
+  "ref": "3ee1d0b2f189a73480138174f615b38a"
+ },
+ {
+  "at": "2026-11-15T18:23:09.122348+00:00",
+  "event": "settled",
+  "bet": "Under 50.5 (Patriots vs. Lions)",
+  "status": "won",
+  "cost": 3.04,
+  "payout": 5.82,
+  "profit": 2.78,
+  "venue": "prophetx",
+  "ref": "db9820c0fe2694968a60e67b58403056"
+ },
+ {
+  "at": "2026-11-15T18:27:50.006379+00:00",
+  "event": "order",
+  "filled": 3.86,
+  "price": 0.5233160621761658,
+  "fees": 0.0,
+  "bet": "Hawks -7.5",
+  "pick": "Hawks",
+  "market": "Spread: Hawks (-7.5)",
+  "venue": "prophetx",
+  "ref": "e7f3d4e0944a6750ae915aeaad26e5bd",
+  "top_up": false,
+  "mode": "on",
+  "paper_price": 0.5238,
+  "share": 0.01,
+  "side": "BUY",
+  "stake": 2.02,
+  "max_price": 0.53,
+  "dollars": 2.07,
+  "bankroll": 206.93,
+  "order_id": "773f0915-cd0d-5612-8f6e-6d57884d57a8",
+  "reply": {
+   "path": "/partner/v4/mm/positions",
+   "status": 200,
+   "body": "{\"data\":[{\"high_risk\":false,\"mark_price\":0.17,\"mark_value\":1.28,\"market_id\":219,\"net_cost_basis\":2.8,\"net_outcome_id\":4,\"net_size\":7.45,\"sides\":[{\"average_price\":0.38,\"closable_size\":7.45,\"closed_size\":0,\"cost_basis\":2.8,\"liquidation_value\":1.28,\"mark_price\":0.17,\"mark_value\":1.28,\"outcome_id\":4,\"size\":7.45,\"strike_id\":\"486012137417f413ef27897e1a140d45\"}],\"sport_event_id\":1700008820,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.45,\"mark_value\":2.73,\"market_id\":219,\"net_cost_basis\":3.04,\"net_outcome_id\":4,\"net_size\":6.11,\"sides\":[{\"average_price\":0.5,\"closable_size\":6.11,\"closed_size\":0,\"cost_basis\":3.04,\"liquidation_value\":2.73,\"mark_price\":0.45,\"mark_value\":2.73,\"outcome_id\":4,\"size\":6.11,\"strike_id\":\"863f6aec738a5748e0b3693d7f610abb\"}],\"sport_event_id\":1700008886,\"strike\":0},{\"high_risk\":false,\"mark_price\":0.52,\"mark_value\":2.01,\"market_id\":223,\"net_cost_basis\":2.02,\"net_outcome_id\":1715,\"net_size\":3.86,\"sides\":[{\"average_price\":0.52,\"closable_size\":3.86,\"closed_size\":0,\"cost_basis\":2.02,\"liquidation_value\":2.01,\"mark_price\":0.52,\"mark_value\":2.01,\"outcome_id\":1715,\"size\":3.86,\"strike_id\":\"e7f3d4e0944a6750ae915aeaad26e5bd\"}],\"sport_event_id\":1704742043,\"strike\":-7.5}]}"
+  }
  }
 ]
