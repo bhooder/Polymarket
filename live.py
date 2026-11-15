@@ -391,7 +391,8 @@ def adopt_unrecorded(state, accounts, paper_bets):
 # Every real bet is the same share of the real bankroll (times the underdog multiplier), whatever
 # stake Strategy A's paper bet used, and real bets are never topped up. Chosen 2026-11-10: A's 2% bets
 # had shown no edge over its 1% bets, so doubling up on them only doubled the risk.
-FLAT_SHARE = 0.015
+# 1.5% until 2026-11-15, then 1% (owner's choice).
+FLAT_SHARE = 0.01
 
 
 def run(intents, max_above, state, paper_bets=None, cap=1.0):

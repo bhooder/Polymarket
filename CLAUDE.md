@@ -9,7 +9,7 @@ This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 **Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
-Last updated: 2026-11-14.
+Last updated: 2026-11-15.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -24,7 +24,7 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
 - `venues.py`: finds the same bet on Polymarket US, Kalshi and ProphetX, prices
   it from real order books with fees, and settles it.
 - `live.py`: real-money betting. Copies each new Strategy A paper bet to the
-  same venue. From 2026-11-10 every real bet is a FLAT 1.5% of the real bankroll
+  same venue. From 2026-11-10 every real bet is a FLAT share (1.5%; 1% from 2026-11-15) of the real bankroll
   (cash + open positions on all accounts), times the underdog multiplier, and
   real bets are never topped up (live.FLAT_SHARE; before that they copied A's
   1%/2% stakes and top-ups). Same price rule, "fill now or

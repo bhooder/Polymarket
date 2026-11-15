@@ -72,6 +72,8 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
   never copied. The report card and the Claude bankroll were restarted.
 - 2026-11-10: real bets switched to a FLAT 1.5% of the real bankroll, no top-ups
   (finding 2). Paper Strategy A keeps its 1%/2% tiers so its test stays clean.
+- 2026-11-15: real bets cut from a flat 1.5% to a flat 1% of the real bankroll (owner's choice;
+  underdog multiplier and no top-ups unchanged). Paper strategies unchanged.
 - 2026-11-11: owner's choice: Strategy A and real bets never pay over 75c (about -300).
   Not from a data finding; other strategies keep no cap. A's results from here on mix
   old (uncapped) and new bets.

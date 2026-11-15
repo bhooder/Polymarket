@@ -52,8 +52,8 @@ LOG_KEEP = 2000             # entries kept
 
 LIVE = {"name": "Real bets", "state": "live_trades.json", "csv": "live_trades.csv",
         "rules": "Real money on Kalshi, Polymarket US and ProphetX, copying each Strategy A paper bet with the "
-                 "same price rule. Since Nov 10 every real bet is a flat 1.5% of the real balance (smaller on "
-                 "35-40c picks), with no top-ups. Since Nov 11, never over 75c."}
+                 "same price rule. Since Nov 10 every real bet is a flat share of the real balance (1.5%; 1% "
+                 "since Nov 15), smaller on picks under 40c, with no top-ups. Since Nov 11, never over 75c."}
 
 # Each strategy has its own pretend bankroll and state file; all other rules are shared.
 # tiers: (stake as share of current bankroll, [(min bettors, min avg bankroll %), ...]),
