@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 696.9918847946307,
+ "cash": 675.3500829060201,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11649,6 +11649,43 @@
     "kalshi": 0.9067
    },
    "intl_cost_per_share": 0.8949,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T19:18:34.963283+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Yes",
+   "market": "Will Belgium win on 2026-11-15?",
+   "link": "https://polymarket.com/event/unl-bel-ita-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbe96c8be240c94a4b97b458fcbd173b43a8046c34ea80434451533abb8c7f989",
+   "token_id": "73978669259210613092931597964683396009275816052300249102268975285946869397334",
+   "outcome_index": 0,
+   "ends": "2026-11-15T19:45:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 30.4,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 45.330004105675044,
+   "cost": 21.64,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV15BELITA-BEL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4774,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

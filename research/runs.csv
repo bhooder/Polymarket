@@ -1,0 +1,2 @@
+observed_at,run_seconds,research_seconds,board,scanned,skipped_bot,errors,picks,wide_picks,graded,positions,markets,decisions,snapshots,price_paths,leaderboard,rules,tracked_positions,research_bytes,state_bytes,trade_fields,notes
+2026-11-15T19:18:43Z,204.4,1.05,200,197,3,0,120,231,18,857,468,170,132,15,200,8,857,525953,126813,bio condition_id event_slug icon name outcome outcome_index price profile_image profile_image_optimized proxy_wallet pseudonym side size slug timestamp title token_id transaction_hash,31 picks without a known game start
