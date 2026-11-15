@@ -151,7 +151,7 @@
   },
   {
    "placed_at": "2026-11-15T00:09:45.565916+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Utah",
    "market": "Spread: Utah (-1.5)",
@@ -180,9 +180,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.0,
+   "settled_at": "2026-11-15T07:40:19.335493+00:00",
    "topped_up_at": null
   },
   {

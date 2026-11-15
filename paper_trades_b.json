@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 987.3167986035421,
+ "cash": 1038.7179660563722,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10499,7 +10499,7 @@
   },
   {
    "placed_at": "2026-11-15T01:43:21.915575+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Texas Tech",
    "market": "Texas Tech vs. Oklahoma State",
@@ -10528,9 +10528,9 @@
     "prophetx": 0.3778
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.4,
+   "profit": 31.98,
+   "settled_at": "2026-11-15T07:40:18.611181+00:00",
    "topped_up_at": null
   },
   {
