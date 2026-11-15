@@ -54,6 +54,9 @@ jobs:
           # Strategy ChatGPT (paper only). On its own line and allowed to fail, so a missing ChatGPT
           # file can never stop the other results (real bets included) from being saved.
           git add paper_trades_chatgpt.json paper_trades_chatgpt.csv || true
+          # Research logs (research_log.py): history for testing ideas, read by no strategy. Same rule:
+          # on its own line and allowed to fail, so it can never stop the trading results being saved.
+          git add research || true
           git diff --cached --quiet && exit 0
           git commit -m "Forward test run $(date '+%Y-%m-%d %H:%M')"
           # retry: a brief GitHub hiccup must not throw away a run's results (real bets included)

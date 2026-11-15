@@ -29,6 +29,7 @@ from datetime import datetime, timedelta, timezone
 
 import claude_strategy
 import pick_log
+import research_log
 import live
 import polymarket_smart_money as scanner
 import venues
@@ -238,6 +239,29 @@ def simulate_buy(token_id, dollars, fee):
     return {"shares": shares, "cost": spent, "fees": fees, "avg_price": (spent - fees) / shares}
 
 
+# Research only (research_log.py, added 2026-11-15): why each strategy did or didn't bet each pick this
+# run. Notes are only collected here; they change no decision and nothing reads them but the research log.
+DECISIONS = []
+_NOTE = {"strategy": None}
+
+
+def note(code, pick, **extra):
+    """Remember one decision for the research log. Must never raise or change anything."""
+    try:
+        DECISIONS.append({"strategy": _NOTE["strategy"], "code": code, "token_id": pick.get("token_id"),
+                          "condition_id": pick.get("condition_id"), "pick": pick.get("Pick"),
+                          "market": pick.get("Market"), "link": pick.get("Link"),
+                          "bettors": pick.get("Bettors"), "against": pick.get("Against"),
+                          "bankroll_pct": pick.get("Avg bankroll %"), "entry": pick.get("Avg entry price"),
+                          "price": pick.get("Price now"), **extra})
+    except Exception:
+        pass
+
+
+def _quotes(choices):
+    return [(q.get("venue"), round(q["avg_price"], 4), round(q["cost"] / q["shares"], 4)) for q in choices]
+
+
 def in_band(price, entry, max_price=1.0, max_above=None):
     """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
     never longer than +250 (~28.6c), and never over max_price (75c for Strategy A).
@@ -259,6 +283,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, m
     exposure = sum(b["cost"] for b in open_bets(state))
     if exposure + dollars > MAX_EXPOSURE * roll or dollars > state["cash"]:
         print(f"  skip (50% cap reached): {label}")
+        note("cap_or_cash", pick, stake=stake, dollars=dollars)
         return None
     if existing is not None:  # top-ups stay on the venue we already used
         got = venues.top_up_quote(existing["venue_ref"], dollars)
@@ -267,6 +292,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, m
         choices = venues.quotes(pick, info, dollars)
     if not choices:
         print(f"  skip (not on Polymarket US, Kalshi or ProphetX, or book too thin): {label}")
+        note("no_venue", pick, stake=stake, dollars=dollars)
         return None
     entry = pick["Avg entry price"]
     ok = [q for q in choices if in_band(q["avg_price"], entry, max_price, max_above)]
@@ -274,6 +300,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, m
         prices = ", ".join(f"{q['venue']} {q['avg_price']:.3f}" for q in choices)
         above = MAX_ABOVE if max_above is None else max_above
         print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{min(entry + above, max_price):.2f}): {label}")
+        note("price_outside_band", pick, stake=stake, dollars=dollars, quotes=_quotes(choices))
         return None
     fill = ok[0]  # cheapest all-in cost per share that passes the price rule
     intl = simulate_buy(pick["token_id"], dollars, info.get("feeSchedule"))  # for comparison only
@@ -289,6 +316,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, m
         existing["top_up_avg_bankroll_pct"] = pick["Avg bankroll %"]
         existing["top_up_size_multiplier"] = round(mult, 3)
         print(f"  TOP UP to 2% on {fill['venue']}: +${fill['cost']:.2f}  {label}")
+        note("top_up", pick, stake=stake, dollars=dollars, quotes=_quotes(choices), venue=fill["venue"])
         if on_bet:
             on_bet({"bet": existing, "fill": fill, "share": dollars / roll, "top_up": True, "entry": entry})
         return existing
@@ -310,6 +338,7 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, m
     others = ", ".join(f"{q['venue']} {q['cost'] / q['shares']:.3f}" for q in choices[1:])
     print(f"  BET {stake:.0%} on {fill['venue']}: ${fill['cost']:.2f} on {pick['Pick']} @ "
           f"{fill['avg_price']:.3f} (fee ${fill['fees']:.2f}){' vs ' + others if others else ''}  {label}")
+    note("bet", pick, stake=stake, dollars=dollars, quotes=_quotes(choices), venue=fill["venue"])
     if on_bet:
         on_bet({"bet": state["bets"][-1], "fill": fill, "share": dollars / roll, "top_up": False, "entry": entry})
     return state["bets"][-1]
@@ -352,41 +381,52 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
         bettors = pick["Bettors"] - (pick.get("Against", 0) if net else 0)
         stake = stake_for(bettors, pick["Avg bankroll %"], tiers)
         if not stake:
+            note("no_tier", pick)
             continue
         label = f"{pick['Pick']} / {pick['Market'][:50]} ({pick['Bettors']} bettors, {pick['Avg bankroll %']}%)"
         m = info.get(pick["condition_id"])
         if not m or m.get("closed") or not m.get("acceptingOrders") or not decided_by(m):
             print(f"  skip (market closed): {label}")
+            note("market_closed", pick, stake=stake)
             continue
         if decided_by(m) <= now():
             print(f"  skip (game already started): {label}")
+            note("game_started", pick, stake=stake)
             continue
         if decided_by(m) > cutoff:
             print(f"  skip (decided {decided_by(m):%Y-%m-%d}, more than {MAX_DAYS_TO_END} days away): {label}")
+            note("too_far_off", pick, stake=stake)
             continue
         if window:
             mins = (decided_by(m) - now()).total_seconds() / 60
             if not window[0] <= mins <= window[1]:
+                note("outside_time_window", pick, stake=stake)
                 continue  # outside the betting window (no message: most picks are)
         if min_money_share:
             ours, theirs = pick.get("Total $ in", 0), pick.get("Against $ in", 0)
             if ours < min_money_share * (ours + theirs):
                 print(f"  skip (only {ours / (ours + theirs):.0%} of top traders' money on this side): {label}")
+                note("money_share_too_low", pick, stake=stake)
                 continue
         if pick.get("Against", 0) >= pick["Bettors"]:  # never bet the minority side, or a tie
             print(f"  skip (other side has {pick['Against']} top traders vs {pick['Bettors']}): {label}")
+            note("minority_or_tie", pick, stake=stake)
             continue
         existing = by_token.get(pick["token_id"])
         if existing:
             if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):
                 place(state, pick, m, stake, existing, on_bet, max_price, max_above)
+            else:
+                note("already_held", pick, stake=stake)
             continue
         if pick["condition_id"] in by_market:
+            note("other_side_held", pick, stake=stake)
             continue  # we already bet the other side; never hold both
         slot = game_slot(pick["Link"], m.get("sportsMarketType"))
         if slot in by_slot:
             kind = "moneyline/spread" if slot[1] == "side" else "total"
             print(f"  skip (already have a {kind} bet on this game): {label}")
+            note("game_slot_taken", pick, stake=stake)
             continue
         bet = place(state, pick, m, stake, on_bet=on_bet, max_price=max_price, max_above=max_above)
         if bet:
@@ -1390,7 +1430,26 @@ def settled_alert(b, state):
     return title, f"{live.plain(b['pick'], b['market'])}\nRecord: {wins}–{losses} · total {money(total)}"
 
 
+def rules_snapshot():
+    """Every strategy's settings plus the shared rules, for the research log's rule-version stamps."""
+    shared = {"max_days_to_end": MAX_DAYS_TO_END, "max_exposure": MAX_EXPOSURE, "max_above": MAX_ABOVE,
+              "max_below": MAX_BELOW, "min_price": round(MIN_PRICE, 6), "underdog_below": UNDERDOG_BELOW,
+              "scan": {k: getattr(scanner_args, k, None) for k in ("top", "period", "category", "sort",
+                                                                    "min_value", "min_traders", "max_crypto")},
+              "conviction_pct": scanner.CONVICTION_PCT}
+    out = {key: {"settings": {k: v for k, v in cfg.items() if k not in ("name", "rules", "state", "csv")},
+                 "shared": shared} for key, cfg in STRATEGIES.items()}
+    out["claude"]["card"] = {k: getattr(claude_strategy, k) for k in (
+        "VERSION", "MIN_GRADED", "MIN_DAYS", "MAX_PACE", "MIN_CLV", "MIN_T", "FRESH_HOURS", "TRACK_DAYS")}
+    out["real"] = {"copies": "a", "flat_share": live.FLAT_SHARE, "max_exposure": live.MAX_EXPOSURE,
+                   "max_price": A_MAX_PRICE, "paper_only_sports": sorted(venues.PAPER_ONLY), "shared": shared}
+    return out
+
+
 def main():
+    run_started = time.time()
+    del DECISIONS[:], claude_strategy.GRADED[:]  # research notes are for this run only
+    claude_strategy.HISTORY.clear()
     print(f"\n=== Forward test run {time.strftime('%Y-%m-%d %H:%M')} ===")
     states, broken = {}, set()  # broken: isolated strategies whose state file couldn't be read (never saved over)
     for key, cfg in STRATEGIES.items():
@@ -1444,6 +1503,7 @@ def main():
         if cfg.get("isolated"):
             continue
         print(f"-- {cfg['name']} --")
+        _NOTE["strategy"] = key
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=copy_real if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
               min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"),
@@ -1473,6 +1533,7 @@ def main():
             continue
         try:
             settle(states[key])
+            _NOTE["strategy"] = key
             trade(states[key], picks, cfg["tiers"], on_bet=None, net=cfg.get("net", False),
                   window=cfg.get("window"), min_money_share=cfg.get("min_money_share", 0),
                   count=cfg.get("count"), max_price=cfg.get("max_price", 1.0), max_above=cfg.get("max_above"))
@@ -1512,6 +1573,20 @@ def main():
         print(f"{cfg['name']}: bankroll ${bankroll(st):,.2f} (cash ${st['cash']:,.2f}, "
               f"{len(open_bets(st))} open bets)")
     print("Wrote paper_report.html and picks.html")
+    # Research logs (research_log.py): the very last step, after all betting, saving and reporting. It
+    # makes no web requests, writes only inside research/, and an error here changes nothing above.
+    try:
+        if os.environ.get("RESEARCH_LOG", "on").strip().lower() != "off":
+            wrote = research_log.run(HERE, {
+                "picks": picks, "wide_picks": scanner.WIDE_PICKS, "card": card, "decisions": DECISIONS,
+                "rules": rules_snapshot(), "run_started": run_started, "scan": scanner.RESEARCH,
+                "positions": scanner.POSITIONS, "pace": scanner.PACE, "sides": scanner.SIDES,
+                "top_wallets": scanner.TOP_WALLETS, "max_pace": claude_strategy.MAX_PACE,
+                "graded": claude_strategy.GRADED,
+                "history": claude_strategy.HISTORY})
+            print(f"Research log: {wrote}")
+    except Exception as e:
+        print(f"Research log error: {type(e).__name__}: {e}")
 
 
 if __name__ == "__main__":

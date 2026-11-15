@@ -113,12 +113,30 @@ def event_tags(event_ids):
 
 
 PACE = {}  # wallet -> trades per hour over their last 500 trades (filled by crypto_share)
+# Research only (research_log.py, added 2026-11-15): things the scan downloads anyway, kept in memory
+# for this run so they can be logged afterwards. Nothing here is read by any strategy or real bet.
+RESEARCH = {"board": [], "traders": {}, "trades": {}, "trade_fields": []}
+
+
+TRADE_KEEP = ("timestamp", "side", "token_id", "asset", "asset_id", "tokenId", "size", "shares", "amount")
+
+
+def _keep_trades(wallet, trades):
+    """Research log only: remember when and what each trade was (a few fields, not the whole reply),
+    and which fields the trade list has. Must never raise."""
+    try:
+        RESEARCH["trades"][wallet] = [{k: t[k] for k in TRADE_KEEP if k in t} for t in trades]
+        if trades and not RESEARCH["trade_fields"]:
+            RESEARCH["trade_fields"].extend(sorted(str(k) for k in trades[0]))
+    except Exception:
+        pass
 
 
 def crypto_share(wallet):
     """Fraction of the wallet's last 500 trades that are on crypto price markets.
     Also notes the wallet's trading pace in PACE (bots trade far faster than people)."""
     trades = get("/trades", {"user": wallet, "limit": 500}).get("data") or []
+    _keep_trades(wallet, trades)  # research log only
     stamps = [t["timestamp"] for t in trades if t.get("timestamp")]
     if len(stamps) >= 100:  # too few trades says nothing about pace
         PACE[wallet] = len(stamps) / max((max(stamps) - min(stamps)) / 3600, 0.01)
@@ -358,8 +376,11 @@ def find_picks(args):
     WIDE_PICKS.clear()
     SIDES.clear()
     TOP_WALLETS.clear()
+    for part in RESEARCH.values():
+        part.clear()
     research_top = max(getattr(args, "research_top", 0) or 0, args.top)
     board = leaderboard(research_top, args.period, args.category, args.sort)
+    RESEARCH["board"].extend(board)  # research log only
     print(f"Leaderboard: {len(board)} traders ({args.period}, {args.category}, {args.sort})"
           + (f"; picks from the top {args.top}, the rest for research only" if research_top > args.top else ""))
 
@@ -367,9 +388,12 @@ def find_picks(args):
     for i, t in enumerate(board, 1):
         wallet = t.get("user_id") or t.get("proxy_wallet")
         name = t.get("user_name") or wallet
+        note = RESEARCH["traders"].setdefault(wallet, {"name": name, "rank": t.get("rank", i), "status": "error"})
         try:
             crypto = crypto_share(wallet)
+            note["crypto_share"] = round(crypto, 3)
             if crypto > args.max_crypto:
+                note["status"] = "skipped_bot"
                 print(f"  [{i}/{len(board)}] skip {name}: {crypto:.0%} crypto price bets (likely bot)")
                 continue
             positions = open_positions(wallet, args.min_value)
@@ -377,8 +401,10 @@ def find_picks(args):
             # bankroll = value of all the trader's open bets (uninvested cash isn't public)
             bankroll = get("/value", {"user": wallet})["data"]["value"] if positions else 0
         except Exception as e:  # keep going if one wallet fails
+            note["reason"] = f"{type(e).__name__}: {e}"[:200]
             print(f"  skip {name}: {e}")
             continue
+        note.update(status="scanned", bankroll=bankroll, hedged=set(hedged), raw_positions=len(positions))
         positions = [p for p in positions if p["condition_id"] not in hedged]
         POSITIONS[wallet] = (name, positions)
         top = i <= args.top

@@ -61,6 +61,35 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   not built: skip A picks whose bettors have a bad record, weight votes by record, grade per
   sport, fade bad traders (log only), copy sharps' unusually big bets. Research only: every strategy and
   real bet still uses picks from the top 100 only (checked identical).
+- `research_log.py` (added 2026-11-15, research only): history for testing future ideas, written to
+  `research/` as the LAST step of each run (after all betting, saving and reporting, inside an error
+  guard). It makes no web requests: it writes down what the run already downloaded or decided
+  (scanner.RESEARCH, claude_strategy.GRADED / HISTORY and forward_test.DECISIONS are filled in passing
+  and read by no strategy). It never touches a trading file. Switch off with RESEARCH_LOG=off.
+  Plain CSV, append-only, one small file per UTC hour (`research/<log>/<day>/<hour>.csv`), times in UTC:
+  `graded` (every position the report card graded, with wallet and token: the per-trader history the
+  card itself throws away), `positions` (a row when a trader's SHARES or COST change on a game within
+  3 days; a price move alone is not a row; a position no longer seen is "not_observed", never "sold";
+  a trade time is given only when the trader's own trade list shows trades in the gap), `markets`
+  (what each short market code "m" means), `decisions` (per strategy and pick that passed its tiers:
+  bet or the rule that stopped it, venue prices seen, rule version; "no_tier" is not written because
+  it follows from the snapshot counts), `snapshots` (a pick's counts/price whenever they change, top
+  100 and top 200), `price_paths` (prices 6h..5m before the start, from the closing-price request),
+  `leaderboard` (daily list + every change in whether a trader could be scanned), plus `rules.csv`
+  (settings whenever they change), `runs.csv` (per run: seconds, rows, folder size, problems) and
+  `state.json` (last seen values, so only changes are written; not history). "w" = first 12 characters
+  of a wallet. Every row has "oid", a stable observation id: if rows are ever written twice (e.g. the
+  state could not be saved), the copies share an oid; always read logs with research_log.read_log,
+  which drops repeats and rows cut short by an interrupted write. Each log is all-or-nothing with its
+  own part of the state, and state + logs are saved in one commit, so a failed push or killed run
+  leaves nothing behind. "baseline" (not "first_seen") marks what already existed when tracking began
+  or restarted. "bot_speed" = 1 marks traders over the report card's trades-per-hour limit (kept,
+  labelled, leave out when wanted). Guards: at most 50,000 rows per log per run, never adds to a file
+  over 20 MB. A trader's record at a past moment: research_log.record_as_of (uses only rows graded
+  before it, one count per game). Archiving later: move finished day folders older than ~90 days into
+  a zip attached to a GitHub Release and delete them from the repo (finished hour files never change,
+  so they cost Git nothing more until then). Not collected (owner's decision 2026-11-15): order-book
+  depth, and results for positions that never became picks.
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable
   picks table; open in a browser).
