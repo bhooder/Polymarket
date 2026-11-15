@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 771.3667965483905,
+ "cash": 888.580867504649,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -9575,7 +9575,7 @@
   },
   {
    "placed_at": "2026-11-14T11:04:38.124503+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Nuggets (-9.5)",
@@ -9604,9 +9604,9 @@
     "kalshi": 0.4068
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.64,
+   "profit": 30.63,
+   "settled_at": "2026-11-15T03:25:54.759210+00:00",
    "topped_up_at": "2026-11-14T21:53:25.013157+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 2.1,
@@ -9835,7 +9835,7 @@
   },
   {
    "placed_at": "2026-11-14T17:01:39.948986+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Capitals",
    "market": "Devils vs. Capitals",
@@ -9864,9 +9864,9 @@
     "kalshi": 0.4676
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.66,
+   "settled_at": "2026-11-15T03:25:54.956158+00:00",
    "topped_up_at": null
   },
   {
@@ -9944,7 +9944,7 @@
   },
   {
    "placed_at": "2026-11-14T18:18:04.615353+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Nuggets vs. Pelicans: O/U 235.5",
@@ -9973,9 +9973,9 @@
     "kalshi": 0.518
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.16,
+   "profit": 19.84,
+   "settled_at": "2026-11-15T03:25:55.023971+00:00",
    "topped_up_at": "2026-11-14T19:14:25.015891+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
@@ -10278,7 +10278,7 @@
   },
   {
    "placed_at": "2026-11-14T23:48:08.307345+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Canadiens",
    "market": "Avalanche vs. Canadiens",
@@ -10307,9 +10307,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.79,
+   "settled_at": "2026-11-15T03:25:55.442263+00:00",
    "topped_up_at": null
   },
   {
@@ -10352,7 +10352,7 @@
   },
   {
    "placed_at": "2026-11-15T00:09:41.579716+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Spread: Mavericks (-5.5)",
@@ -10382,9 +10382,9 @@
     "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.41,
+   "profit": 13.74,
+   "settled_at": "2026-11-15T03:25:55.514791+00:00",
    "topped_up_at": null
   },
   {

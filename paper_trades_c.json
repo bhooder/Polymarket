@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 931.005127789546,
+ "cash": 1008.1475584261477,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3483,7 +3483,7 @@
   },
   {
    "placed_at": "2026-11-14T21:53:28.020571+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pelicans",
    "market": "Spread: Nuggets (-9.5)",
@@ -3513,9 +3513,9 @@
     "kalshi": 0.4068
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 52.48,
+   "profit": 31.13,
+   "settled_at": "2026-11-15T03:25:56.100915+00:00",
    "topped_up_at": null
   },
   {
@@ -3557,7 +3557,7 @@
   },
   {
    "placed_at": "2026-11-15T00:09:42.734675+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Spread: Mavericks (-5.5)",
@@ -3587,9 +3587,9 @@
     "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.67,
+   "profit": 13.88,
+   "settled_at": "2026-11-15T03:25:56.145650+00:00",
    "topped_up_at": null
   },
   {

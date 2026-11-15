@@ -223,7 +223,7 @@
   },
   {
    "placed_at": "2026-11-15T00:25:12.493390+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Mavericks vs. Cavaliers: O/U 227.5",
@@ -253,9 +253,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.99,
+   "settled_at": "2026-11-15T03:25:57.103112+00:00",
    "topped_up_at": null
   },
   {
