@@ -4158,7 +4158,7 @@
   },
   {
    "placed_at": "2026-11-15T17:34:05.043261+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will England win on 2026-11-15?",
@@ -4188,9 +4188,9 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7301,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.1,
+   "settled_at": "2026-11-15T21:58:06.580061+00:00",
    "topped_up_at": null,
    "close": 0.685
   },
@@ -4229,7 +4229,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.895
   },
   {
    "placed_at": "2026-11-15T21:21:08.023650+00:00",

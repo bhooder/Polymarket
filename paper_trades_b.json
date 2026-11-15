@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 829.8054317818195,
+ "cash": 875.1354358874945,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10858,7 +10858,7 @@
   },
   {
    "placed_at": "2026-11-15T10:15:11.017581+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will England win on 2026-11-15?",
@@ -10888,9 +10888,9 @@
     "polymarket_us": 0.7583
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.73,
+   "settled_at": "2026-11-15T21:58:06.322276+00:00",
    "topped_up_at": "2026-11-15T17:34:00.995866+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.4,
@@ -11661,11 +11661,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.895
   },
   {
    "placed_at": "2026-11-15T19:18:34.963283+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will Belgium win on 2026-11-15?",
@@ -11695,9 +11696,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.33,
+   "profit": 23.69,
+   "settled_at": "2026-11-15T21:58:06.390858+00:00",
    "topped_up_at": null,
    "close": 0.475
   },

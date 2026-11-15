@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1028.7079528759818,
+ "cash": 1050.3884308100733,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -272,7 +272,7 @@
   },
   {
    "placed_at": "2026-11-15T19:18:37.056586+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Belgium win on 2026-11-15?",
@@ -302,9 +302,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.68,
+   "profit": 11.33,
+   "settled_at": "2026-11-15T21:58:06.598231+00:00",
    "topped_up_at": null,
    "close": 0.475
   }

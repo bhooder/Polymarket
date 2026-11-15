@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 875.551382349249,
+ "cash": 893.0220598915209,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -460,7 +460,7 @@
   },
   {
    "placed_at": "2026-11-15T16:24:03.243246+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Spain win on 2026-11-15?",
@@ -490,9 +490,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.47,
+   "profit": 8.08,
+   "settled_at": "2026-11-15T21:58:06.739032+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
