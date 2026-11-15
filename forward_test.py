@@ -102,6 +102,14 @@ STRATEGIES = {
                "tiers": [(0.02, [(2, 0)]),
                          (0.01, [(1, 0)])],
                "claude": True},
+    # conviction + price advantage + majority (added 2026-11-15, paper only; rules frozen, see FINDINGS.md)
+    "chatgpt": {"name": "Strategy ChatGPT", "state": "paper_trades_chatgpt.json", "csv": "paper_trades_chatgpt.csv",
+                "rules": "Flat 1% on any pick with 3+ bettors and an average bankroll % of 10%+ (no upper "
+                         "limit), more bettors than top traders on the other side, and a price paid no "
+                         "higher than the traders' average entry (no 1c allowance). Never over 75c. "
+                         "No top-ups. Paper only.",
+                "tiers": [(0.01, [(3, 10)])],  # no 2% tier, so a bet can never be topped up
+                "max_price": A_MAX_PRICE, "max_above": 0.0},
 }
 CARD = "trader_card.json"  # the Claude strategy's trader report card
 
@@ -227,14 +235,16 @@ def simulate_buy(token_id, dollars, fee):
     return {"shares": shares, "cost": spent, "fees": fees, "avg_price": (spent - fees) / shares}
 
 
-def in_band(price, entry, max_price=1.0):
+def in_band(price, entry, max_price=1.0, max_above=None):
     """Price we'd pay may be at most 1c above, or 4c below, the traders' average entry,
-    never longer than +250 (~28.6c), and never over max_price (75c for Strategy A)."""
+    never longer than +250 (~28.6c), and never over max_price (75c for Strategy A).
+    max_above: a strategy's own allowance above the entry (Strategy ChatGPT: 0); None = MAX_ABOVE."""
+    above = MAX_ABOVE if max_above is None else max_above
     return (MIN_PRICE - 1e-9 <= price <= max_price + 1e-9
-            and -MAX_BELOW - 1e-9 <= price - entry <= MAX_ABOVE + 1e-9)
+            and -MAX_BELOW - 1e-9 <= price - entry <= above + 1e-9)
 
 
-def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0):
+def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0, max_above=None):
     """Paper-buy `stake` of the bankroll on this pick (or top up an existing bet) on
     whichever US venue (Polymarket US or Kalshi) is cheapest, fees included.
     on_bet, if given, is called with each bet placed (live.py mirrors Strategy A's).
@@ -256,10 +266,11 @@ def place(state, pick, info, stake, existing=None, on_bet=None, max_price=1.0):
         print(f"  skip (not on Polymarket US, Kalshi or ProphetX, or book too thin): {label}")
         return None
     entry = pick["Avg entry price"]
-    ok = [q for q in choices if in_band(q["avg_price"], entry, max_price)]
+    ok = [q for q in choices if in_band(q["avg_price"], entry, max_price, max_above)]
     if not ok:
         prices = ", ".join(f"{q['venue']} {q['avg_price']:.3f}" for q in choices)
-        print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{min(entry + MAX_ABOVE, max_price):.2f}): {label}")
+        above = MAX_ABOVE if max_above is None else max_above
+        print(f"  skip (US prices {prices} outside {max(entry - MAX_BELOW, MIN_PRICE):.2f}-{min(entry + above, max_price):.2f}): {label}")
         return None
     fill = ok[0]  # cheapest all-in cost per share that passes the price rule
     intl = simulate_buy(pick["token_id"], dollars, info.get("feeSchedule"))  # for comparison only
@@ -322,8 +333,9 @@ def bet_type(b):
 
 
 def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_share=0, count=None,
-          max_price=1.0):
+          max_price=1.0, max_above=None):
     """window = (min, max) minutes before the start, to bet only then (Strategy D).
+    max_above = this strategy's own allowance above the traders' entry (None = MAX_ABOVE).
     min_money_share = least share of the top traders' money in the market that must be on our side.
     count = (bettors key, against key) to count other columns than Bettors / Against (Strategy E)."""
     cutoff = now() + timedelta(days=MAX_DAYS_TO_END)
@@ -364,7 +376,7 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
         existing = by_token.get(pick["token_id"])
         if existing:
             if stake == 0.02 and existing["stake"] == 0.01 and existing.get("venue_ref"):
-                place(state, pick, m, stake, existing, on_bet, max_price)
+                place(state, pick, m, stake, existing, on_bet, max_price, max_above)
             continue
         if pick["condition_id"] in by_market:
             continue  # we already bet the other side; never hold both
@@ -373,7 +385,7 @@ def trade(state, picks, tiers, on_bet=None, net=False, window=None, min_money_sh
             kind = "moneyline/spread" if slot[1] == "side" else "total"
             print(f"  skip (already have a {kind} bet on this game): {label}")
             continue
-        bet = place(state, pick, m, stake, on_bet=on_bet, max_price=max_price)
+        bet = place(state, pick, m, stake, on_bet=on_bet, max_price=max_price, max_above=max_above)
         if bet:
             by_token[pick["token_id"]] = bet
             by_market.add(pick["condition_id"])
@@ -1425,7 +1437,7 @@ def main():
         trade(states[key], claude_picks if cfg.get("claude") else picks, cfg["tiers"], on_bet=copy_real if key == "a" else None,
               net=cfg.get("net", False), window=cfg.get("window"),
               min_money_share=cfg.get("min_money_share", 0), count=cfg.get("count"),
-              max_price=cfg.get("max_price", 1.0))
+              max_price=cfg.get("max_price", 1.0), max_above=cfg.get("max_above"))
         save_state(states[key], os.path.join(HERE, cfg["state"]))
     try:
         live.run(live_bets, MAX_ABOVE, live_state, states["a"]["bets"], A_MAX_PRICE)

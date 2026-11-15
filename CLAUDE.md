@@ -173,7 +173,22 @@ qualified trader, 2% with two or more (top-up once); all other rules as A. No be
 traders qualify (expect 1-3 weeks). Rules fixed before any data; don't tune them to fit.
 The report card shows on the Claude tab.
 
-Report tabs (paper_report.html): Summary, Real bets, A, B, C, D, E, Claude, Statistics.
+Strategy ChatGPT (added 2026-11-15, PAPER ONLY, never real money): a $1,000 bankroll testing
+conviction + price advantage + majority together. Flat 1% on any pick with 3+ bettors and avg
+bankroll % 10%+ (no upper limit), more bettors than Against, and a price paid no higher than the
+traders' average entry (STRATEGIES["chatgpt"]["max_above"] = 0; every other strategy keeps the
+shared 1c MAX_ABOVE), at most 4c below it, 28.6c-75c. No 2% tier, so no top-ups. All other rules
+as A. State in paper_trades_chatgpt.json / .csv. Rules frozen before any bets (FINDINGS.md); first
+review at ~100 settled bets, decision at 200. `research_chatgpt.py` prints a text report next to
+A (returns with ranges, CLV, drawdown, calibration, by sport/type/week, and bets matched with A's);
+it only reads the saved files. The workflow's "Save results" step must list the two new files.
+
+Tests (added 2026-11-15): `python3 -m pytest tests -q` (needs `pip install pytest`). All fake data,
+no network or keys. tests/test_strategy_chatgpt.py: one test per ChatGPT rule, and a full fake
+run of main() proving only Strategy A's bets reach live.py. tests/test_existing_unchanged.py:
+A-E and Claude must decide exactly as recorded from the code before ChatGPT was added.
+
+Report tabs (paper_report.html): Summary, Real bets, A, B, C, D, E, Claude, ChatGPT, Statistics.
 Summary tab (added 2026-11-12 as "Calendar", redesigned the same day after the owner's bet-tracker app;
 the first tab and the page a fresh open lands on, while a Refresh keeps the current tab): a picker for
 Real bets (default) or any paper strategy; a Performance card (profit, ROI, record W-L-push, running-profit
