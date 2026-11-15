@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 900.6262130277506,
+ "cash": 881.8262130277507,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -366,6 +366,81 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4875,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T14:16:54.415144+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Dolphins",
+   "market": "Spread: Colts (-10.5)",
+   "link": "https://polymarket.com/event/nfl-mia-ind-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x17f755b491010e4f9531fec1f77898f5c2830bafb1bfc77f1930d6c715e1c63d",
+   "token_id": "76656041225702047251008767997445490688190172339944996942587433930951463722179",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.73,
+   "avg_price": 0.725,
+   "shares": 12.635416972960712,
+   "cost": 9.4,
+   "fees": 0.2393,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-mia-ind-2026-11-15-pos-10pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.7439,
+    "kalshi": 0.7443
+   },
+   "intl_cost_per_share": 0.726,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T14:16:55.114352+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Chiefs",
+   "market": "Spread: Falcons (-3.5)",
+   "link": "https://polymarket.com/event/nfl-kc-atl-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x488b8985283e95ec7f8713d557cd2725798fafcdf169a0a78f30899b63bc5734",
+   "token_id": "104532707769896126203339488327482063158835481763035196259483822196580900965708",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.75,
+   "avg_price": 0.7531,
+   "shares": 12.42063076489306,
+   "cost": 9.4,
+   "fees": 0.0462,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "5c99e5dab03494d9ee1aae59e3db18ce",
+    "fee_rate": 0.02,
+    "event_id": 1700008820
+   },
+   "quotes": {
+    "prophetx": 0.7568,
+    "kalshi": 0.7638,
+    "polymarket_us": 0.767
+   },
+   "intl_cost_per_share": 0.7556,
    "payout": null,
    "profit": null,
    "settled_at": null,
