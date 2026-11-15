@@ -99,8 +99,27 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
   been skipped because no venue matched. Almost all of A's record is NBA/NFL/CFB/NHL, so the
   edge in these sports is unknown. Decide on real money after ~30 settled bets (sport breakdown
   on the Statistics tab).
+- 2026-11-15: Strategy ChatGPT (paper only, never real money). Rules FROZEN before any bets:
+  3+ bettors, avg bankroll % 10%+ with no upper limit (owner's choice, see below), more bettors
+  than Against, price paid at most the traders' average entry (no 1c allowance) and at most 4c
+  below it, 28.6c-75c, flat 1%, underdog multiplier, no top-ups, all sports the other paper
+  strategies bet. First review at ~100 settled bets, decision at 200. No tuning before then.
+  What the pick log showed first (1,686 finished picks, Oct 29 - Nov 15, international price at
+  the first look, before fees of ~1.7c a share; z allows for several markets on one game):
+  - bankroll % 10-35: +7.0c (183, z 2.2); 35%+: -11.6c (26); under 10%: +0.6c (1,477).
+  - price at or below entry: +2.9c (1,149, z 2.1); above entry: -2.7c (537).
+  - majority: +2.7c (922); tie or minority: -5.9c (137). Against is unknown for 627 older rows.
+  - An earlier filter (10-35%, at or below entry, majority, Against known, no price limits):
+    +13.4c on 72. Under the frozen rules: +3.6c on 104 (z 0.8) at the first look, +9.6c on 105
+    (z 2.2) at the last look before the game. The gap is mostly the 35% cap and the unknown rows.
+  - Picks A also bet: +10.3c (37). Picks A did not bet: -0.2c (67). So most of the edge is A's.
+  - Games of Nov 6-10 carry it: +21.7c (33); before -9.2c (44), after +2.2c (27).
+  - These picks beat the closing price by +1.3c (t 5.0), unlike A's bets.
+  Only 17 days and ~88 games: not proof of anything. Judge it on new bets only.
 
 ## Open questions / what to check next
+- ChatGPT vs A: do the picks only ChatGPT takes (3 bettors at 10-20%, 4 at 10-15%) make money,
+  and does refusing to pay above entry help? `python3 research_chatgpt.py` (matched comparison).
 - Does CLV turn positive for any trader? (Claude tab report card; qualified traders
   expected after 1-3 weeks.)
 - E vs A: does checking each trader beat A's average? Needs many settled E bets.
