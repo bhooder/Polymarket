@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 915.9679817506373,
+ "cash": 904.6069628390201,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -10832,6 +10832,42 @@
     "prophetx": 0.4745
    },
    "intl_cost_per_share": 0.4775,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T15:42:57.909691+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Texans vs. Browns: O/U 40.5",
+   "link": "https://polymarket.com/event/nfl-hou-cle-2026-11-15",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0c40c3fbc461f28139268799ec9464d3731b7e989c854c4c58db368230a57822",
+   "token_id": "104893662174534872323526530575285919923059426407531346049395580287750570992703",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 22.835456065869035,
+   "cost": 11.36,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV15HOUCLE-41",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4975
+   },
+   "intl_cost_per_share": 0.4875,
    "payout": null,
    "profit": null,
    "settled_at": null,
