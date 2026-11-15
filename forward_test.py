@@ -1360,12 +1360,13 @@ def main():
     save_state(live.LOG[-LOG_KEEP:], log_path)  # technical details for each live order, newest last
     try:  # research log of every pick (pick_log.py); must never stop the betting
         plog = pick_log.load(HERE)
-        pick_log.record(plog, picks, market_info)
+        pick_log.record(plog, pick_log.add_card(picks, card, scanner.SIDES, scanner.TOP_WALLETS), market_info)
         done = pick_log.settle(plog, HERE, states, live_state)
         pick_log.save(plog, HERE)
         print(f"Pick log: {len(plog['open'])} open, {done} finished this run")
         wide = pick_log.load(HERE, "pick_log_200")
-        pick_log.record(wide, scanner.WIDE_PICKS, market_info, pick_log.WIDE_SNAP)
+        pick_log.record(wide, pick_log.add_card(scanner.WIDE_PICKS, card, scanner.SIDES), market_info,
+                        pick_log.WIDE_SNAP)
         done = pick_log.settle(wide, HERE, states, live_state, "pick_log_200", pick_log.WIDE_SNAP)
         pick_log.save(wide, HERE, "pick_log_200")
         print(f"Pick log (top 200, research): {len(wide['open'])} open, {done} finished this run")

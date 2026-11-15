@@ -9,7 +9,7 @@ This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 **Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
-Last updated: 2026-11-13.
+Last updated: 2026-11-14.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -53,7 +53,13 @@ betting that mirrors Strategy A on Kalshi, Polymarket US and ProphetX (`live.py`
   Against count before ~2026-10-31.
   `pick_log_200.csv` / `pick_log_200_open.json` (added 2026-11-13): the same, but picks counted
   over the top 200 traders (forward test sets scanner --research-top 200; picks in
-  scanner.WIDE_PICKS), plus bettors_top100 / against_top100. Research only: every strategy and
+  scanner.WIDE_PICKS), plus bettors_top100 / against_top100.
+  Report-card columns (added 2026-11-14, both logs): sharp_bettors / sharp_against (traders who
+  qualify for Strategy Claude), graded_bettors / graded_against (10+ graded games) and
+  bettors_clv / against_clv (their average closing-price value, cents), as the card stood at each
+  look; empty for older rows (pick_log.add_card, scanner.SIDES). Ideas to test with them later,
+  not built: skip A picks whose bettors have a bad record, weight votes by record, grade per
+  sport, fade bad traders (log only), copy sharps' unusually big bets. Research only: every strategy and
   real bet still uses picks from the top 100 only (checked identical).
 - `index.html`: home page linking to the two reports (GitHub Pages).
 - Scanner outputs: `consensus.csv`, `traders.csv`, `picks.html` (sortable

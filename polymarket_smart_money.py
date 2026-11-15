@@ -345,6 +345,8 @@ def build_parser():
 CONVICTION_PCT = 10
 POSITIONS = {}  # wallet -> (name, open positions without hedges), filled by find_picks
 WIDE_PICKS = []  # picks counted over ALL scanned traders (research_top), research only
+SIDES = {}  # condition_id -> {outcome: wallets holding it}, over ALL scanned traders (pick log research)
+TOP_WALLETS = set()  # the scanned traders in the top args.top
 
 
 def find_picks(args):
@@ -354,6 +356,8 @@ def find_picks(args):
     log), but the returned picks still come from the top args.top only."""
     POSITIONS.clear()
     WIDE_PICKS.clear()
+    SIDES.clear()
+    TOP_WALLETS.clear()
     research_top = max(getattr(args, "research_top", 0) or 0, args.top)
     board = leaderboard(research_top, args.period, args.category, args.sort)
     print(f"Leaderboard: {len(board)} traders ({args.period}, {args.category}, {args.sort})"
@@ -389,6 +393,11 @@ def find_picks(args):
         print(f"  [{i}/{len(board)}] {name}: {len(positions)} open positions"
               f" ({len(hedged)} hedged markets dropped)")
 
+    for wallet, positions, _, top in scanned:
+        if top:
+            TOP_WALLETS.add(wallet)
+        for p in positions:
+            SIDES.setdefault(p["condition_id"], {}).setdefault(p.get("outcome"), set()).add(wallet)
     tags = {} if args.category != "overall" else None
     rows = build_rows([s for s in scanned if s[3]], args, tags)
     if research_top > args.top:

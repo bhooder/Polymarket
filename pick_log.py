@@ -21,12 +21,19 @@ OPEN = "pick_log_open.json"
 CSV = "pick_log.csv"
 # The research log of picks counted over the top 200 traders (2026-11-13): pick_log_200.csv and
 # pick_log_200_open.json, with extra columns for how many bettors / against are in the top 100.
+GRADED_MIN = 10  # graded games before a trader's closing-price record counts in the *_clv columns
 GIVE_UP_DAYS = 14  # no result this long after the start: written with an empty result
 
 # pick column -> short name used in the log
 SNAP = {"Bettors": "bettors", "Against": "against", "Conviction bettors": "conv_bettors",
         "Conviction against": "conv_against", "Avg bankroll %": "bankroll_pct", "Total $ in": "usd_in",
-        "Against $ in": "against_usd", "Avg entry price": "entry", "Price now": "price"}
+        "Against $ in": "against_usd", "Avg entry price": "entry", "Price now": "price",
+        # From Strategy Claude's report card (added 2026-11-14), as it stood at that look:
+        # sharp = traders who qualify on the card; graded = traders with GRADED_MIN+ graded games;
+        # *_clv = the average of those graded traders' average closing-price value, in cents.
+        "Sharp bettors": "sharp_bettors", "Sharp against": "sharp_against",
+        "Graded bettors": "graded_bettors", "Graded against": "graded_against",
+        "Bettors CLV": "bettors_clv", "Against CLV": "against_clv"}
 WIDE_SNAP = {**SNAP, "Bettors top 100": "bettors_top100", "Against top 100": "against_top100"}
 COLUMNS = (["sport", "start", "market", "pick", "market_type", "link", "first_seen", "last_seen", "runs_seen",
             "max_bettors"]
@@ -69,6 +76,30 @@ def start_of(m):
     if not when:
         return None
     return datetime.fromisoformat(when.replace("Z", "+00:00").replace(" ", "T"))
+
+
+def add_card(picks, card, sides, only=None):
+    """Copies of picks with the report-card columns added (see SNAP). sides: scanner.SIDES;
+    only: count just these wallets (the top 100, for the main log). Never changes the picks."""
+    sharp = claude_strategy.qualified(card)
+    traders = card.get("traders", {})
+
+    def stats(wallets):
+        clvs = [claude_strategy.score(traders[w])[0] for w in wallets
+                if w in traders and traders[w]["n"] >= GRADED_MIN]
+        return len(wallets & sharp), len(clvs), (round(100 * sum(clvs) / len(clvs), 2) if clvs else None)
+
+    out = []
+    for p in picks:
+        here = sides.get(p.get("condition_id"), {})
+        mine = set(here.get(p.get("Pick"), set()))
+        other = set().union(*(w for o, w in here.items() if o != p.get("Pick")))
+        if only is not None:
+            mine, other = mine & only, other & only
+        (sb, gb, cb), (sa, ga, ca) = stats(mine), stats(other)
+        out.append({**p, "Sharp bettors": sb, "Sharp against": sa, "Graded bettors": gb,
+                    "Graded against": ga, "Bettors CLV": cb, "Against CLV": ca})
+    return out
 
 
 def record(log, picks, market_info, snap_fields=SNAP):
@@ -154,6 +185,15 @@ def settle(log, here, states, live_state, name="pick_log", snap_fields=SNAP):
     if rows:
         path = os.path.join(here, files(name)[1])
         new_file = not os.path.exists(path)
+        if not new_file:  # columns were added since the file was started: rewrite the header once
+            with open(path, newline="") as f:
+                old = list(csv.DictReader(f))
+                header = list(old[0]) if old else None
+            if header and header != columns(snap_fields):
+                with open(path, "w", newline="") as f:
+                    w = csv.DictWriter(f, fieldnames=columns(snap_fields))
+                    w.writeheader()
+                    w.writerows(old)
         with open(path, "a", newline="") as f:
             w = csv.DictWriter(f, fieldnames=columns(snap_fields))
             if new_file:
