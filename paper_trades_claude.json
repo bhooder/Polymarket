@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 881.8262130277507,
+ "cash": 863.0314607057693,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -441,6 +441,81 @@
     "polymarket_us": 0.767
    },
    "intl_cost_per_share": 0.7556,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T16:24:03.243246+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Spain win on 2026-11-15?",
+   "link": "https://polymarket.com/event/unl-esp-eng-2026-11-15",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5223c4725e1b98444a422c0f53dba751a1ee933757d10ca8d9be5f79dea60956",
+   "token_id": "100805080571145689138629578860048287685422676432058034415894318161356374373215",
+   "outcome_index": 1,
+   "ends": "2026-11-15T19:45:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 17.470677542271968,
+   "cost": 9.39,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV15ESPENG-ESP",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5377,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T16:24:05.104214+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Browns",
+   "market": "Spread: Texans (-5.5)",
+   "link": "https://polymarket.com/event/nfl-hou-cle-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd014cb6d6fd55aa484546d9f77c39aabd70c734b9b288e6cfa170029ea3973aa",
+   "token_id": "18070692962698751619166022225405475061250206229935047519258103428017326094562",
+   "outcome_index": 1,
+   "ends": "2026-11-15T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.55,
+   "avg_price": 0.5556,
+   "shares": 16.770925110132158,
+   "cost": 9.4,
+   "fees": 0.0828,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "62270e1a11b6ec48cff901e0e3bf5baf",
+    "fee_rate": 0.02,
+    "event_id": 1700008810
+   },
+   "quotes": {
+    "prophetx": 0.5605,
+    "kalshi": 0.5675,
+    "polymarket_us": 0.5785
+   },
+   "intl_cost_per_share": 0.5674,
    "payout": null,
    "profit": null,
    "settled_at": null,

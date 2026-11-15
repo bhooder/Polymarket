@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 933.8126854689805,
+ "cash": 922.7204578754389,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3892,6 +3892,44 @@
     "polymarket_us": 0.6765
    },
    "intl_cost_per_share": 0.6568,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-15T16:24:01.098208+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Mavericks",
+   "market": "Spread: Celtics (-13.5)",
+   "link": "https://polymarket.com/event/nba-dal-bos-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2",
+   "token_id": "77941180693332964208351226137108626032756094539554642676000576496487677009120",
+   "outcome_index": 1,
+   "ends": "2026-11-15T23:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 21.023975673610835,
+   "cost": 11.09,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV15DALBOS-BOS14",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5212,
+    "kalshi": 0.5276,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
