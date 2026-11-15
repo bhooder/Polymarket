@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 664.5378859660436,
+ "cash": 666.8399093170054,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11094,7 +11094,7 @@
   },
   {
    "placed_at": "2026-11-15T15:03:23.358710+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Dolphins vs. Colts: O/U 38.5",
@@ -11123,9 +11123,9 @@
     "prophetx": 0.4745
    },
    "intl_cost_per_share": 0.4775,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.96,
+   "profit": 12.59,
+   "settled_at": "2026-11-15T20:38:36.845795+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -11356,7 +11356,7 @@
   },
   {
    "placed_at": "2026-11-15T16:23:59.780995+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Belgium vs. Italy: O/U 2.5",
@@ -11386,9 +11386,9 @@
     "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.37,
+   "settled_at": "2026-11-15T20:38:36.933246+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -11700,7 +11700,7 @@
   {
    "placed_at": "2026-11-15T20:03:04.888359+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Seahawks",
    "market": "Seahawks vs. Raiders",
    "link": "https://polymarket.com/event/nfl-sea-lv-2026-11-15",
@@ -11713,10 +11713,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 9.7,
    "traders_entry": 0.71,
-   "avg_price": 0.72,
-   "shares": 14.725273527745086,
-   "cost": 10.81,
-   "fees": 0.21,
+   "avg_price": 0.7199,
+   "shares": 29.477790854801448,
+   "cost": 21.64,
+   "fees": 0.42,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -11730,6 +11730,46 @@
     "polymarket_us": 0.7368
    },
    "intl_cost_per_share": 0.7359,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-15T20:40:53.943934+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 9.3,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-15T20:40:54.750958+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Knicks (-4.5)",
+   "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-15",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7a0d6ff012e4ed0249e525b5480fbf9c3590ee56d516ac961ddf85a4d57002b1",
+   "token_id": "97278105733975908499786789705406439074296256622418534387614426519182682839981",
+   "outcome_index": 1,
+   "ends": "2026-11-15T23:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.46,
+   "avg_price": 0.4545,
+   "shares": 23.56888489208633,
+   "cost": 10.83,
+   "fees": 0.1169,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "590f31d7e127a143bb84bc3f4cfee8b8",
+    "fee_rate": 0.02,
+    "event_id": 1704742039
+   },
+   "quotes": {
+    "prophetx": 0.4595,
+    "kalshi": 0.4776
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,
