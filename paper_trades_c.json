@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1007.8659748445492,
+ "cash": 1057.8085406705345,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4235,7 +4235,7 @@
   },
   {
    "placed_at": "2026-11-15T21:21:08.023650+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Knicks",
    "market": "Knicks vs. Raptors",
@@ -4264,9 +4264,9 @@
     "kalshi": 0.6464
    },
    "intl_cost_per_share": 0.6417,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.29,
+   "profit": 12.48,
+   "settled_at": "2026-11-16T02:38:51.978864+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -4311,7 +4311,7 @@
   },
   {
    "placed_at": "2026-11-15T22:40:31.806820+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Rockets",
    "market": "Rockets vs. Wizards",
@@ -4341,9 +4341,9 @@
     "polymarket_us": 0.7678
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.65,
+   "profit": 3.46,
+   "settled_at": "2026-11-16T02:38:51.989294+00:00",
    "topped_up_at": null,
    "close": 0.755
   },
@@ -4418,7 +4418,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.47
   },
   {
    "placed_at": "2026-11-16T00:48:49.770188+00:00",

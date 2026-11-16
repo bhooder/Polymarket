@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+7566bd763b88,2026-11-16T02:41:09Z,status_change,0x16a5aae21f,0x16a5aae21fad63f3ffb929e6cddb673c83500ea5,Grigoralep,200,52318.5791,141555.76,scanned,off_board,,0.0,,,0,0,0
+986dfb6e585e,2026-11-16T02:41:09Z,status_change,0x6157d529ae,0x6157d529ae129fe08f22a27ed42e741d2eaa9fb4,,,,,off_board,scanned,,,,,,,

@@ -1,0 +1,5 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+30d81d349c2a,2026-11-16T02:41:09Z,top200,33b411d40ad5,price,,,,,,,,4,0,0,0,1.0,2814,0,0.47,0.49,0,0,4,0,0.15,,1,0
+9c9289ee3ec8,2026-11-16T02:41:09Z,top200,f2cc40b8e707,price,,,,,,,,4,1,0,0,0.9,1461,220,0.45,0.45,0,0,4,1,0.48,-0.26,2,1
+d84c22509010,2026-11-16T02:41:09Z,top200,2066e80ef70d,first_seen,31241225161581416453640128822099959769948073870095308138779507269826708975669,0x7877618e540c2117f1b22ec04a31b6f839e8011e50c17fb5c3343bc80f01360b,unl-far-mol-2026-11-16-exact-score,unl,Exact Score: Faroe Islands 1 - 2 Moldova?,No,2026-11-16T15:00:00Z,3,0,1,0,7.5,4175,0,0.94,0.95,0,0,3,0,-0.06,,0,0
+7a77347b665a,2026-11-16T02:41:09Z,top200,219226d3d423,price,,,,,,,,3,0,1,0,5.7,3480,0,0.72,0.73,0,0,3,0,-0.06,,0,0
