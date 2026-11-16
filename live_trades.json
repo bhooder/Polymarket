@@ -2277,6 +2277,40 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-16T00:48:51.265260+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "size_multiplier": 1.0,
+   "pick": "Bengals",
+   "market": "Steelers vs. Bengals",
+   "link": "https://polymarket.com/event/nfl-pit-cin-2026-11-16",
+   "market_type": "moneyline",
+   "condition_id": "0x2c4bc1dc34eaa1cb08943f536d4ce630384f3e93e028f6fa7a20933438334853",
+   "token_id": "62574479503914604978125294973274374866681287729227487724824469367669543832568",
+   "outcome_index": 1,
+   "ends": "2026-11-16T01:20:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 17.5,
+   "traders_entry": 0.65,
+   "avg_price": 0.66,
+   "shares": 3.0,
+   "cost": 2.03,
+   "fees": 0.0471,
+   "contracts_ordered": 3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV15PITCIN-CIN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "paper_price": 0.66,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "orders": [
@@ -2741,8 +2775,15 @@
    "venue": "prophetx",
    "ordered": 2.12,
    "filled": 2.12
+  },
+  {
+   "at": "2026-11-16T00:48:51.265241+00:00",
+   "pick": "Bengals",
+   "venue": "kalshi",
+   "ordered": 3,
+   "filled": 3.0
   }
  ],
  "daily_check": "2026-11-16",
- "balances_checked_at": "2026-11-16T00:05:59.019835+00:00"
+ "balances_checked_at": "2026-11-16T00:48:51.212092+00:00"
 }

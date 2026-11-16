@@ -1,11 +1,11 @@
 {
  "start_bankroll": 1000.0,
- "cash": 962.6266103610674,
+ "cash": 982.3116109423562,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
    "placed_at": "2026-11-15T19:18:42.363997+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Seahawks",
    "market": "Spread: Seahawks (-6.5)",
@@ -35,9 +35,9 @@
     "polymarket_us": 0.5187
    },
    "intl_cost_per_share": 0.5075,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.69,
+   "profit": 9.69,
+   "settled_at": "2026-11-16T00:48:51.843449+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
