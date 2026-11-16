@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 995.4280914971772,
+ "cash": 984.3512897807816,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4122,7 +4122,7 @@
   },
   {
    "placed_at": "2026-11-15T17:07:05.517927+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Suns",
    "market": "Spread: Lakers (-2.5)",
@@ -4151,9 +4151,9 @@
     "kalshi": 0.4975
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.09,
+   "settled_at": "2026-11-16T00:03:39.489683+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -4341,6 +4341,43 @@
     "polymarket_us": 0.7678
    },
    "intl_cost_per_share": 0.7496,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.755
+  },
+  {
+   "placed_at": "2026-11-16T00:05:56.592179+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Liechtenstein win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-lit-lie-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc27150c31d90483c86e751fe03ac717cb40b6f1a263bcce1d62d985979b71719",
+   "token_id": "21896155831102673490402500798059689197831791278667212092304962781782197380236",
+   "outcome_index": 1,
+   "ends": "2026-11-16T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.6,
+   "traders_entry": 0.97,
+   "avg_price": 0.97,
+   "shares": 11.388455377727393,
+   "cost": 11.08,
+   "fees": 0.03,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16LTULIE-LIE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9726
+   },
+   "intl_cost_per_share": 0.9657,
    "payout": null,
    "profit": null,
    "settled_at": null,
