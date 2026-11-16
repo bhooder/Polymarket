@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1104.0295786607394,
+ "cash": 1092.8795786607393,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4459,6 +4459,43 @@
    "settled_at": "2026-11-16T05:14:01.209831+00:00",
    "topped_up_at": null,
    "close": 0.5
+  },
+  {
+   "placed_at": "2026-11-16T06:57:57.958732+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ravens",
+   "market": "Chargers vs. Ravens",
+   "link": "https://polymarket.com/event/nfl-lac-bal-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe579bd7f0e99a4f7a2eb6c0a885e1ed8cbfa3d274d8009244d0acc508de7a460",
+   "token_id": "12126706895449538614421356763062222454679964055520245182488592374442365997462",
+   "outcome_index": 1,
+   "ends": "2026-11-17T01:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 6.9,
+   "traders_entry": 0.68,
+   "avg_price": 0.6825,
+   "shares": 16.23297997212237,
+   "cost": 11.15,
+   "fees": 0.0703,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "57245543ee69fecd355ca1b5a41b78a1",
+    "fee_rate": 0.02,
+    "event_id": 1700008838
+   },
+   "quotes": {
+    "prophetx": 0.6869,
+    "kalshi": 0.7052
+   },
+   "intl_cost_per_share": 0.6964,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
