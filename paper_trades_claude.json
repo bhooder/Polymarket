@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 901.2507694069694,
+ "cash": 891.6683451354048,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1169,6 +1169,42 @@
     "kalshi": 0.538
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T09:41:57.349529+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Martina Trevisan",
+   "market": "Colina: Guiomar Maristany vs Martina Trevisan",
+   "link": "https://polymarket.com/event/wta-marista-trevisa-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x554c67550ba34786cfb6e1adf6ab471a58723ba11135cba32d035dbb1e730c58",
+   "token_id": "25705529196221848763793370456448082308398016692240836650314273434078536459042",
+   "outcome_index": 1,
+   "ends": "2026-11-16T15:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.43,
+   "shares": 21.424242492010634,
+   "cost": 9.58,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXWTACHALLENGERMATCH-26NOV16MARTRE-TRE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4473
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
