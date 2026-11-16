@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1030.7060669642033,
+ "cash": 1019.9843179732366,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12119,6 +12119,42 @@
     "kalshi": 0.8975
    },
    "intl_cost_per_share": 0.8853,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T12:10:26.967856+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Warriors vs. Pelicans",
+   "link": "https://polymarket.com/event/nba-gsw-nop-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b",
+   "token_id": "93986505847215228951324290848203911775644145891061284182849603646645841094137",
+   "outcome_index": 1,
+   "ends": "2026-11-17T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 10.0,
+   "traders_entry": 0.41,
+   "avg_price": 0.42,
+   "shares": 24.52797378801607,
+   "cost": 10.72,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16GSWNOP-NOP",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4371
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,
