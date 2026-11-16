@@ -116,6 +116,9 @@ saved picks page (git history of `picks.html`, Oct 29 - Nov 11, results from Gam
   - Games of Nov 6-10 carry it: +21.7c (33); before -9.2c (44), after +2.2c (27).
   - These picks beat the closing price by +1.3c (t 5.0), unlike A's bets.
   Only 17 days and ~88 games: not proof of anything. Judge it on new bets only.
+- 2026-11-16: owner's choice: the leagues and esports added 2026-11-13 (Kalshi soccer leagues, CS2,
+  LoL) now get real bets too (venues.PAPER_ONLY emptied). At the time: 25 distinct settled picks in
+  them, 12-13; Strategy A's 6 of them 4-2; CLV mostly slightly negative; not a data finding.
 
 ## Open questions / what to check next
 - ChatGPT vs A: do the picks only ChatGPT takes (3 bettors at 10-20%, 4 at 10-15%) make money,

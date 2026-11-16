@@ -9,7 +9,7 @@ This repo is public. Keep personal details out of every uploaded file.
 Private notes and Mac-only setup live in `CLAUDE.local.md` (not uploaded).
 **Also read `FINDINGS.md`**: what the data has shown so far and why each rule exists.
 
-Last updated: 2026-11-15.
+Last updated: 2026-11-16.
 
 ## Goal
 Use public Polymarket data to find what top leaderboard traders hold, infer
@@ -291,7 +291,8 @@ Status: see FINDINGS.md (results snapshot and what the data has shown).
   Championship, Eredivisie, Liga MX, Brazil, Portugal, Japan, Saudi, Nations League, ...) and
   esports CS2 + LoL (KALSHI_NAMED, matched by team names). Names are matched without accents
   (Brøndby = Broendby). Tested on two weeks of past picks: ~85% found. The new sports are
-  PAPER ONLY (venues.PAPER_ONLY): real bets skip them until ~30 settle; then the owner decides.
+  were PAPER ONLY (venues.PAPER_ONLY) until 2026-11-16, when the owner opened them to real money
+  (25 distinct picks settled, 12-13; A's 6 of them 4-2). PAPER_ONLY is now empty.
 - ProphetX (CFTC exchange, added 2026-11-08): https://cash.api.prophetx.co/partner,
   docs https://docs.prophetx.co. Needs the API keys even for prices (login ->
   Bearer token). Prices are American odds; each selection lists levels a taker can

@@ -51,8 +51,9 @@ KALSHI_LEAGUES = {
 # Matched by date + both names (each site uses its own codes): series and name matcher.
 KALSHI_NAMED = {"ufc": "KXUFCFIGHT", "cs2": "KXCS2GAME", "lol": "KXLOLGAME"}
 # Sports bet on paper only (no real money) until ~30 bets settle; then decide. Added 2026-11-13.
-PAPER_ONLY = (set(KALSHI_LEAGUES) - {"nba", "nfl", "nhl", "mlb", "wnba", "cfb", "cbb", "epl", "ucl", "uel",
-                                     "lal", "sea", "bun", "fl1", "mls", "atp", "wta"}) | {"cs2", "lol"}
+# Sports real bets skip (paper only). The leagues and esports added 2026-11-13 were here until
+# 2026-11-16, when the owner opened them to real money (A had bet 6 of them, 4-2). Empty = none.
+PAPER_ONLY = set()
 TENNIS = {"atp", "wta"}
 SANITY = 0.15  # a "match" priced this far from Polymarket is probably the wrong team
 
