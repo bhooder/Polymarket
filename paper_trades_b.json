@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 980.0114992318157,
+ "cash": 947.8013563332929,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12057,7 +12057,7 @@
   {
    "placed_at": "2026-11-16T06:57:56.861103+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Ravens",
    "market": "Chargers vs. Ravens",
    "link": "https://polymarket.com/event/nfl-lac-bal-2026-11-17",
@@ -12070,10 +12070,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 6.9,
    "traders_entry": 0.68,
-   "avg_price": 0.6825,
-   "shares": 15.621513461961705,
-   "cost": 10.73,
-   "fees": 0.0677,
+   "avg_price": 0.6821,
+   "shares": 31.275502824556973,
+   "cost": 21.47,
+   "fees": 0.1356,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -12089,7 +12089,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-16T16:54:10.383698+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 5.5,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-16T11:04:05.186120+00:00",
@@ -12267,6 +12270,80 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T16:54:11.146149+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Spread: Rockets (-2.5)",
+   "link": "https://polymarket.com/event/nba-hou-mia-2026-11-16",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x81facc9948195e1264f93cce78dab7d64ef077be45b3e9db75f07cb94d1e5f91",
+   "token_id": "29967066672722420032774720532154033667557876633608831062604701512148094231024",
+   "outcome_index": 1,
+   "ends": "2026-11-17T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 6.6,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 21.143148772495387,
+   "cost": 10.73,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV16HOUMIA-HOU3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5075,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T16:54:12.188503+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Estonia win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-est-bul-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5a90c55129ad2785a7a8f7a862d228496ad7cd2ad6892aff9660cfd9e05443fb",
+   "token_id": "67555456363762720351380877134024018356561610979836621523186295600382760225470",
+   "outcome_index": 0,
+   "ends": "2026-11-16T17:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.44,
+   "avg_price": 0.44,
+   "shares": 23.17612125815696,
+   "cost": 10.74,
+   "fees": 0.5425,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-unl-est-bul-2026-11-16-est",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4634,
+    "kalshi": 0.4674
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
