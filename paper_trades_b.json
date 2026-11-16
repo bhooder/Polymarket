@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 915.6100102105178,
+ "cash": 949.5029418796636,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11864,7 +11864,7 @@
   },
   {
    "placed_at": "2026-11-16T00:05:55.745383+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Liechtenstein win on 2026-11-16?",
@@ -11893,9 +11893,9 @@
     "kalshi": 0.9728
    },
    "intl_cost_per_share": 0.9657,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.58,
+   "profit": 0.49,
+   "settled_at": "2026-11-16T19:41:14.456140+00:00",
    "topped_up_at": "2026-11-16T15:17:56.717106+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 6.9,
@@ -12318,7 +12318,7 @@
   },
   {
    "placed_at": "2026-11-16T16:54:12.188503+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Estonia win on 2026-11-16?",
@@ -12348,9 +12348,9 @@
     "kalshi": 0.4674
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.18,
+   "profit": 12.44,
+   "settled_at": "2026-11-16T19:41:14.655038+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -12424,6 +12424,42 @@
     "polymarket_us": 0.613
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T19:43:48.681304+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Gibraltar win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-gib-mal-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xdf8004942f7e3d64a0aae7cc683e4e5a342bca8968f642451bb406a329792ad7",
+   "token_id": "62563525198447929184848136289775505557247793892412863013426908944219304217917",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.88,
+   "avg_price": 0.86,
+   "shares": 12.505354502618523,
+   "cost": 10.86,
+   "fees": 0.11,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16GIBMLT-GIB",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8688
+   },
+   "intl_cost_per_share": 0.866,
    "payout": null,
    "profit": null,
    "settled_at": null,

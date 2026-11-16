@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1260.756970898951,
+ "cash": 1247.899903215259,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4335,6 +4335,42 @@
     "kalshi": 0.7051
    },
    "intl_cost_per_share": 0.6865,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T19:43:47.309197+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Germany win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-ger-nld-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc6793dd33bc6e019c2b3779a818b572bc3381e3e2851012fed4cd093503c7165",
+   "token_id": "10650386359074364293314821555051378680627465402679654554730084417128203106088",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 25.320546293249365,
+   "cost": 12.86,
+   "fees": 0.45,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16GERNED-GER",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5078
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
