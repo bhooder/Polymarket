@@ -1,5 +1,5 @@
 {
- "cash": 211.33,
+ "cash": 212.47,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -2206,11 +2206,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-15T21:21:26.385766+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "49ers",
@@ -2227,7 +2228,7 @@
    "avg_price": 0.6352,
    "shares": 3.18,
    "cost": 2.02,
-   "fees": 0.0,
+   "fees": 0.02,
    "contracts_ordered": 2.02,
    "venue": "prophetx",
    "venue_ref": {
@@ -2237,9 +2238,9 @@
     "event_id": 1700008807
    },
    "paper_price": 0.635036496350365,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.16,
+   "profit": 1.14,
+   "settled_at": "2026-11-16T01:31:39.358179+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
@@ -2310,7 +2311,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.665
   }
  ],
  "orders": [
@@ -2785,5 +2787,5 @@
   }
  ],
  "daily_check": "2026-11-16",
- "balances_checked_at": "2026-11-16T00:48:51.212092+00:00"
+ "balances_checked_at": "2026-11-16T01:34:27.603529+00:00"
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 975.0263458923982,
+ "cash": 1007.8659748445492,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -3965,7 +3965,7 @@
   },
   {
    "placed_at": "2026-11-15T15:42:59.254772+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "49ers",
    "market": "49ers vs. Cowboys",
@@ -3995,15 +3995,15 @@
     "polymarket_us": 0.6765
    },
    "intl_cost_per_share": 0.6568,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 32.84,
+   "profit": 10.65,
+   "settled_at": "2026-11-16T01:31:38.712281+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
   {
    "placed_at": "2026-11-15T16:24:01.098208+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Mavericks",
    "market": "Spread: Celtics (-13.5)",
@@ -4034,9 +4034,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.18,
+   "settled_at": "2026-11-16T01:31:38.725704+00:00",
    "topped_up_at": "2026-11-15T18:27:28.962413+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 3.9,
@@ -4456,7 +4456,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.5
   }
  ]
 }

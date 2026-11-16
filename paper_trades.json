@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1222.3980068889427,
+ "cash": 1242.0799750715182,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4184,11 +4184,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-15T21:21:04.719897+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "49ers",
    "market": "49ers vs. Cowboys",
@@ -4219,9 +4220,9 @@
     "polymarket_us": 0.6595
    },
    "intl_cost_per_share": 0.6469,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.68,
+   "profit": 7.09,
+   "settled_at": "2026-11-16T01:31:37.615591+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
@@ -4299,7 +4300,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.665
   }
  ]
 }

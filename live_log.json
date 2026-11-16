@@ -2770,5 +2770,16 @@
    "status": 201,
    "body": "{\"average_fee_paid\":\"0.0157\",\"average_fill_price\":\"0.6600\",\"client_order_id\":\"49a96eeb-c47a-5a76-a1e2-810731a9e097\",\"fill_count\":\"3.00\",\"order_id\":\"01a1e1d4-0538-7e9f-b706-1a0db0c6584a\",\"remaining_count\":\"0.00\",\"ts_ms\":1794790131253}"
   }
+ },
+ {
+  "at": "2026-11-16T01:31:39.371453+00:00",
+  "event": "settled",
+  "bet": "49ers to win (vs. Cowboys)",
+  "status": "won",
+  "cost": 2.02,
+  "payout": 3.16,
+  "profit": 1.14,
+  "venue": "prophetx",
+  "ref": "64d02238479904f87df24da22901a7a2"
  }
 ]
