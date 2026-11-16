@@ -1176,7 +1176,7 @@
   },
   {
    "placed_at": "2026-11-16T09:41:57.349529+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Martina Trevisan",
    "market": "Colina: Guiomar Maristany vs Martina Trevisan",
@@ -1205,9 +1205,9 @@
     "kalshi": 0.4473
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.58,
+   "settled_at": "2026-11-16T17:49:37.661319+00:00",
    "topped_up_at": null,
    "close": 0.455
   }
