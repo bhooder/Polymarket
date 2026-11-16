@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1060.1882158119483,
+ "cash": 1049.1474984311105,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4655,7 +4655,7 @@
   {
    "placed_at": "2026-11-16T20:34:33.817336+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Heat",
    "market": "Rockets vs. Heat",
    "link": "https://polymarket.com/event/nba-hou-mia-2026-11-16",
@@ -4668,10 +4668,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 3.9,
    "traders_entry": 0.44,
-   "avg_price": 0.45,
-   "shares": 23.8591986305034,
-   "cost": 11.16,
-   "fees": 0.42,
+   "avg_price": 0.4501,
+   "shares": 47.48301503236506,
+   "cost": 22.2,
+   "fees": 0.83,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -4687,7 +4687,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-16T23:12:12.084996+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.1,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-16T22:23:53.396767+00:00",
