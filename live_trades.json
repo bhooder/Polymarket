@@ -2246,7 +2246,7 @@
   },
   {
    "placed_at": "2026-11-15T23:22:41.983446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Rockets",
@@ -2263,7 +2263,7 @@
    "avg_price": 0.493,
    "shares": 4.3,
    "cost": 2.12,
-   "fees": 0.0,
+   "fees": 0.04,
    "contracts_ordered": 2.12,
    "venue": "prophetx",
    "venue_ref": {
@@ -2273,9 +2273,9 @@
     "event_id": 1704742045
    },
    "paper_price": 0.4926108374384236,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 4.26,
+   "profit": 2.14,
+   "settled_at": "2026-11-16T03:28:21.525570+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -2787,5 +2787,5 @@
   }
  ],
  "daily_check": "2026-11-16",
- "balances_checked_at": "2026-11-16T02:49:55.981165+00:00"
+ "balances_checked_at": "2026-11-16T03:31:21.468910+00:00"
 }

@@ -1,0 +1,6 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+227b30ffab0b,2026-11-16T03:31:22Z,top100,f2cc40b8e707,first_seen,38730797242839597635992512424487099948191854478409383891283357687115220285910,0xcd92ea954ec13d0a002bbdf98dfca25555cca521fc5b6debd2754da011baa082,unl-che-sco-2026-11-16,unl,Will Switzerland win on 2026-11-16?,No,2026-11-16T19:45:00Z,3,1,0,0,0.3,639,220,0.44,0.45,0,0,3,1,0.57,-0.26,,
+9d8ae828b88e,2026-11-16T03:31:22Z,top200,fca3aa172446,counts,,,,,,,,6,0,2,0,8.1,15181,0,0.97,0.97,0,0,6,0,0.17,,2,0
+51bbda2681e0,2026-11-16T03:31:22Z,top200,f2cc40b8e707,counts,,,,,,,,4,1,0,0,0.8,1461,220,0.45,0.45,0,0,4,1,0.48,-0.26,3,1
+542fff81a816,2026-11-16T03:31:22Z,top200,4d2dbd623b80,first_seen,81430811101756001426053253457560188545614603757867640795644533571695696869369,0x7f76e51acb29c4bef38529b292afe09887b32d840728e701a2c09d558b57df8f,unl-ger-nld-2026-11-16,unl,Spread: Germany (-1.5),Germany,2026-11-16T19:45:00Z,4,0,0,0,0.5,1740,0,0.29,0.29,0,0,4,0,0.15,,1,0
+946c0c153b99,2026-11-16T03:31:22Z,top200,47acf48f9d17,price,,,,,,,,3,0,0,0,0.3,555,0,0.55,0.58,0,0,3,0,0.44,,2,0

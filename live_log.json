@@ -2781,5 +2781,16 @@
   "profit": 1.14,
   "venue": "prophetx",
   "ref": "64d02238479904f87df24da22901a7a2"
+ },
+ {
+  "at": "2026-11-16T03:28:21.536961+00:00",
+  "event": "settled",
+  "bet": "Rockets -8.5",
+  "status": "won",
+  "cost": 2.12,
+  "payout": 4.26,
+  "profit": 2.14,
+  "venue": "prophetx",
+  "ref": "fad42ad5bb8da97b4a6d070069edfd88"
  }
 ]

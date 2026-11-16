@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 970.2558972105443,
+ "cash": 989.8644890959858,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11939,7 +11939,7 @@
   },
   {
    "placed_at": "2026-11-16T00:48:48.576442+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Hawks vs. Bucks: O/U 233.5",
@@ -11969,9 +11969,9 @@
     "kalshi": 0.528
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.61,
+   "profit": 9.34,
+   "settled_at": "2026-11-16T03:28:20.609025+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
