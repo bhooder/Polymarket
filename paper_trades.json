@@ -4342,7 +4342,7 @@
   },
   {
    "placed_at": "2026-11-16T19:43:47.309197+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Germany win on 2026-11-16?",
@@ -4371,9 +4371,9 @@
     "kalshi": 0.5078
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.86,
+   "settled_at": "2026-11-16T22:21:37.249291+00:00",
    "topped_up_at": null,
    "close": 0.485
   }

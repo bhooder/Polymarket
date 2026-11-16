@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 949.5029418796636,
+ "cash": 951.5291914291104,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12170,7 +12170,7 @@
   },
   {
    "placed_at": "2026-11-16T15:17:58.300618+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Slovenia win on 2026-11-16?",
@@ -12199,15 +12199,15 @@
     "kalshi": 0.3762
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.72,
+   "settled_at": "2026-11-16T22:21:37.361296+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
   {
    "placed_at": "2026-11-16T15:17:59.060122+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Germany win on 2026-11-16?",
@@ -12236,15 +12236,15 @@
     "kalshi": 0.5075
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.73,
+   "settled_at": "2026-11-16T22:21:37.372407+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
   {
    "placed_at": "2026-11-16T15:17:59.921417+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Switzerland win on 2026-11-16?",
@@ -12273,9 +12273,9 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.74,
+   "settled_at": "2026-11-16T22:21:37.403137+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -12434,7 +12434,7 @@
   },
   {
    "placed_at": "2026-11-16T19:43:48.681304+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Gibraltar win on 2026-11-16?",
@@ -12463,11 +12463,48 @@
     "kalshi": 0.8688
    },
    "intl_cost_per_share": 0.866,
+   "payout": 12.51,
+   "profit": 1.65,
+   "settled_at": "2026-11-16T22:21:37.537748+00:00",
+   "topped_up_at": null,
+   "close": 0.855
+  },
+  {
+   "placed_at": "2026-11-16T22:23:52.995090+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Trail Blazers vs. Timberwolves: O/U 228.5",
+   "link": "https://polymarket.com/event/nba-por-min-2026-11-16",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4a3c8909f9e482f4fc2050d4742609247046b9ab58bca70f4e303381fe8ee1cb",
+   "token_id": "68730954083099535776327968354502680896592687923423685455964811256072762985607",
+   "outcome_index": 0,
+   "ends": "2026-11-17T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.9,
+   "traders_entry": 0.5,
+   "avg_price": 0.49,
+   "shares": 20.630826435044426,
+   "cost": 10.48,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV16PORMIN-229",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5079,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.855
+   "topped_up_at": null
   }
  ]
 }
