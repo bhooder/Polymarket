@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+333047e15bcf,2026-11-16T15:18:04Z,status_change,0x21ffd2b7a2,0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71,Haradwaith,199,52751.90987519462,1220987.4561360008,scanned,,,0.0,1.3,0,353046.8794,602,116
+8da284f9d19b,2026-11-16T15:18:04Z,status_change,0xd9e0aaca47,0xd9e0aaca471f489be338fd0f91a26e8669a805f2,,,,,off_board,scanned,,,,,,,

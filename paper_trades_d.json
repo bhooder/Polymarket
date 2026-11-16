@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1039.8885866104106,
+ "cash": 1051.585040767335,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -310,7 +310,7 @@
   },
   {
    "placed_at": "2026-11-16T12:10:27.512022+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Carlos Alcaraz",
    "market": "ATP World Tour Finals, Ivan Lendl Group: Carlos Alcaraz vs Frances Tiafoe",
@@ -339,10 +339,11 @@
     "kalshi": 0.8977
    },
    "intl_cost_per_share": 0.8949,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
-   "topped_up_at": null
+   "payout": 11.7,
+   "profit": 1.2,
+   "settled_at": "2026-11-16T15:14:37.927378+00:00",
+   "topped_up_at": null,
+   "close": 0.885
   }
  ]
 }

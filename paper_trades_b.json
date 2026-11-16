@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1019.9843179732366,
+ "cash": 980.0114992318157,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -11865,7 +11865,7 @@
   {
    "placed_at": "2026-11-16T00:05:55.745383+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Liechtenstein win on 2026-11-16?",
    "link": "https://polymarket.com/event/unl-lit-lie-2026-11-16",
@@ -11878,10 +11878,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 10.6,
    "traders_entry": 0.97,
-   "avg_price": 0.97,
-   "shares": 10.647742832834552,
-   "cost": 10.36,
-   "fees": 0.03,
+   "avg_price": 0.9749,
+   "shares": 21.58141528324072,
+   "cost": 21.09,
+   "fees": 0.05,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -11896,7 +11896,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-16T15:17:56.717106+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 6.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-16T00:48:48.343182+00:00",
@@ -12090,7 +12093,7 @@
   },
   {
    "placed_at": "2026-11-16T11:04:05.186120+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Carlos Alcaraz",
    "market": "ATP World Tour Finals, Ivan Lendl Group: Carlos Alcaraz vs Frances Tiafoe",
@@ -12119,10 +12122,11 @@
     "kalshi": 0.8975
    },
    "intl_cost_per_share": 0.8853,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
-   "topped_up_at": null
+   "payout": 11.95,
+   "profit": 1.22,
+   "settled_at": "2026-11-16T15:14:37.830008+00:00",
+   "topped_up_at": null,
+   "close": 0.885
   },
   {
    "placed_at": "2026-11-16T12:10:26.967856+00:00",
@@ -12155,6 +12159,114 @@
     "kalshi": 0.4371
    },
    "intl_cost_per_share": 0.4221,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T15:17:58.300618+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Slovenia win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-mac-slv-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0x40171d015e394099dc363c560adf404d4fc3da005eb15add60c76d5d29f21874",
+   "token_id": "72418847946149017303317118672459052106506791083921596846597054773460182787436",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.36,
+   "avg_price": 0.36,
+   "shares": 52.42896035392207,
+   "cost": 19.72,
+   "fees": 0.85,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16MKDSLO-SLO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3762
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T15:17:59.060122+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Germany win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-ger-nld-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc6793dd33bc6e019c2b3779a818b572bc3381e3e2851012fed4cd093503c7165",
+   "token_id": "10650386359074364293314821555051378680627465402679654554730084417128203106088",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 9.1,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 21.143148772495387,
+   "cost": 10.73,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16GERNED-GER",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5075
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T15:17:59.921417+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Switzerland win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-che-sco-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcd92ea954ec13d0a002bbdf98dfca25555cca521fc5b6debd2754da011baa082",
+   "token_id": "38730797242839597635992512424487099948191854478409383891283357687115220285910",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 22.01310118025509,
+   "cost": 10.74,
+   "fees": 0.39,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16SUISCO-SUI",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4877
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

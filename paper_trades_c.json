@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1092.8795786607393,
+ "cash": 1050.1099556792342,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4350,7 +4350,7 @@
   {
    "placed_at": "2026-11-16T00:05:56.592179+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Liechtenstein win on 2026-11-16?",
    "link": "https://polymarket.com/event/unl-lit-lie-2026-11-16",
@@ -4363,10 +4363,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 10.6,
    "traders_entry": 0.97,
-   "avg_price": 0.97,
-   "shares": 11.388455377727393,
-   "cost": 11.08,
-   "fees": 0.03,
+   "avg_price": 0.9749,
+   "shares": 22.739910279640227,
+   "cost": 22.22,
+   "fees": 0.05,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -4381,7 +4381,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-16T15:18:01.488828+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 6.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-16T00:48:49.442129+00:00",
@@ -4492,6 +4495,78 @@
     "kalshi": 0.7052
    },
    "intl_cost_per_share": 0.6964,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T15:18:02.183610+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Slovenia win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-mac-slv-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0x40171d015e394099dc363c560adf404d4fc3da005eb15add60c76d5d29f21874",
+   "token_id": "72418847946149017303317118672459052106506791083921596846597054773460182787436",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.36,
+   "avg_price": 0.36,
+   "shares": 54.4495490896716,
+   "cost": 20.48,
+   "fees": 0.88,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16MKDSLO-SLO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3762
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T15:18:03.183854+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Netherlands win on 2026-11-16?",
+   "link": "https://polymarket.com/event/unl-ger-nld-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7d29707bc95d83e6927f16cce93fdedc6be265c925c3b6edc8af40337e49a16d",
+   "token_id": "87409310160535198144522995921547325888576078727793064249910014286272943084516",
+   "outcome_index": 1,
+   "ends": "2026-11-16T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.2,
+   "traders_entry": 0.72,
+   "avg_price": 0.73,
+   "shares": 14.977204801847819,
+   "cost": 11.14,
+   "fees": 0.21,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV16GERNED-NED",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.744
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,
