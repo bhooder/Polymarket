@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 872.6889248455498,
+ "cash": 863.1989248455498,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1281,6 +1281,43 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T21:32:51.948209+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Grizzlies",
+   "market": "Spread: Grizzlies (-3.5)",
+   "link": "https://polymarket.com/event/nba-mem-was-2026-11-16",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xdb926ddf31fc0b34a6902b9760454d8e4f23316ab137973db2a6ae6522bd1848",
+   "token_id": "45803321524478814912852429075447663411200616753617801266336335612908123713812",
+   "outcome_index": 0,
+   "ends": "2026-11-17T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.792079207920793,
+   "cost": 9.49,
+   "fees": 0.094,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c13b124dfd54ed552c128fd5752f9498",
+    "fee_rate": 0.02,
+    "event_id": 1704742743
+   },
+   "quotes": {
+    "prophetx": 0.505,
+    "kalshi": 0.518
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
