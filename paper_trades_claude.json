@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 896.3660308527944,
+ "cash": 910.8407694069695,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -876,7 +876,7 @@
   },
   {
    "placed_at": "2026-11-16T00:05:57.055707+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Spread: Thunder (-13.5)",
@@ -906,15 +906,15 @@
     "polymarket_us": 0.433
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.39,
+   "profit": 12.83,
+   "settled_at": "2026-11-16T05:14:01.395219+00:00",
    "topped_up_at": null,
    "close": 0.47
   },
   {
    "placed_at": "2026-11-16T00:48:50.236126+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Steelers",
    "market": "Steelers vs. Bengals",
@@ -943,15 +943,15 @@
     "kalshi": 0.3663
    },
    "intl_cost_per_share": 0.3467,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.32,
+   "settled_at": "2026-11-16T05:14:01.414707+00:00",
    "topped_up_at": null,
    "close": 0.335
   },
   {
    "placed_at": "2026-11-16T01:34:26.729995+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Thunder vs. Kings: O/U 223.5",
@@ -982,9 +982,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.84,
+   "profit": 11.35,
+   "settled_at": "2026-11-16T05:14:01.414743+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -1019,6 +1019,118 @@
     "prophetx": 0.4514
    },
    "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T05:16:22.948920+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Rockets",
+   "market": "Spread: Rockets (-2.5)",
+   "link": "https://polymarket.com/event/nba-hou-mia-2026-11-16",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x81facc9948195e1264f93cce78dab7d64ef077be45b3e9db75f07cb94d1e5f91",
+   "token_id": "98594999847065281286512122757206931232533457070157667779148873176971657448367",
+   "outcome_index": 0,
+   "ends": "2026-11-17T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.5238,
+   "shares": 18.135463121783875,
+   "cost": 9.59,
+   "fees": 0.0905,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0f4e98d95aca2a037a5c25b3035dedd7",
+    "fee_rate": 0.02,
+    "event_id": 1704742744
+   },
+   "quotes": {
+    "prophetx": 0.5288,
+    "polymarket_us": 0.5437,
+    "kalshi": 0.5575
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T05:16:23.339968+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Timberwolves",
+   "market": "Trail Blazers vs. Timberwolves",
+   "link": "https://polymarket.com/event/nba-por-min-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb54aeb12214d104fdae73dc9faa48e35a7e1a3590c7a488072cdfd3009556075",
+   "token_id": "22367382214513930483318950728655656242774458498784748763085737815635221760132",
+   "outcome_index": 1,
+   "ends": "2026-11-17T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.57,
+   "shares": 16.315908692223715,
+   "cost": 9.58,
+   "fees": 0.28,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16PORMIN-MIN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5872,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T05:16:26.474991+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Warriors vs. Pelicans",
+   "link": "https://polymarket.com/event/nba-gsw-nop-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b",
+   "token_id": "93986505847215228951324290848203911775644145891061284182849603646645841094137",
+   "outcome_index": 1,
+   "ends": "2026-11-17T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.41,
+   "avg_price": 0.42,
+   "shares": 21.919588515783015,
+   "cost": 9.59,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16GSWNOP-NOP",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4286,
+    "kalshi": 0.4373
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,

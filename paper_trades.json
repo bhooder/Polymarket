@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1267.6622714725715,
+ "cash": 1286.486970898951,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4267,7 +4267,7 @@
   },
   {
    "placed_at": "2026-11-16T00:48:47.348931+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bengals",
    "market": "Steelers vs. Bengals",
@@ -4297,9 +4297,9 @@
     "kalshi": 0.6759
    },
    "intl_cost_per_share": 0.6766,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.82,
+   "profit": 6.1,
+   "settled_at": "2026-11-16T05:14:00.739593+00:00",
    "topped_up_at": null,
    "close": 0.665
   }

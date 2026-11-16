@@ -2803,5 +2803,16 @@
   "profit": -2.02,
   "venue": "prophetx",
   "ref": "e7f3d4e0944a6750ae915aeaad26e5bd"
+ },
+ {
+  "at": "2026-11-16T05:14:01.424785+00:00",
+  "event": "settled",
+  "bet": "Bengals to win (vs. Steelers)",
+  "status": "won",
+  "cost": 2.03,
+  "payout": 3.0,
+  "profit": 0.97,
+  "venue": "kalshi",
+  "ref": "KXNFLGAME-26NOV15PITCIN-CIN"
  }
 ]

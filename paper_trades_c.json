@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1057.8085406705345,
+ "cash": 1104.0295786607394,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4385,7 +4385,7 @@
   },
   {
    "placed_at": "2026-11-16T00:48:49.442129+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Spread: Thunder (-13.5)",
@@ -4415,15 +4415,15 @@
     "kalshi": 0.4373
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.08,
+   "profit": 14.22,
+   "settled_at": "2026-11-16T05:14:01.158302+00:00",
    "topped_up_at": null,
    "close": 0.47
   },
   {
    "placed_at": "2026-11-16T00:48:49.770188+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Panthers vs. Stars: O/U 5.5",
@@ -4454,9 +4454,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5029,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.14,
+   "profit": 10.28,
+   "settled_at": "2026-11-16T05:14:01.209831+00:00",
    "topped_up_at": null,
    "close": 0.5
   }

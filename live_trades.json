@@ -1,5 +1,5 @@
 {
- "cash": 216.73,
+ "cash": 219.73,
  "bets": [
   {
    "placed_at": "2026-11-04T23:51:32.370750+00:00",
@@ -2281,7 +2281,7 @@
   },
   {
    "placed_at": "2026-11-16T00:48:51.265260+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Bengals",
@@ -2308,9 +2308,9 @@
     "fee_rate": 0.07
    },
    "paper_price": 0.66,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 3.0,
+   "profit": 0.97,
+   "settled_at": "2026-11-16T05:14:01.424402+00:00",
    "topped_up_at": null,
    "close": 0.665
   }

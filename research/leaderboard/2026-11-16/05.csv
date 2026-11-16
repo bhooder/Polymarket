@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+2039daf17d67,2026-11-16T05:16:27Z,status_change,0x6157d529ae,0x6157d529ae129fe08f22a27ed42e741d2eaa9fb4,DaBossHogg,130,89284.84310800002,2670325.647494,scanned,off_board,,0.0,0.1,0,0,0,0
+daba8bb5559f,2026-11-16T05:16:27Z,status_change,0xddb993dbae,0xddb993dbaee76440dbb42408a1925e38b7aaedcd,RollAwayTheDew,200,52686.99503352502,2171633.1120219994,scanned,,,0.0,3.3,0,2260.441,6,0
+b49d24ecee36,2026-11-16T05:16:27Z,status_change,0x8a8685a792,0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998,,,,,off_board,scanned,,,,,,,
+02189e36e2b1,2026-11-16T05:16:27Z,status_change,0xd798b9f7a3,0xd798b9f7a3b1ae2c92657e71ac5a00088d2259c6,,,,,off_board,scanned,,,,,,,
