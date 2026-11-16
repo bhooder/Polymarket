@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1049.1474984311105,
+ "cash": 1016.0121713833794,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4724,6 +4724,82 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T23:56:22.805707+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Cavaliers",
+   "market": "Bulls vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-chi-cle-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaac8a6b71e71bd75ad1134e7f56c6b7ea7599113b6906cb6a6af832b692102b1",
+   "token_id": "53735510662497522807762563019174868501171770010137064239984125572119415901832",
+   "outcome_index": 1,
+   "ends": "2026-11-17T00:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 21.6,
+   "traders_entry": 0.73,
+   "avg_price": 0.74,
+   "shares": 29.304496010447686,
+   "cost": 22.09,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16CHICLE-CLE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.7441,
+    "kalshi": 0.7536,
+    "polymarket_us": 0.7583
+   },
+   "intl_cost_per_share": 0.7496,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-16T23:56:24.907003+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Rockets vs. Heat: O/U 232.5",
+   "link": "https://polymarket.com/event/nba-hou-mia-2026-11-16",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfd9b566556b20010a0d2f012b0aad029a7fbb594a66348a607ada7ffe9c289ed",
+   "token_id": "100076568585926127207865204040013829082424007559167310226798668370943941881038",
+   "outcome_index": 1,
+   "ends": "2026-11-17T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.9,
+   "traders_entry": 0.49,
+   "avg_price": 0.4808,
+   "shares": 22.747773125237917,
+   "cost": 11.05,
+   "fees": 0.1136,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "5444c38d849e50a85cb72c6420ae7afc",
+    "fee_rate": 0.02,
+    "event_id": 1704742744
+   },
+   "quotes": {
+    "prophetx": 0.4858,
+    "kalshi": 0.4976,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
