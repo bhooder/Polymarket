@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1038.9641024034397,
+ "cash": 1027.8149004981224,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4575,6 +4575,43 @@
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 3.3,
    "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-16T18:42:33.116907+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Grizzlies",
+   "market": "Grizzlies vs. Wizards",
+   "link": "https://polymarket.com/event/nba-mem-was-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xda52f043efb851b20aa8132a0a2476f9b6ce3db631ac5ac17b083f3d4e0b1bf4",
+   "token_id": "32927701278383427357502459079784861837231865300342929904506037918746745523160",
+   "outcome_index": 0,
+   "ends": "2026-11-17T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.2,
+   "traders_entry": 0.59,
+   "avg_price": 0.59,
+   "shares": 18.354579500537948,
+   "cost": 11.15,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16MEMWAS-MEM",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6074,
+    "polymarket_us": 0.613
+   },
+   "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
