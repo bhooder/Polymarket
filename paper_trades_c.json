@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1039.4030203242075,
+ "cash": 1028.246380940481,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4535,7 +4535,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-16T15:18:03.183854+00:00",
@@ -4574,7 +4575,8 @@
    "topped_up_at": "2026-11-16T16:54:12.374713+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 3.3,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.705
   },
   {
    "placed_at": "2026-11-16T18:42:33.116907+00:00",
@@ -4644,6 +4646,44 @@
     "kalshi": 0.8686
    },
    "intl_cost_per_share": 0.866,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.855
+  },
+  {
+   "placed_at": "2026-11-16T20:34:33.817336+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Rockets vs. Heat",
+   "link": "https://polymarket.com/event/nba-hou-mia-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc60598366a8358b18c8f9d81e2aa4bcb9ebd672fe4879b8026800ffcccd7c48b",
+   "token_id": "56903540455192684447928355592554017508395106065512792493210304226198712504589",
+   "outcome_index": 1,
+   "ends": "2026-11-17T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.44,
+   "avg_price": 0.45,
+   "shares": 23.8591986305034,
+   "cost": 11.16,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV16HOUMIA-MIA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4676,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
