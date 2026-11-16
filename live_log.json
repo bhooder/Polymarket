@@ -2792,5 +2792,16 @@
   "profit": 2.14,
   "venue": "prophetx",
   "ref": "fad42ad5bb8da97b4a6d070069edfd88"
+ },
+ {
+  "at": "2026-11-16T03:46:06.000802+00:00",
+  "event": "settled",
+  "bet": "Hawks -7.5",
+  "status": "lost",
+  "cost": 2.02,
+  "payout": 0.0,
+  "profit": -2.02,
+  "venue": "prophetx",
+  "ref": "e7f3d4e0944a6750ae915aeaad26e5bd"
  }
 ]

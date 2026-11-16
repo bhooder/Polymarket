@@ -4150,7 +4150,7 @@
   },
   {
    "placed_at": "2026-11-15T18:27:25.237041+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Hawks",
    "market": "Spread: Hawks (-7.5)",
@@ -4181,9 +4181,9 @@
     "kalshi": 0.5575
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.41,
+   "settled_at": "2026-11-16T03:46:04.602704+00:00",
    "topped_up_at": null,
    "close": 0.555
   },

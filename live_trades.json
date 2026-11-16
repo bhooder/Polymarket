@@ -2176,7 +2176,7 @@
   },
   {
    "placed_at": "2026-11-15T18:27:50.006384+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "size_multiplier": 1.0,
    "pick": "Hawks",
@@ -2203,9 +2203,9 @@
     "event_id": 1704742043
    },
    "paper_price": 0.5238095238095238,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -2.02,
+   "settled_at": "2026-11-16T03:46:05.994672+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
@@ -2787,5 +2787,5 @@
   }
  ],
  "daily_check": "2026-11-16",
- "balances_checked_at": "2026-11-16T03:31:21.468910+00:00"
+ "balances_checked_at": "2026-11-16T03:49:17.939212+00:00"
 }
