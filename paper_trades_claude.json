@@ -1600,7 +1600,7 @@
   },
   {
    "placed_at": "2026-11-17T11:21:33.685739+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Giles Hussey",
    "market": "Champaign: Harry Wendelken vs Giles Hussey",
@@ -1630,9 +1630,9 @@
     "kalshi": 0.4575
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.43,
+   "settled_at": "2026-11-17T21:32:21.263639+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
