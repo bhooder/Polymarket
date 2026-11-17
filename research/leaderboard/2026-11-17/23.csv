@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+81747acb09fc,2026-11-17T23:27:10Z,status_change,0x0346afae26,0x0346afae2603313d2bbee96b628536c8cbe352a5,GoalLineGhost,162,67644.02152258143,80232432.5689941,scanned,off_board,,0.0,108.2,1,192316.5578,188,79
+8f1ca1f62049,2026-11-17T23:27:10Z,status_change,0xaf4d84e9e9,0xaf4d84e9e912ba86208bef165e23e587e5a677c6,,,,,off_board,scanned,,,,,,,

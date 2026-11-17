@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 857.644512008306,
+ "cash": 848.4223026164661,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1451,7 +1451,7 @@
   {
    "placed_at": "2026-11-17T04:44:59.448775+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Raptors",
    "market": "Knicks vs. Raptors",
    "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-17",
@@ -1464,10 +1464,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.42,
-   "avg_price": 0.4276,
-   "shares": 21.18190378323497,
-   "cost": 9.43,
-   "fees": 0.37,
+   "avg_price": 0.4337,
+   "shares": 41.34601603741651,
+   "cost": 18.65,
+   "fees": 0.72,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -1483,7 +1483,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-17T23:27:08.388208+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-17T06:52:33.940061+00:00",
@@ -1854,7 +1857,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   }
  ],
  "version": 2
