@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1205.8390002882013,
+ "cash": 1193.6590002882012,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4520,6 +4520,44 @@
     "fee_rate": 0.07
    },
    "quotes": {
+    "kalshi": 0.5278
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-17T13:28:58.403728+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pistons",
+   "market": "Spread: Spurs (-9.5)",
+   "link": "https://polymarket.com/event/nba-det-sas-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3d3095b0d53c525850f6a849f442ef6a713e19e135caecf3253bcb430e0ae26c",
+   "token_id": "15513600729628605496940027835557295496783788794166844957319483703230352053049",
+   "outcome_index": 1,
+   "ends": "2026-11-18T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 22.1,
+   "traders_entry": 0.5,
+   "avg_price": 0.5074,
+   "shares": 23.771045228510534,
+   "cost": 12.18,
+   "fees": 0.1188,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "00438cc4a6750fd6a7611a978594b38a",
+    "fee_rate": 0.02,
+    "event_id": 1704743381
+   },
+   "quotes": {
+    "prophetx": 0.5124,
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5125,
