@@ -195,7 +195,7 @@
   },
   {
    "placed_at": "2026-11-16T23:56:30.598452+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Wizards",
    "market": "Spread: Grizzlies (-3.5)",
@@ -226,9 +226,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.17,
+   "settled_at": "2026-11-17T02:54:31.731629+00:00",
    "topped_up_at": null,
    "close": 0.485
   }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1005.2009171819004,
+ "cash": 1052.8599926928862,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4581,7 +4581,7 @@
   },
   {
    "placed_at": "2026-11-16T18:42:33.116907+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Grizzlies",
    "market": "Grizzlies vs. Wizards",
@@ -4611,9 +4611,9 @@
     "polymarket_us": 0.613
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.35,
+   "profit": 7.2,
+   "settled_at": "2026-11-17T02:50:58.765669+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -4735,7 +4735,7 @@
   },
   {
    "placed_at": "2026-11-16T23:56:22.805707+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Cavaliers",
    "market": "Bulls vs. Cavaliers",
@@ -4766,9 +4766,9 @@
     "polymarket_us": 0.7583
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 29.3,
+   "profit": 7.21,
+   "settled_at": "2026-11-17T02:50:58.845630+00:00",
    "topped_up_at": null,
    "close": 0.735
   },

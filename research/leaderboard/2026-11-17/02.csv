@@ -1,3 +1,9 @@
 oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
 61f0c5d6b053,2026-11-17T02:01:17Z,status_change,0x051adea0d1,0x051adea0d16c85df8a8a9c7e400e0655905d1db9,LightParadox,199,51982.42187607214,16150798.049025973,scanned,off_board,,0.0,210.5,1,69709.7878,53,9
 6718add37f73,2026-11-17T02:01:17Z,status_change,0x9f2fe025f8,0x9f2fe025f84839ca81dd8e0338892605702d2ca8,,,,,off_board,scanned,,,,,,,
+b6ba8cbcffe2,2026-11-17T02:54:34Z,status_change,0x9f2fe025f8,0x9f2fe025f84839ca81dd8e0338892605702d2ca8,surfandturf,48,265909.24259766296,19431191.00650298,scanned,off_board,,0.0,0.4,0,405864.4994,2,0
+815009f00056,2026-11-17T02:54:34Z,status_change,0x4c999cfdac,0x4c999cfdac664b015757d540653c30dc8e0720ea,ppku6298,168,63700.18205463003,2128506.268911001,scanned,,,0.0,0.2,0,47910.4438,6,0
+d3f48f407394,2026-11-17T02:54:34Z,status_change,0x7f0390162c,0x7f0390162c80b83135e4f0053bf5d131757676e9,Porygon224,194,55307.675807539985,360676.776818,scanned,,,0.0,,,29184.7123,4,0
+f288581d42db,2026-11-17T02:54:34Z,status_change,0x16a5aae21f,0x16a5aae21fad63f3ffb929e6cddb673c83500ea5,,,,,off_board,scanned,,,,,,,
+91b7be506666,2026-11-17T02:54:34Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,,,,,off_board,scanned,,,,,,,
+61164a222b04,2026-11-17T02:54:34Z,status_change,0x45185b026c,0x45185b026c729f2caf1b01f6230db5d22e81db24,,,,,off_board,scanned,,,,,,,

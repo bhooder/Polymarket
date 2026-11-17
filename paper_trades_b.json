@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 878.4200223456118,
+ "cash": 946.389550600117,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12404,7 +12404,7 @@
   },
   {
    "placed_at": "2026-11-16T18:42:30.658689+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Grizzlies",
    "market": "Grizzlies vs. Wizards",
@@ -12434,9 +12434,9 @@
     "polymarket_us": 0.613
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.68,
+   "profit": 6.95,
+   "settled_at": "2026-11-17T02:50:58.514948+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -12517,7 +12517,7 @@
   },
   {
    "placed_at": "2026-11-16T23:56:18.531276+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Cavaliers",
    "market": "Bulls vs. Cavaliers",
@@ -12548,15 +12548,15 @@
     "polymarket_us": 0.7583
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.79,
+   "profit": 6.84,
+   "settled_at": "2026-11-17T02:50:58.552275+00:00",
    "topped_up_at": null,
    "close": 0.735
   },
   {
    "placed_at": "2026-11-16T23:56:19.569820+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Magic vs. Celtics",
@@ -12587,15 +12587,15 @@
     "polymarket_us": 0.7868
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.95,
+   "settled_at": "2026-11-17T02:50:58.552322+00:00",
    "topped_up_at": null,
    "close": 0.765
   },
   {
    "placed_at": "2026-11-16T23:56:20.702893+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Magic vs. Celtics: O/U 213.5",
@@ -12626,9 +12626,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.5,
+   "profit": 12.02,
+   "settled_at": "2026-11-17T02:50:58.552333+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
