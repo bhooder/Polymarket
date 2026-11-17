@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 888.6734872452564,
+ "cash": 878.4200223456118,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12135,7 +12135,7 @@
   {
    "placed_at": "2026-11-16T12:10:26.967856+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pelicans",
    "market": "Warriors vs. Pelicans",
    "link": "https://polymarket.com/event/nba-gsw-nop-2026-11-16",
@@ -12148,10 +12148,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 10.0,
    "traders_entry": 0.41,
-   "avg_price": 0.42,
-   "shares": 24.52797378801607,
-   "cost": 10.72,
-   "fees": 0.42,
+   "avg_price": 0.4149,
+   "shares": 48.53642476275918,
+   "cost": 20.97,
+   "fees": 0.83,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -12166,7 +12166,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-17T00:46:34.857434+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 6.5,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-16T15:17:58.300618+00:00",
@@ -12317,7 +12320,8 @@
    "topped_up_at": "2026-11-16T17:52:29.495412+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-16T16:54:12.188503+00:00",
@@ -12393,7 +12397,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.665
   },
   {
    "placed_at": "2026-11-16T18:42:30.658689+00:00",
@@ -12430,7 +12435,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.605
   },
   {
    "placed_at": "2026-11-16T19:43:48.681304+00:00",
@@ -12542,7 +12548,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.735
   },
   {
    "placed_at": "2026-11-16T23:56:19.569820+00:00",
@@ -12580,7 +12587,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.765
   },
   {
    "placed_at": "2026-11-16T23:56:20.702893+00:00",
@@ -12618,7 +12626,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-16T23:56:21.786259+00:00",
@@ -12656,7 +12665,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   }
  ]
 }
