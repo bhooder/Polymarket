@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 957.1650160533944,
+ "cash": 935.8891419136404,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12893,6 +12893,79 @@
     "kalshi": 0.4775
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T18:39:27.240374+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Hungary win on 2026-11-17?",
+   "link": "https://polymarket.com/event/unl-hun-nir-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec8f12478657f1412065340a2033f6648357cf938a8afd3a0e7374da2ea6c83d",
+   "token_id": "19446000382702354917746485919177369100304340886972076944678922837816376324321",
+   "outcome_index": 0,
+   "ends": "2026-11-17T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.7,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 20.151926186698216,
+   "cost": 10.64,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV17HUNNIR-HUN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5279,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T18:39:28.669227+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Bosnia and Herzegovina win on 2026-11-17?",
+   "link": "https://polymarket.com/event/unl-bih-rom-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8a02fe2c2f36d0134ddd843e208ff6bc8c0d2c16fffa70f05c3f287a5378b2e1",
+   "token_id": "8018958237580618085259495236606986191017538900616754991379743736905271795923",
+   "outcome_index": 1,
+   "ends": "2026-11-17T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 19.071095897292373,
+   "cost": 10.64,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV17BIHROU-BIH",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5578
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,

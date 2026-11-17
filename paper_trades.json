@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1182.0990002882013,
+ "cash": 1157.9790002882014,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4598,6 +4598,42 @@
     "kalshi": 0.4069
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T18:39:26.254305+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Kings",
+   "market": "Kings vs. Bruins",
+   "link": "https://polymarket.com/event/nhl-lak-bos-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9dde472149bcd641eed8dc652609b83a21eeab42b86fd2ed233106eecdc2ccc9",
+   "token_id": "8146352000130320855891445127588162324738826468444620920698831087846401525777",
+   "outcome_index": 0,
+   "ends": "2026-11-18T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 27.5,
+   "traders_entry": 0.41,
+   "avg_price": 0.4132,
+   "shares": 57.69333768991995,
+   "cost": 24.12,
+   "fees": 0.2798,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "66dffad7f6f7dd22b98525503eb6c123",
+    "fee_rate": 0.02,
+    "event_id": 1704743072
+   },
+   "quotes": {
+    "prophetx": 0.4181
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,
