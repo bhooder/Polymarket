@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 885.8129178054074,
+ "cash": 876.294512008306,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1739,6 +1739,43 @@
     "kalshi": 0.4876
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T16:41:23.486697+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Hungary win on 2026-11-17?",
+   "link": "https://polymarket.com/event/unl-hun-nir-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec8f12478657f1412065340a2033f6648357cf938a8afd3a0e7374da2ea6c83d",
+   "token_id": "19446000382702354917746485919177369100304340886972076944678922837816376324321",
+   "outcome_index": 0,
+   "ends": "2026-11-17T19:45:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.3768115942029,
+   "cost": 9.52,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUEFANLGAME-26NOV17HUNNIR-HUN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.518,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,

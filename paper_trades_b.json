@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 989.070658759118,
+ "cash": 978.430658759118,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12819,6 +12819,44 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T16:41:21.316862+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maple Leafs",
+   "market": "Maple Leafs vs. Blackhawks",
+   "link": "https://polymarket.com/event/nhl-tor-chi-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc1e6de878482c409afbf7b307f3e67bf39fc2b4f206949927c9ecd9de31e6b77",
+   "token_id": "27125338377024789772200991622088909248027682636166305409675180855083196585562",
+   "outcome_index": 0,
+   "ends": "2026-11-18T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.57,
+   "avg_price": 0.5726,
+   "shares": 18.422838350619784,
+   "cost": 10.64,
+   "fees": 0.0902,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "5f52de2eba93905c4a31cecc197dd9d6",
+    "fee_rate": 0.02,
+    "event_id": 1704743080
+   },
+   "quotes": {
+    "prophetx": 0.5775,
+    "kalshi": 0.5877,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,
