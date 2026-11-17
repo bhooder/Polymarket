@@ -1,0 +1,6 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+b507a43b6cdb,2026-11-17T05:46:36Z,top100,da0ab5e1a6e7,counts,,,,,,,,4,2,1,0,4.0,5287,1583,0.46,0.47,0,0,4,2,0.52,0.26,,
+66e4da5dca51,2026-11-17T05:46:36Z,top200,da0ab5e1a6e7,counts,,,,,,,,6,2,1,0,3.7,6353,1583,0.46,0.47,0,0,6,2,0.49,0.26,4,2
+9e58e14da9fa,2026-11-17T05:46:36Z,top200,4b889b858a43,bankroll_pct,,,,,,,,3,0,1,0,14.6,16937,0,0.76,0.74,0,0,3,0,0.6,,2,0
+d6abae651e41,2026-11-17T05:46:36Z,top200,e2afdafb5b40,first_seen,100039058698937782132502455914417022929185632496713204082486539226233518947967,0x7f721bf357a5d45bb752df377f6bf003eb877e0e8609b43489759fbcc8c3bd47,fif-ksa-uzb-2026-11-17,fif,Will Saudi Arabia win on 2026-11-17?,No,2026-11-17T15:30:00Z,3,2,1,0,7.9,5313,507,0.59,0.58,0,0,3,2,0.24,0.63,2,1
+99947604d251,2026-11-17T05:46:36Z,top200,e620b8cf9d55,first_seen,36552324705709165262460979875596491705441127444864325490558107356170186796239,0xea5788ba49db266cdbd8becf18e49e693eff17a022124be0e7f02584d2f846e0,afcq-ss-ang-2026-11-17,afcq,Will South Sudan win on 2026-11-17?,No,2026-11-17T13:00:00Z,3,0,0,0,2.0,863,0,0.95,0.95,0,0,3,0,0.06,,1,0
