@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1052.8599926928862,
+ "cash": 1125.6631399239802,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4656,7 +4656,7 @@
   },
   {
    "placed_at": "2026-11-16T20:34:33.817336+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Heat",
    "market": "Rockets vs. Heat",
@@ -4686,9 +4686,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 47.48,
+   "profit": 25.28,
+   "settled_at": "2026-11-17T03:41:51.756714+00:00",
    "topped_up_at": "2026-11-16T23:12:12.084996+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.1,
@@ -4697,7 +4697,7 @@
   },
   {
    "placed_at": "2026-11-16T22:23:53.396767+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Trail Blazers vs. Timberwolves: O/U 228.5",
@@ -4727,9 +4727,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.05,
+   "settled_at": "2026-11-17T03:41:51.764356+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -4774,7 +4774,7 @@
   },
   {
    "placed_at": "2026-11-16T23:56:24.907003+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Rockets vs. Heat: O/U 232.5",
@@ -4805,15 +4805,15 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.05,
+   "settled_at": "2026-11-17T03:41:51.764391+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-17T00:46:36.896737+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Warriors vs. Pelicans",
@@ -4842,9 +4842,9 @@
     "kalshi": 0.427
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.32,
+   "profit": 14.51,
+   "settled_at": "2026-11-17T03:41:51.770284+00:00",
    "topped_up_at": null,
    "close": 0.395
   }

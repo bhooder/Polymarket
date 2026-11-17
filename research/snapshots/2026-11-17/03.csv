@@ -1,0 +1,5 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+8159eea0981f,2026-11-17T03:45:20Z,top100,da0ab5e1a6e7,first_seen,86741234204026326314882013447224060871111998510502889267576263644094894516867,0x004431ae01ff503d7a1ee2f5c34e684b2a18ae35e834ca3e6d3afb3bba4a1bbd,unl-isr-aut-2026-11-17,unl,Will Austria win on 2026-11-17?,No,2026-11-17T19:45:00Z,4,1,0,0,2.4,5181,1467,0.46,0.47,0,0,4,1,0.52,-0.28,,
+218cc4c6d6bb,2026-11-17T03:45:20Z,top200,da0ab5e1a6e7,counts,,,,,,,,6,1,0,0,2.2,6247,1467,0.46,0.47,0,0,6,1,0.49,-0.28,4,1
+bae6fa653b67,2026-11-17T03:45:20Z,top200,4b889b858a43,price,,,,,,,,3,0,1,0,5.5,16937,0,0.76,0.74,0,0,3,0,0.6,,2,0
+eb8d8e245d86,2026-11-17T03:45:20Z,top200,47acf48f9d17,counts,,,,,,,,3,0,0,0,0.3,555,0,0.55,0.72,0,0,3,0,0.47,,2,0
