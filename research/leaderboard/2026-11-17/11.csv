@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+0e1edb678a9e,2026-11-17T11:21:34Z,status_change,0x2386c11091,0x2386c11091a9b3b17fce7311d87537e8eb747b68,jakobtb,183,59263.53630111749,128720.15005,scanned,,,0.0,,,76114.7776,3,1
+11aeb017f65b,2026-11-17T11:21:34Z,status_change,0x4161332097,0x4161332097c567f83d4f570ec5c3e28d899ee71d,,,,,off_board,scanned,,,,,,,
