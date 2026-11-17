@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 914.7368200455338,
+ "cash": 905.3068200455339,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1555,6 +1555,43 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T10:22:06.710453+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Luca Wiedenmann",
+   "market": "Champaign: Luca Wiedenmann vs Bor Artnak",
+   "link": "https://polymarket.com/event/atp-wiedenm-artnak-2026-11-16",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb3d7d22c9e847bdc39b5070a6e0a4ce97ef87916f7484b6a7e328342e7101c2c",
+   "token_id": "34589613049177932262791222363203911869914887221826129201420112395842551717392",
+   "outcome_index": 0,
+   "ends": "2026-11-17T17:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.4098,
+   "shares": 22.740784186649382,
+   "cost": 9.43,
+   "fees": 0.11,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "be52572c09627b11d2364286ee4b7c05",
+    "fee_rate": 0.02,
+    "event_id": 1704742429
+   },
+   "quotes": {
+    "prophetx": 0.4147,
+    "kalshi": 0.4168
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,

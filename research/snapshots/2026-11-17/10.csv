@@ -1,0 +1,7 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+a7b6f6988809,2026-11-17T10:22:07Z,top100,6679d16e2a2f,counts,,,,,,,,4,0,1,0,11.3,10745,0,0.46,0.44,0,0,4,0,0.28,,,
+2fd35d22797b,2026-11-17T10:22:07Z,top200,6679d16e2a2f,counts,,,,,,,,6,0,2,0,9.8,13560,0,0.46,0.44,0,0,6,0,0.24,,4,0
+27f6dfaa1885,2026-11-17T10:22:07Z,top200,b6ff438ad6a7,counts,,,,,,,,5,2,2,0,12.7,10857,344,0.53,0.53,0,0,4,2,0.44,0.25,1,2
+a38a939b97d5,2026-11-17T10:22:07Z,top200,4b889b858a43,bankroll_pct,,,,,,,,3,1,2,0,16.7,16937,3282,0.76,0.73,0,0,3,1,0.61,0.0,2,1
+02e742d0e59d,2026-11-17T10:22:07Z,top200,e60a5d7da6bf,first_seen,44518784123361729389195143624977786409478020120504736838112118142164008295475,0x7c6a6cd6b5297f6b4dcb5644c9605fee249a404252a90986da3539cc5d78555c,unl-den-nor-2026-11-17-exact-score,unl,Exact Score: Denmark 3 - 2 Norway?,No,2026-11-17T19:45:00Z,3,0,0,0,1.5,1681,0,0.95,0.96,0,0,3,0,0.09,,0,0
+1a30a9047ca0,2026-11-17T10:22:07Z,top200,502ce724f819,price,,,,,,,,3,0,0,0,1.1,2484,0,0.32,0.32,0,0,3,0,0.45,,2,0
