@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 977.4062274403914,
+ "cash": 998.2697598291402,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -234,7 +234,7 @@
   },
   {
    "placed_at": "2026-11-17T09:12:58.585344+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Denmark vs. Norway: O/U 3.5",
@@ -264,9 +264,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.86,
+   "profit": 10.89,
+   "settled_at": "2026-11-17T22:41:01.406205+00:00",
    "topped_up_at": null,
    "close": 0.415
   },

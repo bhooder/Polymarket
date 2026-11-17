@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 893.3391419136404,
+ "cash": 979.4744862181134,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12673,7 +12673,7 @@
   },
   {
    "placed_at": "2026-11-17T03:45:18.242927+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Austria win on 2026-11-17?",
@@ -12703,15 +12703,15 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.71,
+   "profit": 11.86,
+   "settled_at": "2026-11-17T22:28:51.976736+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-17T10:22:05.443018+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Denmark vs. Norway: O/U 3.5",
@@ -12741,9 +12741,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.01,
+   "profit": 23.74,
+   "settled_at": "2026-11-17T22:28:52.015724+00:00",
    "topped_up_at": "2026-11-17T14:36:23.420282+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 7.3,
@@ -12791,7 +12791,7 @@
   },
   {
    "placed_at": "2026-11-17T13:28:59.082378+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Poland win on 2026-11-17?",
@@ -12821,9 +12821,9 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.41,
+   "profit": 7.78,
+   "settled_at": "2026-11-17T22:28:52.084123+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -12906,7 +12906,7 @@
   },
   {
    "placed_at": "2026-11-17T18:39:27.240374+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Hungary win on 2026-11-17?",
@@ -12936,15 +12936,15 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.64,
+   "settled_at": "2026-11-17T22:28:52.157007+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
   {
    "placed_at": "2026-11-17T18:39:28.669227+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Bosnia and Herzegovina win on 2026-11-17?",
@@ -12973,9 +12973,9 @@
     "kalshi": 0.5578
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.64,
+   "settled_at": "2026-11-17T22:28:52.201529+00:00",
    "topped_up_at": null,
    "close": 0.545
   },

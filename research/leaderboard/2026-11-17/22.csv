@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+c01a6dd85fc4,2026-11-17T22:44:23Z,status_change,0xb52e8b3afd,0xb52e8b3afd9f0f0d502a5a76494b42816d67285c,1l2ihj34li12u34,124,94156.2371794103,17784852.286584985,scanned,off_board,,0.0,0.8,0,44213.9422,2,0
+da37dc8fe63f,2026-11-17T22:44:23Z,status_change,0xee00ba338c,0xee00ba338c59557141789b127927a55f5cc5cea1,S-Works,187,58416.00105799984,2384432.478044,scanned,off_board,,0.0,0.1,0,2200007.1761,2,1
+6339f411a9e5,2026-11-17T22:44:23Z,status_change,0x958e910fa8,0x958e910fa82c5d0f0825710817cf7635ba7cf76a,Zombie77,191,56723.99627499978,1720358.8647790006,scanned,off_board,,0.02,0.0,0,0,0,0
+dd2f81ba6736,2026-11-17T22:44:23Z,status_change,0xaf4d84e9e9,0xaf4d84e9e912ba86208bef165e23e587e5a677c6,Molten-Brains,200,54405.2675225495,72221.78888,scanned,,,0.0,,,0,0,0
+9814a652cedb,2026-11-17T22:44:23Z,status_change,0x56acab44cf,0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e,,,,,off_board,scanned,,,,,,,
+48855cff1a84,2026-11-17T22:44:23Z,status_change,0x92b5f14c68,0x92b5f14c68ccae0cd7d0ba52b098ffaab990fec6,,,,,off_board,skipped_bot,,,,,,,
+105f4934663e,2026-11-17T22:44:23Z,status_change,0x9a933a2a83,0x9a933a2a83188b28efaf1d07d45228ea6ee82793,,,,,off_board,scanned,,,,,,,
+9b044232f0f7,2026-11-17T22:44:23Z,status_change,0xee58601792,0xee586017922db8b2ff244c91ae6b66f661c3d209,,,,,off_board,scanned,,,,,,,
