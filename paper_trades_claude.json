@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 886.4553707701716,
+ "cash": 867.6100192546828,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1670,6 +1670,79 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.495
+  },
+  {
+   "placed_at": "2026-11-17T14:36:24.883525+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "Spread: Lakers (-8.5)",
+   "link": "https://polymarket.com/event/nba-cha-lal-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x61d485e96294fd320a9c1a8df936ada1f35d632e89ec3391aa583ca01e898a34",
+   "token_id": "22185503034897747304895721160344600680804011628163154060130632590894372374208",
+   "outcome_index": 1,
+   "ends": "2026-11-18T04:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.55,
+   "shares": 16.604239192702593,
+   "cost": 9.42,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV17CHALAL-LAL9",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5675,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T14:36:25.182880+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Knicks vs. Raptors: O/U 216.5",
+   "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-17",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf67e227002e19cd36e56b3556a812df9ea20792f57c90f4b052e4453c17ad2b1",
+   "token_id": "15799042840130629667885409532082816997468492596745132479181903816936356244719",
+   "outcome_index": 0,
+   "ends": "2026-11-18T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.47,
+   "shares": 19.325574381920127,
+   "cost": 9.42,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV17NYKTOR-217",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4876
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2

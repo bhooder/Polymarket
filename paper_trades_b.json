@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1010.3440583025864,
+ "cash": 989.070658759118,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12711,7 +12711,7 @@
   {
    "placed_at": "2026-11-17T10:22:05.443018+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Over",
    "market": "Denmark vs. Norway: O/U 3.5",
    "link": "https://polymarket.com/event/unl-den-nor-2026-11-17-more-markets",
@@ -12724,10 +12724,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 11.3,
    "traders_entry": 0.46,
-   "avg_price": 0.46,
-   "shares": 22.267002941003966,
-   "cost": 10.63,
-   "fees": 0.39,
+   "avg_price": 0.455,
+   "shares": 45.01348558156461,
+   "cost": 21.27,
+   "fees": 0.79,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -12743,12 +12743,15 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-17T14:36:23.420282+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 7.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-17T13:28:58.751353+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Pistons",
    "market": "Spread: Spurs (-9.5)",
    "link": "https://polymarket.com/event/nba-det-sas-2026-11-17",
@@ -12761,10 +12764,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 22.1,
    "traders_entry": 0.5,
-   "avg_price": 0.51,
-   "shares": 20.151926186698216,
-   "cost": 10.64,
-   "fees": 0.36,
+   "avg_price": 0.5101,
+   "shares": 40.30385237339643,
+   "cost": 21.28,
+   "fees": 0.72,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -12779,7 +12782,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-17T14:36:23.292958+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 15.8,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-17T13:28:59.082378+00:00",
