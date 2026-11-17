@@ -1562,7 +1562,7 @@
   },
   {
    "placed_at": "2026-11-17T10:22:06.710453+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Luca Wiedenmann",
    "market": "Champaign: Luca Wiedenmann vs Bor Artnak",
@@ -1592,9 +1592,9 @@
     "kalshi": 0.4168
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.43,
+   "settled_at": "2026-11-17T19:45:15.042606+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -1633,7 +1633,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-17T12:14:07.220033+00:00",
@@ -1780,7 +1781,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   }
  ],
  "version": 2
