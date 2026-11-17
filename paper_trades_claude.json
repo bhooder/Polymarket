@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 876.294512008306,
+ "cash": 866.874512008306,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1783,6 +1783,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-17T20:40:47.613142+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Norfolk State Spartans",
+   "market": "Spread: Georgia Tech Yellow Jackets (-21.5)",
+   "link": "https://polymarket.com/event/cbb-norfst-gtech-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x13c65a327f4997f64fd43d5dfbfd6ec1e79a9dd570a44f9d764c6388903e5c92",
+   "token_id": "75429207223812835154989327993097846904100525310487525325880152731646512834844",
+   "outcome_index": 1,
+   "ends": "2026-11-18T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.53,
+   "shares": 17.01391366070969,
+   "cost": 9.42,
+   "fees": 0.4026,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cbb-norfst-gtech-2026-11-17-pos-21pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5537
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2
