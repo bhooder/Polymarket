@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 867.6100192546828,
+ "cash": 885.8129178054074,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1636,7 +1636,7 @@
   },
   {
    "placed_at": "2026-11-17T12:14:07.220033+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Arthur Fils",
    "market": "ATP World Tour Finals, John McEnroe Group: Arthur Fils vs Rafael Jodar",
@@ -1665,9 +1665,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.2,
+   "profit": 8.78,
+   "settled_at": "2026-11-17T15:32:47.759479+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
