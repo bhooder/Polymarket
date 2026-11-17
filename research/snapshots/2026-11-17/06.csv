@@ -1,0 +1,7 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+d904b283474f,2026-11-17T06:52:35Z,top100,eea27c6bdc38,first_seen,99883348909334675256572113525410089689425407217567819062240112911113903952319,0x46956f6a1efcb8b8c434ada1acdfea2a67e768243e9dc0ad9485404fa823232d,nba-cha-lal-2026-11-17,nba,Spread: Lakers (-7.5),Hornets,2026-11-18T04:00:00Z,3,0,0,0,2.3,3497,0,0.48,0.48,0,0,3,0,0.58,,,
+d723376c3cf4,2026-11-17T06:52:35Z,top200,2318a8e1a47b,price,,,,,,,,4,1,0,0,1.9,1391,2415,0.51,0.53,0,0,4,1,0.44,-0.28,2,1
+113ee058adea,2026-11-17T06:52:35Z,top200,4b889b858a43,counts,,,,,,,,3,1,1,0,15.0,16937,1824,0.76,0.73,0,0,3,1,0.6,0.0,2,1
+21ac409f1e48,2026-11-17T06:52:35Z,top200,e2afdafb5b40,price,,,,,,,,3,2,1,0,8.9,5622,507,0.59,0.59,0,0,3,2,0.23,0.63,2,1
+dcdb6f993f25,2026-11-17T06:52:35Z,top200,eea27c6bdc38,first_seen,99883348909334675256572113525410089689425407217567819062240112911113903952319,0x46956f6a1efcb8b8c434ada1acdfea2a67e768243e9dc0ad9485404fa823232d,nba-cha-lal-2026-11-17,nba,Spread: Lakers (-7.5),Hornets,2026-11-18T04:00:00Z,3,1,0,0,2.3,3497,3000,0.48,0.48,0,0,3,1,0.58,0.37,3,0
+47fed0add47f,2026-11-17T06:52:35Z,top200,47acf48f9d17,price,,,,,,,,3,0,0,0,0.9,555,0,0.55,0.7,0,0,3,0,0.46,,2,0
