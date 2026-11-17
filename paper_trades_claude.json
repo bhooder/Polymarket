@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 895.8768200455339,
+ "cash": 886.4553707701716,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1629,6 +1629,42 @@
     "kalshi": 0.4575
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T12:14:07.220033+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Arthur Fils",
+   "market": "ATP World Tour Finals, John McEnroe Group: Arthur Fils vs Rafael Jodar",
+   "link": "https://polymarket.com/event/atp-fils-jodar-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x98229ee7d90d02e503a95dd8b983b6530e2cdcb5115cf7c4e7b89c6954508b57",
+   "token_id": "65982818682362022575750242926008385577774769152840248643920953395302892020107",
+   "outcome_index": 0,
+   "ends": "2026-11-17T13:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 18.20289855072464,
+   "cost": 9.42,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPMATCH-26NOV17FILJOD-FIL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
