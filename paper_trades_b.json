@@ -12057,7 +12057,7 @@
   },
   {
    "placed_at": "2026-11-16T06:57:56.861103+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Ravens",
    "market": "Chargers vs. Ravens",
@@ -12087,9 +12087,9 @@
     "kalshi": 0.7051
    },
    "intl_cost_per_share": 0.6964,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.47,
+   "settled_at": "2026-11-17T04:41:59.353705+00:00",
    "topped_up_at": "2026-11-16T16:54:10.383698+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.5,

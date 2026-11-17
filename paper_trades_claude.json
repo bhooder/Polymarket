@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 921.9264264650399,
+ "cash": 933.590597135317,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -651,7 +651,7 @@
   },
   {
    "placed_at": "2026-11-15T18:27:31.841994+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ravens",
    "market": "Spread: Ravens (-3.5)",
@@ -680,9 +680,9 @@
     "kalshi": 0.5675
    },
    "intl_cost_per_share": 0.5574,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.39,
+   "settled_at": "2026-11-17T04:41:59.730546+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -991,7 +991,7 @@
   },
   {
    "placed_at": "2026-11-16T02:41:07.684510+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Warriors vs. Pelicans: O/U 224.5",
@@ -1020,9 +1020,9 @@
     "prophetx": 0.4514
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.09,
+   "profit": 11.57,
+   "settled_at": "2026-11-17T04:41:59.730587+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -1143,7 +1143,7 @@
   },
   {
    "placed_at": "2026-11-16T06:57:59.307061+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Trail Blazers vs. Timberwolves: O/U 228.5",
@@ -1174,9 +1174,9 @@
     "kalshi": 0.538
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.59,
+   "settled_at": "2026-11-17T04:41:59.730600+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -1447,6 +1447,43 @@
    "settled_at": "2026-11-17T03:41:52.090212+00:00",
    "topped_up_at": null,
    "close": 0.475
+  },
+  {
+   "placed_at": "2026-11-17T04:44:59.448775+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Knicks vs. Raptors",
+   "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xefe674eda5754a93610852d10432a50de79ea696b2583119634c5fe8944753b1",
+   "token_id": "97609341783524196800556488767910275487599223021534869250218490501911529555583",
+   "outcome_index": 1,
+   "ends": "2026-11-18T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.4276,
+   "shares": 21.18190378323497,
+   "cost": 9.43,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV17NYKTOR-TOR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4359,
+    "kalshi": 0.4451
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2
