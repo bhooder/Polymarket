@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1069.3948558847148,
+ "cash": 1058.1348558847149,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4960,6 +4960,43 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-17T17:44:55.579398+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Knicks (-2.5)",
+   "link": "https://polymarket.com/event/nba-nyk-tor-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5a3ee40aa80972d9b5098c24e8618e875140984143be8b9b5c99621cfe8f6636",
+   "token_id": "36605490045596066891953479678617235229720662602996417196832010254561988383958",
+   "outcome_index": 1,
+   "ends": "2026-11-18T00:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 5.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.4464,
+   "shares": 24.946209819851642,
+   "cost": 11.26,
+   "fees": 0.1233,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "35a3dcbd4544ac766df9c0dfcd36e31b",
+    "fee_rate": 0.02,
+    "event_id": 1704743368
+   },
+   "quotes": {
+    "prophetx": 0.4514,
+    "kalshi": 0.4774
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,
