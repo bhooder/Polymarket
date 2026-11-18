@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1072.6895007926357,
+ "cash": 1039.557010563349,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13168,6 +13168,80 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T17:43:05.515251+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Raptors",
+   "market": "Spread: Raptors (-6.5)",
+   "link": "https://polymarket.com/event/nba-was-tor-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0eb6dd174f9e95e9da5a442c5f1f80ccd8146b6c52f2a00f85cf7d884b433691",
+   "token_id": "28225766718631815917876292053134302013821647386276997547139157240071723352672",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 10.2,
+   "traders_entry": 0.47,
+   "avg_price": 0.43,
+   "shares": 49.40099338711012,
+   "cost": 22.09,
+   "fees": 0.85,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18WASTOR-TOR7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4472,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T17:43:06.192904+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Jazz vs. Lakers",
+   "link": "https://polymarket.com/event/nba-uta-lal-2026-11-18",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd86a982a25450f40689b8b9c5f20e7cc9c01e0876d3553563d947f34ae49a14d",
+   "token_id": "15246584799390875261999399718950239084576031508233630343241495435372264071144",
+   "outcome_index": 1,
+   "ends": "2026-11-19T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.1,
+   "traders_entry": 0.78,
+   "avg_price": 0.79,
+   "shares": 13.772231737758744,
+   "cost": 11.04,
+   "fees": 0.16,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV18UTALAL-LAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8016,
+    "polymarket_us": 0.8058
+   },
+   "intl_cost_per_share": 0.7983,
    "payout": null,
    "profit": null,
    "settled_at": null,

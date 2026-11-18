@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1146.906768393214,
+ "cash": 1123.7506985788089,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5077,6 +5077,80 @@
    "quotes": {
     "kalshi": 0.4976,
     "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T17:43:06.761126+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Raptors (-6.5)",
+   "link": "https://polymarket.com/event/nba-was-tor-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0eb6dd174f9e95e9da5a442c5f1f80ccd8146b6c52f2a00f85cf7d884b433691",
+   "token_id": "28225766718631815917876292053134302013821647386276997547139157240071723352672",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 10.2,
+   "traders_entry": 0.47,
+   "avg_price": 0.43,
+   "shares": 25.874580963733095,
+   "cost": 11.58,
+   "fees": 0.45,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18WASTOR-TOR7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4474,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T17:43:07.169928+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "76ers vs. Magic: O/U 222.5",
+   "link": "https://polymarket.com/event/nba-phi-orl-2026-11-18",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfd8b8044b64d8dd99d7c18b90b970cc803fbbe84a545ff96fe252c81c91e023c",
+   "token_id": "19563030420243889754740924456176492647278039700581328565198165752352063050163",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.4854,
+   "shares": 23.613176443968584,
+   "cost": 11.58,
+   "fees": 0.118,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "ae787dbb0bfb8ae89016365e41b9b7d2",
+    "fee_rate": 0.02,
+    "event_id": 1704744079
+   },
+   "quotes": {
+    "prophetx": 0.4904,
+    "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
    "payout": null,

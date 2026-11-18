@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1001.9978725225749,
+ "cash": 991.9778725225749,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -346,6 +346,44 @@
    "settled_at": "2026-11-18T08:06:14.773939+00:00",
    "topped_up_at": null,
    "close": 0.715
+  },
+  {
+   "placed_at": "2026-11-18T17:43:09.426099+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Spread: Raptors (-6.5)",
+   "link": "https://polymarket.com/event/nba-was-tor-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0eb6dd174f9e95e9da5a442c5f1f80ccd8146b6c52f2a00f85cf7d884b433691",
+   "token_id": "28225766718631815917876292053134302013821647386276997547139157240071723352672",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 10.2,
+   "traders_entry": 0.47,
+   "avg_price": 0.431,
+   "shares": 22.984848278213434,
+   "cost": 10.02,
+   "fees": 0.1127,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e42749eb4443dea9ff20a4e3c99e8888",
+    "fee_rate": 0.02,
+    "event_id": 1704744237
+   },
+   "quotes": {
+    "prophetx": 0.4359,
+    "polymarket_us": 0.4431,
+    "kalshi": 0.4474
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
