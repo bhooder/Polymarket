@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1191.5523379781214,
+ "cash": 1215.323383206632,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4531,7 +4531,7 @@
   },
   {
    "placed_at": "2026-11-17T13:28:58.403728+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pistons",
    "market": "Spread: Spurs (-9.5)",
@@ -4561,9 +4561,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.77,
+   "profit": 11.59,
+   "settled_at": "2026-11-18T04:40:53.910940+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -4678,7 +4678,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.715
   }
  ]
 }

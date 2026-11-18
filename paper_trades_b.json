@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1023.6093205359457,
+ "cash": 1065.7281324171338,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13021,7 +13021,7 @@
   },
   {
    "placed_at": "2026-11-17T21:34:27.144481+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Trail Blazers",
    "market": "Spread: Timberwolves (-2.5)",
@@ -13052,9 +13052,9 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.12,
+   "profit": 20.85,
+   "settled_at": "2026-11-18T04:40:54.147565+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -13096,7 +13096,8 @@
    "topped_up_at": "2026-11-18T03:39:19.958118+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 20.7,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.715
   }
  ]
 }
