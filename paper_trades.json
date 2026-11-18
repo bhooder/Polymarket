@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1210.9157485439162,
+ "cash": 1198.6857485439161,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4755,6 +4755,44 @@
    "settled_at": "2026-11-18T21:34:21.232476+00:00",
    "topped_up_at": null,
    "close": 0.415
+  },
+  {
+   "placed_at": "2026-11-18T23:29:17.902911+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Grizzlies vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-mem-cle-2026-11-18",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x85b1b9241e3253609ac1b9b9c955df87cfa41e4bb5b04342ac51a4df6b34d91a",
+   "token_id": "7665828114922883553382870178178216186165389305412336448543333564918557148005",
+   "outcome_index": 1,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 28.8,
+   "traders_entry": 0.62,
+   "avg_price": 0.6296,
+   "shares": 19.281293252595155,
+   "cost": 12.23,
+   "fees": 0.0899,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "2e5fc6f9f3902eceefdff796d6e976ef",
+    "fee_rate": 0.02,
+    "event_id": 1704744162
+   },
+   "quotes": {
+    "prophetx": 0.6343,
+    "kalshi": 0.6464,
+    "polymarket_us": 0.6521
+   },
+   "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

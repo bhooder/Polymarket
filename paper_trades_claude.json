@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 831.216452673134,
+ "cash": 812.7739007017846,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2306,6 +2306,80 @@
     "prophetx": 0.4952
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T23:29:21.100661+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pacers",
+   "market": "Spread: Rockets (-7.5)",
+   "link": "https://polymarket.com/event/nba-hou-ind-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5ee92964df4c1577000768dddeafcd690e299a16c720bfef16030dab56dbaffa",
+   "token_id": "87003348831177193859684381213324426997791588073854913891914825255046501257095",
+   "outcome_index": 1,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 18.91526494705983,
+   "cost": 9.22,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18HOUIND-HOU8",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4874,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T23:29:21.777487+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Grizzlies",
+   "market": "Spread: Cavaliers (-5.5)",
+   "link": "https://polymarket.com/event/nba-mem-cle-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x51e937593410ccf8d28a1cf3dbb1ef2d4ceb769b36769089760e2852bc79779f",
+   "token_id": "50157361330353181967714952531323878877201406792111462491545090120777796565443",
+   "outcome_index": 1,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 16.541439715243243,
+   "cost": 9.22,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18MEMCLE-CLE6",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5575,
+    "polymarket_us": 0.5636
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,
