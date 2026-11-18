@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 904.3833841296167,
+ "cash": 895.1591426136156,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2012,6 +2012,42 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T10:24:59.009402+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kings",
+   "market": "Spread: Suns (-6.5)",
+   "link": "https://polymarket.com/event/nba-phx-sac-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6d6b93abeb164b94a9dd33062045b5504a8aa176b77582ad95e4a7a201d72ea0",
+   "token_id": "26135702723925794219088946781123836201156791700163366560492129737694730796144",
+   "outcome_index": 1,
+   "ends": "2026-11-19T03:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 17.47890493333561,
+   "cost": 9.22,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18PHXSAC-PHX7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5277
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
