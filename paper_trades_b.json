@@ -13252,7 +13252,7 @@
   },
   {
    "placed_at": "2026-11-18T18:34:55.123759+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Flavio Cobolli",
    "market": "ATP World Tour Finals, Ivan Lendl Group: Flavio Cobolli vs Frances Tiafoe",
@@ -13281,9 +13281,9 @@
     "kalshi": 0.4574
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.08,
+   "settled_at": "2026-11-18T21:34:21.463045+00:00",
    "topped_up_at": "2026-11-18T19:39:00.076985+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 15.2,
