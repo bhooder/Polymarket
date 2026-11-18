@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 837.6737885236871,
+ "cash": 855.520153833096,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1450,7 +1450,7 @@
   },
   {
    "placed_at": "2026-11-17T04:44:59.448775+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Knicks vs. Raptors",
@@ -1480,9 +1480,9 @@
     "kalshi": 0.4451
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.65,
+   "settled_at": "2026-11-18T03:36:58.736402+00:00",
    "topped_up_at": "2026-11-17T23:27:08.388208+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
@@ -1720,7 +1720,7 @@
   },
   {
    "placed_at": "2026-11-17T14:36:25.182880+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Knicks vs. Raptors: O/U 216.5",
@@ -1749,9 +1749,9 @@
     "kalshi": 0.4876
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.42,
+   "settled_at": "2026-11-18T03:36:58.832118+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -1832,7 +1832,7 @@
   },
   {
    "placed_at": "2026-11-17T22:41:01.338984+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Eastern Michigan",
    "market": "Spread: Western Michigan (-17.5)",
@@ -1861,9 +1861,9 @@
     "prophetx": 0.5172
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.85,
+   "profit": 8.62,
+   "settled_at": "2026-11-18T03:36:58.832150+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
@@ -1903,11 +1903,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-18T00:24:57.849579+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Spurs",
    "market": "Spread: Spurs (-10.5)",
@@ -1936,9 +1937,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.22,
+   "settled_at": "2026-11-18T03:36:58.848211+00:00",
    "topped_up_at": null,
    "close": 0.465
   }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1072.0099219265085,
+ "cash": 1114.6645163950607,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -4891,7 +4891,7 @@
   },
   {
    "placed_at": "2026-11-17T14:36:24.431919+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Pistons",
    "market": "Spread: Spurs (-9.5)",
@@ -4921,9 +4921,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.65,
+   "profit": 20.13,
+   "settled_at": "2026-11-18T03:36:58.472069+00:00",
    "topped_up_at": "2026-11-17T15:35:48.010660+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 11.9,
@@ -4932,7 +4932,7 @@
   },
   {
    "placed_at": "2026-11-17T16:41:22.005636+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Maple Leafs",
    "market": "Maple Leafs vs. Blackhawks",
@@ -4962,9 +4962,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.5,
+   "settled_at": "2026-11-18T03:36:58.509086+00:00",
    "topped_up_at": "2026-11-17T20:40:46.403890+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.9,
@@ -4973,7 +4973,7 @@
   },
   {
    "placed_at": "2026-11-17T17:44:55.579398+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Knicks (-2.5)",
@@ -5003,9 +5003,9 @@
     "kalshi": 0.4774
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.26,
+   "settled_at": "2026-11-18T03:36:58.509112+00:00",
    "topped_up_at": null,
    "close": 0.515
   },

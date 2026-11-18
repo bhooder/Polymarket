@@ -1,0 +1,6 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+b33c3c590327,2026-11-18T03:39:22Z,status_change,0x1bc32be106,0x1bc32be106439240f59aa25668e613831a5cdc6e,0x1bc32be106439240f59aa25668e613831a5cdc6e,116,100443.28215348993,5769763.947653003,scanned,skipped_bot,,0.464,305.5,1,34149.4473,12,2
+66fc1bfc3864,2026-11-18T03:39:22Z,status_change,0xe1787252ab,0xe1787252abc9db4d5bfac51c253a68e0162ffe19,lalalalalalallalalalala,172,63515.15384199997,595635.563402,scanned,,,0.0,,,0,0,0
+521149a41872,2026-11-18T03:39:22Z,status_change,0x676c1bb692,0x676c1bb692c76b57b06f1b93817515acfa5ce139,ChonkVision,193,57509.33157529455,2357586.756206,scanned,off_board,,0.0,0.4,0,5494.1153,4,1
+787a45772089,2026-11-18T03:39:22Z,status_change,0xeecca68c6b,0xeecca68c6ba447d104fe8945aa143344dd858392,,,,,off_board,scanned,,,,,,,
+80e2867b0f88,2026-11-18T03:39:22Z,status_change,0xf559276513,0xf5592765133941c40c77e52bc56bbe7ec167f462,,,,,off_board,scanned,,,,,,,
