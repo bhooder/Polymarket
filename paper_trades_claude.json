@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 868.1306941891352,
+ "cash": 858.9006941891352,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2160,6 +2160,43 @@
     "polymarket_us": 0.3921
    },
    "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T19:39:06.358175+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Buffalo",
+   "market": "Spread: Buffalo (-2.5)",
+   "link": "https://polymarket.com/event/cfb-cmich-buf-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe44925612c1794fa232f0824bb2f70d0d9777a1b65a4258de769414abae98fa5",
+   "token_id": "84839934859751241517425635481335766679038234731278467607586319800437800317906",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.5098,
+   "shares": 17.929223300970875,
+   "cost": 9.23,
+   "fees": 0.0896,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "526cd4a3bc8ed57865b0f09460914bf4",
+    "fee_rate": 0.02,
+    "event_id": 1704740065
+   },
+   "quotes": {
+    "prophetx": 0.5148,
+    "polymarket_us": 0.5387
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
