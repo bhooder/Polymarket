@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 848.4223026164661,
+ "cash": 829.9681245474741,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1821,7 +1821,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.53
   },
   {
    "placed_at": "2026-11-17T22:41:01.338984+00:00",
@@ -1859,6 +1860,80 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.475
+  },
+  {
+   "placed_at": "2026-11-18T00:24:57.328953+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Spread: Clippers (-7.5)",
+   "link": "https://polymarket.com/event/nba-uta-lac-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3690e93d3dfa28b5bfe922b3789b1ce5eb92031cc98c877d819a490a0935eec7",
+   "token_id": "64842019665952092482219992582926986830615726922751832624809616900117467595501",
+   "outcome_index": 0,
+   "ends": "2026-11-18T03:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.4525,
+   "shares": 20.17735341509265,
+   "cost": 9.23,
+   "fees": 0.1,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "691ab39e7452104f4b4ccc3eda66755c",
+    "fee_rate": 0.02,
+    "event_id": 1704743379
+   },
+   "quotes": {
+    "prophetx": 0.4574,
+    "kalshi": 0.4677,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T00:24:57.849579+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Spurs",
+   "market": "Spread: Spurs (-10.5)",
+   "link": "https://polymarket.com/event/nba-det-sas-2026-11-17",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4cc2e734c8d3c7764541ec9e5102fd416e4a7ece4e70b198a9e31f9a257029b6",
+   "token_id": "34244537151487020367716430718692483846336007846039234257455973486908674536163",
+   "outcome_index": 0,
+   "ends": "2026-11-18T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.46,
+   "shares": 19.313430584765435,
+   "cost": 9.22,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV17DETSAS-SAS11",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4776
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2
