@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 873.0466482365254,
+ "cash": 922.8336627673876,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1491,7 +1491,7 @@
   },
   {
    "placed_at": "2026-11-17T06:52:33.940061+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Hornets vs. Lakers: O/U 218.5",
@@ -1522,9 +1522,9 @@
     "kalshi": 0.548
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.34,
+   "profit": 7.91,
+   "settled_at": "2026-11-18T08:03:57.064283+00:00",
    "topped_up_at": null,
    "close": 0.56
   },
@@ -1681,7 +1681,7 @@
   },
   {
    "placed_at": "2026-11-17T14:36:24.883525+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Hornets",
    "market": "Spread: Lakers (-8.5)",
@@ -1711,9 +1711,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 32.44,
+   "profit": 13.71,
+   "settled_at": "2026-11-18T08:03:57.098654+00:00",
    "topped_up_at": "2026-11-18T02:42:30.818950+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,

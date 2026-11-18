@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 988.1897598291401,
+ "cash": 1001.9978725225749,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -310,7 +310,7 @@
   },
   {
    "placed_at": "2026-11-18T01:49:57.168131+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lakers",
    "market": "Hornets vs. Lakers",
@@ -341,9 +341,9 @@
     "polymarket_us": 0.7487
    },
    "intl_cost_per_share": 0.7399,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.81,
+   "profit": 3.73,
+   "settled_at": "2026-11-18T08:06:14.773939+00:00",
    "topped_up_at": null,
    "close": 0.715
   }

@@ -1,0 +1,7 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+1a3768c61ced,2026-11-18T08:06:15Z,top100,07ab620e7fce,price,,,,,,,,3,0,0,0,5.1,4426,0,0.49,0.53,1,0,3,0,0.88,,,
+52227aec9e63,2026-11-18T08:06:15Z,top200,bc8f332978db,first_seen,14960697304986456761594851621648864656922522454822218403383499242922723908059,0xf082f47aa62f36fd0a11c791180f72fca8e61ce742b244ff779d8fdbd5791746,nba-was-tor-2026-11-18,nba,Wizards vs. Raptors,Wizards,2026-11-19T00:30:00Z,3,0,3,0,14.5,956,0,0.29,0.3,0,0,3,0,0.46,,2,0
+63971cdd7611,2026-11-18T08:06:15Z,top200,47acf48f9d17,counts,,,,,,,,3,0,1,0,6.5,555,0,0.55,0.73,0,0,3,0,0.5,,2,0
+255b16fd7858,2026-11-18T08:06:15Z,top200,07ab620e7fce,price,,,,,,,,3,0,0,0,5.1,4426,0,0.49,0.53,1,0,3,0,0.88,,3,0
+091f0491719c,2026-11-18T08:06:15Z,top200,0b84d274e2af,price,,,,,,,,3,0,0,0,4.7,620,0,0.48,0.47,0,0,3,0,0.5,,2,0
+aa751b6ac98a,2026-11-18T08:06:15Z,top200,3624e0cebb3d,counts,,,,,,,,3,1,0,1,4.0,5676,1895,0.82,0.84,0,0,3,0,0.08,,2,1
