@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 829.9681245474741,
+ "cash": 837.6737885236871,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1681,7 +1681,7 @@
   {
    "placed_at": "2026-11-17T14:36:24.883525+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Hornets",
    "market": "Spread: Lakers (-8.5)",
    "link": "https://polymarket.com/event/nba-cha-lal-2026-11-17",
@@ -1694,10 +1694,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.54,
-   "avg_price": 0.55,
-   "shares": 16.604239192702593,
-   "cost": 9.42,
-   "fees": 0.29,
+   "avg_price": 0.5597,
+   "shares": 32.44327372690724,
+   "cost": 18.73,
+   "fees": 0.57,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -1713,7 +1713,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-18T02:42:30.818950+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-17T14:36:25.182880+00:00",
@@ -1792,7 +1795,7 @@
   },
   {
    "placed_at": "2026-11-17T20:40:47.613142+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Norfolk State Spartans",
    "market": "Spread: Georgia Tech Yellow Jackets (-21.5)",
@@ -1821,9 +1824,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.01,
+   "profit": 7.59,
+   "settled_at": "2026-11-18T02:40:05.973119+00:00",
    "topped_up_at": null,
    "close": 0.53
   },
