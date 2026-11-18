@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+268fb54d5152,2026-11-18T22:36:23Z,status_change,0xee58601792,0xee586017922db8b2ff244c91ae6b66f661c3d209,glennyorkshire,194,58609.090826255546,2450393.287379,scanned,off_board,,0.0,6.5,0,11355.0356,2,0
+6923b486715c,2026-11-18T22:36:23Z,status_change,0x5016c48436,0x5016c48436ab3efa2ab54b117d0c08fa1a4a1eeb,,,,,off_board,scanned,,,,,,,

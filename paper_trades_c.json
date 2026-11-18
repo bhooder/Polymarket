@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1112.1795874676977,
+ "cash": 1091.1095874676978,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5194,6 +5194,43 @@
    "settled_at": "2026-11-18T21:34:21.536688+00:00",
    "topped_up_at": null,
    "close": 0.425
+  },
+  {
+   "placed_at": "2026-11-18T22:36:20.977148+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Warriors",
+   "market": "Warriors vs. Mavericks",
+   "link": "https://polymarket.com/event/nba-gsw-dal-2026-11-18",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0x9364854a35956a4a5d75287ca4054aa370ead6b50e4413f8ccd44dd333e1814d",
+   "token_id": "103394593591757818465344664731965589372404847241158205459544785903447382765705",
+   "outcome_index": 0,
+   "ends": "2026-11-19T01:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.36,
+   "avg_price": 0.3623,
+   "shares": 57.42087578706354,
+   "cost": 21.07,
+   "fees": 0.2653,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "d888711d1703fbd6668073e9cf79952d",
+    "fee_rate": 0.02,
+    "event_id": 1704744181
+   },
+   "quotes": {
+    "prophetx": 0.3669,
+    "kalshi": 0.3863
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
