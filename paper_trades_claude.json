@@ -1871,7 +1871,7 @@
   },
   {
    "placed_at": "2026-11-18T00:24:57.328953+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Clippers",
    "market": "Spread: Clippers (-7.5)",
@@ -1902,9 +1902,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.23,
+   "settled_at": "2026-11-18T06:49:46.691461+00:00",
    "topped_up_at": null,
    "close": 0.455
   },

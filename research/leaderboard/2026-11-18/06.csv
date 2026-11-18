@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+09975e5148bb,2026-11-18T06:51:40Z,status_change,0x6f6589b77c,0x6f6589b77c36b94c2a1304dfd40f44310725172c,jdfngkdjfnfd,159,71425.641102939,623797.814122,scanned,off_board,,0.0,0.1,0,0,0,0
+3e377a110ada,2026-11-18T06:51:40Z,status_change,0x1aa20e9c2b,0x1aa20e9c2b2a3963dabb3bf8b36b39abbe2030cc,qinlaoban,193,57990.21304904001,742451.2672179999,scanned,,,0.0,0.2,0,7995.9943,1,0
+e48a77c3fc3f,2026-11-18T06:51:40Z,status_change,0x6982049c65,0x6982049c65e98606f65a0ce71fdb9b61296da165,,,,,off_board,scanned,,,,,,,
+821218f65865,2026-11-18T06:51:40Z,status_change,0xebbba265a2,0xebbba265a23a5c13d94051b4be1090101e024214,,,,,off_board,scanned,,,,,,,
