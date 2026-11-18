@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 922.8336627673876,
+ "cash": 904.3833841296167,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1944,6 +1944,78 @@
    "settled_at": "2026-11-18T03:36:58.848211+00:00",
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-18T09:14:41.427459+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Spread: Pistons (-7.5)",
+   "link": "https://polymarket.com/event/nba-det-nop-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xba2ddbbab70436ae815c0357a5b8c087daf4a23c27df1ca288887e629cfec00b",
+   "token_id": "13269602998954332239323005493246702326733055249158007166832588395317821296167",
+   "outcome_index": 1,
+   "ends": "2026-11-19T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 17.154381995713265,
+   "cost": 9.22,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV18DETNOP-DET8",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5375
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T09:14:41.604122+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "76ers vs. Magic: O/U 222.5",
+   "link": "https://polymarket.com/event/nba-phi-orl-2026-11-18",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfd8b8044b64d8dd99d7c18b90b970cc803fbbe84a545ff96fe252c81c91e023c",
+   "token_id": "96575132650484642207139941138405823743059439204588884752005071716257033723384",
+   "outcome_index": 1,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.53,
+   "shares": 16.670745550780303,
+   "cost": 9.23,
+   "fees": 0.3945,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-phi-orl-2026-11-18-222pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5537
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2
