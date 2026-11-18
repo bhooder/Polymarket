@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 998.2697598291402,
+ "cash": 988.1897598291401,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -302,6 +302,45 @@
     "kalshi": 0.407
    },
    "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-18T01:49:57.168131+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Hornets vs. Lakers",
+   "link": "https://polymarket.com/event/nba-cha-lal-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x43cd2b241bfa0a17f1835ea5600c3018cd059eebd73ed30299b70922426b043b",
+   "token_id": "52061469463616939350512532874085767851717386474295822997159755811510486619005",
+   "outcome_index": 1,
+   "ends": "2026-11-18T04:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 29.0,
+   "traders_entry": 0.76,
+   "avg_price": 0.726,
+   "shares": 13.808112693434785,
+   "cost": 10.08,
+   "fees": 0.0549,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1a8f7e18f801b9236c221eec90d3b4aa",
+    "fee_rate": 0.02,
+    "event_id": 1704743380
+   },
+   "quotes": {
+    "prophetx": 0.73,
+    "kalshi": 0.744,
+    "polymarket_us": 0.7487
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,

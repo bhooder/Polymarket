@@ -4927,7 +4927,8 @@
    "topped_up_at": "2026-11-17T15:35:48.010660+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 11.9,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-17T16:41:22.005636+00:00",
@@ -4967,7 +4968,8 @@
    "topped_up_at": "2026-11-17T20:40:46.403890+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.9,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-17T17:44:55.579398+00:00",
@@ -5004,7 +5006,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-17T21:34:27.589290+00:00",
@@ -5041,7 +5044,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   }
  ]
 }

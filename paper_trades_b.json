@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 979.4744862181134,
+ "cash": 968.6157473821138,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -12787,7 +12787,8 @@
    "topped_up_at": "2026-11-17T14:36:23.292958+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 15.8,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-17T13:28:59.082378+00:00",
@@ -12866,7 +12867,8 @@
    "topped_up_at": "2026-11-17T20:40:45.030048+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.9,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-17T17:44:54.789143+00:00",
@@ -12902,7 +12904,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-17T18:39:27.240374+00:00",
@@ -13049,6 +13052,44 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.425
+  },
+  {
+   "placed_at": "2026-11-18T01:49:55.948470+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Hornets vs. Lakers",
+   "link": "https://polymarket.com/event/nba-cha-lal-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x43cd2b241bfa0a17f1835ea5600c3018cd059eebd73ed30299b70922426b043b",
+   "token_id": "52061469463616939350512532874085767851717386474295822997159755811510486619005",
+   "outcome_index": 1,
+   "ends": "2026-11-18T04:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 29.0,
+   "traders_entry": 0.76,
+   "avg_price": 0.73,
+   "shares": 14.587313473972065,
+   "cost": 10.86,
+   "fees": 0.21,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV17CHALAL-LAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7444,
+    "polymarket_us": 0.7487
+   },
+   "intl_cost_per_share": 0.7399,
    "payout": null,
    "profit": null,
    "settled_at": null,
