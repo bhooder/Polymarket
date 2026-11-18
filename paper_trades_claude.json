@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 895.1591426136156,
+ "cash": 885.9291426136156,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2048,6 +2048,44 @@
     "kalshi": 0.5277
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T13:50:58.391092+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Spread: Celtics (-3.5)",
+   "link": "https://polymarket.com/event/nba-bos-den-2026-11-18",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc6e0ddc2cb74a2eab2641b14bd09ec5f4ce3b78d39db78cc3514df652378499b",
+   "token_id": "77104299039673056485776847519501239399744358164149612908384175572228358192075",
+   "outcome_index": 1,
+   "ends": "2026-11-19T02:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.5455,
+   "shares": 16.769219219219224,
+   "cost": 9.23,
+   "fees": 0.0832,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c466bcda3a681acbb90bf7bd30a078fc",
+    "fee_rate": 0.02,
+    "event_id": 1704744109
+   },
+   "quotes": {
+    "prophetx": 0.5504,
+    "kalshi": 0.5678,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,
