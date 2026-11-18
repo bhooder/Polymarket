@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1235.8842242944936,
+ "cash": 1210.9157485439162,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4714,6 +4714,42 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T18:34:53.441961+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Flavio Cobolli",
+   "market": "ATP World Tour Finals, Ivan Lendl Group: Flavio Cobolli vs Frances Tiafoe",
+   "link": "https://polymarket.com/event/atp-cobolli-tiafoe-2026-11-17",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa5de56057087074ea0d8250d3593e71edf05becf939a4291b3fbafd69d1e4613",
+   "token_id": "24311993416250967184934994624698800676997037532450350296031351132304163713420",
+   "outcome_index": 0,
+   "ends": "2026-11-18T19:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 26.1,
+   "traders_entry": 0.45,
+   "avg_price": 0.44,
+   "shares": 54.58744488767584,
+   "cost": 24.97,
+   "fees": 0.95,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPMATCH-26NOV17COBTIA-COB",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4574
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
