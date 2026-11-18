@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 858.9006941891352,
+ "cash": 849.6706941891351,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2197,6 +2197,42 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T20:38:38.804049+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Pistons vs. Pelicans: O/U 228.5",
+   "link": "https://polymarket.com/event/nba-det-nop-2026-11-18",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe25d41a4d94905ce71d9515fb3792304a1a2514914169796baf70c1b70c4bb9f",
+   "token_id": "83375658663834038433670757498684048868166169647318005238565556534071566435353",
+   "outcome_index": 0,
+   "ends": "2026-11-19T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.4348,
+   "shares": 20.991702493551163,
+   "cost": 9.23,
+   "fees": 0.1032,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "048189429c7bf50abecced93ed936c6b",
+    "fee_rate": 0.02,
+    "event_id": 1704744277
+   },
+   "quotes": {
+    "prophetx": 0.4397
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
