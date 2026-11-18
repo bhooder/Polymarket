@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1083.7395007926357,
+ "cash": 1072.6895007926357,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13129,6 +13129,43 @@
    "quotes": {
     "kalshi": 0.4976,
     "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-18T15:40:28.097449+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "76ers vs. Magic: O/U 222.5",
+   "link": "https://polymarket.com/event/nba-phi-orl-2026-11-18",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfd8b8044b64d8dd99d7c18b90b970cc803fbbe84a545ff96fe252c81c91e023c",
+   "token_id": "19563030420243889754740924456176492647278039700581328565198165752352063050163",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.4831,
+   "shares": 22.63944965095152,
+   "cost": 11.05,
+   "fees": 0.1131,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "ae787dbb0bfb8ae89016365e41b9b7d2",
+    "fee_rate": 0.02,
+    "event_id": 1704744079
+   },
+   "quotes": {
+    "prophetx": 0.4881,
+    "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
    "payout": null,
