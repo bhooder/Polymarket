@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1163.2279943882759,
+ "cash": 1151.5987365951041,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5312,6 +5312,42 @@
    "settled_at": "2026-11-19T03:37:00.925960+00:00",
    "topped_up_at": null,
    "close": 0.455
+  },
+  {
+   "placed_at": "2026-11-19T06:50:56.917446+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texans",
+   "market": "Colts vs. Texans",
+   "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8fea0f418f6acf73de54f3652e4a7c9644e6d2c13819ad3fef90e6ea74270587",
+   "token_id": "56249705197141336365169717147184987431611205771767093682031417224363818197448",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:15:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 26.4,
+   "traders_entry": 0.84,
+   "avg_price": 0.85,
+   "shares": 13.528538580202,
+   "cost": 11.63,
+   "fees": 0.13,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV19INDHOU-HOU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8596
+   },
+   "intl_cost_per_share": 0.8538,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1012.9583808473195,
+ "cash": 1002.8283808473195,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -196,6 +196,43 @@
    "top_up_avg_bankroll_pct": 11.7,
    "top_up_size_multiplier": 1.0,
    "close": 0.635
+  },
+  {
+   "placed_at": "2026-11-19T06:50:57.420999+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texans",
+   "market": "Spread: Texans (-13.5)",
+   "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x98fd6f97ed13a3b8c359a64b044384e7e2973f876e408a6033cad0a750b24ab5",
+   "token_id": "44438480217577368364439573362461274317553707655893016977069127695778225980361",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 30.3,
+   "traders_entry": 0.46,
+   "avg_price": 0.463,
+   "shares": 21.648281421766217,
+   "cost": 10.13,
+   "fees": 0.1076,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "57f8aaa40720d35a1f8e71a6f2975e13",
+    "fee_rate": 0.02,
+    "event_id": 1700008817
+   },
+   "quotes": {
+    "prophetx": 0.4679,
+    "kalshi": 0.4878
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
