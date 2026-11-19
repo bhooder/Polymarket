@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1082.2092533374423,
+ "cash": 1102.7213738774306,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13221,7 +13221,7 @@
   },
   {
    "placed_at": "2026-11-18T17:43:06.192904+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Lakers",
    "market": "Jazz vs. Lakers",
@@ -13251,9 +13251,9 @@
     "polymarket_us": 0.8058
    },
    "intl_cost_per_share": 0.7983,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.04,
+   "settled_at": "2026-11-19T05:44:10.005102+00:00",
    "topped_up_at": null,
    "close": 0.825
   },
@@ -13529,7 +13529,7 @@
   },
   {
    "placed_at": "2026-11-19T01:48:50.100172+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Celtics vs. Nuggets: O/U 220.5",
@@ -13559,15 +13559,15 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.51,
+   "profit": 9.69,
+   "settled_at": "2026-11-19T05:44:10.049131+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
   {
    "placed_at": "2026-11-19T01:48:50.488609+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Kings",
    "market": "Suns vs. Kings",
@@ -13596,9 +13596,9 @@
     "kalshi": 0.3047
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.27,
+   "settled_at": "2026-11-19T05:44:10.079109+00:00",
    "topped_up_at": null,
    "close": 0.285
   }
