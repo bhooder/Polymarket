@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1079.6469973732674,
+ "cash": 1068.1769973732673,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5082,7 +5082,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-18T17:43:06.761126+00:00",
@@ -5156,7 +5157,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-18T19:39:03.827616+00:00",
@@ -5262,6 +5264,45 @@
    "quotes": {
     "kalshi": 0.4775,
     "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.355
+  },
+  {
+   "placed_at": "2026-11-19T00:26:17.576470+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bulls",
+   "market": "Bulls vs. Nets",
+   "link": "https://polymarket.com/event/nba-chi-bkn-2026-11-18",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb761a572952a92b5b1b1403ca7508669726f3328855663bc06f48e05eedf64ee",
+   "token_id": "75354336452806524288876975665013655744902356844790874676875567701916404009340",
+   "outcome_index": 0,
+   "ends": "2026-11-19T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.6,
+   "traders_entry": 0.46,
+   "avg_price": 0.4695,
+   "shares": 24.174599554027687,
+   "cost": 11.47,
+   "fees": 0.1204,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "ee039e4418ea05072535a619f8a35950",
+    "fee_rate": 0.02,
+    "event_id": 1704744078
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4874,
+    "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
    "payout": null,

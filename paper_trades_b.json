@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 921.3504495773313,
+ "cash": 893.5628790676826,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13137,7 +13137,8 @@
    "topped_up_at": "2026-11-18T22:36:16.270347+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.1,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-18T15:40:28.097449+00:00",
@@ -13177,7 +13178,8 @@
    "topped_up_at": "2026-11-18T18:34:54.709694+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.8,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-18T17:43:05.515251+00:00",
@@ -13369,7 +13371,7 @@
   {
    "placed_at": "2026-11-18T22:36:18.191262+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Texans",
    "market": "Colts vs. Texans",
    "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
@@ -13382,10 +13384,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 3.0,
    "traders_entry": 0.84,
-   "avg_price": 0.85,
-   "shares": 12.597141776057281,
-   "cost": 10.83,
-   "fees": 0.12,
+   "avg_price": 0.8502,
+   "shares": 25.194283552114562,
+   "cost": 21.66,
+   "fees": 0.24,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -13401,7 +13403,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T00:26:14.742698+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 4.6,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-18T22:36:18.838629+00:00",
@@ -13472,6 +13477,45 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.355
+  },
+  {
+   "placed_at": "2026-11-19T00:26:16.081295+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Hawks",
+   "market": "Hawks vs. Thunder",
+   "link": "https://polymarket.com/event/nba-atl-okc-2026-11-18",
+   "market_type": "moneyline",
+   "size_multiplier": 0.783,
+   "condition_id": "0xb0d7d50cdbf678cba5b476692179cc36c492588db0e22949babb0a6756066bea",
+   "token_id": "113360015793328511981943094842913391461826360437774420242583288573676787685623",
+   "outcome_index": 0,
+   "ends": "2026-11-19T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.29,
+   "avg_price": 0.2985,
+   "shares": 56.02990874300855,
+   "cost": 16.96,
+   "fees": 0.2347,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "84f153127d3c2cd703c3f0b2ad2d4f60",
+    "fee_rate": 0.02,
+    "event_id": 1704744161
+   },
+   "quotes": {
+    "prophetx": 0.3027,
+    "kalshi": 0.3149,
+    "polymarket_us": 0.3199
+   },
+   "intl_cost_per_share": 0.3105,
    "payout": null,
    "profit": null,
    "settled_at": null,
