@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 765.5018307724293,
+ "cash": 763.5089484530918,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1947,7 +1947,7 @@
   },
   {
    "placed_at": "2026-11-18T09:14:41.427459+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Spread: Pistons (-7.5)",
@@ -1976,9 +1976,9 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.22,
+   "settled_at": "2026-11-19T03:37:01.105254+00:00",
    "topped_up_at": null,
    "close": 0.595
   },
@@ -2053,7 +2053,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-18T13:50:58.391092+00:00",
@@ -2096,7 +2097,7 @@
   },
   {
    "placed_at": "2026-11-18T16:45:04.576061+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Campbell Fighting Camels",
    "market": "Spread: Oklahoma Sooners (-22.5)",
@@ -2126,15 +2127,15 @@
     "prophetx": 0.5847
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.82,
+   "profit": 6.59,
+   "settled_at": "2026-11-19T03:37:01.197793+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
   {
    "placed_at": "2026-11-18T17:43:08.810135+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Raptors (-8.5)",
@@ -2164,9 +2165,9 @@
     "polymarket_us": 0.3921
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.57,
+   "settled_at": "2026-11-19T03:37:01.230765+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
@@ -2283,11 +2284,12 @@
    "topped_up_at": "2026-11-19T02:42:51.594526+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-18T21:36:23.794903+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Central Michigan vs. Buffalo: O/U 45.5",
@@ -2316,9 +2318,9 @@
     "prophetx": 0.4952
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.23,
+   "settled_at": "2026-11-19T03:37:01.246917+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -2613,6 +2615,78 @@
     "polymarket_us": 0.6228
    },
    "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T03:39:23.224598+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Arizona State",
+   "market": "Spread: Oklahoma State (-4.5)",
+   "link": "https://polymarket.com/event/cfb-okst-arzst-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc05570196d4938be5098be8b195c4493cc5c4ed113a7475fac1317c737c3bff3",
+   "token_id": "114067174121034132282934204455563213126341413305240117356202318440889477919115",
+   "outcome_index": 1,
+   "ends": "2026-11-22T03:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.56,
+   "shares": 15.272330855936154,
+   "cost": 8.91,
+   "fees": 0.3575,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-okst-arzst-2026-11-21-neg-4pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5834
+   },
+   "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T03:39:23.974086+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Clippers vs. Spurs: O/U 227.5",
+   "link": "https://polymarket.com/event/nba-lac-sas-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x347cef053192af4ecf2c09a14317918fd859d270a8493472aa3154d3479b7999",
+   "token_id": "34944686342887787055965886963983638301691919484248501143644363647176525759239",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.439,
+   "shares": 19.508441808384077,
+   "cost": 8.9,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV19LACSAS-228",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4564
+   },
+   "intl_cost_per_share": 0.4423,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+651a0513f8ac,2026-11-19T03:39:26Z,status_change,0xf070207d31,0xf070207d315d47fd07870e464d3ded9151f5ac55,MegaMan-.-,145,74611.23711100001,893457.901662,scanned,,,0.0,0.2,0,56703.3576,4,0
+12c8de5cf3cc,2026-11-19T03:39:26Z,status_change,0x6982049c65,0x6982049c65e98606f65a0ce71fdb9b61296da165,0x6982049c65e98606f65A0CE71fDb9b61296dA165-1777135114945,195,54223.57053855,2009368.9903149998,scanned,off_board,,0.0,0.3,0,0,0,0
+e30608371482,2026-11-19T03:39:26Z,status_change,0x48185887c8,0x48185887c8dc95de60ee89722f1d0ee7894cbf0b,Liquidifier,200,53336.389934819985,263587.7349159999,scanned,off_board,,0.07,1.9,0,143533.1104,92,0
+e59f7c612fef,2026-11-19T03:39:26Z,status_change,0x84cfffc3f1,0x84cfffc3f16dcc353094de30d4a45226eccd2f63,,,,,off_board,scanned,,,,,,,
+935e5080044b,2026-11-19T03:39:26Z,status_change,0x8adc5aceb4,0x8adc5aceb4718b2972e34dfffa45d58b56b5bafc,,,,,off_board,scanned,,,,,,,
+cfa8c8a574f9,2026-11-19T03:39:26Z,status_change,0xf559276513,0xf5592765133941c40c77e52bc56bbe7ec167f462,,,,,off_board,scanned,,,,,,,

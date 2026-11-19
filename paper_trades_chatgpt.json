@@ -349,7 +349,7 @@
   },
   {
    "placed_at": "2026-11-18T17:43:09.426099+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Spread: Raptors (-6.5)",
@@ -380,9 +380,9 @@
     "kalshi": 0.4474
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.02,
+   "settled_at": "2026-11-19T03:39:24.105982+00:00",
    "topped_up_at": null,
    "close": 0.415
   },

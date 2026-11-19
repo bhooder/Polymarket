@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 964.2136782998301,
+ "cash": 1082.2092533374423,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13142,7 +13142,7 @@
   },
   {
    "placed_at": "2026-11-18T15:40:28.097449+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "76ers vs. Magic: O/U 222.5",
@@ -13172,9 +13172,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.39,
+   "profit": 23.29,
+   "settled_at": "2026-11-19T03:37:00.610847+00:00",
    "topped_up_at": "2026-11-18T18:34:54.709694+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.8,
@@ -13183,7 +13183,7 @@
   },
   {
    "placed_at": "2026-11-18T17:43:05.515251+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Raptors",
    "market": "Spread: Raptors (-6.5)",
@@ -13213,9 +13213,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.09,
+   "settled_at": "2026-11-19T03:37:00.645108+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -13254,7 +13254,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.825
   },
   {
    "placed_at": "2026-11-18T18:34:55.123759+00:00",
@@ -13298,7 +13299,7 @@
   },
   {
    "placed_at": "2026-11-18T19:39:02.122665+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pistons",
    "market": "Pistons vs. Pelicans",
@@ -13327,9 +13328,9 @@
     "kalshi": 0.6663
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.58,
+   "profit": 5.53,
+   "settled_at": "2026-11-19T03:37:00.672763+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
@@ -13413,7 +13414,7 @@
   },
   {
    "placed_at": "2026-11-18T22:36:18.838629+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Nets (-2.5)",
@@ -13443,9 +13444,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.82,
+   "settled_at": "2026-11-19T03:37:00.723298+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -13489,7 +13490,7 @@
   },
   {
    "placed_at": "2026-11-19T00:26:16.081295+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Hawks",
    "market": "Hawks vs. Thunder",
@@ -13520,9 +13521,9 @@
     "polymarket_us": 0.3199
    },
    "intl_cost_per_share": 0.3105,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 56.03,
+   "profit": 39.07,
+   "settled_at": "2026-11-19T03:37:00.723345+00:00",
    "topped_up_at": null,
    "close": 0.295
   },
@@ -13598,7 +13599,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.285
   }
  ]
 }
