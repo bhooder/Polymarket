@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 667.4859561551738,
+ "cash": 658.5756001180221,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3242,6 +3242,43 @@
     "kalshi": 0.5775
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T21:34:45.640677+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Eagles",
+   "market": "Spread: Steelers (-4.5)",
+   "link": "https://polymarket.com/event/nfl-pit-phi-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9512377776e40bd0c900cc32138d7a4d7c65d6745429d11065d57233c17dbca0",
+   "token_id": "87678145747756072952966322003756288153778466229747811273114799168425765233551",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 16.577607763753274,
+   "cost": 8.91,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV22PITPHI-PIT5",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5375,
+    "polymarket_us": 0.5387
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
