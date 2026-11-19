@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1128.3492944464742,
+ "cash": 1116.7217396000442,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5388,7 +5388,7 @@
   {
    "placed_at": "2026-11-19T13:53:06.540204+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will FK Austria Wien win on 2026-11-19?",
    "link": "https://polymarket.com/event/uwcl-faw-bm-2026-11-19",
@@ -5401,10 +5401,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 5.1,
    "traders_entry": 0.96,
-   "avg_price": 0.96,
-   "shares": 12.070369631697913,
-   "cost": 11.63,
-   "fees": 0.04,
+   "avg_price": 0.9602,
+   "shares": 24.140739263395826,
+   "cost": 23.26,
+   "fees": 0.08,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -5419,7 +5419,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T14:44:11.240074+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 3.6,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 765.4862844351692,
+ "cash": 756.6662844351691,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2907,6 +2907,42 @@
     "kalshi": 0.4979
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T14:44:13.491893+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Temple",
+   "market": "Spread: Temple (-4.5)",
+   "link": "https://polymarket.com/event/cfb-rice-templ-2026-11-19",
+   "market_type": "spreads",
+   "size_multiplier": 0.99,
+   "condition_id": "0x1393a7ec057af35e7ec06ea77dac7360a7ecb818ef9f0d72e06952a5ce16b1b2",
+   "token_id": "61763737055622277289875018105108058425906084555344528165631327426456913846859",
+   "outcome_index": 0,
+   "ends": "2026-11-20T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 20.86092715231788,
+   "cost": 8.82,
+   "fees": 0.4756,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-rice-templ-2026-11-19-pos-4pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4228
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,
