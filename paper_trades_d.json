@@ -385,7 +385,7 @@
   },
   {
    "placed_at": "2026-11-18T23:29:20.573160+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Magic",
    "market": "Spread: Magic (-1.5)",
@@ -415,9 +415,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.41,
+   "settled_at": "2026-11-19T02:39:10.453761+00:00",
    "topped_up_at": null,
    "close": 0.615
   }

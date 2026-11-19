@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 812.7739007017846,
+ "cash": 765.5018307724293,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -1984,7 +1984,7 @@
   },
   {
    "placed_at": "2026-11-18T09:14:41.604122+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "76ers vs. Magic: O/U 222.5",
@@ -2013,9 +2013,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.23,
+   "settled_at": "2026-11-19T02:39:10.899898+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -2091,7 +2091,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-18T16:45:04.576061+00:00",
@@ -2247,7 +2248,7 @@
   {
    "placed_at": "2026-11-18T21:36:23.377422+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Lakers",
    "market": "Spread: Lakers (-11.5)",
    "link": "https://polymarket.com/event/nba-uta-lal-2026-11-18",
@@ -2260,10 +2261,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.5,
-   "avg_price": 0.51,
-   "shares": 17.47890493333561,
-   "cost": 9.22,
-   "fees": 0.31,
+   "avg_price": 0.5099,
+   "shares": 34.74927629371385,
+   "cost": 18.34,
+   "fees": 0.62,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -2279,7 +2280,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T02:42:51.594526+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-18T21:36:23.794903+00:00",
@@ -2320,7 +2324,7 @@
   },
   {
    "placed_at": "2026-11-18T23:29:21.100661+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pacers",
    "market": "Spread: Rockets (-7.5)",
@@ -2350,15 +2354,15 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.22,
+   "settled_at": "2026-11-19T02:39:11.321498+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-18T23:29:21.777487+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Grizzlies",
    "market": "Spread: Cavaliers (-5.5)",
@@ -2388,11 +2392,231 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
+   "payout": 16.54,
+   "profit": 7.32,
+   "settled_at": "2026-11-19T02:39:11.398795+00:00",
+   "topped_up_at": null,
+   "close": 0.535
+  },
+  {
+   "placed_at": "2026-11-19T02:42:53.370641+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Spurs",
+   "market": "Clippers vs. Spurs",
+   "link": "https://polymarket.com/event/nba-lac-sas-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa2e36e8bcbfb990c2877acdb33cfb76e3e27f700c60fd5222a7e1d22c5b854fe",
+   "token_id": "6562573439884716744155555802782465475129725044154769659021982637907508160704",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.9,
+   "avg_price": 0.91,
+   "shares": 9.948314628827397,
+   "cost": 9.11,
+   "fees": 0.06,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV19LACSAS-SAS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.916
+   },
+   "intl_cost_per_share": 0.9045,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.535
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T02:42:54.346826+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Colts vs. Texans: O/U 42.5",
+   "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb61ef80741fa1fe594049dd7239fd616f0129d6de6b79a19e63d7d8caa1ac5b1",
+   "token_id": "13057376231001491877724031833366107274384036280241950472636284042298114122893",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.44,
+   "shares": 19.923542585205404,
+   "cost": 9.12,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV19INDHOU-43",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4574,
+    "kalshi": 0.4576
+   },
+   "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T02:42:55.881225+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Oilers",
+   "market": "Oilers vs. Lightning",
+   "link": "https://polymarket.com/event/nhl-edm-tb-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x62acd5d0e0670cd37660f14845bc874ad0eef8005998b8dd3060a951a2da1b12",
+   "token_id": "23686483299809036175510660401265069744469590290624070005251067934800206336987",
+   "outcome_index": 0,
+   "ends": "2026-11-20T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.43,
+   "shares": 20.37315752632744,
+   "cost": 9.11,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV19EDMTB-EDM",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4472,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T02:42:57.648507+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Washington State",
+   "market": "Spread: Texas State (-13.5)",
+   "link": "https://polymarket.com/event/cfb-washst-txst-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7d4a991239a5202d5a2833f7dd5b7ef616d48959ed99559c92932a8cae64797c",
+   "token_id": "30057949319194602058385187791888883009896176105976128634895785195219793362578",
+   "outcome_index": 1,
+   "ends": "2026-11-21T23:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.51,
+   "shares": 17.086955177656556,
+   "cost": 9.12,
+   "fees": 0.4057,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-washst-txst-2026-11-21-pos-13pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T02:42:58.420485+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Minnesota",
+   "market": "Spread: Northwestern (-2.5)",
+   "link": "https://polymarket.com/event/cfb-nw-minnst-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe5b273526b5b8c223096fed1b31854e6a8ae2260e40b2f272e3471b3e91c66c3",
+   "token_id": "28630341816255300771329345258130507875383038349110176134564731071818037083498",
+   "outcome_index": 1,
+   "ends": "2026-11-21T17:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 18.474085132716652,
+   "cost": 9.12,
+   "fees": 0.4372,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-nw-minnst-2026-11-21-neg-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.4881,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T02:42:59.352233+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Blue Jackets",
+   "market": "Blue Jackets vs. Blackhawks",
+   "link": "https://polymarket.com/event/nhl-cbj-chi-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x12f2eff50be865b53e13061aafe7451a888dc15daea459cd44aa10f4a0a44096",
+   "token_id": "55195383487211657212865260993669223218116466113203321968879997847102383739049",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.59,
+   "avg_price": 0.59,
+   "shares": 15.00989400807008,
+   "cost": 9.12,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV19CBJCHI-CBJ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6073,
+    "polymarket_us": 0.6228
+   },
+   "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2

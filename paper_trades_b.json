@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 874.4727826642139,
+ "cash": 964.2136782998301,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13101,7 +13101,7 @@
   },
   {
    "placed_at": "2026-11-18T14:42:12.542568+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Rockets vs. Pacers: O/U 224.5",
@@ -13131,9 +13131,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.39,
+   "profit": 22.53,
+   "settled_at": "2026-11-19T02:39:09.797699+00:00",
    "topped_up_at": "2026-11-18T22:36:16.270347+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.1,
@@ -13451,7 +13451,7 @@
   },
   {
    "placed_at": "2026-11-18T23:29:18.341669+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "76ers",
    "market": "76ers vs. Magic",
@@ -13481,9 +13481,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.35,
+   "profit": 23.7,
+   "settled_at": "2026-11-19T02:39:09.983630+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
@@ -13561,7 +13561,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-19T01:48:50.488609+00:00",
