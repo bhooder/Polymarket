@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 720.9917625363005,
+ "cash": 685.3197279828804,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2439,7 +2439,7 @@
   {
    "placed_at": "2026-11-19T02:42:54.346826+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Colts vs. Texans: O/U 42.5",
    "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
@@ -2453,9 +2453,9 @@
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.44,
    "avg_price": 0.44,
-   "shares": 19.923542585205404,
-   "cost": 9.12,
-   "fees": 0.35,
+   "shares": 39.40968577227238,
+   "cost": 18.03,
+   "fees": 0.69,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -2471,12 +2471,15 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T17:46:47.312015+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-19T02:42:55.881225+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Oilers",
    "market": "Oilers vs. Lightning",
    "link": "https://polymarket.com/event/nhl-edm-tb-2026-11-19",
@@ -2490,9 +2493,9 @@
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.42,
    "avg_price": 0.43,
-   "shares": 20.37315752632744,
-   "cost": 9.11,
-   "fees": 0.35,
+   "shares": 40.29904485449182,
+   "cost": 18.03,
+   "fees": 0.7,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -2508,7 +2511,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T17:46:47.072562+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-19T02:42:57.648507+00:00",
@@ -3088,6 +3094,79 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T17:46:51.842218+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Stetson Hatters",
+   "market": "Spread: Louisville Cardinals (-37.5)",
+   "link": "https://polymarket.com/event/cbb-stetsn-lou-2026-11-19",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x21507d9df30fce6af8ef33db7c68fc9808d9d692631e25c691ddddb558294cd3",
+   "token_id": "23390453432720263689582803113807365020086961155027283118819132354272796887978",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.52,
+   "shares": 16.405744217526927,
+   "cost": 8.92,
+   "fees": 0.389,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cbb-stetsn-lou-2026-11-19-pos-37pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T17:46:53.698086+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texans",
+   "market": "Spread: Texans (-14.5)",
+   "link": "https://polymarket.com/event/nfl-ind-hou-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x31d994011f7e820540d5d5084111ae8cc8e062ce21b83ed53d81657221487237",
+   "token_id": "62754566345690757651256273923843324694864670217419792058576935031164847318239",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.41,
+   "avg_price": 0.4167,
+   "shares": 21.16112026359143,
+   "cost": 8.92,
+   "fees": 0.1029,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "dfce8e0dc4a98f3804cab8256edd34ed",
+    "fee_rate": 0.02,
+    "event_id": 1700008817
+   },
+   "quotes": {
+    "prophetx": 0.4215,
+    "kalshi": 0.4272
+   },
+   "intl_cost_per_share": 0.4322,
    "payout": null,
    "profit": null,
    "settled_at": null,
