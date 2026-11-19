@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 801.159093466833,
+ "cash": 783.3233512047561,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2762,6 +2762,79 @@
     "kalshi": 0.5678
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T09:18:23.489518+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Trail Blazers vs. Bucks: O/U 227.5",
+   "link": "https://polymarket.com/event/nba-por-mil-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb5de9422baec349fdfc09c9f6f406aabf54c40ddc2af0fdda70f1b7922f5d524",
+   "token_id": "87353815175595835146378026044479355761243305997560280992459617492678034213362",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 16.1108396872113,
+   "cost": 8.92,
+   "fees": 0.3813,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-por-mil-2026-11-19-227pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5537,
+    "kalshi": 0.5639
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T09:18:24.965675+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Warriors",
+   "market": "Spread: Grizzlies (-6.5)",
+   "link": "https://polymarket.com/event/nba-gsw-mem-2026-11-19",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xad9be5197c232aa8be53d325b30a759b741db1dc5ad73e6787699c7619aa1644",
+   "token_id": "59728731415245067146744667893932237320383002552751308221469515633338373818560",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.4603,
+   "shares": 18.654345238461588,
+   "cost": 8.92,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV19GSWMEM-MEM7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4779
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
