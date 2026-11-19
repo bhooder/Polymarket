@@ -1979,7 +1979,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.595
   },
   {
    "placed_at": "2026-11-18T09:14:41.604122+00:00",
@@ -2127,7 +2128,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-18T17:43:08.810135+00:00",
@@ -2164,7 +2166,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-18T19:39:06.358175+00:00",
@@ -2201,7 +2204,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-18T20:38:38.804049+00:00",
@@ -2237,7 +2241,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.39
   },
   {
    "placed_at": "2026-11-18T21:36:23.377422+00:00",
@@ -2310,7 +2315,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-18T23:29:21.100661+00:00",
