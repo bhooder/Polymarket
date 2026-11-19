@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1151.5987365951041,
+ "cash": 1139.9768492929043,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5344,6 +5344,42 @@
     "kalshi": 0.8596
    },
    "intl_cost_per_share": 0.8538,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T11:29:19.093423+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Clippers vs. Spurs: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-lac-sas-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2979579b00714298bfd3b7e46da228feedfae4ba60c2bb4b60ae31100918f7e9",
+   "token_id": "74070039653228089256734693327448657258426631578923917563342688958798168818929",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.1,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 23.358098546249842,
+   "cost": 11.62,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV19LACSAS-226",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4976
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
