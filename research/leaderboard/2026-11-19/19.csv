@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+f519ada572bf,2026-11-19T19:52:06Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,wowfarm,197,55003.81730629004,704206.7439540001,scanned,off_board,,0.0,0.4,0,4000.25,2,0
+58a965dcdc24,2026-11-19T19:52:06Z,status_change,0xe8c4d68aff,0xe8c4d68aff65b38cac46987b9b65e01eb47d395d,,,,,off_board,scanned,,,,,,,

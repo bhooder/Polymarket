@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1057.3326330099987,
+ "cash": 1058.1816677128309,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13641,7 +13641,7 @@
   },
   {
    "placed_at": "2026-11-19T13:53:06.282982+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FK Austria Wien win on 2026-11-19?",
@@ -13670,9 +13670,9 @@
     "kalshi": 0.9634
    },
    "intl_cost_per_share": 0.9591,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.56,
+   "profit": 0.86,
+   "settled_at": "2026-11-19T19:48:19.082873+00:00",
    "topped_up_at": "2026-11-19T14:44:11.088908+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 3.6,
@@ -13710,6 +13710,43 @@
     "kalshi": 0.9909
    },
    "intl_cost_per_share": 0.9914,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T19:51:57.413851+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Knicks",
+   "market": "Knicks vs. Timberwolves",
+   "link": "https://polymarket.com/event/nba-nyk-min-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd8c25b81841dd21fcc9b9cdd66062b452cf973c9cb4fcab8cff70ea93a8ea142",
+   "token_id": "82989841025373784948375865021297416494403334135435538758436178460095460299308",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 3.6,
+   "traders_entry": 0.5,
+   "avg_price": 0.5025,
+   "shares": 44.749876115690384,
+   "cost": 22.71,
+   "fees": 0.2237,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "dffa224f2b34ea3f09e10259a46916b7",
+    "fee_rate": 0.02,
+    "event_id": 1704744734
+   },
+   "quotes": {
+    "prophetx": 0.5075,
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

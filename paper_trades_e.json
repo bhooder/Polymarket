@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 992.6995883116444,
+ "cash": 1003.1107146370827,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -236,7 +236,7 @@
   },
   {
    "placed_at": "2026-11-19T08:11:02.834541+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FK Austria Wien win on 2026-11-19?",
@@ -265,9 +265,9 @@
     "kalshi": 0.9729
    },
    "intl_cost_per_share": 0.9686,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.41,
+   "profit": 0.28,
+   "settled_at": "2026-11-19T19:48:19.431718+00:00",
    "topped_up_at": null,
    "close": 0.974
   }
