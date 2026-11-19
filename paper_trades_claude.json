@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 810.079093466833,
+ "cash": 801.159093466833,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2724,6 +2724,44 @@
     "prophetx": 0.5565
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T08:11:04.106312+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bucks",
+   "market": "Spread: Trail Blazers (-10.5)",
+   "link": "https://polymarket.com/event/nba-por-mil-2026-11-19",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7d4b9499eb3bc8c7da0a39a557be641852cf27c6ed299878919b69f8a13b3e8f",
+   "token_id": "94702160102983953008611360797810553236119026518582759610753399614420170196281",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.53,
+   "shares": 16.1108396872113,
+   "cost": 8.92,
+   "fees": 0.3813,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-por-mil-2026-11-19-neg-10pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.5483,
+    "polymarket_us": 0.5537,
+    "kalshi": 0.5678
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
