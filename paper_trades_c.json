@@ -5200,7 +5200,7 @@
   },
   {
    "placed_at": "2026-11-18T22:36:20.977148+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Warriors",
    "market": "Warriors vs. Mavericks",
@@ -5230,9 +5230,9 @@
     "kalshi": 0.3863
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.07,
+   "settled_at": "2026-11-19T04:42:55.782884+00:00",
    "topped_up_at": null,
    "close": 0.355
   },

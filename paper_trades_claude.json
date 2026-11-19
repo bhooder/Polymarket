@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 763.5089484530918,
+ "cash": 793.3098742476138,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2173,7 +2173,7 @@
   },
   {
    "placed_at": "2026-11-18T19:39:06.358175+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Buffalo",
    "market": "Spread: Buffalo (-2.5)",
@@ -2203,15 +2203,15 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.93,
+   "profit": 8.7,
+   "settled_at": "2026-11-19T04:42:56.062891+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
   {
    "placed_at": "2026-11-18T20:38:38.804049+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Pistons vs. Pelicans: O/U 228.5",
@@ -2240,9 +2240,9 @@
     "prophetx": 0.4397
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.99,
+   "profit": 11.76,
+   "settled_at": "2026-11-19T04:42:56.062925+00:00",
    "topped_up_at": null,
    "close": 0.39
   },
@@ -2687,6 +2687,43 @@
     "kalshi": 0.4564
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T04:46:26.764772+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "South Carolina",
+   "market": "Spread: Georgia (-16.5)",
+   "link": "https://polymarket.com/event/cfb-ga-sc-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbb4972c111e2081e49874ec3e64544c0f7e7e88f392de98bc331b2a857c0af51",
+   "token_id": "80618618275450166022819313825998324309763689935675147135766709534925967061499",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.5279,
+   "shares": 16.535043990990932,
+   "cost": 9.12,
+   "fees": 0.3915,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ga-sc-2026-11-21-neg-16pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5516,
+    "prophetx": 0.5565
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,

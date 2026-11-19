@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+54930d348ce3,2026-11-19T04:46:30Z,status_change,0x1aa20e9c2b,0x1aa20e9c2b2a3963dabb3bf8b36b39abbe2030cc,qinlaoban,165,62896.87891999999,786117.933885,scanned,off_board,,0.0,0.2,0,0,0,0
+a53a19cc7b12,2026-11-19T04:46:30Z,status_change,0x2b344112f6,0x2b344112f63e69a2e411b0cb7f200cbc0051176e,MAGATheeStallion,180,58253.944437320024,1068876.3759919996,scanned,off_board,,0.0,0.4,0,21142.2464,5,0
+d33d7eee8a13,2026-11-19T04:46:30Z,status_change,0xe8c4d68aff,0xe8c4d68aff65b38cac46987b9b65e01eb47d395d,JAMJAMJAM4,189,56679.60105465457,1241376.297919,scanned,off_board,,0.0,0.5,0,49683.48,26,0
+be45cc3b993c,2026-11-19T04:46:30Z,status_change,0xddb993dbae,0xddb993dbaee76440dbb42408a1925e38b7aaedcd,RollAwayTheDew,198,54211.70805290451,2156927.712232002,scanned,off_board,,0.0,2.8,0,11415.6808,16,0
+d8ada8333860,2026-11-19T04:46:30Z,status_change,0x38337de21f,0x38337de21ff0bb0a11a40761507d51e318d633d1,,,,,off_board,scanned,,,,,,,
+891ce8427fef,2026-11-19T04:46:30Z,status_change,0x413f29bc7f,0x413f29bc7f5ce2a2d8d28fb3a8b5d75199d247f3,,,,,off_board,scanned,,,,,,,
+423c8dfa87c1,2026-11-19T04:46:30Z,status_change,0xe015b5a2a2,0xe015b5a2a299167be835a2fd1e86f09c49e06ffd,,,,,off_board,scanned,,,,,,,
+8d8537fbb822,2026-11-19T04:46:30Z,status_change,0xfe29606756,0xfe29606756d56eecd16c50154497da59044c8241,,,,,off_board,scanned,,,,,,,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 962.0264169177996,
+ "cash": 977.5638503046374,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -425,7 +425,7 @@
   },
   {
    "placed_at": "2026-11-18T19:39:08.048635+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pistons",
    "market": "Pistons vs. Pelicans",
@@ -455,9 +455,9 @@
     "kalshi": 0.666
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.54,
+   "profit": 5.52,
+   "settled_at": "2026-11-19T04:46:28.117923+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
