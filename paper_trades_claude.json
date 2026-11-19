@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 685.3197279828804,
+ "cash": 667.4859561551738,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3167,6 +3167,80 @@
     "kalshi": 0.4272
    },
    "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T18:46:21.460516+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lions",
+   "market": "Spread: Lions (-5.5)",
+   "link": "https://polymarket.com/event/nfl-tb-det-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7e7283747390e0e047c8ea36b041bf13e6030577dcf00fd0437e2b36d8df6efa",
+   "token_id": "47510143321693573761014843064389652544213706588578200059498593107642720858174",
+   "outcome_index": 0,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.5455,
+   "shares": 16.206006006006007,
+   "cost": 8.92,
+   "fees": 0.0804,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "06c51c387c1c8db6d0664a79d686ed4e",
+    "fee_rate": 0.02,
+    "event_id": 1700008831
+   },
+   "quotes": {
+    "prophetx": 0.5504,
+    "kalshi": 0.5575,
+    "polymarket_us": 0.5636
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T18:46:24.549122+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Dolphins vs. Bills: O/U 46.5",
+   "link": "https://polymarket.com/event/nfl-mia-buf-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9d314ac3a5eea08a960f9547bd3686e58c31d3342b143425d5af22bb29d822dc",
+   "token_id": "60582913160893005057980330889854236031719741979732431643361720136255949131301",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.55,
+   "avg_price": 0.56,
+   "shares": 15.435306835190419,
+   "cost": 8.91,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV22MIABUF-47",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5775
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

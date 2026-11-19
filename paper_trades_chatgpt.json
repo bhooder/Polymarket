@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 977.5638503046374,
+ "cash": 967.6972802563282,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -493,6 +493,43 @@
     "kalshi": 0.4778
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T18:46:29.238028+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Warriors",
+   "market": "Spread: Grizzlies (-6.5)",
+   "link": "https://polymarket.com/event/nba-gsw-mem-2026-11-19",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xad9be5197c232aa8be53d325b30a759b741db1dc5ad73e6787699c7619aa1644",
+   "token_id": "59728731415245067146744667893932237320383002552751308221469515633338373818560",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 31.1,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 19.053140096618357,
+   "cost": 9.87,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV19GSWMEM-MEM7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5148,
+    "kalshi": 0.5178
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
