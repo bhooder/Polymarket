@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 783.3233512047561,
+ "cash": 765.4862844351692,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2835,6 +2835,78 @@
     "kalshi": 0.4779
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T10:28:53.280835+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Knicks vs. Timberwolves: O/U 218.5",
+   "link": "https://polymarket.com/event/nba-nyk-min-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb0fcdd96e509f04544c1e487fca48d7d4f2d06f2ed49109cfcf4f820710033b9",
+   "token_id": "39888895422545762252122715864966403670535213131479111166836223245129760851988",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.5516,
+   "shares": 16.028281120144534,
+   "cost": 8.92,
+   "fees": 0.0793,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "656bb881edf73c741f21b23e5f19cb5e",
+    "fee_rate": 0.02,
+    "event_id": 1704744734
+   },
+   "quotes": {
+    "prophetx": 0.5565
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T10:28:53.615866+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Timberwolves",
+   "market": "Knicks vs. Timberwolves",
+   "link": "https://polymarket.com/event/nba-nyk-min-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd8c25b81841dd21fcc9b9cdd66062b452cf973c9cb4fcab8cff70ea93a8ea142",
+   "token_id": "46645103243018452942575663528473729185891076770343463526532805505086631200130",
+   "outcome_index": 1,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 17.910555769972984,
+   "cost": 8.92,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV19NYKMIN-MIN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4979
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
