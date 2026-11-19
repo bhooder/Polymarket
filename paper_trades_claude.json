@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 729.9117625363004,
+ "cash": 720.9917625363005,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3050,6 +3050,42 @@
    },
    "quotes": {
     "kalshi": 0.5278
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T16:49:42.926212+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Canadiens vs. Hurricanes: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-mon-car-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x421080a289b9a7821e56044c18fe5a814231410d2a830e0ca6985525814fa17e",
+   "token_id": "4132439563983745961134555908427703295963333743670223592234922113677407602255",
+   "outcome_index": 0,
+   "ends": "2026-11-20T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 17.031026252983292,
+   "cost": 8.92,
+   "fees": 0.4045,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nhl-mon-car-2026-11-19-6pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
    "payout": null,
