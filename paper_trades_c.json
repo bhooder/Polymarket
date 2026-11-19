@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1117.6038921977772,
+ "cash": 1105.9671772219317,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5464,7 +5464,7 @@
   {
    "placed_at": "2026-11-19T19:51:58.787807+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Knicks",
    "market": "Knicks vs. Timberwolves",
    "link": "https://polymarket.com/event/nba-nyk-min-2026-11-19",
@@ -5477,10 +5477,10 @@
    "bettors": 6,
    "avg_bankroll_pct": 3.6,
    "traders_entry": 0.5,
-   "avg_price": 0.5,
-   "shares": 22.473429951690825,
-   "cost": 11.64,
-   "fees": 0.4,
+   "avg_price": 0.5001,
+   "shares": 44.94685990338165,
+   "cost": 23.28,
+   "fees": 0.8,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -5495,7 +5495,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-19T20:41:50.878462+00:00",
+   "top_up_bettors": 7,
+   "top_up_avg_bankroll_pct": 2.9,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }
