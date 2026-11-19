@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 756.6662844351691,
+ "cash": 729.9117625363004,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2943,6 +2943,115 @@
     "polymarket_us": 0.4228
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T15:43:50.975052+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "UTEP Miners vs. New Mexico State Aggies: O/U 134.5",
+   "link": "https://polymarket.com/event/cbb-utep-nmxst-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7e512a01782f942f37914849a0bf03a09c460609cd1eebe74592702a76b8e2ab",
+   "token_id": "110269421133703854706628969432419616112788913795752807670270061030233847241906",
+   "outcome_index": 1,
+   "ends": "2026-11-20T02:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.59,
+   "shares": 14.551849528655477,
+   "cost": 8.92,
+   "fees": 0.3344,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-cbb-utep-nmxst-2026-11-19-134pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.6026,
+    "polymarket_us": 0.613
+   },
+   "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T15:43:53.256062+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Florida Gators",
+   "market": "Florida Gators vs. West Virginia Mountaineers",
+   "link": "https://polymarket.com/event/cbb-fl-wvir-2026-11-19",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x071bb91155f489f229d81d6918aa96d8efdc5af570493097abe0c84250a2a8b2",
+   "token_id": "107829013247106512503717336308666319186758558421181380006442573463019630862316",
+   "outcome_index": 0,
+   "ends": "2026-11-19T19:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.8,
+   "avg_price": 0.7895,
+   "shares": 11.251292802236199,
+   "cost": 8.92,
+   "fees": 0.0374,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "f2b6a21f717fb4e6291773b19253fe7f",
+    "fee_rate": 0.02,
+    "event_id": 1704744754
+   },
+   "quotes": {
+    "prophetx": 0.7928
+   },
+   "intl_cost_per_share": 0.7983,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-19T15:43:54.168149+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Warriors vs. Grizzlies: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-gsw-mem-2026-11-19",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xeeb1ebbd89f0da3dc04709dd4b5bf4d2f4a9dc675cd7dac050651dac495174e8",
+   "token_id": "53497201746548758927592937027969936716863910054000700998042174565527600354964",
+   "outcome_index": 0,
+   "ends": "2026-11-20T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.51,
+   "shares": 16.891219409546668,
+   "cost": 8.91,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV19GSWMEM-226",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5278
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
