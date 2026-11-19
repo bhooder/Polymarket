@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1105.9671772219317,
+ "cash": 1117.6963405449794,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5427,7 +5427,7 @@
   },
   {
    "placed_at": "2026-11-19T18:46:18.749073+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Servette FC Ch\u00eanois F\u00e9minin win on 2026-11-19?",
@@ -5456,9 +5456,9 @@
     "kalshi": 0.9909
    },
    "intl_cost_per_share": 0.9914,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.73,
+   "profit": 0.11,
+   "settled_at": "2026-11-19T23:17:47.437392+00:00",
    "topped_up_at": null
   },
   {
