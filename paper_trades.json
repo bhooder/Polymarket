@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1165.778512074928,
+ "cash": 1153.6385120749278,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5020,6 +5020,42 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7203,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T15:51:19.718945+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Suns vs. Jazz: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-phx-uta-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa486d91235cefc78fbdf5ff35ad3adf2f04d8e9ffe27d70a2fae6ff26448d31e",
+   "token_id": "15508027371802539577245680844054249053003523747216996217086713072675917550210",
+   "outcome_index": 1,
+   "ends": "2026-11-21T02:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.1,
+   "traders_entry": 0.51,
+   "avg_price": 0.505,
+   "shares": 23.8062552864283,
+   "cost": 12.14,
+   "fees": 0.119,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "2a606a9c222a92a5370a053386572388",
+    "fee_rate": 0.02,
+    "event_id": 1704770148
+   },
+   "quotes": {
+    "prophetx": 0.51
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

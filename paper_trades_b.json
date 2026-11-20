@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1018.7646894055649,
+ "cash": 1007.8484885238321,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14087,6 +14087,42 @@
     "prophetx": 0.4616
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T15:51:20.344352+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jazz",
+   "market": "Suns vs. Jazz",
+   "link": "https://polymarket.com/event/nba-phx-uta-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0xaf0abf4d1c6dd26a3b58fee38d3288d8cee5fe70e4986b87aeb1fcf4325de239",
+   "token_id": "77993516044090302167869403050760394230897559652154790254406158533391888401132",
+   "outcome_index": 1,
+   "ends": "2026-11-21T02:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.38,
+   "avg_price": 0.38,
+   "shares": 27.51631810982315,
+   "cost": 10.92,
+   "fees": 0.46,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20PHXUTA-UTA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3967
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,
