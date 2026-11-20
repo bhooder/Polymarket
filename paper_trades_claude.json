@@ -2480,7 +2480,7 @@
   },
   {
    "placed_at": "2026-11-19T02:42:55.881225+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Oilers",
    "market": "Oilers vs. Lightning",
@@ -2510,9 +2510,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.03,
+   "settled_at": "2026-11-20T03:08:54.447391+00:00",
    "topped_up_at": "2026-11-19T17:46:47.072562+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
@@ -3079,7 +3079,7 @@
   },
   {
    "placed_at": "2026-11-19T16:49:42.926212+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Canadiens vs. Hurricanes: O/U 6.5",
@@ -3108,9 +3108,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.92,
+   "settled_at": "2026-11-20T03:08:57.898639+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -3374,7 +3374,7 @@
   },
   {
    "placed_at": "2026-11-19T23:19:59.649281+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Flyers vs. Senators: O/U 6.5",
@@ -3404,9 +3404,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.91,
+   "settled_at": "2026-11-20T03:08:58.331371+00:00",
    "topped_up_at": null,
    "close": 0.56
   },
