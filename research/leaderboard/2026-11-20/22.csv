@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+c0106278feda,2026-11-20T22:25:59Z,status_change,0x2112103a57,0x2112103a575ebfc82e352e875ce22544fc12b871,Cheongkokhin,88,136638.29762536002,395437.14652199997,scanned,,,0.0,,,0,0,0
+0536c25a4363,2026-11-20T22:25:59Z,status_change,0xd776f0a066,0xd776f0a066fd3014ecfac89cfd414440982bffeb,bomber,106,106833.64345700004,1671280.8412160005,scanned,,,0.002,0.0,0,0,0,0
+3b9d954a7024,2026-11-20T22:25:59Z,status_change,0x5ce7b625f5,0x5ce7b625f5724347091a4b95c927175cc0bc086e,Iwdjcweuicnweiucnewciuwen,116,100253.027473,169053.91083899996,scanned,,,0.0,,,37500.0,1,0
+046765083fb7,2026-11-20T22:25:59Z,status_change,0x8fbc899fe2,0x8fbc899fe286351fb21f23c32710e3facb8a5c63,,,,,off_board,scanned,,,,,,,
+be6393c57c26,2026-11-20T22:25:59Z,status_change,0x91feec8af2,0x91feec8af2b517f024d91564ee108d707cc0c1c6,,,,,off_board,scanned,,,,,,,
+662db4b90dbc,2026-11-20T22:25:59Z,status_change,0xd3911bd5e0,0xd3911bd5e070c9ad9a9519c966347802d8f3b109,,,,,off_board,scanned,,,,,,,
