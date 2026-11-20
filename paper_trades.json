@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1202.1985120749282,
+ "cash": 1190.058512074928,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4907,6 +4907,43 @@
     "polymarket_us": 0.4177
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T12:42:55.304502+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Hornets vs. Hawks: O/U 218.5",
+   "link": "https://polymarket.com/event/nba-cha-atl-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3c4dafee18b643d3912d4312600fd9d4883c34eb4659b2f7f0875c821354927d",
+   "token_id": "17106003076366359869241843938772490496695793309878273474463083108163683568040",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 34.5,
+   "traders_entry": 0.48,
+   "avg_price": 0.4785,
+   "shares": 25.110679988635287,
+   "cost": 12.14,
+   "fees": 0.1253,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9360319acbcd489ddee4c261be6fa40f",
+    "fee_rate": 0.02,
+    "event_id": 1704759721
+   },
+   "quotes": {
+    "prophetx": 0.4835,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
