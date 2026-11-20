@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 466.2019993836843,
+ "cash": 457.38199938368433,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4736,7 +4736,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-20T16:47:36.571199+00:00",
@@ -4769,6 +4770,42 @@
     "polymarket_us": 0.6619
    },
    "intl_cost_per_share": 0.6417,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T17:47:10.482255+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Oregon vs. Michigan State: O/U 41.5",
+   "link": "https://polymarket.com/event/cfb-ore-mst-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xdca4f88837ea4b79056813d1c6e5e8b5033f56a608c001b5328bea79113af433",
+   "token_id": "88300143361189875992047051075341909103647296049272115816336459706409608943607",
+   "outcome_index": 0,
+   "ends": "2026-11-21T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.569,
+   "shares": 15.369324009324009,
+   "cost": 8.82,
+   "fees": 0.0754,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "18c64fbb20599e537cdd3152c6c95700",
+    "fee_rate": 0.02,
+    "event_id": 1704742181
+   },
+   "quotes": {
+    "prophetx": 0.5739
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,
