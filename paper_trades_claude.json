@@ -4850,7 +4850,7 @@
   },
   {
    "placed_at": "2026-11-20T18:46:09.503169+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will US Boulogne C\u00f4te d'Opale win on 2026-11-20?",
@@ -4879,9 +4879,9 @@
     "kalshi": 0.315
    },
    "intl_cost_per_share": 0.3207,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.16,
+   "settled_at": "2026-11-20T21:29:43.899266+00:00",
    "topped_up_at": null,
    "close": 0.305
   }
