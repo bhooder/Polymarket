@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 572.0413826734513,
+ "cash": 545.5819993836844,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3561,7 +3561,7 @@
   {
    "placed_at": "2026-11-20T04:04:21.551662+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Cavaliers",
    "market": "Spread: Cavaliers (-5.5)",
    "link": "https://polymarket.com/event/nba-ind-cle-2026-11-20",
@@ -3574,10 +3574,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.55,
-   "avg_price": 0.56,
-   "shares": 15.00221741781695,
-   "cost": 8.66,
-   "fees": 0.26,
+   "avg_price": 0.5445,
+   "shares": 31.095393436244642,
+   "cost": 17.48,
+   "fees": 0.55,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -3593,7 +3593,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-20T14:56:17.207864+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-20T04:04:22.097991+00:00",
@@ -4363,6 +4366,78 @@
    "quotes": {
     "prophetx": 0.5124,
     "kalshi": 0.528
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T14:56:18.109161+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Bowling Green vs. Toledo: O/U 47.5",
+   "link": "https://polymarket.com/event/cfb-bowlgr-toledo-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x84e132cc731dfa4c8154d3ace4753f7a2748440b70d61be7c25b804ef74d81f4",
+   "token_id": "47022052905280096215069856021737046451737579640186671291338666802971757072070",
+   "outcome_index": 0,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.4566,
+   "shares": 19.108140753455597,
+   "cost": 8.82,
+   "fees": 0.0948,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "44c3dbba3eeb73658ba37909bf3e1b5a",
+    "fee_rate": 0.02,
+    "event_id": 1704742416
+   },
+   "quotes": {
+    "prophetx": 0.4616
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T14:56:20.799156+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Georgia State Panthers",
+   "market": "Georgia State Panthers vs. Jacksonville State Gamecocks",
+   "link": "https://polymarket.com/event/cbb-gast-jaxst-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x96ec86c9b8273c1a5e3764879eff0a89a8951ea15e93a9674f405e111b684031",
+   "token_id": "89924408442788392483390047891483570613061573789390442955199931876870343088384",
+   "outcome_index": 0,
+   "ends": "2026-11-21T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.495,
+   "shares": 17.638270927269165,
+   "cost": 8.82,
+   "fees": 0.0882,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "925dc157f49eafaf671775a925a1b00a",
+    "fee_rate": 0.02,
+    "event_id": 1704759690
+   },
+   "quotes": {
+    "prophetx": 0.5
    },
    "intl_cost_per_share": 0.5225,
    "payout": null,

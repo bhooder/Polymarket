@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1041.534689405565,
+ "cash": 1018.7646894055649,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14051,6 +14051,42 @@
     "prophetx": 0.4534
    },
    "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T14:56:16.246235+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Bowling Green vs. Toledo: O/U 47.5",
+   "link": "https://polymarket.com/event/cfb-bowlgr-toledo-2026-11-20",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x84e132cc731dfa4c8154d3ace4753f7a2748440b70d61be7c25b804ef74d81f4",
+   "token_id": "47022052905280096215069856021737046451737579640186671291338666802971757072070",
+   "outcome_index": 0,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.5,
+   "traders_entry": 0.48,
+   "avg_price": 0.4566,
+   "shares": 49.33020010841088,
+   "cost": 22.77,
+   "fees": 0.2448,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "44c3dbba3eeb73658ba37909bf3e1b5a",
+    "fee_rate": 0.02,
+    "event_id": 1704742416
+   },
+   "quotes": {
+    "prophetx": 0.4616
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,
