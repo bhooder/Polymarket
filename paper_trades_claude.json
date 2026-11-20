@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 633.7813826734516,
+ "cash": 616.1413826734515,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4108,6 +4108,78 @@
     "kalshi": 0.6168
    },
    "intl_cost_per_share": 0.5922,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T08:43:10.884772+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "UNLV vs. San Jose State: O/U 45.5",
+   "link": "https://polymarket.com/event/cfb-unlv-sjst-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0362139acf4ac50505cf64174b9eea79a276c450ff8070b39f3a05bda03fef8f",
+   "token_id": "47781163948468031950862054314929682180009981473218551698275471938363694291609",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.4464,
+   "shares": 19.540459201695516,
+   "cost": 8.82,
+   "fees": 0.0966,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "190af4d1510aa79774ef153183574318",
+    "fee_rate": 0.02,
+    "event_id": 1704742504
+   },
+   "quotes": {
+    "prophetx": 0.4514
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T08:43:11.372816+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Iowa",
+   "market": "Spread: Iowa (-8.5)",
+   "link": "https://polymarket.com/event/cfb-iowa-ill-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4dbf824512f02cc4a015e6653b073ecb3aec0913b718e6f892244ade35827da2",
+   "token_id": "15329905885283682691857266300227530422776747397270291923804454371115386211125",
+   "outcome_index": 0,
+   "ends": "2026-11-21T19:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.505,
+   "shares": 16.680925989974895,
+   "cost": 8.82,
+   "fees": 0.3961,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-iowa-ill-2026-11-21-neg-8pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5287
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
