@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1162.715748543916,
+ "cash": 1202.1985120749282,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4798,7 +4798,7 @@
   },
   {
    "placed_at": "2026-11-19T03:39:22.457803+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Texans",
    "market": "Spread: Texans (-13.5)",
@@ -4828,9 +4828,9 @@
     "kalshi": 0.4775
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.36,
+   "profit": 27.38,
+   "settled_at": "2026-11-20T05:02:16.086468+00:00",
    "topped_up_at": "2026-11-19T06:50:56.311870+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 30.3,
@@ -4874,6 +4874,43 @@
    "settled_at": "2026-11-20T04:02:15.071716+00:00",
    "topped_up_at": null,
    "close": 0.545
+  },
+  {
+   "placed_at": "2026-11-20T05:04:18.249826+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jets",
+   "market": "Jets vs. Chargers",
+   "link": "https://polymarket.com/event/nfl-nyj-lac-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac",
+   "token_id": "81344676502650843287567158829925081886760336256751645678798613844627827398977",
+   "outcome_index": 0,
+   "ends": "2026-11-22T21:05:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.4,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 28.502879078694818,
+   "cost": 11.88,
+   "fees": 0.48,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV22NYJLAC-NYJ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4168,
+    "polymarket_us": 0.4177
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

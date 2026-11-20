@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+5f7f714b1f6f,2026-11-20T05:04:22Z,status_change,0xc660ae7176,0xc660ae71765d0d9eaf5fa8328c1c959841d2bd28,HowIMetJoeMomma,196,53445.94941473003,2979159.370437,scanned,off_board,,0.0,0.1,0,0,0,0
+16df8282e9ca,2026-11-20T05:04:22Z,status_change,0xe8c4d68aff,0xe8c4d68aff65b38cac46987b9b65e01eb47d395d,JAMJAMJAM4,199,52868.489087720576,1226249.6100039997,scanned,off_board,,0.0,0.5,0,45206.3907,27,0
+47dd018125e7,2026-11-20T05:04:22Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,,,,,off_board,scanned,,,,,,,
+75b701d0f2cb,2026-11-20T05:04:22Z,status_change,0xd3911bd5e0,0xd3911bd5e070c9ad9a9519c966347802d8f3b109,,,,,off_board,scanned,,,,,,,

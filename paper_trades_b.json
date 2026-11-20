@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1102.860615027198,
+ "cash": 1128.0548985793125,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13374,7 +13374,7 @@
   },
   {
    "placed_at": "2026-11-18T22:36:18.191262+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Texans",
    "market": "Colts vs. Texans",
@@ -13404,9 +13404,9 @@
     "prophetx": 0.8596
    },
    "intl_cost_per_share": 0.8538,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.19,
+   "profit": 3.53,
+   "settled_at": "2026-11-20T05:02:16.256316+00:00",
    "topped_up_at": "2026-11-19T00:26:14.742698+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.6,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1162.643200448361,
+ "cash": 1176.171739028563,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5315,7 +5315,7 @@
   },
   {
    "placed_at": "2026-11-19T06:50:56.917446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Texans",
    "market": "Colts vs. Texans",
@@ -5344,9 +5344,9 @@
     "kalshi": 0.8596
    },
    "intl_cost_per_share": 0.8538,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.53,
+   "profit": 1.9,
+   "settled_at": "2026-11-20T05:02:16.287759+00:00",
    "topped_up_at": null,
    "close": 0.835
   },
