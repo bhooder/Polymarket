@@ -13410,7 +13410,8 @@
    "topped_up_at": "2026-11-19T00:26:14.742698+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 4.6,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.835
   },
   {
    "placed_at": "2026-11-18T22:36:18.838629+00:00",
