@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1117.6963405449794,
+ "cash": 1162.643200448361,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5352,7 +5352,7 @@
   },
   {
    "placed_at": "2026-11-19T11:29:19.093423+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Clippers vs. Spurs: O/U 225.5",
@@ -5381,9 +5381,9 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.62,
+   "settled_at": "2026-11-20T04:02:15.343384+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
@@ -5465,7 +5465,7 @@
   },
   {
    "placed_at": "2026-11-19T19:51:58.787807+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Knicks",
    "market": "Knicks vs. Timberwolves",
@@ -5494,9 +5494,9 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.95,
+   "profit": 21.67,
+   "settled_at": "2026-11-20T04:02:15.355659+00:00",
    "topped_up_at": "2026-11-19T20:41:50.878462+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 2.9,

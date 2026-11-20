@@ -4839,7 +4839,7 @@
   },
   {
    "placed_at": "2026-11-19T15:43:49.752925+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Warriors",
    "market": "Spread: Grizzlies (-6.5)",
@@ -4869,9 +4869,9 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.99,
+   "settled_at": "2026-11-20T04:02:15.071716+00:00",
    "topped_up_at": null,
    "close": 0.545
   }
