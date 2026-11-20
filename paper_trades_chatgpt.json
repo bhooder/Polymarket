@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 958.8244820167017,
+ "cash": 948.9444820167017,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -643,6 +643,42 @@
     "prophetx": 0.51
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T18:46:11.703676+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "UCF",
+   "market": "Iowa State vs. UCF",
+   "link": "https://polymarket.com/event/cfb-iowast-ucf-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x19fa273e9d90d951d75778d943b76d0134e503d261d41164b67676bc3905bf80",
+   "token_id": "95420723392330896948987221862815336361686836852072964524375584713591014771163",
+   "outcome_index": 1,
+   "ends": "2026-11-20T23:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 23.2,
+   "traders_entry": 0.49,
+   "avg_price": 0.4854,
+   "shares": 20.14547760907169,
+   "cost": 9.88,
+   "fees": 0.1006,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "68ffb7dc611647bf8f57c23f35022fd9",
+    "fee_rate": 0.02,
+    "event_id": 1704742182
+   },
+   "quotes": {
+    "prophetx": 0.4904
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
