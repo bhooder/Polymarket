@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1105.6220912561607,
+ "cash": 1096.2001095837668,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5649,6 +5649,43 @@
     "prophetx": 0.4701
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T14:01:22.657722+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Magic vs. Nets",
+   "link": "https://polymarket.com/event/nba-orl-bkn-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 0.802,
+   "condition_id": "0x18e150597c8306aa03c0142dffe805e34acab4fd431f219d2b68a01d295bcefa",
+   "token_id": "87306238614048256570377696512721236935594566007967913043573191109683767225212",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 4.9,
+   "traders_entry": 0.31,
+   "avg_price": 0.32,
+   "shares": 28.099942726231387,
+   "cost": 9.42,
+   "fees": 0.43,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20ORLBKN-BKN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3353,
+    "polymarket_us": 0.3407
+   },
+   "intl_cost_per_share": 0.3207,
    "payout": null,
    "profit": null,
    "settled_at": null,

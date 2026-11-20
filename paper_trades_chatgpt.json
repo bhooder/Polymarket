@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 978.5760760366998,
+ "cash": 968.7044820167017,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -569,6 +569,44 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T14:01:31.367685+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bulls",
+   "market": "Wizards vs. Bulls",
+   "link": "https://polymarket.com/event/nba-was-chi-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa79a100781ef911fdb98a31872e523fb6948eb64808a4839b018467be9979cc1",
+   "token_id": "41024767075509045350396118618175104026929253970976960381798658431018342801215",
+   "outcome_index": 1,
+   "ends": "2026-11-21T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 20.8,
+   "traders_entry": 0.57,
+   "avg_price": 0.57,
+   "shares": 16.809814070172035,
+   "cost": 9.87,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20WASCHI-CHI",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5812,
+    "kalshi": 0.5873,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5922,
    "payout": null,
    "profit": null,
    "settled_at": null,
