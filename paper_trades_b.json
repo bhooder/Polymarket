@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 908.5520534224644,
+ "cash": 874.3938269656932,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14205,7 +14205,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-20T19:50:28.011833+00:00",
@@ -14350,6 +14351,117 @@
     "prophetx": 0.4904
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T23:15:02.300201+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Air Force",
+   "market": "Spread: Air Force (-21.5)",
+   "link": "https://polymarket.com/event/cfb-utep-airf-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa5e4cf9af0e473291df0c66a895636001d0d68b38644cd73c0303fd9331a4e56",
+   "token_id": "50330674191161034940464349238090774256709328771627571009904625865456816649855",
+   "outcome_index": 0,
+   "ends": "2026-11-21T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.3,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 21.74701670644391,
+   "cost": 11.39,
+   "fees": 0.5165,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-utep-airf-2026-11-20-pos-21pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.5172,
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T23:15:02.772625+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hornets",
+   "market": "Spread: Hawks (-7.5)",
+   "link": "https://polymarket.com/event/nba-cha-atl-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xebca3383d80735af20076599235cc1719729ee8440c92360ad59f819d89b53fe",
+   "token_id": "11376846649846397637629515718287737992489767404893188768280033139373736291692",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.1,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 21.99033816425121,
+   "cost": 11.39,
+   "fees": 0.39,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV20CHAATL-ATL8",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5177,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T23:15:03.096173+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Pacers vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-ind-cle-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6ad48f25a9bead17075c5e0b48465666fed02a82ad934e04af0d9a756f20c006",
+   "token_id": "115515892240500244043257313770492023352969430423377059140259632364977138701720",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.0,
+   "traders_entry": 0.68,
+   "avg_price": 0.67,
+   "shares": 16.601578171112966,
+   "cost": 11.38,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20INDCLE-CLE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6857,
+    "polymarket_us": 0.7007
+   },
+   "intl_cost_per_share": 0.6909,
    "payout": null,
    "profit": null,
    "settled_at": null,
