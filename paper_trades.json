@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1153.6385120749278,
+ "cash": 1141.4985120749277,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5056,6 +5056,44 @@
     "prophetx": 0.51
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T16:47:22.178702+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Buccaneers",
+   "market": "Spread: Lions (-6.5)",
+   "link": "https://polymarket.com/event/nfl-tb-det-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa184e6b235be74f34ea95fcc0f1cd071a873026cb61dcfca45836711e206ee1f",
+   "token_id": "107776594576568324141439077119198995354660331429305681412333604658518172960479",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.6,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 21.926636076540937,
+   "cost": 12.14,
+   "fees": 0.5189,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-tb-det-2026-11-22-pos-6pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5537,
+    "prophetx": 0.5545,
+    "kalshi": 0.5678
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,
