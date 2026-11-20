@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 642.6013826734517,
+ "cash": 633.7813826734516,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3413,7 +3413,7 @@
   },
   {
    "placed_at": "2026-11-19T23:19:59.945944+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Santa Clara Broncos",
    "market": "Spread: Santa Clara Broncos (-1.5)",
@@ -3442,9 +3442,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.92,
+   "settled_at": "2026-11-20T07:27:01.696329+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -4071,6 +4071,43 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-20T07:28:50.824502+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Spread: Thunder (-13.5)",
+   "link": "https://polymarket.com/event/nba-nop-okc-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd3cfef8ee320ae4c4896c9dbb13d0e8759ebcb1fd1fab16d3b5416a073a18b62",
+   "token_id": "15118641829042945891808077296360696463615776550193676955792811352019578302279",
+   "outcome_index": 1,
+   "ends": "2026-11-21T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.5868,
+   "shares": 14.908060494112213,
+   "cost": 8.82,
+   "fees": 0.0723,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b1e6359673d461d3d0fac8f3282cbc96",
+    "fee_rate": 0.02,
+    "event_id": 1704770147
+   },
+   "quotes": {
+    "prophetx": 0.5916,
+    "kalshi": 0.6168
+   },
+   "intl_cost_per_share": 0.5922,
    "payout": null,
    "profit": null,
    "settled_at": null,

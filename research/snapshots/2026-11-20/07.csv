@@ -1,0 +1,3 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+d267bdc70dbf,2026-11-20T07:28:52Z,top100,f4f7260e65d5,first_seen,5841321860753880677665263161188294918028904435079220411623273915794750890408,0x7d6daa440acea61e63ac5935829a2e45ed374572948eb1e0898ece3445ed7c92,bun-bay-koe-2026-11-20-exact-score,bun,Exact Score: FC Bayern München 3 - 0 1. FC Köln?,No,2026-11-20T19:30:00Z,3,0,1,0,9.0,1818,0,0.9,0.91,0,0,3,0,0.47,,,
+fcac70ae7f6f,2026-11-20T07:28:52Z,top200,f4f7260e65d5,counts,,,,,,,,3,1,1,0,9.0,1818,261,0.9,0.91,0,0,3,0,0.47,,3,0
