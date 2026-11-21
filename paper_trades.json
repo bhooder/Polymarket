@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1228.9489519681072,
+ "cash": 1234.7468321259864,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5142,7 +5142,7 @@
   },
   {
    "placed_at": "2026-11-20T18:46:06.395900+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Hurricanes",
    "market": "Oilers vs. Hurricanes",
@@ -5173,9 +5173,9 @@
     "polymarket_us": 0.6521
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.77,
+   "profit": 6.64,
+   "settled_at": "2026-11-21T21:26:43.852914+00:00",
    "topped_up_at": null,
    "close": 0.695
   },
@@ -5362,6 +5362,44 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T21:29:37.437613+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maple Leafs",
+   "market": "Blue Jackets vs. Maple Leafs",
+   "link": "https://polymarket.com/event/nhl-cbj-tor-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x37ca77a1e69292e0f76fdb3b9df913d039f4c8d22f9ffb4c6e589333ddc68f8b",
+   "token_id": "59454341401320056616025990809383947134650489939755195691119958787515912327348",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.8,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 23.85454063916191,
+   "cost": 12.97,
+   "fees": 0.5656,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-cbj-tor-2026-11-21",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.5333,
+    "polymarket_us": 0.5437,
+    "kalshi": 0.5477
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,

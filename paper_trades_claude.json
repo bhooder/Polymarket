@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 491.09503465157303,
+ "cash": 513.6764111311454,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5222,7 +5222,7 @@
   },
   {
    "placed_at": "2026-11-21T05:56:25.397963+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "BYU",
    "market": "Spread: BYU (-3.5)",
@@ -5251,9 +5251,9 @@
     "polymarket_us": 0.5785
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.98,
+   "settled_at": "2026-11-21T21:26:45.826111+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
@@ -5446,7 +5446,7 @@
   },
   {
    "placed_at": "2026-11-21T10:49:17.130305+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Oilers",
    "market": "Oilers vs. Hurricanes",
@@ -5477,9 +5477,9 @@
     "polymarket_us": 0.3819
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.28,
+   "settled_at": "2026-11-21T21:26:46.019387+00:00",
    "topped_up_at": null,
    "close": 0.305
   },
@@ -6078,7 +6078,7 @@
   },
   {
    "placed_at": "2026-11-21T14:25:47.617112+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will New England Revolution win on 2026-11-21?",
@@ -6108,9 +6108,9 @@
     "polymarket_us": 0.3407
    },
    "intl_cost_per_share": 0.3309,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.58,
+   "profit": 15.0,
+   "settled_at": "2026-11-21T21:26:46.371388+00:00",
    "topped_up_at": null,
    "close": 0.305
   },

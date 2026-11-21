@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 803.525320906245,
+ "cash": 839.7453877412369,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14753,7 +14753,7 @@
   },
   {
    "placed_at": "2026-11-21T05:56:24.785975+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "BYU",
    "market": "Spread: BYU (-5.5)",
@@ -14782,9 +14782,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.35,
+   "settled_at": "2026-11-21T21:26:44.235841+00:00",
    "topped_up_at": "2026-11-21T16:10:19.123546+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.7,
@@ -15699,7 +15699,7 @@
   },
   {
    "placed_at": "2026-11-21T18:26:04.393719+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "New England Revolution vs. Philadelphia Union: O/U 2.5",
@@ -15729,9 +15729,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 46.16,
+   "profit": 28.59,
+   "settled_at": "2026-11-21T21:26:44.478913+00:00",
    "topped_up_at": null,
    "close": 0.375
   },
@@ -15805,6 +15805,42 @@
     "polymarket_us": 0.834
    },
    "intl_cost_per_share": 0.8274,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T21:29:38.289400+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maryland",
+   "market": "Spread: USC (-16.5)",
+   "link": "https://polymarket.com/event/cfb-mary-usc-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe4cc8f8c865418b6109a92c2de6d0c6de62c0cc72aba042989fab4887d1a54c3",
+   "token_id": "5092652071806320675736756235015971832786126675699813811653751161823946761934",
+   "outcome_index": 1,
+   "ends": "2026-11-21T23:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.43,
+   "avg_price": 0.435,
+   "shares": 21.68654918513173,
+   "cost": 9.94,
+   "fees": 0.5064,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-mary-usc-2026-11-21-pos-16pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4583
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,

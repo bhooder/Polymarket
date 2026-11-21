@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 874.7080383102792,
+ "cash": 908.365793478254,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6799,7 +6799,7 @@
   },
   {
    "placed_at": "2026-11-21T18:26:09.119432+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "New England Revolution vs. Philadelphia Union: O/U 2.5",
@@ -6828,9 +6828,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 44.04,
+   "profit": 26.32,
+   "settled_at": "2026-11-21T21:26:44.907080+00:00",
    "topped_up_at": null,
    "close": 0.375
   },
@@ -6905,6 +6905,42 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T21:29:39.679961+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Maryland",
+   "market": "Spread: USC (-16.5)",
+   "link": "https://polymarket.com/event/cfb-mary-usc-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe4cc8f8c865418b6109a92c2de6d0c6de62c0cc72aba042989fab4887d1a54c3",
+   "token_id": "5092652071806320675736756235015971832786126675699813811653751161823946761934",
+   "outcome_index": 1,
+   "ends": "2026-11-21T23:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.43,
+   "avg_price": 0.435,
+   "shares": 22.646517157109397,
+   "cost": 10.38,
+   "fees": 0.5288,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-mary-usc-2026-11-21-pos-16pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4583
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,0 +1,8 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+357c64c0af06,2026-11-21T21:29:43Z,status_change,0x1bc32be106,0x1bc32be106439240f59aa25668e613831a5cdc6e,0x1bc32be106439240f59aa25668e613831a5cdc6e,126,96942.88321599993,6398384.16820201,skipped_bot,scanned,,0.584,488.2,1,,,
+f42dba0da98d,2026-11-21T21:29:43Z,status_change,0x906fd5683e,0x906fd5683ec51f215164f55b06bbee2b0f1288b4,Moneyloverman,197,51621.56050000006,3324570.792204,scanned,off_board,,0.0,0.1,0,0,0,0
+5809ae1c6507,2026-11-21T21:29:43Z,status_change,0xe015b5a2a2,0xe015b5a2a299167be835a2fd1e86f09c49e06ffd,PacersThreeandahalf,198,51077.59278461001,7713865.438582996,scanned,off_board,,0.0,1.4,0,279184.0438,16,1
+f0933ce20bb1,2026-11-21T21:29:43Z,status_change,0x6bab41a0dc,0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292,Dropper,200,50885.94867013447,252498.80365700004,scanned,off_board,,0.0,0.1,0,345605.3032,14,0
+68a87af89067,2026-11-21T21:29:43Z,status_change,0x5016c48436,0x5016c48436ab3efa2ab54b117d0c08fa1a4a1eeb,,,,,off_board,scanned,,,,,,,
+a8b81108fa53,2026-11-21T21:29:43Z,status_change,0x5ce7b625f5,0x5ce7b625f5724347091a4b95c927175cc0bc086e,,,,,off_board,scanned,,,,,,,
+e0e13bd132ed,2026-11-21T21:29:43Z,status_change,0x5e4ead9b5a,0x5e4ead9b5a091ced2ae0a99f27b1735470f7825f,,,,,off_board,scanned,,,,,,,
