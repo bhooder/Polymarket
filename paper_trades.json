@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1117.2247475754637,
+ "cash": 1105.0905065738987,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4947,7 +4947,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-20T14:01:20.796981+00:00",
@@ -5169,6 +5170,44 @@
     "polymarket_us": 0.6521
    },
    "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T00:02:55.923209+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Pacers vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-ind-cle-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6ad48f25a9bead17075c5e0b48465666fed02a82ad934e04af0d9a756f20c006",
+   "token_id": "115515892240500244043257313770492023352969430423377059140259632364977138701720",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 19.1,
+   "traders_entry": 0.67,
+   "avg_price": 0.68,
+   "shares": 17.44741323759551,
+   "cost": 12.13,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20INDCLE-CLE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.6869,
+    "kalshi": 0.6955,
+    "polymarket_us": 0.7007
+   },
+   "intl_cost_per_share": 0.6811,
    "payout": null,
    "profit": null,
    "settled_at": null,

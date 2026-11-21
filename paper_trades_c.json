@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 991.5885726009244,
+ "cash": 944.5560060907522,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5579,7 +5579,8 @@
    "topped_up_at": "2026-11-20T12:42:55.873502+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.4,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-20T11:40:27.453883+00:00",
@@ -5911,6 +5912,120 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-21T00:03:02.350458+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cavaliers",
+   "market": "Pacers vs. Cavaliers",
+   "link": "https://polymarket.com/event/nba-ind-cle-2026-11-20",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6ad48f25a9bead17075c5e0b48465666fed02a82ad934e04af0d9a756f20c006",
+   "token_id": "115515892240500244043257313770492023352969430423377059140259632364977138701720",
+   "outcome_index": 1,
+   "ends": "2026-11-21T00:30:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 19.1,
+   "traders_entry": 0.67,
+   "avg_price": 0.68,
+   "shares": 16.90083310319433,
+   "cost": 11.75,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV20INDCLE-CLE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.6869,
+    "kalshi": 0.6954,
+    "polymarket_us": 0.7007
+   },
+   "intl_cost_per_share": 0.6811,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T00:03:03.809379+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Thunder",
+   "market": "Spread: Thunder (-11.5)",
+   "link": "https://polymarket.com/event/nba-nop-okc-2026-11-20",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa63037e2f94ae9b6940edda2346246297de7632c96d589df1819d6dce2be8328",
+   "token_id": "100430897557920798200198262696058626762063345439833401599704404599154593055301",
+   "outcome_index": 0,
+   "ends": "2026-11-21T01:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.4717,
+   "shares": 49.34106049290515,
+   "cost": 23.52,
+   "fees": 0.2459,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "506ee4770ba8632d864e1cecdce66001",
+    "fee_rate": 0.02,
+    "event_id": 1704770147
+   },
+   "quotes": {
+    "prophetx": 0.4767,
+    "kalshi": 0.4976
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T00:03:04.429301+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Newcastle United FC vs. Arsenal FC: O/U 2.5",
+   "link": "https://polymarket.com/event/epl-new-ars-2026-11-21-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3e6b83beaafd38861f9037d5d8c139762956a6a9f04a120a307ceaebdabb77f4",
+   "token_id": "86063013408387222895463833011589236666075278013552692513665684113524090189156",
+   "outcome_index": 1,
+   "ends": "2026-11-21T17:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.43,
+   "avg_price": 0.431,
+   "shares": 26.97622911694511,
+   "cost": 11.76,
+   "fees": 0.1323,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1e7342069a104dc608d8ea4f207466cc",
+    "fee_rate": 0.02,
+    "event_id": 90114172
+   },
+   "quotes": {
+    "prophetx": 0.4359,
+    "kalshi": 0.4475,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
    "payout": null,
    "profit": null,
    "settled_at": null,
