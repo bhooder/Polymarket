@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 839.7453877412369,
+ "cash": 881.0116114418745,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14832,7 +14832,7 @@
   },
   {
    "placed_at": "2026-11-21T08:20:01.236009+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SSC Napoli win on 2026-11-21?",
@@ -14862,9 +14862,9 @@
     "kalshi": 0.3763
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.34,
+   "settled_at": "2026-11-21T22:14:55.459930+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -15737,7 +15737,7 @@
   },
   {
    "placed_at": "2026-11-21T19:19:54.504514+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "SSC Napoli vs. Torino FC: O/U 2.5",
@@ -15767,9 +15767,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.27,
+   "profit": 21.57,
+   "settled_at": "2026-11-21T22:14:55.837915+00:00",
    "topped_up_at": null,
    "close": 0.455
   },

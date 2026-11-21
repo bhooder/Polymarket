@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+870f7a029b96,2026-11-21T22:18:33Z,status_change,0x5016c48436,0x5016c48436ab3efa2ab54b117d0c08fa1a4a1eeb,0x5016c48436AB3eFA2Ab54b117d0C08fa1a4a1eEB-1778328420816,159,65081.29118835001,731414.010147,scanned,off_board,,0.0,0.3,0,84933.5862,1,0
+5d562e07c08f,2026-11-21T22:18:33Z,status_change,0xee00ba338c,0xee00ba338c59557141789b127927a55f5cc5cea1,S-Works,174,59473.84053693502,2201299.441606,scanned,off_board,,0.0,0.1,0,2370001.1136,6,1
+f60a82233d0a,2026-11-21T22:18:33Z,status_change,0xfed8ff0b54,0xfed8ff0b541ce9a66d632aedebe81bdd1b2c4388,JudgeLance,177,59317.694793579925,835838.081734,scanned,off_board,,0.323,0.0,0,293639.528,7,0
+eb9127cf71e6,2026-11-21T22:18:33Z,status_change,0x4e56f1ddaa,0x4e56f1ddaa8f5328036c449b89e731ec748cdee1,BreadGet,200,50463.855309505016,502432.85248400003,scanned,off_board,,0.004,0.1,0,21522.8305,1,0
+1a1b97528d04,2026-11-21T22:18:33Z,status_change,0x9a933a2a83,0x9a933a2a83188b28efaf1d07d45228ea6ee82793,,,,,off_board,scanned,,,,,,,
+486aa4d236ca,2026-11-21T22:18:33Z,status_change,0xc29198ad76,0xc29198ad764bd6adaf7bb971a3757a689ece5d74,,,,,off_board,scanned,,,,,,,
+32a3afb8d9d8,2026-11-21T22:18:33Z,status_change,0xd9e0aaca47,0xd9e0aaca471f489be338fd0f91a26e8669a805f2,,,,,off_board,scanned,,,,,,,
+cb5307f294ca,2026-11-21T22:18:33Z,status_change,0xe015b5a2a2,0xe015b5a2a299167be835a2fd1e86f09c49e06ffd,,,,,off_board,scanned,,,,,,,
