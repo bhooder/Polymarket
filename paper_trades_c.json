@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 829.5488073334602,
+ "cash": 799.6842170391086,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6370,7 +6370,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.895
   },
   {
    "placed_at": "2026-11-21T12:22:34.040237+00:00",
@@ -6404,6 +6405,79 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T13:29:27.791390+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Trail Blazers vs. Knicks: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-por-nyk-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x789f7fe65e13ec1497df0649b5996a6f89f65464e3e0b3513df8ba866883eeb9",
+   "token_id": "17954262169229198041125717660167611688827546889013754228575229259983413583229",
+   "outcome_index": 0,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.4809,
+   "shares": 40.972451754437586,
+   "cost": 19.91,
+   "fees": 0.2046,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9b737b43851f29a134fcb113e141f13b",
+    "fee_rate": 0.02,
+    "event_id": 1704772813
+   },
+   "quotes": {
+    "prophetx": 0.4859
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T13:29:28.640802+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Cagliari Calcio win on 2026-11-21?",
+   "link": "https://polymarket.com/event/sea-com-cag-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x93e2cdbaee558b25703f2aa3579b0a8086517a4fc224dbacb42a01bf138ef1bb",
+   "token_id": "106511071434176043000898521255289781629526149322566169492709083851169011050378",
+   "outcome_index": 1,
+   "ends": "2026-11-21T14:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.92,
+   "avg_price": 0.92,
+   "shares": 10.754989450382208,
+   "cost": 9.95,
+   "fees": 0.06,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV21COMCAG-CAG",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9256,
+    "polymarket_us": 0.927
+   },
+   "intl_cost_per_share": 0.9237,
    "payout": null,
    "profit": null,
    "settled_at": null,

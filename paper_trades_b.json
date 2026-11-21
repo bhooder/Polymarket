@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 719.2275202837236,
+ "cash": 690.7603126464921,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14930,7 +14930,8 @@
    "topped_up_at": "2026-11-21T11:33:14.656996+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 21.7,
-   "top_up_size_multiplier": 0.783
+   "top_up_size_multiplier": 0.783,
+   "close": 0.285
   },
   {
    "placed_at": "2026-11-21T11:33:18.787848+00:00",
@@ -14966,7 +14967,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-21T12:22:30.067918+00:00",
@@ -15109,6 +15111,79 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T13:29:24.329708+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Trail Blazers vs. Knicks: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-por-nyk-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x789f7fe65e13ec1497df0649b5996a6f89f65464e3e0b3513df8ba866883eeb9",
+   "token_id": "17954262169229198041125717660167611688827546889013754228575229259983413583229",
+   "outcome_index": 0,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.4808,
+   "shares": 39.06705010960637,
+   "cost": 18.98,
+   "fees": 0.195,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9b737b43851f29a134fcb113e141f13b",
+    "fee_rate": 0.02,
+    "event_id": 1704772813
+   },
+   "quotes": {
+    "prophetx": 0.4858
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T13:29:26.982622+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Cagliari Calcio win on 2026-11-21?",
+   "link": "https://polymarket.com/event/sea-com-cag-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x93e2cdbaee558b25703f2aa3579b0a8086517a4fc224dbacb42a01bf138ef1bb",
+   "token_id": "106511071434176043000898521255289781629526149322566169492709083851169011050378",
+   "outcome_index": 1,
+   "ends": "2026-11-21T14:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.92,
+   "avg_price": 0.92,
+   "shares": 10.24696482307772,
+   "cost": 9.49,
+   "fees": 0.06,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV21COMCAG-CAG",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9259,
+    "polymarket_us": 0.927
+   },
+   "intl_cost_per_share": 0.9237,
    "payout": null,
    "profit": null,
    "settled_at": null,
