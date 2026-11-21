@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1026.8294693630191,
+ "cash": 1016.4594693630191,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -794,6 +794,43 @@
     "kalshi": 0.528
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T18:26:12.438540+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Timberwolves",
+   "market": "Spread: Timberwolves (-6.5)",
+   "link": "https://polymarket.com/event/nba-mem-min-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x55657701302f2998683532494462cec1ddbc2d1bf80a1269a71d93968d973f2b",
+   "token_id": "27064899709052001549683206757446331944258148952747348517537785834648425330178",
+   "outcome_index": 0,
+   "ends": "2026-11-22T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 26.6,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 20.185288097784774,
+   "cost": 10.37,
+   "fees": 0.4792,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-mem-min-2026-11-21-pos-6pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5137,
+    "kalshi": 0.518
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,

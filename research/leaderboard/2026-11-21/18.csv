@@ -1,0 +1,4 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+e243a50e6a30,2026-11-21T18:26:15Z,status_change,0x1bc32be106,0x1bc32be106439240f59aa25668e613831a5cdc6e,0x1bc32be106439240f59aa25668e613831a5cdc6e,117,103594.93509939994,6304174.561535008,skipped_bot,scanned,,0.532,233.5,1,,,
+e3c4aa976709,2026-11-21T18:26:15Z,status_change,0x91feec8af2,0x91feec8af2b517f024d91564ee108d707cc0c1c6,NordhavenCap,198,53108.52921776949,1822989.951900001,scanned,off_board,,0.0,4.5,0,8011.0577,4,2
+508b81288b3f,2026-11-21T18:26:15Z,status_change,0x906fd5683e,0x906fd5683ec51f215164f55b06bbee2b0f1288b4,,,,,off_board,scanned,,,,,,,

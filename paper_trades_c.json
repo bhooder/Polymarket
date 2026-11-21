@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 774.2627969118943,
+ "cash": 756.5427969118942,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6304,7 +6304,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-21T12:22:33.090440+00:00",
@@ -6794,6 +6795,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.525
+  },
+  {
+   "placed_at": "2026-11-21T18:26:09.119432+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "New England Revolution vs. Philadelphia Union: O/U 2.5",
+   "link": "https://polymarket.com/event/mls-ner-phi-2026-11-21-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.919,
+   "condition_id": "0x27181515a628362af192b5a58a74b6fe298d15c402d51d507e2f5cf1e5394930",
+   "token_id": "34321114397221070283385266697336180088572420048919433119188197373102760733871",
+   "outcome_index": 1,
+   "ends": "2026-11-21T19:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.4,
+   "avg_price": 0.38,
+   "shares": 44.03775516797471,
+   "cost": 17.72,
+   "fees": 0.9857,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-mls-ner-phi-2026-11-21-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
