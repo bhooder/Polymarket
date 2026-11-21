@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1030.7502698907933,
+ "cash": 1022.6802698907933,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -455,6 +455,43 @@
    "payout": 10.4,
    "profit": 0.1,
    "settled_at": "2026-11-19T23:17:47.475727+00:00",
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T11:33:21.200678+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Manchester City FC win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-mac-ful-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 0.783,
+   "condition_id": "0x3b1e53795b8062287b55aae4dc863a2c25973d106f8962b21ab0f7ec8205d525",
+   "token_id": "105978142021201504011396044711066923909125971049379554264054066288197860603645",
+   "outcome_index": 1,
+   "ends": "2026-11-21T12:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 21.7,
+   "traders_entry": 0.29,
+   "avg_price": 0.2985,
+   "shares": 26.66045775684428,
+   "cost": 8.07,
+   "fees": 0.1117,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "832e4738142d1ca5cf89a4cbbf5d6b7b",
+    "fee_rate": 0.02,
+    "event_id": 90114171
+   },
+   "quotes": {
+    "prophetx": 0.3027,
+    "kalshi": 0.3047
+   },
+   "intl_cost_per_share": 0.3105,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
    "topped_up_at": null
   }
  ]

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 609.8888419907349,
+ "cash": 600.7588419907349,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5467,6 +5467,44 @@
     "polymarket_us": 0.3819
    },
    "intl_cost_per_share": 0.3715,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T11:33:22.850395+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Celtics vs. Kings: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-bos-sac-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe229c5a5a5dbaa4908d1f3d29dbc75f13d8f0c49c3847b0d89ae607d9e2d9a5f",
+   "token_id": "29161318406208290403636269379240982527571108252141697915309633063376217942777",
+   "outcome_index": 1,
+   "ends": "2026-11-22T03:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5074,
+   "shares": 17.818525692635564,
+   "cost": 9.13,
+   "fees": 0.0891,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1d12675a2e2975112827c10686752da1",
+    "fee_rate": 0.02,
+    "event_id": 1704772877
+   },
+   "quotes": {
+    "prophetx": 0.5124,
+    "kalshi": 0.5279,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,

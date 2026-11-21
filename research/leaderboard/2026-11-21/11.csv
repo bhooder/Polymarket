@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+669372f63857,2026-11-21T11:33:29Z,status_change,0xc29198ad76,0xc29198ad764bd6adaf7bb971a3757a689ece5d74,SnakeBall,196,53270.64575575813,23304794.847475555,scanned,off_board,,0.0,15.6,0,56923.5763,146,20
+70d638628f5f,2026-11-21T11:33:29Z,status_change,0x4e56f1ddaa,0x4e56f1ddaa8f5328036c449b89e731ec748cdee1,,,,,off_board,scanned,,,,,,,
