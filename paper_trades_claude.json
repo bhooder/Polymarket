@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 458.8173035701552,
+ "cash": 458.84999365120507,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2590,7 +2590,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-19T02:42:59.352233+00:00",
@@ -4877,7 +4878,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-20T18:46:09.503169+00:00",
@@ -4951,7 +4953,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-21T02:19:24.544913+00:00",
@@ -5247,7 +5250,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.535
   },
   {
    "placed_at": "2026-11-21T07:05:58.598103+00:00",
@@ -5284,7 +5288,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-21T08:20:02.268321+00:00",
@@ -5698,7 +5703,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:37.486144+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Valencia CF win on 2026-11-21?",
@@ -5728,9 +5733,9 @@
     "polymarket_us": 0.7954
    },
    "intl_cost_per_share": 0.7886,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.12,
+   "settled_at": "2026-11-21T17:41:21.687157+00:00",
    "topped_up_at": null,
    "close": 0.765
   },
@@ -5770,7 +5775,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.645
   },
   {
    "placed_at": "2026-11-21T12:22:38.158512+00:00",
@@ -5991,7 +5997,7 @@
   },
   {
    "placed_at": "2026-11-21T14:25:46.431043+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will AFC Bournemouth win on 2026-11-21?",
@@ -6020,9 +6026,9 @@
     "kalshi": 0.498
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.33,
+   "profit": 9.2,
+   "settled_at": "2026-11-21T17:41:22.069728+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -6130,6 +6136,81 @@
     "kalshi": 0.5377
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T17:45:53.828326+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kennesaw State",
+   "market": "Spread: Kennesaw State (-2.5)",
+   "link": "https://polymarket.com/event/cfb-flint-kenest-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x26d4990c1467e7ea7bb9a21e79aadcc7705f3bf59c227436ab8e333f75186f7d",
+   "token_id": "86032961593314859484070110797210945371273666924692458250630601844385501861099",
+   "outcome_index": 0,
+   "ends": "2026-11-21T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.4975,
+   "shares": 18.208509013890257,
+   "cost": 9.15,
+   "fees": 0.091,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "dd9ad04dfdcc46f1ebe8e6e87cb6baf5",
+    "fee_rate": 0.02,
+    "event_id": 1704742480
+   },
+   "quotes": {
+    "prophetx": 0.5025,
+    "polymarket_us": 0.5187
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T17:45:55.204208+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Panthers",
+   "market": "Sabres vs. Panthers",
+   "link": "https://polymarket.com/event/nhl-buf-fla-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf4a78e64483f61ef94a344fa35b47985d62fadfa1a26a0ed1a7a6647c450a998",
+   "token_id": "92826036207422370203262301206439772799192865656287644708596465839004993658297",
+   "outcome_index": 1,
+   "ends": "2026-11-21T23:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.57,
+   "avg_price": 0.569,
+   "shares": 15.944366744366745,
+   "cost": 9.15,
+   "fees": 0.0782,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "6f93bba9705b49313aea09b3cbc69f76",
+    "fee_rate": 0.02,
+    "event_id": 1704770127
+   },
+   "quotes": {
+    "prophetx": 0.5739,
+    "kalshi": 0.5873,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

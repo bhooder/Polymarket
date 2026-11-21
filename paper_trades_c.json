@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 740.2540754856645,
+ "cash": 774.2627969118943,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6040,7 +6040,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-21T02:19:23.635996+00:00",
@@ -6156,7 +6157,7 @@
   },
   {
    "placed_at": "2026-11-21T04:01:28.671416+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Chelsea FC win on 2026-11-21?",
@@ -6185,9 +6186,9 @@
     "kalshi": 0.5079
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.78,
+   "settled_at": "2026-11-21T17:41:18.816005+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -6232,7 +6233,7 @@
   },
   {
    "placed_at": "2026-11-21T08:20:01.853507+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Nottingham Forest FC win on 2026-11-21?",
@@ -6261,9 +6262,9 @@
     "kalshi": 0.7826
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.72,
+   "profit": 2.77,
+   "settled_at": "2026-11-21T17:41:18.845323+00:00",
    "topped_up_at": null,
    "close": 0.745
   },
@@ -6491,7 +6492,7 @@
   },
   {
    "placed_at": "2026-11-21T14:25:44.644667+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Tottenham Hotspur FC win on 2026-11-21?",
@@ -6522,15 +6523,15 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.69,
+   "settled_at": "2026-11-21T17:41:19.051193+00:00",
    "topped_up_at": null,
    "close": 0.345
   },
   {
    "placed_at": "2026-11-21T14:25:44.836834+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Real Sociedad de F\u00fatbol B win on 2026-11-21?",
@@ -6559,15 +6560,15 @@
     "kalshi": 0.4674
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.29,
+   "profit": 11.34,
+   "settled_at": "2026-11-21T17:41:19.072161+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-21T14:25:45.339327+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Aston Villa FC win on 2026-11-21?",
@@ -6597,9 +6598,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.96,
+   "settled_at": "2026-11-21T17:41:19.082785+00:00",
    "topped_up_at": null,
    "close": 0.575
   },
@@ -6677,7 +6678,8 @@
    "topped_up_at": "2026-11-21T16:58:22.637811+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 0.7,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-21T16:58:23.541834+00:00",
@@ -6715,7 +6717,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.345
   },
   {
    "placed_at": "2026-11-21T16:58:24.287977+00:00",
@@ -6751,7 +6754,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-21T16:58:25.418812+00:00",
@@ -6788,7 +6792,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   }
  ]
 }

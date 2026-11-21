@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1006.5670224313326,
+ "cash": 1026.8294693630191,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -728,7 +728,7 @@
   },
   {
    "placed_at": "2026-11-21T14:25:48.042302+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will AFC Bournemouth win on 2026-11-21?",
@@ -757,9 +757,9 @@
     "kalshi": 0.4978
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.26,
+   "profit": 10.17,
+   "settled_at": "2026-11-21T17:45:55.283937+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
