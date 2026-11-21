@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+46158ce9f308,2026-11-21T16:58:31Z,status_change,0x983eedfbd7,0x983eedfbd75803602e4a6e6ea9aab6dc6b9c6748,3edmond.dantes,99,116267.41729200014,9895876.131322002,scanned,,,0.0,0.2,0,1198179.1807,1,0
+acbbde7a76b9,2026-11-21T16:58:31Z,status_change,0xa3358ec2bd,0xa3358ec2bd77abb2287f8d0db21597fa98cd7624,streajjkti888,150,73825.35788835495,499164.25812799996,scanned,,,0.0,,,392899.2337,2,0
+0e912423aef9,2026-11-21T16:58:31Z,status_change,0xaa6c296af0,0xaa6c296af0ceea224b56fb7ee1e9cab1ccabe2d0,ax2026,181,59075.91174529004,506022.89843400026,scanned,off_board,,0.0,4.5,0,189585.9232,22,0
+c9658338f94a,2026-11-21T16:58:31Z,status_change,0x336bf6f91a,0x336bf6f91a4619d54f0711a20fe468adf4d71233,,,,,off_board,scanned,,,,,,,
+cd46a17e300e,2026-11-21T16:58:31Z,status_change,0x6bab41a0dc,0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292,,,,,off_board,scanned,,,,,,,
+c8d433b543cb,2026-11-21T16:58:31Z,status_change,0x906fd5683e,0x906fd5683ec51f215164f55b06bbee2b0f1288b4,,,,,off_board,scanned,,,,,,,
