@@ -13904,7 +13904,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-20T11:40:26.055770+00:00",
@@ -14019,7 +14020,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.305
   },
   {
    "placed_at": "2026-11-20T14:01:22.095237+00:00",
@@ -14094,7 +14096,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-20T15:51:20.344352+00:00",
@@ -14170,7 +14173,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-20T19:50:27.596321+00:00",
@@ -14244,7 +14248,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-20T22:25:50.619106+00:00",
@@ -14392,7 +14397,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-20T23:15:02.772625+00:00",
@@ -14470,7 +14476,8 @@
    "topped_up_at": "2026-11-21T00:02:56.229610+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 19.1,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.665
   },
   {
    "placed_at": "2026-11-21T00:02:57.135991+00:00",
@@ -14507,7 +14514,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-21T00:02:58.991223+00:00",
@@ -14543,7 +14551,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-21T00:03:00.654255+00:00",
