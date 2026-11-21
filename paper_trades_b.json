@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 690.7603126464921,
+ "cash": 644.4934697074749,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14289,7 +14289,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-20T22:25:51.680753+00:00",
@@ -15184,6 +15185,117 @@
     "polymarket_us": 0.927
    },
    "intl_cost_per_share": 0.9237,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.915
+  },
+  {
+   "placed_at": "2026-11-21T14:25:41.760797+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Tottenham Hotspur FC win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-tot-ips-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 0.939,
+   "condition_id": "0x622452b1d91cefe137f30642ca142f70bfa7c5d8ce68884e3b0f4b58595f7bf5",
+   "token_id": "32384015219551205280233940081361023184560765435870334417971246005923142494083",
+   "outcome_index": 1,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.39,
+   "avg_price": 0.38,
+   "shares": 44.893717906035924,
+   "cost": 17.81,
+   "fees": 0.75,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV21TOTIPS-TOT",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3967,
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T14:25:41.982793+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Real Sociedad de F\u00fatbol B win on 2026-11-21?",
+   "link": "https://polymarket.com/event/es2-rso-cad-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8e197116921551c72afc06feb4f0d3a3182b556edbaa7dec1d386bb574a0d185",
+   "token_id": "47804102734025420444596237950955267384727017778340762425624114237075480935284",
+   "outcome_index": 1,
+   "ends": "2026-11-21T15:15:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.45,
+   "avg_price": 0.45,
+   "shares": 40.592735248488744,
+   "cost": 18.98,
+   "fees": 0.71,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGA2GAME-26NOV21RSOCAD-RSO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4675
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T14:25:42.881526+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Aston Villa FC win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-ast-sun-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe8c6c82c6ca47f145e18135cd8f0ae86a9c2d67b18cde73e6b64cfdaadf4d7ef",
+   "token_id": "74891491050085289344508579794119281312072378631728026166061386423139714292766",
+   "outcome_index": 0,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.55,
+   "avg_price": 0.55,
+   "shares": 16.709998678006432,
+   "cost": 9.48,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV21AVLSUN-AVL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5674,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,

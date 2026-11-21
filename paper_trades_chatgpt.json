@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1001.0040140459156,
+ "cash": 990.918039518706,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -725,6 +725,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.285
+  },
+  {
+   "placed_at": "2026-11-21T14:25:48.042302+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will AFC Bournemouth win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-bou-not-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb146d7376acd8ed1ea031a3c44b42a9c90e60b5a8c7fed3faeb7fa05eabe6c70",
+   "token_id": "104463245646576686266440127720107656415920789350733488678734945061945505049213",
+   "outcome_index": 0,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 15.7,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 20.262446931686608,
+   "cost": 10.09,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV21BOUNFO-BOU",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4978
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

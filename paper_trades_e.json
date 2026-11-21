@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1024.7589960588489,
+ "cash": 1014.5089960588489,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -271,6 +271,43 @@
    "settled_at": "2026-11-19T19:48:19.431718+00:00",
    "topped_up_at": null,
    "close": 0.974
+  },
+  {
+   "placed_at": "2026-11-21T14:25:45.778428+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will AFC Bournemouth win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-bou-not-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb146d7376acd8ed1ea031a3c44b42a9c90e60b5a8c7fed3faeb7fa05eabe6c70",
+   "token_id": "104463245646576686266440127720107656415920789350733488678734945061945505049213",
+   "outcome_index": 0,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 15.7,
+   "traders_entry": 0.48,
+   "avg_price": 0.4785,
+   "shares": 21.20135666256274,
+   "cost": 10.25,
+   "fees": 0.1058,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "3eee879d827ef37a7c63ed209f575905",
+    "fee_rate": 0.02,
+    "event_id": 90114178
+   },
+   "quotes": {
+    "prophetx": 0.4835,
+    "kalshi": 0.4975
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
