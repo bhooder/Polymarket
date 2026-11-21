@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 631.2544387764133,
+ "cash": 658.3179704291651,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -15434,7 +15434,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:13.066017+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will V\u00e5lerenga Fotball win on 2026-11-21?",
@@ -15463,9 +15463,9 @@
     "kalshi": 0.3763
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 46.77,
+   "profit": 29.17,
+   "settled_at": "2026-11-21T19:17:28.712878+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
@@ -15727,6 +15727,44 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.375
+  },
+  {
+   "placed_at": "2026-11-21T19:19:54.504514+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "SSC Napoli vs. Torino FC: O/U 2.5",
+   "link": "https://polymarket.com/event/sea-nap-tor-2026-11-21-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3499f926d342aeb541c3f4ab8a922fd0c0d7faf50e466b94072d13774c1fbbad",
+   "token_id": "107758011517718186518248791831508429118675085899891391238404574577865870743541",
+   "outcome_index": 1,
+   "ends": "2026-11-21T19:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.46,
+   "avg_price": 0.46,
+   "shares": 41.26622370063764,
+   "cost": 19.7,
+   "fees": 0.72,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEATOTAL-26NOV21NAPTOR-3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4774,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
