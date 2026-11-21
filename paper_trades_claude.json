@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 457.14509534940817,
+ "cash": 458.8173035701552,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5475,7 +5475,7 @@
   {
    "placed_at": "2026-11-21T11:33:22.850395+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Celtics vs. Kings: O/U 217.5",
    "link": "https://polymarket.com/event/nba-bos-sac-2026-11-21",
@@ -5488,10 +5488,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.5,
-   "avg_price": 0.5074,
-   "shares": 17.818525692635564,
-   "cost": 9.13,
-   "fees": 0.0891,
+   "avg_price": 0.5049,
+   "shares": 35.82882369780554,
+   "cost": 18.27,
+   "fees": 0.1791,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -5508,7 +5508,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-21T16:10:22.311860+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-21T12:22:34.839090+00:00",
@@ -5658,7 +5661,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:37.104625+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Carrarese Calcio win on 2026-11-21?",
@@ -5687,9 +5690,9 @@
     "kalshi": 0.4575
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.95,
+   "profit": 10.82,
+   "settled_at": "2026-11-21T16:07:18.154404+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -5915,7 +5918,7 @@
   },
   {
    "placed_at": "2026-11-21T13:29:32.456992+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will UC Sampdoria win on 2026-11-21?",
@@ -5944,9 +5947,9 @@
     "kalshi": 0.6952
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.12,
+   "settled_at": "2026-11-21T16:07:18.379137+00:00",
    "topped_up_at": null,
    "close": 0.685
   },
@@ -6091,6 +6094,42 @@
     "polymarket_us": 0.3407
    },
    "intl_cost_per_share": 0.3309,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T16:10:22.593821+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "SMU vs. Notre Dame: O/U 55.5",
+   "link": "https://polymarket.com/event/cfb-smu-nd-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8e3abae33679dd4ac17c9edcfa4410bc5dcad176e273a67d93258bc124e7fc17",
+   "token_id": "43599990906104867503269655955247679362901221128903886391416606777479443799835",
+   "outcome_index": 0,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 16.98693141224101,
+   "cost": 9.13,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFTOTAL-26NOV21SMUND-56",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5377
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,

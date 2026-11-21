@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 752.2422219514036,
+ "cash": 753.0172114017859,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6453,7 +6453,7 @@
   },
   {
    "placed_at": "2026-11-21T13:29:28.640802+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Cagliari Calcio win on 2026-11-21?",
@@ -6483,9 +6483,9 @@
     "polymarket_us": 0.927
    },
    "intl_cost_per_share": 0.9237,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.75,
+   "profit": 0.8,
+   "settled_at": "2026-11-21T16:07:16.442726+00:00",
    "topped_up_at": null,
    "close": 0.915
   },
@@ -6635,6 +6635,42 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T16:10:21.389079+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Wisconsin",
+   "market": "Spread: Wisconsin (-5.5)",
+   "link": "https://polymarket.com/event/cfb-wisc-pur-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd3162d2382669938e807b2fbb996a521f2e760b1e2d2a464d8651fe038d56128",
+   "token_id": "56347806680723604244675458753267052140215645001314404207161680086191450931928",
+   "outcome_index": 0,
+   "ends": "2026-11-21T17:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.49,
+   "avg_price": 0.485,
+   "shares": 19.617531842246937,
+   "cost": 9.98,
+   "fees": 0.4655,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-wisc-pur-2026-11-21-neg-5pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5087
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
