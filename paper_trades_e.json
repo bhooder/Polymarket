@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1035.7103527214117,
+ "cash": 1026.4003527214118,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -309,6 +309,44 @@
    "settled_at": "2026-11-21T17:41:19.264167+00:00",
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-21T23:42:08.874735+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Clippers vs. Mavericks",
+   "link": "https://polymarket.com/event/nba-lac-dal-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 0.899,
+   "condition_id": "0x435b2c6481af246af6f219d8b968f0733a6050ebe3fc8c087bc58af1cac0681b",
+   "token_id": "10099599657977772652796445413514395134948742660005183019983082361860830880778",
+   "outcome_index": 0,
+   "ends": "2026-11-22T01:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.4,
+   "traders_entry": 0.35,
+   "avg_price": 0.3546,
+   "shares": 25.919634504971295,
+   "cost": 9.31,
+   "fees": 0.1186,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "6dd3f2a441b9986d07791963b50c76e1",
+    "fee_rate": 0.02,
+    "event_id": 1704772811
+   },
+   "quotes": {
+    "prophetx": 0.3592,
+    "kalshi": 0.3762,
+    "polymarket_us": 0.3921
+   },
+   "intl_cost_per_share": 0.3715,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

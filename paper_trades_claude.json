@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 458.4134738967905,
+ "cash": 457.15802082714345,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4174,7 +4174,7 @@
   },
   {
    "placed_at": "2026-11-20T08:43:11.372816+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Iowa",
    "market": "Spread: Iowa (-8.5)",
@@ -4203,9 +4203,9 @@
     "polymarket_us": 0.5287
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.68,
+   "profit": 7.86,
+   "settled_at": "2026-11-21T23:39:16.225135+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -4621,7 +4621,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-20T16:47:30.169335+00:00",
@@ -6590,6 +6591,78 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:42:09.885426+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Flyers vs. Canadiens: O/U 5.5",
+   "link": "https://polymarket.com/event/nhl-phi-mon-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2fcb1fdf970dce0c037d1af7092a3dd1e16c23aa13b7480852d687b747795873",
+   "token_id": "114172180811322756950229233182855746407475352516387754912136978040682742536917",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 18.548463806715496,
+   "cost": 8.97,
+   "fees": 0.4377,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nhl-phi-mon-2026-11-21-5pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:42:11.338018+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Bengals vs. Commanders: O/U 52.5",
+   "link": "https://polymarket.com/event/nfl-cin-was-2026-11-24",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x942be88ac2fd227f60c0dc9bbcd49002add19d49db61b85299b2355bb63ed656",
+   "token_id": "2679316082475339587369542200784850876330885811003637035096591199462826714403",
+   "outcome_index": 0,
+   "ends": "2026-11-24T01:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.55,
+   "shares": 15.793416472039835,
+   "cost": 8.97,
+   "fees": 0.28,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV23CINWAS-53",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5677
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,
