@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 760.5915340947407,
+ "cash": 804.3727081836429,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5461,7 +5461,8 @@
    "payout": 11.73,
    "profit": 0.11,
    "settled_at": "2026-11-19T23:17:47.437392+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": null
   },
   {
    "placed_at": "2026-11-19T19:51:58.787807+00:00",
@@ -6006,7 +6007,7 @@
   },
   {
    "placed_at": "2026-11-21T00:03:04.429301+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Newcastle United FC vs. Arsenal FC: O/U 2.5",
@@ -6037,9 +6038,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.76,
+   "settled_at": "2026-11-21T20:03:27.915548+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -6684,7 +6685,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:23.541834+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Arsenal FC win on 2026-11-21?",
@@ -6715,9 +6716,9 @@
     "kalshi": 0.3865
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.08,
+   "profit": 15.18,
+   "settled_at": "2026-11-21T20:03:28.039050+00:00",
    "topped_up_at": null,
    "close": 0.345
   },
@@ -6760,7 +6761,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:25.418812+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Sevilla FC vs. Real Betis Balompi\u00e9: O/U 2.5",
@@ -6790,9 +6791,9 @@
     "polymarket_us": 0.5182
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.7,
+   "profit": 9.8,
+   "settled_at": "2026-11-21T20:03:28.039085+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -6868,7 +6869,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   }
  ]
 }

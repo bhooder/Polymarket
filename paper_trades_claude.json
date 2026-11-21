@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 458.84999365120507,
+ "cash": 464.20350253092,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4205,7 +4205,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-20T11:40:28.066796+00:00",
@@ -5746,7 +5747,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:37.828969+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Real Betis Balompi\u00e9 win on 2026-11-21?",
@@ -5777,9 +5778,9 @@
     "polymarket_us": 0.6326
    },
    "intl_cost_per_share": 0.6219,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.55,
+   "profit": 5.42,
+   "settled_at": "2026-11-21T20:03:29.022417+00:00",
    "topped_up_at": null,
    "close": 0.645
   },
@@ -5998,7 +5999,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-21T14:25:46.431043+00:00",
@@ -6182,7 +6184,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.49
   },
   {
    "placed_at": "2026-11-21T17:45:55.204208+00:00",
@@ -6217,6 +6220,42 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T20:06:15.540735+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "San Diego State",
+   "market": "Spread: Boise State (-17.5)",
+   "link": "https://polymarket.com/event/cfb-sdst-boise-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf50877c2bf4625c41a664e7fcc0fa6000a5f1e6c1ba725d201477ea3bbaf238d",
+   "token_id": "98386130908478539799596925776832740193571371540971243707732930158895308939280",
+   "outcome_index": 1,
+   "ends": "2026-11-22T02:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.435,
+   "shares": 20.07205759589657,
+   "cost": 9.2,
+   "fees": 0.4687,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-sdst-boise-2026-11-21-pos-17pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4583
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,

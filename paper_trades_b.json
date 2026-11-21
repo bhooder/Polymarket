@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 658.3179704291651,
+ "cash": 725.4192814574186,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -13715,7 +13715,8 @@
    "payout": 11.45,
    "profit": 0.11,
    "settled_at": "2026-11-19T23:17:47.351650+00:00",
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": null
   },
   {
    "placed_at": "2026-11-19T19:51:57.413851+00:00",
@@ -14562,7 +14563,7 @@
   },
   {
    "placed_at": "2026-11-21T00:03:00.654255+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Under",
    "market": "Newcastle United FC vs. Arsenal FC: O/U 2.5",
@@ -14592,9 +14593,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.87,
+   "settled_at": "2026-11-21T20:03:27.377067+00:00",
    "topped_up_at": "2026-11-21T09:10:24.809545+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.2,
@@ -14864,7 +14865,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-21T08:20:01.594572+00:00",
@@ -15395,7 +15397,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:12.385419+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Arsenal FC win on 2026-11-21?",
@@ -15426,9 +15428,9 @@
     "kalshi": 0.3865
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 47.62,
+   "profit": 30.02,
+   "settled_at": "2026-11-21T20:03:27.609571+00:00",
    "topped_up_at": null,
    "close": 0.345
   },
@@ -15582,7 +15584,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:19.780995+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Real Betis Balompi\u00e9 win on 2026-11-21?",
@@ -15613,15 +15615,15 @@
     "kalshi": 0.4068
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.19,
+   "settled_at": "2026-11-21T20:03:27.717978+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
   {
    "placed_at": "2026-11-21T16:58:21.633875+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Sevilla FC vs. Real Betis Balompi\u00e9: O/U 2.5",
@@ -15651,9 +15653,9 @@
     "polymarket_us": 0.5181
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.48,
+   "profit": 9.69,
+   "settled_at": "2026-11-21T20:03:27.718015+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -15768,7 +15770,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   }
  ]
 }
