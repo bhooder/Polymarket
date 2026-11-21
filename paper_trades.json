@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1172.2832448991155,
+ "cash": 1196.0895001855438,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5030,7 +5030,7 @@
   },
   {
    "placed_at": "2026-11-20T15:51:19.718945+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Suns vs. Jazz: O/U 225.5",
@@ -5059,9 +5059,9 @@
     "prophetx": 0.51
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.81,
+   "profit": 11.67,
+   "settled_at": "2026-11-21T05:54:34.226114+00:00",
    "topped_up_at": null,
    "close": 0.485
   },

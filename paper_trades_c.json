@@ -5585,7 +5585,7 @@
   },
   {
    "placed_at": "2026-11-20T11:40:27.453883+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Rockets vs. Nuggets: O/U 225.5",
@@ -5615,15 +5615,15 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.76,
+   "settled_at": "2026-11-21T05:54:34.678001+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-20T12:42:56.308267+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Suns vs. Jazz: O/U 227.5",
@@ -5652,9 +5652,9 @@
     "prophetx": 0.4701
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -23.52,
+   "settled_at": "2026-11-21T05:54:34.678035+00:00",
    "topped_up_at": "2026-11-20T18:46:07.774173+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.4,
@@ -5738,7 +5738,7 @@
   },
   {
    "placed_at": "2026-11-20T15:51:21.848549+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Jazz",
    "market": "Suns vs. Jazz",
@@ -5767,9 +5767,9 @@
     "kalshi": 0.3965
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.3,
+   "settled_at": "2026-11-21T05:54:34.684721+00:00",
    "topped_up_at": "2026-11-20T23:15:04.376767+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 3.1,
@@ -5816,7 +5816,7 @@
   },
   {
    "placed_at": "2026-11-20T22:25:53.025657+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Kings vs. Lakers: O/U 230.5",
@@ -5846,9 +5846,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.76,
+   "settled_at": "2026-11-21T05:54:34.708692+00:00",
    "topped_up_at": null,
    "close": 0.465
   },

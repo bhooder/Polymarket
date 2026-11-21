@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 593.5237428492749,
+ "cash": 631.2685454591604,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3525,7 +3525,7 @@
   },
   {
    "placed_at": "2026-11-20T04:04:21.186111+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Lakers",
    "market": "Spread: Lakers (-12.5)",
@@ -3555,9 +3555,9 @@
     "kalshi": 0.5972
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.67,
+   "settled_at": "2026-11-21T05:54:35.051957+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
@@ -3641,7 +3641,7 @@
   },
   {
    "placed_at": "2026-11-20T04:04:22.347508+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Suns vs. Jazz: O/U 228.5",
@@ -3670,9 +3670,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.66,
+   "settled_at": "2026-11-21T05:54:35.104889+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -3716,7 +3716,7 @@
   },
   {
    "placed_at": "2026-11-20T05:04:18.698586+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Kings vs. Lakers: O/U 231.5",
@@ -3745,15 +3745,15 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.39,
+   "profit": 7.48,
+   "settled_at": "2026-11-21T05:54:35.126265+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
   {
    "placed_at": "2026-11-20T05:04:19.724145+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Rockets vs. Nuggets: O/U 225.5",
@@ -3783,9 +3783,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.01,
+   "profit": 8.1,
+   "settled_at": "2026-11-21T05:54:35.153377+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
@@ -4021,7 +4021,7 @@
   },
   {
    "placed_at": "2026-11-20T06:08:55.923306+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Rockets",
    "market": "Spread: Nuggets (-1.5)",
@@ -4051,9 +4051,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.91,
+   "settled_at": "2026-11-21T05:54:35.177011+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -4359,7 +4359,7 @@
   },
   {
    "placed_at": "2026-11-20T14:01:29.756689+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Jazz",
    "market": "Spread: Suns (-4.5)",
@@ -4389,9 +4389,9 @@
     "kalshi": 0.528
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.82,
+   "settled_at": "2026-11-21T05:54:35.202254+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -4771,7 +4771,7 @@
   },
   {
    "placed_at": "2026-11-20T16:47:36.571199+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Wyoming",
    "market": "Spread: New Mexico (-14.5)",
@@ -4800,9 +4800,9 @@
     "polymarket_us": 0.6619
    },
    "intl_cost_per_share": 0.6417,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.33,
+   "profit": 4.51,
+   "settled_at": "2026-11-21T05:54:35.263900+00:00",
    "topped_up_at": null,
    "close": 0.6
   },
@@ -5208,6 +5208,42 @@
     "polymarket_us": 0.613
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T05:56:25.397963+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "BYU",
+   "market": "Spread: BYU (-3.5)",
+   "link": "https://polymarket.com/event/cfb-byu-kan-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x69da64fcd29e905494dd6fdb8b4dfdb0be5addcde2c807134395aac3db201c6f",
+   "token_id": "25474648451183514442951483538946620989160815282988042399626035102268619243188",
+   "outcome_index": 0,
+   "ends": "2026-11-21T17:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.55,
+   "avg_price": 0.555,
+   "shares": 15.523907011278387,
+   "cost": 8.98,
+   "fees": 0.3642,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-byu-kan-2026-11-21-neg-3pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5785
+   },
+   "intl_cost_per_share": 0.5723,
    "payout": null,
    "profit": null,
    "settled_at": null,
