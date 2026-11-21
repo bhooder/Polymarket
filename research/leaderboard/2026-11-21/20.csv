@@ -1,2 +1,6 @@
 oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
 bbfe558a0cc1,2026-11-21T20:06:18Z,status_change,0x1bc32be106,0x1bc32be106439240f59aa25668e613831a5cdc6e,0x1bc32be106439240f59aa25668e613831a5cdc6e,118,101928.62222799998,6327653.391535008,scanned,skipped_bot,,0.352,406.5,1,24248.9443,26,1
+b79009928892,2026-11-21T20:53:09Z,status_change,0x8a8685a792,0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998,BrotherObama,191,54878.760003689975,4622187.356435001,scanned,off_board,,0.0,0.5,0,57056.4883,3,0
+bb7b9be296b9,2026-11-21T20:53:09Z,status_change,0x5ce7b625f5,0x5ce7b625f5724347091a4b95c927175cc0bc086e,Iwdjcweuicnweiucnewciuwen,199,52699.748677835,816608.488409,scanned,off_board,,0.0,,,0,0,0
+026bb4245d6d,2026-11-21T20:53:09Z,status_change,0x906fd5683e,0x906fd5683ec51f215164f55b06bbee2b0f1288b4,,,,,off_board,scanned,,,,,,,
+2beae0e4d8ee,2026-11-21T20:53:09Z,status_change,0xf68a281980,0xf68a281980f8c13828e84e147e3822381d6e5b1b,,,,,off_board,scanned,,,,,,,

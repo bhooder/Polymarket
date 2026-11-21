@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 464.20350253092,
+ "cash": 491.09503465157303,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2557,7 +2557,7 @@
   },
   {
    "placed_at": "2026-11-19T02:42:58.420485+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Minnesota",
    "market": "Spread: Northwestern (-2.5)",
@@ -2587,9 +2587,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.47,
+   "profit": 9.35,
+   "settled_at": "2026-11-21T20:50:40.598050+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
@@ -4848,7 +4848,7 @@
   },
   {
    "placed_at": "2026-11-20T18:46:08.997272+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "North Texas vs. Tulane: O/U 55.5",
@@ -4877,9 +4877,9 @@
     "prophetx": 0.5172
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.82,
+   "settled_at": "2026-11-21T20:50:40.782291+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -4922,7 +4922,7 @@
   },
   {
    "placed_at": "2026-11-20T22:25:54.051646+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Wake Forest",
    "market": "Spread: Wake Forest (-21.5)",
@@ -4952,9 +4952,9 @@
     "polymarket_us": 0.4685
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.84,
+   "settled_at": "2026-11-21T20:50:40.814766+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -5146,7 +5146,7 @@
   },
   {
    "placed_at": "2026-11-21T04:01:29.423612+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Bucks vs. 76ers: O/U 227.5",
@@ -5176,15 +5176,15 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.01,
+   "settled_at": "2026-11-21T20:50:40.892511+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
   {
    "placed_at": "2026-11-21T04:01:29.837620+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Spread: 76ers (-9.5)",
@@ -5214,9 +5214,9 @@
     "polymarket_us": 0.613
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.02,
+   "settled_at": "2026-11-21T20:50:40.902640+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -5259,7 +5259,7 @@
   },
   {
    "placed_at": "2026-11-21T07:05:58.598103+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nebraska",
    "market": "Spread: Ohio State (-3.5)",
@@ -5289,9 +5289,9 @@
     "prophetx": 0.5242
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.43,
+   "profit": 8.3,
+   "settled_at": "2026-11-21T20:50:40.950318+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -5668,7 +5668,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.675
   },
   {
    "placed_at": "2026-11-21T12:22:37.104625+00:00",
@@ -6256,6 +6257,42 @@
     "polymarket_us": 0.4583
    },
    "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T20:53:07.135269+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Erzurumspor FK win on 2026-11-22?",
+   "link": "https://polymarket.com/event/tur-erz-goz-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf45b887aa300ddfaf5c9c613152e619cea99a98afd29abdff97fc49800117378",
+   "token_id": "37025288579008016038434004112328875343477631946041106739569286315855072166714",
+   "outcome_index": 1,
+   "ends": "2026-11-22T10:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.66,
+   "avg_price": 0.65,
+   "shares": 13.530052183053646,
+   "cost": 9.01,
+   "fees": 0.22,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSUPERLIGGAME-26NOV22ERZGOZ-ERZ",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6663
+   },
+   "intl_cost_per_share": 0.6614,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 725.4192814574186,
+ "cash": 803.525320906245,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14641,7 +14641,7 @@
   },
   {
    "placed_at": "2026-11-21T04:01:26.975318+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Aljamain Sterling",
    "market": "UFC Fight Night: Aljamain Sterling vs. Kevin Vallejos (Featherweight, Main Card)",
@@ -14671,9 +14671,9 @@
     "prophetx": 0.4789
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.56,
+   "settled_at": "2026-11-21T20:50:39.674723+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -14985,7 +14985,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:30.067918+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Bucks vs. 76ers: O/U 229.5",
@@ -15016,9 +15016,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.44,
+   "profit": 20.46,
+   "settled_at": "2026-11-21T20:50:39.739581+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -15357,7 +15357,7 @@
   },
   {
    "placed_at": "2026-11-21T15:23:54.277818+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Wisconsin",
    "market": "Spread: Wisconsin (-5.5)",
@@ -15386,9 +15386,9 @@
     "polymarket_us": 0.5087
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.92,
+   "profit": 19.12,
+   "settled_at": "2026-11-21T20:50:39.845316+00:00",
    "topped_up_at": "2026-11-21T16:10:19.610919+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
@@ -15473,7 +15473,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:14.317727+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Vanderbilt",
    "market": "Spread: Florida (-13.5)",
@@ -15502,15 +15502,15 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.44,
+   "profit": 9.65,
+   "settled_at": "2026-11-21T20:50:39.871049+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
   {
    "placed_at": "2026-11-21T16:58:14.999292+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ohio State",
    "market": "Spread: Ohio State (-4.5)",
@@ -15539,15 +15539,15 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.79,
+   "settled_at": "2026-11-21T20:50:39.944356+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-21T16:58:18.656973+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Syracuse",
    "market": "Spread: Syracuse (-3.5)",
@@ -15576,9 +15576,9 @@
     "polymarket_us": 0.4685
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.79,
+   "settled_at": "2026-11-21T20:50:39.971781+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -15661,7 +15661,7 @@
   },
   {
    "placed_at": "2026-11-21T17:45:47.693205+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "76ers",
    "market": "Spread: 76ers (-12.5)",
@@ -15691,9 +15691,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.31,
+   "settled_at": "2026-11-21T20:50:39.997515+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -15772,6 +15772,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.455
+  },
+  {
+   "placed_at": "2026-11-21T20:53:05.877716+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Celtics",
+   "market": "Celtics vs. Kings",
+   "link": "https://polymarket.com/event/nba-bos-sac-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9fe99391f0696e3d14a7d0642b008bbe70be380cabee298f73a13ff690baf5de",
+   "token_id": "115290381171342672509707909139343755253882381528294261658069223781827323367473",
+   "outcome_index": 0,
+   "ends": "2026-11-22T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.84,
+   "avg_price": 0.82,
+   "shares": 23.713406203783542,
+   "cost": 19.69,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV21BOSSAC-BOS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8305,
+    "polymarket_us": 0.834
+   },
+   "intl_cost_per_share": 0.8274,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
