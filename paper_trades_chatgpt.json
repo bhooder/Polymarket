@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 990.918039518706,
+ "cash": 1016.8367749209391,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -690,7 +690,7 @@
   },
   {
    "placed_at": "2026-11-21T09:59:31.998277+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Manchester City FC win on 2026-11-21?",
@@ -720,9 +720,9 @@
     "kalshi": 0.3047
    },
    "intl_cost_per_share": 0.3105,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.92,
+   "profit": 18.02,
+   "settled_at": "2026-11-21T15:23:57.248457+00:00",
    "topped_up_at": null,
    "close": 0.285
   },
@@ -760,7 +760,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 761.0869440254145,
+ "cash": 752.2422219514036,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6076,7 +6076,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-21T04:01:28.132624+00:00",
@@ -6113,7 +6114,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-21T04:01:28.339945+00:00",
@@ -6149,7 +6151,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.375
   },
   {
    "placed_at": "2026-11-21T04:01:28.671416+00:00",
@@ -6185,7 +6188,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-21T07:05:57.895916+00:00",
@@ -6260,7 +6264,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.745
   },
   {
    "placed_at": "2026-11-21T12:22:32.823845+00:00",
@@ -6338,7 +6343,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:33.613838+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Fulham FC win on 2026-11-21?",
@@ -6367,9 +6372,9 @@
     "kalshi": 0.8972
    },
    "intl_cost_per_share": 0.9045,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.09,
+   "profit": 1.14,
+   "settled_at": "2026-11-21T15:19:20.943107+00:00",
    "topped_up_at": null,
    "close": 0.895
   },
@@ -6520,7 +6525,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.345
   },
   {
    "placed_at": "2026-11-21T14:25:44.836834+00:00",
@@ -6556,7 +6562,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-21T14:25:45.339327+00:00",
@@ -6590,6 +6597,44 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.575
+  },
+  {
+   "placed_at": "2026-11-21T15:23:56.385500+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Celtics vs. Kings: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-bos-sac-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe229c5a5a5dbaa4908d1f3d29dbc75f13d8f0c49c3847b0d89ae607d9e2d9a5f",
+   "token_id": "29161318406208290403636269379240982527571108252141697915309633063376217942777",
+   "outcome_index": 1,
+   "ends": "2026-11-22T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 37.78249190036645,
+   "cost": 19.94,
+   "fees": 0.67,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV21BOSSAC-218",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5277,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
