@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 631.2685454591604,
+ "cash": 654.6873331176604,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4547,7 +4547,7 @@
   },
   {
    "placed_at": "2026-11-20T15:51:29.114749+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Saint Louis Billikens vs. Saint Mary's Gaels: O/U 160.5",
@@ -4577,9 +4577,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.93,
+   "profit": 7.11,
+   "settled_at": "2026-11-21T07:04:14.871471+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -5066,7 +5066,7 @@
   },
   {
    "placed_at": "2026-11-21T03:12:11.482913+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Saint Marys Gaels",
    "market": "Spread: Saint Mary's Gaels (-1.5)",
@@ -5095,9 +5095,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.62,
+   "profit": 7.75,
+   "settled_at": "2026-11-21T07:04:14.972929+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -5244,6 +5244,43 @@
     "polymarket_us": 0.5785
    },
    "intl_cost_per_share": 0.5723,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T07:05:58.598103+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nebraska",
+   "market": "Spread: Ohio State (-3.5)",
+   "link": "https://polymarket.com/event/cfb-ohiost-nebr-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x92a89b444ab0bae28ea5eb594edaa5cf247b1331dc465e93ccf16db1eefea94b",
+   "token_id": "66209100313820979977172032463618479068036348446825196795122582594271802947835",
+   "outcome_index": 1,
+   "ends": "2026-11-21T17:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 17.43198090692124,
+   "cost": 9.13,
+   "fees": 0.414,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-ohiost-nebr-2026-11-21-neg-3pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238,
+    "prophetx": 0.5242
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
