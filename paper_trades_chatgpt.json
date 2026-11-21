@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 948.9444820167017,
+ "cash": 989.5259990234437,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -539,7 +539,7 @@
   },
   {
    "placed_at": "2026-11-20T12:42:57.592977+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Hornets vs. Hawks: O/U 218.5",
@@ -569,9 +569,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.44,
+   "profit": 10.56,
+   "settled_at": "2026-11-21T03:12:16.192369+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -648,11 +648,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-20T18:46:11.703676+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "UCF",
    "market": "Iowa State vs. UCF",
@@ -681,9 +682,9 @@
     "prophetx": 0.4904
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.15,
+   "profit": 10.27,
+   "settled_at": "2026-11-21T03:12:16.212740+00:00",
    "topped_up_at": null,
    "close": 0.465
   }

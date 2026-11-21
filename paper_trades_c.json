@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 932.7960060907523,
+ "cash": 949.6968391939466,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5544,7 +5544,7 @@
   },
   {
    "placed_at": "2026-11-20T11:40:27.162127+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Hornets vs. Hawks: O/U 219.5",
@@ -5574,9 +5574,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -23.51,
+   "settled_at": "2026-11-21T03:08:33.406404+00:00",
    "topped_up_at": "2026-11-20T12:42:55.873502+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 5.4,
@@ -5618,7 +5618,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-20T12:42:56.308267+00:00",
@@ -5657,7 +5658,8 @@
    "topped_up_at": "2026-11-20T18:46:07.774173+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.4,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-20T14:01:22.657722+00:00",
@@ -5771,7 +5773,8 @@
    "topped_up_at": "2026-11-20T23:15:04.376767+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 3.1,
-   "top_up_size_multiplier": 0.939
+   "top_up_size_multiplier": 0.939,
+   "close": 0.365
   },
   {
    "placed_at": "2026-11-20T19:50:28.811525+00:00",
@@ -5846,7 +5849,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-20T23:15:04.808337+00:00",
@@ -5887,7 +5891,7 @@
   },
   {
    "placed_at": "2026-11-20T23:15:05.127852+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Hornets",
    "market": "Spread: Hawks (-7.5)",
@@ -5917,15 +5921,15 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.75,
+   "settled_at": "2026-11-21T03:08:33.698034+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
   {
    "placed_at": "2026-11-21T00:03:02.350458+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Pacers vs. Cavaliers",
@@ -5956,9 +5960,9 @@
     "polymarket_us": 0.7007
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.9,
+   "profit": 5.15,
+   "settled_at": "2026-11-21T03:08:33.710239+00:00",
    "topped_up_at": null,
    "close": 0.665
   },
