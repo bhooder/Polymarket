@@ -4952,7 +4952,7 @@
   },
   {
    "placed_at": "2026-11-20T14:01:20.796981+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bulls",
    "market": "Wizards vs. Bulls",
@@ -4983,15 +4983,15 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5922,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.14,
+   "settled_at": "2026-11-21T03:59:19.156036+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
   {
    "placed_at": "2026-11-20T14:56:15.306847+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pistons",
    "market": "Raptors vs. Pistons",
@@ -5022,9 +5022,9 @@
     "polymarket_us": 0.7296
    },
    "intl_cost_per_share": 0.7203,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.14,
+   "settled_at": "2026-11-21T03:59:19.156088+00:00",
    "topped_up_at": null,
    "close": 0.705
   },

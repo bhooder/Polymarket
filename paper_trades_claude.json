@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 488.0419683229463,
+ "cash": 546.8187555782389,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3487,7 +3487,7 @@
   },
   {
    "placed_at": "2026-11-20T04:04:20.992899+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Raptors vs. Pistons: O/U 215.5",
@@ -3517,9 +3517,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.67,
+   "settled_at": "2026-11-21T03:59:20.240175+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -3678,7 +3678,7 @@
   },
   {
    "placed_at": "2026-11-20T04:04:22.572427+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Magic vs. Nets: O/U 219.5",
@@ -3708,9 +3708,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.54,
+   "profit": 6.87,
+   "settled_at": "2026-11-21T03:59:20.340758+00:00",
    "topped_up_at": null,
    "close": 0.59
   },
@@ -3791,7 +3791,7 @@
   },
   {
    "placed_at": "2026-11-20T05:04:20.294787+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Pelicans vs. Thunder: O/U 229.5",
@@ -3821,15 +3821,15 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.9,
+   "settled_at": "2026-11-21T03:59:20.428862+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
   {
    "placed_at": "2026-11-20T05:04:20.811114+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Wizards",
    "market": "Spread: Bulls (-4.5)",
@@ -3859,9 +3859,9 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.42,
+   "profit": 6.52,
+   "settled_at": "2026-11-21T03:59:20.483413+00:00",
    "topped_up_at": null,
    "close": 0.575
   },
@@ -3906,7 +3906,7 @@
   },
   {
    "placed_at": "2026-11-20T06:08:54.301755+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Wizards vs. Bulls: O/U 242.5",
@@ -3937,15 +3937,15 @@
     "kalshi": 0.5775
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.79,
+   "profit": 6.88,
+   "settled_at": "2026-11-21T03:59:20.483446+00:00",
    "topped_up_at": null,
    "close": 0.6
   },
   {
    "placed_at": "2026-11-20T06:08:55.011701+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Magic (-7.5)",
@@ -3975,9 +3975,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.16,
+   "profit": 6.25,
+   "settled_at": "2026-11-21T03:59:20.509477+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
@@ -4097,7 +4097,7 @@
   },
   {
    "placed_at": "2026-11-20T07:28:50.824502+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Spread: Thunder (-13.5)",
@@ -4127,9 +4127,9 @@
     "kalshi": 0.6168
    },
    "intl_cost_per_share": 0.5922,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.91,
+   "profit": 6.09,
+   "settled_at": "2026-11-21T03:59:20.537038+00:00",
    "topped_up_at": null,
    "close": 0.595
   },
@@ -4580,7 +4580,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-20T16:47:25.018772+00:00",
@@ -5097,7 +5098,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-21T03:12:14.065903+00:00",
@@ -5132,6 +5134,80 @@
     "kalshi": 0.5279
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T04:01:29.423612+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Bucks vs. 76ers: O/U 227.5",
+   "link": "https://polymarket.com/event/nba-mil-phi-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb49c19a0e8ec854114b300c963cf55b901ba8e75d5a1ab3a5714c97255df4680",
+   "token_id": "54463292344110921487569094016733028502573010598693794735977967746657790854266",
+   "outcome_index": 1,
+   "ends": "2026-11-21T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 18.87353682958097,
+   "cost": 9.01,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV21MILPHI-228",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4775,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T04:01:29.837620+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Spread: 76ers (-9.5)",
+   "link": "https://polymarket.com/event/nba-mil-phi-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x671ea7e870b237d8f7e865332fa9046d1b5c974cb749931274fe68ac08487923",
+   "token_id": "19534342832595781899606174684861164229993306236315375672500006078659639546891",
+   "outcome_index": 0,
+   "ends": "2026-11-21T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.59,
+   "shares": 14.845131175928808,
+   "cost": 9.02,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV21MILPHI-PHI10",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6075,
+    "polymarket_us": 0.613
+   },
+   "intl_cost_per_share": 0.6021,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -577,7 +577,7 @@
   },
   {
    "placed_at": "2026-11-20T14:01:31.367685+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Bulls",
    "market": "Wizards vs. Bulls",
@@ -608,9 +608,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5922,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.87,
+   "settled_at": "2026-11-21T04:01:31.262091+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
