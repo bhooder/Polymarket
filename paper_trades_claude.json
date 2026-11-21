@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 450.0759898486157,
+ "cash": 441.41598984861565,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3863,7 +3863,7 @@
   },
   {
    "placed_at": "2026-11-20T05:04:21.403189+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Oakland Golden Grizzlies",
    "market": "Spread: Purdue Boilermakers (-23.5)",
@@ -3894,9 +3894,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.9,
+   "settled_at": "2026-11-21T02:16:20.013110+00:00",
    "topped_up_at": null,
    "close": 0.575
   },
@@ -4651,7 +4651,7 @@
   },
   {
    "placed_at": "2026-11-20T16:47:32.297188+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Coastal Carolina Chanticleers vs. Tennessee Volunteers: O/U 147.5",
@@ -4680,9 +4680,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.82,
+   "settled_at": "2026-11-21T02:16:20.672970+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -4796,7 +4796,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.6
   },
   {
    "placed_at": "2026-11-20T17:47:10.482255+00:00",
@@ -4940,6 +4941,43 @@
     "polymarket_us": 0.4685
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T02:19:24.544913+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Trail Blazers vs. Knicks",
+   "link": "https://polymarket.com/event/nba-por-nyk-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf67a0d86970f6791f73ed28dc673221e22c0a9263af5a7f045fa4d40d917af01",
+   "token_id": "23784158244112540541425091301927137817552820733062647808422624525335927076589",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.67,
+   "avg_price": 0.6774,
+   "shares": 12.701862026862027,
+   "cost": 8.66,
+   "fees": 0.0555,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0ca7c3b4b995d2a673ae56ad2b5b515c",
+    "fee_rate": 0.02,
+    "event_id": 1704772813
+   },
+   "quotes": {
+    "prophetx": 0.6818,
+    "kalshi": 0.6953
+   },
+   "intl_cost_per_share": 0.6811,
    "payout": null,
    "profit": null,
    "settled_at": null,

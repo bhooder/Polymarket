@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 817.46979410079,
+ "cash": 806.08979410079,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14360,7 +14360,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-20T23:15:02.300201+00:00",
@@ -14586,6 +14587,42 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T02:19:23.222193+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Aston Villa FC vs. Sunderland AFC: O/U 2.5",
+   "link": "https://polymarket.com/event/epl-ast-sun-2026-11-21-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf4f7d45903f0b536bd74a2fe97b32d3ee72160961e7d8394367a2e4207b8b077",
+   "token_id": "26870223188018628809776134121651961411475523350985231558065271537135620645422",
+   "outcome_index": 1,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.45,
+   "avg_price": 0.45,
+   "shares": 24.033156463662525,
+   "cost": 11.38,
+   "fees": 0.5651,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-epl-ast-sun-2026-11-21-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4735
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
