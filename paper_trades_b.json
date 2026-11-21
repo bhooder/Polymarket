@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 837.3180048307511,
+ "cash": 819.4882144557879,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14808,6 +14808,79 @@
     "kalshi": 0.6764
    },
    "intl_cost_per_share": 0.6614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T08:20:01.236009+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SSC Napoli win on 2026-11-21?",
+   "link": "https://polymarket.com/event/sea-nap-tor-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0x9062067620bd3ff98cb4c2245f1e46e33b868dc98db3617d976cdfb0353bb2a7",
+   "token_id": "76343893977098085261209963996538858091278372198207661792653540432642313086828",
+   "outcome_index": 1,
+   "ends": "2026-11-21T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.9,
+   "traders_entry": 0.35,
+   "avg_price": 0.35,
+   "shares": 22.44273268525682,
+   "cost": 8.34,
+   "fees": 0.485,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-sea-nap-tor-2026-11-21-nap",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.3716,
+    "kalshi": 0.3763
+   },
+   "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T08:20:01.594572+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Nottingham Forest FC win on 2026-11-21?",
+   "link": "https://polymarket.com/event/epl-bou-not-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x703236e85fd8bc391e0fc8752792e516f2bd0d05849db0fdd714495ed09a06ea",
+   "token_id": "101972411631730300768566902549088841216472472249177164839928168224598723742902",
+   "outcome_index": 1,
+   "ends": "2026-11-21T15:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.0,
+   "traders_entry": 0.77,
+   "avg_price": 0.77,
+   "shares": 12.116610876575447,
+   "cost": 9.49,
+   "fees": 0.16,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV21BOUNFO-NFO",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7832
+   },
+   "intl_cost_per_share": 0.7789,
    "payout": null,
    "profit": null,
    "settled_at": null,
