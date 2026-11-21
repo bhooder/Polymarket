@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 881.0116114418745,
+ "cash": 861.8992377818438,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -15841,6 +15841,79 @@
     "polymarket_us": 0.4583
    },
    "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:02:56.664978+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Clippers vs. Mavericks",
+   "link": "https://polymarket.com/event/nba-lac-dal-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 0.899,
+   "condition_id": "0x435b2c6481af246af6f219d8b968f0733a6050ebe3fc8c087bc58af1cac0681b",
+   "token_id": "10099599657977772652796445413514395134948742660005183019983082361860830880778",
+   "outcome_index": 0,
+   "ends": "2026-11-22T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 20.7,
+   "traders_entry": 0.35,
+   "avg_price": 0.36,
+   "shares": 24.03437127786286,
+   "cost": 9.04,
+   "fees": 0.39,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV21LACDAL-LAC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3762,
+    "polymarket_us": 0.3921
+   },
+   "intl_cost_per_share": 0.3715,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:02:57.307344+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Maryland vs. USC: O/U 57.5",
+   "link": "https://polymarket.com/event/cfb-mary-usc-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa7767c91847131fac546773720fa33ef6646f2280a70f1ad93477ba09b9e2703",
+   "token_id": "93058899889611864859984587675136729473274589336352468864868529712411120129537",
+   "outcome_index": 0,
+   "ends": "2026-11-21T23:15:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.495,
+   "shares": 20.138025877278967,
+   "cost": 10.07,
+   "fees": 0.1007,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "8d306e16651bf9a26d3676fdd9b7251f",
+    "fee_rate": 0.02,
+    "event_id": 1704742272
+   },
+   "quotes": {
+    "prophetx": 0.5
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

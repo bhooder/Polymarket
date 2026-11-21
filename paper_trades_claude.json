@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 485.0739784567397,
+ "cash": 458.4134738967905,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2553,7 +2553,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-19T02:42:58.420485+00:00",
@@ -5595,7 +5596,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-21T12:22:35.678416+00:00",
@@ -5635,7 +5637,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:36.918481+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will EC Bahia win on 2026-11-21?",
@@ -5665,9 +5667,9 @@
     "polymarket_us": 0.6813
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.12,
+   "settled_at": "2026-11-21T23:00:14.469312+00:00",
    "topped_up_at": null,
    "close": 0.675
   },
@@ -6224,7 +6226,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-21T20:06:15.540735+00:00",
@@ -6474,6 +6477,119 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.53
+  },
+  {
+   "placed_at": "2026-11-21T23:02:59.830584+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Blues",
+   "market": "Devils vs. Blues",
+   "link": "https://polymarket.com/event/nhl-nj-stl-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd9cd8034105dc4e203f21db43411809a976b35c7743f054451aca59a9a1ab6bc",
+   "token_id": "44396819149454463898614079338759350976050959186663306703216529007720745455059",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.43,
+   "avg_price": 0.431,
+   "shares": 20.3927446300716,
+   "cost": 8.89,
+   "fees": 0.1,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "fdf467bc2698fdc6452e4a91a35f8e98",
+    "fee_rate": 0.02,
+    "event_id": 1704770125
+   },
+   "quotes": {
+    "prophetx": 0.4359,
+    "kalshi": 0.4476,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:03:00.383085+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Notre Dame",
+   "market": "Spread: Notre Dame (-20.5)",
+   "link": "https://polymarket.com/event/cfb-smu-nd-2026-11-21",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2ccd3665beb973d87a4d75eee4c63f726584009baa22ba7db897517da9f83d30",
+   "token_id": "112353373645362640788471807948159753990481215013280384116482616378858660847256",
+   "outcome_index": 0,
+   "ends": "2026-11-22T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 17.159420289855074,
+   "cost": 8.89,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFSPREAD-26NOV21SMUND-ND21",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5181,
+    "polymarket_us": 0.5187
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T23:03:01.280663+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Devils vs. Blues: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-nj-stl-2026-11-21",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfc9c9797fabd1529bcdf7546e71b6c35307900ac422bf6c1573dbea9210d8ab8",
+   "token_id": "14259521062927676511747312491349247151708747529259162814993089589621811129859",
+   "outcome_index": 0,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.45,
+   "shares": 19.001765366714817,
+   "cost": 8.88,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLTOTAL-26NOV21NJSTL-7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4674,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,
