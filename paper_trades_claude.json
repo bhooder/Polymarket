@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 546.8187555782389,
+ "cash": 593.5237428492749,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3302,7 +3302,7 @@
   },
   {
    "placed_at": "2026-11-19T23:19:58.833613+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Oregon",
    "market": "Spread: Oregon (-17.5)",
@@ -3331,9 +3331,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.71,
+   "profit": 7.79,
+   "settled_at": "2026-11-21T04:55:23.468693+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -4246,7 +4246,7 @@
   },
   {
    "placed_at": "2026-11-20T14:01:23.801266+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Clemson",
    "market": "Spread: Duke (-14.5)",
@@ -4276,9 +4276,9 @@
     "polymarket_us": 0.6031
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.62,
+   "profit": 5.8,
+   "settled_at": "2026-11-21T04:55:24.339473+00:00",
    "topped_up_at": null,
    "close": 0.585
   },
@@ -4397,7 +4397,7 @@
   },
   {
    "placed_at": "2026-11-20T14:56:18.109161+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bowling Green vs. Toledo: O/U 47.5",
@@ -4426,9 +4426,9 @@
     "prophetx": 0.4616
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.82,
+   "settled_at": "2026-11-21T04:55:24.339514+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -4808,7 +4808,7 @@
   },
   {
    "placed_at": "2026-11-20T17:47:10.482255+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Oregon vs. Michigan State: O/U 41.5",
@@ -4837,9 +4837,9 @@
     "prophetx": 0.5739
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.37,
+   "profit": 6.55,
+   "settled_at": "2026-11-21T04:55:24.625081+00:00",
    "topped_up_at": null,
    "close": 0.515
   },

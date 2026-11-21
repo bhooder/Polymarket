@@ -3,3 +3,13 @@ oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_d
 28591e4c001d,2026-11-21T04:01:33Z,status_change,0x7d2f82da7a,0x7d2f82da7ae8c910bd1e89475be705d313daef1a,TheOpportunist,164,63133.51603827002,601751.142059,scanned,,,0.012,0.1,0,0,0,0
 0636343184fa,2026-11-21T04:01:33Z,status_change,0xaeaa7466b5,0xaeaa7466b55793b4f3403e5a46e6379d8e8df0c1,,,,,off_board,scanned,,,,,,,
 aff60cbb263f,2026-11-21T04:01:33Z,status_change,0xe9b710551d,0xe9b710551dd82a44e79203c2394a2b10163ace7b,,,,,off_board,scanned,,,,,,,
+2dadde7bcf2a,2026-11-21T04:59:09Z,status_change,0xbe23032d56,0xbe23032d56a012c531b372c7739bc1dbd4dfb587,Moneymethod,102,111633.20419417947,9808423.860249,scanned,off_board,,0.0,1.3,0,48945.3125,1,0
+fd7891bd3436,2026-11-21T04:59:09Z,status_change,0x50d07d6744,0x50d07d6744afc48905e7c947e91d7f4bec54a6fc,TheMathGod,196,52682.132745055016,402230.17127299996,scanned,,,0.004,0.1,0,0,0,0
+c973e166fc3a,2026-11-21T04:59:09Z,status_change,0xaeaa7466b5,0xaeaa7466b55793b4f3403e5a46e6379d8e8df0c1,jerrygrant,198,51068.911564,376240.773436,scanned,off_board,,0.018,0.5,0,7574.9983,1,0
+e82d2e834411,2026-11-21T04:59:09Z,status_change,0x6bab41a0dc,0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292,Dropper,199,50885.94867013447,252498.80365700004,scanned,off_board,,0.0,0.1,0,346049.4736,14,0
+20e88d04139f,2026-11-21T04:59:09Z,status_change,0xaaaa30bb90,0xaaaa30bb9079a6287eb39dd2c53ef17fc2e374d8,xasdasdas21,200,50007.11090700001,307735.11757500004,scanned,,,0.0,0.1,0,0,0,0
+9460a9e8ea03,2026-11-21T04:59:09Z,status_change,0x549b491ac7,0x549b491ac7f6a675b56ff0a261d147daa73ac0ae,,,,,off_board,scanned,,,,,,,
+51c2f75f1761,2026-11-21T04:59:09Z,status_change,0x5ce7b625f5,0x5ce7b625f5724347091a4b95c927175cc0bc086e,,,,,off_board,scanned,,,,,,,
+1141cf23aafe,2026-11-21T04:59:09Z,status_change,0x6d3c5bd139,0x6d3c5bd13984b2de47c3a88ddc455309aab3d294,,,,,off_board,scanned,,,,,,,
+51b1713b4aa0,2026-11-21T04:59:09Z,status_change,0xe015b5a2a2,0xe015b5a2a299167be835a2fd1e86f09c49e06ffd,,,,,off_board,scanned,,,,,,,
+21df0c2a493f,2026-11-21T04:59:09Z,status_change,0xec981ed70a,0xec981ed70ae69c5cbcac08c1ba063e734f6bafcd,,,,,off_board,scanned,,,,,,,

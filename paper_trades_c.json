@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 896.6990505291985,
+ "cash": 919.1525111497236,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -5701,7 +5701,7 @@
   },
   {
    "placed_at": "2026-11-20T15:51:21.404636+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Bowling Green vs. Toledo: O/U 47.5",
@@ -5730,9 +5730,9 @@
     "prophetx": 0.4637
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -23.52,
+   "settled_at": "2026-11-21T04:55:22.182442+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -5854,7 +5854,7 @@
   },
   {
    "placed_at": "2026-11-20T23:15:04.808337+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Air Force",
    "market": "Spread: Air Force (-21.5)",
@@ -5883,9 +5883,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.45,
+   "profit": 10.69,
+   "settled_at": "2026-11-21T04:55:22.489049+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
