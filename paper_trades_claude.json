@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 645.5573331176604,
+ "cash": 627.2973331176604,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5317,6 +5317,80 @@
     "prophetx": 0.5882
    },
    "intl_cost_per_share": 0.5922,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T09:10:27.248386+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Celtics",
+   "market": "Celtics vs. Kings",
+   "link": "https://polymarket.com/event/nba-bos-sac-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9fe99391f0696e3d14a7d0642b008bbe70be380cabee298f73a13ff690baf5de",
+   "token_id": "115290381171342672509707909139343755253882381528294261658069223781827323367473",
+   "outcome_index": 0,
+   "ends": "2026-11-22T03:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.85,
+   "avg_price": 0.86,
+   "shares": 10.476935823317323,
+   "cost": 9.13,
+   "fees": 0.1198,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-bos-sac-2026-11-21",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.8654,
+    "polymarket_us": 0.8714,
+    "kalshi": 0.8787
+   },
+   "intl_cost_per_share": 0.866,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-21T09:10:27.618266+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Canadiens",
+   "market": "Flyers vs. Canadiens",
+   "link": "https://polymarket.com/event/nhl-phi-mon-2026-11-21",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf1cdcb738486650f8f9fc6337516abe65ba0970371028649b96f2b0963f25ff6",
+   "token_id": "49949815863601144018666070508285133736387960278745065373172131047196617663931",
+   "outcome_index": 1,
+   "ends": "2026-11-22T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.6,
+   "avg_price": 0.6,
+   "shares": 14.659601798330122,
+   "cost": 9.13,
+   "fees": 0.3342,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-phi-mon-2026-11-21",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.6228
+   },
+   "intl_cost_per_share": 0.612,
    "payout": null,
    "profit": null,
    "settled_at": null,

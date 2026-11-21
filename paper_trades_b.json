@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 819.4882144557879,
+ "cash": 810.0019532768284,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -14562,7 +14562,7 @@
   {
    "placed_at": "2026-11-21T00:03:00.654255+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Newcastle United FC vs. Arsenal FC: O/U 2.5",
    "link": "https://polymarket.com/event/epl-new-ars-2026-11-21-more-markets",
@@ -14576,9 +14576,9 @@
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.43,
    "avg_price": 0.43,
-   "shares": 25.449674275478188,
-   "cost": 11.38,
-   "fees": 0.44,
+   "shares": 46.65028166840729,
+   "cost": 20.87,
+   "fees": 0.81,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -14594,7 +14594,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-21T09:10:24.809545+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.2,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-21T02:19:23.222193+00:00",
