@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 475.3665298410337,
+ "cash": 491.29987240080146,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2740,7 +2740,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-19T08:11:04.106312+00:00",
@@ -4996,7 +4997,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-21T03:12:08.638039+00:00",
@@ -5034,7 +5036,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.645
   },
   {
    "placed_at": "2026-11-21T03:12:10.018460+00:00",
@@ -5145,7 +5148,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-21T04:01:29.423612+00:00",
@@ -5637,7 +5641,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-21T12:22:36.918481+00:00",
@@ -5825,7 +5830,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.39
   },
   {
    "placed_at": "2026-11-21T13:29:29.181850+00:00",
@@ -5935,7 +5941,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-21T13:29:32.456992+00:00",
@@ -6157,7 +6164,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-21T17:45:53.828326+00:00",
@@ -6459,7 +6467,7 @@
   },
   {
    "placed_at": "2026-11-21T22:18:29.833132+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Coppin State Eagles",
    "market": "Spread: Georgetown Hoyas (-32.5)",
@@ -6488,9 +6496,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.93,
+   "profit": 6.95,
+   "settled_at": "2026-11-22T01:36:48.619140+00:00",
    "topped_up_at": null,
    "close": 0.53
   },
@@ -6568,7 +6576,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-21T23:03:01.280663+00:00",
