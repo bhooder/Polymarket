@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 785.0334569515383,
+ "cash": 774.8509212753903,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16338,7 +16338,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.865
   },
   {
    "placed_at": "2026-11-22T12:05:04.267784+00:00",
@@ -16487,7 +16488,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-22T12:57:38.790305+00:00",
@@ -16560,7 +16562,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-22T13:58:28.006586+00:00",
@@ -16593,6 +16596,43 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.525
+  },
+  {
+   "placed_at": "2026-11-22T14:52:17.732835+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will CD Huachipato win on 2026-11-22?",
+   "link": "https://polymarket.com/event/chi1-cdh-cd1-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf85b3a4d6431c4e52c743bf4cd364371c53e86bf2ceb2f83799281c55cf0bc85",
+   "token_id": "107026898783539123276164098254602928844052041794180248415089049422730440339489",
+   "outcome_index": 1,
+   "ends": "2026-11-22T15:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.4,
+   "traders_entry": 0.59,
+   "avg_price": 0.57,
+   "shares": 17.337781887978853,
+   "cost": 10.18,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCHLLDPGAME-26NOV22HUADCO-HUA",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5873
+   },
+   "intl_cost_per_share": 0.5723,
    "payout": null,
    "profit": null,
    "settled_at": null,
