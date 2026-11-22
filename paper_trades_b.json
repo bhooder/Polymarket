@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 672.1895550099796,
+ "cash": 652.450999400928,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16116,7 +16116,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.365
   },
   {
    "placed_at": "2026-11-22T07:57:49.218104+00:00",
@@ -17172,7 +17173,7 @@
   },
   {
    "placed_at": "2026-11-22T17:54:07.227700+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Titans vs. Cowboys: O/U 54.5",
@@ -17201,9 +17202,9 @@
     "kalshi": 0.5279
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.34,
+   "settled_at": "2026-11-22T20:19:47.730599+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -17425,6 +17426,44 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.385
+  },
+  {
+   "placed_at": "2026-11-22T20:22:10.662494+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Hawks",
+   "market": "Pistons vs. Hawks",
+   "link": "https://polymarket.com/event/nba-det-atl-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x35e3a46eea4c56646973fb71aaa058336dcdf80d5b430f33fc67d950aa7a5027",
+   "token_id": "16711586864801244512320797487797014467670273893539763071481276867726089500394",
+   "outcome_index": 1,
+   "ends": "2026-11-22T20:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 5.8,
+   "traders_entry": 0.46,
+   "avg_price": 0.45,
+   "shares": 42.21901246455892,
+   "cost": 19.74,
+   "fees": 0.74,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV22DETATL-ATL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4675,
+    "polymarket_us": 0.4735
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,

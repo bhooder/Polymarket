@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1056.7724460345212,
+ "cash": 1035.4485852750274,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -606,6 +606,45 @@
     "kalshi": 0.3866
    },
    "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.365
+  },
+  {
+   "placed_at": "2026-11-22T20:22:11.631858+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Broncos",
+   "market": "Raiders vs. Broncos",
+   "link": "https://polymarket.com/event/nfl-lv-den-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa9adb7f78d2c186aea160bc6da92ee0d3a33fd690d9b6c9f2541f5e375eca682",
+   "token_id": "35709515287750717937624220807186952455539162910410050382479585134145540762209",
+   "outcome_index": 1,
+   "ends": "2026-11-22T21:25:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 11.8,
+   "traders_entry": 0.83,
+   "avg_price": 0.84,
+   "shares": 25.099834237492463,
+   "cost": 21.32,
+   "fees": 0.24,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV22LVDEN-DEN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.8488,
+    "kalshi": 0.8496,
+    "polymarket_us": 0.8551
+   },
+   "intl_cost_per_share": 0.8564,
    "payout": null,
    "profit": null,
    "settled_at": null,
