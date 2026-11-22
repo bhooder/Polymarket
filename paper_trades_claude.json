@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 729.7780712057598,
+ "cash": 734.6307832599549,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6287,7 +6287,7 @@
   },
   {
    "placed_at": "2026-11-21T20:53:07.135269+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Erzurumspor FK win on 2026-11-22?",
@@ -6316,9 +6316,9 @@
     "kalshi": 0.6663
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.53,
+   "profit": 4.52,
+   "settled_at": "2026-11-22T12:54:15.705249+00:00",
    "topped_up_at": null,
    "close": 0.655
   },
@@ -6691,6 +6691,43 @@
     "kalshi": 0.5677
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T12:57:43.129662+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ravens",
+   "market": "Ravens vs. Panthers",
+   "link": "https://polymarket.com/event/nfl-bal-car-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6e610e1d2341e2bb60db4c80177840196357a66d124ac458453bb5b3966d1d38",
+   "token_id": "49978035511431256430844646759014442931506220279082176761918068184183417251425",
+   "outcome_index": 0,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.43,
+   "shares": 19.389163090368704,
+   "cost": 8.68,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV22BALCAR-BAL",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4475,
+    "polymarket_us": 0.4508
+   },
+   "intl_cost_per_share": 0.4423,
    "payout": null,
    "profit": null,
    "settled_at": null,

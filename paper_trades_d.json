@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1038.8507276476375,
+ "cash": 1028.3607276476375,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -534,6 +534,44 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.685
+  },
+  {
+   "placed_at": "2026-11-22T12:57:41.851434+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Bologna FC 1909 win on 2026-11-22?",
+   "link": "https://polymarket.com/event/sea-bol-udi-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4fc0991d11623cadc158e5db4f06f9fe37abd75a3a457a10ad3bceb166f82728",
+   "token_id": "11048636120482599519196399707342121305815365155349560298020743894001700161026",
+   "outcome_index": 1,
+   "ends": "2026-11-22T14:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 33.8,
+   "traders_entry": 0.44,
+   "avg_price": 0.4444,
+   "shares": 23.34313186813187,
+   "cost": 10.49,
+   "fees": 0.1153,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "baaf2e2ee04302d111755f6ff85c8556",
+    "fee_rate": 0.02,
+    "event_id": 90111226
+   },
+   "quotes": {
+    "prophetx": 0.4494,
+    "kalshi": 0.4674,
+    "polymarket_us": 0.4735
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

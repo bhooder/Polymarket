@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1198.7487820731421,
+ "cash": 1173.538782073142,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5558,6 +5558,43 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T12:57:35.030187+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "FC Barcelona vs. Villarreal CF: O/U 4.5",
+   "link": "https://polymarket.com/event/lal-bar-vil-2026-11-22-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x36d7100b66fabae6831ffc31c51a815770ab8ba46baa571d46a855d2fefbf628",
+   "token_id": "85146708752162809046780634619459451180253214336211370715005130653867977490829",
+   "outcome_index": 1,
+   "ends": "2026-11-22T13:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 33.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.4766,
+   "shares": 52.35242159257098,
+   "cost": 25.21,
+   "fees": 0.2612,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "65e2d90526b0841432c365c62523bf3b",
+    "fee_rate": 0.02,
+    "event_id": 90117242
+   },
+   "quotes": {
+    "prophetx": 0.4815,
+    "kalshi": 0.4939
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
