@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+a025a9cc02a9,2026-11-22T22:37:31Z,status_change,0x4bff30af91,0x4bff30af91642dc7d2b19a8664378fe55c45fc26,Sassy-Bucket,87,137596.26670270972,40327256.362936,scanned,,,0.0,0.9,0,350024.5056,1,0
+611aeb0e5815,2026-11-22T22:37:31Z,status_change,0x6d3c5bd139,0x6d3c5bd13984b2de47c3a88ddc455309aab3d294,VeryLucky888,174,59934.10720692578,57731818.533246204,scanned,off_board,,0.0,15.6,0,266864.5221,218,19
+b622d5be10b6,2026-11-22T22:37:31Z,status_change,0x3835957ad7,0x3835957ad7188313391213e8647baaf4a2ed3493,btna,199,52373.26659414001,210205.398771,scanned,off_board,,0.036,0.3,0,4479.2092,1,0
+eaaec8e4b438,2026-11-22T22:37:31Z,status_change,0x957c9c65be,0x957c9c65be08f98975d9c032ee54a861bb3d8330,betmaster798,200,51979.860407,1246014.0645420002,scanned,off_board,,0.0,7.4,0,6478.6526,3,0
+18ec99a94ec4,2026-11-22T22:37:31Z,status_change,0x0b0e1eb890,0x0b0e1eb890038cc0f98d26d34842bbe4d1434826,,,,,off_board,scanned,,,,,,,
+0315be44b71e,2026-11-22T22:37:31Z,status_change,0x2b344112f6,0x2b344112f63e69a2e411b0cb7f200cbc0051176e,,,,,off_board,scanned,,,,,,,
+e4d9d4566840,2026-11-22T22:37:31Z,status_change,0x686beac4a9,0x686beac4a954696574277b0fdd353f1d9708a463,,,,,off_board,scanned,,,,,,,
+91bb05310c1f,2026-11-22T22:37:31Z,status_change,0xd9e0aaca47,0xd9e0aaca471f489be338fd0f91a26e8669a805f2,,,,,off_board,scanned,,,,,,,

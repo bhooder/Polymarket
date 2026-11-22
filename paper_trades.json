@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1157.9748017518725,
+ "cash": 1146.2753729599003,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5723,7 +5723,7 @@
   },
   {
    "placed_at": "2026-11-22T18:33:36.811910+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-22?",
@@ -5753,11 +5753,48 @@
     "kalshi": 0.3864
    },
    "intl_cost_per_share": 0.3817,
+   "payout": 0.0,
+   "profit": -11.53,
+   "settled_at": "2026-11-22T22:33:58.993736+00:00",
+   "topped_up_at": null,
+   "close": 0.365
+  },
+  {
+   "placed_at": "2026-11-22T22:37:23.869611+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Chicago Fire FC vs. Charlotte FC: O/U 3.5",
+   "link": "https://polymarket.com/event/mls-chi-clt-2026-11-22-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbd1190e69b6013063fd0c3cc59e647feea3bc12ba727fe9ecbb3c6ed41f30db1",
+   "token_id": "26166878431885200610769519129582045297356883023848490141144934310037887156703",
+   "outcome_index": 0,
+   "ends": "2026-11-22T23:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 23.49880998327544,
+   "cost": 11.7,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXMLSTOTAL-26NOV22CHICLT-4",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4979,
+    "polymarket_us": 0.5137
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.365
+   "topped_up_at": null
   }
  ]
 }

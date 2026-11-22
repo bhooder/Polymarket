@@ -16083,7 +16083,7 @@
   },
   {
    "placed_at": "2026-11-22T05:42:35.060174+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-22?",
@@ -16113,9 +16113,9 @@
     "kalshi": 0.3865
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.54,
+   "settled_at": "2026-11-22T22:33:59.282459+00:00",
    "topped_up_at": null,
    "close": 0.365
   },
