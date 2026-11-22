@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1049.3407276476376,
+ "cash": 1038.8507276476375,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -495,6 +495,44 @@
    "settled_at": "2026-11-21T15:19:21.306129+00:00",
    "topped_up_at": null,
    "close": 0.285
+  },
+  {
+   "placed_at": "2026-11-22T10:32:30.175460+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Juventus FC win on 2026-11-22?",
+   "link": "https://polymarket.com/event/sea-juv-ven-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6474a3a2ad45e5d9607020cc1b07e4fb6b3d20466507d276ab79b28f9bb530fc",
+   "token_id": "94714861038722410567455706794621351579546565425015220118323335303098621837057",
+   "outcome_index": 0,
+   "ends": "2026-11-22T11:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 15.8,
+   "traders_entry": 0.7,
+   "avg_price": 0.7015,
+   "shares": 14.865083022918112,
+   "cost": 10.49,
+   "fees": 0.0623,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e475e1aa221e29eb659d1dc121a19f35",
+    "fee_rate": 0.02,
+    "event_id": 90111220
+   },
+   "quotes": {
+    "prophetx": 0.7057,
+    "kalshi": 0.715,
+    "polymarket_us": 0.7199
+   },
+   "intl_cost_per_share": 0.7105,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
