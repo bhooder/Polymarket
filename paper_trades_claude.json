@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 491.29987240080146,
+ "cash": 507.2442391451682,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2521,7 +2521,7 @@
   },
   {
    "placed_at": "2026-11-19T02:42:57.648507+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Washington State",
    "market": "Spread: Texas State (-13.5)",
@@ -2550,9 +2550,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.12,
+   "settled_at": "2026-11-22T02:35:21.095993+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -5568,11 +5568,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-21T12:22:35.210437+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Penguins vs. Predators: O/U 5.5",
@@ -5601,9 +5602,9 @@
     "kalshi": 0.407
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.84,
+   "settled_at": "2026-11-22T02:35:21.536877+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -6207,7 +6208,7 @@
   },
   {
    "placed_at": "2026-11-21T17:45:55.204208+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Panthers",
    "market": "Sabres vs. Panthers",
@@ -6238,9 +6239,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.94,
+   "profit": 6.79,
+   "settled_at": "2026-11-22T02:35:21.654345+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
@@ -6278,7 +6279,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-21T20:53:07.135269+00:00",
