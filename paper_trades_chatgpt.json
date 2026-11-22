@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1000.918595466336,
+ "cash": 990.618595466336,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1026,6 +1026,44 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.345
+  },
+  {
+   "placed_at": "2026-11-22T17:54:12.007998+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Titans",
+   "market": "Spread: Cowboys (-7.5)",
+   "link": "https://polymarket.com/event/nfl-ten-dal-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2b5a140b986aa32e6ee84add831e24ce49c11b5b044327296b4fea5270ee7317",
+   "token_id": "95147895729154793910675862568665276264412541411817992105486633894933081861430",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 27.6,
+   "traders_entry": 0.51,
+   "avg_price": 0.5074,
+   "shares": 20.10195121951219,
+   "cost": 10.3,
+   "fees": 0.1005,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c9d10e1abc02b75b4c6bb6143b19d45e",
+    "fee_rate": 0.02,
+    "event_id": 1700008816
+   },
+   "quotes": {
+    "prophetx": 0.5124,
+    "kalshi": 0.5176,
+    "polymarket_us": 0.5287
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

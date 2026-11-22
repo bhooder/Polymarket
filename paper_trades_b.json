@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 749.903033207587,
+ "cash": 698.2215240976458,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16526,7 +16526,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-22T13:58:27.493677+00:00",
@@ -16939,7 +16940,7 @@
   {
    "placed_at": "2026-11-22T17:12:11.811670+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Broncos",
    "market": "Raiders vs. Broncos",
    "link": "https://polymarket.com/event/nfl-lv-den-2026-11-22",
@@ -16953,9 +16954,9 @@
    "avg_bankroll_pct": 32.2,
    "traders_entry": 0.83,
    "avg_price": 0.835,
-   "shares": 12.192122020266456,
-   "cost": 10.34,
-   "fees": 0.1596,
+   "shares": 24.384244040532913,
+   "cost": 20.68,
+   "fees": 0.3192,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -16971,7 +16972,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-22T17:54:03.891261+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 19.4,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-22T17:12:12.865545+00:00",
@@ -17079,6 +17083,116 @@
     "kalshi": 0.5475
    },
    "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T17:54:04.664936+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Dolphins vs. Bills: O/U 46.5",
+   "link": "https://polymarket.com/event/nfl-mia-buf-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9d314ac3a5eea08a960f9547bd3686e58c31d3342b143425d5af22bb29d822dc",
+   "token_id": "1329045082124452935345089999242905322121839551695272852134859245594106920634",
+   "outcome_index": 0,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 6.9,
+   "traders_entry": 0.44,
+   "avg_price": 0.45,
+   "shares": 44.20906221580271,
+   "cost": 20.66,
+   "fees": 0.77,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV22MIABUF-47",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4554,
+    "kalshi": 0.4674
+   },
+   "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T17:54:06.699299+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Steelers vs. Eagles: O/U 38.5",
+   "link": "https://polymarket.com/event/nfl-pit-phi-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x674282c193ff87ce37719677e31604457aa04a52b7b484b234f3ba8306638f19",
+   "token_id": "73506235329745050140070703771802182244361631869460110998481186351224492377614",
+   "outcome_index": 0,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.47,
+   "avg_price": 0.4785,
+   "shares": 21.387514916185243,
+   "cost": 10.34,
+   "fees": 0.1067,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "73210462de7079b5a0593bb8ada57e7d",
+    "fee_rate": 0.02,
+    "event_id": 1700008829
+   },
+   "quotes": {
+    "prophetx": 0.4835,
+    "kalshi": 0.4978
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T17:54:07.227700+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Titans vs. Cowboys: O/U 54.5",
+   "link": "https://polymarket.com/event/nfl-ten-dal-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x76776cf849a6960d9e0f76006153909a866749415836b3c2a7b053c103a895f4",
+   "token_id": "104287512370587920398570751018994140754381474333021987922773980932191812220494",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 19.58319826045085,
+   "cost": 10.34,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV22TENDAL-55",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5279
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
