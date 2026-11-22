@@ -5606,7 +5606,7 @@
   },
   {
    "placed_at": "2026-11-22T16:24:25.569769+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Liverpool FC win on 2026-11-22?",
@@ -5636,15 +5636,15 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.56,
+   "settled_at": "2026-11-22T19:28:24.286026+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
   {
    "placed_at": "2026-11-22T16:24:26.650303+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will AC Milan win on 2026-11-22?",
@@ -5675,9 +5675,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.04,
+   "settled_at": "2026-11-22T19:28:24.286081+00:00",
    "topped_up_at": null,
    "close": 0.425
   },

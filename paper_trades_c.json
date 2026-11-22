@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 956.9206042077706,
+ "cash": 928.8027418152451,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7074,7 +7074,7 @@
   },
   {
    "placed_at": "2026-11-22T09:40:00.903177+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Carlos Alcaraz",
    "market": "ATP World Tour Finals, Final Stage: Alexander Zverev vs Carlos Alcaraz",
@@ -7103,9 +7103,9 @@
     "kalshi": 0.6856
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.03,
+   "profit": 5.04,
+   "settled_at": "2026-11-22T19:28:25.161979+00:00",
    "topped_up_at": null,
    "close": 0.655
   },
@@ -7335,7 +7335,7 @@
   },
   {
    "placed_at": "2026-11-22T12:57:40.663233+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "RSC Anderlecht vs. Oud-Heverlee Leuven: O/U 3.5",
@@ -7364,9 +7364,9 @@
     "kalshi": 0.4271
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.99,
+   "settled_at": "2026-11-22T19:28:25.245974+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -7410,7 +7410,7 @@
   },
   {
    "placed_at": "2026-11-22T16:24:37.553743+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will AC Milan win on 2026-11-22?",
@@ -7441,9 +7441,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.75,
+   "settled_at": "2026-11-22T19:28:25.246020+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -7599,6 +7599,80 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-22T19:31:23.595957+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Jazz",
+   "market": "Mavericks vs. Jazz",
+   "link": "https://polymarket.com/event/nba-dal-uta-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x779b874ed02642638f0cd5ed1a5f9aac390dae8e3fd5690f0141f6ac1f715e16",
+   "token_id": "113453251156500240504830106950779544072836626836843063985058375013926051470406",
+   "outcome_index": 1,
+   "ends": "2026-11-23T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.4,
+   "traders_entry": 0.48,
+   "avg_price": 0.47,
+   "shares": 45.27764613683409,
+   "cost": 22.07,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV22DALUTA-UTA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4874,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T19:31:23.912202+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Thunder",
+   "market": "Spread: Heat (-3.5)",
+   "link": "https://polymarket.com/event/nba-okc-mia-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x71dce73310772a50575d76330b99655512b6abff861106b470f3e3debb739984",
+   "token_id": "15611534100858260483579826839374189559552966451230958500551633138985567782990",
+   "outcome_index": 1,
+   "ends": "2026-11-22T23:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 42.978896933373946,
+   "cost": 22.08,
+   "fees": 1.0203,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nba-okc-mia-2026-11-22-pos-3pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5137,
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
