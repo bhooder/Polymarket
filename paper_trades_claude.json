@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 714.5057403498237,
+ "cash": 729.7780712057598,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2634,7 +2634,7 @@
   },
   {
    "placed_at": "2026-11-19T03:39:23.224598+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Arizona State",
    "market": "Spread: Oklahoma State (-4.5)",
@@ -2663,9 +2663,9 @@
     "polymarket_us": 0.5834
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.27,
+   "profit": 6.36,
+   "settled_at": "2026-11-22T07:54:49.012351+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
