@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+4ebce466aec4,2026-11-22T16:24:49Z,status_change,0x8fbc899fe2,0x8fbc899fe286351fb21f23c32710e3facb8a5c63,ukowna,163,63334.318812999925,4032520.6550659994,scanned,off_board,,0.07,0.2,0,0,0,0
+fce685199f7c,2026-11-22T16:24:49Z,status_change,0x9e3ae3f398,0x9e3ae3f398205723ae2fafbe7522a5de2edbe974,MinevaJ,178,58545.88664678468,7109920.462656001,scanned,off_board,,0.0,2.4,0,15142.7145,12,0
+4db4a1d219b4,2026-11-22T16:24:49Z,status_change,0x1eae27fbc5,0x1eae27fbc5e6a2f82bdd732bd1d2e0922648c2ab,0x1eae27fbc5e6a2f82bdd732bd1d2e0922648c2ab,191,55056.82554799999,356116.315474,scanned,,,0.0,,,0,0,0
+63b8938be6a7,2026-11-22T16:24:49Z,status_change,0x5fd86de467,0x5fd86de46798abe62b3b1a45911477a6bd6cce32,,,,,off_board,scanned,,,,,,,
+d8ce94ad7874,2026-11-22T16:24:49Z,status_change,0x68df8708aa,0x68df8708aadb901618f11abf2471805a66a24815,,,,,off_board,scanned,,,,,,,
+0430dba780b6,2026-11-22T16:24:49Z,status_change,0xd37d84a14d,0xd37d84a14d70ac7300defe9997074b3b3fd7c735,,,,,off_board,scanned,,,,,,,

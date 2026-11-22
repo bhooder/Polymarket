@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1191.4080572799103,
+ "cash": 1194.6215359457492,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5527,7 +5527,7 @@
   },
   {
    "placed_at": "2026-11-22T10:32:25.297045+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Bologna FC 1909 win on 2026-11-22?",
@@ -5558,9 +5558,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.81,
+   "profit": 15.2,
+   "settled_at": "2026-11-22T16:20:54.091255+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -5601,6 +5601,81 @@
    "settled_at": "2026-11-22T15:30:25.792025+00:00",
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-22T16:24:25.569769+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Liverpool FC win on 2026-11-22?",
+   "link": "https://polymarket.com/event/epl-liv-mun-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6b8101c3109c4e63e43912ff63464b277263c888f201842d3fc9f4819970e67d",
+   "token_id": "10235116750149815270924632502118331146502010051292303662783047397710357424117",
+   "outcome_index": 1,
+   "ends": "2026-11-22T16:30:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 19.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.4651,
+   "shares": 26.71827671848102,
+   "cost": 12.56,
+   "fees": 0.1329,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "195ed52ad8291dc5d78630373243e6ce",
+    "fee_rate": 0.02,
+    "event_id": 90114170
+   },
+   "quotes": {
+    "prophetx": 0.4701,
+    "kalshi": 0.4875
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T16:24:26.650303+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AC Milan win on 2026-11-22?",
+   "link": "https://polymarket.com/event/sea-mil-fro-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x1e96ca062336144e8fa23578daebcceeb1192f90144a36177f532641c6404768",
+   "token_id": "104453391937028167129094481973639348387521044529137465352451884221198286929729",
+   "outcome_index": 1,
+   "ends": "2026-11-22T17:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.38,
+   "avg_price": 0.3876,
+   "shares": 30.687339561954353,
+   "cost": 12.04,
+   "fees": 0.1457,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9bc1b12d4c396f53820df1a496f37d12",
+    "fee_rate": 0.02,
+    "event_id": 90111223
+   },
+   "quotes": {
+    "prophetx": 0.3923,
+    "kalshi": 0.3968,
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.4019,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

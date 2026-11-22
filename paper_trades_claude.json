@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 734.6307832599549,
+ "cash": 725.9584012898753,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6728,6 +6728,43 @@
     "polymarket_us": 0.4508
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T16:24:42.472342+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Saints vs. Bears: O/U 50.5",
+   "link": "https://polymarket.com/event/nfl-no-chi-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5da427e503cdee12203ab2db43a35d0b42d6aa41a75d82740340d6abddb58b27",
+   "token_id": "44968050760191690031484008606342636897588762719606500827903861075232114068179",
+   "outcome_index": 1,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.58,
+   "shares": 14.521348224275272,
+   "cost": 8.67,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV22NOCHI-51",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.595,
+    "kalshi": 0.5972
+   },
+   "intl_cost_per_share": 0.6021,
    "payout": null,
    "profit": null,
    "settled_at": null,

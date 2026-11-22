@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 949.3557009589605,
+ "cash": 1001.7539696721964,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7183,7 +7183,7 @@
   },
   {
    "placed_at": "2026-11-22T11:21:44.973587+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Hull City AFC win on 2026-11-22?",
@@ -7213,9 +7213,9 @@
     "kalshi": 0.878
    },
    "intl_cost_per_share": 0.866,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.0,
+   "settled_at": "2026-11-22T16:20:55.210204+00:00",
    "topped_up_at": null,
    "close": 0.865
   },
@@ -7295,7 +7295,7 @@
   },
   {
    "placed_at": "2026-11-22T12:57:40.007527+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Hull City AFC vs. Brighton & Hove Albion FC: O/U 2.5",
@@ -7325,9 +7325,9 @@
     "kalshi": 0.4473
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 51.33,
+   "profit": 29.33,
+   "settled_at": "2026-11-22T16:20:55.210249+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -7369,7 +7369,7 @@
   },
   {
    "placed_at": "2026-11-22T13:58:29.036205+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Bologna FC 1909 win on 2026-11-22?",
@@ -7399,11 +7399,85 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4825,
+   "payout": 23.02,
+   "profit": 12.02,
+   "settled_at": "2026-11-22T16:20:55.249529+00:00",
+   "topped_up_at": null,
+   "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-22T16:24:37.553743+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AC Milan win on 2026-11-22?",
+   "link": "https://polymarket.com/event/sea-mil-fro-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x1e96ca062336144e8fa23578daebcceeb1192f90144a36177f532641c6404768",
+   "token_id": "104453391937028167129094481973639348387521044529137465352451884221198286929729",
+   "outcome_index": 1,
+   "ends": "2026-11-22T17:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.38,
+   "avg_price": 0.3876,
+   "shares": 27.399410323173534,
+   "cost": 10.75,
+   "fees": 0.1301,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9bc1b12d4c396f53820df1a496f37d12",
+    "fee_rate": 0.02,
+    "event_id": 90111223
+   },
+   "quotes": {
+    "prophetx": 0.3923,
+    "kalshi": 0.3966,
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.4019,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.465
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T16:24:38.051766+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Cardinals vs. Chiefs: O/U 40.5",
+   "link": "https://polymarket.com/event/nfl-ari-kc-2026-11-22",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7c6421d749bf4de35d4e6e64f8eb0a2dea74825e942f15e89c0e8a86149d9b68",
+   "token_id": "10616524298490358224497127257273584428721763657432563951474448135726942682837",
+   "outcome_index": 0,
+   "ends": "2026-11-22T18:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 21.64251207729469,
+   "cost": 11.2,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV22ARIKC-41",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
