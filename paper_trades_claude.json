@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 717.286682912787,
+ "cash": 708.7025178456086,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3229,7 +3229,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-19T18:46:24.549122+00:00",
@@ -3265,7 +3266,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-19T21:34:45.640677+00:00",
@@ -3302,7 +3304,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-19T23:19:58.833613+00:00",
@@ -3487,7 +3490,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-20T04:04:20.992899+00:00",
@@ -6731,7 +6735,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-22T16:24:42.472342+00:00",
@@ -6768,7 +6773,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.585
   },
   {
    "placed_at": "2026-11-22T17:12:16.597680+00:00",
@@ -6802,6 +6808,44 @@
     "polymarket_us": 0.9293
    },
    "intl_cost_per_share": 0.9333,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.925
+  },
+  {
+   "placed_at": "2026-11-22T18:33:41.818535+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jets",
+   "market": "Jets vs. Chargers",
+   "link": "https://polymarket.com/event/nfl-nyj-lac-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.99,
+   "condition_id": "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac",
+   "token_id": "81344676502650843287567158829925081886760336256751645678798613844627827398977",
+   "outcome_index": 0,
+   "ends": "2026-11-22T21:05:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 20.585412667946258,
+   "cost": 8.58,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV22NYJLAC-NYJ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.417,
+    "polymarket_us": 0.4177
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,

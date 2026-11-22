@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 698.2215240976458,
+ "cash": 716.4396541256814,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16191,7 +16191,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-22T09:39:58.636847+00:00",
@@ -16643,7 +16644,7 @@
   },
   {
    "placed_at": "2026-11-22T15:32:39.536503+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Stade Rennais FC 1901 win on 2026-11-22?",
@@ -16672,15 +16673,15 @@
     "kalshi": 0.5777
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.94,
+   "profit": 7.15,
+   "settled_at": "2026-11-22T18:29:38.606253+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
   {
    "placed_at": "2026-11-22T16:24:28.854161+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Liverpool FC win on 2026-11-22?",
@@ -16709,9 +16710,9 @@
     "kalshi": 0.4876
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.53,
+   "settled_at": "2026-11-22T18:29:38.680366+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -16788,7 +16789,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-22T16:24:32.577474+00:00",
@@ -16829,7 +16831,7 @@
   },
   {
    "placed_at": "2026-11-22T16:24:35.873367+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "AC Milan vs. Frosinone Calcio: O/U 3.5",
@@ -16858,9 +16860,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.69,
+   "profit": 11.42,
+   "settled_at": "2026-11-22T18:29:38.854799+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -16899,7 +16901,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-22T17:12:11.468308+00:00",
@@ -16935,7 +16938,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-22T17:12:11.811670+00:00",
@@ -17012,7 +17016,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-22T17:12:13.576705+00:00",
@@ -17050,7 +17055,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-22T17:12:14.309818+00:00",
@@ -17123,7 +17129,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-22T17:54:06.699299+00:00",
@@ -17160,7 +17167,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-22T17:54:07.227700+00:00",
@@ -17193,6 +17201,82 @@
     "kalshi": 0.5279
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-22T18:33:37.764800+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jets",
+   "market": "Jets vs. Chargers",
+   "link": "https://polymarket.com/event/nfl-nyj-lac-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac",
+   "token_id": "81344676502650843287567158829925081886760336256751645678798613844627827398977",
+   "outcome_index": 0,
+   "ends": "2026-11-22T21:05:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.1,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 24.208253358925145,
+   "cost": 10.09,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV22NYJLAC-NYJ",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4169,
+    "polymarket_us": 0.4177
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T18:33:39.027748+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Nuggets vs. Bulls",
+   "link": "https://polymarket.com/event/nba-den-chi-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x28e6cf7726a9a6ec3f90b328c4c75d6067b7978eae5fe68c2419dfbd3c43bd98",
+   "token_id": "14487699487806023474561243694080330505345242596185875259500365357186757360330",
+   "outcome_index": 0,
+   "ends": "2026-11-23T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.78,
+   "avg_price": 0.7895,
+   "shares": 13.017190775681343,
+   "cost": 10.32,
+   "fees": 0.0433,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b7f2e5787b3178822b8ae9bd958a91aa",
+    "fee_rate": 0.02,
+    "event_id": 1704773512
+   },
+   "quotes": {
+    "prophetx": 0.7928,
+    "kalshi": 0.8017,
+    "polymarket_us": 0.8058
+   },
+   "intl_cost_per_share": 0.7983,
    "payout": null,
    "profit": null,
    "settled_at": null,

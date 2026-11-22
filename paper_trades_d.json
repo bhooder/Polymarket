@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1066.5689425386875,
+ "cash": 1056.7724460345212,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -573,6 +573,43 @@
    "settled_at": "2026-11-22T16:20:55.278768+00:00",
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-22T18:33:41.132590+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-22?",
+   "link": "https://polymarket.com/event/lal-get-mad-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0x6ce65b5a8e3258e38017b03f69321548b3e4b48f974456566b8f05e2f3e9a64e",
+   "token_id": "31740622792171768423790292987907996960126058142543612783028255635524629708176",
+   "outcome_index": 1,
+   "ends": "2026-11-22T20:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 16.2,
+   "traders_entry": 0.36,
+   "avg_price": 0.37,
+   "shares": 25.341882443692615,
+   "cost": 9.8,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGAGAME-26NOV22GETATM-ATM",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.3778,
+    "kalshi": 0.3866
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
