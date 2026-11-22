@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+c860bf5a1fd8,2026-11-22T23:29:01Z,status_change,0x5966db1fe5,0x5966db1fe50763c9e3c014d756369bad07e1f804,0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241,75,171359.56916606473,2584792.5051039997,scanned,,,0.02,0.1,0,1638155.0715,1,0
+90f63811ea79,2026-11-22T23:29:01Z,status_change,0xf80f9b46df,0xf80f9b46df603ac061c7c52e9f98b2a703e15b8e,dergooner,147,77215.5043,581310.510001,scanned,,,0.0,,,125250.0,1,0
+4aca8caaafab,2026-11-22T23:29:01Z,status_change,0x2b344112f6,0x2b344112f63e69a2e411b0cb7f200cbc0051176e,MAGATheeStallion,200,52101.25674087502,1086829.3805120005,scanned,off_board,,0.0,0.3,0,18457.3723,6,0
+9e04308afe6a,2026-11-22T23:29:01Z,status_change,0x4bff30af91,0x4bff30af91642dc7d2b19a8664378fe55c45fc26,,,,,off_board,scanned,,,,,,,
+077c5c19b79b,2026-11-22T23:29:01Z,status_change,0x760907c884,0x760907c8840491c8c86fddb843d3f1d801786c4e,,,,,off_board,scanned,,,,,,,
+6d58aee2c7e1,2026-11-22T23:29:01Z,status_change,0x9e3ae3f398,0x9e3ae3f398205723ae2fafbe7522a5de2edbe974,,,,,off_board,scanned,,,,,,,

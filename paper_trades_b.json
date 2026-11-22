@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 765.7190290542943,
+ "cash": 817.4179518366337,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16271,7 +16271,7 @@
   },
   {
    "placed_at": "2026-11-22T11:21:41.766853+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Pistons vs. Hawks: O/U 225.5",
@@ -16301,9 +16301,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.54,
+   "settled_at": "2026-11-22T23:25:32.850065+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
@@ -17063,7 +17063,7 @@
   },
   {
    "placed_at": "2026-11-22T17:12:14.309818+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Jets vs. Chargers: O/U 42.5",
@@ -17092,9 +17092,9 @@
     "kalshi": 0.5475
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.87,
+   "profit": 8.54,
+   "settled_at": "2026-11-22T23:25:33.047843+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
@@ -17359,7 +17359,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-22T19:31:22.139938+00:00",
@@ -17438,7 +17439,7 @@
   },
   {
    "placed_at": "2026-11-22T20:22:10.662494+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Hawks",
    "market": "Pistons vs. Hawks",
@@ -17468,9 +17469,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.22,
+   "profit": 22.48,
+   "settled_at": "2026-11-22T23:25:33.314260+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -17546,6 +17547,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.455
+  },
+  {
+   "placed_at": "2026-11-22T23:28:56.169161+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Chicago Fire FC win on 2026-11-22?",
+   "link": "https://polymarket.com/event/mls-chi-clt-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0xa888a26ca8e4dc0b722190f64cba3dba7293af501b31b6595873cdd56d2b3515",
+   "token_id": "59381819527291921603554376821034911467903464157867786736042466379346537789479",
+   "outcome_index": 1,
+   "ends": "2026-11-22T23:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.38,
+   "avg_price": 0.38,
+   "shares": 23.657476065090847,
+   "cost": 9.39,
+   "fees": 0.4,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXMLSGAME-26NOV22CHICLT-CHI",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3969,
+    "polymarket_us": 0.4024
+   },
+   "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

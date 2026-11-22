@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 763.4631036002213,
+ "cash": 745.9061132515902,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6923,6 +6923,81 @@
     "kalshi": 0.6464
    },
    "intl_cost_per_share": 0.6515,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T23:28:57.787012+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Jazz",
+   "market": "Mavericks vs. Jazz",
+   "link": "https://polymarket.com/event/nba-dal-uta-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x779b874ed02642638f0cd5ed1a5f9aac390dae8e3fd5690f0141f6ac1f715e16",
+   "token_id": "113453251156500240504830106950779544072836626836843063985058375013926051470406",
+   "outcome_index": 1,
+   "ends": "2026-11-23T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.44,
+   "avg_price": 0.4464,
+   "shares": 19.451840339102787,
+   "cost": 8.78,
+   "fees": 0.0961,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "02dd6c02dab3b061875563b3467c05f2",
+    "fee_rate": 0.02,
+    "event_id": 1704773604
+   },
+   "quotes": {
+    "prophetx": 0.4514,
+    "polymarket_us": 0.4634,
+    "kalshi": 0.4676
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T23:28:58.285647+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Nuggets vs. Bulls",
+   "link": "https://polymarket.com/event/nba-den-chi-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x28e6cf7726a9a6ec3f90b328c4c75d6067b7978eae5fe68c2419dfbd3c43bd98",
+   "token_id": "14487699487806023474561243694080330505345242596185875259500365357186757360330",
+   "outcome_index": 0,
+   "ends": "2026-11-23T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.77,
+   "avg_price": 0.78,
+   "shares": 11.073064549527027,
+   "cost": 8.78,
+   "fees": 0.14,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV22DENCHI-DEN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7926,
+    "polymarket_us": 0.7963
+   },
+   "intl_cost_per_share": 0.7886,
    "payout": null,
    "profit": null,
    "settled_at": null,
