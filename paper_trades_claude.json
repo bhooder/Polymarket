@@ -5342,7 +5342,7 @@
   },
   {
    "placed_at": "2026-11-21T09:10:27.248386+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Celtics vs. Kings",
@@ -5373,9 +5373,9 @@
     "kalshi": 0.8787
    },
    "intl_cost_per_share": 0.866,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.13,
+   "settled_at": "2026-11-22T05:40:02.441999+00:00",
    "topped_up_at": null,
    "close": 0.835
   },

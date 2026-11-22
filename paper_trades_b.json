@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 979.0433708664266,
+ "cash": 960.5033708664266,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -15783,7 +15783,7 @@
   },
   {
    "placed_at": "2026-11-21T20:53:05.877716+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Celtics vs. Kings",
@@ -15813,9 +15813,9 @@
     "polymarket_us": 0.834
    },
    "intl_cost_per_share": 0.8274,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.69,
+   "settled_at": "2026-11-22T05:40:01.839328+00:00",
    "topped_up_at": null,
    "close": 0.835
   },
@@ -16080,6 +16080,43 @@
    "settled_at": "2026-11-22T04:40:09.029913+00:00",
    "topped_up_at": null,
    "close": 0.515
+  },
+  {
+   "placed_at": "2026-11-22T05:42:35.060174+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-22?",
+   "link": "https://polymarket.com/event/lal-get-mad-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 0.919,
+   "condition_id": "0x6ce65b5a8e3258e38017b03f69321548b3e4b48f974456566b8f05e2f3e9a64e",
+   "token_id": "31740622792171768423790292987907996960126058142543612783028255635524629708176",
+   "outcome_index": 1,
+   "ends": "2026-11-22T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.8,
+   "traders_entry": 0.36,
+   "avg_price": 0.365,
+   "shares": 50.162499639613664,
+   "cost": 18.54,
+   "fees": 0.2325,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7ef3e5ec850ef1bc15ae2e0ad4922409",
+    "fee_rate": 0.02,
+    "event_id": 90117247
+   },
+   "quotes": {
+    "prophetx": 0.3696,
+    "kalshi": 0.3865
+   },
+   "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
