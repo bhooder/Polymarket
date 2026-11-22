@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 691.3514017524221,
+ "cash": 763.4631036002213,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -3195,7 +3195,7 @@
   },
   {
    "placed_at": "2026-11-19T18:46:21.460516+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lions",
    "market": "Spread: Lions (-5.5)",
@@ -3226,15 +3226,15 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.21,
+   "profit": 7.29,
+   "settled_at": "2026-11-22T21:51:56.753224+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-19T18:46:24.549122+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Dolphins vs. Bills: O/U 46.5",
@@ -3263,15 +3263,15 @@
     "kalshi": 0.5775
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.44,
+   "profit": 6.53,
+   "settled_at": "2026-11-22T21:51:56.759870+00:00",
    "topped_up_at": null,
    "close": 0.565
   },
   {
    "placed_at": "2026-11-19T21:34:45.640677+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Eagles",
    "market": "Spread: Steelers (-4.5)",
@@ -3301,9 +3301,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.58,
+   "profit": 7.67,
+   "settled_at": "2026-11-22T21:51:56.799266+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -3458,7 +3458,7 @@
   },
   {
    "placed_at": "2026-11-20T00:04:22.348797+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Steelers vs. Eagles: O/U 38.5",
@@ -3487,9 +3487,9 @@
     "kalshi": 0.518
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.92,
+   "settled_at": "2026-11-22T21:51:56.845567+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -5078,7 +5078,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-21T03:12:11.482913+00:00",
@@ -6702,7 +6703,7 @@
   },
   {
    "placed_at": "2026-11-22T12:57:43.129662+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ravens",
    "market": "Ravens vs. Panthers",
@@ -6732,15 +6733,15 @@
     "polymarket_us": 0.4508
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.68,
+   "settled_at": "2026-11-22T21:51:56.899490+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-22T16:24:42.472342+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Saints vs. Bears: O/U 50.5",
@@ -6770,15 +6771,15 @@
     "kalshi": 0.5972
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.52,
+   "profit": 5.85,
+   "settled_at": "2026-11-22T21:51:56.938984+00:00",
    "topped_up_at": null,
    "close": 0.585
   },
   {
    "placed_at": "2026-11-22T17:12:16.597680+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bills",
    "market": "Dolphins vs. Bills",
@@ -6808,9 +6809,9 @@
     "polymarket_us": 0.9293
    },
    "intl_cost_per_share": 0.9333,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 9.37,
+   "profit": 0.7,
+   "settled_at": "2026-11-22T21:51:56.964340+00:00",
    "topped_up_at": null,
    "close": 0.925
   },
@@ -6888,7 +6889,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.845
   },
   {
    "placed_at": "2026-11-22T19:31:25.155785+00:00",

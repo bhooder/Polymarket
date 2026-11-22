@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 663.4861232287343,
+ "cash": 765.7190290542943,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16159,7 +16159,7 @@
   },
   {
    "placed_at": "2026-11-22T09:39:57.698435+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Ravens",
    "market": "Ravens vs. Panthers",
@@ -16189,9 +16189,9 @@
     "polymarket_us": 0.4508
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.53,
+   "settled_at": "2026-11-22T21:51:55.766062+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -16870,7 +16870,7 @@
   },
   {
    "placed_at": "2026-11-22T17:12:10.641025+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Titans",
    "market": "Spread: Cowboys (-7.5)",
@@ -16900,15 +16900,15 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.67,
+   "settled_at": "2026-11-22T21:51:55.849940+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
   {
    "placed_at": "2026-11-22T17:12:11.468308+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Buccaneers vs. Lions: O/U 48.5",
@@ -16937,9 +16937,9 @@
     "kalshi": 0.5276
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.17,
+   "profit": 18.51,
+   "settled_at": "2026-11-22T21:51:55.889180+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -16981,11 +16981,12 @@
    "topped_up_at": "2026-11-22T17:54:03.891261+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 19.4,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.845
   },
   {
    "placed_at": "2026-11-22T17:12:12.865545+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Eagles",
    "market": "Spread: Steelers (-3.5)",
@@ -17015,15 +17016,15 @@
     "polymarket_us": 0.5287
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.58,
+   "profit": 9.24,
+   "settled_at": "2026-11-22T21:51:55.968403+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
   {
    "placed_at": "2026-11-22T17:12:13.576705+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Bills",
    "market": "Spread: Bills (-16.5)",
@@ -17054,9 +17055,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.9,
+   "profit": 9.56,
+   "settled_at": "2026-11-22T21:51:55.968445+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -17099,7 +17100,7 @@
   },
   {
    "placed_at": "2026-11-22T17:54:04.664936+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Dolphins vs. Bills: O/U 46.5",
@@ -17129,15 +17130,15 @@
     "kalshi": 0.4674
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.66,
+   "settled_at": "2026-11-22T21:51:56.033420+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
   {
    "placed_at": "2026-11-22T17:54:06.699299+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Steelers vs. Eagles: O/U 38.5",
@@ -17167,9 +17168,9 @@
     "kalshi": 0.4978
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.34,
+   "settled_at": "2026-11-22T21:51:56.033461+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -17399,7 +17400,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:23.169463+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FC Internazionale Milano win on 2026-11-22?",
@@ -17429,9 +17430,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.58,
+   "profit": 14.23,
+   "settled_at": "2026-11-22T21:51:56.142768+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -17543,7 +17544,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   }
  ]
 }
