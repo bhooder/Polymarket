@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1001.7539696721964,
+ "cash": 990.5439696721963,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7105,7 +7105,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.655
   },
   {
    "placed_at": "2026-11-22T11:21:44.140951+00:00",
@@ -7441,7 +7442,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-22T16:24:38.051766+00:00",
@@ -7474,6 +7476,43 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T17:12:15.480512+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Broncos",
+   "market": "Raiders vs. Broncos",
+   "link": "https://polymarket.com/event/nfl-lv-den-2026-11-22",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa9adb7f78d2c186aea160bc6da92ee0d3a33fd690d9b6c9f2541f5e375eca682",
+   "token_id": "35709515287750717937624220807186952455539162910410050382479585134145540762209",
+   "outcome_index": 1,
+   "ends": "2026-11-22T21:25:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 32.2,
+   "traders_entry": 0.83,
+   "avg_price": 0.835,
+   "shares": 13.217958205724079,
+   "cost": 11.21,
+   "fees": 0.173,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-lv-den-2026-11-22",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.8481,
+    "kalshi": 0.8499
+   },
+   "intl_cost_per_share": 0.8371,
    "payout": null,
    "profit": null,
    "settled_at": null,
