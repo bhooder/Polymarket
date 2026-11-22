@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 594.5767000221917,
+ "cash": 641.6365332642663,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -2708,7 +2708,7 @@
   },
   {
    "placed_at": "2026-11-19T04:46:26.764772+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "South Carolina",
    "market": "Spread: Georgia (-16.5)",
@@ -2738,9 +2738,9 @@
     "prophetx": 0.5565
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.12,
+   "settled_at": "2026-11-22T04:40:09.601443+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -5003,7 +5003,7 @@
   },
   {
    "placed_at": "2026-11-21T03:12:08.638039+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Mavericks",
    "market": "Clippers vs. Mavericks",
@@ -5034,9 +5034,9 @@
     "polymarket_us": 0.6813
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.26,
+   "profit": 4.39,
+   "settled_at": "2026-11-22T04:40:09.683198+00:00",
    "topped_up_at": null,
    "close": 0.645
   },
@@ -5839,7 +5839,7 @@
   },
   {
    "placed_at": "2026-11-21T13:29:29.181850+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kansas State",
    "market": "Spread: Arizona (-8.5)",
@@ -5868,9 +5868,9 @@
     "polymarket_us": 0.5487
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.64,
+   "profit": 7.51,
+   "settled_at": "2026-11-22T04:40:09.882727+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -6136,7 +6136,7 @@
   },
   {
    "placed_at": "2026-11-21T16:10:22.593821+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "SMU vs. Notre Dame: O/U 55.5",
@@ -6165,9 +6165,9 @@
     "kalshi": 0.5377
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.13,
+   "settled_at": "2026-11-22T04:40:09.897059+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -6548,7 +6548,7 @@
   },
   {
    "placed_at": "2026-11-21T23:03:00.383085+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Notre Dame",
    "market": "Spread: Notre Dame (-20.5)",
@@ -6578,9 +6578,9 @@
     "polymarket_us": 0.5187
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.16,
+   "profit": 8.27,
+   "settled_at": "2026-11-22T04:40:10.017024+00:00",
    "topped_up_at": null,
    "close": 0.485
   },

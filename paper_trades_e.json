@@ -312,7 +312,7 @@
   },
   {
    "placed_at": "2026-11-21T23:42:08.874735+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Clippers",
    "market": "Clippers vs. Mavericks",
@@ -343,9 +343,9 @@
     "polymarket_us": 0.3921
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.31,
+   "settled_at": "2026-11-22T04:40:09.318397+00:00",
    "topped_up_at": null,
    "close": 0.355
   }

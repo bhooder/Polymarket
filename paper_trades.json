@@ -5296,7 +5296,7 @@
   },
   {
    "placed_at": "2026-11-21T16:58:09.995666+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "SMU vs. Notre Dame: O/U 55.5",
@@ -5325,9 +5325,9 @@
     "kalshi": 0.5278
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.78,
+   "settled_at": "2026-11-22T04:40:08.689747+00:00",
    "topped_up_at": null,
    "close": 0.505
   },

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 939.4234571054465,
+ "cash": 979.0433708664266,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16008,7 +16008,7 @@
   },
   {
    "placed_at": "2026-11-21T23:42:05.615914+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kansas State",
    "market": "Spread: Arizona (-9.5)",
@@ -16038,15 +16038,15 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.93,
+   "profit": 10.86,
+   "settled_at": "2026-11-22T04:40:08.960465+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
   {
    "placed_at": "2026-11-22T00:21:25.803076+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Missouri",
    "market": "Spread: Missouri (-4.5)",
@@ -16075,9 +16075,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.69,
+   "profit": 8.62,
+   "settled_at": "2026-11-22T04:40:09.029913+00:00",
    "topped_up_at": null,
    "close": 0.515
   }
