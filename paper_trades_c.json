@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 928.1879627082722,
+ "cash": 1062.3149224117928,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6195,7 +6195,7 @@
   },
   {
    "placed_at": "2026-11-21T07:05:57.895916+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Knicks",
    "market": "Trail Blazers vs. Knicks",
@@ -6224,9 +6224,9 @@
     "kalshi": 0.6763
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 29.45,
+   "profit": 9.53,
+   "settled_at": "2026-11-22T03:33:44.396112+00:00",
    "topped_up_at": "2026-11-21T12:22:33.201689+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.2,
@@ -6311,7 +6311,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:33.090440+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Clippers vs. Mavericks: O/U 227.5",
@@ -6340,9 +6340,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.17,
+   "profit": 21.26,
+   "settled_at": "2026-11-22T03:33:44.417801+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -6385,7 +6385,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:34.040237+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Grizzlies vs. Timberwolves: O/U 227.5",
@@ -6415,9 +6415,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.86,
+   "profit": 20.3,
+   "settled_at": "2026-11-22T03:33:44.442136+00:00",
    "topped_up_at": "2026-11-21T23:42:07.782523+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.9,
@@ -6426,7 +6426,7 @@
   },
   {
    "placed_at": "2026-11-21T13:29:27.791390+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Trail Blazers vs. Knicks: O/U 217.5",
@@ -6455,9 +6455,9 @@
     "prophetx": 0.4859
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.91,
+   "settled_at": "2026-11-22T03:33:44.442195+00:00",
    "topped_up_at": null,
    "close": 0.41
   },
@@ -6648,7 +6648,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-21T16:10:21.389079+00:00",
@@ -6915,11 +6916,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-21T21:29:39.679961+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Maryland",
    "market": "Spread: USC (-16.5)",
@@ -6948,15 +6950,15 @@
     "polymarket_us": 0.4583
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.65,
+   "profit": 12.27,
+   "settled_at": "2026-11-22T03:33:44.477172+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
   {
    "placed_at": "2026-11-21T23:42:08.120268+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Blue Jackets vs. Maple Leafs",
@@ -6986,9 +6988,9 @@
     "polymarket_us": 0.5537
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.59,
+   "settled_at": "2026-11-22T03:33:44.486972+00:00",
    "topped_up_at": null,
    "close": 0.535
   }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1211.4459132898457,
+ "cash": 1236.5753317413792,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5333,7 +5333,7 @@
   },
   {
    "placed_at": "2026-11-21T18:26:03.433446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Spread: Timberwolves (-6.5)",
@@ -5363,15 +5363,15 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.13,
+   "profit": 12.22,
+   "settled_at": "2026-11-22T03:33:43.812232+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-21T21:29:37.437613+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Maple Leafs",
    "market": "Blue Jackets vs. Maple Leafs",
@@ -5402,15 +5402,15 @@
     "kalshi": 0.5477
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -12.97,
+   "settled_at": "2026-11-22T03:33:43.836388+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
   {
    "placed_at": "2026-11-21T23:02:55.428344+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Clippers",
    "market": "Clippers vs. Mavericks",
@@ -5440,9 +5440,9 @@
     "polymarket_us": 0.3921
    },
    "intl_cost_per_share": 0.3715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -23.3,
+   "settled_at": "2026-11-22T03:33:43.847106+00:00",
    "topped_up_at": "2026-11-22T00:21:25.510204+00:00",
    "top_up_bettors": 4,
    "top_up_avg_bankroll_pct": 25.8,

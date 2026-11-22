@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1006.0902622806481,
+ "cash": 1026.2755503784329,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -802,7 +802,7 @@
   },
   {
    "placed_at": "2026-11-21T18:26:12.438540+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Spread: Timberwolves (-6.5)",
@@ -832,15 +832,15 @@
     "kalshi": 0.518
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.19,
+   "profit": 9.82,
+   "settled_at": "2026-11-22T03:35:57.327951+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
   {
    "placed_at": "2026-11-21T23:42:12.787170+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Capitals",
    "market": "Capitals vs. Bruins",
@@ -869,9 +869,9 @@
     "kalshi": 0.4577
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.37,
+   "settled_at": "2026-11-22T03:35:57.350729+00:00",
    "topped_up_at": null,
    "close": 0.445
   }
