@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 457.15802082714345,
+ "cash": 475.3665298410337,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -4170,7 +4170,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-20T08:43:11.372816+00:00",
@@ -5406,7 +5407,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.595
   },
   {
    "placed_at": "2026-11-21T09:59:26.515159+00:00",
@@ -5444,7 +5446,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.535
   },
   {
    "placed_at": "2026-11-21T10:49:17.130305+00:00",
@@ -5858,7 +5861,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-21T13:29:30.194000+00:00",
@@ -5894,7 +5898,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.395
   },
   {
    "placed_at": "2026-11-21T13:29:30.832572+00:00",
@@ -6077,7 +6082,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-21T14:25:47.617112+00:00",
@@ -6155,7 +6161,7 @@
   },
   {
    "placed_at": "2026-11-21T17:45:53.828326+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kennesaw State",
    "market": "Spread: Kennesaw State (-2.5)",
@@ -6185,9 +6191,9 @@
     "polymarket_us": 0.5187
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.21,
+   "profit": 9.06,
+   "settled_at": "2026-11-22T00:19:06.588723+00:00",
    "topped_up_at": null,
    "close": 0.49
   },
@@ -6336,7 +6342,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.535
   },
   {
    "placed_at": "2026-11-21T22:18:25.785498+00:00",
@@ -6372,7 +6379,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-21T22:18:26.582500+00:00",
@@ -6408,7 +6416,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-21T22:18:27.682090+00:00",
@@ -6445,7 +6454,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.535
   },
   {
    "placed_at": "2026-11-21T22:18:29.833132+00:00",
@@ -6520,7 +6530,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-21T23:03:00.383085+00:00",
@@ -6594,7 +6605,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-21T23:42:09.885426+00:00",
@@ -6630,7 +6642,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-21T23:42:11.338018+00:00",
