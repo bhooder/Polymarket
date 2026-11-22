@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 906.948214992901,
+ "cash": 906.522292380067,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7185,7 +7185,8 @@
    "topped_up_at": "2026-11-22T20:22:10.834607+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 2.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-22T11:21:44.973587+00:00",
@@ -7453,7 +7454,7 @@
   },
   {
    "placed_at": "2026-11-22T16:24:38.051766+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Cardinals vs. Chiefs: O/U 40.5",
@@ -7482,9 +7483,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.64,
+   "profit": 10.44,
+   "settled_at": "2026-11-22T21:06:16.004767+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -7710,6 +7711,43 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-22T21:08:39.927117+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Celtics",
+   "market": "Spread: Celtics (-7.5)",
+   "link": "https://polymarket.com/event/nba-bos-gsw-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x129c1eb25dfeecbf710aea08a0df91f0678b58d2208e59da66831deb52f17947",
+   "token_id": "79916675107959997362534831721986795737716467594441027108379203576575674189771",
+   "outcome_index": 0,
+   "ends": "2026-11-23T01:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 41.820460176722726,
+   "cost": 22.07,
+   "fees": 0.74,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV22BOSGSW-BOS8",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5277
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,

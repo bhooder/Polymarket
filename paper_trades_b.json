@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 652.450999400928,
+ "cash": 663.4861232287343,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16304,7 +16304,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-22T11:21:42.384034+00:00",
@@ -16757,7 +16758,7 @@
   },
   {
    "placed_at": "2026-11-22T16:24:31.511952+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Cardinals vs. Chiefs: O/U 40.5",
@@ -16787,9 +16788,9 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.26,
+   "profit": 20.73,
+   "settled_at": "2026-11-22T21:06:15.614082+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -17093,7 +17094,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.535
   },
   {
    "placed_at": "2026-11-22T17:54:04.664936+00:00",
@@ -17243,7 +17245,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-22T18:33:39.027748+00:00",
@@ -17464,6 +17467,79 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-22T21:08:38.960233+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Celtics",
+   "market": "Spread: Celtics (-7.5)",
+   "link": "https://polymarket.com/event/nba-bos-gsw-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x129c1eb25dfeecbf710aea08a0df91f0678b58d2208e59da66831deb52f17947",
+   "token_id": "79916675107959997362534831721986795737716467594441027108379203576575674189771",
+   "outcome_index": 0,
+   "ends": "2026-11-23T01:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 38.1806014487396,
+   "cost": 20.14,
+   "fees": 0.67,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV22BOSGSW-BOS8",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5275
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-22T21:08:39.252724+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Giants",
+   "market": "Spread: Jaguars (-5.5)",
+   "link": "https://polymarket.com/event/nfl-jax-nyg-2026-11-22",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3b5685ab57ccc533e7ce328b8e1acdee3bfae8a6a97a839419e22bf4583cc568",
+   "token_id": "77718096889389040941348249542405688191976008354291412041342691118034696744548",
+   "outcome_index": 1,
+   "ends": "2026-11-22T21:25:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.47,
+   "avg_price": 0.465,
+   "shares": 20.62895282738678,
+   "cost": 10.08,
+   "fees": 0.4875,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-nfl-jax-nyg-2026-11-22-neg-5pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4886
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,
