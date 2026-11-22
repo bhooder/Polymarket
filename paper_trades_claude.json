@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 641.6365332642663,
+ "cash": 714.5057403498237,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5496,7 +5496,7 @@
   },
   {
    "placed_at": "2026-11-21T11:33:22.850395+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Celtics vs. Kings: O/U 217.5",
@@ -5527,9 +5527,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.83,
+   "profit": 17.56,
+   "settled_at": "2026-11-22T06:39:31.393617+00:00",
    "topped_up_at": "2026-11-21T16:10:22.311860+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
@@ -5538,7 +5538,7 @@
   },
   {
    "placed_at": "2026-11-21T12:22:34.839090+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Utah",
    "market": "Spread: Utah (-7.5)",
@@ -5568,9 +5568,9 @@
     "polymarket_us": 0.5387
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.97,
+   "profit": 7.85,
+   "settled_at": "2026-11-22T06:39:31.466310+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -6250,7 +6250,7 @@
   },
   {
    "placed_at": "2026-11-21T20:06:15.540735+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "San Diego State",
    "market": "Spread: Boise State (-17.5)",
@@ -6279,9 +6279,9 @@
     "polymarket_us": 0.4583
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.07,
+   "profit": 10.87,
+   "settled_at": "2026-11-22T06:39:31.568827+00:00",
    "topped_up_at": null,
    "close": 0.425
   },

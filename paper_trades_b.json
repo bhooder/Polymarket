@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 960.5033708664266,
+ "cash": 998.1910747790852,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -15327,7 +15327,7 @@
   },
   {
    "placed_at": "2026-11-21T15:23:52.155788+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Celtics vs. Kings: O/U 217.5",
@@ -15357,9 +15357,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.69,
+   "profit": 17.81,
+   "settled_at": "2026-11-22T06:39:30.645036+00:00",
    "topped_up_at": null,
    "close": 0.485
   },

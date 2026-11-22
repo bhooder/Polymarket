@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1042.244922411793,
+ "cash": 1080.0274143121594,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -6615,7 +6615,7 @@
   },
   {
    "placed_at": "2026-11-21T15:23:56.385500+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Celtics vs. Kings: O/U 217.5",
@@ -6645,9 +6645,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.78,
+   "profit": 17.84,
+   "settled_at": "2026-11-22T06:39:30.848903+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -6882,7 +6882,7 @@
   },
   {
    "placed_at": "2026-11-21T20:53:06.777925+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Spread: Celtics (-12.5)",
@@ -6913,9 +6913,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.12,
+   "settled_at": "2026-11-22T06:39:30.848948+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
