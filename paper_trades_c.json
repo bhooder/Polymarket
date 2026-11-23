@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 854.7300906597768,
+ "cash": 835.3300906597768,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8196,6 +8196,44 @@
     "polymarket_us": 0.433
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.395
+  },
+  {
+   "placed_at": "2026-11-23T23:20:07.524911+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Commanders",
+   "market": "Spread: Bengals (-6.5)",
+   "link": "https://polymarket.com/event/nfl-cin-was-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xccf963f2dcfddc7802aa7762d96736e09e9b4ab9eb4c5332c3b0f23f47c2cca8",
+   "token_id": "48317796068184148682391291777198535116290481702187216151797478853938226855261",
+   "outcome_index": 1,
+   "ends": "2026-11-24T01:15:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 36.5,
+   "traders_entry": 0.51,
+   "avg_price": 0.495,
+   "shares": 38.796196824152126,
+   "cost": 19.4,
+   "fees": 0.194,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c05908229f3d75629517a002deeb8a8b",
+    "fee_rate": 0.02,
+    "event_id": 1700008814
+   },
+   "quotes": {
+    "prophetx": 0.5,
+    "kalshi": 0.5176
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 951.2948749070771,
+ "cash": 941.5918713394366,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1144,7 +1144,7 @@
   },
   {
    "placed_at": "2026-11-23T19:20:09.491619+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Brentford FC win on 2026-11-23?",
@@ -1175,9 +1175,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.81,
+   "settled_at": "2026-11-23T23:20:13.115785+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -1213,6 +1213,43 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T23:20:13.920494+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Spread: Thunder (-5.5)",
+   "link": "https://polymarket.com/event/nba-okc-ind-2026-11-23",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfc83d44b0b7199aa31e58eec35d27b0462a88a900dd694ad2f1fe7b96e3b076a",
+   "token_id": "22410458138069823549010995079475103466757940019893973337832362237641935156436",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 21.6,
+   "traders_entry": 0.51,
+   "avg_price": 0.47,
+   "shares": 19.90000759072455,
+   "cost": 9.7,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV23OKCIND-OKC6",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4876,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,

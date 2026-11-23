@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 635.7864509051807,
+ "cash": 618.2673545020225,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7638,7 +7638,7 @@
   },
   {
    "placed_at": "2026-11-23T19:20:05.741560+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Everton FC win on 2026-11-23?",
@@ -7669,9 +7669,9 @@
     "polymarket_us": 0.3096
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -6.94,
+   "settled_at": "2026-11-23T23:16:32.665729+00:00",
    "topped_up_at": null,
    "close": 0.275
   },
@@ -7816,6 +7816,80 @@
     "kalshi": 0.3866
    },
    "intl_cost_per_share": 0.3817,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T23:20:09.610894+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Thunder vs. Pacers",
+   "link": "https://polymarket.com/event/nba-okc-ind-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc42460b4eca4c9f8871e21184ce28a6b7c1ae422bebad855962db1d6af550347",
+   "token_id": "77551272674430722636416238628877679117713364235606789128145179422306075144624",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.62,
+   "avg_price": 0.63,
+   "shares": 13.538248258981273,
+   "cost": 8.76,
+   "fees": 0.23,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV23OKCIND-OKC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.6423,
+    "kalshi": 0.647,
+    "polymarket_us": 0.6521
+   },
+   "intl_cost_per_share": 0.6417,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T23:20:10.232973+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Grizzlies vs. Hornets: O/U 214.5",
+   "link": "https://polymarket.com/event/nba-mem-cha-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x1bdb7e011d10300b0dd91410c704c709f2c60c9183e5245d2c6f956dbb64a92e",
+   "token_id": "32768526374893315484090939022831850428177302417943654236736404648028574438050",
+   "outcome_index": 1,
+   "ends": "2026-11-24T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 16.11147077864752,
+   "cost": 8.76,
+   "fees": 0.382,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-mem-cha-2026-11-23-214pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,

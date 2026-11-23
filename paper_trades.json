@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1092.660592097779,
+ "cash": 1081.0362723600488,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5949,6 +5949,44 @@
    "settled_at": "2026-11-23T22:13:32.106681+00:00",
    "topped_up_at": null,
    "close": 0.545
+  },
+  {
+   "placed_at": "2026-11-23T23:20:04.628866+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Thunder",
+   "market": "Spread: Thunder (-5.5)",
+   "link": "https://polymarket.com/event/nba-okc-ind-2026-11-23",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfc83d44b0b7199aa31e58eec35d27b0462a88a900dd694ad2f1fe7b96e3b076a",
+   "token_id": "22410458138069823549010995079475103466757940019893973337832362237641935156436",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 21.6,
+   "traders_entry": 0.51,
+   "avg_price": 0.47,
+   "shares": 23.838978165383427,
+   "cost": 11.62,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV23OKCIND-OKC6",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4876,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
