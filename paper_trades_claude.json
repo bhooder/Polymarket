@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 781.8433586653607,
+ "cash": 763.8933317578073,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7149,6 +7149,80 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T15:02:38.938286+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Thunder vs. Pacers: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-okc-ind-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2a4194d13828417611229460bbfc9d89f8ed1a18268b2f0feb68d4b0b60c1f57",
+   "token_id": "1123310837647879539069121072174741404546906399879856144900717204585816204459",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.42,
+   "shares": 20.523873589412702,
+   "cost": 8.97,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV23OKCIND-226",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4371,
+    "polymarket_us": 0.4431
+   },
+   "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T15:02:39.461704+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Clippers vs. Rockets: O/U 224.5",
+   "link": "https://polymarket.com/event/nba-lac-hou-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2dfc1fa1751a2db14185484c064aaf0960c4201c218e8e66588972f6980f3ff1",
+   "token_id": "89714351442015498492468283668587040990187461506962052034522387554745065471189",
+   "outcome_index": 0,
+   "ends": "2026-11-24T01:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.48,
+   "shares": 17.82764754462868,
+   "cost": 8.98,
+   "fees": 0.4227,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-lac-hou-2026-11-23-224pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5037,
+    "kalshi": 0.5075
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
