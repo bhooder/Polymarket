@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 649.5068616362837,
+ "cash": 631.732950271989,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7262,7 +7262,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-23T16:09:06.963979+00:00",
@@ -7562,7 +7563,7 @@
   },
   {
    "placed_at": "2026-11-23T17:13:35.572785+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will LKP Motor Lublin win on 2026-11-23?",
@@ -7591,9 +7592,9 @@
     "kalshi": 0.4068
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.69,
+   "settled_at": "2026-11-23T20:16:36.256702+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -7632,7 +7633,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.735
   },
   {
    "placed_at": "2026-11-23T19:20:05.741560+00:00",
@@ -7670,7 +7672,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.275
   },
   {
    "placed_at": "2026-11-23T19:20:06.720909+00:00",
@@ -7704,6 +7707,79 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T20:18:51.583385+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bengals",
+   "market": "Spread: Bengals (-6.5)",
+   "link": "https://polymarket.com/event/nfl-cin-was-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xccf963f2dcfddc7802aa7762d96736e09e9b4ab9eb4c5332c3b0f23f47c2cca8",
+   "token_id": "25833909583848229560604946180146254026252241209923592644429191596992200679138",
+   "outcome_index": 0,
+   "ends": "2026-11-24T01:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.49,
+   "shares": 17.49777829447894,
+   "cost": 8.88,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV23CINWAS-CIN7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5077
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T20:18:52.501862+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Real Betis Balompi\u00e9 win on 2026-11-24?",
+   "link": "https://polymarket.com/event/ucl-sba-bet-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5623b1f6aa9617f54cb6a8d6f699ac4f89fccf55e8e0158188f4135a9285296f",
+   "token_id": "107184604417766591921727273715012819411321897961104217502642684017980480651258",
+   "outcome_index": 0,
+   "ends": "2026-11-24T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.77,
+   "avg_price": 0.7778,
+   "shares": 11.379424778761063,
+   "cost": 8.89,
+   "fees": 0.0393,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0599f6a31cccc36822df0cc41cade178",
+    "fee_rate": 0.02,
+    "event_id": 90122514
+   },
+   "quotes": {
+    "prophetx": 0.7812,
+    "kalshi": 0.7925
+   },
+   "intl_cost_per_share": 0.7789,
    "payout": null,
    "profit": null,
    "settled_at": null,
