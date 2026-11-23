@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+6a3b2b8f0901,2026-11-23T14:01:17Z,status_change,0x3478873ca9,0x3478873ca92b65c52c9818b715056ab884e2a11e,dumpybadger1368,138,86253.78466094995,581820.8408700002,scanned,,,0.0,,,0,0,0
+de335b302197,2026-11-23T14:01:17Z,status_change,0x99518fa0d2,0x99518fa0d201e7542ea2b852809da5a5c8d811bd,,,,,off_board,scanned,,,,,,,
