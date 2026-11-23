@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+32f58992f396,2026-11-23T17:13:37Z,status_change,0xf2e078fe37,0xf2e078fe373abe771dd4b5d33f79489fa7e277f0,Jacdoh,200,52386.67190899994,391839.66148600006,scanned,off_board,,0.0,1.0,0,0,0,0
+bc19a266e162,2026-11-23T17:13:37Z,status_change,0x32bb3f0f84,0x32bb3f0f842da76d3c3bba7d6d76376334733c1a,,,,,off_board,scanned,,,,,,,

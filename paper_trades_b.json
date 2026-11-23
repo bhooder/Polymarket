@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 844.754434289085,
+ "cash": 816.5611865915572,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17777,7 +17777,7 @@
   },
   {
    "placed_at": "2026-11-23T14:01:12.540209+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Aris Thessaloniki win on 2026-11-23?",
@@ -17806,11 +17806,123 @@
     "kalshi": 0.5976
    },
    "intl_cost_per_share": 0.5823,
+   "payout": 0.0,
+   "profit": -9.49,
+   "settled_at": "2026-11-23T17:11:29.882229+00:00",
+   "topped_up_at": null,
+   "close": 0.585
+  },
+  {
+   "placed_at": "2026-11-23T17:13:33.270707+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Trail Blazers vs. 76ers",
+   "link": "https://polymarket.com/event/nba-por-phi-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x08b3a14c88414512c9d074db808bd94681383b4e08b53613f82877c560ecb234",
+   "token_id": "23319124271903885770702542819893599955046455178352791201079768270241974553838",
+   "outcome_index": 1,
+   "ends": "2026-11-24T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 30.5,
+   "traders_entry": 0.58,
+   "avg_price": 0.55,
+   "shares": 16.551359450050676,
+   "cost": 9.39,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV23PORPHI-PHI",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5675,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.585
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T17:13:33.683541+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Timberwolves",
+   "market": "Nets vs. Timberwolves",
+   "link": "https://polymarket.com/event/nba-bkn-min-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaee799dca8df47dc8d149fb15961124053955815f16e82844bcabd4cd901d129",
+   "token_id": "32998681396714148193127078062416243876923839621362000850666345552201139802587",
+   "outcome_index": 1,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.82,
+   "avg_price": 0.8291,
+   "shares": 11.299513514462845,
+   "cost": 9.4,
+   "fees": 0.032,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "5db7a05e8c8060415d9a93f5144781ba",
+    "fee_rate": 0.02,
+    "event_id": 1704774230
+   },
+   "quotes": {
+    "prophetx": 0.8319,
+    "kalshi": 0.8407,
+    "polymarket_us": 0.8434
+   },
+   "intl_cost_per_share": 0.8371,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T17:13:33.934186+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Bucks vs. Raptors: O/U 223.5",
+   "link": "https://polymarket.com/event/nba-mil-tor-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0bb9ce06b8fb5aa5e713a571788540cad82c86c513bdef988b490ca29bb587f6",
+   "token_id": "109575939390169015369621203315015588616358519883582307827096722726431601646873",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.48,
+   "avg_price": 0.47,
+   "shares": 19.041271956966728,
+   "cost": 9.4,
+   "fees": 0.4506,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-mil-tor-2026-11-23-223pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4937,
+    "kalshi": 0.4975
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
