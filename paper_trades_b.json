@@ -16234,7 +16234,7 @@
   },
   {
    "placed_at": "2026-11-22T11:21:41.248739+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Magic vs. Wizards: O/U 221.5",
@@ -16264,9 +16264,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.53,
+   "settled_at": "2026-11-23T02:43:32.955634+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -17291,7 +17291,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:21.102367+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Jazz",
    "market": "Mavericks vs. Jazz",
@@ -17321,9 +17321,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.95,
+   "settled_at": "2026-11-23T02:43:32.971497+00:00",
    "topped_up_at": null,
    "close": 0.445
   },

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 793.2108849948919,
+ "cash": 795.3604237553503,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6931,7 +6931,7 @@
   },
   {
    "placed_at": "2026-11-22T23:28:57.787012+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Jazz",
    "market": "Mavericks vs. Jazz",
@@ -6962,15 +6962,15 @@
     "kalshi": 0.4676
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.78,
+   "settled_at": "2026-11-23T02:43:33.228239+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
   {
    "placed_at": "2026-11-22T23:28:58.285647+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nuggets",
    "market": "Nuggets vs. Bulls",
@@ -7000,11 +7000,48 @@
     "polymarket_us": 0.7963
    },
    "intl_cost_per_share": 0.7886,
+   "payout": 11.07,
+   "profit": 2.29,
+   "settled_at": "2026-11-23T02:43:33.259651+00:00",
+   "topped_up_at": null,
+   "close": 0.775
+  },
+  {
+   "placed_at": "2026-11-23T02:45:24.314892+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Nets vs. Timberwolves: O/U 226.5",
+   "link": "https://polymarket.com/event/nba-bkn-min-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc6cae6e6f5c1bd4f7b54518fc39e7a000ef412426220bb9ac54c7deec5dcddf9",
+   "token_id": "11778073346787617220665405332932085971791752564182064519619602184713366137301",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.45,
+   "avg_price": 0.44,
+   "shares": 19.5080131569739,
+   "cost": 8.92,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV23BKNMIN-227",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4574,
+    "polymarket_us": 0.4735
+   },
+   "intl_cost_per_share": 0.4523,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.775
+   "topped_up_at": null
   }
  ],
  "version": 2
