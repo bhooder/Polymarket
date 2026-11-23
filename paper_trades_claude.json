@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 665.4193937836297,
+ "cash": 649.5068616362837,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7629,6 +7629,81 @@
     "polymarket_us": 0.7392
    },
    "intl_cost_per_share": 0.7203,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:05.741560+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Everton FC win on 2026-11-23?",
+   "link": "https://polymarket.com/event/epl-bre-eve-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 0.773,
+   "condition_id": "0x1e27ee2ab2865d6abc31d28246d3c13637f572b4153390d55e94f592bafd647e",
+   "token_id": "41312137763373648902476236554993618791302826835435822193067273665464450556226",
+   "outcome_index": 0,
+   "ends": "2026-11-23T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.29,
+   "avg_price": 0.2899,
+   "shares": 23.60770220062875,
+   "cost": 6.94,
+   "fees": 0.0972,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0dd67a15406b6d406495bcf5fd738472",
+    "fee_rate": 0.02,
+    "event_id": 90114175
+   },
+   "quotes": {
+    "prophetx": 0.294,
+    "kalshi": 0.3045,
+    "polymarket_us": 0.3096
+   },
+   "intl_cost_per_share": 0.3003,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:06.720909+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Trail Blazers",
+   "market": "Spread: 76ers (-2.5)",
+   "link": "https://polymarket.com/event/nba-por-phi-2026-11-23",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfb64c2863568a8c3e9151644236d69de2584d19dea0bb3b736c07b19182200e1",
+   "token_id": "6006272943542052106717537640543074543092818095146034834026473822440673403764",
+   "outcome_index": 1,
+   "ends": "2026-11-24T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 17.00496499479614,
+   "cost": 8.97,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV23PORPHI-PHI3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5276,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

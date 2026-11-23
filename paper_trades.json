@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1116.0321953051264,
+ "cash": 1104.2852435528694,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5904,6 +5904,43 @@
     "kalshi": 0.5477
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:02.140615+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Brentford FC win on 2026-11-23?",
+   "link": "https://polymarket.com/event/epl-bre-eve-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9c183fba1441c3917b7e3a99c0103626285576b0d6b8e1bcabf3e10cb8e3a239",
+   "token_id": "64683019428064779459358849868941866000527886763398865377258332714904946823767",
+   "outcome_index": 1,
+   "ends": "2026-11-23T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.58,
+   "avg_price": 0.57,
+   "shares": 19.994652196942212,
+   "cost": 11.75,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV23BREEVE-BRE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5875,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

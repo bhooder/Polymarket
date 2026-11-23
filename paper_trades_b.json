@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 797.7611865915572,
+ "cash": 769.5783517732242,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17994,6 +17994,79 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:03.551178+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Brentford FC win on 2026-11-23?",
+   "link": "https://polymarket.com/event/epl-bre-eve-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9c183fba1441c3917b7e3a99c0103626285576b0d6b8e1bcabf3e10cb8e3a239",
+   "token_id": "64683019428064779459358849868941866000527886763398865377258332714904946823767",
+   "outcome_index": 1,
+   "ends": "2026-11-23T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.58,
+   "avg_price": 0.57,
+   "shares": 32.00166224706509,
+   "cost": 18.79,
+   "fees": 0.55,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV23BREEVE-BRE",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5872,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:04.604993+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "AD Ceuta FC vs. UD Almer\u00eda: O/U 2.5",
+   "link": "https://polymarket.com/event/es2-ceu-alm-2026-11-23-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcc8f08f954e303712669cdecc6382f7dede99a8f552474cf9786df8e54636b0e",
+   "token_id": "22928013230054087688621356190323210936999045966899017945593315681279555668622",
+   "outcome_index": 1,
+   "ends": "2026-11-23T19:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.46,
+   "avg_price": 0.45,
+   "shares": 20.0930829722356,
+   "cost": 9.39,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGA2TOTAL-26NOV23CEUALM-3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4674
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,

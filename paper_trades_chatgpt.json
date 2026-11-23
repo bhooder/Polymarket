@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 970.9062990556838,
+ "cash": 951.2948749070771,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1137,6 +1137,81 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:09.491619+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Brentford FC win on 2026-11-23?",
+   "link": "https://polymarket.com/event/epl-bre-eve-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9c183fba1441c3917b7e3a99c0103626285576b0d6b8e1bcabf3e10cb8e3a239",
+   "token_id": "64683019428064779459358849868941866000527886763398865377258332714904946823767",
+   "outcome_index": 1,
+   "ends": "2026-11-23T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.4,
+   "traders_entry": 0.58,
+   "avg_price": 0.5726,
+   "shares": 16.985718441689855,
+   "cost": 9.81,
+   "fees": 0.0831,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "8ea98b8af8b8d94607fb062929d30ca1",
+    "fee_rate": 0.02,
+    "event_id": 90114175
+   },
+   "quotes": {
+    "prophetx": 0.5775,
+    "kalshi": 0.5874,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T19:20:11.086324+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Commanders",
+   "market": "Spread: Bengals (-6.5)",
+   "link": "https://polymarket.com/event/nfl-cin-was-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xccf963f2dcfddc7802aa7762d96736e09e9b4ab9eb4c5332c3b0f23f47c2cca8",
+   "token_id": "48317796068184148682391291777198535116290481702187216151797478853938226855261",
+   "outcome_index": 1,
+   "ends": "2026-11-24T01:15:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 24.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 18.23350797809002,
+   "cost": 9.8,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV23CINWAS-CIN7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5355,
+    "kalshi": 0.5376
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
