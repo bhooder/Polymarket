@@ -1,0 +1,8 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+4bba7c5fe9d6,2026-11-23T05:00:15Z,top100,2c143b753249,counts,,,,,,,,3,0,2,0,54.2,6159,0,0.54,0.56,0,0,3,0,0.71,,,
+903879789d84,2026-11-23T05:00:15Z,top100,83886b2025c6,counts,,,,,,,,3,1,1,0,10.1,4710,341,0.81,0.83,0,0,3,1,0.66,0.4,,
+cdff8e090e4d,2026-11-23T05:00:15Z,top100,ce48db8d189d,price,,,,,,,,3,0,0,0,0.5,465,0,0.5,0.5,0,0,3,0,0.48,,,
+d719b39c89ad,2026-11-23T05:00:15Z,top200,cea78a9134cf,first_seen,48861420619526555171056308171610449276033615068191335363989065326474735288265,0x08b3a14c88414512c9d074db808bd94681383b4e08b53613f82877c560ecb234,nba-por-phi-2026-11-23,nba,Trail Blazers vs. 76ers,Trail Blazers,2026-11-24T00:00:00Z,4,1,2,0,45.0,15645,935,0.4,0.4,1,0,4,1,0.88,0.97,0,1
+f781e0896317,2026-11-23T05:00:15Z,top200,83886b2025c6,counts,,,,,,,,4,1,1,0,8.3,6370,341,0.82,0.83,0,0,4,1,0.45,0.4,3,1
+c9276ba74cfa,2026-11-23T05:00:15Z,top200,2c143b753249,counts,,,,,,,,3,0,2,0,54.2,6159,0,0.54,0.56,0,0,3,0,0.71,,3,0
+f6659c0c29d1,2026-11-23T05:00:15Z,top200,ce48db8d189d,price,,,,,,,,3,0,0,0,0.5,465,0,0.5,0.5,0,0,3,0,0.48,,3,0

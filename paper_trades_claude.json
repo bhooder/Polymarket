@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 795.3604237553503,
+ "cash": 808.7748937445352,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6894,7 +6894,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:25.155785+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "49ers",
    "market": "Vikings vs. 49ers",
@@ -6923,9 +6923,9 @@
     "kalshi": 0.6464
    },
    "intl_cost_per_share": 0.6515,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.41,
+   "profit": 4.74,
+   "settled_at": "2026-11-23T04:57:16.492978+00:00",
    "topped_up_at": null,
    "close": 0.655
   },

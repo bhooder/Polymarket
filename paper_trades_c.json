@@ -7723,7 +7723,7 @@
   },
   {
    "placed_at": "2026-11-22T21:08:39.927117+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Spread: Celtics (-7.5)",
@@ -7752,9 +7752,9 @@
     "kalshi": 0.5277
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.07,
+   "settled_at": "2026-11-23T04:57:16.158782+00:00",
    "topped_up_at": null,
    "close": 0.525
   },

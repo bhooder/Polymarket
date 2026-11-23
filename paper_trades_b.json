@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 923.3140689042508,
+ "cash": 938.900186678697,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17367,7 +17367,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:22.139938+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "49ers",
    "market": "Vikings vs. 49ers",
@@ -17397,9 +17397,9 @@
     "kalshi": 0.6469
    },
    "intl_cost_per_share": 0.6515,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.59,
+   "profit": 5.62,
+   "settled_at": "2026-11-23T04:57:16.060581+00:00",
    "topped_up_at": null,
    "close": 0.655
   },
@@ -17481,7 +17481,7 @@
   },
   {
    "placed_at": "2026-11-22T21:08:38.960233+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Spread: Celtics (-7.5)",
@@ -17510,9 +17510,9 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.14,
+   "settled_at": "2026-11-23T04:57:16.127850+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
