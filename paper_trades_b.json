@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 769.5783517732242,
+ "cash": 751.2899842851148,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17963,7 +17963,7 @@
   },
   {
    "placed_at": "2026-11-23T18:15:13.794699+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will ACF Fiorentina win on 2026-11-23?",
@@ -17994,15 +17994,15 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.35,
+   "profit": 8.95,
+   "settled_at": "2026-11-23T22:13:32.528992+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
   {
    "placed_at": "2026-11-23T19:20:03.551178+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Brentford FC win on 2026-11-23?",
@@ -18032,9 +18032,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.79,
+   "settled_at": "2026-11-23T22:13:32.536646+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -18074,6 +18074,116 @@
    "settled_at": "2026-11-23T21:13:48.321639+00:00",
    "topped_up_at": null,
    "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-23T22:15:55.872641+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Commanders",
+   "market": "Spread: Bengals (-6.5)",
+   "link": "https://polymarket.com/event/nfl-cin-was-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xccf963f2dcfddc7802aa7762d96736e09e9b4ab9eb4c5332c3b0f23f47c2cca8",
+   "token_id": "48317796068184148682391291777198535116290481702187216151797478853938226855261",
+   "outcome_index": 1,
+   "ends": "2026-11-24T01:15:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 22.3,
+   "traders_entry": 0.51,
+   "avg_price": 0.5074,
+   "shares": 35.92979824769121,
+   "cost": 18.41,
+   "fees": 0.1796,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c05908229f3d75629517a002deeb8a8b",
+    "fee_rate": 0.02,
+    "event_id": 1700008814
+   },
+   "quotes": {
+    "prophetx": 0.5124,
+    "kalshi": 0.5278
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T22:15:56.248705+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pelicans",
+   "market": "Suns vs. Pelicans",
+   "link": "https://polymarket.com/event/nba-phx-nop-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x582de861b9009acc8c3389079f570c466d368fb24e4bd7761929ec8bdae2cd96",
+   "token_id": "80456207984012645348229914885915473661248459196616865881996417426216416116751",
+   "outcome_index": 1,
+   "ends": "2026-11-24T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 7.5,
+   "traders_entry": 0.42,
+   "avg_price": 0.43,
+   "shares": 20.57442911550082,
+   "cost": 9.21,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV23PHXNOP-NOP",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4475
+   },
+   "intl_cost_per_share": 0.4322,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T22:15:56.515479+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SC Internacional win on 2026-11-23?",
+   "link": "https://polymarket.com/event/bra-int-vit-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xd65e2e83658a8eaa8c545cae50f2fe09546ba49e8f8c6cdc4e2e199e3e218065",
+   "token_id": "18559492894528091826675445457029744888761152187979619799815096564524817735389",
+   "outcome_index": 1,
+   "ends": "2026-11-23T22:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.6,
+   "traders_entry": 0.4,
+   "avg_price": 0.4,
+   "shares": 21.61708253358925,
+   "cost": 9.02,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXBRASILEIROGAME-26NOV23INTVIT-INT",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4171,
+    "polymarket_us": 0.433
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
