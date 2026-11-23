@@ -1,0 +1,6 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+2dc26133c61e,2026-11-23T09:06:12Z,top100,ce48db8d189d,price,,,,,,,,3,0,0,0,1.1,465,0,0.5,0.49,0,0,3,0,0.48,,,
+8e361b978fe6,2026-11-23T09:06:12Z,top200,b95dd64877a1,price,,,,,,,,4,0,0,0,1.4,11770,0,0.41,0.43,0,0,4,0,0.35,,2,0
+9075b74fca50,2026-11-23T09:06:12Z,top200,9e2596f99dfb,first_seen,105810891096648117874912148845303524642392958887746145828885275482682561420279,0xa2b12546df25ae7bdb52b8d3f07b9da6e767ad284c8d6e3c07c7f683b940dbcc,nba-sas-sac-2026-11-23,nba,Spurs vs. Kings,Spurs,2026-11-24T03:00:00Z,3,0,1,0,10.1,8121,0,0.79,0.79,0,0,3,0,0.29,,2,0
+12a086cb4d29,2026-11-23T09:06:12Z,top200,bb6b820f341b,price,,,,,,,,3,0,0,0,2.7,1130,0,0.4,0.41,0,0,3,0,0.58,,2,0
+0fadc4d6ffe8,2026-11-23T09:06:12Z,top200,ce48db8d189d,price,,,,,,,,3,0,0,0,1.1,465,0,0.5,0.49,0,0,3,0,0.48,,3,0
