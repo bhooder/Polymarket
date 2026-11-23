@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+1c67878ec453,2026-11-23T06:06:37Z,status_change,0xf2e078fe37,0xf2e078fe373abe771dd4b5d33f79489fa7e277f0,Jacdoh,197,52386.67190899994,391839.66148600006,scanned,off_board,,0.0,1.0,0,0,0,0
+286f07c2054b,2026-11-23T06:06:37Z,status_change,0x3835957ad7,0x3835957ad7188313391213e8647baaf4a2ed3493,btna,198,52369.965059999995,210185.398771,scanned,off_board,,0.036,0.3,0,3445.4062,1,0
+435be646d95f,2026-11-23T06:06:37Z,status_change,0x7ee97269ec,0x7ee97269ec611c5b89edcce6fd97a88d6902aa69,kuwkuw,199,51819.954698000016,530388.019973,scanned,off_board,,0.0,,,0,0,0
+ff94af5b6967,2026-11-23T06:06:37Z,status_change,0x686beac4a9,0x686beac4a954696574277b0fdd353f1d9708a463,laeg,200,51780.663926,432366.338486,scanned,off_board,,0.0,,,0,0,0
+d4f318ba09cc,2026-11-23T06:06:37Z,status_change,0x5116ee15e8,0x5116ee15e86bc8878b90ac8a8514e38511eb58c4,,,,,off_board,scanned,,,,,,,
+9a53b68958fd,2026-11-23T06:06:37Z,status_change,0xd9e0aaca47,0xd9e0aaca471f489be338fd0f91a26e8669a805f2,,,,,off_board,scanned,,,,,,,
+06b0b0c752b8,2026-11-23T06:06:37Z,status_change,0xe8c4d68aff,0xe8c4d68aff65b38cac46987b9b65e01eb47d395d,,,,,off_board,scanned,,,,,,,
+e479b1782d67,2026-11-23T06:06:37Z,status_change,0xf68a281980,0xf68a281980f8c13828e84e147e3822381d6e5b1b,,,,,off_board,scanned,,,,,,,
