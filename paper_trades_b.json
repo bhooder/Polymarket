@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 817.4179518366337,
+ "cash": 841.6262051955589,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16267,7 +16267,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-22T11:21:41.766853+00:00",
@@ -17213,7 +17214,7 @@
   },
   {
    "placed_at": "2026-11-22T18:33:37.764800+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Jets",
    "market": "Jets vs. Chargers",
@@ -17243,9 +17244,9 @@
     "polymarket_us": 0.4177
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.21,
+   "profit": 14.12,
+   "settled_at": "2026-11-23T00:17:05.321465+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -17285,7 +17286,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.775
   },
   {
    "placed_at": "2026-11-22T19:31:21.102367+00:00",
@@ -17322,7 +17324,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-22T19:31:21.459561+00:00",
@@ -17583,7 +17586,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.375
   }
  ]
 }

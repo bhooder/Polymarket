@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1146.2753729599003,
+ "cash": 1174.7782520385952,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -4877,7 +4877,7 @@
   },
   {
    "placed_at": "2026-11-20T05:04:18.249826+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Jets",
    "market": "Jets vs. Chargers",
@@ -4907,9 +4907,9 @@
     "polymarket_us": 0.4177
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 28.5,
+   "profit": 16.62,
+   "settled_at": "2026-11-23T00:17:04.964604+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -5794,7 +5794,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   }
  ]
 }

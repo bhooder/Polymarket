@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 745.9061132515902,
+ "cash": 782.9761055813607,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -5046,7 +5046,7 @@
   },
   {
    "placed_at": "2026-11-21T03:12:10.018460+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Raiders vs. Broncos: O/U 40.5",
@@ -5075,9 +5075,9 @@
     "kalshi": 0.5376
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.48,
+   "profit": 7.62,
+   "settled_at": "2026-11-23T00:17:05.946187+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -6817,7 +6817,7 @@
   },
   {
    "placed_at": "2026-11-22T18:33:41.818535+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Jets",
    "market": "Jets vs. Chargers",
@@ -6847,9 +6847,9 @@
     "polymarket_us": 0.4177
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.59,
+   "profit": 12.01,
+   "settled_at": "2026-11-23T00:17:05.980168+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -6964,7 +6964,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-22T23:28:58.285647+00:00",
@@ -7001,7 +7002,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.775
   }
  ],
  "version": 2
