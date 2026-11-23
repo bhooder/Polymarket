@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 631.732950271989,
+ "cash": 623.567606914073,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7230,7 +7230,7 @@
   },
   {
    "placed_at": "2026-11-23T16:09:05.673617+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "AD Ceuta FC vs. UD Almer\u00eda: O/U 2.5",
@@ -7259,9 +7259,9 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.97,
+   "settled_at": "2026-11-23T21:13:49.445617+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -7780,6 +7780,42 @@
     "kalshi": 0.7925
    },
    "intl_cost_per_share": 0.7789,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T21:16:37.015033+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Wolverhampton Wanderers FC vs. Derby County FC: O/U 3.5",
+   "link": "https://polymarket.com/event/elc-wol-der-2026-11-24-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.929,
+   "condition_id": "0x228e78af7281eced228e3c552b964db07b9f79381aa9560508f9ab63cbcc69f1",
+   "token_id": "21231257338345816727791089246767034617657602644623120125713107103530198818642",
+   "outcome_index": 0,
+   "ends": "2026-11-24T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.37,
+   "avg_price": 0.37,
+   "shares": 21.12254961598894,
+   "cost": 8.17,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEFLCHAMPIONSHIPTOTAL-26NOV24WOLDER-4",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3866
+   },
+   "intl_cost_per_share": 0.3817,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -18040,7 +18040,7 @@
   },
   {
    "placed_at": "2026-11-23T19:20:04.604993+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "AD Ceuta FC vs. UD Almer\u00eda: O/U 2.5",
@@ -18069,9 +18069,9 @@
     "kalshi": 0.4674
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.39,
+   "settled_at": "2026-11-23T21:13:48.321639+00:00",
    "topped_up_at": null,
    "close": 0.445
   }
