@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 922.9393477677731,
+ "cash": 904.3093477677731,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7902,6 +7902,42 @@
     "polymarket_us": 0.8152
    },
    "intl_cost_per_share": 0.808,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T12:34:38.421427+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Yes",
+   "market": "Will St. Louis City SC win on 2026-11-23?",
+   "link": "https://polymarket.com/event/mls-stl-laf-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 0.959,
+   "condition_id": "0x411ab5a9ebec3ef94069770df6fce1cc857409f315b24395323807d9add626be",
+   "token_id": "268265158768865272915487771396678384669594458709979616054312125861611805984",
+   "outcome_index": 0,
+   "ends": "2026-11-24T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.0,
+   "traders_entry": 0.38,
+   "avg_price": 0.39,
+   "shares": 45.15263553970487,
+   "cost": 18.63,
+   "fees": 1.0205,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-mls-stl-laf-2026-11-23-stl",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4126
+   },
+   "intl_cost_per_share": 0.3918,
    "payout": null,
    "profit": null,
    "settled_at": null,
