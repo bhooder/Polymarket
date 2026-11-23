@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 816.5611865915572,
+ "cash": 797.7611865915572,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17919,6 +17919,81 @@
     "kalshi": 0.4975
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T18:15:12.924057+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Clippers vs. Rockets: O/U 225.5",
+   "link": "https://polymarket.com/event/nba-lac-hou-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2518fa3d225e4403172b466fb2850b5bae9679415a63da4e7e04ce3ff5f8ae65",
+   "token_id": "107310568941004953567727421829670551103274197781819694329207883268233760182619",
+   "outcome_index": 0,
+   "ends": "2026-11-24T01:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.47,
+   "avg_price": 0.4525,
+   "shares": 20.548983976367378,
+   "cost": 9.4,
+   "fees": 0.1018,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "84e35aa32fe25f5081fcb8800e0d5614",
+    "fee_rate": 0.02,
+    "event_id": 1704774204
+   },
+   "quotes": {
+    "prophetx": 0.4574,
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T18:15:13.794699+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will ACF Fiorentina win on 2026-11-23?",
+   "link": "https://polymarket.com/event/sea-mon-fio-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x60ed71484ea900745b7b524e74903fa3d54c3a366d76d6468f8032d46e147190",
+   "token_id": "50485258056017808438349340400944541787814579770138869578243223476960191492321",
+   "outcome_index": 1,
+   "ends": "2026-11-23T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.5,
+   "avg_price": 0.5074,
+   "shares": 18.34547004499171,
+   "cost": 9.4,
+   "fees": 0.0917,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e0420028450cbf505e851d45f61415ad",
+    "fee_rate": 0.02,
+    "event_id": 90111229
+   },
+   "quotes": {
+    "prophetx": 0.5124,
+    "kalshi": 0.528,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
