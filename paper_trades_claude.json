@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 782.9761055813607,
+ "cash": 793.2108849948919,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -6855,7 +6855,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:24.730120+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Broncos",
    "market": "Raiders vs. Broncos",
@@ -6886,9 +6886,9 @@
     "kalshi": 0.8498
    },
    "intl_cost_per_share": 0.8467,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.23,
+   "profit": 1.55,
+   "settled_at": "2026-11-23T01:43:56.433703+00:00",
    "topped_up_at": null,
    "close": 0.845
   },
@@ -6926,7 +6926,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.655
   },
   {
    "placed_at": "2026-11-22T23:28:57.787012+00:00",

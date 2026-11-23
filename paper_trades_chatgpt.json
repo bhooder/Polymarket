@@ -1068,7 +1068,7 @@
   },
   {
    "placed_at": "2026-11-22T22:37:28.539294+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Chicago Fire FC vs. Charlotte FC: O/U 3.5",
@@ -1098,9 +1098,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.9,
+   "settled_at": "2026-11-23T01:47:30.863813+00:00",
    "topped_up_at": null,
    "close": 0.495
   }

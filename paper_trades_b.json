@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 841.6262051955589,
+ "cash": 910.2968781285695,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -16946,7 +16946,7 @@
   },
   {
    "placed_at": "2026-11-22T17:12:11.811670+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Broncos",
    "market": "Raiders vs. Broncos",
@@ -16976,9 +16976,9 @@
     "kalshi": 0.8499
    },
    "intl_cost_per_share": 0.8371,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.38,
+   "profit": 3.7,
+   "settled_at": "2026-11-23T01:43:55.338949+00:00",
    "topped_up_at": "2026-11-22T17:54:03.891261+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 19.4,
@@ -17329,7 +17329,7 @@
   },
   {
    "placed_at": "2026-11-22T19:31:21.459561+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Thunder",
    "market": "Spread: Heat (-3.5)",
@@ -17359,9 +17359,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.95,
+   "settled_at": "2026-11-23T01:43:55.472255+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -17400,7 +17400,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.655
   },
   {
    "placed_at": "2026-11-22T19:31:23.169463+00:00",
@@ -17512,11 +17513,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-22T21:08:39.252724+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Giants",
    "market": "Spread: Jaguars (-5.5)",
@@ -17545,15 +17547,15 @@
     "polymarket_us": 0.4886
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.63,
+   "profit": 10.55,
+   "settled_at": "2026-11-23T01:43:55.613560+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
   {
    "placed_at": "2026-11-22T23:28:56.169161+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Chicago Fire FC win on 2026-11-22?",
@@ -17583,9 +17585,9 @@
     "polymarket_us": 0.4024
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.66,
+   "profit": 14.27,
+   "settled_at": "2026-11-23T01:43:55.679616+00:00",
    "topped_up_at": null,
    "close": 0.375
   }

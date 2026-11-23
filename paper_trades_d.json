@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1024.879469103665,
+ "cash": 1049.9793033411574,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -614,7 +614,7 @@
   },
   {
    "placed_at": "2026-11-22T20:22:11.631858+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Broncos",
    "market": "Raiders vs. Broncos",
@@ -645,15 +645,15 @@
     "polymarket_us": 0.8551
    },
    "intl_cost_per_share": 0.8564,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.1,
+   "profit": 3.78,
+   "settled_at": "2026-11-23T01:43:56.055352+00:00",
    "topped_up_at": null,
    "close": 0.845
   },
   {
    "placed_at": "2026-11-22T22:37:25.572782+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Chicago Fire FC vs. Charlotte FC: O/U 3.5",
@@ -683,9 +683,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.57,
+   "settled_at": "2026-11-23T01:43:56.074672+00:00",
    "topped_up_at": null,
    "close": 0.495
   }
