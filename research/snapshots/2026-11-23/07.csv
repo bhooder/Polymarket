@@ -1,0 +1,6 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+bfe5c6a2c3f7,2026-11-23T07:46:03Z,top200,cea78a9134cf,counts,,,,,,,,4,1,2,1,37.0,13439,13247,0.4,0.39,0,0,4,1,0.08,-0.43,1,1
+3d579b2411f0,2026-11-23T07:46:03Z,top200,b95dd64877a1,first_seen,76054449952613631049199818089849827717625516023711378412061815510593320337986,0x3acef91be874168bd41c6f60d31a74b055ca7dfbb531cb0b12b12c4ed57bc645,acle-itj-pak-2026-11-23,acle,Al-Ittihad Club vs. Pakhtakor: O/U 3.5,Over,2026-11-23T18:15:00Z,4,0,0,0,1.7,11770,0,0.41,0.42,0,0,4,0,0.35,,2,0
+3ab47e0ad30f,2026-11-23T07:46:03Z,top200,c027986f1f37,price,,,,,,,,3,2,2,2,66.8,82431,10782,0.52,0.53,0,0,3,2,0.66,0.32,2,1
+456162f43f47,2026-11-23T07:46:03Z,top200,bb6b820f341b,first_seen,80456207984012645348229914885915473661248459196616865881996417426216416116751,0x582de861b9009acc8c3389079f570c466d368fb24e4bd7761929ec8bdae2cd96,nba-phx-nop-2026-11-23,nba,Suns vs. Pelicans,Pelicans,2026-11-24T01:00:00Z,3,0,0,0,2.2,1130,0,0.4,0.4,0,0,3,0,0.58,,2,0
+6b571bf14809,2026-11-23T07:46:03Z,top200,ceb9cdcd5403,price,,,,,,,,3,0,0,0,1.4,737,0,0.52,0.51,0,0,3,0,0.26,,2,0
