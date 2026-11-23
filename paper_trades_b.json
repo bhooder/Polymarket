@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 938.900186678697,
+ "cash": 891.4347141178516,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17590,6 +17590,117 @@
    "settled_at": "2026-11-23T01:43:55.679616+00:00",
    "topped_up_at": null,
    "close": 0.375
+  },
+  {
+   "placed_at": "2026-11-23T10:24:34.951983+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Trail Blazers vs. 76ers: O/U 231.5",
+   "link": "https://polymarket.com/event/nba-por-phi-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd9e3c12e1105e27a5cbd020a80a79bd58bb3ad870c38971d141827c4a297d2b6",
+   "token_id": "69765111533787992141084299283487815815779688807371292386080006475969802852261",
+   "outcome_index": 0,
+   "ends": "2026-11-24T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.6,
+   "traders_entry": 0.45,
+   "avg_price": 0.45,
+   "shares": 40.104537894986926,
+   "cost": 18.99,
+   "fees": 0.943,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-por-phi-2026-11-23-231pt5",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4735,
+    "kalshi": 0.4776
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T10:24:35.398993+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Jazz vs. Lakers: O/U 228.5",
+   "link": "https://polymarket.com/event/nba-uta-lal-2026-11-23",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6a296c2723054a031ac89cbcfab2963b14f76853c6261c5443eabd5379b35448",
+   "token_id": "44559549290321698406844699013638086725308965455870119119253176619773845626944",
+   "outcome_index": 0,
+   "ends": "2026-11-24T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.1,
+   "traders_entry": 0.46,
+   "avg_price": 0.45,
+   "shares": 40.614133632910715,
+   "cost": 18.99,
+   "fees": 0.71,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBATOTAL-26NOV23UTALAL-229",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4675,
+    "polymarket_us": 0.4735
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-23T10:24:35.901254+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Raptors",
+   "market": "Bucks vs. Raptors",
+   "link": "https://polymarket.com/event/nba-mil-tor-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7abb7d4706f5c8c823283318d5f547e2743d9ef841e95e69b9404105193087ee",
+   "token_id": "17547014200662369716402705957152645618065989869801382963580473571474105208196",
+   "outcome_index": 1,
+   "ends": "2026-11-24T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.3,
+   "traders_entry": 0.79,
+   "avg_price": 0.8,
+   "shares": 11.68639053254438,
+   "cost": 9.49,
+   "fees": 0.14,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV23MILTOR-TOR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.812,
+    "polymarket_us": 0.8152
+   },
+   "intl_cost_per_share": 0.808,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
