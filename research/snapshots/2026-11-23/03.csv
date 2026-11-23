@@ -1,0 +1,7 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+b79ef1ff19a7,2026-11-23T03:46:41Z,top100,83886b2025c6,price,,,,,,,,3,1,0,0,1.4,4710,341,0.81,0.83,0,0,3,1,0.66,0.4,,
+6efa404e731e,2026-11-23T03:46:41Z,top100,2c143b753249,bankroll_pct,,,,,,,,3,0,0,0,0.6,6159,0,0.54,0.56,0,0,3,0,0.71,,,
+fd297fb2694a,2026-11-23T03:46:41Z,top100,ce48db8d189d,price,,,,,,,,3,0,0,0,0.5,454,0,0.5,0.49,0,0,3,0,0.48,,,
+d5c89115360f,2026-11-23T03:46:41Z,top200,83886b2025c6,counts,,,,,,,,4,1,0,0,1.3,6370,341,0.82,0.83,0,0,4,1,0.45,0.4,3,1
+37595bcc0778,2026-11-23T03:46:41Z,top200,2c143b753249,bankroll_pct,,,,,,,,3,0,0,0,0.6,6159,0,0.54,0.56,0,0,3,0,0.71,,3,0
+3cc7921eb266,2026-11-23T03:46:41Z,top200,ce48db8d189d,price,,,,,,,,3,0,0,0,0.5,454,0,0.5,0.49,0,0,3,0,0.48,,3,0

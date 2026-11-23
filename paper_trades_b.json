@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 910.2968781285695,
+ "cash": 923.3140689042508,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17252,7 +17252,7 @@
   },
   {
    "placed_at": "2026-11-22T18:33:39.027748+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nuggets",
    "market": "Nuggets vs. Bulls",
@@ -17283,9 +17283,9 @@
     "polymarket_us": 0.8058
    },
    "intl_cost_per_share": 0.7983,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.02,
+   "profit": 2.7,
+   "settled_at": "2026-11-23T03:44:41.736324+00:00",
    "topped_up_at": null,
    "close": 0.775
   },
