@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 618.2673545020225,
+ "cash": 609.5073545020225,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7152,7 +7152,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-23T15:02:38.938286+00:00",
@@ -7338,7 +7339,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-23T16:09:08.378166+00:00",
@@ -7710,7 +7712,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.565
   },
   {
    "placed_at": "2026-11-23T20:18:51.583385+00:00",
@@ -7890,6 +7893,43 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.495
+  },
+  {
+   "placed_at": "2026-11-24T00:12:13.816041+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Western Michigan",
+   "market": "Spread: Western Michigan (-4.5)",
+   "link": "https://polymarket.com/event/cfb-miaoh-wmich-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf6e076031b744d53d37b6b65beeabe26219f5aeab2ac3094dda69d5771649f55",
+   "token_id": "53844916377872072691574857339817869380928537421441249296504273185286741459221",
+   "outcome_index": 0,
+   "ends": "2026-11-25T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.57,
+   "avg_price": 0.565,
+   "shares": 14.889131422717272,
+   "cost": 8.76,
+   "fees": 0.3476,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-miaoh-wmich-2026-11-24-pos-4pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5883
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,

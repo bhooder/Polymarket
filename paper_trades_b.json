@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 751.2899842851148,
+ "cash": 742.0870059813673,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17626,7 +17626,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-23T10:24:35.398993+00:00",
@@ -17668,7 +17669,7 @@
   {
    "placed_at": "2026-11-23T10:24:35.901254+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Raptors",
    "market": "Bucks vs. Raptors",
    "link": "https://polymarket.com/event/nba-mil-tor-2026-11-23",
@@ -17681,10 +17682,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 4.3,
    "traders_entry": 0.79,
-   "avg_price": 0.8,
-   "shares": 11.68639053254438,
-   "cost": 9.49,
-   "fees": 0.14,
+   "avg_price": 0.7999,
+   "shares": 23.0276134122288,
+   "cost": 18.69,
+   "fees": 0.27,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -17700,7 +17701,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-24T00:12:11.999272+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.8,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-23T12:34:37.919756+00:00",
@@ -17847,7 +17851,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-23T17:13:33.683541+00:00",
