@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1030.4828572687743,
+ "cash": 1020.190664251905,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -386,6 +386,43 @@
    "settled_at": "2026-11-22T13:56:10.720772+00:00",
    "topped_up_at": null,
    "close": 0.685
+  },
+  {
+   "placed_at": "2026-11-24T19:29:59.337748+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Mavericks vs. Nuggets",
+   "link": "https://polymarket.com/event/nba-dal-den-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfe6f58d4fa395aee480b05a7e9fb186603a067034a0db6159fc868f66450a77b",
+   "token_id": "71569428935755944256858527466033076863429157187423558408590841490868448921499",
+   "outcome_index": 1,
+   "ends": "2026-11-25T03:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 9.5,
+   "traders_entry": 0.72,
+   "avg_price": 0.72,
+   "shares": 14.016934745651891,
+   "cost": 10.29,
+   "fees": 0.2,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV24DALDEN-DEN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7343,
+    "polymarket_us": 0.7392
+   },
+   "intl_cost_per_share": 0.7301,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
