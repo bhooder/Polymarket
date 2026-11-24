@@ -1,0 +1,6 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+9a4cf2ba8aa7,2026-11-24T06:48:54Z,status_change,0x1bc32be106,0x1bc32be106439240f59aa25668e613831a5cdc6e,0x1bc32be106439240f59aa25668e613831a5cdc6e,126,90850.01405199993,7046950.811518004,skipped_bot,scanned,,0.636,152.7,1,,,
+2013f6ecab9c,2026-11-24T06:48:54Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,wowfarm,187,56809.544018065026,644497.350888,scanned,off_board,,0.0,0.4,0,3580.0,1,0
+f602e3ca27f1,2026-11-24T06:48:54Z,status_change,0xc4d679e669,0xc4d679e669c2bb5870781235ae8a409837fe966b,gdime27,200,53920.3033771315,52028.15571499999,scanned,off_board,,0.01,0.2,0,856.9273,1,0
+0a90916198d4,2026-11-24T06:48:54Z,status_change,0x56280cd4cf,0x56280cd4cf8f902b3971338ddb04038e9dbfabbc,,,,,off_board,scanned,,,,,,,
+4aa6809918dd,2026-11-24T06:48:54Z,status_change,0xe5b70fd855,0xe5b70fd855af9258d9463992e4f1ed7987905ee3,,,,,off_board,scanned,,,,,,,
