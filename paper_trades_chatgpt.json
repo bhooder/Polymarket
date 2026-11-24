@@ -1106,7 +1106,7 @@
   },
   {
    "placed_at": "2026-11-23T17:13:36.084613+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Trail Blazers vs. 76ers",
@@ -1137,9 +1137,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.81,
+   "settled_at": "2026-11-24T03:41:27.898795+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -1222,7 +1222,7 @@
   },
   {
    "placed_at": "2026-11-23T23:20:13.920494+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Spread: Thunder (-5.5)",
@@ -1252,9 +1252,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.7,
+   "settled_at": "2026-11-24T03:41:28.006852+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -1294,7 +1294,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   }
  ]
 }

@@ -1,0 +1,13 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+57f27141abc3,2026-11-24T03:41:31Z,status_change,0x237ed451df,0x237ed451df8c2ac9fbcfc02b6bfa51124ac5c6d7,crgmegeg,146,77622.44835047601,123308.09904799999,scanned,,,0.0,,,0,0,0
+8053f958f861,2026-11-24T03:41:31Z,status_change,0xc29a02c2d0,0xc29a02c2d0683d9cc1e5ef810cdf48a9e2c67816,charlie5492,158,66471.01654454,889405.592001,scanned,,,0.0,0.0,0,4192.629,1,0
+eeeea02a6fad,2026-11-24T03:41:31Z,status_change,0x56280cd4cf,0x56280cd4cf8f902b3971338ddb04038e9dbfabbc,Po1yamory,178,58489.33158949601,1349161.048223999,scanned,,,0.0,0.1,0,37505.5907,7,0
+f38c2fe74f50,2026-11-24T03:41:31Z,status_change,0x19ae9efef6,0x19ae9efef67c685a8581d631d99267b1ff10395c,MaoZeDonK,183,56581.443816845014,1274615.0852650001,scanned,,,0.224,1.0,0,41924.4075,10,0
+105d37790aa4,2026-11-24T03:41:31Z,status_change,0x4e3742789d,0x4e3742789d1530ef3816a37f63da7644d695505e,WorthlessHoldings,193,54499.03817,0.0,skipped_bot,,,1.0,,,,,
+adeb7cc43b51,2026-11-24T03:41:31Z,status_change,0x32bb3f0f84,0x32bb3f0f842da76d3c3bba7d6d76376334733c1a,Limousin,200,53122.24022457477,23634839.144268002,scanned,off_board,,0.0,201.0,1,60775.291,54,22
+7133fd5dbda1,2026-11-24T03:41:31Z,status_change,0x23c8a4c266,0x23c8a4c266d10ba5846837eac391fea89ed6f293,,,,,off_board,scanned,,,,,,,
+3cb111f7313a,2026-11-24T03:41:31Z,status_change,0x4bff30af91,0x4bff30af91642dc7d2b19a8664378fe55c45fc26,,,,,off_board,scanned,,,,,,,
+69515840ae65,2026-11-24T03:41:31Z,status_change,0x5116ee15e8,0x5116ee15e86bc8878b90ac8a8514e38511eb58c4,,,,,off_board,scanned,,,,,,,
+2e632b141fa5,2026-11-24T03:41:31Z,status_change,0x869909eeaa,0x869909eeaa3637081a7383b177c20dedd7957bb2,,,,,off_board,scanned,,,,,,,
+85b0f0a2130e,2026-11-24T03:41:31Z,status_change,0x8ed5028ed7,0x8ed5028ed76767753428b566801f6c96363102d7,,,,,off_board,scanned,,,,,,,
+a9eeede1815e,2026-11-24T03:41:31Z,status_change,0x9a3fa403a6,0x9a3fa403a6666eef75f92f181fcf13f9c051914a,,,,,off_board,scanned,,,,,,,

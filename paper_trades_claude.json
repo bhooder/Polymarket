@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 616.1099738967127,
+ "cash": 689.7863065194937,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7009,7 +7009,7 @@
   },
   {
    "placed_at": "2026-11-23T02:45:24.314892+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Nets vs. Timberwolves: O/U 226.5",
@@ -7039,15 +7039,15 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.51,
+   "profit": 10.59,
+   "settled_at": "2026-11-24T03:37:42.989829+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
   {
    "placed_at": "2026-11-23T14:01:14.097794+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Cavaliers vs. Bulls: O/U 239.5",
@@ -7077,9 +7077,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.4,
+   "profit": 9.42,
+   "settled_at": "2026-11-24T03:37:43.071309+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -7118,7 +7118,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-23T14:01:15.085223+00:00",
@@ -7160,7 +7161,7 @@
   },
   {
    "placed_at": "2026-11-23T15:02:38.938286+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Thunder vs. Pacers: O/U 225.5",
@@ -7190,9 +7191,9 @@
     "polymarket_us": 0.4431
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.52,
+   "profit": 11.55,
+   "settled_at": "2026-11-24T03:37:43.234367+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -7382,7 +7383,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-23T16:09:09.028242+00:00",
@@ -7460,7 +7462,7 @@
   },
   {
    "placed_at": "2026-11-23T17:13:34.862517+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bucks vs. Raptors: O/U 220.5",
@@ -7490,15 +7492,15 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.66,
+   "profit": 6.68,
+   "settled_at": "2026-11-24T03:37:43.617296+00:00",
    "topped_up_at": null,
    "close": 0.535
   },
   {
    "placed_at": "2026-11-23T17:13:35.114463+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Spread: Timberwolves (-11.5)",
@@ -7528,9 +7530,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.33,
+   "profit": 8.35,
+   "settled_at": "2026-11-24T03:37:43.698848+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -7835,7 +7837,7 @@
   },
   {
    "placed_at": "2026-11-23T23:20:09.610894+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Thunder",
    "market": "Thunder vs. Pacers",
@@ -7866,9 +7868,9 @@
     "polymarket_us": 0.6521
    },
    "intl_cost_per_share": 0.6417,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.76,
+   "settled_at": "2026-11-24T03:37:43.850183+00:00",
    "topped_up_at": null,
    "close": 0.615
   },
@@ -8049,6 +8051,82 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.475
+  },
+  {
+   "placed_at": "2026-11-24T03:41:26.885213+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Spread: Nuggets (-6.5)",
+   "link": "https://polymarket.com/event/nba-dal-den-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x0c8539844ffac4dab53891288755f75cbbb282b143272a824d2f2a7184f04b9f",
+   "token_id": "18102312816087339495247054321169821204540135137374151676810298888435537341002",
+   "outcome_index": 0,
+   "ends": "2026-11-25T03:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.56,
+   "avg_price": 0.57,
+   "shares": 15.498410135619602,
+   "cost": 9.1,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV24DALDEN-DEN7",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.5812,
+    "kalshi": 0.5874,
+    "polymarket_us": 0.5933
+   },
+   "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T03:41:27.484562+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lynn Vision",
+   "market": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "link": "https://polymarket.com/event/cs2-9z-lvg-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 0.949,
+   "condition_id": "0xf953da23adb7e972e95c302836b2993fe8027f8e5d419ab82651b849931a0b92",
+   "token_id": "61103104939004286863509411220242513783789340081930256175941099247252342493752",
+   "outcome_index": 1,
+   "ends": "2026-11-24T04:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.36,
+   "avg_price": 0.37,
+   "shares": 22.365052534576527,
+   "cost": 8.65,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV232300LVG9Z-LVG",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3865,
+    "polymarket_us": 0.4126
+   },
+   "intl_cost_per_share": 0.3918,
    "payout": null,
    "profit": null,
    "settled_at": null,

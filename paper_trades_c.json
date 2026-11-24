@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 899.1325682994973,
+ "cash": 983.6721301773756,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7869,11 +7869,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-23T10:24:37.067620+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Raptors",
    "market": "Bucks vs. Raptors",
@@ -7903,15 +7904,15 @@
     "polymarket_us": 0.8152
    },
    "intl_cost_per_share": 0.808,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.71,
+   "settled_at": "2026-11-24T03:37:42.203700+00:00",
    "topped_up_at": null,
    "close": 0.785
   },
   {
    "placed_at": "2026-11-23T12:34:38.421427+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will St. Louis City SC win on 2026-11-23?",
@@ -7940,15 +7941,15 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 45.15,
+   "profit": 26.52,
+   "settled_at": "2026-11-24T03:37:42.294882+00:00",
    "topped_up_at": null,
    "close": 0.345
   },
   {
    "placed_at": "2026-11-23T14:01:12.939989+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Pacers",
    "market": "Spread: Thunder (-4.5)",
@@ -7978,9 +7979,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.9,
+   "profit": 10.2,
+   "settled_at": "2026-11-24T03:37:42.303745+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -8023,7 +8024,7 @@
   },
   {
    "placed_at": "2026-11-23T17:13:34.182068+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Bucks vs. Raptors: O/U 223.5",
@@ -8053,9 +8054,9 @@
     "kalshi": 0.4976
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.49,
+   "profit": 9.87,
+   "settled_at": "2026-11-24T03:37:42.408603+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
