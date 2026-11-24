@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 983.4135488561103,
+ "cash": 922.0923327933086,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8319,7 +8319,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-24T12:48:30.705778+00:00",
@@ -8353,6 +8354,152 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T18:23:38.274537+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will SSC Napoli win on 2026-11-24?",
+   "link": "https://polymarket.com/event/ucl-mnc-nap-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xce2f264176d415edc7e1f58e7941c415f05f8878f2b46f2ef0b20f69e67baeec",
+   "token_id": "27934316064641791240575247495813113560272350834119923360492152762578737523866",
+   "outcome_index": 1,
+   "ends": "2026-11-24T20:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.9,
+   "avg_price": 0.91,
+   "shares": 22.32091668641405,
+   "cost": 20.44,
+   "fees": 0.13,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUCLGAME-26NOV24MCINAP-NAP",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.9158,
+    "polymarket_us": 0.9178
+   },
+   "intl_cost_per_share": 0.9237,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T18:23:38.664721+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Packers vs. Rams: O/U 44.5",
+   "link": "https://polymarket.com/event/nfl-gb-la-2026-11-26",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2d98a2fe45b6518c8be36982cad687ae6b797611ea59cae7197841bd5887a3e4",
+   "token_id": "30941454346265380482034981191315493245460279106594942672985397255826797811285",
+   "outcome_index": 1,
+   "ends": "2026-11-26T01:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 9.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.5169,
+   "shares": 39.183564369717836,
+   "cost": 20.45,
+   "fees": 0.1957,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "cdda50d7bdf9d5c09ab0673e311d6e83",
+    "fee_rate": 0.02,
+    "event_id": 1700008889
+   },
+   "quotes": {
+    "prophetx": 0.5219
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T18:23:38.960396+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Mavericks vs. Nuggets",
+   "link": "https://polymarket.com/event/nba-dal-den-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xfe6f58d4fa395aee480b05a7e9fb186603a067034a0db6159fc868f66450a77b",
+   "token_id": "71569428935755944256858527466033076863429157187423558408590841490868448921499",
+   "outcome_index": 1,
+   "ends": "2026-11-25T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.4,
+   "traders_entry": 0.72,
+   "avg_price": 0.72,
+   "shares": 13.907959548406785,
+   "cost": 10.21,
+   "fees": 0.2,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV24DALDEN-DEN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7344,
+    "polymarket_us": 0.7392
+   },
+   "intl_cost_per_share": 0.7399,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T18:23:39.246176+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Cesena FC win on 2026-11-24?",
+   "link": "https://polymarket.com/event/itsb-ces-asc-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x26e56685fe5e92f915e1182a0d8539f8e1d07f99d8eefc5f0c05925a3227a82e",
+   "token_id": "54237113458173158404728967397356263046972169198654680050314137785500454918591",
+   "outcome_index": 1,
+   "ends": "2026-11-24T19:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.4,
+   "traders_entry": 0.61,
+   "avg_price": 0.62,
+   "shares": 16.04105000534178,
+   "cost": 10.22,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEBGAME-26NOV24CESASC-CES",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6368
+   },
+   "intl_cost_per_share": 0.612,
    "payout": null,
    "profit": null,
    "settled_at": null,
