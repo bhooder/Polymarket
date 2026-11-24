@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 983.6721301773756,
+ "cash": 1022.4683270015278,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8062,7 +8062,7 @@
   },
   {
    "placed_at": "2026-11-23T18:15:14.305782+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Clippers vs. Rockets: O/U 225.5",
@@ -8091,9 +8091,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.62,
+   "settled_at": "2026-11-24T04:45:15.633453+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -8137,7 +8137,7 @@
   },
   {
    "placed_at": "2026-11-23T22:15:56.874558+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Pelicans",
    "market": "Suns vs. Pelicans",
@@ -8166,9 +8166,9 @@
     "kalshi": 0.4475
    },
    "intl_cost_per_share": 0.4322,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.7,
+   "settled_at": "2026-11-24T04:45:15.682536+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -8212,7 +8212,7 @@
   },
   {
    "placed_at": "2026-11-23T23:20:07.524911+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Commanders",
    "market": "Spread: Bengals (-6.5)",
@@ -8242,9 +8242,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.8,
+   "profit": 19.4,
+   "settled_at": "2026-11-24T04:45:15.682577+00:00",
    "topped_up_at": null,
    "close": 0.505
   }

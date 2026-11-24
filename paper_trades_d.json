@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1028.9891101044425,
+ "cash": 1069.5494965778723,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -691,7 +691,7 @@
   },
   {
    "placed_at": "2026-11-24T00:12:13.273453+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Commanders",
    "market": "Spread: Bengals (-6.5)",
@@ -720,9 +720,9 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.56,
+   "profit": 19.57,
+   "settled_at": "2026-11-24T04:45:15.718784+00:00",
    "topped_up_at": null,
    "close": 0.505
   }
