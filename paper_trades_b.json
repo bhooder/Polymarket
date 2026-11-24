@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 945.2512310236823,
+ "cash": 925.9812310236823,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18233,6 +18233,43 @@
     "polymarket_us": 0.3407
    },
    "intl_cost_per_share": 0.3309,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T08:17:17.490677+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Galatasaray SK vs. Aston Villa FC: O/U 3.5",
+   "link": "https://polymarket.com/event/ucl-gal-ast-2026-11-24-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7ce053c2c6b9eec2fa7202f3d19f2ea1f47f6cd6717e31ebee64e645c89c2bae",
+   "token_id": "13690945097542327524615255993941507340105010550127295165519571388307704848322",
+   "outcome_index": 0,
+   "ends": "2026-11-24T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.44,
+   "avg_price": 0.4274,
+   "shares": 44.581211762717594,
+   "cost": 19.27,
+   "fees": 0.2182,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "fae400fc6c4a1094bb6a9e67c659801f",
+    "fee_rate": 0.02,
+    "event_id": 90122506
+   },
+   "quotes": {
+    "prophetx": 0.4322,
+    "polymarket_us": 0.4533
+   },
+   "intl_cost_per_share": 0.4423,
    "payout": null,
    "profit": null,
    "settled_at": null,

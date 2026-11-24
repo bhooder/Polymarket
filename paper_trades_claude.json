@@ -8312,7 +8312,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-24T05:48:13.090574+00:00",
@@ -8354,7 +8355,7 @@
   },
   {
    "placed_at": "2026-11-24T05:48:13.592851+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "DENDELE CS",
    "market": "Counter-Strike: PVISION vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
@@ -8383,9 +8384,9 @@
     "kalshi": 0.4068
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.96,
+   "settled_at": "2026-11-24T08:14:41.092746+00:00",
    "topped_up_at": null,
    "close": 0.385
   }
