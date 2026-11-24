@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1101.7503907665118,
+ "cash": 1090.6279815961213,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6063,6 +6063,42 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T11:39:11.261211+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "FaZe",
+   "market": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+   "link": "https://polymarket.com/event/cs2-faze-gosh-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c",
+   "token_id": "51543776719257802745442557763304557616211324727321390289274194103078570664027",
+   "outcome_index": 0,
+   "ends": "2026-11-24T12:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 21.3,
+   "traders_entry": 0.57,
+   "avg_price": 0.58,
+   "shares": 18.624843397225032,
+   "cost": 11.12,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV240700GOSHFAZE-FAZE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5972
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,
