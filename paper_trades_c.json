@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 835.3300906597768,
+ "cash": 858.0988046712931,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7906,7 +7906,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.785
   },
   {
    "placed_at": "2026-11-23T12:34:38.421427+00:00",
@@ -7942,7 +7943,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.345
   },
   {
    "placed_at": "2026-11-23T14:01:12.939989+00:00",
@@ -7979,7 +7981,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-23T14:01:13.321269+00:00",
@@ -8053,7 +8056,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-23T18:15:14.305782+00:00",
@@ -8163,11 +8167,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-23T22:15:57.100680+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SC Internacional win on 2026-11-23?",
@@ -8197,9 +8202,9 @@
     "polymarket_us": 0.433
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.77,
+   "profit": 13.27,
+   "settled_at": "2026-11-24T01:25:07.611919+00:00",
    "topped_up_at": null,
    "close": 0.395
   },
@@ -8238,7 +8243,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   }
  ]
 }

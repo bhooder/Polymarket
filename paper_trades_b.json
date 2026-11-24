@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 742.0870059813673,
+ "cash": 763.7040885149565,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17704,7 +17704,8 @@
    "topped_up_at": "2026-11-24T00:12:11.999272+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.785
   },
   {
    "placed_at": "2026-11-23T12:34:37.919756+00:00",
@@ -17740,7 +17741,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.345
   },
   {
    "placed_at": "2026-11-23T14:01:11.649532+00:00",
@@ -17777,7 +17779,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-23T14:01:12.540209+00:00",
@@ -17890,7 +17893,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.815
   },
   {
    "placed_at": "2026-11-23T17:13:33.934186+00:00",
@@ -17927,7 +17931,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-23T18:15:12.924057+00:00",
@@ -18115,7 +18120,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-23T22:15:56.248705+00:00",
@@ -18151,11 +18157,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-23T22:15:56.515479+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SC Internacional win on 2026-11-23?",
@@ -18185,9 +18192,9 @@
     "polymarket_us": 0.433
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.62,
+   "profit": 12.6,
+   "settled_at": "2026-11-24T01:25:07.401318+00:00",
    "topped_up_at": null,
    "close": 0.395
   }
