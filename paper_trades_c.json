@@ -8479,7 +8479,7 @@
   },
   {
    "placed_at": "2026-11-24T18:23:39.246176+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Cesena FC win on 2026-11-24?",
@@ -8508,9 +8508,9 @@
     "kalshi": 0.6368
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.22,
+   "settled_at": "2026-11-24T21:27:46.242976+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -8737,7 +8737,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   }
  ]
 }
