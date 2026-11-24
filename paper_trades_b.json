@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 725.0014262698695,
+ "cash": 696.6779742574856,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18239,11 +18239,12 @@
    "topped_up_at": "2026-11-24T19:29:55.907162+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.4,
-   "top_up_size_multiplier": 0.86
+   "top_up_size_multiplier": 0.86,
+   "close": 0.335
   },
   {
    "placed_at": "2026-11-24T08:17:17.490677+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Galatasaray SK vs. Aston Villa FC: O/U 3.5",
@@ -18273,9 +18274,9 @@
     "polymarket_us": 0.4533
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.27,
+   "settled_at": "2026-11-24T20:24:50.643100+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -18392,7 +18393,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.905
   },
   {
    "placed_at": "2026-11-24T18:23:35.802289+00:00",
@@ -18505,7 +18507,8 @@
    "topped_up_at": "2026-11-24T19:29:55.425003+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 2.9,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.955
   },
   {
    "placed_at": "2026-11-24T18:23:37.338060+00:00",
@@ -18616,7 +18619,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-24T19:29:55.309030+00:00",
@@ -18653,7 +18657,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-24T19:29:55.789036+00:00",
@@ -18724,6 +18729,81 @@
     "polymarket_us": 0.9178
    },
    "intl_cost_per_share": 0.9141,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.915
+  },
+  {
+   "placed_at": "2026-11-24T20:29:19.315497+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Fenerbah\u00e7e SK win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-shd-fen-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbf35a5ba78db8bf7bde9798f8765bf8ab2d03def520b6a38bbaba2b721bbace2",
+   "token_id": "72054001983765673019884581168187370429393254505400976300622543491429887482863",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.61,
+   "avg_price": 0.6094,
+   "shares": 30.758672232160606,
+   "cost": 18.89,
+   "fees": 0.1464,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "220fe3c4ae729d18fad9605108c479ad",
+    "fee_rate": 0.02,
+    "event_id": 90122521
+   },
+   "quotes": {
+    "prophetx": 0.6141,
+    "kalshi": 0.6269
+   },
+   "intl_cost_per_share": 0.612,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T20:29:20.406829+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SE Palmeiras win on 2026-11-24?",
+   "link": "https://polymarket.com/event/bra-cha-pal-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5fb42570de0058f3e6e97e08bd189d8ddf643578dd7229c5040b1ce6925c8e95",
+   "token_id": "39959472740360728125526079105947664610618138430622244675717081759671183949725",
+   "outcome_index": 1,
+   "ends": "2026-11-24T21:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.56,
+   "avg_price": 0.52,
+   "shares": 17.54510002381519,
+   "cost": 9.43,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXBRASILEIROGAME-26NOV24CHAPAL-PAL",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5377,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,

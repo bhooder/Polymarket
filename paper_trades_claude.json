@@ -7308,7 +7308,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.765
   },
   {
    "placed_at": "2026-11-23T16:09:07.659077+00:00",
@@ -7388,7 +7389,7 @@
   },
   {
    "placed_at": "2026-11-23T16:09:09.028242+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Galatasaray SK vs. Aston Villa FC: O/U 3.5",
@@ -7417,9 +7418,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.98,
+   "settled_at": "2026-11-24T20:24:51.840436+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -7459,7 +7460,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-23T17:13:34.862517+00:00",
@@ -7798,7 +7800,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.715
   },
   {
    "placed_at": "2026-11-23T21:16:37.015033+00:00",
@@ -7834,7 +7837,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.335
   },
   {
    "placed_at": "2026-11-23T23:20:09.610894+00:00",
@@ -8355,7 +8359,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.355
   },
   {
    "placed_at": "2026-11-24T05:48:13.592851+00:00",
@@ -8428,7 +8433,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   }
  ],
  "version": 2

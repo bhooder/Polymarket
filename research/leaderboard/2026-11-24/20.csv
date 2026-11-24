@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+09ab3288b242,2026-11-24T20:29:26Z,status_change,0x08a0669cba,0x08a0669cbac171dd04a05e8afcdc1af34a6ed057,PinoPlast,160,68974.69078925,570942.80804,scanned,,,0.0,,,11637.5761,4,0
+b8fd56ca3229,2026-11-24T20:29:26Z,status_change,0x97cc0cd39a,0x97cc0cd39aa47cd03d085b36d5a514af4f59475b,misterblobby,171,62504.59845974001,2782420.2461370016,scanned,,,0.0,,,15876.9571,4,0
+3051320c9703,2026-11-24T20:29:26Z,status_change,0x5815db9fdf,0x5815db9fdf0e0ffdc1d1f759916b221339570ae7,,,,,off_board,scanned,,,,,,,
+789584943dcc,2026-11-24T20:29:26Z,status_change,0x70dea98a2f,0x70dea98a2faf5e45297ea6109f85e0d0d10e1ee2,,,,,off_board,scanned,,,,,,,
