@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 667.6001626592468,
+ "cash": 685.028359201989,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8279,7 +8279,7 @@
   },
   {
    "placed_at": "2026-11-24T04:47:58.289341+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Andres Martin",
    "market": "Hersonissos 4: Andres Martin vs Radu Mihai Papoe",
@@ -8309,9 +8309,9 @@
     "kalshi": 0.518
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.43,
+   "profit": 8.5,
+   "settled_at": "2026-11-24T10:36:46.372218+00:00",
    "topped_up_at": null,
    "close": 0.485
   },

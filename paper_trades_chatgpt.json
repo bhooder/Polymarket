@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 950.1153793175266,
+ "cash": 940.6153793175266,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1296,6 +1296,42 @@
    "settled_at": "2026-11-24T05:48:13.998349+00:00",
    "topped_up_at": null,
    "close": 0.495
+  },
+  {
+   "placed_at": "2026-11-24T10:38:51.270447+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Mavericks vs. Nuggets: O/U 232.5",
+   "link": "https://polymarket.com/event/nba-dal-den-2026-11-24",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb7bb8cb677e39b8d2e32941f96cdd6d1d55c6509c36d1062661fb25c2d9b3c74",
+   "token_id": "73503091982862781042693641170659841649148883335233489344530533792818568195136",
+   "outcome_index": 1,
+   "ends": "2026-11-25T03:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 30.9,
+   "traders_entry": 0.51,
+   "avg_price": 0.48,
+   "shares": 18.859983482624994,
+   "cost": 9.5,
+   "fees": 0.4472,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-dal-den-2026-11-24-232pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
