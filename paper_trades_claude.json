@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 644.6294594331282,
+ "cash": 667.6001626592468,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7085,7 +7085,7 @@
   },
   {
    "placed_at": "2026-11-23T14:01:14.635310+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Jazz vs. Lakers: O/U 226.5",
@@ -7115,9 +7115,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.97,
+   "settled_at": "2026-11-24T05:45:47.212534+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -7350,7 +7350,7 @@
   },
   {
    "placed_at": "2026-11-23T16:09:08.378166+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Spurs vs. Kings: O/U 224.5",
@@ -7380,9 +7380,9 @@
     "kalshi": 0.5477
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.98,
+   "settled_at": "2026-11-24T05:45:47.238556+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -8022,7 +8022,7 @@
   },
   {
    "placed_at": "2026-11-24T02:37:14.251055+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Spurs",
    "market": "Spread: Spurs (-8.5)",
@@ -8051,9 +8051,9 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.55,
+   "profit": 8.82,
+   "settled_at": "2026-11-24T05:45:47.549893+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
@@ -8097,7 +8097,7 @@
   },
   {
    "placed_at": "2026-11-24T03:41:27.484562+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lynn Vision",
    "market": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
@@ -8127,9 +8127,9 @@
     "polymarket_us": 0.4126
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.37,
+   "profit": 13.72,
+   "settled_at": "2026-11-24T05:45:47.614025+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -8309,6 +8309,80 @@
     "kalshi": 0.518
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T05:48:13.090574+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Arsenal FC vs. BV Borussia 09 Dortmund: O/U 3.5",
+   "link": "https://polymarket.com/event/ucl-ars-bvb-2026-11-24-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.889,
+   "condition_id": "0x8677bfd4246f27f29d5b85a828979df8068ade4dd5108e45fced18506286f570",
+   "token_id": "57590643936235886291733154183862975840333468792955622079762112019712051472262",
+   "outcome_index": 0,
+   "ends": "2026-11-24T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.35,
+   "avg_price": 0.3401,
+   "shares": 23.155608970055056,
+   "cost": 7.98,
+   "fees": 0.1039,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1edc046a2b283e842ff2b2c0c30537ce",
+    "fee_rate": 0.02,
+    "event_id": 90122509
+   },
+   "quotes": {
+    "prophetx": 0.3446,
+    "kalshi": 0.3561,
+    "polymarket_us": 0.3613
+   },
+   "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T05:48:13.592851+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "DENDELE CS",
+   "market": "Counter-Strike: PVISION vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
+   "link": "https://polymarket.com/event/cs2-pv-dendel-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaceb55f87ad0bdfa65d3aaab17fc20a63396231afe10ab3761e6b497a11c32e2",
+   "token_id": "74849333142736629141749971019801353799067076840546847104562271230754880737856",
+   "outcome_index": 1,
+   "ends": "2026-11-24T06:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.4,
+   "avg_price": 0.39,
+   "shares": 22.03352735624722,
+   "cost": 8.96,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV240100DENPV-DEN",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4068
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,

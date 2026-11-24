@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1022.4683270015278,
+ "cash": 1014.0790906517759,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7836,7 +7836,7 @@
   },
   {
    "placed_at": "2026-11-23T10:24:36.678431+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Jazz vs. Lakers: O/U 228.5",
@@ -7866,9 +7866,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.42,
+   "settled_at": "2026-11-24T05:45:46.952661+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -8247,6 +8247,43 @@
    "settled_at": "2026-11-24T04:45:15.682577+00:00",
    "topped_up_at": null,
    "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-24T05:48:12.262950+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Arsenal FC win on 2026-11-24?",
+   "link": "https://polymarket.com/event/ucl-ars-bvb-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 0.821,
+   "condition_id": "0x6fe5c6020adfa1ac9a85e5ab7679103ba9215f3e6da367e15a5c9c2dd7a42705",
+   "token_id": "57618757328728487225724129613008635024857069805209977624119158932000665983956",
+   "outcome_index": 1,
+   "ends": "2026-11-24T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.31,
+   "avg_price": 0.32,
+   "shares": 24.99761359297442,
+   "cost": 8.39,
+   "fees": 0.39,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUCLGAME-26NOV24ARSBVB-ARS",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3356,
+    "polymarket_us": 0.3407
+   },
+   "intl_cost_per_share": 0.3309,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

@@ -5994,7 +5994,7 @@
   },
   {
    "placed_at": "2026-11-24T02:37:13.239221+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Ducks",
    "market": "Ducks vs. Kraken",
@@ -6025,9 +6025,9 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.63,
+   "settled_at": "2026-11-24T05:45:46.757900+00:00",
    "topped_up_at": null,
    "close": 0.495
   }
