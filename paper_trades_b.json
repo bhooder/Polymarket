@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 696.6779742574856,
+ "cash": 813.7884103862751,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18202,7 +18202,7 @@
   },
   {
    "placed_at": "2026-11-24T05:48:11.786452+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Arsenal FC win on 2026-11-24?",
@@ -18233,9 +18233,9 @@
     "polymarket_us": 0.3407
    },
    "intl_cost_per_share": 0.3309,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 47.5,
+   "profit": 31.32,
+   "settled_at": "2026-11-24T22:28:52.361699+00:00",
    "topped_up_at": "2026-11-24T19:29:55.907162+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.4,
@@ -18360,7 +18360,7 @@
   },
   {
    "placed_at": "2026-11-24T18:23:35.327250+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will SSC Napoli win on 2026-11-24?",
@@ -18390,9 +18390,9 @@
     "polymarket_us": 0.9178
    },
    "intl_cost_per_share": 0.9237,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.03,
+   "profit": 1.76,
+   "settled_at": "2026-11-24T22:28:52.385218+00:00",
    "topped_up_at": null,
    "close": 0.905
   },
@@ -18471,7 +18471,7 @@
   },
   {
    "placed_at": "2026-11-24T18:23:36.665405+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will PSV win on 2026-11-24?",
@@ -18501,9 +18501,9 @@
     "polymarket_us": 0.9545
    },
    "intl_cost_per_share": 0.9524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.2,
+   "profit": 0.92,
+   "settled_at": "2026-11-24T22:28:52.410421+00:00",
    "topped_up_at": "2026-11-24T19:29:55.425003+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 2.9,
@@ -18587,7 +18587,7 @@
   },
   {
    "placed_at": "2026-11-24T19:29:54.795002+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Norwich City FC win on 2026-11-24?",
@@ -18616,15 +18616,15 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.22,
+   "profit": 17.95,
+   "settled_at": "2026-11-24T22:28:52.449832+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
   {
    "placed_at": "2026-11-24T19:29:55.309030+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FC Porto win on 2026-11-24?",
@@ -18654,9 +18654,9 @@
     "polymarket_us": 0.5636
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.27,
+   "settled_at": "2026-11-24T22:28:52.460833+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -18699,7 +18699,7 @@
   },
   {
    "placed_at": "2026-11-24T19:29:56.620895+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will AEK win on 2026-11-24?",
@@ -18729,9 +18729,9 @@
     "polymarket_us": 0.9178
    },
    "intl_cost_per_share": 0.9141,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 10.52,
+   "profit": 0.88,
+   "settled_at": "2026-11-24T22:28:52.512257+00:00",
    "topped_up_at": null,
    "close": 0.915
   },
@@ -18809,6 +18809,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.525
+  },
+  {
+   "placed_at": "2026-11-24T22:30:54.444445+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will CA Bucaramanga win on 2026-11-24?",
+   "link": "https://polymarket.com/event/col1-mif-cab-2026-11-24",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x60552136f68087f7974f58f930e792a0eb61460f024cc16ad7963701780130f0",
+   "token_id": "3745039365746687629267526205917144805864086510794435834979498131130094902302",
+   "outcome_index": 1,
+   "ends": "2026-11-24T23:20:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.85,
+   "avg_price": 0.86,
+   "shares": 22.293154988093427,
+   "cost": 19.36,
+   "fees": 0.19,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXDIMAYORGAME-26NOV24MILBUC-BUC",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.8685
+   },
+   "intl_cost_per_share": 0.866,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

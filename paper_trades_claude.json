@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 692.2620779199717,
+ "cash": 703.6415026987328,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -7274,7 +7274,7 @@
   },
   {
    "placed_at": "2026-11-23T16:09:06.963979+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Manchester City FC win on 2026-11-24?",
@@ -7305,9 +7305,9 @@
     "polymarket_us": 0.7868
    },
    "intl_cost_per_share": 0.7691,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.98,
+   "settled_at": "2026-11-24T22:28:52.872982+00:00",
    "topped_up_at": null,
    "close": 0.765
   },
@@ -7426,7 +7426,7 @@
   },
   {
    "placed_at": "2026-11-23T16:09:09.868350+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FC Porto win on 2026-11-24?",
@@ -7457,9 +7457,9 @@
     "polymarket_us": 0.6228
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.98,
+   "settled_at": "2026-11-24T22:28:52.873021+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -7767,7 +7767,7 @@
   },
   {
    "placed_at": "2026-11-23T20:18:52.501862+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Real Betis Balompi\u00e9 win on 2026-11-24?",
@@ -7797,15 +7797,15 @@
     "kalshi": 0.7925
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.38,
+   "profit": 2.49,
+   "settled_at": "2026-11-24T22:28:52.873028+00:00",
    "topped_up_at": null,
    "close": 0.715
   },
   {
    "placed_at": "2026-11-23T21:16:37.015033+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Wolverhampton Wanderers FC vs. Derby County FC: O/U 3.5",
@@ -7834,9 +7834,9 @@
     "kalshi": 0.3866
    },
    "intl_cost_per_share": 0.3817,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.17,
+   "settled_at": "2026-11-24T22:28:52.900225+00:00",
    "topped_up_at": null,
    "close": 0.335
   },
@@ -8325,7 +8325,7 @@
   },
   {
    "placed_at": "2026-11-24T05:48:13.090574+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Arsenal FC vs. BV Borussia 09 Dortmund: O/U 3.5",
@@ -8356,9 +8356,9 @@
     "polymarket_us": 0.3613
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.98,
+   "settled_at": "2026-11-24T22:28:53.049846+00:00",
    "topped_up_at": null,
    "close": 0.355
   },
@@ -8401,7 +8401,7 @@
   },
   {
    "placed_at": "2026-11-24T19:30:00.027467+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Norwich City FC win on 2026-11-24?",
@@ -8430,9 +8430,9 @@
     "kalshi": 0.5281
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.77,
+   "settled_at": "2026-11-24T22:28:53.057063+00:00",
    "topped_up_at": null,
    "close": 0.495
   }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1086.9312307904477,
+ "cash": 1108.5544191962447,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6145,7 +6145,7 @@
   },
   {
    "placed_at": "2026-11-24T19:29:53.827242+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Norwich City FC win on 2026-11-24?",
@@ -6174,9 +6174,9 @@
     "kalshi": 0.5176
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.62,
+   "profit": 10.43,
+   "settled_at": "2026-11-24T22:28:52.188670+00:00",
    "topped_up_at": null,
    "close": 0.505
   }
