@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 813.7884103862751,
+ "cash": 803.6035104100903,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18774,7 +18774,7 @@
   },
   {
    "placed_at": "2026-11-24T20:29:20.406829+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SE Palmeiras win on 2026-11-24?",
@@ -18804,9 +18804,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.55,
+   "profit": 8.12,
+   "settled_at": "2026-11-24T23:24:39.887144+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -18841,6 +18841,81 @@
     "kalshi": 0.8685
    },
    "intl_cost_per_share": 0.866,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.835
+  },
+  {
+   "placed_at": "2026-11-24T23:26:57.434626+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Western Michigan",
+   "market": "Spread: Western Michigan (-4.5)",
+   "link": "https://polymarket.com/event/cfb-miaoh-wmich-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf6e076031b744d53d37b6b65beeabe26219f5aeab2ac3094dda69d5771649f55",
+   "token_id": "53844916377872072691574857339817869380928537421441249296504273185286741459221",
+   "outcome_index": 0,
+   "ends": "2026-11-25T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 37.288782816229116,
+   "cost": 19.53,
+   "fees": 0.8856,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-miaoh-wmich-2026-11-24-pos-4pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-24T23:26:57.933664+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Paris Saint-Germain FC win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-psg-rom-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 0.84,
+   "condition_id": "0xc8e83d7ba078e6a717cc1102d12536f3eb5a8c830b7e44d8101544c2f5476d5c",
+   "token_id": "18698240048310128465763570577488571640199641717431166346368112324321752193736",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.33,
+   "avg_price": 0.3333,
+   "shares": 24.276315789473685,
+   "cost": 8.2,
+   "fees": 0.1079,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "56e48efe39b6f52b19e1727cc016f9fd",
+    "fee_rate": 0.02,
+    "event_id": 90122517
+   },
+   "quotes": {
+    "prophetx": 0.3378,
+    "kalshi": 0.3456,
+    "polymarket_us": 0.351
+   },
+   "intl_cost_per_share": 0.3411,
    "payout": null,
    "profit": null,
    "settled_at": null,

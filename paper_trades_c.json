@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 903.8812876951632,
+ "cash": 912.2415699052132,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8704,7 +8704,7 @@
   },
   {
    "placed_at": "2026-11-24T20:29:22.026239+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SE Palmeiras win on 2026-11-24?",
@@ -8734,9 +8734,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.81,
+   "profit": 8.7,
+   "settled_at": "2026-11-24T23:24:40.193293+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -8771,6 +8771,43 @@
     "kalshi": 0.8688
    },
    "intl_cost_per_share": 0.866,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.835
+  },
+  {
+   "placed_at": "2026-11-24T23:26:58.494558+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Western Michigan",
+   "market": "Spread: Western Michigan (-4.5)",
+   "link": "https://polymarket.com/event/cfb-miaoh-wmich-2026-11-24",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf6e076031b744d53d37b6b65beeabe26219f5aeab2ac3094dda69d5771649f55",
+   "token_id": "53844916377872072691574857339817869380928537421441249296504273185286741459221",
+   "outcome_index": 0,
+   "ends": "2026-11-25T00:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 19.952267303102623,
+   "cost": 10.45,
+   "fees": 0.4739,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-miaoh-wmich-2026-11-24-pos-4pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
