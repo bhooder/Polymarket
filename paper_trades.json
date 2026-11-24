@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1079.4979815961212,
+ "cash": 1098.1228249933463,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6070,7 +6070,7 @@
   },
   {
    "placed_at": "2026-11-24T11:39:11.261211+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "FaZe",
    "market": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
@@ -6099,9 +6099,9 @@
     "kalshi": 0.5972
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.62,
+   "profit": 7.5,
+   "settled_at": "2026-11-24T14:06:00.717604+00:00",
    "topped_up_at": null,
    "close": 0.575
   },
