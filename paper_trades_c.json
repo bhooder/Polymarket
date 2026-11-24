@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 858.0988046712931,
+ "cash": 899.1325682994973,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -7798,7 +7798,7 @@
   },
   {
    "placed_at": "2026-11-23T10:24:36.305129+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Trail Blazers vs. 76ers: O/U 231.5",
@@ -7828,9 +7828,9 @@
     "kalshi": 0.4775
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.03,
+   "profit": 21.6,
+   "settled_at": "2026-11-24T02:35:04.783040+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -8093,7 +8093,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-23T19:20:05.084233+00:00",

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1081.0362723600488,
+ "cash": 1069.4062723600487,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -5991,6 +5991,44 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.455
+  },
+  {
+   "placed_at": "2026-11-24T02:37:13.239221+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ducks",
+   "market": "Ducks vs. Kraken",
+   "link": "https://polymarket.com/event/nhl-ana-sea-2026-11-23",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6a0d74a26e882139f5580f270f624a866f1f59acade85397a9bf69a1f976795a",
+   "token_id": "39608120906206203654950003781525859590861103202501530053669124656972337473111",
+   "outcome_index": 0,
+   "ends": "2026-11-24T02:40:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 25.3,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 22.637888194526223,
+   "cost": 11.63,
+   "fees": 0.5374,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nhl-ana-sea-2026-11-23",
+    "long": true,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "prophetx": 0.5075,
+    "polymarket_us": 0.5137,
+    "kalshi": 0.5178
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

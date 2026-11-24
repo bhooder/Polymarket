@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 763.7040885149565,
+ "cash": 803.8086264099435,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -17593,7 +17593,7 @@
   },
   {
    "placed_at": "2026-11-23T10:24:34.951983+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Trail Blazers vs. 76ers: O/U 231.5",
@@ -17623,9 +17623,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.1,
+   "profit": 21.11,
+   "settled_at": "2026-11-24T02:35:04.581378+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -17821,7 +17821,7 @@
   },
   {
    "placed_at": "2026-11-23T17:13:33.270707+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Trail Blazers vs. 76ers",
@@ -17851,9 +17851,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.39,
+   "settled_at": "2026-11-24T02:35:04.680836+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -17969,7 +17969,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-23T18:15:13.794699+00:00",
