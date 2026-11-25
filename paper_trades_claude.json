@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 675.5174910731251,
+ "cash": 660.6908244064584,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8622,7 +8622,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.675
   },
   {
    "placed_at": "2026-11-25T14:41:57.158162+00:00",
@@ -8728,6 +8729,79 @@
     "prophetx": 0.3901
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T19:33:59.965332+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Wisconsin Badgers",
+   "market": "Northeastern Huskies vs. Wisconsin Badgers",
+   "link": "https://polymarket.com/event/cbb-neast-wisc-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x47063710b75872a6ff7991380b147641eee126a98cb3fd807209d7ab4e2444f1",
+   "token_id": "56507884359119157244902200621290264904525587538272269641348216259700560204468",
+   "outcome_index": 1,
+   "ends": "2026-11-26T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.96,
+   "avg_price": 0.9655,
+   "shares": 8.124753864330017,
+   "cost": 7.85,
+   "fees": 0.0054,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "e0e3274cc27416ca2b6ed5687e111e01",
+    "fee_rate": 0.02,
+    "event_id": 1704778928
+   },
+   "quotes": {
+    "prophetx": 0.9662
+   },
+   "intl_cost_per_share": 0.9657,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T19:34:00.429939+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Paris Saint-Germain FC win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-psg-rom-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 0.889,
+   "condition_id": "0xc8e83d7ba078e6a717cc1102d12536f3eb5a8c830b7e44d8101544c2f5476d5c",
+   "token_id": "18698240048310128465763570577488571640199641717431166346368112324321752193736",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.36,
+   "avg_price": 0.35,
+   "shares": 19.04761904761905,
+   "cost": 6.98,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUCLGAME-26NOV25PSGROM-PSG",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3663,
+    "polymarket_us": 0.3716
+   },
+   "intl_cost_per_share": 0.3614,
    "payout": null,
    "profit": null,
    "settled_at": null,
