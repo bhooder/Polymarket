@@ -7918,7 +7918,7 @@
   },
   {
    "placed_at": "2026-11-24T00:12:13.816041+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Western Michigan",
    "market": "Spread: Western Michigan (-4.5)",
@@ -7947,9 +7947,9 @@
     "polymarket_us": 0.5883
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.76,
+   "settled_at": "2026-11-25T03:46:57.856661+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -7993,7 +7993,7 @@
   },
   {
    "placed_at": "2026-11-24T02:37:14.100662+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Celtics vs. Wizards: O/U 215.5",
@@ -8022,9 +8022,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.74,
+   "settled_at": "2026-11-25T03:46:57.923020+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
@@ -8101,7 +8101,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-24T03:41:27.484562+00:00",

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 925.6545835945392,
+ "cash": 951.1531720655346,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8361,7 +8361,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-24T18:23:38.274537+00:00",
@@ -8475,7 +8476,8 @@
    "topped_up_at": "2026-11-24T19:29:57.642021+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 9.5,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.715
   },
   {
    "placed_at": "2026-11-24T18:23:39.246176+00:00",
@@ -8630,7 +8632,7 @@
   },
   {
    "placed_at": "2026-11-24T19:29:58.445314+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Celtics",
    "market": "Celtics vs. Wizards",
@@ -8660,9 +8662,9 @@
     "polymarket_us": 0.8058
    },
    "intl_cost_per_share": 0.7983,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.5,
+   "profit": 5.06,
+   "settled_at": "2026-11-25T03:46:57.422129+00:00",
    "topped_up_at": null,
    "close": 0.785
   },
@@ -8780,7 +8782,7 @@
   },
   {
    "placed_at": "2026-11-24T23:26:58.494558+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Western Michigan",
    "market": "Spread: Western Michigan (-4.5)",
@@ -8809,9 +8811,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.45,
+   "settled_at": "2026-11-25T03:46:57.490773+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -8850,7 +8852,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   }
  ]
 }
