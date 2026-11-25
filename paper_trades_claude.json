@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 697.9524103586348,
+ "cash": 690.1024103586348,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8619,6 +8619,43 @@
     "kalshi": 0.696
    },
    "intl_cost_per_share": 0.6909,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T14:41:57.158162+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Lille OSC vs. FC Bayern M\u00fcnchen: O/U 2.5",
+   "link": "https://polymarket.com/event/ucl-lil-bay-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd0900338a38a34b145501534d94cada6f5aaef40d5585c598e3c0a605d832f9e",
+   "token_id": "78305362962369323943582957524151256871955355208704656040767132195725966125205",
+   "outcome_index": 0,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.55,
+   "avg_price": 0.5495,
+   "shares": 14.156886709601872,
+   "cost": 7.85,
+   "fees": 0.0701,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "50c1c3b1fa3729a08a84deac4f45ec6d",
+    "fee_rate": 0.02,
+    "event_id": 90122518
+   },
+   "quotes": {
+    "prophetx": 0.5545,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5624,
    "payout": null,
    "profit": null,
    "settled_at": null,

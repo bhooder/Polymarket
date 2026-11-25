@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 852.2030249895399,
+ "cash": 801.6791577568113,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8858,7 +8858,7 @@
   {
    "placed_at": "2026-11-25T04:57:23.377961+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
    "link": "https://polymarket.com/event/ucl-lil-bay-2026-11-25",
@@ -8871,10 +8871,10 @@
    "bettors": 5,
    "avg_bankroll_pct": 12.2,
    "traders_entry": 0.39,
-   "avg_price": 0.4,
-   "shares": 25.247035573122528,
-   "cost": 10.22,
-   "fees": 0.1212,
+   "avg_price": 0.3969,
+   "shares": 50.19215149034673,
+   "cost": 20.16,
+   "fees": 0.2403,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -8890,7 +8890,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-25T14:41:51.543688+00:00",
+   "top_up_bettors": 8,
+   "top_up_avg_bankroll_pct": 6.0,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-25T11:00:02.869310+00:00",
@@ -9106,6 +9109,115 @@
     "kalshi": 0.4472
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T14:41:52.814663+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Sabah FK win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-sf-fcb-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x106e86616f6e2442f23bcc7fe06a2a3c92a8d8ef7c5b8bd92e0fbfc6976edf0f",
+   "token_id": "58963571248408078765466798338406132766864477706554121430019593574118549424133",
+   "outcome_index": 1,
+   "ends": "2026-11-25T17:45:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 22.7,
+   "traders_entry": 0.97,
+   "avg_price": 0.973,
+   "shares": 20.842344978690196,
+   "cost": 20.29,
+   "fees": 0.011,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "362647c90de4019daf11d64b01e937cc",
+    "fee_rate": 0.02,
+    "event_id": 90122516
+   },
+   "quotes": {
+    "prophetx": 0.9735
+   },
+   "intl_cost_per_share": 0.9734,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T14:41:54.099958+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Heat vs. 76ers",
+   "link": "https://polymarket.com/event/nba-mia-phi-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63",
+   "token_id": "51868284810302772384419202012562233494697652539857255439379499274242252284933",
+   "outcome_index": 0,
+   "ends": "2026-11-25T22:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 4.1,
+   "traders_entry": 0.49,
+   "avg_price": 0.48,
+   "shares": 20.38305673485141,
+   "cost": 10.14,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV25MIAPHI-MIA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4977,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T14:41:54.669279+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Lille OSC vs. FC Bayern M\u00fcnchen: O/U 2.5",
+   "link": "https://polymarket.com/event/ucl-lil-bay-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd0900338a38a34b145501534d94cada6f5aaef40d5585c598e3c0a605d832f9e",
+   "token_id": "90935373315792038574350338846642920762122969225808631662897846652709565607735",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.45,
+   "avg_price": 0.46,
+   "shares": 20.98850698307272,
+   "cost": 10.15,
+   "fees": 0.4953,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-ucl-lil-bay-2026-11-25-2pt5",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.4836
+   },
+   "intl_cost_per_share": 0.4724,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 958.8144449257555,
+ "cash": 949.2284062784125,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1409,6 +1409,42 @@
    "settled_at": "2026-11-24T22:30:55.792079+00:00",
    "topped_up_at": null,
    "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-25T14:42:00.686899+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Kings",
+   "market": "Spread: Warriors (-6.5)",
+   "link": "https://polymarket.com/event/nba-sac-gsw-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x74bb0ce3c35aef4e773066d1cc0754fd9f248c2f39c06e12e7205b22dbba4e0f",
+   "token_id": "21802689871195614769280143040847967878789973840017579597795258177375850686784",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 13.7,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.51207729468599,
+   "cost": 9.59,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25SACGSW-GSW7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5178
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
