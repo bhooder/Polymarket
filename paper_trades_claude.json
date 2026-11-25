@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 681.7035418642366,
+ "cash": 673.7080398795333,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8917,6 +8917,43 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T23:27:47.595865+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Hurricanes",
+   "market": "Hurricanes vs. Lightning",
+   "link": "https://polymarket.com/event/nhl-car-tb-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf785a22240c05503e51ce2f1747b43ed5261327ad0b42d23339ac6317c2e33d7",
+   "token_id": "45755615251930757004129248029533493751063823243436836712836743971856415481137",
+   "outcome_index": 0,
+   "ends": "2026-11-26T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 14.59528676359106,
+   "cost": 8.0,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV25CARTB-CAR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5478,
+    "polymarket_us": 0.5537
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
