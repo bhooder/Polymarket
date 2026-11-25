@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+bbc11c7a01b4,2026-11-25T22:31:54Z,status_change,0x5815db9fdf,0x5815db9fdf0e0ffdc1d1f759916b221339570ae7,nb1985,84,136989.22774152213,8356170.304083999,scanned,off_board,,0.0,0.4,0,0,0,0
+b11edab5c6f5,2026-11-25T22:31:54Z,status_change,0x7d2f82da7a,0x7d2f82da7ae8c910bd1e89475be705d313daef1a,TheOpportunist,109,100783.9601057845,759139.063195,scanned,off_board,,0.012,0.1,0,0,0,0
+36a5cb951304,2026-11-25T22:31:54Z,status_change,0x78d85066cc,0x78d85066cc09e837c19b31f29374c8760829ce05,SunflowaRebuildYear,196,54021.024248474976,2000892.125397,scanned,,,0.0,1.1,0,4859.4538,2,0
+f30556f681a9,2026-11-25T22:31:54Z,status_change,0x2117ae94a9,0x2117ae94a97d69b78cbc81b6680a62deb1955c26,Zzzz87,199,53496.35778761296,4086340.4275979996,scanned,off_board,,0.0,2.7,0,43663.3734,33,1
+fda31f7288b8,2026-11-25T22:31:54Z,status_change,0x285faa3e3d,0x285faa3e3d1465cf3ff1bff1e1d14891f5b8495f,,,,,off_board,scanned,,,,,,,
+5337fb993c9d,2026-11-25T22:31:54Z,status_change,0x4161332097,0x4161332097c567f83d4f570ec5c3e28d899ee71d,,,,,off_board,scanned,,,,,,,
+00276db8e8fd,2026-11-25T22:31:54Z,status_change,0x6f6589b77c,0x6f6589b77c36b94c2a1304dfd40f44310725172c,,,,,off_board,scanned,,,,,,,
+37504f064dd1,2026-11-25T22:31:54Z,status_change,0xc3acf5878a,0xc3acf5878a03523d09a3ac859943445d7baeb964,,,,,off_board,scanned,,,,,,,

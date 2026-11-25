@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1086.770982540378,
+ "cash": 1114.117820485042,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6184,7 +6184,7 @@
   },
   {
    "placed_at": "2026-11-25T04:57:21.810814+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
@@ -6214,15 +6214,15 @@
     "polymarket_us": 0.4228
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 27.35,
+   "profit": 16.28,
+   "settled_at": "2026-11-25T22:28:37.018549+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
   {
    "placed_at": "2026-11-25T08:47:33.448430+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Fenerbah\u00e7e SK win on 2026-11-25?",
@@ -6252,9 +6252,9 @@
     "kalshi": 0.6363
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.63,
+   "settled_at": "2026-11-25T22:28:37.094050+00:00",
    "topped_up_at": null,
    "close": 0.635
   },

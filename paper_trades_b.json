@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 558.4738347228498,
+ "cash": 681.0316167553335,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18742,7 +18742,7 @@
   },
   {
    "placed_at": "2026-11-24T20:29:19.315497+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Fenerbah\u00e7e SK win on 2026-11-25?",
@@ -18772,9 +18772,9 @@
     "kalshi": 0.6269
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.89,
+   "settled_at": "2026-11-25T22:28:37.297408+00:00",
    "topped_up_at": null,
    "close": 0.635
   },
@@ -18892,7 +18892,7 @@
   },
   {
    "placed_at": "2026-11-24T23:26:57.933664+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Paris Saint-Germain FC win on 2026-11-25?",
@@ -18923,9 +18923,9 @@
     "polymarket_us": 0.351
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 46.34,
+   "profit": 30.1,
+   "settled_at": "2026-11-25T22:28:37.297451+00:00",
    "topped_up_at": "2026-11-25T19:33:55.541660+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 1.6,
@@ -18971,7 +18971,7 @@
   },
   {
    "placed_at": "2026-11-25T04:57:22.652706+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
@@ -19000,9 +19000,9 @@
     "polymarket_us": 0.4228
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 43.33,
+   "profit": 25.01,
+   "settled_at": "2026-11-25T22:28:37.425528+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -19189,7 +19189,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-25T11:00:01.734093+00:00",
@@ -19338,7 +19339,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-25T14:41:50.079805+00:00",
@@ -19382,7 +19384,7 @@
   },
   {
    "placed_at": "2026-11-25T14:41:50.697548+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Lille OSC vs. FC Bayern M\u00fcnchen: O/U 2.5",
@@ -19411,9 +19413,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.14,
+   "settled_at": "2026-11-25T22:28:37.781850+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -19494,7 +19496,7 @@
   },
   {
    "placed_at": "2026-11-25T16:48:46.544971+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Viking FK win on 2026-11-25?",
@@ -19523,9 +19525,9 @@
     "kalshi": 0.9632
    },
    "intl_cost_per_share": 0.9638,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.97,
+   "profit": 0.71,
+   "settled_at": "2026-11-25T22:28:37.847937+00:00",
    "topped_up_at": "2026-11-25T19:33:54.342466+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 2.7,
@@ -19644,7 +19646,7 @@
   },
   {
    "placed_at": "2026-11-25T17:38:50.763585+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Paris Saint-Germain FC vs. AS Roma: O/U 3.5",
@@ -19675,9 +19677,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.14,
+   "settled_at": "2026-11-25T22:28:37.913342+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
@@ -19719,7 +19721,7 @@
   },
   {
    "placed_at": "2026-11-25T19:33:56.539189+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Sporting CP win on 2026-11-25?",
@@ -19750,9 +19752,9 @@
     "polymarket_us": 0.6619
    },
    "intl_cost_per_share": 0.6614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.91,
+   "profit": 4.77,
+   "settled_at": "2026-11-25T22:28:37.976779+00:00",
    "topped_up_at": null,
    "close": 0.635
   },

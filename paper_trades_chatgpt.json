@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 949.2284062784125,
+ "cash": 939.6409608106471,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1441,6 +1441,43 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T22:31:52.388285+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ducks",
+   "market": "Sharks vs. Ducks",
+   "link": "https://polymarket.com/event/nhl-sj-ana-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa9ec2d90d8184690c04b13b5bd4496f912348f1365583abca62d106900c40ece",
+   "token_id": "52917631285182818286809018745885801456223184522571321453814554616880468144597",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 18.5,
+   "traders_entry": 0.55,
+   "avg_price": 0.55,
+   "shares": 16.886264486846162,
+   "cost": 9.59,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV25SJANA-ANA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5678,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5723,
    "payout": null,
    "profit": null,
    "settled_at": null,
