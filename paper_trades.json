@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1097.4844191962447,
+ "cash": 1120.7242058016288,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6033,7 +6033,7 @@
   },
   {
    "placed_at": "2026-11-24T10:38:49.911069+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Mavericks vs. Nuggets: O/U 232.5",
@@ -6063,9 +6063,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.24,
+   "profit": 12.11,
+   "settled_at": "2026-11-25T05:59:08.547640+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -6108,7 +6108,7 @@
   },
   {
    "placed_at": "2026-11-24T12:48:26.891179+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will San Jose Earthquakes win on 2026-11-24?",
@@ -6139,9 +6139,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.13,
+   "settled_at": "2026-11-25T05:59:08.547687+00:00",
    "topped_up_at": null,
    "close": 0.505
   },

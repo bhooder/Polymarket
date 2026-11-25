@@ -389,7 +389,7 @@
   },
   {
    "placed_at": "2026-11-24T19:29:59.337748+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Nuggets",
    "market": "Mavericks vs. Nuggets",
@@ -419,9 +419,9 @@
     "polymarket_us": 0.7392
    },
    "intl_cost_per_share": 0.7301,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.29,
+   "settled_at": "2026-11-25T05:59:09.202223+00:00",
    "topped_up_at": null,
    "close": 0.715
   }
