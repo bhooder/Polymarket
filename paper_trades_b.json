@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 724.6256444309478,
+ "cash": 720.8353221313657,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19002,7 +19002,7 @@
   },
   {
    "placed_at": "2026-11-25T09:57:46.433578+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Tochigi City FC win on 2026-11-25?",
@@ -19031,9 +19031,9 @@
     "kalshi": 0.6273
    },
    "intl_cost_per_share": 0.6417,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.49,
+   "profit": 5.4,
+   "settled_at": "2026-11-25T13:20:00.844935+00:00",
    "topped_up_at": null,
    "close": 0.625
   },
@@ -19252,6 +19252,42 @@
     "kalshi": 0.4472
    },
    "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T13:22:45.377200+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Sabah FK win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-sf-fcb-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x106e86616f6e2442f23bcc7fe06a2a3c92a8d8ef7c5b8bd92e0fbfc6976edf0f",
+   "token_id": "58963571248408078765466798338406132766864477706554121430019593574118549424133",
+   "outcome_index": 1,
+   "ends": "2026-11-25T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.97,
+   "avg_price": 0.9744,
+   "shares": 18.75143651029162,
+   "cost": 18.28,
+   "fees": 0.0094,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "362647c90de4019daf11d64b01e937cc",
+    "fee_rate": 0.02,
+    "event_id": 90122516
+   },
+   "quotes": {
+    "prophetx": 0.9749
+   },
+   "intl_cost_per_share": 0.9715,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 705.8006419705283,
+ "cash": 697.9524103586348,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8479,7 +8479,7 @@
   },
   {
    "placed_at": "2026-11-25T08:47:40.476473+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will Blaublitz Akita win on 2026-11-25?",
@@ -8508,15 +8508,15 @@
     "kalshi": 0.3661
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.06,
+   "settled_at": "2026-11-25T13:20:01.901740+00:00",
    "topped_up_at": null,
    "close": 0.345
   },
   {
    "placed_at": "2026-11-25T09:57:49.097650+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Kawasaki Frontale win on 2026-11-25?",
@@ -8545,9 +8545,9 @@
     "kalshi": 0.4475
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.95,
+   "settled_at": "2026-11-25T13:20:01.955680+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -8587,6 +8587,42 @@
    "settled_at": "2026-11-25T11:59:35.130698+00:00",
    "topped_up_at": null,
    "close": 0.625
+  },
+  {
+   "placed_at": "2026-11-25T13:22:48.962347+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Pisa SC vs. Modena FC 2018: O/U 3.5",
+   "link": "https://polymarket.com/event/itsb-pis-mod-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x74b023d65d26214eca81f559eb517a7c2a57f67e0622278bce9bace44d217eea",
+   "token_id": "84314404519894243340754408540825573911597901024463319384478357153513130488721",
+   "outcome_index": 1,
+   "ends": "2026-11-25T19:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 11.276811193961153,
+   "cost": 7.85,
+   "fees": 0.18,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEBTOTAL-26NOV25PISMOD-4",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.696
+   },
+   "intl_cost_per_share": 0.6909,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2
