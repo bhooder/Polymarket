@@ -7955,7 +7955,7 @@
   },
   {
    "placed_at": "2026-11-24T02:37:13.921469+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Pistons vs. Magic: O/U 214.5",
@@ -7985,9 +7985,9 @@
     "kalshi": 0.4977
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.74,
+   "settled_at": "2026-11-25T02:44:49.447569+00:00",
    "topped_up_at": null,
    "close": 0.395
   },

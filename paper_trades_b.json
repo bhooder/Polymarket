@@ -18550,7 +18550,7 @@
   },
   {
    "placed_at": "2026-11-24T18:23:37.574754+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Pistons vs. Magic: O/U 214.5",
@@ -18580,9 +18580,9 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.64,
+   "settled_at": "2026-11-25T02:44:48.664440+00:00",
    "topped_up_at": null,
    "close": 0.395
   },
