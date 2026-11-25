@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 901.7953805287698,
+ "cash": 925.6545835945392,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8663,7 +8663,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.785
   },
   {
    "placed_at": "2026-11-24T20:29:21.674576+00:00",
@@ -8742,7 +8743,7 @@
   },
   {
    "placed_at": "2026-11-24T22:30:55.234780+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will CA Bucaramanga win on 2026-11-24?",
@@ -8771,9 +8772,9 @@
     "kalshi": 0.8688
    },
    "intl_cost_per_share": 0.866,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.86,
+   "profit": 3.13,
+   "settled_at": "2026-11-25T01:47:48.832224+00:00",
    "topped_up_at": null,
    "close": 0.835
   },
