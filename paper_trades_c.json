@@ -9151,7 +9151,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.9735
   },
   {
    "placed_at": "2026-11-25T14:41:54.099958+00:00",
@@ -9260,7 +9261,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   },
   {
    "placed_at": "2026-11-25T16:48:47.648073+00:00",
@@ -9296,7 +9298,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.735
   },
   {
    "placed_at": "2026-11-25T16:48:47.828949+00:00",

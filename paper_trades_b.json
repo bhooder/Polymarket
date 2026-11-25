@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 611.3788017629801,
+ "cash": 602.239461739823,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19294,7 +19294,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.9735
   },
   {
    "placed_at": "2026-11-25T14:41:49.148913+00:00",
@@ -19444,7 +19445,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.615
   },
   {
    "placed_at": "2026-11-25T16:48:46.227017+00:00",
@@ -19659,6 +19661,42 @@
     "prophetx": 0.4881,
     "kalshi": 0.498,
     "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T18:32:13.979656+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Spread: Knicks (-2.5)",
+   "link": "https://polymarket.com/event/nba-cle-nyk-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaa33b22b6b4e41f977ea00e09f134729c27bef245d86f39307edaa9b922409e2",
+   "token_id": "111724924119425664128825930179255185726782660249189340503433789489601060012515",
+   "outcome_index": 0,
+   "ends": "2026-11-26T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.5,
+   "avg_price": 0.48,
+   "shares": 18.35279171491059,
+   "cost": 9.14,
+   "fees": 0.33,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25CLENYK-NYK3",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.498
    },
    "intl_cost_per_share": 0.4925,
    "payout": null,

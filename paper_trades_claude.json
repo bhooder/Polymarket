@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 683.2874910731251,
+ "cash": 675.5174910731251,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8692,6 +8692,42 @@
     "kalshi": 0.3457
    },
    "intl_cost_per_share": 0.3512,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T18:32:14.908355+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Packers vs. Rams: O/U 46.5",
+   "link": "https://polymarket.com/event/nfl-gb-la-2026-11-26",
+   "market_type": "totals",
+   "size_multiplier": 0.99,
+   "condition_id": "0xa9f1888cacd08c7c38cb67e71df3700a924f3270ea7f45204c2cfd8c5feb1d98",
+   "token_id": "37458069850302151447500769567418473385127580296403753069164865323160797293887",
+   "outcome_index": 0,
+   "ends": "2026-11-26T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.3854,
+   "shares": 19.915584749696617,
+   "cost": 7.77,
+   "fees": 0.0943,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "fa56aa50dd82b11d7deed07bf98f3610",
+    "fee_rate": 0.02,
+    "event_id": 1700008889
+   },
+   "quotes": {
+    "prophetx": 0.3901
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,
