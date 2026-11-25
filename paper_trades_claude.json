@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 709.4105440107717,
+ "cash": 693.5156486932356,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8508,6 +8508,78 @@
     "kalshi": 0.3661
    },
    "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T09:57:49.097650+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Kawasaki Frontale win on 2026-11-25?",
+   "link": "https://polymarket.com/event/jap-vva-kaw-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4bdfcbb6d90b1938debfd6678c282147cd1b6f12f6dbca29249b3aec2bc66753",
+   "token_id": "18784036994047735609965604739786781314242512861286477637158139953002580617763",
+   "outcome_index": 1,
+   "ends": "2026-11-25T10:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.43,
+   "avg_price": 0.43,
+   "shares": 17.756626867073532,
+   "cost": 7.95,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXJLEAGUEGAME-26NOV25VVNKAW-KAW",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4475
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T09:57:49.288436+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Kashima Antlers vs. Jeonbuk FC: O/U 3.5",
+   "link": "https://polymarket.com/event/acle-kas-jeo-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x690d0d4a917f4abb22f6bfe3dc5c1cbfccc53c34997bac9f12ae00bacada55d2",
+   "token_id": "108952101612975238879716690438364478249807866465982365974757054579041894381101",
+   "outcome_index": 1,
+   "ends": "2026-11-25T10:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.62,
+   "avg_price": 0.63,
+   "shares": 12.284993277292722,
+   "cost": 7.95,
+   "fees": 0.21,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXAFCCLTOTAL-26NOV25KASJEO-4",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6471
+   },
+   "intl_cost_per_share": 0.6417,
    "payout": null,
    "profit": null,
    "settled_at": null,

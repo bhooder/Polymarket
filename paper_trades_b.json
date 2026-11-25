@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 833.6193727376791,
+ "cash": 824.5306693404242,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18995,6 +18995,42 @@
     "polymarket_us": 0.4228
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T09:57:46.433578+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Tochigi City FC win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ja2-tct-bla-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa6ba0f01986f41e05822e8c33245ba8ea3874d7b52011a5b6c5d2dc5b4349d21",
+   "token_id": "84820515110957552878990165542645562611686434130638716419701221663152533043112",
+   "outcome_index": 1,
+   "ends": "2026-11-25T10:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.9,
+   "traders_entry": 0.61,
+   "avg_price": 0.61,
+   "shares": 14.489677700417934,
+   "cost": 9.09,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXJ2LEAGUEGAME-26NOV25TOCBLA-TOC",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6273
+   },
+   "intl_cost_per_share": 0.6417,
    "payout": null,
    "profit": null,
    "settled_at": null,
