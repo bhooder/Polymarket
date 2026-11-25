@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 951.1531720655346,
+ "cash": 940.9331720655346,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8854,6 +8854,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.435
+  },
+  {
+   "placed_at": "2026-11-25T04:57:23.377961+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-lil-bay-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0x196eac8fd4ebf4f30ca62ca96b9a62f910e5f5b725f0c070713bceabbe738aee",
+   "token_id": "65295927706368357805445131119956864612047424056212289276928518336645942575016",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 12.2,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 25.247035573122528,
+   "cost": 10.22,
+   "fees": 0.1212,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c752c289db588664d96705dc50e13bc7",
+    "fee_rate": 0.02,
+    "event_id": 90122518
+   },
+   "quotes": {
+    "prophetx": 0.4048,
+    "polymarket_us": 0.4228
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
