@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 801.6791577568113,
+ "cash": 781.3850749450636,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9081,7 +9081,7 @@
   {
    "placed_at": "2026-11-25T11:00:04.469579+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Over",
    "market": "Suns vs. Rockets: O/U 225.5",
    "link": "https://polymarket.com/event/nba-phx-hou-2026-11-25",
@@ -9094,10 +9094,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 1.0,
    "traders_entry": 0.44,
-   "avg_price": 0.43,
-   "shares": 22.676599046867207,
-   "cost": 10.14,
-   "fees": 0.39,
+   "avg_price": 0.4397,
+   "shares": 44.37456085075102,
+   "cost": 20.28,
+   "fees": 0.77,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -9112,7 +9112,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-25T15:43:31.834239+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.8,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-25T14:41:52.814663+00:00",
@@ -9218,6 +9221,42 @@
     "polymarket_us": 0.4836
    },
    "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T15:43:30.721233+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Sabah FK vs. FC Barcelona: O/U 4.5",
+   "link": "https://polymarket.com/event/ucl-sf-fcb-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6ba732db31d82a76a76dbd657d18a2c6bc21ca9c247f8fffb9394b1945038213",
+   "token_id": "12191629796426132859594880885439495053681334421562167609057461190749294204344",
+   "outcome_index": 1,
+   "ends": "2026-11-25T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 11.8,
+   "traders_entry": 0.47,
+   "avg_price": 0.4785,
+   "shares": 20.99451415853774,
+   "cost": 10.15,
+   "fees": 0.1048,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "ee49c1342559c0db908bed1607607205",
+    "fee_rate": 0.02,
+    "event_id": 90122516
+   },
+   "quotes": {
+    "prophetx": 0.4835
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,

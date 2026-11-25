@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 690.1024103586348,
+ "cash": 683.2874910731251,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8656,6 +8656,42 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T15:43:34.535425+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Burnley FC win on 2026-11-25?",
+   "link": "https://polymarket.com/event/elc-bur-bir-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 0.869,
+   "condition_id": "0xb7c203201c06408fa1d619c9278f81cc949d6f9b1d5d75584f91bae3db01ed7b",
+   "token_id": "115495764977773082091246686672333225681012297366728156890472743961805046107515",
+   "outcome_index": 0,
+   "ends": "2026-11-25T19:45:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.33,
+   "avg_price": 0.33,
+   "shares": 19.711876622756364,
+   "cost": 6.81,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEFLCHAMPIONSHIPGAME-26NOV25BURBC-BUR",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3457
+   },
+   "intl_cost_per_share": 0.3512,
    "payout": null,
    "profit": null,
    "settled_at": null,
