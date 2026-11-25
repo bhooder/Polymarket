@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 803.6035104100903,
+ "cash": 784.0735104100903,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18583,7 +18583,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.395
   },
   {
    "placed_at": "2026-11-24T19:29:54.795002+00:00",
@@ -18881,7 +18882,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-24T23:26:57.933664+00:00",
@@ -18916,6 +18918,42 @@
     "polymarket_us": 0.351
    },
    "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T00:23:20.720357+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Under",
+   "market": "Golden Knights vs. Oilers: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-las-edm-2026-11-24",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x254bbc3ed773b412532280d12a7dde77421585b7c6ad006786ce28d325d4b33d",
+   "token_id": "33983339996415869008418831466092587257201969141080851803490547445121067553368",
+   "outcome_index": 1,
+   "ends": "2026-11-25T01:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 3.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.4608,
+   "shares": 41.927973465852105,
+   "cost": 19.53,
+   "fees": 0.2084,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b57ba20658b1772e64ba50be94a5686c",
+    "fee_rate": 0.02,
+    "event_id": 1704776230
+   },
+   "quotes": {
+    "prophetx": 0.4658
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
