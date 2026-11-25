@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 660.6908244064584,
+ "cash": 664.0886246751561,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8590,7 +8590,7 @@
   },
   {
    "placed_at": "2026-11-25T13:22:48.962347+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Pisa SC vs. Modena FC 2018: O/U 3.5",
@@ -8619,9 +8619,9 @@
     "kalshi": 0.696
    },
    "intl_cost_per_share": 0.6909,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 11.28,
+   "profit": 3.43,
+   "settled_at": "2026-11-25T21:30:07.000198+00:00",
    "topped_up_at": null,
    "close": 0.675
   },
@@ -8809,6 +8809,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.345
+  },
+  {
+   "placed_at": "2026-11-25T21:33:15.462138+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "76ers",
+   "market": "Spread: Heat (-1.5)",
+   "link": "https://polymarket.com/event/nba-mia-phi-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x942bcd9ef77f7f81148209d91fc354e60771615a2758be317f516104f732f259",
+   "token_id": "100455151208056070123360001247119506375297598911346939386820767384609702273887",
+   "outcome_index": 1,
+   "ends": "2026-11-25T22:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 14.919629265222477,
+   "cost": 7.88,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25MIAPHI-MIA2",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5281,
+    "polymarket_us": 0.5337
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2

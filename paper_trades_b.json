@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 594.6808114716351,
+ "cash": 558.4738347228498,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19602,7 +19602,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-25T17:38:50.459065+00:00",
@@ -19754,6 +19755,115 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.635
+  },
+  {
+   "placed_at": "2026-11-25T21:33:10.194440+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Kings",
+   "market": "Spread: Warriors (-6.5)",
+   "link": "https://polymarket.com/event/nba-sac-gsw-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x74bb0ce3c35aef4e773066d1cc0754fd9f248c2f39c06e12e7205b22dbba4e0f",
+   "token_id": "21802689871195614769280143040847967878789973840017579597795258177375850686784",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 7.5,
+   "traders_entry": 0.49,
+   "avg_price": 0.45,
+   "shares": 38.73107580377682,
+   "cost": 18.11,
+   "fees": 0.68,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25SACGSW-GSW7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4676
+   },
+   "intl_cost_per_share": 0.4624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T21:33:11.183045+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Packers",
+   "market": "Packers vs. Rams",
+   "link": "https://polymarket.com/event/nfl-gb-la-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xba02accd1ec7e114cd94100cc9607f1a00a7c1305a525068e9fbb822b80a6ecd",
+   "token_id": "48495835000592400828167517848109864164609110184217131392763830296863361139096",
+   "outcome_index": 0,
+   "ends": "2026-11-26T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.43,
+   "avg_price": 0.4386,
+   "shares": 20.404892435808467,
+   "cost": 9.05,
+   "fees": 0.1005,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "417af86effd935382631a4ae16588056",
+    "fee_rate": 0.02,
+    "event_id": 1700008889
+   },
+   "quotes": {
+    "prophetx": 0.4435
+   },
+   "intl_cost_per_share": 0.4523,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T21:33:12.053958+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AFC Bournemouth win on 2026-11-26?",
+   "link": "https://polymarket.com/event/uel-cel1-bou-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb447ee1aeb6c897cd603a5c9048b632ff304df83e2a500659cb99f7a7c6a83c4",
+   "token_id": "15642832442092073695949740970258586516869181342469207547794810317079035714836",
+   "outcome_index": 1,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 16.21850488349229,
+   "cost": 9.05,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUELGAME-26NOV26RCCBOU-BOU",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5579,
+    "prophetx": 0.5605
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 727.9811903944317,
+ "cash": 717.8665769474253,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9375,7 +9375,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-25T17:38:51.293239+00:00",
@@ -9529,6 +9530,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.9615
+  },
+  {
+   "placed_at": "2026-11-25T21:33:13.453373+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AFC Bournemouth win on 2026-11-26?",
+   "link": "https://polymarket.com/event/uel-cel1-bou-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb447ee1aeb6c897cd603a5c9048b632ff304df83e2a500659cb99f7a7c6a83c4",
+   "token_id": "15642832442092073695949740970258586516869181342469207547794810317079035714836",
+   "outcome_index": 1,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.6,
+   "traders_entry": 0.53,
+   "avg_price": 0.54,
+   "shares": 18.13817305001184,
+   "cost": 10.11,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUELGAME-26NOV26RCCBOU-BOU",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5576,
+    "prophetx": 0.5605
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
