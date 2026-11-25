@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1120.7242058016288,
+ "cash": 1098.090982540378,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6214,6 +6214,43 @@
     "polymarket_us": 0.4228
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T08:47:33.448430+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Fenerbah\u00e7e SK win on 2026-11-25?",
+   "link": "https://polymarket.com/event/ucl-shd-fen-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbf35a5ba78db8bf7bde9798f8765bf8ab2d03def520b6a38bbaba2b721bbace2",
+   "token_id": "72054001983765673019884581168187370429393254505400976300622543491429887482863",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 25.2,
+   "traders_entry": 0.61,
+   "avg_price": 0.6197,
+   "shares": 35.569714937501175,
+   "cost": 22.63,
+   "fees": 0.59,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUCLGAME-26NOV25SHAFEN-FEN",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.6259,
+    "kalshi": 0.6363
+   },
+   "intl_cost_per_share": 0.6318,
    "payout": null,
    "profit": null,
    "settled_at": null,
