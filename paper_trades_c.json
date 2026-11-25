@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 781.3850749450636,
+ "cash": 740.8045950763758,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9257,6 +9257,115 @@
     "prophetx": 0.4835
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T16:48:47.648073+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will SK Slavia Praha vs. Villarreal CF end in a draw?",
+   "link": "https://polymarket.com/event/ucl-slp-vil-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5eb4808ae290b7a73d6cadd807adb05561e2f5804703b29e5f84327aa62f82ca",
+   "token_id": "79519450570995565722901616350409460428846233228350614861637342076391072582706",
+   "outcome_index": 1,
+   "ends": "2026-11-25T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.73,
+   "avg_price": 0.74,
+   "shares": 26.757996407649962,
+   "cost": 20.29,
+   "fees": 0.4891,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-ucl-slp-vil-2026-11-25-draw",
+    "long": false,
+    "fee_rate": 0.095
+   },
+   "quotes": {
+    "polymarket_us": 0.7583
+   },
+   "intl_cost_per_share": 0.7496,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T16:48:47.828949+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Spread: Bucks (-1.5)",
+   "link": "https://polymarket.com/event/nba-bkn-mil-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x24e793bdf78a76dd76687edda06c0c638bd1759743f8576f00750d0ecd97f2d3",
+   "token_id": "77303048834577024511245913848790679344051010128636063666703875509914695150546",
+   "outcome_index": 1,
+   "ends": "2026-11-26T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.4,
+   "traders_entry": 0.49,
+   "avg_price": 0.49,
+   "shares": 19.980571160587438,
+   "cost": 10.14,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25BKNMIL-MIL2",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5075,
+    "polymarket_us": 0.5238
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T16:48:48.103543+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Georgia State Panthers",
+   "market": "Florida Gulf Coast Eagles vs. Georgia State Panthers",
+   "link": "https://polymarket.com/event/cbb-flgc-gast-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe1625d9e7d162df985a71076d99e0f0506ff5025e615136b811a3877e5d7b120",
+   "token_id": "87804197847158885135120677420294031522606818526513471470002838908370799594922",
+   "outcome_index": 1,
+   "ends": "2026-11-25T21:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.56,
+   "avg_price": 0.569,
+   "shares": 17.686920486920485,
+   "cost": 10.15,
+   "fees": 0.0868,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "1567adf5325bb2bd7d7717a981e7f5c6",
+    "fee_rate": 0.02,
+    "event_id": 1704779062
+   },
+   "quotes": {
+    "prophetx": 0.5739
+   },
+   "intl_cost_per_share": 0.5823,
    "payout": null,
    "profit": null,
    "settled_at": null,
