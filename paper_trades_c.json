@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 690.2908490080914,
+ "cash": 727.9811903944317,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8703,7 +8703,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   },
   {
    "placed_at": "2026-11-24T20:29:22.026239+00:00",
@@ -8893,7 +8894,8 @@
    "topped_up_at": "2026-11-25T14:41:51.543688+00:00",
    "top_up_bettors": 8,
    "top_up_avg_bankroll_pct": 6.0,
-   "top_up_size_multiplier": 0.979
+   "top_up_size_multiplier": 0.979,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-25T11:00:02.869310+00:00",
@@ -9119,7 +9121,7 @@
   },
   {
    "placed_at": "2026-11-25T14:41:52.814663+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Sabah FK win on 2026-11-25?",
@@ -9148,9 +9150,9 @@
     "prophetx": 0.9735
    },
    "intl_cost_per_share": 0.9734,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.84,
+   "profit": 0.55,
+   "settled_at": "2026-11-25T20:27:33.118248+00:00",
    "topped_up_at": null,
    "close": 0.9735
   },
@@ -9225,11 +9227,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-25T15:43:30.721233+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Sabah FK vs. FC Barcelona: O/U 4.5",
@@ -9258,15 +9261,15 @@
     "prophetx": 0.4835
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.15,
+   "settled_at": "2026-11-25T20:27:33.235716+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
   {
    "placed_at": "2026-11-25T16:48:47.648073+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will SK Slavia Praha vs. Villarreal CF end in a draw?",
@@ -9295,9 +9298,9 @@
     "polymarket_us": 0.7583
    },
    "intl_cost_per_share": 0.7496,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 26.76,
+   "profit": 6.47,
+   "settled_at": "2026-11-25T20:27:33.330485+00:00",
    "topped_up_at": null,
    "close": 0.735
   },
@@ -9377,7 +9380,7 @@
   {
    "placed_at": "2026-11-25T17:38:51.293239+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Bulls",
    "market": "Bulls vs. Hornets",
    "link": "https://polymarket.com/event/nba-chi-cha-2026-11-25",
@@ -9391,9 +9394,9 @@
    "avg_bankroll_pct": 0.8,
    "traders_entry": 0.41,
    "avg_price": 0.4,
-   "shares": 23.509933774834437,
-   "cost": 9.94,
-   "fees": 0.536,
+   "shares": 46.94891201513718,
+   "cost": 19.85,
+   "fees": 1.0704,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -9409,7 +9412,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-25T20:31:54.636624+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 0.6,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-25T17:38:51.479922+00:00",
@@ -9484,7 +9490,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-25T19:33:58.479186+00:00",
@@ -9520,7 +9527,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.9615
   }
  ]
 }

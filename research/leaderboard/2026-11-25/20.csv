@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+0aa270624289,2026-11-25T20:31:59Z,status_change,0x21064fd320,0x21064fd320bfd5a86f8c92a94d3209edf4154dea,rainbowlilies,140,77463.4616075299,777546.7629150001,scanned,,,0.0,0.4,0,60119.0763,37,1
+ba03543ddd53,2026-11-25T20:31:59Z,status_change,0xc289082ddb,0xc289082ddba5a95e95efa216adbed7cc8ab4ab37,sport-intelligence,171,61765.867921485,801315.942654,scanned,,,0.016,0.1,0,19391.0147,1,0
+f9118a6c400e,2026-11-25T20:31:59Z,status_change,0x02b4401ae7,0x02b4401ae7ead14477e944f79e9db07ce9ab7092,,,,,off_board,scanned,,,,,,,
+c51d89de395b,2026-11-25T20:31:59Z,status_change,0x285faa3e3d,0x285faa3e3d1465cf3ff1bff1e1d14891f5b8495f,,,,,off_board,scanned,,,,,,,

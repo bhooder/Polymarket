@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 575.9293749613436,
+ "cash": 594.6808114716351,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18775,7 +18775,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   },
   {
    "placed_at": "2026-11-24T20:29:20.406829+00:00",
@@ -18928,7 +18929,8 @@
    "topped_up_at": "2026-11-25T19:33:55.541660+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 1.6,
-   "top_up_size_multiplier": 0.879
+   "top_up_size_multiplier": 0.879,
+   "close": 0.345
   },
   {
    "placed_at": "2026-11-25T00:23:20.720357+00:00",
@@ -19001,7 +19003,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-25T09:57:46.433578+00:00",
@@ -19265,7 +19268,7 @@
   },
   {
    "placed_at": "2026-11-25T13:22:45.377200+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Sabah FK win on 2026-11-25?",
@@ -19294,9 +19297,9 @@
     "prophetx": 0.9749
    },
    "intl_cost_per_share": 0.9715,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.75,
+   "profit": 0.47,
+   "settled_at": "2026-11-25T20:27:31.930388+00:00",
    "topped_up_at": null,
    "close": 0.9735
   },
@@ -19411,11 +19414,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-25T15:43:29.248067+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Villarreal CF win on 2026-11-25?",
@@ -19445,9 +19449,9 @@
     "polymarket_us": 0.5933
    },
    "intl_cost_per_share": 0.5922,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.14,
+   "settled_at": "2026-11-25T20:27:32.286546+00:00",
    "topped_up_at": null,
    "close": 0.615
   },
@@ -19525,7 +19529,8 @@
    "topped_up_at": "2026-11-25T19:33:54.342466+00:00",
    "top_up_bettors": 7,
    "top_up_avg_bankroll_pct": 2.7,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.9615
   },
   {
    "placed_at": "2026-11-25T16:48:46.724724+00:00",
@@ -19672,7 +19677,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-25T18:32:13.979656+00:00",
@@ -19746,7 +19752,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   }
  ]
 }
