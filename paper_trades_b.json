@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 638.5974281659136,
+ "cash": 611.3788017629801,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19336,7 +19336,7 @@
   {
    "placed_at": "2026-11-25T14:41:50.079805+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Bulls",
    "market": "Bulls vs. Hornets",
    "link": "https://polymarket.com/event/nba-chi-cha-2026-11-25",
@@ -19349,10 +19349,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 1.3,
    "traders_entry": 0.41,
-   "avg_price": 0.41,
-   "shares": 21.38508852677118,
-   "cost": 9.14,
-   "fees": 0.37,
+   "avg_price": 0.4102,
+   "shares": 42.32514235254712,
+   "cost": 18.09,
+   "fees": 0.73,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -19368,7 +19368,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-25T17:38:49.928735+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.8,
+   "top_up_size_multiplier": 0.979
   },
   {
    "placed_at": "2026-11-25T14:41:50.697548+00:00",
@@ -19583,6 +19586,81 @@
     "prophetx": 0.5739
    },
    "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T17:38:50.459065+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Panthers",
+   "market": "Senators vs. Panthers",
+   "link": "https://polymarket.com/event/nhl-ott-fla-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x365ce2041b5a9370407058d2a7054ae800515344c54962f67684d4af7ae50588",
+   "token_id": "90009560960582182372143256803030876796938249785336188010523516078173622172596",
+   "outcome_index": 1,
+   "ends": "2026-11-26T00:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.53,
+   "avg_price": 0.52,
+   "shares": 16.98693141224101,
+   "cost": 9.13,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLGAME-26NOV25OTTFLA-FLA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5377,
+    "polymarket_us": 0.5437
+   },
+   "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-25T17:38:50.763585+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Paris Saint-Germain FC vs. AS Roma: O/U 3.5",
+   "link": "https://polymarket.com/event/ucl-psg-rom-2026-11-25-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb424854d128ddd0bc23d1dcb279802830d282bce7b9f19ca50644ea743cc3689",
+   "token_id": "40323053163315065224488338162944254515424639789904790651079020175766693091980",
+   "outcome_index": 1,
+   "ends": "2026-11-25T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.48,
+   "avg_price": 0.4831,
+   "shares": 18.72620541264225,
+   "cost": 9.14,
+   "fees": 0.0935,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7f922a05bdb85b0c7d1936c7e5c7552d",
+    "fee_rate": 0.02,
+    "event_id": 90122517
+   },
+   "quotes": {
+    "prophetx": 0.4881,
+    "kalshi": 0.498,
+    "polymarket_us": 0.5037
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
