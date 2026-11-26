@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 696.4779620900048,
+ "cash": 703.7800683858512,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8443,7 +8443,7 @@
   },
   {
    "placed_at": "2026-11-25T08:47:35.485797+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Rams",
    "market": "Spread: Rams (-2.5)",
@@ -8472,9 +8472,9 @@
     "prophetx": 0.5148
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.44,
+   "profit": 7.49,
+   "settled_at": "2026-11-26T05:05:52.526899+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -8703,7 +8703,7 @@
   },
   {
    "placed_at": "2026-11-25T18:32:14.908355+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Packers vs. Rams: O/U 46.5",
@@ -8732,9 +8732,9 @@
     "prophetx": 0.3901
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.77,
+   "settled_at": "2026-11-26T05:05:52.526944+00:00",
    "topped_up_at": null,
    "close": 0.39
   },
@@ -9074,6 +9074,43 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.515
+  },
+  {
+   "placed_at": "2026-11-26T05:07:56.826494+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bears",
+   "market": "Bears vs. Lions",
+   "link": "https://polymarket.com/event/nfl-chi-det-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb5af1a1657125484fef6159ea091da17942ffc17b551439aa8b8b0cd4180c2a8",
+   "token_id": "18446774628160075455890991822915367524667380763920986553665573244597947938037",
+   "outcome_index": 0,
+   "ends": "2026-11-26T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 14.869290895573371,
+   "cost": 8.14,
+   "fees": 0.26,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV26CHIDET-CHI",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5475,
+    "polymarket_us": 0.5499
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2

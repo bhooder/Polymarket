@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 823.6014603859,
+ "cash": 860.52406602915,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -18400,7 +18400,7 @@
   },
   {
    "placed_at": "2026-11-24T18:23:35.802289+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Packers vs. Rams: O/U 44.5",
@@ -18429,9 +18429,9 @@
     "prophetx": 0.5219
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 36.92,
+   "profit": 17.65,
+   "settled_at": "2026-11-26T05:05:52.087169+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -19235,7 +19235,7 @@
   },
   {
    "placed_at": "2026-11-25T11:00:02.581982+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Suns vs. Rockets: O/U 225.5",
@@ -19264,9 +19264,9 @@
     "kalshi": 0.4472
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.21,
+   "settled_at": "2026-11-26T05:05:52.115623+00:00",
    "topped_up_at": "2026-11-25T15:43:28.461898+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
@@ -19811,7 +19811,7 @@
   },
   {
    "placed_at": "2026-11-25T21:33:11.183045+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Packers",
    "market": "Packers vs. Rams",
@@ -19840,9 +19840,9 @@
     "prophetx": 0.4435
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.05,
+   "settled_at": "2026-11-26T05:05:52.140791+00:00",
    "topped_up_at": null,
    "close": 0.445
   },

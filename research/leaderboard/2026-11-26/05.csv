@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+e8759486aebc,2026-11-26T05:07:58Z,status_change,0x5db67e883e,0x5db67e883e361ef9296194028ee33ecc8283d7af,pmcahbama,173,62140.03544364899,1637468.2605550005,scanned,off_board,,0.0,0.0,0,299.9999,1,0
+abb928cf267c,2026-11-26T05:07:58Z,status_change,0x53515c8447,0x53515c8447275edfac486e6d70a6e3bf49c19b3c,Gambleguy123,199,52028.055442000004,246831.981287,scanned,off_board,,0.006,0.1,0,0,0,0
+7e55b513a358,2026-11-26T05:07:58Z,status_change,0xf67f72df65,0xf67f72df65797a85dc9fd44d57adfe5b7b4a31cf,SmallFishInWhaleStomach,200,51355.671136675,315363.556785,scanned,off_board,,0.011,0.0,0,110785.2557,2,0
+c6178f26234d,2026-11-26T05:07:58Z,status_change,0x9516343573,0x951634357346bb291df117f9ac410100feea2104,,,,,off_board,scanned,,,,,,,
+dc18061a6d59,2026-11-26T05:07:58Z,status_change,0xc29a02c2d0,0xc29a02c2d0683d9cc1e5ef810cdf48a9e2c67816,,,,,off_board,scanned,,,,,,,
+f0e35a8e9359,2026-11-26T05:07:58Z,status_change,0xf070207d31,0xf070207d315d47fd07870e464d3ded9151f5ac55,,,,,off_board,scanned,,,,,,,

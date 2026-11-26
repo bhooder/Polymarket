@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1010.2683339799798,
+ "cash": 1029.3950362496728,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -427,7 +427,7 @@
   },
   {
    "placed_at": "2026-11-25T09:57:47.956076+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Packers vs. Rams: O/U 44.5",
@@ -456,9 +456,9 @@
     "prophetx": 0.5333
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.13,
+   "profit": 8.93,
+   "settled_at": "2026-11-26T05:05:52.399142+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
