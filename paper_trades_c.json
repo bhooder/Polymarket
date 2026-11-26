@@ -9544,7 +9544,7 @@
   },
   {
    "placed_at": "2026-11-25T21:33:13.453373+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will AFC Bournemouth win on 2026-11-26?",
@@ -9574,9 +9574,9 @@
     "prophetx": 0.5605
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.13,
+   "settled_at": "2026-11-26T20:27:56.482836+00:00",
    "topped_up_at": "2026-11-26T00:26:40.612489+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.6,

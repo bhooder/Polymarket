@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 630.1990019576713,
+ "cash": 649.7575378615551,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9194,7 +9194,7 @@
   },
   {
    "placed_at": "2026-11-26T07:32:35.261899+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Sport Lisboa e Benfica win on 2026-11-26?",
@@ -9223,9 +9223,9 @@
     "polymarket_us": 0.3543
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 19.56,
+   "profit": 12.63,
+   "settled_at": "2026-11-26T20:27:57.115708+00:00",
    "topped_up_at": null,
    "close": 0.375
   },
@@ -9523,7 +9523,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-26T19:31:19.689713+00:00",
@@ -9559,7 +9560,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   }
  ],
  "version": 2

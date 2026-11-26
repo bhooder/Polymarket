@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+68f76a8a58e2,2026-11-26T20:32:15Z,status_change,0x0b0e1eb890,0x0b0e1eb890038cc0f98d26d34842bbe4d1434826,beautifulobsession,143,76517.319123302,1062925.783629,scanned,off_board,,0.0,0.1,0,68695.9887,2,0
+3732dc3f5af4,2026-11-26T20:32:15Z,status_change,0x08a0669cba,0x08a0669cbac171dd04a05e8afcdc1af34a6ed057,PinoPlast,150,72954.49558116401,737893.778563,scanned,off_board,,0.0,,,63735.5702,6,0
+c9be5bc91528,2026-11-26T20:32:15Z,status_change,0xa6d188fb70,0xa6d188fb70c2e2e9ad411c42c02379ed3020286a,zhuz632,198,52809.53044903949,915445.9567989997,scanned,off_board,,0.0,0.4,0,20244.7486,4,0
+fd27533cb3b6,2026-11-26T20:32:15Z,status_change,0x32bb3f0f84,0x32bb3f0f842da76d3c3bba7d6d76376334733c1a,,,,,off_board,scanned,,,,,,,
+f29dca31d40a,2026-11-26T20:32:15Z,status_change,0x686beac4a9,0x686beac4a954696574277b0fdd353f1d9708a463,,,,,off_board,scanned,,,,,,,
+34917fa28bc6,2026-11-26T20:32:15Z,status_change,0xd29312e244,0xd29312e2446a746bbd94408e1c475f1ec6d7d683,,,,,off_board,scanned,,,,,,,

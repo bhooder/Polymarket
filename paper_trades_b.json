@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 875.7576163759392,
+ "cash": 899.0980336811512,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19848,7 +19848,7 @@
   },
   {
    "placed_at": "2026-11-25T21:33:12.053958+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will AFC Bournemouth win on 2026-11-26?",
@@ -19878,9 +19878,9 @@
     "prophetx": 0.5605
    },
    "intl_cost_per_share": 0.5624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.33,
+   "settled_at": "2026-11-26T20:27:55.889197+00:00",
    "topped_up_at": "2026-11-26T00:26:33.401225+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.6,
@@ -20042,7 +20042,7 @@
   },
   {
    "placed_at": "2026-11-26T07:32:29.792328+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Sport Lisboa e Benfica win on 2026-11-26?",
@@ -20071,9 +20071,9 @@
     "polymarket_us": 0.3543
    },
    "intl_cost_per_share": 0.3411,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.34,
+   "profit": 15.07,
+   "settled_at": "2026-11-26T20:27:56.024390+00:00",
    "topped_up_at": null,
    "close": 0.375
   },
@@ -20379,7 +20379,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   }
  ]
 }
