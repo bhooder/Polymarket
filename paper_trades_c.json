@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1003.0814255884951,
+ "cash": 1033.651758916673,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9814,7 +9814,7 @@
   },
   {
    "placed_at": "2026-11-26T16:29:45.610848+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
@@ -9844,9 +9844,9 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 40.02,
+   "profit": 18.56,
+   "settled_at": "2026-11-26T22:28:38.663201+00:00",
    "topped_up_at": "2026-11-26T17:33:12.599598+00:00",
    "top_up_bettors": 10,
    "top_up_avg_bankroll_pct": 25.9,
@@ -9855,7 +9855,7 @@
   },
   {
    "placed_at": "2026-11-26T16:29:45.894489+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "RC Celta de Vigo vs. AFC Bournemouth: O/U 2.5",
@@ -9884,9 +9884,9 @@
     "prophetx": 0.4952
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.73,
+   "settled_at": "2026-11-26T22:28:38.663232+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -9926,6 +9926,42 @@
    "settled_at": "2026-11-26T19:28:54.175235+00:00",
    "topped_up_at": null,
    "close": 0.375
+  },
+  {
+   "placed_at": "2026-11-26T22:32:41.987402+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Carl Overbeck",
+   "market": "Playford: Dane Sweeny vs Carl Overbeck",
+   "link": "https://polymarket.com/event/atp-sweeny-overbec-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0xa1397083fbb4aa1ba0d4ff5eec8ee50e155cc5da1a58abf354acf4749ad05210",
+   "token_id": "71917673183787830117368628388539734857078259320266694959685099212989248543874",
+   "outcome_index": 1,
+   "ends": "2026-11-27T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.0,
+   "traders_entry": 0.37,
+   "avg_price": 0.35,
+   "shares": 25.79763612762178,
+   "cost": 9.45,
+   "fees": 0.42,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXATPCHALLENGERMATCH-26NOV26SWEOVE-OVE",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.3663
+   },
+   "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

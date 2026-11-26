@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 649.7575378615551,
+ "cash": 693.7021048555806,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9078,7 +9078,7 @@
   },
   {
    "placed_at": "2026-11-26T05:07:56.826494+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
@@ -9108,9 +9108,9 @@
     "polymarket_us": 0.5499
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 30.02,
+   "profit": 13.88,
+   "settled_at": "2026-11-26T22:28:39.355508+00:00",
    "topped_up_at": "2026-11-26T17:33:19.074256+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
@@ -9190,7 +9190,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-26T07:32:35.261899+00:00",
@@ -9231,7 +9232,7 @@
   },
   {
    "placed_at": "2026-11-26T10:53:15.221796+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will AFC Bournemouth win on 2026-11-26?",
@@ -9261,9 +9262,9 @@
     "kalshi": 0.538
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.08,
+   "settled_at": "2026-11-26T22:28:39.355528+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -9490,7 +9491,7 @@
   },
   {
    "placed_at": "2026-11-26T19:31:19.384570+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Yes",
    "market": "Will RSC Anderlecht win on 2026-11-26?",
@@ -9520,9 +9521,9 @@
     "polymarket_us": 0.5871
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.93,
+   "profit": 5.88,
+   "settled_at": "2026-11-26T22:28:39.537856+00:00",
    "topped_up_at": null,
    "close": 0.555
   },

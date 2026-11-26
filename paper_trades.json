@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1055.864709670623,
+ "cash": 1098.8111504939504,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6297,7 +6297,7 @@
   },
   {
    "placed_at": "2026-11-26T06:09:43.413412+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
@@ -6328,9 +6328,9 @@
     "polymarket_us": 0.5499
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.95,
+   "profit": 20.24,
+   "settled_at": "2026-11-26T22:28:37.633510+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -6407,7 +6407,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-26T21:28:09.242479+00:00",
@@ -6444,7 +6445,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   }
  ]
 }

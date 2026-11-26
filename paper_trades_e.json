@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 998.5327809223178,
+ "cash": 1036.9112260724187,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -537,7 +537,7 @@
   },
   {
    "placed_at": "2026-11-26T16:29:46.568244+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
@@ -567,9 +567,9 @@
     "kalshi": 0.5378
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.38,
+   "profit": 17.8,
+   "settled_at": "2026-11-26T22:28:39.148347+00:00",
    "topped_up_at": "2026-11-26T17:33:18.647075+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 25.9,

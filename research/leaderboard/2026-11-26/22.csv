@@ -1,0 +1,11 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+b025e9e1ba9e,2026-11-26T22:32:48Z,status_change,0x9703676286,0x9703676286b93c2eca71ca96e8757104519a69c2,AnonymousUsername,153,70357.64629495773,13748137.770721007,scanned,,,0.0,0.1,0,366725.884,293,2
+43dc3808d8df,2026-11-26T22:32:48Z,status_change,0x686beac4a9,0x686beac4a954696574277b0fdd353f1d9708a463,laeg,181,62110.96890742506,1220143.449671,scanned,off_board,,0.0,1.3,0,18892.7093,2,0
+97a8e3f404ef,2026-11-26T22:32:48Z,status_change,0x8a8685a792,0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998,BrotherObama,188,58403.92333945999,3935673.008579,scanned,off_board,,0.0,0.4,0,46800.0,1,0
+c21fdd9a2ca8,2026-11-26T22:32:48Z,status_change,0x32bb3f0f84,0x32bb3f0f842da76d3c3bba7d6d76376334733c1a,Limousin,191,57061.23758227324,26327419.721795794,scanned,off_board,,0.0,408.7,1,129496.3149,77,10
+92279d3b88aa,2026-11-26T22:32:48Z,status_change,0x6f6589b77c,0x6f6589b77c36b94c2a1304dfd40f44310725172c,jdfngkdjfnfd,195,54333.222108209986,998557.8864010001,scanned,off_board,,0.0,0.1,0,5117.4679,1,0
+bebe3055a474,2026-11-26T22:32:48Z,status_change,0x003b310258,0x003b310258262931f1ee054b161307eb492dace5,,,,,off_board,scanned,,,,,,,
+94671da3b0a4,2026-11-26T22:32:48Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,,,,,off_board,scanned,,,,,,,
+727107564fa3,2026-11-26T22:32:48Z,status_change,0x9b11866433,0x9b11866433281ade9f2811dbde8acdefc45f5375,,,,,off_board,scanned,,,,,,,
+bbb915d760ce,2026-11-26T22:32:48Z,status_change,0x9ee49c02ae,0x9ee49c02ae1ade698bf9e06d4ca271f236b8697b,,,,,off_board,scanned,,,,,,,
+5d0b89387b52,2026-11-26T22:32:48Z,status_change,0xa6d188fb70,0xa6d188fb70c2e2e9ad411c42c02379ed3020286a,,,,,off_board,scanned,,,,,,,
