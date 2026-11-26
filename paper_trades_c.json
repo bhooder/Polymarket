@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1031.8062534669796,
+ "cash": 1010.3462534669795,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9803,6 +9803,79 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T16:29:45.610848+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Bears",
+   "market": "Bears vs. Lions",
+   "link": "https://polymarket.com/event/nfl-chi-det-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb5af1a1657125484fef6159ea091da17942ffc17b551439aa8b8b0cd4180c2a8",
+   "token_id": "18446774628160075455890991822915367524667380763920986553665573244597947938037",
+   "outcome_index": 0,
+   "ends": "2026-11-26T18:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 28.1,
+   "traders_entry": 0.52,
+   "avg_price": 0.51,
+   "shares": 19.96319924686831,
+   "cost": 10.73,
+   "fees": 0.5488,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nfl-chi-det-2026-11-26",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5375,
+    "kalshi": 0.5375
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T16:29:45.894489+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "RC Celta de Vigo vs. AFC Bournemouth: O/U 2.5",
+   "link": "https://polymarket.com/event/uel-cel1-bou-2026-11-26-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd1b4abafd23cb71ca531352de3553368d2d2aa49c807dbdebb5f258b268ec2bf",
+   "token_id": "54597667451607845928886955409542345490947129811738960582226410928225763223134",
+   "outcome_index": 1,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.9,
+   "traders_entry": 0.49,
+   "avg_price": 0.4902,
+   "shares": 21.668268633540375,
+   "cost": 10.73,
+   "fees": 0.1083,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "86488aa321983ad0c2c6c8659719cb60",
+    "fee_rate": 0.02,
+    "event_id": 90122651
+   },
+   "quotes": {
+    "prophetx": 0.4952
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,

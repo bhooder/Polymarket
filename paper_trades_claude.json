@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 681.9516624182368,
+ "cash": 673.9516624182368,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9292,6 +9292,43 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T16:29:47.227223+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Levante UD win on 2026-11-27?",
+   "link": "https://polymarket.com/event/lal-lev-rrc-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5804a5ecc8de7b57e8ee5402d985770f53e8f067d0cb02b9e20b7dab699a784c",
+   "token_id": "69319776769927154622235316168951377755370019386030410779193389245239756231143",
+   "outcome_index": 0,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.4717,
+   "shares": 16.78267363704257,
+   "cost": 8.0,
+   "fees": 0.0836,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a559d20647cdb8dd33961ad5d910ea5d",
+    "fee_rate": 0.02,
+    "event_id": 90117254
+   },
+   "quotes": {
+    "prophetx": 0.4767,
+    "polymarket_us": 0.5175
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
