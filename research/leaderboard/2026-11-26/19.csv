@@ -1,0 +1,11 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+198d4ee87662,2026-11-26T19:31:22Z,status_change,0x1658873ac4,0x1658873ac4fc16073d3b9fa7b46eee6fd2700c1e,superfunguy,100,114984.74666290492,585012.0266790001,scanned,,,0.0,,,336381.9153,1,0
+61df0fd82c3e,2026-11-26T19:31:22Z,status_change,0xd29312e244,0xd29312e2446a746bbd94408e1c475f1ec6d7d683,Kyn008,109,107092.11435745173,6756679.511907998,scanned,off_board,,0.0,,,96856.7978,11,0
+00c4c533c11d,2026-11-26T19:31:22Z,status_change,0xc8ad5fd5f4,0xc8ad5fd5f409d2d6b6acc7898abaf178f4f015c2,a4ron,114,102700.29899999994,526668.2,scanned,,,0.0,,,302834.215,1,0
+eb057ee61f22,2026-11-26T19:31:22Z,status_change,0x97cc0cd39a,0x97cc0cd39aa47cd03d085b36d5a514af4f59475b,misterblobby,199,52460.54820613002,2846209.4296440003,scanned,off_board,,0.0,,,7577.609,7,0
+a8f87c27e07c,2026-11-26T19:31:22Z,status_change,0x4161332097,0x4161332097c567f83d4f570ec5c3e28d899ee71d,waierma,200,52122.235456122005,970506.9234260005,scanned,off_board,,0.0,0.4,0,0,0,0
+16f1fde9a372,2026-11-26T19:31:22Z,status_change,0x08a0669cba,0x08a0669cbac171dd04a05e8afcdc1af34a6ed057,,,,,off_board,scanned,,,,,,,
+6a70ae06165b,2026-11-26T19:31:22Z,status_change,0x0b0e1eb890,0x0b0e1eb890038cc0f98d26d34842bbe4d1434826,,,,,off_board,scanned,,,,,,,
+0e03d7683349,2026-11-26T19:31:22Z,status_change,0x237ed451df,0x237ed451df8c2ac9fbcfc02b6bfa51124ac5c6d7,,,,,off_board,scanned,,,,,,,
+ac3397bb2633,2026-11-26T19:31:22Z,status_change,0xaf8664f8ab,0xaf8664f8ab2ee6de30a6a253a38de38f0a02f7a0,,,,,off_board,scanned,,,,,,,
+a64a2e958404,2026-11-26T19:31:22Z,status_change,0xe5b70fd855,0xe5b70fd855af9258d9463992e4f1ed7987905ee3,,,,,off_board,scanned,,,,,,,

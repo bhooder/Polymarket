@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 989.5462534669795,
+ "cash": 1013.743154245269,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9889,7 +9889,7 @@
   },
   {
    "placed_at": "2026-11-26T17:33:15.776631+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "FC Viktoria Plze\u0148 vs. Sport Lisboa e Benfica: O/U 3.5",
@@ -9918,9 +9918,9 @@
     "polymarket_us": 0.4162
    },
    "intl_cost_per_share": 0.3918,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.2,
+   "profit": 14.13,
+   "settled_at": "2026-11-26T19:28:54.175235+00:00",
    "topped_up_at": null,
    "close": 0.375
   }

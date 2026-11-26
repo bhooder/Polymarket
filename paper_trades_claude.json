@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 641.9566309960188,
+ "cash": 630.1990019576713,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9342,7 +9342,7 @@
   },
   {
    "placed_at": "2026-11-26T17:33:20.589331+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "FC Viktoria Plze\u0148 vs. Sport Lisboa e Benfica: O/U 2.5",
@@ -9371,9 +9371,9 @@
     "polymarket_us": 0.6459
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.39,
+   "profit": 4.39,
+   "settled_at": "2026-11-26T19:28:54.462210+00:00",
    "topped_up_at": null,
    "close": 0.615
   },
@@ -9446,6 +9446,116 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T19:31:18.988030+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ole Miss",
+   "market": "Spread: Ole Miss (-14.5)",
+   "link": "https://polymarket.com/event/cfb-mspst-miss-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaac48d9337819bd1a256784ceee32548dff25178c35375792a9ff7aee8c54eab",
+   "token_id": "24234541454388020388193980013113639239467879958415386856962677966283684192226",
+   "outcome_index": 0,
+   "ends": "2026-11-27T17:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.575,
+   "shares": 13.37473131120134,
+   "cost": 8.05,
+   "fees": 0.3595,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-mspst-miss-2026-11-27-pos-14pt5",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "prophetx": 0.6016,
+    "polymarket_us": 0.6019
+   },
+   "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T19:31:19.384570+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will RSC Anderlecht win on 2026-11-26?",
+   "link": "https://polymarket.com/event/uel-ofi-and-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x652bab1321dbdc94ddc4c7076aa3673daaa568150cad7a7712e1a025b651676d",
+   "token_id": "67490304472075944109864598063863057431120505958971626609295113472317645327104",
+   "outcome_index": 0,
+   "ends": "2026-11-26T20:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.55,
+   "avg_price": 0.56,
+   "shares": 13.928155662730749,
+   "cost": 8.05,
+   "fees": 0.25,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXUELGAME-26NOV26OFIRSC-RSC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5779,
+    "polymarket_us": 0.5871
+   },
+   "intl_cost_per_share": 0.5723,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T19:31:19.689713+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Miami Hurricanes vs. Michigan Wolverines: O/U 159.5",
+   "link": "https://polymarket.com/event/cbb-mia-mich-2026-11-26",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x7874d4690ac0509591cfb16686e2aaaf581422567584bfcc001d1da87502377a",
+   "token_id": "49863273775688982035226496379186894752396224666449771794441076924205395110565",
+   "outcome_index": 1,
+   "ends": "2026-11-26T20:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 15.241908423429317,
+   "cost": 8.04,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAMBTOTAL-26NOV26MIAMICH-160",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5277
+   },
+   "intl_cost_per_share": 0.5225,
    "payout": null,
    "profit": null,
    "settled_at": null,
