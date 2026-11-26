@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 673.7080398795333,
+ "cash": 680.5659981390669,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8475,7 +8475,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-25T08:47:40.476473+00:00",
@@ -8734,7 +8735,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.39
   },
   {
    "placed_at": "2026-11-25T19:33:59.965332+00:00",
@@ -8813,7 +8815,7 @@
   },
   {
    "placed_at": "2026-11-25T21:33:15.462138+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "76ers",
    "market": "Spread: Heat (-1.5)",
@@ -8843,9 +8845,9 @@
     "polymarket_us": 0.5337
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 14.92,
+   "profit": 7.04,
+   "settled_at": "2026-11-26T01:55:11.498811+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -8883,7 +8885,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.365
   },
   {
    "placed_at": "2026-11-25T22:31:50.249699+00:00",
@@ -8921,7 +8924,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-25T23:27:47.595865+00:00",
@@ -8960,6 +8964,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.515
+  },
+  {
+   "placed_at": "2026-11-26T01:57:58.100822+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "M80",
+   "market": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
+   "link": "https://polymarket.com/event/cs2-m80-ef1-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc609a9f272d33865de26427612ee82caee3b499f3fe74cdd3fc3867a5307ad41",
+   "token_id": "108012396746075036558728777418736882684902956591652165290157953978698301719800",
+   "outcome_index": 0,
+   "ends": "2026-11-26T06:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.48,
+   "avg_price": 0.47,
+   "shares": 16.53547022487009,
+   "cost": 8.06,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV260100EFM80-M80",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4875
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ],
  "version": 2

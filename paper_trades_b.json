@@ -18432,7 +18432,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-24T18:23:36.472030+00:00",
@@ -19117,7 +19118,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-25T11:00:00.735388+00:00",
@@ -19154,11 +19156,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-25T11:00:01.514127+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Heat vs. 76ers: O/U 237.5",
@@ -19187,9 +19190,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.17,
+   "settled_at": "2026-11-26T01:55:10.739518+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -19227,7 +19230,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-25T11:00:02.581982+00:00",
@@ -19266,7 +19270,8 @@
    "topped_up_at": "2026-11-25T15:43:28.461898+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-25T13:22:45.377200+00:00",
@@ -19307,7 +19312,7 @@
   },
   {
    "placed_at": "2026-11-25T14:41:49.148913+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Heat vs. 76ers",
@@ -19337,9 +19342,9 @@
     "polymarket_us": 0.5037
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.14,
+   "settled_at": "2026-11-26T01:55:10.862947+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -19494,7 +19499,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-25T16:48:46.544971+00:00",
@@ -19723,7 +19729,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.575
   },
   {
    "placed_at": "2026-11-25T19:33:56.539189+00:00",
@@ -19834,7 +19841,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-25T21:33:12.053958+00:00",
@@ -19950,7 +19958,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.465
   }
  ]
 }
