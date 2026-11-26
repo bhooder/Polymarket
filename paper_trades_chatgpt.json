@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 927.8031420931214,
+ "cash": 918.3430454747639,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1562,7 +1562,7 @@
   },
   {
    "placed_at": "2026-11-26T11:48:07.537923+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Bears vs. Lions: O/U 56.5",
@@ -1591,11 +1591,48 @@
     "kalshi": 0.538
    },
    "intl_cost_per_share": 0.5425,
+   "payout": 0.0,
+   "profit": -9.57,
+   "settled_at": "2026-11-26T21:28:12.578239+00:00",
+   "topped_up_at": null,
+   "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-26T21:28:14.012041+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cowboys",
+   "market": "Spread: Cowboys (-8.5)",
+   "link": "https://polymarket.com/event/nfl-phi-dal-2026-11-26",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ba28d75d332ee850f3023dcc1e5762661c8bf7a39197eaa57b4cd18dc6aba07",
+   "token_id": "43160236201217370736877472207151938583035685643244758116543830673059784420970",
+   "outcome_index": 0,
+   "ends": "2026-11-26T21:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 13.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.5,
+   "shares": 18.28019323671498,
+   "cost": 9.46,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLSPREAD-26NOV26PHIDAL-DAL9",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5175,
+    "polymarket_us": 0.5275
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.505
+   "topped_up_at": null
   }
  ]
 }

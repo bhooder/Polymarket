@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 899.0980336811512,
+ "cash": 879.1380336811511,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20121,7 +20121,7 @@
   },
   {
    "placed_at": "2026-11-26T10:53:13.047653+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Bears vs. Lions: O/U 56.5",
@@ -20151,9 +20151,9 @@
     "kalshi": 0.5375
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.84,
+   "settled_at": "2026-11-26T21:24:47.757218+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -20381,6 +20381,81 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.505
+  },
+  {
+   "placed_at": "2026-11-26T21:28:10.230862+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Eagles vs. Cowboys: O/U 48.5",
+   "link": "https://polymarket.com/event/nfl-phi-dal-2026-11-26",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x82ccb1a55cb1164fa4f59271707b06de90810cd8656598423d74e36767df8aa7",
+   "token_id": "11946746731117407674023182845966324438278334467683401268781020255024141992594",
+   "outcome_index": 0,
+   "ends": "2026-11-26T21:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 26.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.537,
+   "shares": 18.41295792470737,
+   "cost": 9.98,
+   "fees": 0.0916,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b61b6413b22ca128959ed79de488f90e",
+    "fee_rate": 0.02,
+    "event_id": 1700008839
+   },
+   "quotes": {
+    "prophetx": 0.542,
+    "kalshi": 0.5579
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T21:28:11.210935+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Bologna FC 1909 win on 2026-11-27?",
+   "link": "https://polymarket.com/event/sea-ven-bol-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x593c5873d5ad59611c5ab284bd1aedb29fe54676718f0d3b9e96674bec96a771",
+   "token_id": "93749204054215170519358398880338707220961990953305603633175184295745700192987",
+   "outcome_index": 1,
+   "ends": "2026-11-27T19:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.57,
+   "avg_price": 0.5798,
+   "shares": 17.068451690821256,
+   "cost": 9.98,
+   "fees": 0.0832,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "81af0e190e60a9366c5a6c0466a137f8",
+    "fee_rate": 0.02,
+    "event_id": 90111236
+   },
+   "quotes": {
+    "prophetx": 0.5847,
+    "kalshi": 0.5974,
+    "polymarket_us": 0.6068
+   },
+   "intl_cost_per_share": 0.5823,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
