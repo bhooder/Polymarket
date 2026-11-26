@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1089.9247096706229,
+ "cash": 1078.574709670623,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6331,7 +6331,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-26T11:48:05.078371+00:00",
@@ -6365,6 +6366,44 @@
     "kalshi": 0.4876
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T18:24:52.024041+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Cowboys",
+   "market": "Spread: Cowboys (-8.5)",
+   "link": "https://polymarket.com/event/nfl-phi-dal-2026-11-26",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4ba28d75d332ee850f3023dcc1e5762661c8bf7a39197eaa57b4cd18dc6aba07",
+   "token_id": "43160236201217370736877472207151938583035685643244758116543830673059784420970",
+   "outcome_index": 0,
+   "ends": "2026-11-26T21:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.8,
+   "traders_entry": 0.5,
+   "avg_price": 0.5025,
+   "shares": 22.365085597229672,
+   "cost": 11.35,
+   "fees": 0.1118,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a8f8b072a6e173eb1be95aa6b4157c9b",
+    "fee_rate": 0.02,
+    "event_id": 1700008839
+   },
+   "quotes": {
+    "prophetx": 0.5075,
+    "kalshi": 0.5277,
+    "polymarket_us": 0.5325
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
