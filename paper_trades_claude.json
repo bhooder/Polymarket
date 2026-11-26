@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 698.102975695645,
+ "cash": 690.022975695645,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8967,7 +8967,7 @@
   },
   {
    "placed_at": "2026-11-26T01:57:58.100822+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "M80",
    "market": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
@@ -8996,9 +8996,9 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.06,
+   "settled_at": "2026-11-26T10:50:35.427305+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -9218,6 +9218,43 @@
     "polymarket_us": 0.3543
    },
    "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T10:53:15.221796+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AFC Bournemouth win on 2026-11-26?",
+   "link": "https://polymarket.com/event/uel-cel1-bou-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb447ee1aeb6c897cd603a5c9048b632ff304df83e2a500659cb99f7a7c6a83c4",
+   "token_id": "15642832442092073695949740970258586516869181342469207547794810317079035714836",
+   "outcome_index": 1,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.52,
+   "avg_price": 0.5192,
+   "shares": 15.41327689594356,
+   "cost": 8.08,
+   "fees": 0.077,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9f343b8a5305658417809c9f882c1584",
+    "fee_rate": 0.02,
+    "event_id": 90122651
+   },
+   "quotes": {
+    "prophetx": 0.5242,
+    "kalshi": 0.538
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,
