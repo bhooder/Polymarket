@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 643.8830828839536,
+ "cash": 658.987986380294,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19046,7 +19046,7 @@
   },
   {
    "placed_at": "2026-11-25T11:00:00.238260+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Bulls vs. Hornets: O/U 222.5",
@@ -19077,9 +19077,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -18.16,
+   "settled_at": "2026-11-26T02:54:07.348638+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -19350,7 +19350,7 @@
   },
   {
    "placed_at": "2026-11-25T14:41:50.079805+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bulls",
    "market": "Bulls vs. Hornets",
@@ -19380,9 +19380,9 @@
     "polymarket_us": 0.433
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.33,
+   "profit": 24.24,
+   "settled_at": "2026-11-26T02:54:07.464906+00:00",
    "topped_up_at": "2026-11-25T17:38:49.928735+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
@@ -19960,6 +19960,79 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-26T02:56:27.394902+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will CF Monterrey win on 2026-11-25?",
+   "link": "https://polymarket.com/event/mex-mon1-ame-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x651f71be5387a4444918f6fec54e6c7b3c3ba8cb21e8d1d4f1c8d99dec81f460",
+   "token_id": "44860919063814221087411522361236737862382041321536405812398196293064864101644",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:10:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 3.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.54,
+   "shares": 32.544654710901554,
+   "cost": 18.14,
+   "fees": 0.57,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLIGAMXGAME-26NOV25MONAME-MON",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5575
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T02:56:28.818102+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Sharks vs. Ducks: O/U 6.5",
+   "link": "https://polymarket.com/event/nhl-sj-ana-2026-11-25",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x51b5b979e2f52eb07b12b33f3298c478dd7bd828ba6bf916612123b077ee5b2c",
+   "token_id": "113311917151636219764185379213038697906251157360415196512936584057271389803452",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.8,
+   "traders_entry": 0.43,
+   "avg_price": 0.42,
+   "shares": 20.752679315047178,
+   "cost": 9.08,
+   "fees": 0.36,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLTOTAL-26NOV25SJANA-7",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4373,
+    "polymarket_us": 0.4569
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 749.6670105978499,
+ "cash": 767.2952952611187,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -8900,7 +8900,7 @@
   },
   {
    "placed_at": "2026-11-25T11:00:02.869310+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Bulls vs. Hornets: O/U 222.5",
@@ -8930,9 +8930,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.28,
+   "settled_at": "2026-11-26T02:54:07.725527+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -9389,7 +9389,7 @@
   },
   {
    "placed_at": "2026-11-25T17:38:51.293239+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Bulls",
    "market": "Bulls vs. Hornets",
@@ -9419,9 +9419,9 @@
     "kalshi": 0.4272
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 46.95,
+   "profit": 27.1,
+   "settled_at": "2026-11-26T02:54:07.816402+00:00",
    "topped_up_at": "2026-11-25T20:31:54.636624+00:00",
    "top_up_bettors": 6,
    "top_up_avg_bankroll_pct": 0.6,
@@ -9696,6 +9696,78 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.465
+  },
+  {
+   "placed_at": "2026-11-26T02:56:29.548778+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will CF Monterrey win on 2026-11-25?",
+   "link": "https://polymarket.com/event/mex-mon1-ame-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x651f71be5387a4444918f6fec54e6c7b3c3ba8cb21e8d1d4f1c8d99dec81f460",
+   "token_id": "44860919063814221087411522361236737862382041321536405812398196293064864101644",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:10:00+00:00",
+   "bettors": 8,
+   "avg_bankroll_pct": 3.0,
+   "traders_entry": 0.54,
+   "avg_price": 0.54,
+   "shares": 35.074310892950685,
+   "cost": 19.55,
+   "fees": 0.61,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLIGAMXGAME-26NOV25MONAME-MON",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5574
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T02:56:29.739308+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Trail Blazers",
+   "market": "Spread: Spurs (-2.5)",
+   "link": "https://polymarket.com/event/nba-sas-por-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8c5f93617bd121f1118e6012a575296083f92b0d29b1c54579aeadfcc9ca726e",
+   "token_id": "97064578439677989295356658049172550140197006974366511715175783997213091759239",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.3,
+   "traders_entry": 0.47,
+   "avg_price": 0.47,
+   "shares": 20.04361589292565,
+   "cost": 9.77,
+   "fees": 0.35,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV25SASPOR-SAS3",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4875
+   },
+   "intl_cost_per_share": 0.4724,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
