@@ -9115,7 +9115,7 @@
   },
   {
    "placed_at": "2026-11-26T07:32:33.447252+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Imperial",
    "market": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
@@ -9144,9 +9144,9 @@
     "kalshi": 0.3457
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.25,
+   "settled_at": "2026-11-26T14:10:19.894203+00:00",
    "topped_up_at": null,
    "close": 0.355
   },

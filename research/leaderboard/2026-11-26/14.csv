@@ -1,0 +1,2 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+9eff86a742f2,2026-11-26T14:13:31Z,status_change,0x664a25f165,0x664a25f165a0150ce687410470f3352f5783fc5f,itsonlyamatteroftime,106,108756.32310400007,2391336.590907,skipped_bot,scanned,,0.53,0.9,0,,,
