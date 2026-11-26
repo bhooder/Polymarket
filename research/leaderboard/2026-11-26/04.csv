@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+d0d000abd87b,2026-11-26T04:01:46Z,status_change,0x9516343573,0x951634357346bb291df117f9ac410100feea2104,AppleTiiime,184,56146.76918888192,4002842.3231460005,scanned,off_board,,0.0,0.4,0,12865.9721,8,0
+abd485d0ae0b,2026-11-26T04:01:46Z,status_change,0xe674dede25,0xe674dede25584b64a53d85517008530d2ab15e2b,ggA11xcr,200,52038.660247999986,1131553.439821,scanned,off_board,,0.084,0.3,0,0,0,0
+0514b434c409,2026-11-26T04:01:46Z,status_change,0x5db67e883e,0x5db67e883e361ef9296194028ee33ecc8283d7af,,,,,off_board,scanned,,,,,,,
+3767cd041e4d,2026-11-26T04:01:46Z,status_change,0x94e4c271a8,0x94e4c271a84d72f9efc8326606cee80b6e7c87e0,,,,,off_board,scanned,,,,,,,

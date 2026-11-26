@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 678.9110399727351,
+ "cash": 696.4779620900048,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8853,7 +8853,7 @@
   },
   {
    "placed_at": "2026-11-25T22:31:48.543665+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Cavaliers",
    "market": "Cavaliers vs. Knicks",
@@ -8882,15 +8882,15 @@
     "kalshi": 0.4072
    },
    "intl_cost_per_share": 0.4019,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -7.59,
+   "settled_at": "2026-11-26T03:58:09.577123+00:00",
    "topped_up_at": null,
    "close": 0.365
   },
   {
    "placed_at": "2026-11-25T22:31:50.249699+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Timberwolves vs. Thunder",
@@ -8921,9 +8921,9 @@
     "polymarket_us": 0.4735
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.57,
+   "profit": 9.57,
+   "settled_at": "2026-11-26T03:58:09.577149+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -9035,7 +9035,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-26T02:56:31.441813+00:00",
@@ -9071,7 +9072,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   }
  ],
  "version": 2

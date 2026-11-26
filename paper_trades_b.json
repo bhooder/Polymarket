@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 658.987986380294,
+ "cash": 823.6014603859,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19085,7 +19085,7 @@
   },
   {
    "placed_at": "2026-11-25T11:00:00.484742+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Timberwolves vs. Thunder: O/U 224.5",
@@ -19115,15 +19115,15 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.78,
+   "profit": 17.62,
+   "settled_at": "2026-11-26T03:58:08.269108+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
   {
    "placed_at": "2026-11-25T11:00:00.735388+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Under",
    "market": "Nets vs. Bucks: O/U 233.5",
@@ -19153,9 +19153,9 @@
     "polymarket_us": 0.5137
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.78,
+   "profit": 17.62,
+   "settled_at": "2026-11-26T03:58:08.341579+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -19198,7 +19198,7 @@
   },
   {
    "placed_at": "2026-11-25T11:00:01.734093+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Cavaliers vs. Knicks: O/U 220.5",
@@ -19227,9 +19227,9 @@
     "kalshi": 0.4574
    },
    "intl_cost_per_share": 0.4523,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 39.72,
+   "profit": 21.56,
+   "settled_at": "2026-11-26T03:58:08.409871+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -19466,7 +19466,7 @@
   },
   {
    "placed_at": "2026-11-25T16:48:46.227017+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Nets",
    "market": "Spread: Bucks (-1.5)",
@@ -19496,9 +19496,9 @@
     "polymarket_us": 0.5238
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.99,
+   "profit": 8.85,
+   "settled_at": "2026-11-26T03:58:08.551749+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -19579,7 +19579,8 @@
    "topped_up_at": "2026-11-26T00:26:33.094734+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 3.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-25T16:48:47.088179+00:00",
@@ -19620,7 +19621,7 @@
   },
   {
    "placed_at": "2026-11-25T17:38:50.459065+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Panthers",
    "market": "Senators vs. Panthers",
@@ -19650,9 +19651,9 @@
     "polymarket_us": 0.5437
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.99,
+   "profit": 7.86,
+   "settled_at": "2026-11-26T03:58:08.693845+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -19697,7 +19698,7 @@
   },
   {
    "placed_at": "2026-11-25T18:32:13.979656+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Knicks",
    "market": "Spread: Knicks (-2.5)",
@@ -19726,9 +19727,9 @@
     "kalshi": 0.498
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.35,
+   "profit": 9.21,
+   "settled_at": "2026-11-26T03:58:08.762804+00:00",
    "topped_up_at": null,
    "close": 0.575
   },
@@ -19805,7 +19806,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-25T21:33:11.183045+00:00",
@@ -19920,11 +19922,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-26T00:26:39.003970+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Clippers",
    "market": "Spread: Grizzlies (-6.5)",
@@ -19955,9 +19958,9 @@
     "polymarket_us": 0.4937
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.29,
+   "settled_at": "2026-11-26T03:58:08.849789+00:00",
    "topped_up_at": null,
    "close": 0.465
   },
@@ -19995,7 +19998,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-26T02:56:28.818102+00:00",
@@ -20032,7 +20036,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   }
  ]
 }
