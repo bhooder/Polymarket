@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 946.9767192995924,
+ "cash": 938.7067192995925,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20038,6 +20038,42 @@
    "settled_at": "2026-11-26T06:06:41.121745+00:00",
    "topped_up_at": null,
    "close": 0.425
+  },
+  {
+   "placed_at": "2026-11-26T07:32:29.792328+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Sport Lisboa e Benfica win on 2026-11-26?",
+   "link": "https://polymarket.com/event/uel-plz-ben-2026-11-26",
+   "market_type": "moneyline",
+   "size_multiplier": 0.84,
+   "condition_id": "0x5fa12527e210524a8195909b794e26941ec7112a0f4fa790ff8e87618d321e0d",
+   "token_id": "78884084464021209211642793750775283548328007110662376206159095960121624772774",
+   "outcome_index": 1,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.6,
+   "traders_entry": 0.32,
+   "avg_price": 0.33,
+   "shares": 23.340417305211943,
+   "cost": 8.27,
+   "fees": 0.5677,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-uel-plz-ben-2026-11-26-ben",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.3543
+   },
+   "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
