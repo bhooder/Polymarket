@@ -1,0 +1,7 @@
+oid,observed_at,scope,m,reason,token_id,condition_id,game,sport,market,pick,start,bettors,against,conv_bettors,conv_against,bankroll_pct,usd_in,against_usd,entry,price,sharp_bettors,sharp_against,graded_bettors,graded_against,bettors_clv,against_clv,bettors_top100,against_top100
+3c22f9c38578,2026-11-26T06:09:50Z,top100,8c5451a20480,price,,,,,,,,5,2,0,0,4.5,4750,3369,0.53,0.5,0,0,5,2,0.23,0.31,,
+bc7e0a8546dd,2026-11-26T06:09:50Z,top100,a4e7d2dde4a3,bankroll_pct,,,,,,,,4,0,2,0,9.7,13819,0,0.65,0.67,1,0,4,0,0.93,,,
+2fd71b204b77,2026-11-26T06:09:50Z,top100,73c015860c68,counts,,,,,,,,3,2,2,1,43.6,36746,13337,0.54,0.52,1,0,3,2,0.5,0.76,,
+ca3d8da48b73,2026-11-26T06:09:50Z,top200,8c5451a20480,price,,,,,,,,8,2,0,0,5.2,7595,3369,0.53,0.5,0,0,8,2,0.26,0.31,5,2
+4b0949a4f7fa,2026-11-26T06:09:50Z,top200,73c015860c68,counts,,,,,,,,3,2,2,1,43.6,36746,13337,0.54,0.52,1,0,3,2,0.5,0.76,3,2
+c5b98acbd661,2026-11-26T06:09:50Z,top200,d22e6cff3b62,first_seen,40935820636086053002635496060261210806748237425175286583474058387621549522096,0xcc41caf90c11be20c904805039b2224f2022eff21e684a2836458585ea4ae002,uel-cry-rso-2026-11-26-exact-score,uel,Exact Score: Crystal Palace FC 3 - 2 Real Sociedad de Fútbol?,No,2026-11-26T20:00:00Z,3,0,0,0,1.9,1192,0,0.95,0.96,0,0,3,0,0.18,,2,0

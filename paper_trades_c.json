@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 969.6001134762176,
+ "cash": 1042.5327687499803,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9622,7 +9622,7 @@
   },
   {
    "placed_at": "2026-11-26T00:26:41.783632+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Ducks",
    "market": "Sharks vs. Ducks",
@@ -9653,9 +9653,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.81,
+   "profit": 7.79,
+   "settled_at": "2026-11-26T06:06:41.184098+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -9700,7 +9700,7 @@
   },
   {
    "placed_at": "2026-11-26T02:56:29.548778+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will CF Monterrey win on 2026-11-25?",
@@ -9729,15 +9729,15 @@
     "kalshi": 0.5574
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.07,
+   "profit": 15.52,
+   "settled_at": "2026-11-26T06:06:41.195431+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
   {
    "placed_at": "2026-11-26T02:56:29.739308+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Spread: Spurs (-2.5)",
@@ -9766,9 +9766,9 @@
     "kalshi": 0.4875
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.04,
+   "profit": 10.27,
+   "settled_at": "2026-11-26T06:06:41.206777+00:00",
    "topped_up_at": null,
    "close": 0.455
   }

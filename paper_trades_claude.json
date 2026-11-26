@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 703.7800683858512,
+ "cash": 720.4386314411794,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -8999,11 +8999,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-26T02:56:30.822321+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Spread: Spurs (-2.5)",
@@ -9032,15 +9033,15 @@
     "kalshi": 0.488
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.66,
+   "profit": 8.53,
+   "settled_at": "2026-11-26T06:06:41.491329+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
   {
    "placed_at": "2026-11-26T02:56:31.441813+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "VCU Rams",
    "market": "Spread: VCU Rams (-4.5)",
@@ -9069,9 +9070,9 @@
     "kalshi": 0.5275
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.12,
+   "settled_at": "2026-11-26T06:06:41.559396+00:00",
    "topped_up_at": null,
    "close": 0.515
   },

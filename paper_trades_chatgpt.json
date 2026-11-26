@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 930.0561036124673,
+ "cash": 946.9423680993134,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1412,7 +1412,7 @@
   },
   {
    "placed_at": "2026-11-25T14:42:00.686899+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Kings",
    "market": "Spread: Warriors (-6.5)",
@@ -1441,15 +1441,15 @@
     "kalshi": 0.5178
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.59,
+   "settled_at": "2026-11-26T06:09:48.286800+00:00",
    "topped_up_at": null,
    "close": 0.415
   },
   {
    "placed_at": "2026-11-25T22:31:52.388285+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Ducks",
    "market": "Sharks vs. Ducks",
@@ -1479,9 +1479,9 @@
     "polymarket_us": 0.5735
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.89,
+   "profit": 7.3,
+   "settled_at": "2026-11-26T06:09:48.357474+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
