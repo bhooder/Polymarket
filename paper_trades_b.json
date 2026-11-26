@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 681.0316167553335,
+ "cash": 643.8830828839536,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -19079,7 +19079,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-25T11:00:00.484742+00:00",
@@ -19380,7 +19381,8 @@
    "topped_up_at": "2026-11-25T17:38:49.928735+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.8,
-   "top_up_size_multiplier": 0.979
+   "top_up_size_multiplier": 0.979,
+   "close": 0.375
   },
   {
    "placed_at": "2026-11-25T14:41:50.697548+00:00",
@@ -19537,7 +19539,7 @@
   {
    "placed_at": "2026-11-25T16:48:46.724724+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Trail Blazers",
    "market": "Spread: Spurs (-2.5)",
    "link": "https://polymarket.com/event/nba-sas-por-2026-11-25",
@@ -19550,10 +19552,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.9,
    "traders_entry": 0.48,
-   "avg_price": 0.48,
-   "shares": 18.35279171491059,
-   "cost": 9.14,
-   "fees": 0.33,
+   "avg_price": 0.475,
+   "shares": 37.39114949242851,
+   "cost": 18.43,
+   "fees": 0.67,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -19568,7 +19570,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-26T00:26:33.094734+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 3.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-25T16:48:47.088179+00:00",
@@ -19642,7 +19647,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-25T17:38:50.763585+00:00",
@@ -19833,7 +19839,7 @@
   {
    "placed_at": "2026-11-25T21:33:12.053958+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will AFC Bournemouth win on 2026-11-26?",
    "link": "https://polymarket.com/event/uel-cel1-bou-2026-11-26",
@@ -19847,9 +19853,9 @@
    "avg_bankroll_pct": 0.6,
    "traders_entry": 0.53,
    "avg_price": 0.54,
-   "shares": 16.21850488349229,
-   "cost": 9.05,
-   "fees": 0.29,
+   "shares": 32.86758954265251,
+   "cost": 18.33,
+   "fees": 0.58,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -19862,6 +19868,85 @@
     "prophetx": 0.5605
    },
    "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-26T00:26:33.401225+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.6,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-26T00:26:34.444489+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Ducks",
+   "market": "Sharks vs. Ducks",
+   "link": "https://polymarket.com/event/nhl-sj-ana-2026-11-25",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa9ec2d90d8184690c04b13b5bd4496f912348f1365583abca62d106900c40ece",
+   "token_id": "52917631285182818286809018745885801456223184522571321453814554616880468144597",
+   "outcome_index": 1,
+   "ends": "2026-11-26T03:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 8.6,
+   "traders_entry": 0.55,
+   "avg_price": 0.5575,
+   "shares": 16.516849067112226,
+   "cost": 9.29,
+   "fees": 0.0815,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "428bce56c00664389b51560173233784",
+    "fee_rate": 0.02,
+    "event_id": 1704778193
+   },
+   "quotes": {
+    "prophetx": 0.5625,
+    "kalshi": 0.5677,
+    "polymarket_us": 0.5735
+   },
+   "intl_cost_per_share": 0.5723,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T00:26:39.003970+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Clippers",
+   "market": "Spread: Grizzlies (-6.5)",
+   "link": "https://polymarket.com/event/nba-lac-mem-2026-11-25",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2be7591c0ab0466d7af18e0350806b18355411fb45a01665ee020ad1a03f5fe1",
+   "token_id": "79022770267458762899420669254300522249729583072406846102524507165579797089902",
+   "outcome_index": 1,
+   "ends": "2026-11-26T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.47,
+   "avg_price": 0.4717,
+   "shares": 19.48887976101568,
+   "cost": 9.29,
+   "fees": 0.0971,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "41459311282d702277ccab9a74500e06",
+    "fee_rate": 0.02,
+    "event_id": 1704779048
+   },
+   "quotes": {
+    "prophetx": 0.4767,
+    "kalshi": 0.4879,
+    "polymarket_us": 0.4937
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
