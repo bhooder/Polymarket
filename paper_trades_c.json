@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1010.3462534669795,
+ "cash": 989.5462534669795,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9811,7 +9811,7 @@
   {
    "placed_at": "2026-11-26T16:29:45.610848+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
    "link": "https://polymarket.com/event/nfl-chi-det-2026-11-26",
@@ -9824,10 +9824,10 @@
    "bettors": 6,
    "avg_bankroll_pct": 28.1,
    "traders_entry": 0.52,
-   "avg_price": 0.51,
-   "shares": 19.96319924686831,
-   "cost": 10.73,
-   "fees": 0.5488,
+   "avg_price": 0.5087,
+   "shares": 40.019505972845636,
+   "cost": 21.46,
+   "fees": 1.1002,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -9843,7 +9843,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-26T17:33:12.599598+00:00",
+   "top_up_bettors": 10,
+   "top_up_avg_bankroll_pct": 25.9,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-26T16:29:45.894489+00:00",
@@ -9876,6 +9879,42 @@
     "prophetx": 0.4952
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T17:33:15.776631+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "FC Viktoria Plze\u0148 vs. Sport Lisboa e Benfica: O/U 3.5",
+   "link": "https://polymarket.com/event/uel-plz-ben-2026-11-26-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.939,
+   "condition_id": "0x00dca227d2e01595b50ef08f87c84b9b10dab6d689c5359ed395b99fd6f928ca",
+   "token_id": "30290376811153567347310974658414302140546662571912995889832106224442631161034",
+   "outcome_index": 0,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.43,
+   "avg_price": 0.39,
+   "shares": 24.19690077828959,
+   "cost": 10.07,
+   "fees": 0.6332,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-uel-plz-ben-2026-11-26-3pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.4162
+   },
+   "intl_cost_per_share": 0.3918,
    "payout": null,
    "profit": null,
    "settled_at": null,

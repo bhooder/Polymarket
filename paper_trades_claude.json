@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 673.9516624182368,
+ "cash": 649.9566309960188,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9079,7 +9079,7 @@
   {
    "placed_at": "2026-11-26T05:07:56.826494+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Bears",
    "market": "Bears vs. Lions",
    "link": "https://polymarket.com/event/nfl-chi-det-2026-11-26",
@@ -9092,10 +9092,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.52,
-   "avg_price": 0.53,
-   "shares": 14.869290895573371,
-   "cost": 8.14,
-   "fees": 0.26,
+   "avg_price": 0.52,
+   "shares": 30.016411331294794,
+   "cost": 16.14,
+   "fees": 0.53,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -9111,7 +9111,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-26T17:33:19.074256+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-26T07:32:33.447252+00:00",
@@ -9327,6 +9330,79 @@
    "quotes": {
     "prophetx": 0.4767,
     "polymarket_us": 0.5175
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T17:33:20.589331+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "FC Viktoria Plze\u0148 vs. Sport Lisboa e Benfica: O/U 2.5",
+   "link": "https://polymarket.com/event/uel-plz-ben-2026-11-26-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x253d9cbe801bfcd737aead732a584eea79fe5cab1171ef5cc3d5c393342dc9b6",
+   "token_id": "64428822353935511773533824405784794073618489668882790344442631480023753965346",
+   "outcome_index": 0,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.62,
+   "avg_price": 0.62,
+   "shares": 12.38551142873067,
+   "cost": 8.0,
+   "fees": 0.321,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-uel-plz-ben-2026-11-26-2pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.6459
+   },
+   "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T17:33:22.804000+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texas Tech",
+   "market": "Spread: Texas Tech (-14.5)",
+   "link": "https://polymarket.com/event/cfb-tcu-txtech-2026-11-26",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x799622dae5a791a931a443fb100480899b8b5c83d789d86587dc68911234860a",
+   "token_id": "32569814944941892893702851481020614227997465811544156416955406563736071638660",
+   "outcome_index": 0,
+   "ends": "2026-11-27T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.4847,
+   "shares": 16.33599714035288,
+   "cost": 8.0,
+   "fees": 0.0816,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "39cf8d4ee7a9ef8d94af94962c073109",
+    "fee_rate": 0.02,
+    "event_id": 1704744632
+   },
+   "quotes": {
+    "prophetx": 0.4897,
+    "polymarket_us": 0.5125
    },
    "intl_cost_per_share": 0.4925,
    "payout": null,

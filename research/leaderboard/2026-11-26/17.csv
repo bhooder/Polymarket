@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+1d87baddc50c,2026-11-26T17:33:28Z,status_change,0x53515c8447,0x53515c8447275edfac486e6d70a6e3bf49c19b3c,Gambleguy123,200,52703.51307105001,266130.771197,scanned,off_board,,0.006,0.1,0,7447.6941,1,0
+f944252342ac,2026-11-26T17:33:28Z,status_change,0x97cc0cd39a,0x97cc0cd39aa47cd03d085b36d5a514af4f59475b,,,,,off_board,scanned,,,,,,,

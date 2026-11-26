@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 879.6270044056977,
+ "cash": 851.2870044056976,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20223,6 +20223,79 @@
     "prophetx": 0.6343
    },
    "intl_cost_per_share": 0.6417,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T17:33:08.097953+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "FC Viktoria Plze\u0148 vs. Sport Lisboa e Benfica: O/U 3.5",
+   "link": "https://polymarket.com/event/uel-plz-ben-2026-11-26-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 0.939,
+   "condition_id": "0x00dca227d2e01595b50ef08f87c84b9b10dab6d689c5359ed395b99fd6f928ca",
+   "token_id": "30290376811153567347310974658414302140546662571912995889832106224442631161034",
+   "outcome_index": 0,
+   "ends": "2026-11-26T17:45:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.1,
+   "traders_entry": 0.43,
+   "avg_price": 0.39,
+   "shares": 44.42906607652179,
+   "cost": 18.49,
+   "fees": 1.1627,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-uel-plz-ben-2026-11-26-3pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.4162
+   },
+   "intl_cost_per_share": 0.3918,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T17:33:10.592709+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texas Tech",
+   "market": "Spread: Texas Tech (-14.5)",
+   "link": "https://polymarket.com/event/cfb-tcu-txtech-2026-11-26",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x799622dae5a791a931a443fb100480899b8b5c83d789d86587dc68911234860a",
+   "token_id": "32569814944941892893702851481020614227997465811544156416955406563736071638660",
+   "outcome_index": 0,
+   "ends": "2026-11-27T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 5.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.4849,
+   "shares": 20.108176652172986,
+   "cost": 9.85,
+   "fees": 0.1004,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "39cf8d4ee7a9ef8d94af94962c073109",
+    "fee_rate": 0.02,
+    "event_id": 1704744632
+   },
+   "quotes": {
+    "prophetx": 0.4899,
+    "polymarket_us": 0.5125
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
