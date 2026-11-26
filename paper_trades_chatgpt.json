@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 946.9423680993134,
+ "cash": 927.8031420931214,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1515,6 +1515,79 @@
    "quotes": {
     "kalshi": 0.5477,
     "polymarket_us": 0.5499
+   },
+   "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T11:48:07.321920+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Chiefs",
+   "market": "Spread: Bills (-2.5)",
+   "link": "https://polymarket.com/event/nfl-kc-buf-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x201a0973017a02cc6730c0c9425b02b71a31e4421d1d081d52ba00a600797bdd",
+   "token_id": "13138702933324772242945398964326042866721858433212416725967534493678881625012",
+   "outcome_index": 1,
+   "ends": "2026-11-27T01:20:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 42.9,
+   "traders_entry": 0.47,
+   "avg_price": 0.4695,
+   "shares": 20.170088729908016,
+   "cost": 9.57,
+   "fees": 0.1005,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "671989e9b1e79b21b292bd6e53023a38",
+    "fee_rate": 0.02,
+    "event_id": 1700008892
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4878
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T11:48:07.537923+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Bears vs. Lions: O/U 56.5",
+   "link": "https://polymarket.com/event/nfl-chi-det-2026-11-26",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x9cd7d1a3e20dc76b141e4b4215092956d775ce8b9afdd92cad0b51f11e988b19",
+   "token_id": "90466725901020050623777551655988649355750872183281952303963730813095784317075",
+   "outcome_index": 1,
+   "ends": "2026-11-26T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 11.5,
+   "traders_entry": 0.52,
+   "avg_price": 0.52,
+   "shares": 17.786973088830674,
+   "cost": 9.57,
+   "fees": 0.32,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLTOTAL-26NOV26CHIDET-57",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.538
    },
    "intl_cost_per_share": 0.5425,
    "payout": null,

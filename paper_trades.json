@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1112.634709670623,
+ "cash": 1089.9247096706229,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6328,6 +6328,43 @@
     "polymarket_us": 0.5499
    },
    "intl_cost_per_share": 0.5425,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-26T11:48:05.078371+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Chiefs",
+   "market": "Spread: Bills (-2.5)",
+   "link": "https://polymarket.com/event/nfl-kc-buf-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x201a0973017a02cc6730c0c9425b02b71a31e4421d1d081d52ba00a600797bdd",
+   "token_id": "13138702933324772242945398964326042866721858433212416725967534493678881625012",
+   "outcome_index": 1,
+   "ends": "2026-11-27T01:20:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 42.9,
+   "traders_entry": 0.47,
+   "avg_price": 0.4695,
+   "shares": 47.86444253460931,
+   "cost": 22.71,
+   "fees": 0.2384,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "671989e9b1e79b21b292bd6e53023a38",
+    "fee_rate": 0.02,
+    "event_id": 1700008892
+   },
+   "quotes": {
+    "prophetx": 0.4745,
+    "kalshi": 0.4876
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
