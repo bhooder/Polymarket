@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 578.1399476985729,
+ "cash": 570.2165497371552,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9683,7 +9683,7 @@
   },
   {
    "placed_at": "2026-11-27T07:39:15.046365+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Steelers",
    "market": "Spread: Broncos (-4.5)",
@@ -9714,9 +9714,9 @@
     "polymarket_us": 0.5225
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.1,
+   "profit": 7.97,
+   "settled_at": "2026-11-27T23:25:22.732275+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -10091,7 +10091,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:06.035184+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Broncos vs. Steelers: O/U 38.5",
@@ -10120,9 +10120,9 @@
     "kalshi": 0.4678
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.13,
+   "settled_at": "2026-11-27T23:25:22.860508+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -10277,7 +10277,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:08.297849+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Under",
    "market": "Kings vs. Ducks: O/U 6.5",
@@ -10306,9 +10306,9 @@
     "prophetx": 0.5148
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.13,
+   "settled_at": "2026-11-27T23:25:23.058314+00:00",
    "topped_up_at": null,
    "close": 0.505
   },
@@ -10490,6 +10490,119 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.485
+  },
+  {
+   "placed_at": "2026-11-27T23:28:24.312375+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Sabres",
+   "market": "Spread: Penguins (-1.5)",
+   "link": "https://polymarket.com/event/nhl-pit-buf-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb2eb85494bf97b15da0286cc541b9e46629cd22a24d4c09ff9b92065ff3554cd",
+   "token_id": "103814846640056888862342079565136960785811104884291058828325269700461692750312",
+   "outcome_index": 1,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.76,
+   "avg_price": 0.75,
+   "shares": 10.483210483210483,
+   "cost": 8.0,
+   "fees": 0.14,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNHLSPREAD-26NOV27PITBUF-PIT2",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7634,
+    "polymarket_us": 0.7706
+   },
+   "intl_cost_per_share": 0.7789,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T23:28:24.994024+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Inter Miami CF win on 2026-11-27?",
+   "link": "https://polymarket.com/event/mls-clb-mia-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcccf6237b097cc1d046168695f6736e65d8ba86ab388c1977715af2b27724080",
+   "token_id": "47111926684163164970422563926508042362665649937895824106713339813279236176575",
+   "outcome_index": 1,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.59,
+   "avg_price": 0.6,
+   "shares": 13.244047619047619,
+   "cost": 8.01,
+   "fees": 0.0636,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "6efb7e8019d5275ca313783653aa5782",
+    "fee_rate": 0.02,
+    "event_id": 90123932
+   },
+   "quotes": {
+    "prophetx": 0.6048,
+    "kalshi": 0.617,
+    "polymarket_us": 0.6362
+   },
+   "intl_cost_per_share": 0.6219,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T23:28:25.810700+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Columbus Crew vs. Inter Miami CF: O/U 3.5",
+   "link": "https://polymarket.com/event/mls-clb-mia-2026-11-27-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xee5cf0c6bca1d41a149da597d7b3927db8b0b8132f7dcd1b4e4dad3f3f744da8",
+   "token_id": "74493361206312508490345407044255553419189029612952145243291840806876427394367",
+   "outcome_index": 1,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.52,
+   "shares": 14.631312836100069,
+   "cost": 8.01,
+   "fees": 0.4017,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-mls-clb-mia-2026-11-27-3pt5",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5475,
+    "kalshi": 0.5478
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,

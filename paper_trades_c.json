@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 980.950049403671,
+ "cash": 970.1165753153792,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10373,6 +10373,42 @@
     "polymarket_us": 0.6166
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T23:28:21.982304+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Heat",
+   "market": "Heat vs. Knicks",
+   "link": "https://polymarket.com/event/nba-mia-nyk-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6556ae7178bfbdb828806ee82d09f965a2c1bb680bc7befad9a1ab9e7dbe5a3c",
+   "token_id": "41144466320215454421096584132386900500232651394754352600636887173782997232814",
+   "outcome_index": 0,
+   "ends": "2026-11-28T00:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 8.0,
+   "traders_entry": 0.42,
+   "avg_price": 0.4,
+   "shares": 25.983685220729367,
+   "cost": 10.83,
+   "fees": 0.44,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV27MIANYK-MIA",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4169
+   },
+   "intl_cost_per_share": 0.4221,
    "payout": null,
    "profit": null,
    "settled_at": null,

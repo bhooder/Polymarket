@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1045.6766181994053,
+ "cash": 1066.063091629357,
  "started_at": "2026-11-11T00:25:16.448744+00:00",
  "bets": [
   {
@@ -843,7 +843,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:01.653056+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Steelers",
    "market": "Spread: Broncos (-4.5)",
@@ -873,9 +873,9 @@
     "polymarket_us": 0.5225
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.39,
+   "profit": 9.84,
+   "settled_at": "2026-11-27T23:25:22.442913+00:00",
    "topped_up_at": null,
    "close": 0.495
   }
