@@ -1,0 +1,11 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+5a90a727c348,2026-11-27T02:58:18Z,status_change,0x6f6589b77c,0x6f6589b77c36b94c2a1304dfd40f44310725172c,jdfngkdjfnfd,102,108015.881394,1036057.8864010001,scanned,off_board,,0.0,0.1,0,13312.5,1,0
+0499d67fd751,2026-11-27T02:58:18Z,status_change,0x5fd86de467,0x5fd86de46798abe62b3b1a45911477a6bd6cce32,MaciBetting23,197,49971.86789100388,220179.02782999998,scanned,off_board,,0.0,0.1,0,2778.8307,5,1
+226dc72446a7,2026-11-27T02:58:18Z,status_change,0x59018ff1f4,0x59018ff1f4300838f635386ab5e0b8b353ce63a2,kamloic,198,49761.38876400001,591644.2813239999,scanned,,,0.004,0.2,0,0,0,0
+ac6d38c7f3ba,2026-11-27T02:58:18Z,status_change,0x9516343573,0x951634357346bb291df117f9ac410100feea2104,AppleTiiime,199,49680.1390924549,3982465.356807,scanned,off_board,,0.0,0.4,0,19823.8953,7,0
+327108045700,2026-11-27T02:58:18Z,status_change,0xfb681e23db,0xfb681e23db8d1cca8a6b7e2a70a29e000ddfa240,royalestake,200,49340.01205052153,1231452.1154349996,scanned,,,0.0,0.1,0,10377.7937,17,0
+4d73bd96d462,2026-11-27T02:58:18Z,status_change,0x5d7639ed5f,0x5d7639ed5fd3c5ebf0fc69d548e1046acd0f9168,,,,,off_board,scanned,,,,,,,
+661e803ee674,2026-11-27T02:58:18Z,status_change,0x9b11866433,0x9b11866433281ade9f2811dbde8acdefc45f5375,,,,,off_board,scanned,,,,,,,
+f7405929e46d,2026-11-27T02:58:18Z,status_change,0xd9e0aaca47,0xd9e0aaca471f489be338fd0f91a26e8669a805f2,,,,,off_board,scanned,,,,,,,
+6f0dab87730f,2026-11-27T02:58:18Z,status_change,0xe674dede25,0xe674dede25584b64a53d85517008530d2ab15e2b,,,,,off_board,scanned,,,,,,,
+9d4acf17814f,2026-11-27T02:58:18Z,status_change,0xf4c95b636c,0xf4c95b636c71243531dfc82a97565a94c106f88c,,,,,off_board,scanned,,,,,,,

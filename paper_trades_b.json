@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 911.668436048388,
+ "cash": 901.718436048388,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20535,6 +20535,44 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.305
+  },
+  {
+   "placed_at": "2026-11-27T02:58:15.227408+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Columbus Crew vs. Inter Miami CF: O/U 3.5",
+   "link": "https://polymarket.com/event/mls-clb-mia-2026-11-27-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xee5cf0c6bca1d41a149da597d7b3927db8b0b8132f7dcd1b4e4dad3f3f744da8",
+   "token_id": "25022501626798336746481763960082091094257540668271068718380685227120972993492",
+   "outcome_index": 0,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.49,
+   "avg_price": 0.495,
+   "shares": 19.898049402078023,
+   "cost": 9.95,
+   "fees": 0.0995,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7f040a3618a4ed56e72107a097772001",
+    "fee_rate": 0.02,
+    "event_id": 90123932
+   },
+   "quotes": {
+    "prophetx": 0.5,
+    "kalshi": 0.5177,
+    "polymarket_us": 0.5275
+   },
+   "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
