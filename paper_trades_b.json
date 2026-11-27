@@ -20463,7 +20463,7 @@
   },
   {
    "placed_at": "2026-11-26T22:32:41.124212+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Carl Overbeck",
    "market": "Playford: Dane Sweeny vs Carl Overbeck",
@@ -20493,15 +20493,15 @@
     "kalshi": 0.3663
    },
    "intl_cost_per_share": 0.3614,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.76,
+   "settled_at": "2026-11-27T03:59:36.982150+00:00",
    "topped_up_at": null,
    "close": 0.335
   },
   {
    "placed_at": "2026-11-26T23:31:27.165675+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Yes",
    "market": "Will CF Pachuca vs. CD Guadalajara end in a draw?",
@@ -20530,9 +20530,9 @@
     "kalshi": 0.3149
    },
    "intl_cost_per_share": 0.3003,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -15.22,
+   "settled_at": "2026-11-27T03:59:36.995994+00:00",
    "topped_up_at": null,
    "close": 0.305
   },

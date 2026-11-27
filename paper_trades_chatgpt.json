@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 916.7453847330197,
+ "cash": 907.3022078942091,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1710,6 +1710,42 @@
    "settled_at": null,
    "topped_up_at": null,
    "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-27T04:01:34.076660+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "USC",
+   "market": "USC vs. UCLA",
+   "link": "https://polymarket.com/event/cfb-usc-ucla-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x937fb6c15ad830085ee94b71eac70f1cd91c348da2fa1521f4a6e78b50df1cf7",
+   "token_id": "3881195150799491426617571541161008100301279254713003092232313954104783188902",
+   "outcome_index": 0,
+   "ends": "2026-11-28T20:30:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 10.6,
+   "traders_entry": 0.68,
+   "avg_price": 0.68,
+   "shares": 13.57820123354506,
+   "cost": 9.44,
+   "fees": 0.21,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFGAME-26NOV28USCUCLA-USC",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6955
+   },
+   "intl_cost_per_share": 0.6909,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
