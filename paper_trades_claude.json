@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 661.9342477728932,
+ "cash": 637.5447231368889,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9489,7 +9489,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.57
   },
   {
    "placed_at": "2026-11-26T19:31:19.384570+00:00",
@@ -9746,6 +9747,117 @@
     "kalshi": 0.7252
    },
    "intl_cost_per_share": 0.7203,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T17:30:15.490728+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nuggets",
+   "market": "Nuggets vs. Jazz",
+   "link": "https://polymarket.com/event/nba-den-uta-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x2a7e640c3a914882f1a41a07250dd7902a920cf3937730c2f6cd04570f7eab4c",
+   "token_id": "80264295287751420030957893807895784706926264237849180246630382000348605026965",
+   "outcome_index": 0,
+   "ends": "2026-11-28T02:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.79,
+   "avg_price": 0.798,
+   "shares": 10.147228943279933,
+   "cost": 8.13,
+   "fees": 0.0327,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c2cbc1166e4640908aeac616a04468a8",
+    "fee_rate": 0.02,
+    "event_id": 1704780307
+   },
+   "quotes": {
+    "prophetx": 0.8012,
+    "polymarket_us": 0.8082,
+    "kalshi": 0.812
+   },
+   "intl_cost_per_share": 0.7983,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T17:30:17.146058+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Knicks",
+   "market": "Spread: Knicks (-3.5)",
+   "link": "https://polymarket.com/event/nba-mia-nyk-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xdf53aa7730fd3a8893b47ab9e7dd7b41aa0ec4ef962d46f26130b054506b493b",
+   "token_id": "19449025057042330629444902106149902719670218744685338470204440345266490387960",
+   "outcome_index": 0,
+   "ends": "2026-11-28T00:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.51,
+   "avg_price": 0.47,
+   "shares": 16.65856305532818,
+   "cost": 8.13,
+   "fees": 0.3,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV27MIANYK-NYK4",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.488
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T17:30:20.034060+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "Real Salt Lake vs. Vancouver Whitecaps FC: O/U 3.5",
+   "link": "https://polymarket.com/event/mls-rsl-vwh-2026-11-27-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xb3a765fce3e02c843055e4a65bbfd9cf6ee592d907c7910a6c97ebc6fff44824",
+   "token_id": "1386504909808938725332008450004648156418814454409374527893147919801963907477",
+   "outcome_index": 1,
+   "ends": "2026-11-28T03:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.61,
+   "avg_price": 0.6183,
+   "shares": 13.048908529741865,
+   "cost": 8.13,
+   "fees": 0.0616,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "9003e605f4b66966b8fbefd43dce0f6f",
+    "fee_rate": 0.02,
+    "event_id": 90123933
+   },
+   "quotes": {
+    "prophetx": 0.623,
+    "polymarket_us": 0.6459
+   },
+   "intl_cost_per_share": 0.6318,
    "payout": null,
    "profit": null,
    "settled_at": null,
