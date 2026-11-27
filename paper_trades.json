@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1142.988274639312,
+ "cash": 1131.328274639312,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6490,7 +6490,7 @@
   {
    "placed_at": "2026-11-27T05:10:33.694977+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Steelers",
    "market": "Spread: Broncos (-4.5)",
    "link": "https://polymarket.com/event/nfl-den-pit-2026-11-27",
@@ -6503,10 +6503,10 @@
    "bettors": 3,
    "avg_bankroll_pct": 22.9,
    "traders_entry": 0.51,
-   "avg_price": 0.495,
-   "shares": 23.317714173691435,
-   "cost": 11.66,
-   "fees": 0.1166,
+   "avg_price": 0.4975,
+   "shares": 46.40682308458253,
+   "cost": 23.32,
+   "fees": 0.232,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -6523,7 +6523,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-27T08:52:24.833045+00:00",
+   "top_up_bettors": 4,
+   "top_up_avg_bankroll_pct": 41.1,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-27T07:39:08.868538+00:00",

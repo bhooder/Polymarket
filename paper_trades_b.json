@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 873.7566127005609,
+ "cash": 864.1537798175042,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20680,6 +20680,43 @@
     "polymarket_us": 0.5225
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T08:52:27.778503+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Nets",
+   "market": "Spread: Raptors (-7.5)",
+   "link": "https://polymarket.com/event/nba-bkn-tor-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4c6ff19ee09d352a1c4082da57dbda58d16f41dbd4c5a4ea7a34dbfe176687b1",
+   "token_id": "60320797975087922090400004220041813205260539037510535340852335008727148743226",
+   "outcome_index": 1,
+   "ends": "2026-11-28T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 19.297568506368197,
+   "cost": 9.6,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV27BKNTOR-TOR8",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4976,
+    "polymarket_us": 0.5075
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
