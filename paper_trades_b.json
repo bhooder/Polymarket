@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 665.3115762931018,
+ "cash": 655.7859336840705,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20459,7 +20459,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.605
   },
   {
    "placed_at": "2026-11-26T22:32:41.124212+00:00",
@@ -20609,7 +20610,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.665
   },
   {
    "placed_at": "2026-11-27T07:39:10.553834+00:00",
@@ -20645,7 +20647,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-27T07:39:12.320026+00:00",
@@ -20683,7 +20686,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-27T08:52:27.778503+00:00",
@@ -20728,7 +20732,7 @@
   {
    "placed_at": "2026-11-27T09:54:20.801778+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Celtics",
    "market": "Spread: Celtics (-9.5)",
    "link": "https://polymarket.com/event/nba-atl-bos-2026-11-27",
@@ -20742,9 +20746,9 @@
    "avg_bankroll_pct": 0.5,
    "traders_entry": 0.47,
    "avg_price": 0.48,
-   "shares": 19.297568506368197,
-   "cost": 9.6,
-   "fees": 0.34,
+   "shares": 38.434323941849996,
+   "cost": 19.13,
+   "fees": 0.68,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -20760,7 +20764,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-27T20:32:05.729510+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.1,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-27T11:43:30.790288+00:00",
@@ -20872,7 +20879,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.425
   },
   {
    "placed_at": "2026-11-27T17:30:07.880928+00:00",
@@ -20982,7 +20990,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-27T18:22:56.488446+00:00",
@@ -21019,7 +21028,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-27T19:26:55.865415+00:00",
@@ -21165,7 +21175,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-27T19:26:58.747281+00:00",
