@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 637.5447231368889,
+ "cash": 622.744723136889,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9858,6 +9858,80 @@
     "polymarket_us": 0.6459
    },
    "intl_cost_per_share": 0.6318,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T18:23:01.749546+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Pacers",
+   "market": "76ers vs. Pacers",
+   "link": "https://polymarket.com/event/nba-phi-ind-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 0.99,
+   "condition_id": "0xf93a4fe832882479c324e6166050540c9184d9cc3c18bac675a1504b4662c297",
+   "token_id": "80802942846227777230812774660270911756419754901681985322190955882637457873262",
+   "outcome_index": 1,
+   "ends": "2026-11-28T00:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.39,
+   "avg_price": 0.3968,
+   "shares": 20.044196988707657,
+   "cost": 8.05,
+   "fees": 0.096,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7dd02dbbea9cf4bf06d5e9dee0babe8a",
+    "fee_rate": 0.02,
+    "event_id": 1704780300
+   },
+   "quotes": {
+    "prophetx": 0.4016,
+    "polymarket_us": 0.4162,
+    "kalshi": 0.4171
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T18:23:03.466951+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Athletic Club",
+   "market": "Spread: Athletic Club (-1.5)",
+   "link": "https://polymarket.com/event/lal-mala-bil-2026-11-28-more-markets",
+   "market_type": "spreads",
+   "size_multiplier": 0.831,
+   "condition_id": "0x750e2695a28bea47fc09989f158903f60cc81e9b7274faf7a60273bf6a3efb02",
+   "token_id": "98322421412770098071123059013679997987340612592663418207880426163029107367188",
+   "outcome_index": 0,
+   "ends": "2026-11-28T15:15:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.31,
+   "avg_price": 0.3175,
+   "shares": 20.976158784841843,
+   "cost": 6.75,
+   "fees": 0.0909,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "a6b02d2510cb3e84ac75a3ead55c579c",
+    "fee_rate": 0.02,
+    "event_id": 90117253
+   },
+   "quotes": {
+    "prophetx": 0.3218
+   },
+   "intl_cost_per_share": 0.3309,
    "payout": null,
    "profit": null,
    "settled_at": null,

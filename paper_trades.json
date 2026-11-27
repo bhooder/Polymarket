@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1119.668274639312,
+ "cash": 1108.0082746393118,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6596,6 +6596,44 @@
     "prophetx": 0.4812
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.495
+  },
+  {
+   "placed_at": "2026-11-27T18:22:53.583940+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Nottingham Forest FC win on 2026-11-27?",
+   "link": "https://polymarket.com/event/epl-not-che-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xe5c7522b2b3276c581932298e8e81e3b81aee4013ec8a2f127dbb909dac224ff",
+   "token_id": "94153563293395290101746265182401081323098689227100536223191050545611492694984",
+   "outcome_index": 1,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 16.6,
+   "traders_entry": 0.6,
+   "avg_price": 0.6094,
+   "shares": 18.986030610216655,
+   "cost": 11.66,
+   "fees": 0.0904,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "c6f94200aaf2b2075bc632f618db0c67",
+    "fee_rate": 0.02,
+    "event_id": 90114184
+   },
+   "quotes": {
+    "prophetx": 0.6141,
+    "kalshi": 0.6267
+   },
+   "intl_cost_per_share": 0.612,
    "payout": null,
    "profit": null,
    "settled_at": null,

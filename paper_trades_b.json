@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 770.1324325373399,
+ "cash": 751.07243253734,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20943,6 +20943,79 @@
     "kalshi": 0.5972
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T18:22:55.075829+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Memphis",
+   "market": "Spread: Memphis (-17.5)",
+   "link": "https://polymarket.com/event/cfb-templ-mphs-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x14ae19e789780228ed3e2e1a3af37d8444ac7a5b98715e9721316a396ce327e8",
+   "token_id": "82052219667162904264441967390847875049957861963357376845898937455857244213988",
+   "outcome_index": 0,
+   "ends": "2026-11-27T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.8,
+   "traders_entry": 0.53,
+   "avg_price": 0.535,
+   "shares": 16.946281798172986,
+   "cost": 9.53,
+   "fees": 0.4637,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-templ-mphs-2026-11-27-pos-17pt5",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5624
+   },
+   "intl_cost_per_share": 0.5524,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T18:22:56.488446+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Levante UD win on 2026-11-27?",
+   "link": "https://polymarket.com/event/lal-lev-rrc-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5804a5ecc8de7b57e8ee5402d985770f53e8f067d0cb02b9e20b7dab699a784c",
+   "token_id": "3382357137316142313714440127777758766235314246299727023048419269709429444563",
+   "outcome_index": 1,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.5,
+   "avg_price": 0.51,
+   "shares": 17.730595416836437,
+   "cost": 9.53,
+   "fees": 0.4874,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-lal-lev-rrc-2026-11-27-lev",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "prophetx": 0.5242,
+    "polymarket_us": 0.5375
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,
