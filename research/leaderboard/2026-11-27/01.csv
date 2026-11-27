@@ -1,0 +1,9 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+b640e4d750dc,2026-11-27T01:58:24Z,status_change,0x72638c8d93,0x72638c8d939fd0205925025b1183d8db4a360851,soforth,100,110924.65103864801,7395914.9701279905,scanned,,,0.0,,,4924.1977,6,0
+6acb6dab8688,2026-11-27T01:58:24Z,status_change,0x1524177ecf,0x1524177ecf66c7102c78d02df860fe8b9f2a61e1,haiyoushui,172,62337.86775352934,11962198.777247006,scanned,,,0.0,126.5,1,16695.689,7,0
+16b9e835539e,2026-11-27T01:58:24Z,status_change,0xd37d84a14d,0xd37d84a14d70ac7300defe9997074b3b3fd7c735,0xd37d84a14d70ac7300defe9997074b3b3fd7c70,199,51371.639977888,178181.966675,scanned,off_board,,0.0,0.2,0,27586.4974,22,0
+0f8b1ce001c0,2026-11-27T01:58:24Z,status_change,0x5d7639ed5f,0x5d7639ed5fd3c5ebf0fc69d548e1046acd0f9168,yesmate,200,51238.925273200024,1150835.9435589998,scanned,,,0.0,0.4,0,15935.3652,2,0
+38c853e2df0c,2026-11-27T01:58:24Z,status_change,0x19ae9efef6,0x19ae9efef67c685a8581d631d99267b1ff10395c,,,,,off_board,scanned,,,,,,,
+c1c55a74d797,2026-11-27T01:58:24Z,status_change,0x8a8685a792,0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998,,,,,off_board,scanned,,,,,,,
+cca6e438ed19,2026-11-27T01:58:24Z,status_change,0x9a3fa403a6,0x9a3fa403a6666eef75f92f181fcf13f9c051914a,,,,,off_board,scanned,,,,,,,
+81494a5ab850,2026-11-27T01:58:24Z,status_change,0xdf17f4a8dd,0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1,,,,,off_board,scanned,,,,,,,

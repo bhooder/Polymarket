@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1075.7011504939505,
+ "cash": 1117.6007771943619,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6369,11 +6369,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-26T18:24:52.024041+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Cowboys",
    "market": "Spread: Cowboys (-8.5)",
@@ -6404,15 +6405,15 @@
     "polymarket_us": 0.5325
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.35,
+   "settled_at": "2026-11-27T01:54:51.603739+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
   {
    "placed_at": "2026-11-26T21:28:09.242479+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Eagles vs. Cowboys: O/U 48.5",
@@ -6442,9 +6443,9 @@
     "kalshi": 0.5574
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 41.9,
+   "profit": 19.19,
+   "settled_at": "2026-11-27T01:54:51.603788+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -6483,7 +6484,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   }
  ]
 }

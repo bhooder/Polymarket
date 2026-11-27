@@ -533,7 +533,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-26T16:29:46.568244+00:00",

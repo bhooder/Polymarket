@@ -766,7 +766,7 @@
   },
   {
    "placed_at": "2026-11-26T20:32:09.910883+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Cowboys",
    "market": "Spread: Cowboys (-8.5)",
@@ -797,9 +797,9 @@
     "polymarket_us": 0.5325
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.7,
+   "settled_at": "2026-11-27T01:54:52.838890+00:00",
    "topped_up_at": null,
    "close": 0.495
   },
@@ -838,7 +838,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   }
  ]
 }
