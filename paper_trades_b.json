@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 655.7859336840705,
+ "cash": 779.6581233933123,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20425,7 +20425,7 @@
   },
   {
    "placed_at": "2026-11-26T21:28:11.210935+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Bologna FC 1909 win on 2026-11-27?",
@@ -20456,9 +20456,9 @@
     "polymarket_us": 0.6068
    },
    "intl_cost_per_share": 0.5823,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.07,
+   "profit": 7.09,
+   "settled_at": "2026-11-27T22:28:21.485966+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -20577,7 +20577,7 @@
   },
   {
    "placed_at": "2026-11-27T06:14:02.247905+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Chelsea FC win on 2026-11-27?",
@@ -20607,15 +20607,15 @@
     "kalshi": 0.6758
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 28.95,
+   "profit": 9.72,
+   "settled_at": "2026-11-27T22:28:21.486004+00:00",
    "topped_up_at": null,
    "close": 0.665
   },
   {
    "placed_at": "2026-11-27T07:39:10.553834+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Levante UD vs. Real Racing Club: O/U 3.5",
@@ -20644,9 +20644,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 37.89,
+   "profit": 18.66,
+   "settled_at": "2026-11-27T22:28:21.532705+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -20847,7 +20847,7 @@
   },
   {
    "placed_at": "2026-11-27T15:08:48.742491+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SV Werder Bremen win on 2026-11-27?",
@@ -20876,9 +20876,9 @@
     "prophetx": 0.4322
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.23,
+   "profit": 12.62,
+   "settled_at": "2026-11-27T22:28:21.577457+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
@@ -20995,7 +20995,7 @@
   },
   {
    "placed_at": "2026-11-27T18:22:56.488446+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Levante UD win on 2026-11-27?",
@@ -21025,9 +21025,9 @@
     "polymarket_us": 0.5375
    },
    "intl_cost_per_share": 0.5325,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.73,
+   "profit": 8.2,
+   "settled_at": "2026-11-27T22:28:21.714992+00:00",
    "topped_up_at": null,
    "close": 0.515
   },

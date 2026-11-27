@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1016.1724003374709,
+ "cash": 1031.5044668514088,
  "started_at": "2026-11-11T00:44:14.155397+00:00",
  "bets": [
   {
@@ -617,7 +617,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:02.194892+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Chelsea FC win on 2026-11-27?",
@@ -647,9 +647,9 @@
     "kalshi": 0.6763
    },
    "intl_cost_per_share": 0.6811,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.33,
+   "profit": 4.96,
+   "settled_at": "2026-11-27T22:28:22.255201+00:00",
    "topped_up_at": null,
    "close": 0.665
   }

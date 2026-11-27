@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 917.9701438786001,
+ "cash": 908.5101438786,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1779,6 +1779,43 @@
     "polymarket_us": 0.5375
    },
    "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T22:31:12.769945+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Warriors vs. Trail Blazers: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-gsw-por-2026-11-27",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6bcf5dedcac18e52119c73584a495f25655e094307618ec54368f1506f3d2124",
+   "token_id": "114526030127886576979261249681804523827025500747178280216163859741223350870936",
+   "outcome_index": 0,
+   "ends": "2026-11-28T02:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 19.5,
+   "traders_entry": 0.52,
+   "avg_price": 0.4902,
+   "shares": 19.103618012422363,
+   "cost": 9.46,
+   "fees": 0.0955,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "43d16e26ec5b142fc7e01c047f13c476",
+    "fee_rate": 0.02,
+    "event_id": 1704781046
+   },
+   "quotes": {
+    "prophetx": 0.4952,
+    "kalshi": 0.5175
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,

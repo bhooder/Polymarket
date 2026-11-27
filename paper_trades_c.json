@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 882.7469232110607,
+ "cash": 980.950049403671,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10078,7 +10078,7 @@
   },
   {
    "placed_at": "2026-11-27T06:14:03.407829+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Chelsea FC win on 2026-11-27?",
@@ -10108,9 +10108,9 @@
     "kalshi": 0.676
    },
    "intl_cost_per_share": 0.6712,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 31.25,
+   "profit": 10.49,
+   "settled_at": "2026-11-27T22:28:22.051704+00:00",
    "topped_up_at": null,
    "close": 0.665
   },
@@ -10157,7 +10157,7 @@
   },
   {
    "placed_at": "2026-11-27T09:54:21.628903+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Over",
    "market": "Levante UD vs. Real Racing Club: O/U 3.5",
@@ -10187,9 +10187,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 42.94,
+   "profit": 22.18,
+   "settled_at": "2026-11-27T22:28:22.073108+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -10232,7 +10232,7 @@
   },
   {
    "placed_at": "2026-11-27T15:08:49.962649+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will SV Werder Bremen win on 2026-11-27?",
@@ -10261,9 +10261,9 @@
     "prophetx": 0.4322
    },
    "intl_cost_per_share": 0.4423,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 24.01,
+   "profit": 13.63,
+   "settled_at": "2026-11-27T22:28:22.121605+00:00",
    "topped_up_at": null,
    "close": 0.425
   },

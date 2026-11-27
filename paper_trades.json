@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1084.918274639312,
+ "cash": 1096.3556362233705,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6531,7 +6531,7 @@
   },
   {
    "placed_at": "2026-11-27T07:39:08.868538+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Over",
    "market": "Levante UD vs. Real Racing Club: O/U 3.5",
@@ -6561,9 +6561,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.98,
+   "profit": 11.32,
+   "settled_at": "2026-11-27T22:28:21.273266+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
@@ -6606,7 +6606,7 @@
   },
   {
    "placed_at": "2026-11-27T18:22:53.583940+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Nottingham Forest FC win on 2026-11-27?",
@@ -6636,9 +6636,9 @@
     "kalshi": 0.6267
    },
    "intl_cost_per_share": 0.612,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -11.66,
+   "settled_at": "2026-11-27T22:28:21.273305+00:00",
    "topped_up_at": null,
    "close": 0.605
   },
@@ -6675,6 +6675,43 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T22:31:09.920288+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Warriors vs. Trail Blazers: O/U 217.5",
+   "link": "https://polymarket.com/event/nba-gsw-por-2026-11-27",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6bcf5dedcac18e52119c73584a495f25655e094307618ec54368f1506f3d2124",
+   "token_id": "114526030127886576979261249681804523827025500747178280216163859741223350870936",
+   "outcome_index": 0,
+   "ends": "2026-11-28T02:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 19.5,
+   "traders_entry": 0.52,
+   "avg_price": 0.4902,
+   "shares": 23.303990683229813,
+   "cost": 11.54,
+   "fees": 0.1165,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "43d16e26ec5b142fc7e01c047f13c476",
+    "fee_rate": 0.02,
+    "event_id": 1704781046
+   },
+   "quotes": {
+    "prophetx": 0.4952,
+    "kalshi": 0.5175
+   },
+   "intl_cost_per_share": 0.5025,
    "payout": null,
    "profit": null,
    "settled_at": null,
