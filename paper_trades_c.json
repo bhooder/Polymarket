@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 995.8480957085568,
+ "cash": 1017.2440578426796,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -9775,7 +9775,7 @@
   },
   {
    "placed_at": "2026-11-26T11:48:05.876531+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Chiefs",
    "market": "Spread: Bills (-2.5)",
@@ -9804,9 +9804,9 @@
     "kalshi": 0.4877
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.39,
+   "settled_at": "2026-11-27T05:08:03.309685+00:00",
    "topped_up_at": "2026-11-26T21:28:11.515382+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 12.7,
@@ -10004,7 +10004,7 @@
   },
   {
    "placed_at": "2026-11-27T00:31:02.999391+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Texas Tech",
    "market": "Spread: Texas Tech (-14.5)",
@@ -10033,9 +10033,9 @@
     "polymarket_us": 0.5024
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 21.4,
+   "profit": 10.65,
+   "settled_at": "2026-11-27T05:08:03.435097+00:00",
    "topped_up_at": null,
    "close": 0.445
   },

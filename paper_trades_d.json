@@ -805,7 +805,7 @@
   },
   {
    "placed_at": "2026-11-27T00:31:03.829612+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Chiefs",
    "market": "Spread: Bills (-2.5)",
@@ -835,9 +835,9 @@
     "kalshi": 0.4776
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.77,
+   "settled_at": "2026-11-27T05:08:03.601265+00:00",
    "topped_up_at": null,
    "close": 0.455
   }

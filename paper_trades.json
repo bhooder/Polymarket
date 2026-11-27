@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1117.6007771943619,
+ "cash": 1154.6482746393121,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6336,7 +6336,7 @@
   },
   {
    "placed_at": "2026-11-26T11:48:05.078371+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Chiefs",
    "market": "Spread: Bills (-2.5)",
@@ -6366,9 +6366,9 @@
     "kalshi": 0.4876
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -22.71,
+   "settled_at": "2026-11-27T05:08:02.831553+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -6451,7 +6451,7 @@
   },
   {
    "placed_at": "2026-11-27T00:31:02.126343+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Texas Tech",
    "market": "Spread: Texas Tech (-14.5)",
@@ -6481,11 +6481,49 @@
     "polymarket_us": 0.5024
    },
    "intl_cost_per_share": 0.4925,
+   "payout": 48.71,
+   "profit": 25.6,
+   "settled_at": "2026-11-27T05:08:02.831588+00:00",
+   "topped_up_at": null,
+   "close": 0.445
+  },
+  {
+   "placed_at": "2026-11-27T05:10:33.694977+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Steelers",
+   "market": "Spread: Broncos (-4.5)",
+   "link": "https://polymarket.com/event/nfl-den-pit-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc956cf53db078e03c541d13b8c08f8bbb641b7f9349402d52dc4c351ef35324f",
+   "token_id": "114043960364718124565223660022256131266779955463930611425054615729128741708988",
+   "outcome_index": 1,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 3,
+   "avg_bankroll_pct": 22.9,
+   "traders_entry": 0.51,
+   "avg_price": 0.495,
+   "shares": 23.317714173691435,
+   "cost": 11.66,
+   "fees": 0.1166,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "3f70aefaa5a59ae1853e6e25f53e8802",
+    "fee_rate": 0.02,
+    "event_id": 1700008865
+   },
+   "quotes": {
+    "prophetx": 0.5,
+    "kalshi": 0.5178,
+    "polymarket_us": 0.5275
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null,
-   "close": 0.445
+   "topped_up_at": null
   }
  ]
 }
