@@ -1,0 +1,5 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+fcbef557d15d,2026-11-27T21:31:15Z,status_change,0x32bb3f0f84,0x32bb3f0f842da76d3c3bba7d6d76376334733c1a,Limousin,169,64674.78782859651,26967849.34829976,scanned,off_board,,0.0,385.0,1,176609.6812,128,12
+86e575196cc2,2026-11-27T21:31:15Z,status_change,0x8ed5028ed7,0x8ed5028ed76767753428b566801f6c96363102d7,toottoot,178,61756.80905752306,1437000.9487179995,scanned,off_board,,0.0,,,30258.5585,42,10
+15e8fe378b92,2026-11-27T21:31:15Z,status_change,0x2ada299aaa,0x2ada299aaaf27c806424ec6dcb0c169d1a9c2f28,,,,,off_board,scanned,,,,,,,
+ff3ffbae32b0,2026-11-27T21:31:15Z,status_change,0xa6d188fb70,0xa6d188fb70c2e2e9ad411c42c02379ed3020286a,,,,,off_board,scanned,,,,,,,

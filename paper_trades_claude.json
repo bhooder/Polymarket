@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 523.6527970774126,
+ "cash": 536.6105264747026,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9944,7 +9944,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:02.976246+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will CD Legan\u00e9s win on 2026-11-27?",
@@ -9973,9 +9973,9 @@
     "kalshi": 0.627
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 12.96,
+   "profit": 4.84,
+   "settled_at": "2026-11-27T21:28:09.300416+00:00",
    "topped_up_at": null,
    "close": 0.615
   },
@@ -10236,7 +10236,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.445
   },
   {
    "placed_at": "2026-11-27T19:27:07.794052+00:00",
@@ -10308,7 +10309,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.505
   },
   {
    "placed_at": "2026-11-27T19:27:09.074971+00:00",
@@ -10454,7 +10456,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   }
  ],
  "version": 2
