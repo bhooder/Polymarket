@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 902.596612700561,
+ "cash": 873.7566127005609,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20606,6 +20606,80 @@
     "kalshi": 0.6758
    },
    "intl_cost_per_share": 0.6712,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T07:39:10.553834+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Over",
+   "market": "Levante UD vs. Real Racing Club: O/U 3.5",
+   "link": "https://polymarket.com/event/lal-lev-rrc-2026-11-27-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xa954a2740341cba77b185155fc1285eebb652262f56976ed65a27e8553900fbc",
+   "token_id": "40485873320138663248736384593352787195227859252198110002616678286804841601254",
+   "outcome_index": 0,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 14.6,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 37.89491108588725,
+   "cost": 19.23,
+   "fees": 1.0404,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-lal-lev-rrc-2026-11-27-3pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5075
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T07:39:12.320026+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Steelers",
+   "market": "Spread: Broncos (-4.5)",
+   "link": "https://polymarket.com/event/nfl-den-pit-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc956cf53db078e03c541d13b8c08f8bbb641b7f9349402d52dc4c351ef35324f",
+   "token_id": "114043960364718124565223660022256131266779955463930611425054615729128741708988",
+   "outcome_index": 1,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 41.1,
+   "traders_entry": 0.51,
+   "avg_price": 0.5,
+   "shares": 19.029702970297027,
+   "cost": 9.61,
+   "fees": 0.0951,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "3f70aefaa5a59ae1853e6e25f53e8802",
+    "fee_rate": 0.02,
+    "event_id": 1700008865
+   },
+   "quotes": {
+    "prophetx": 0.505,
+    "kalshi": 0.5178,
+    "polymarket_us": 0.5225
+   },
+   "intl_cost_per_share": 0.5125,
    "payout": null,
    "profit": null,
    "settled_at": null,
