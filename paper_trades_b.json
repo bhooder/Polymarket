@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 854.5509469344474,
+ "cash": 836.6924325373399,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20688,7 +20688,7 @@
   {
    "placed_at": "2026-11-27T08:52:27.778503+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Nets",
    "market": "Spread: Raptors (-7.5)",
    "link": "https://polymarket.com/event/nba-bkn-tor-2026-11-27",
@@ -20701,10 +20701,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 0.4,
    "traders_entry": 0.47,
-   "avg_price": 0.48,
-   "shares": 19.297568506368197,
-   "cost": 9.6,
-   "fees": 0.34,
+   "avg_price": 0.4799,
+   "shares": 38.595137012736394,
+   "cost": 19.2,
+   "fees": 0.68,
    "venue": "kalshi",
    "venue_ref": {
     "venue": "kalshi",
@@ -20720,7 +20720,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-27T11:43:29.337112+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 0.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-27T09:54:20.801778+00:00",
@@ -20754,6 +20757,43 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T11:43:30.790288+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "M80",
+   "market": "Counter-Strike: M80 vs 100 Thieves (BO3) - PGL Major Singapore Stage 1",
+   "link": "https://polymarket.com/event/cs2-m80-100t-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 0.86,
+   "condition_id": "0xae96c6f3a068cfc5a99a6312ea8fa2fa3cd4e44bc3b8764145b39f1cee6f7ea0",
+   "token_id": "33206207544361177795511395278825256484370364620430870222482173125351555307973",
+   "outcome_index": 0,
+   "ends": "2026-11-27T12:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.5,
+   "traders_entry": 0.35,
+   "avg_price": 0.34,
+   "shares": 23.193180923678973,
+   "cost": 8.26,
+   "fees": 0.37,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXCS2GAME-26NOV270600100TM80-M80",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.356,
+    "polymarket_us": 0.3647
+   },
+   "intl_cost_per_share": 0.3512,
    "payout": null,
    "profit": null,
    "settled_at": null,
