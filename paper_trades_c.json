@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1017.2440578426796,
+ "cash": 996.4840578426796,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10071,6 +10071,43 @@
     "polymarket_us": 0.5275
    },
    "intl_cost_per_share": 0.5125,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T06:14:03.407829+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Chelsea FC win on 2026-11-27?",
+   "link": "https://polymarket.com/event/epl-not-che-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x584a645560bd83904de3d527308f6df4f611a8441f05cc6a407968ee34361424",
+   "token_id": "66862088550029844188762869377237033383734251219274071696996866234677259693253",
+   "outcome_index": 1,
+   "ends": "2026-11-27T20:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 4.0,
+   "traders_entry": 0.65,
+   "avg_price": 0.6599,
+   "shares": 31.248456394538874,
+   "cost": 20.76,
+   "fees": 0.1403,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "0452ca1aa490f0bcab03cb7acc36b212",
+    "fee_rate": 0.02,
+    "event_id": 90114184
+   },
+   "quotes": {
+    "prophetx": 0.6644,
+    "kalshi": 0.676
+   },
+   "intl_cost_per_share": 0.6712,
    "payout": null,
    "profit": null,
    "settled_at": null,
