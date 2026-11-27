@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 864.1537798175042,
+ "cash": 854.5509469344474,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20717,6 +20717,43 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T09:54:20.801778+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Celtics",
+   "market": "Spread: Celtics (-9.5)",
+   "link": "https://polymarket.com/event/nba-atl-bos-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x12916917c2e5056f3133837e03232e1ca6668080b4832e0c2df34e063b3dc5ee",
+   "token_id": "71442838682452461639206960550829113610485675449050812231289331069509215649217",
+   "outcome_index": 0,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.5,
+   "traders_entry": 0.47,
+   "avg_price": 0.48,
+   "shares": 19.297568506368197,
+   "cost": 9.6,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV27ATLBOS-BOS10",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4976,
+    "polymarket_us": 0.5075
+   },
+   "intl_cost_per_share": 0.4925,
    "payout": null,
    "profit": null,
    "settled_at": null,
