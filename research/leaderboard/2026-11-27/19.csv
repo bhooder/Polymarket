@@ -1,0 +1,3 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+977e73cb7720,2026-11-27T19:27:13Z,status_change,0x3835957ad7,0x3835957ad7188313391213e8647baaf4a2ed3493,btna,200,51551.545758715,191920.35533800002,scanned,off_board,,0.038,0.3,0,0,0,0
+15af733eda97,2026-11-27T19:27:13Z,status_change,0x8ed5028ed7,0x8ed5028ed76767753428b566801f6c96363102d7,,,,,off_board,scanned,,,,,,,
