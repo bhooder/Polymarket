@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 954.9724793015758,
+ "cash": 924.2624793015758,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10186,6 +10186,79 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T15:08:49.217105+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Pacers",
+   "market": "76ers vs. Pacers",
+   "link": "https://polymarket.com/event/nba-phi-ind-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xf93a4fe832882479c324e6166050540c9184d9cc3c18bac675a1504b4662c297",
+   "token_id": "80802942846227777230812774660270911756419754901681985322190955882637457873262",
+   "outcome_index": 1,
+   "ends": "2026-11-28T00:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 3.9,
+   "traders_entry": 0.4,
+   "avg_price": 0.39,
+   "shares": 48.85034685428275,
+   "cost": 20.33,
+   "fees": 1.2784,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "aec-nba-phi-ind-2026-11-27",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.4162,
+    "kalshi": 0.4168
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-27T15:08:49.962649+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will SV Werder Bremen win on 2026-11-27?",
+   "link": "https://polymarket.com/event/bun-wer-moe-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xd0f368a2a4fcdce7e8e18e90ee6aef9c9f1a079de0762a6b8fe1a0bc2f251b16",
+   "token_id": "82038838241107429311248455028174740733395537397465114318249888962292251111607",
+   "outcome_index": 1,
+   "ends": "2026-11-27T19:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.42,
+   "avg_price": 0.4274,
+   "shares": 24.01416596248099,
+   "cost": 10.38,
+   "fees": 0.1175,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "30013e7aa66757c5f73d08bab7a6a7e5",
+    "fee_rate": 0.02,
+    "event_id": 90118393
+   },
+   "quotes": {
+    "prophetx": 0.4322
+   },
+   "intl_cost_per_share": 0.4423,
    "payout": null,
    "profit": null,
    "settled_at": null,
