@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 775.7093206893962,
+ "cash": 755.3693206893963,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20573,7 +20573,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.475
   },
   {
    "placed_at": "2026-11-27T06:14:02.247905+00:00",
@@ -20727,7 +20728,8 @@
    "topped_up_at": "2026-11-27T11:43:29.337112+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.3,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-27T09:54:20.801778+00:00",
@@ -20767,7 +20769,8 @@
    "topped_up_at": "2026-11-27T20:32:05.729510+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.1,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.485
   },
   {
    "placed_at": "2026-11-27T11:43:30.790288+00:00",
@@ -20843,7 +20846,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-27T15:08:48.742491+00:00",
@@ -20917,7 +20921,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.515
   },
   {
    "placed_at": "2026-11-27T17:30:09.360533+00:00",
@@ -21104,7 +21109,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.585
   },
   {
    "placed_at": "2026-11-27T19:26:57.729331+00:00",
@@ -21140,7 +21146,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-27T19:26:58.134011+00:00",
@@ -21182,7 +21189,7 @@
   {
    "placed_at": "2026-11-27T19:26:58.747281+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Trail Blazers",
    "market": "Spread: Trail Blazers (-8.5)",
    "link": "https://polymarket.com/event/nba-gsw-por-2026-11-27",
@@ -21195,10 +21202,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 1.1,
    "traders_entry": 0.48,
-   "avg_price": 0.4814,
-   "shares": 19.5915829619823,
-   "cost": 9.53,
-   "fees": 0.0978,
+   "avg_price": 0.4908,
+   "shares": 39.73019682336844,
+   "cost": 19.7,
+   "fees": 0.1985,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -21214,7 +21221,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-28T01:52:09.052343+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 1.0,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-27T19:26:59.873070+00:00",
@@ -21324,7 +21334,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.545
   },
   {
    "placed_at": "2026-11-28T00:25:44.980791+00:00",
@@ -21362,12 +21373,13 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.585
   },
   {
    "placed_at": "2026-11-28T00:25:46.617721+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "West Virginia",
    "market": "Spread: Utah (-21.5)",
    "link": "https://polymarket.com/event/cfb-wvir-utah-2026-11-27",
@@ -21380,10 +21392,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 1.0,
    "traders_entry": 0.39,
-   "avg_price": 0.395,
-   "shares": 24.14029857300452,
-   "cost": 10.17,
-   "fees": 0.6346,
+   "avg_price": 0.3999,
+   "shares": 47.70884811649423,
+   "cost": 20.34,
+   "fees": 1.2593,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -21398,7 +21410,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-28T01:52:08.012012+00:00",
+   "top_up_bettors": 5,
+   "top_up_avg_bankroll_pct": 2.3,
+   "top_up_size_multiplier": 1.0
   }
  ]
 }

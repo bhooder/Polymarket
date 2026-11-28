@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 569.7590685488249,
+ "cash": 554.0878647822002,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9641,7 +9641,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.435
   },
   {
    "placed_at": "2026-11-27T06:14:04.590937+00:00",
@@ -9905,7 +9906,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-27T18:23:03.466951+00:00",
@@ -10088,7 +10090,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-27T19:27:06.035184+00:00",
@@ -10205,7 +10208,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:07.483416+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Air Force",
    "market": "Spread: New Mexico (-6.5)",
@@ -10234,9 +10237,9 @@
     "polymarket_us": 0.4772
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.13,
+   "settled_at": "2026-11-28T01:47:48.667049+00:00",
    "topped_up_at": null,
    "close": 0.445
   },
@@ -10274,7 +10277,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.555
   },
   {
    "placed_at": "2026-11-27T19:27:08.297849+00:00",
@@ -10462,7 +10466,7 @@
   },
   {
    "placed_at": "2026-11-27T22:31:11.496581+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Fluminense FC vs. Cruzeiro EC: O/U 2.5",
@@ -10491,9 +10495,9 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.08,
+   "settled_at": "2026-11-28T01:47:48.928723+00:00",
    "topped_up_at": null,
    "close": 0.485
   },
@@ -10532,7 +10536,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.745
   },
   {
    "placed_at": "2026-11-27T23:28:24.994024+00:00",
@@ -10570,7 +10575,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.635
   },
   {
    "placed_at": "2026-11-27T23:28:25.810700+00:00",
@@ -10610,7 +10616,8 @@
    "topped_up_at": "2026-11-28T00:25:49.429936+00:00",
    "top_up_bettors": 2,
    "top_up_avg_bankroll_pct": 0.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.525
   },
   {
    "placed_at": "2026-11-28T00:25:50.263895+00:00",
@@ -10644,6 +10651,79 @@
     "polymarket_us": 0.7895
    },
    "intl_cost_per_share": 0.7789,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null,
+   "close": 0.765
+  },
+  {
+   "placed_at": "2026-11-28T01:52:11.853815+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Lakers",
+   "market": "Spread: Spurs (-8.5)",
+   "link": "https://polymarket.com/event/nba-lal-sas-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x6e3d9efe35d738f53c4578a00fc6327dcfe17b15339fdd13006ab171d8236987",
+   "token_id": "90383706377883875893817810016134140621749781359129968579747251315502937124171",
+   "outcome_index": 1,
+   "ends": "2026-11-28T02:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.58,
+   "avg_price": 0.57,
+   "shares": 13.335445204604559,
+   "cost": 7.83,
+   "fees": 0.23,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBASPREAD-26NOV27LALSAS-SAS9",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5872
+   },
+   "intl_cost_per_share": 0.5723,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T01:52:13.978199+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Nets vs. Hornets: O/U 214.5",
+   "link": "https://polymarket.com/event/nba-bkn-cha-2026-11-28",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x51379486545c10c8fd1ce99f1d4b3d6cfdae4feeb020474e527f34592ee313bd",
+   "token_id": "17944779575849555127487230121433293741094593876467604257434299821868967228345",
+   "outcome_index": 0,
+   "ends": "2026-11-28T23:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.5,
+   "avg_price": 0.48,
+   "shares": 15.449615336107957,
+   "cost": 7.84,
+   "fees": 0.4242,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-bkn-cha-2026-11-28-214pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5075
+   },
+   "intl_cost_per_share": 0.5325,
    "payout": null,
    "profit": null,
    "settled_at": null,
