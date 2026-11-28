@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 971.7307331016232,
+ "cash": 957.2086745720698,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10575,7 +10575,7 @@
   },
   {
    "placed_at": "2026-11-28T00:25:48.886965+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "West Virginia",
    "market": "Spread: Utah (-21.5)",
@@ -10604,15 +10604,15 @@
     "polymarket_us": 0.4213
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.84,
+   "settled_at": "2026-11-28T05:40:58.967743+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
   {
    "placed_at": "2026-11-28T01:52:10.459426+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Lakers",
    "market": "Spread: Spurs (-5.5)",
@@ -10641,9 +10641,9 @@
     "kalshi": 0.4677
    },
    "intl_cost_per_share": 0.4624,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 23.17,
+   "profit": 12.33,
+   "settled_at": "2026-11-28T05:40:59.041633+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -10751,6 +10751,117 @@
     "polymarket_us": 0.6117
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T05:44:24.548341+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Leeds United FC win on 2026-11-28?",
+   "link": "https://polymarket.com/event/epl-lee-cov-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 0.879,
+   "condition_id": "0x1cf899c2e1facf88079301875eb3bd94b8bd647c4967d650a9cc28de6b703aa0",
+   "token_id": "51719975815274186924854515690297321391211567604472259808097766511379326654241",
+   "outcome_index": 1,
+   "ends": "2026-11-28T15:00:00+00:00",
+   "bettors": 7,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.34,
+   "avg_price": 0.35,
+   "shares": 49.1167255516299,
+   "cost": 18.42,
+   "fees": 1.2291,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "atc-epl-lee-cov-2026-11-28-lee",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.375,
+    "kalshi": 0.3761
+   },
+   "intl_cost_per_share": 0.3614,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T05:44:25.380613+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Club Atl\u00e9tico de Madrid win on 2026-11-28?",
+   "link": "https://polymarket.com/event/lal-elc-mad-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 0.84,
+   "condition_id": "0x0e1bbc0333d102bd7f4343de4a39dfa9d4507f2f299999de2c6f5f6920968d8e",
+   "token_id": "70215773462861287449601883165682250388925175002460004941702677945091053976579",
+   "outcome_index": 1,
+   "ends": "2026-11-28T17:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.6,
+   "traders_entry": 0.33,
+   "avg_price": 0.3333,
+   "shares": 26.052631578947373,
+   "cost": 8.8,
+   "fees": 0.1158,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "b95cfbd558eb3e6b979504a36175872e",
+    "fee_rate": 0.02,
+    "event_id": 90117260
+   },
+   "quotes": {
+    "prophetx": 0.3378,
+    "kalshi": 0.3457
+   },
+   "intl_cost_per_share": 0.3411,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T05:44:26.144832+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Aston Villa FC win on 2026-11-28?",
+   "link": "https://polymarket.com/event/epl-ips-ast-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf1a85327846a8c72ca52b784b447bff97e8d9d2bcb391478f71b756528faa408",
+   "token_id": "104499751188573677170141964687924736203316412333921614824541391360916540241055",
+   "outcome_index": 1,
+   "ends": "2026-11-28T17:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 3.6,
+   "traders_entry": 0.52,
+   "avg_price": 0.53,
+   "shares": 19.125488412365257,
+   "cost": 10.48,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV28IPSAVL-AVL",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5478,
+    "polymarket_us": 0.5574
+   },
+   "intl_cost_per_share": 0.5425,
    "payout": null,
    "profit": null,
    "settled_at": null,

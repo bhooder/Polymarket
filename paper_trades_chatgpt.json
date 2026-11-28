@@ -1787,7 +1787,7 @@
   },
   {
    "placed_at": "2026-11-27T22:31:12.769945+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Warriors vs. Trail Blazers: O/U 217.5",
@@ -1817,9 +1817,9 @@
     "kalshi": 0.5175
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.46,
+   "settled_at": "2026-11-28T05:44:33.977800+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
