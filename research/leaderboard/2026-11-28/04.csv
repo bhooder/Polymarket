@@ -1,0 +1,7 @@
+oid,observed_at,reason,w,wallet,name,rank,pnl,volume,status,prev_status,status_detail,crypto_share,trades_per_hour,bot_speed,open_value,positions,hedged_markets
+f72a70e349d5,2026-11-28T04:46:03Z,status_change,0xb320a88b35,0xb320a88b354b77e5d6e26580b82105c976141acb,arhamgod,139,74463.929379525,241652.430183,scanned,,,0.0,,,294.6429,1,0
+ea50c7d09c8c,2026-11-28T04:46:03Z,status_change,0x8a8685a792,0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998,BrotherObama,187,55343.71685191998,3755544.9750159997,scanned,off_board,,0.0,0.4,0,76924.9987,2,0
+0457d15470ee,2026-11-28T04:46:03Z,status_change,0x3835957ad7,0x3835957ad7188313391213e8647baaf4a2ed3493,btna,200,51038.113894445,189611.10114600006,scanned,off_board,,0.038,0.3,0,0,0,0
+5a2b6838be63,2026-11-28T04:46:03Z,status_change,0x08a0669cba,0x08a0669cbac171dd04a05e8afcdc1af34a6ed057,,,,,off_board,scanned,,,,,,,
+10adec60d29f,2026-11-28T04:46:03Z,status_change,0x6157d529ae,0x6157d529ae129fe08f22a27ed42e741d2eaa9fb4,,,,,off_board,scanned,,,,,,,
+850d0ea03abf,2026-11-28T04:46:03Z,status_change,0xfea31bc088,0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227,,,,,off_board,scanned,,,,,,,

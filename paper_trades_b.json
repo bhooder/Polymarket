@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 716.070373431308,
+ "cash": 761.2434204757088,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -20888,7 +20888,7 @@
   },
   {
    "placed_at": "2026-11-27T17:30:07.880928+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Wisconsin",
    "market": "Spread: Wisconsin (-8.5)",
@@ -20918,9 +20918,9 @@
     "polymarket_us": 0.5347
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 35.65,
+   "profit": 16.59,
+   "settled_at": "2026-11-28T04:42:36.841777+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -21077,7 +21077,7 @@
   },
   {
    "placed_at": "2026-11-27T19:26:56.250097+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Timberwolves",
    "market": "Grizzlies vs. Timberwolves",
@@ -21107,15 +21107,15 @@
     "polymarket_us": 0.6166
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -19.06,
+   "settled_at": "2026-11-28T04:42:36.891565+00:00",
    "topped_up_at": null,
    "close": 0.585
   },
   {
    "placed_at": "2026-11-27T19:26:57.729331+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Texas A&M",
    "market": "Spread: Texas (-10.5)",
@@ -21144,9 +21144,9 @@
     "polymarket_us": 0.5125
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 18.6,
+   "profit": 9.07,
+   "settled_at": "2026-11-28T04:42:36.983351+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -21560,6 +21560,43 @@
     "polymarket_us": 0.6117
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T04:45:54.294023+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Under",
+   "market": "SC Paderborn 07 vs. FC Schalke 04: O/U 2.5",
+   "link": "https://polymarket.com/event/bun-scp-s04-2026-11-28-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x75eaf628bf9043fd370f51e77db67b7e106bb2fb0104e9184f13dfd125d29730",
+   "token_id": "43631587123362675248708812457710344175294135383742046935629159875134173861091",
+   "outcome_index": 1,
+   "ends": "2026-11-28T14:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.46,
+   "avg_price": 0.4405,
+   "shares": 20.361071272980745,
+   "cost": 9.07,
+   "fees": 0.1004,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7e311838453cd367e76a84ef4c4d0146",
+    "fee_rate": 0.02,
+    "event_id": 90118397
+   },
+   "quotes": {
+    "prophetx": 0.4455,
+    "polymarket_us": 0.4671
+   },
+   "intl_cost_per_share": 0.4624,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 596.2864096679504,
+ "cash": 612.4508111186472,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -10061,7 +10061,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:05.701874+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Texas A&M",
    "market": "Spread: Texas (-10.5)",
@@ -10090,9 +10090,9 @@
     "polymarket_us": 0.5125
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.86,
+   "profit": 7.73,
+   "settled_at": "2026-11-28T04:42:38.306166+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -10248,7 +10248,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:07.794052+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Minnesota",
    "market": "Spread: Wisconsin (-10.5)",
@@ -10277,9 +10277,9 @@
     "polymarket_us": 0.5871
    },
    "intl_cost_per_share": 0.5723,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.13,
+   "settled_at": "2026-11-28T04:42:38.391478+00:00",
    "topped_up_at": null,
    "close": 0.555
   },
@@ -10322,7 +10322,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:09.074971+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Mavericks",
    "market": "Spread: Suns (-2.5)",
@@ -10351,9 +10351,9 @@
     "kalshi": 0.5075
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 16.0,
+   "profit": 7.88,
+   "settled_at": "2026-11-28T04:42:38.442111+00:00",
    "topped_up_at": null,
    "close": 0.435
   },
@@ -10509,7 +10509,7 @@
   },
   {
    "placed_at": "2026-11-27T23:28:24.312375+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Sabres",
    "market": "Spread: Penguins (-1.5)",
@@ -10539,9 +10539,9 @@
     "polymarket_us": 0.7706
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.0,
+   "settled_at": "2026-11-28T04:42:38.541318+00:00",
    "topped_up_at": null,
    "close": 0.745
   },
@@ -10803,6 +10803,80 @@
     "polymarket_us": 0.6117
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T04:45:57.439557+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Pacers vs. Bulls: O/U 236.5",
+   "link": "https://polymarket.com/event/nba-ind-chi-2026-11-28",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xf007a7befce5a2626f98398edfcb0993868c3f41d6fb4eb71155eebe2092e01e",
+   "token_id": "97568894494016807375499855081852350547972003232585642169609277776731424167793",
+   "outcome_index": 0,
+   "ends": "2026-11-29T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.47,
+   "shares": 15.782035018023686,
+   "cost": 7.85,
+   "fees": 0.4324,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "tsc-nba-ind-chi-2026-11-28-236pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.4974,
+    "kalshi": 0.4978
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T04:45:58.798312+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Louisville vs. Kentucky: O/U 51.5",
+   "link": "https://polymarket.com/event/cfb-lou-uk-2026-11-28",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xaf2420eed25a39c2cb54d0586a17e8eb6be7aeffbb7405c909e4a73f05f0292d",
+   "token_id": "64451534120016134977098272993156870785019310081677993498271367917100803494145",
+   "outcome_index": 0,
+   "ends": "2026-11-28T17:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.53,
+   "avg_price": 0.5392,
+   "shares": 14.42643913671311,
+   "cost": 7.85,
+   "fees": 0.0717,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "aef98423f99506baa7907027da719e51",
+    "fee_rate": 0.02,
+    "event_id": 1704744557
+   },
+   "quotes": {
+    "prophetx": 0.5441,
+    "kalshi": 0.5578
+   },
+   "intl_cost_per_share": 0.5524,
    "payout": null,
    "profit": null,
    "settled_at": null,

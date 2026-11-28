@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 907.8537649540332,
+ "cash": 925.4541251474511,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1750,7 +1750,7 @@
   },
   {
    "placed_at": "2026-11-27T14:08:16.509450+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Wisconsin",
    "market": "Spread: Wisconsin (-8.5)",
@@ -1779,9 +1779,9 @@
     "polymarket_us": 0.5375
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 17.6,
+   "profit": 8.14,
+   "settled_at": "2026-11-28T04:46:00.460686+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
@@ -1863,7 +1863,7 @@
   },
   {
    "placed_at": "2026-11-28T00:25:51.268903+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Texas",
    "market": "Spread: Texas (-10.5)",
@@ -1892,9 +1892,9 @@
     "polymarket_us": 0.5024
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.55,
+   "settled_at": "2026-11-28T04:46:00.541315+00:00",
    "topped_up_at": null,
    "close": 0.475
   }

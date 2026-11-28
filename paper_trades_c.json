@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 910.7307259886717,
+ "cash": 971.7307331016232,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10272,7 +10272,7 @@
   },
   {
    "placed_at": "2026-11-27T17:30:11.427960+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.02,
    "pick": "Wisconsin",
    "market": "Spread: Wisconsin (-8.5)",
@@ -10302,15 +10302,15 @@
     "polymarket_us": 0.5349
    },
    "intl_cost_per_share": 0.5225,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 38.81,
+   "profit": 18.05,
+   "settled_at": "2026-11-28T04:42:37.567000+00:00",
    "topped_up_at": null,
    "close": 0.515
   },
   {
    "placed_at": "2026-11-27T19:27:00.585198+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Mavericks",
    "market": "Spread: Suns (-1.5)",
@@ -10339,15 +10339,15 @@
     "kalshi": 0.4676
    },
    "intl_cost_per_share": 0.4724,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.19,
+   "profit": 11.81,
+   "settled_at": "2026-11-28T04:42:37.619887+00:00",
    "topped_up_at": null,
    "close": 0.405
   },
   {
    "placed_at": "2026-11-27T19:27:01.168236+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Timberwolves",
    "market": "Grizzlies vs. Timberwolves",
@@ -10378,9 +10378,9 @@
     "polymarket_us": 0.6166
    },
    "intl_cost_per_share": 0.6021,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.38,
+   "settled_at": "2026-11-28T04:42:37.619924+00:00",
    "topped_up_at": null,
    "close": 0.585
   },
