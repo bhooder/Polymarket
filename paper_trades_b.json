@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 806.8312110713375,
+ "cash": 718.2378953720432,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -21490,11 +21490,12 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.705
   },
   {
    "placed_at": "2026-11-28T02:43:49.673510+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "No",
    "market": "Will Real Betis Balompi\u00e9 win on 2026-11-28?",
@@ -21524,10 +21525,11 @@
     "polymarket_us": 0.4264
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
-   "topped_up_at": null
+   "payout": 23.87,
+   "profit": 13.91,
+   "settled_at": "2026-11-28T15:50:50.569136+00:00",
+   "topped_up_at": null,
+   "close": 0.385
   },
   {
    "placed_at": "2026-11-28T03:42:17.728614+00:00",
@@ -21600,7 +21602,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.395
   },
   {
    "placed_at": "2026-11-28T05:44:19.523671+00:00",
@@ -21638,7 +21641,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.325
   },
   {
    "placed_at": "2026-11-28T05:44:20.781197+00:00",
@@ -21680,7 +21684,7 @@
   {
    "placed_at": "2026-11-28T05:44:22.227200+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "No",
    "market": "Will Aston Villa FC win on 2026-11-28?",
    "link": "https://polymarket.com/event/epl-ips-ast-2026-11-28",
@@ -21693,10 +21697,10 @@
    "bettors": 4,
    "avg_bankroll_pct": 3.6,
    "traders_entry": 0.52,
-   "avg_price": 0.5283,
-   "shares": 17.345293724966623,
-   "cost": 9.25,
-   "fees": 0.0864,
+   "avg_price": 0.526,
+   "shares": 35.10254072325136,
+   "cost": 18.64,
+   "fees": 0.175,
    "venue": "prophetx",
    "venue_ref": {
     "venue": "prophetx",
@@ -21713,7 +21717,10 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": "2026-11-28T15:54:54.939545+00:00",
+   "top_up_bettors": 6,
+   "top_up_avg_bankroll_pct": 0.3,
+   "top_up_size_multiplier": 1.0
   },
   {
    "placed_at": "2026-11-28T06:43:56.072511+00:00",
@@ -21747,6 +21754,264 @@
     "kalshi": 0.5076
    },
    "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:54:54.295815+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will SS Lazio win on 2026-11-28?",
+   "link": "https://polymarket.com/event/sea-tor-laz-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4cdf115dc40021ce95bf7f05391a0cb5f7c75e519b06275e6c14c948759d76a8",
+   "token_id": "15754215221538422531913012629464642656619856105133115736968564923620510786852",
+   "outcome_index": 1,
+   "ends": "2026-11-28T17:00:00+00:00",
+   "bettors": 6,
+   "avg_bankroll_pct": 2.1,
+   "traders_entry": 0.55,
+   "avg_price": 0.55,
+   "shares": 33.085092319217374,
+   "cost": 18.78,
+   "fees": 0.58,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEAGAME-26NOV28TORLAZ-LAZ",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.5675,
+    "polymarket_us": 0.5772
+   },
+   "intl_cost_per_share": 0.5624,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:54:55.975081+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "No",
+   "market": "Will Deportivo Alav\u00e9s win on 2026-11-28?",
+   "link": "https://polymarket.com/event/lal-rea-ala-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x403893a785828d37b2c3565e105afc2f77e66a8a36504d226728465d7351b17c",
+   "token_id": "59903728511242984226767248832513442792706693423178587625042399929218289880869",
+   "outcome_index": 1,
+   "ends": "2026-11-28T20:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 1.9,
+   "traders_entry": 0.95,
+   "avg_price": 0.9524,
+   "shares": 19.700237868696483,
+   "cost": 18.78,
+   "fees": 0.0179,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "646f92bfbbabcd21f63b64563b53bd45",
+    "fee_rate": 0.02,
+    "event_id": 90117251
+   },
+   "quotes": {
+    "prophetx": 0.9533,
+    "kalshi": 0.9631
+   },
+   "intl_cost_per_share": 0.9552,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:54:56.506101+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "SMU",
+   "market": "Spread: SMU (-7.5)",
+   "link": "https://polymarket.com/event/cfb-smu-stan-2026-11-28",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x8324f704ec034db1529164b55fd5849b6e9d1573a371e4d60be6d4006d945c44",
+   "token_id": "51627525673947196640028501658688594861541151514064178659717304242817478133168",
+   "outcome_index": 0,
+   "ends": "2026-11-28T20:30:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.48,
+   "avg_price": 0.48,
+   "shares": 37.73076675672199,
+   "cost": 18.77,
+   "fees": 0.66,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFSPREAD-26NOV28SMUSTAN-SMU8",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4975,
+    "polymarket_us": 0.5125
+   },
+   "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:54:56.912823+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "Boston College",
+   "market": "Spread: Miami (FL) (-24.5)",
+   "link": "https://polymarket.com/event/cfb-boscol-mia-2026-11-28",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xcb660390d9baf1e1f428d061b7010e95ce0c962a89fea20870dbd7087e22353c",
+   "token_id": "32182288363302346654324510102357200985158009967977212331691719922318059847210",
+   "outcome_index": 1,
+   "ends": "2026-11-28T17:00:00+00:00",
+   "bettors": 5,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.51,
+   "avg_price": 0.51,
+   "shares": 34.94024993999877,
+   "cost": 18.78,
+   "fees": 0.9605,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-boscol-mia-2026-11-28-pos-24pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5375
+   },
+   "intl_cost_per_share": 0.5225,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:54:59.046135+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Houston Dynamo vs. San Jose Earthquakes end in a draw?",
+   "link": "https://polymarket.com/event/mls-hou-sje-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x461c465f6eeceab9a341b42ca7ee6ded9c489cec9901e8bb21e5eec854e5945d",
+   "token_id": "77004773537486594735643744703375442353780362310441276458098523457051319811983",
+   "outcome_index": 1,
+   "ends": "2026-11-28T19:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.2,
+   "traders_entry": 0.72,
+   "avg_price": 0.7297,
+   "shares": 12.798596176821984,
+   "cost": 9.39,
+   "fees": 0.0505,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "58de1307f1c06b141d8d6c77d5bbe927",
+    "fee_rate": 0.02,
+    "event_id": 90123935
+   },
+   "quotes": {
+    "prophetx": 0.7337,
+    "polymarket_us": 0.7517,
+    "kalshi": 0.7537
+   },
+   "intl_cost_per_share": 0.7399,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:55:01.029428+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Cincinnati vs. BYU: O/U 55.5",
+   "link": "https://polymarket.com/event/cfb-cin-byu-2026-11-28",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0xbc583ebd6bbc778ecb22f29753e4b6f8418b74bff02d595acb5300f15dd9b3de",
+   "token_id": "59261767756788941431379739571898119513789348701693110294599520868331240373266",
+   "outcome_index": 0,
+   "ends": "2026-11-28T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.5,
+   "avg_price": 0.47,
+   "shares": 19.243512494948067,
+   "cost": 9.38,
+   "fees": 0.34,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFTOTAL-26NOV28CINBYU-56",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4877
+   },
+   "intl_cost_per_share": 0.4825,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T15:55:02.206364+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "USC",
+   "market": "Spread: USC (-7.5)",
+   "link": "https://polymarket.com/event/cfb-usc-ucla-2026-11-28",
+   "market_type": "spreads",
+   "size_multiplier": 0.979,
+   "condition_id": "0x4f4c7c4b4afbc4db0a108561489b2ddbad368bbef5cb7e15370bac6d8adddc0e",
+   "token_id": "112312722790709893878748534692960218792407785960775095845042579873836434160287",
+   "outcome_index": 0,
+   "ends": "2026-11-28T20:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.2,
+   "traders_entry": 0.39,
+   "avg_price": 0.39,
+   "shares": 22.59912013436517,
+   "cost": 9.19,
+   "fees": 0.38,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNCAAFSPREAD-26NOV28USCUCLA-USC8",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4068,
+    "polymarket_us": 0.4162
+   },
+   "intl_cost_per_share": 0.412,
    "payout": null,
    "profit": null,
    "settled_at": null,
