@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 957.2086745720698,
+ "cash": 978.1362108039538,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10500,7 +10500,7 @@
   },
   {
    "placed_at": "2026-11-28T00:25:48.106260+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Trail Blazers",
    "market": "Spread: Trail Blazers (-8.5)",
@@ -10529,9 +10529,9 @@
     "kalshi": 0.5177
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 20.93,
+   "profit": 10.1,
+   "settled_at": "2026-11-28T06:41:51.045341+00:00",
    "topped_up_at": null,
    "close": 0.495
   },

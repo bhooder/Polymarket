@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 615.4472786578312,
+ "cash": 604.7770461749147,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9837,7 +9837,7 @@
   },
   {
    "placed_at": "2026-11-27T17:30:20.034060+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "Real Salt Lake vs. Vancouver Whitecaps FC: O/U 3.5",
@@ -9867,9 +9867,9 @@
     "polymarket_us": 0.6459
    },
    "intl_cost_per_share": 0.6318,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 13.05,
+   "profit": 4.92,
+   "settled_at": "2026-11-28T06:41:51.300873+00:00",
    "topped_up_at": null,
    "close": 0.625
   },
@@ -11062,6 +11062,114 @@
     "kalshi": 0.6268
    },
    "intl_cost_per_share": 0.6021,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T06:43:57.534075+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Louisiana-Monroe",
+   "market": "Spread: Marshall (-6.5)",
+   "link": "https://polymarket.com/event/cfb-marsh-lamon-2026-11-28",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x3e17cb920f66b9c54e91ce8fa29dfc971bb6e24cf8ab3c633c076b6af2d8cab5",
+   "token_id": "38452190928303768798698781616914477503230380843030908861988877890349876086104",
+   "outcome_index": 1,
+   "ends": "2026-11-28T18:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.49,
+   "avg_price": 0.5,
+   "shares": 14.99526066350711,
+   "cost": 7.91,
+   "fees": 0.4124,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-marsh-lamon-2026-11-28-neg-6pt5",
+    "long": false,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5275
+   },
+   "intl_cost_per_share": 0.5061,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T06:43:57.828982+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will Pohang Steelers FC win on 2026-11-28?",
+   "link": "https://polymarket.com/event/kor-poh-gwa-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x4c058578d9af86173b62044419800521ef65db4cdb268860ec4b202be4c399ba",
+   "token_id": "32009253417269056408408488511539587955129069772075893069491663471881889629638",
+   "outcome_index": 0,
+   "ends": "2026-11-28T07:30:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.47,
+   "avg_price": 0.43,
+   "shares": 17.667172827440922,
+   "cost": 7.91,
+   "fees": 0.31,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXKLEAGUEGAME-26NOV28POHGWA-POH",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4475
+   },
+   "intl_cost_per_share": 0.4423,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T06:43:58.599724+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Over",
+   "market": "Carrarese Calcio vs. SS Juve Stabia: O/U 2.5",
+   "link": "https://polymarket.com/event/itsb-car-sta-2026-11-28-more-markets",
+   "market_type": "totals",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5b995366aa09c55fd09d8051022a9ddcef8f16c679a9ff2c41fd1b2e02de7ef8",
+   "token_id": "75012342604577416346389832968750245728368501805978940184724947187192986625501",
+   "outcome_index": 0,
+   "ends": "2026-11-28T14:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.46,
+   "avg_price": 0.46,
+   "shares": 16.548384123605956,
+   "cost": 7.9,
+   "fees": 0.29,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXSERIEBTOTAL-26NOV28CARSTA-3",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4775
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,

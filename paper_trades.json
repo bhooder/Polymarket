@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 1142.7624593079531,
+ "cash": 1119.910086033839,
  "started_at": "2026-10-27T15:34:58.463738+00:00",
  "bets": [
   {
@@ -6718,6 +6718,44 @@
    "settled_at": "2026-11-28T05:40:57.821598+00:00",
    "topped_up_at": null,
    "close": 0.475
+  },
+  {
+   "placed_at": "2026-11-28T06:43:55.711741+00:00",
+   "status": "open",
+   "stake": 0.02,
+   "pick": "49ers",
+   "market": "Seahawks vs. 49ers",
+   "link": "https://polymarket.com/event/nfl-sea-sf-2026-11-29",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xec6c71ce4962016f75c7c6fd05b087ec61305623a4f359336fb9e8d43134f29a",
+   "token_id": "13057864097725041021348674776849103139666406395773658257455457625675269236889",
+   "outcome_index": 1,
+   "ends": "2026-11-29T21:25:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 25.5,
+   "traders_entry": 0.53,
+   "avg_price": 0.49,
+   "shares": 45.02525157982475,
+   "cost": 22.85,
+   "fees": 0.79,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNFLGAME-26NOV29SEASF-SF",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "prophetx": 0.4812,
+    "polymarket_us": 0.5075,
+    "kalshi": 0.5075
+   },
+   "intl_cost_per_share": 0.4925,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
