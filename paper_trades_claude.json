@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 570.2165497371552,
+ "cash": 569.7590685488249,
  "started_at": "2026-11-11T01:23:37.163291+00:00",
  "bets": [
   {
@@ -9829,7 +9829,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.455
   },
   {
    "placed_at": "2026-11-27T17:30:20.034060+00:00",
@@ -10167,7 +10168,7 @@
   },
   {
    "placed_at": "2026-11-27T19:27:07.158075+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Memphis",
    "market": "Spread: Memphis (-17.5)",
@@ -10196,9 +10197,9 @@
     "polymarket_us": 0.5624
    },
    "intl_cost_per_share": 0.5524,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -8.13,
+   "settled_at": "2026-11-28T00:22:34.772858+00:00",
    "topped_up_at": null,
    "close": 0.545
   },
@@ -10424,7 +10425,7 @@
   },
   {
    "placed_at": "2026-11-27T20:32:07.147000+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Kings",
    "market": "Kings vs. Ducks",
@@ -10453,9 +10454,9 @@
     "prophetx": 0.5265
    },
    "intl_cost_per_share": 0.5425,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 15.54,
+   "profit": 7.36,
+   "settled_at": "2026-11-28T00:22:34.936186+00:00",
    "topped_up_at": null,
    "close": 0.525
   },
@@ -10574,7 +10575,7 @@
   {
    "placed_at": "2026-11-27T23:28:25.810700+00:00",
    "status": "open",
-   "stake": 0.01,
+   "stake": 0.02,
    "pick": "Under",
    "market": "Columbus Crew vs. Inter Miami CF: O/U 3.5",
    "link": "https://polymarket.com/event/mls-clb-mia-2026-11-27-more-markets",
@@ -10587,10 +10588,10 @@
    "bettors": 1,
    "avg_bankroll_pct": 0.0,
    "traders_entry": 0.51,
-   "avg_price": 0.52,
-   "shares": 14.631312836100069,
-   "cost": 8.01,
-   "fees": 0.4017,
+   "avg_price": 0.525,
+   "shares": 28.983637284746553,
+   "cost": 16.01,
+   "fees": 0.795,
    "venue": "polymarket_us",
    "venue_ref": {
     "venue": "polymarket_us",
@@ -10603,6 +10604,46 @@
     "kalshi": 0.5478
    },
    "intl_cost_per_share": 0.5325,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": "2026-11-28T00:25:49.429936+00:00",
+   "top_up_bettors": 2,
+   "top_up_avg_bankroll_pct": 0.0,
+   "top_up_size_multiplier": 1.0
+  },
+  {
+   "placed_at": "2026-11-28T00:25:50.263895+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Celtics",
+   "market": "Hawks vs. Celtics",
+   "link": "https://polymarket.com/event/nba-atl-bos-2026-11-27",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x55f52a4222151c5d4691dc47cdf52df92a925e22f802626558b14cce6d4455e9",
+   "token_id": "79336943924761250005301058721427968105417996409090938168523742726961178791888",
+   "outcome_index": 1,
+   "ends": "2026-11-28T01:00:00+00:00",
+   "bettors": 1,
+   "avg_bankroll_pct": 0.0,
+   "traders_entry": 0.76,
+   "avg_price": 0.77,
+   "shares": 10.212206846396395,
+   "cost": 7.99,
+   "fees": 0.13,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXNBAGAME-26NOV27ATLBOS-BOS",
+    "yes": true,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.7827,
+    "polymarket_us": 0.7895
+   },
+   "intl_cost_per_share": 0.7789,
    "payout": null,
    "profit": null,
    "settled_at": null,

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 917.4037649540331,
+ "cash": 907.8537649540332,
  "started_at": "2026-11-15T19:18:40.759903+00:00",
  "bets": [
   {
@@ -1853,6 +1853,42 @@
     "polymarket_us": 0.5175
    },
    "intl_cost_per_share": 0.5025,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T00:25:51.268903+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Texas",
+   "market": "Spread: Texas (-10.5)",
+   "link": "https://polymarket.com/event/cfb-tx-txam-2026-11-27",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0xc737a342a77e801497ad180b50741a1de46646e44fda94f12cb3a71011991053",
+   "token_id": "57224950708769966242871748468948832540891925939596468339805431043281533433487",
+   "outcome_index": 0,
+   "ends": "2026-11-28T00:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 12.9,
+   "traders_entry": 0.51,
+   "avg_price": 0.475,
+   "shares": 19.007575663337025,
+   "cost": 9.55,
+   "fees": 0.5214,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-tx-txam-2026-11-27-neg-10pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.5024
+   },
+   "intl_cost_per_share": 0.4825,
    "payout": null,
    "profit": null,
    "settled_at": null,
