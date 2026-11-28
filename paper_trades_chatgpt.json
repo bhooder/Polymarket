@@ -1825,7 +1825,7 @@
   },
   {
    "placed_at": "2026-11-27T23:28:26.828809+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "76ers vs. Pacers: O/U 228.5",
@@ -1855,9 +1855,9 @@
     "polymarket_us": 0.5175
    },
    "intl_cost_per_share": 0.5025,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -9.54,
+   "settled_at": "2026-11-28T03:42:21.845443+00:00",
    "topped_up_at": null,
    "close": 0.545
   },

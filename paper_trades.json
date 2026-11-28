@@ -6644,7 +6644,7 @@
   },
   {
    "placed_at": "2026-11-27T20:32:05.410622+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Over",
    "market": "Columbus Crew vs. Inter Miami CF: O/U 3.5",
@@ -6675,9 +6675,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4925,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -23.09,
+   "settled_at": "2026-11-28T03:38:26.351015+00:00",
    "topped_up_at": null,
    "close": 0.475
   },

@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 872.798784870257,
+ "cash": 910.7307259886717,
  "started_at": "2026-11-04T05:27:07.837129+00:00",
  "bets": [
   {
@@ -10041,7 +10041,7 @@
   },
   {
    "placed_at": "2026-11-27T02:58:15.772845+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Over",
    "market": "Columbus Crew vs. Inter Miami CF: O/U 3.5",
@@ -10071,9 +10071,9 @@
     "polymarket_us": 0.5275
    },
    "intl_cost_per_share": 0.5125,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.64,
+   "settled_at": "2026-11-28T03:38:27.606816+00:00",
    "topped_up_at": null,
    "close": 0.475
   },
@@ -10117,7 +10117,7 @@
   },
   {
    "placed_at": "2026-11-27T08:52:29.835940+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Nets",
    "market": "Spread: Raptors (-7.5)",
@@ -10148,9 +10148,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.76,
+   "settled_at": "2026-11-28T03:38:27.616030+00:00",
    "topped_up_at": "2026-11-27T11:43:31.149774+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 0.3,
@@ -10197,7 +10197,7 @@
   },
   {
    "placed_at": "2026-11-27T15:08:49.217105+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "Pacers",
    "market": "76ers vs. Pacers",
@@ -10227,9 +10227,9 @@
     "kalshi": 0.4168
    },
    "intl_cost_per_share": 0.412,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -20.33,
+   "settled_at": "2026-11-28T03:38:27.726245+00:00",
    "topped_up_at": null,
    "close": 0.385
   },
@@ -10386,7 +10386,7 @@
   },
   {
    "placed_at": "2026-11-27T23:28:21.982304+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Heat",
    "market": "Heat vs. Knicks",
@@ -10415,15 +10415,15 @@
     "kalshi": 0.4169
    },
    "intl_cost_per_share": 0.4221,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 25.98,
+   "profit": 15.15,
+   "settled_at": "2026-11-28T03:38:27.948707+00:00",
    "topped_up_at": null,
    "close": 0.425
   },
   {
    "placed_at": "2026-11-28T00:25:47.175526+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.02,
    "pick": "No",
    "market": "Will Columbus Crew win on 2026-11-27?",
@@ -10454,15 +10454,15 @@
     "polymarket_us": 0.6166
    },
    "intl_cost_per_share": 0.5922,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -21.69,
+   "settled_at": "2026-11-28T03:38:27.948751+00:00",
    "topped_up_at": null,
    "close": 0.585
   },
   {
    "placed_at": "2026-11-28T00:25:47.644152+00:00",
-   "status": "open",
+   "status": "won",
    "stake": 0.01,
    "pick": "Under",
    "market": "76ers vs. Pacers: O/U 228.5",
@@ -10492,9 +10492,9 @@
     "polymarket_us": 0.5075
    },
    "intl_cost_per_share": 0.4825,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 22.22,
+   "profit": 11.39,
+   "settled_at": "2026-11-28T03:38:27.958448+00:00",
    "topped_up_at": null,
    "close": 0.455
   },
@@ -10537,7 +10537,7 @@
   },
   {
    "placed_at": "2026-11-28T00:25:48.435808+00:00",
-   "status": "open",
+   "status": "lost",
    "stake": 0.01,
    "pick": "Celtics",
    "market": "Hawks vs. Celtics",
@@ -10567,9 +10567,9 @@
     "polymarket_us": 0.7895
    },
    "intl_cost_per_share": 0.7789,
-   "payout": null,
-   "profit": null,
-   "settled_at": null,
+   "payout": 0.0,
+   "profit": -10.84,
+   "settled_at": "2026-11-28T03:38:28.084679+00:00",
    "topped_up_at": null,
    "close": 0.765
   },
@@ -10715,6 +10715,42 @@
     "polymarket_us": 0.4264
    },
    "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T03:42:18.247952+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Southern Miss",
+   "market": "Spread: Old Dominion (-7.5)",
+   "link": "https://polymarket.com/event/cfb-soumis-old-2026-11-28",
+   "market_type": "spreads",
+   "size_multiplier": 1.0,
+   "condition_id": "0x40b4a93c8e8fe6b34a4c70aecf4a94cb1b684812241d595081600470a76437c8",
+   "token_id": "115388617276373646965214855841466502148486984923760979698279579557440655457183",
+   "outcome_index": 1,
+   "ends": "2026-11-28T18:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.3,
+   "traders_entry": 0.58,
+   "avg_price": 0.585,
+   "shares": 16.789131693736486,
+   "cost": 10.27,
+   "fees": 0.4484,
+   "venue": "polymarket_us",
+   "venue_ref": {
+    "venue": "polymarket_us",
+    "ref": "asc-cfb-soumis-old-2026-11-28-pos-7pt5",
+    "long": true,
+    "fee_rate": 0.11
+   },
+   "quotes": {
+    "polymarket_us": 0.6117
+   },
+   "intl_cost_per_share": 0.6021,
    "payout": null,
    "profit": null,
    "settled_at": null,
