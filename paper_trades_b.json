@@ -1,6 +1,6 @@
 {
  "start_bankroll": 1000.0,
- "cash": 755.3693206893963,
+ "cash": 725.080373431308,
  "started_at": "2026-10-29T04:27:22.900958+00:00",
  "bets": [
   {
@@ -21072,7 +21072,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.405
   },
   {
    "placed_at": "2026-11-27T19:26:56.250097+00:00",
@@ -21224,7 +21225,8 @@
    "topped_up_at": "2026-11-28T01:52:09.052343+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 1.0,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.495
   },
   {
    "placed_at": "2026-11-27T19:26:59.873070+00:00",
@@ -21261,7 +21263,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.415
   },
   {
    "placed_at": "2026-11-27T19:27:00.244219+00:00",
@@ -21297,7 +21300,8 @@
    "payout": null,
    "profit": null,
    "settled_at": null,
-   "topped_up_at": null
+   "topped_up_at": null,
+   "close": 0.675
   },
   {
    "placed_at": "2026-11-27T23:28:20.723114+00:00",
@@ -21413,7 +21417,117 @@
    "topped_up_at": "2026-11-28T01:52:08.012012+00:00",
    "top_up_bettors": 5,
    "top_up_avg_bankroll_pct": 2.3,
-   "top_up_size_multiplier": 1.0
+   "top_up_size_multiplier": 1.0,
+   "close": 0.435
+  },
+  {
+   "placed_at": "2026-11-28T02:43:47.607198+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will AFC Bournemouth win on 2026-11-29?",
+   "link": "https://polymarket.com/event/epl-ful-bou-2026-11-29",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0xdc6a15c5dd5683ea2680057e12d22b7ff20c56781a4f93b2d4f34fdd5d628fcc",
+   "token_id": "7850670287527633841578033762654954695936744023729605617072394811924253568846",
+   "outcome_index": 1,
+   "ends": "2026-11-29T14:05:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 1.3,
+   "traders_entry": 0.6,
+   "avg_price": 0.61,
+   "shares": 16.213119541436807,
+   "cost": 10.16,
+   "fees": 0.27,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXEPLGAME-26NOV29FULBOU-BOU",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.6267
+   },
+   "intl_cost_per_share": 0.6219,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T02:43:48.799428+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "Yes",
+   "market": "Will FC Bayern M\u00fcnchen win on 2026-11-28?",
+   "link": "https://polymarket.com/event/bun-hsv-bay-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 1.0,
+   "condition_id": "0x5c14502882f6ae5b8cf89f8837c6558b9a90b46d87ec1adbf4d92a32120f8c14",
+   "token_id": "31371742502076227440331047496285432476845195136603840745123361622457125352382",
+   "outcome_index": 0,
+   "ends": "2026-11-28T14:30:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.7,
+   "traders_entry": 0.74,
+   "avg_price": 0.75,
+   "shares": 13.492537313432836,
+   "cost": 10.17,
+   "fees": 0.0506,
+   "venue": "prophetx",
+   "venue_ref": {
+    "venue": "prophetx",
+    "ref": "7822107f3bac6eaf6f00af78e77b69e1",
+    "fee_rate": 0.02,
+    "event_id": 90118392
+   },
+   "quotes": {
+    "prophetx": 0.7538
+   },
+   "intl_cost_per_share": 0.7691,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
+  },
+  {
+   "placed_at": "2026-11-28T02:43:49.673510+00:00",
+   "status": "open",
+   "stake": 0.01,
+   "pick": "No",
+   "market": "Will Real Betis Balompi\u00e9 win on 2026-11-28?",
+   "link": "https://polymarket.com/event/lal-bet-ray-2026-11-28",
+   "market_type": "moneyline",
+   "size_multiplier": 0.979,
+   "condition_id": "0xb6bfbff03ddd20f98b5dddac40c16f1e84cbeb37d7a31665cb413abfa3563c14",
+   "token_id": "51920534369300250287575534633061792056189682092127761203196163466539055455286",
+   "outcome_index": 1,
+   "ends": "2026-11-28T13:00:00+00:00",
+   "bettors": 4,
+   "avg_bankroll_pct": 0.4,
+   "traders_entry": 0.39,
+   "avg_price": 0.4,
+   "shares": 23.87236084452975,
+   "cost": 9.96,
+   "fees": 0.41,
+   "venue": "kalshi",
+   "venue_ref": {
+    "venue": "kalshi",
+    "ref": "KXLALIGAGAME-26NOV28RBBRVC-RBB",
+    "yes": false,
+    "fee_rate": 0.07
+   },
+   "quotes": {
+    "kalshi": 0.4172,
+    "polymarket_us": 0.4264
+   },
+   "intl_cost_per_share": 0.412,
+   "payout": null,
+   "profit": null,
+   "settled_at": null,
+   "topped_up_at": null
   }
  ]
 }
